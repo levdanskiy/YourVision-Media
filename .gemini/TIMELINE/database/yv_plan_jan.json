@@ -1,0 +1,13 @@
+{
+  "month": "January 2026",
+  "daily_slots": [
+    {"date": "20.01", "time": "15:00", "tag": "#ARTIST_SPOTLIGHT", "topic": "Benidorm Fest Participants", "status": "done"},
+    {"date": "20.01", "time": "19:20", "tag": "#CHART_RESULTS", "topic": "Weekly Vote", "status": "done"},
+    {"date": "21.01", "time": "19:00", "tag": "#OPINION", "topic": "Experts on MD/MT", "status": "done"},
+    {"date": "22.01", "time": "15:00", "tag": "#UA_VISION", "topic": "Vidbir Preparation", "status": "done"},
+    {"date": "23.01", "time": "10:30", "tag": "#NEWS", "topic": "Vidbir Hosts Revealed", "status": "done"},
+    {"date": "25.01", "time": "16:00", "tag": "#RESULTS", "topic": "Luxembourg Winner", "status": "pending"},
+    {"date": "26.01", "time": "16:00", "tag": "#LIVE_NEWS", "topic": "Norway: Song Release", "status": "done"},
+    {"date": "26.01", "time": "19:00", "tag": "#ANALYSIS", "topic": "Norway: Analysis of Favorites", "status": "done"}
+  ]
+}

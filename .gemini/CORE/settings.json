@@ -1,0 +1,23 @@
+{
+  "general": {
+    "previewFeatures": true,
+    "disableAutoUpdate": true,
+    "checkpointing": {
+      "enabled": true
+    },
+    "vimMode": false
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "experimental": {
+    "codebaseInvestigatorSettings": {
+      "enabled": false
+    }
+  },
+  "ui": {
+    "theme": "Holiday"
+  }
+}

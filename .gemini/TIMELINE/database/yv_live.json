@@ -1,0 +1,35 @@
+{
+    "master_calendar": [
+        {
+            "date": "31.01",
+            "event": "Sweden: Melfest SF1",
+            "status": "completed"
+        },
+        {
+            "date": "07.02",
+            "event": "Sweden: Melfest Heat 2 / Latvia: Supernova Semi",
+            "status": "pending"
+        },
+        {
+            "date": "10.02",
+            "event": "Spain: Benidorm Fest Semi 1",
+            "status": "pending"
+        },
+        {
+            "date": "12.02",
+            "event": "Spain: Benidorm Fest Semi 2",
+            "status": "pending"
+        },
+        {
+            "date": "14.02",
+            "event": "Estonia: Eesti Laul Final / Benidorm Final",
+            "status": "pending"
+        },
+        {
+            "date": "24.02",
+            "event": "Italy: Sanremo - Opening Night",
+            "status": "pending"
+        }
+    ],
+    "last_sync": "2026-02-05"
+}

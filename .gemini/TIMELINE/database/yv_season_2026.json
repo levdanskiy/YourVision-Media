@@ -1,0 +1,30 @@
+{
+  "season": "2026",
+  "selections": {
+    "LUXEMBOURG": {
+      "event": "Luxembourg Song Contest 2026",
+      "winner": "Eva Marija",
+      "song": "Mother Nature",
+      "points": {
+        "jury": 94,
+        "public": 128,
+        "total": 222
+      },
+      "runners_up": [
+        {"artist": "Steve Castile", "song": "Sweet Tooth", "points": 136},
+        {"artist": "Irem", "song": "Bad Decisions", "points": 122}
+      ]
+    },
+    "BULGARIA": {
+      "event": "Natsionalna selektsiya za Evroviziya 2026",
+      "status": "Heat 1 Completed",
+      "qualified_to_heat_2": 8
+    },
+    "LITHUANIA": {
+      "event": "Eurovizija.LT 2026",
+      "status": "Heat 1 Completed",
+      "qualified": ["Beissoul & Einius", "Others"]
+    }
+  },
+  "last_sync": "2026-01-24T23:50:00"
+}

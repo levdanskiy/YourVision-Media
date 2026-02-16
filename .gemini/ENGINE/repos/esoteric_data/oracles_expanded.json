@@ -1,0 +1,40 @@
+{
+  "LENORMAND": [
+    {"name": "The Rider", "meaning": "News, speed, activity"},
+    {"name": "The Clover", "meaning": "Luck, hope, opportunity"},
+    {"name": "The Ship", "meaning": "Travel, distance, commerce"},
+    {"name": "The House", "meaning": "Home, family, safety"},
+    {"name": "The Tree", "meaning": "Health, growth, karma"},
+    {"name": "The Clouds", "meaning": "Confusion, doubt, trouble"},
+    {"name": "The Snake", "meaning": "Deception, betrayal, complication"},
+    {"name": "The Coffin", "meaning": "End, transformation, loss"},
+    {"name": "The Bouquet", "meaning": "Joy, beauty, appreciation"},
+    {"name": "The Scythe", "meaning": "Suddenness, danger, cutting ties"}
+  ],
+  "SYMBOLON": [
+    {"name": "The Warrior", "meaning": "Aggression, conquest, self-assertion"},
+    {"name": "The Lover", "meaning": "Partnership, projection, mirror"},
+    {"name": "The Mediator", "meaning": "Balance, diplomacy, intellect"},
+    {"name": "The Mother", "meaning": "Care, fertility, feelings"},
+    {"name": "The Ego", "meaning": "Power, uniqueness, authority"},
+    {"name": "The Servant", "meaning": "Adaptation, utility, analysis"}
+  ],
+  "GYPSY_ORACLE": [
+    {"name": "Constancy", "meaning": "Stability in love and work"},
+    {"name": "The Letter", "meaning": "Written news arriving soon"},
+    {"name": "The Gift", "meaning": "Unexpected present or help"},
+    {"name": "The Enemy", "meaning": "Hidden danger or rival"},
+    {"name": "The Sweetheart", "meaning": "A person thinking of you"}
+  ],
+  "VIKING_ORACLE": [
+    {"name": "Valknut", "meaning": "Interconnectedness of life and death"},
+    {"name": "Yggdrasil", "meaning": "The World Tree, connection"},
+    {"name": "Mjolnir", "meaning": "Protection, strength, power"}
+  ],
+  "SIBYLLA": [
+    {"name": "Hymen (Marriage)", "meaning": "Union, partnership"},
+    {"name": "Love (Cupid)", "meaning": "Affection, romance"},
+    {"name": "Sighs", "meaning": "Waiting, anxiety"},
+    {"name": "Money", "meaning": "Financial gain, wealth"}
+  ]
+}

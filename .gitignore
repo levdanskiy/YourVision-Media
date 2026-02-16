@@ -1,0 +1,38 @@
+# System & Personal
+.cache/
+.config/
+.dropbox/
+.dropbox-dist/
+.local/
+.mozilla/
+.npm/
+.pki/
+.ssh/
+.var/
+.bash_history
+.bash_logout
+.bashrc
+.profile
+.sudo_as_admin_successful
+.wget-hsts
+.DS_Store
+
+# Project мусор
+__pycache__/
+*.tmp
+.gemini/tmp/
+.gemini/TRASH/
+TRASH/
+
+# Другие личные папки
+AutoInvoice/
+Dropbox/
+Apsaimniekošana/
+Загрузки/
+Изображения/
+Музыка/
+Видео/
+Документы/
+Рабочий стол/
+Шаблоны/
+Общедоступные/
