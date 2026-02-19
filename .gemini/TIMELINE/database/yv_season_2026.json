@@ -1,30 +1,315 @@
 {
-  "season": "2026",
-  "selections": {
-    "LUXEMBOURG": {
-      "event": "Luxembourg Song Contest 2026",
-      "winner": "Eva Marija",
-      "song": "Mother Nature",
-      "points": {
-        "jury": 94,
-        "public": 128,
-        "total": 222
-      },
-      "runners_up": [
-        {"artist": "Steve Castile", "song": "Sweet Tooth", "points": 136},
-        {"artist": "Irem", "song": "Bad Decisions", "points": 122}
-      ]
-    },
-    "BULGARIA": {
-      "event": "Natsionalna selektsiya za Evroviziya 2026",
-      "status": "Heat 1 Completed",
-      "qualified_to_heat_2": 8
-    },
-    "LITHUANIA": {
-      "event": "Eurovizija.LT 2026",
-      "status": "Heat 1 Completed",
-      "qualified": ["Beissoul & Einius", "Others"]
-    }
+  "meta": {
+    "season": "2026",
+    "timezone": "Europe/Riga",
+    "version": "4.1 (Corrected JSON)",
+    "last_update": "2026-02-17"
   },
-  "last_sync": "2026-01-24T23:50:00"
+  "events": [
+    {
+      "date": "2026-02-17",
+      "time": "10:00",
+      "country": "United Kingdom",
+      "event": "Artist Announcement: Look Mum No Computer",
+      "type": "ANNOUNCEMENT",
+      "status": "COMPLETED",
+      "broadcaster": "BBC"
+    },
+    {
+      "date": "2026-02-17",
+      "time": "20:30",
+      "country": "San Marino",
+      "event": "Semi-Finalists Reveal (Part 2)",
+      "type": "ANNOUNCEMENT",
+      "status": "CONFIRMED",
+      "broadcaster": "SMRTV"
+    },
+    {
+      "date": "2026-02-19",
+      "time": "09:40",
+      "country": "Belgium",
+      "event": "Artist & Song Premiere",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "broadcaster": "RTBF"
+    },
+    {
+      "date": "2026-02-20",
+      "time": "21:15",
+      "country": "Austria",
+      "event": "Wer singt für Österreich? (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "ORF"
+    },
+    {
+      "date": "2026-02-21",
+      "time": "21:00",
+      "country": "Sweden",
+      "event": "Melodifestivalen (Heat 4)",
+      "type": "HEAT",
+      "status": "CONFIRMED",
+      "broadcaster": "SVT"
+    },
+    {
+      "date": "2026-02-21",
+      "time": "21:00",
+      "country": "Lithuania",
+      "event": "Eurovizija.LT (Heat 5)",
+      "type": "HEAT",
+      "status": "CONFIRMED",
+      "broadcaster": "LRT"
+    },
+    {
+      "date": "2026-02-21",
+      "time": "23:00",
+      "country": "Portugal",
+      "event": "Festival da Canção (SF1)",
+      "type": "SEMI_FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RTP"
+    },
+    {
+      "date": "2026-02-24",
+      "time": "21:40",
+      "country": "Italy",
+      "event": "Sanremo (Night 1)",
+      "type": "FESTIVAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RAI"
+    },
+    {
+      "date": "2026-02-24",
+      "time": "22:00",
+      "country": "Serbia",
+      "event": "Песма за Евровизију SF1",
+      "type": "SEMI_FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RTS"
+    },
+    {
+      "date": "2026-02-25",
+      "time": "21:40",
+      "country": "Italy",
+      "event": "Sanremo (Night 2)",
+      "type": "FESTIVAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RAI"
+    },
+    {
+      "date": "2026-02-26",
+      "time": "21:40",
+      "country": "Italy",
+      "event": "Sanremo (Night 3)",
+      "type": "FESTIVAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RAI"
+    },
+    {
+      "date": "2026-02-26",
+      "time": "22:00",
+      "country": "Serbia",
+      "event": "Песма за Евровизију SF2",
+      "type": "SEMI_FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RTS"
+    },
+    {
+      "date": "2026-02-27",
+      "time": "19:00",
+      "country": "Lithuania",
+      "event": "Eurovizija.LT (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "LRT"
+    },
+    {
+      "date": "2026-02-27",
+      "time": "21:40",
+      "country": "Italy",
+      "event": "Sanremo (Night 4 - Covers)",
+      "type": "FESTIVAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RAI"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "20:45",
+      "country": "Norway",
+      "event": "Melodi Grand Prix (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "NRK"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "21:00",
+      "country": "Bulgaria",
+      "event": "Song Selection Final",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "BNT"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "21:00",
+      "country": "Sweden",
+      "event": "Melodifestivalen Heat 5",
+      "type": "HEAT",
+      "status": "CONFIRMED",
+      "broadcaster": "SVT"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "21:00",
+      "country": "Finland",
+      "event": "UMK (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "YLE"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "21:15",
+      "country": "Germany",
+      "event": "Das deutsche Finale",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "NDR"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "21:40",
+      "country": "Italy",
+      "event": "Sanremo (Grand Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RAI"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "22:00",
+      "country": "Serbia",
+      "event": "Песма за Евровизију (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RTS"
+    },
+    {
+      "date": "2026-02-28",
+      "time": "23:00",
+      "country": "Portugal",
+      "event": "Festival da Canção (SF2)",
+      "type": "SEMI_FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RTP"
+    },
+    {
+      "date": "2026-03-03",
+      "time": "22:00",
+      "country": "San Marino",
+      "event": "SMSC SF1",
+      "type": "SEMI_FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "SMRTV"
+    },
+    {
+      "date": "2026-03-04",
+      "time": "21:00",
+      "country": "Romania",
+      "event": "Selecția Națională (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "TVR"
+    },
+    {
+      "date": "2026-03-04",
+      "time": "22:00",
+      "country": "San Marino",
+      "event": "SMSC SF2",
+      "type": "SEMI_FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "SMRTV"
+    },
+    {
+      "date": "2026-03-05",
+      "time": "12:00",
+      "country": "Israel",
+      "event": "Song Release: Noam Bettan",
+      "type": "RELEASE",
+      "status": "CONFIRMED"
+    },
+    {
+      "date": "2026-03-06",
+      "time": "22:00",
+      "country": "San Marino",
+      "event": "San Marino Song Contest (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "SMRTV"
+    },
+    {
+      "date": "2026-03-07",
+      "time": "18:35",
+      "country": "Poland",
+      "event": "Wielki Finał Polskich Kwalifikacji",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "TVP"
+    },
+    {
+      "date": "2026-03-07",
+      "time": "21:00",
+      "country": "Sweden",
+      "event": "Melodifestivalen (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "SVT"
+    },
+    {
+      "date": "2026-03-07",
+      "time": "23:00",
+      "country": "Portugal",
+      "event": "Festival da Canção (Final)",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "broadcaster": "RTP"
+    },
+    {
+      "date": "2026-03-11",
+      "time": "12:00",
+      "country": "Switzerland",
+      "event": "Song Release: Veronica Fusaro",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "broadcaster": "SRF"
+    },
+    {
+      "date": "2026-05-12",
+      "time": "22:00",
+      "country": "Austria",
+      "event": "Eurovision 2026: Semi-Final 1",
+      "type": "SHOW",
+      "status": "CONFIRMED",
+      "location": "Vienna"
+    },
+    {
+      "date": "2026-05-14",
+      "time": "22:00",
+      "country": "Austria",
+      "event": "Eurovision 2026: Semi-Final 2",
+      "type": "SHOW",
+      "status": "CONFIRMED",
+      "location": "Vienna"
+    },
+    {
+      "date": "2026-05-16",
+      "time": "22:00",
+      "country": "Austria",
+      "event": "Eurovision 2026: Grand Final",
+      "type": "SHOW",
+      "status": "CONFIRMED",
+      "location": "Vienna"
+    }
+  ]
 }
