@@ -17,7 +17,7 @@
 * 23:00 | **YV** | [FLEX SLOT: NEWS / INSIDE] - ⬜ [ОЖИДАНИЕ]
 
 ### 17.02 (Вт) — CHART DAY
-* 14:00 | **YV** | [FLEX SLOT: NEWS] - ⬜ [ОЖИДАНИЕ]
+* 14:00 | **YV** | [FLEX SLOT: NEWS] - ✅ [ГОТОВО]
 * 19:15 | **YV** | 📊 **#CHART_RESULTS:** AllMix Valentine Spectrum (Итоги). - ✅ [ГОТОВО]
 * 20:30 | **YV** | 📈 **#CHART_ANNOUNCE:** WorldSound Global Love (Старт). - ✅ [ГОТОВО]
 

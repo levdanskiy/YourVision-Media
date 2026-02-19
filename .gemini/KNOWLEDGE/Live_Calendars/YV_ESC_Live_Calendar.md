@@ -1,80 +1,78 @@
-🖤 YourVision. Живой Календарь. Все даты сезона 2026
+🖤 YourVision. Live Calendar 2026
+📍 **ВРЕМЯ: РИГА/КИЕВ (EET, UTC+2)**. (CET +1)
 
-Ваш единый, постоянно обновляемый источник информации о главном музыкальном марафоне года.
-📍 **ВСЕ ВРЕМЯ УКАЗАНО ПО РИГЕ / КИЕВУ (EET / UTC+2)**.
+**Январь (АРХИВ)**
+✅ Выбраны: 🇳🇴, 🇱🇺, 🇧🇬, 🇪🇪, 🇩🇰, 🇱🇻, 🇪🇸, 🇮🇹, 🇭🇷, 🇬🇷, 🇲🇹, 🇲🇩, 🇨🇭, 🇬🇧.
 
-Здесь мы собираем все ключевые даты сезона: от дедлайнов и стартов национальных отборов до финалов и главных событий Евровидения. Сохраняйте этот пост - он будет жить и обновляться вместе с нами.
+**Февраль**
+16-21.02 🇳🇱 Нидерланды (JESC): First phase of auditions for Junior Songfestival
+16-17.02 🇸🇲 Сан-Марино: San Marino Song Contest semi-finalists announced (20:30)
+17.02 🇬🇧 **Великобритания**: Artist Announcement (10:35) ✅
+19.02 🇧🇪 **Бельгия**: Artist & Song Reveal (19:21)
+20.02 🇸🇪 Швеция: Melodifestivalen Heat 4 Entries Released (01:00)
+20.02 🇦🇹 **Австрия**: Финал Vienna Calling – Wer singt für Österreich? (21:15)
+21.02 🇸🇪 Швеция: Melodifestivalen Heat 4 (21:00)
+21.02 🇱🇹 Литва: Eurovizija.LT Semi-Final 5 (21:00)
+21.02 🇵🇹 Португалия: Festival da Canção Semi-Final 1 (23:00)
+24.02 🇷🇸 **Сербия**: Песма за Евровизију Semi-Final 1 (22:00)
+24.02 🇮🇹 **Италия**: Festival di Sanremo Night 1 (21:40)
+25.02 🇮🇹 **Италия**: Festival di Sanremo Night 2 (21:40)
+26.02 🇷🇸 **Сербия**: Песма за Евровизију Semi-Final 2 (22:00)
+26.02 🇮🇹 **Италия**: Festival di Sanremo Night 3 (21:40)
+27.02 🇸🇪 Швеция: Melodifestivalen Heat 5 Entries Released (01:00)
+27.02 🇱🇹 **Литва**: Финал Eurovizija.LT (20:00)
+27.02 🇮🇹 **Италия**: Festival di Sanremo Night 4 (21:40)
+28.02 🔥 **SUPER SATURDAY**
+* 🇳🇴 **Норвегия**: Финал Melodi Grand Prix (20:45)
+* 🇧🇬 **Болгария**: Nacionalna selekciya: Episode 3 (Final) (21:00)
+* 🇸🇪 **Швеция**: Melodifestivalen Heat 5 (21:00)
+* 🇫🇮 **Финляндия**: Финал Uuden Musiikin Kilpailu (21:00)
+* 🇩🇪 **Германия**: Das Deutsche Finale (21:15)
+* 🇮🇹 **Италия**: Финал Festival di Sanremo (21:40)
+* 🇷🇸 **Сербия**: Финал Песма за Евровизију (22:00)
+* 🇵🇹 **Португалия**: Festival da Canção Semi-Final 2 (23:00)
 
-Январь 2026
-〰️ 24.01: 🇳🇴 Норвегия - MGP 2026 Radio Duels. - ✅
-〰️ 24.01: 🇱🇺 Люксембург - Финал Luxembourg Song Contest 2026. - ✅
-〰️ 24.01: 🇱🇹 Литва - Eurovizija.LT Heat 1. - ✅
-〰️ 24.01: 🇧🇬 Болгария - Natsionalnata selektsiya Show 1. - ✅
-〰️ 26.01: 🇳🇴 Норвегия - Релиз песен MGP 2026. - ✅
-〰️ 27.01: 🇳🇴 Норвегия - Победитель MGP Cup (10-й финалист) - ✅
-〰️ 31.01: 🇸🇪 Швеция - Melodifestivalen (Полуфинал 1). - ✅
-〰️ 31.01: 🇱🇻 Латвия - Supernova (Полуфинал 1). - ✅
-〰️ 31.01: 🇱🇹 Литва - Eurovizija.LT (Полуфинал 2). - ✅
-〰️ 31.01: 🇧🇬 Болгария - Natsionalnata selektsiya (Show 2) - Выбор артиста. - ✅
+**Март**
+04.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 1 (22:00)
+04.03 🇷🇴 **Румыния**: Финал Selecția Națională (21:00)
+05.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 2 (22:00)
+05.03 🇮🇱 **Израиль**: Релиз песни Noam Bettan
+06.03 🇸🇲 **Сан-Марино**: Финал San Marino Song Contest (22:00)
+07.03 🇵🇱 **Польша**: Wielki Finał Polskich Kwalifikacji (18:35)
+07.03 🇸🇪 **Швеция**: Финал Melodifestivalen (21:00)
+07.03 🇵🇹 **Португалия**: Финал Festival da Canção (23:00)
+07.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 1 (21:30)
+07-08.03 🇳🇱 Нидерланды (JESC): Second phase of auditions for Junior Songfestival
+09.03 🏆 **DEADLINE** for participating broadcasters to submit their entry
+11.03 🇨🇭 **Швейцария**: Релиз песни Veronica Fusaro
+14.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 2 (21:30)
+17.03 🇦🇹 **HoD Meeting**: Heads of Delegation Meeting
+21.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 3 (21:30)
+28.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 4 (21:30)
 
-Февраль 2026
-〰️ 01.02: 🇸🇲 Сан-Марино - I кастинг DSMSC (20:15).
-〰️ 02.02: 🇷🇸 Сербия - Премьера песен PZE26 (14:00).
-〰️ 02.02: 🇸🇲 Сан-Марино - I кастинг DSMSC (20:15).
-〰️ 03.02: 🇸🇲 Сан-Марино - I кастинг DSMSC (20:15).
-〰️ 04.02: 🇸🇲 Сан-Марино - I кастинг DSMSC (20:15).
-〰️ 05.02: 🇸🇪 Швеция - Сниппеты песен 2 полуфинала Melfest (08:00).
-〰️ 05.02: 🇸🇲 Сан-Марино - I кастинг DSMSC (20:15).
-〰️ 06.02: 🇸🇪 Швеция - Релиз песен 2 полуфинала Melfest (00:00).
-〰️ 06.02: 🇷🇴 Румыния - Объявление полуфиналистов Selecția Națională.
-〰️ 06.02: 🇸🇲 Сан-Марино - I кастинг DSMSC (20:15).
-〰️ 07.02: 🇺🇦 Украина - Финал Відбір 2026 (19:00).
-〰️ 07.02: 🇸🇪 Швеция - Melodifestivalen (Полуфинал 2) (21:00).
-〰️ 07.02: 🇱🇹 Литва - Eurovizija.LT (Полуфинал 3) (21:00).
-〰️ 07.02: 🇱🇻 Латвия - Supernova (Полуфинал 2) (21:10).
-〰️ 09.02: 🇷🇴 Румыния - 1-й день полуфинальных прослушиваний.
-〰️ 10.02: 🇪🇸 Испания - Benidorm Fest (Полуфинал 1) (23:50).
-〰️ 10.02: 🇷🇴 Румыния - 2-й день полуфинальных прослушиваний.
-〰️ 11.02: 🇷🇴 Румыния - 3-й день полуфинальных прослушиваний.
-〰️ 11.02: 🇬🇷 Греция - Sing for Greece (Полуфинал 1) (22:00).
-〰️ 12.02: 🇸🇪 Швеция - Сниппеты песен 3 полуфинала Melfest (08:00).
-〰️ 12.02: 🇪🇸 Испания - Benidorm Fest (Полуфинал 2) (23:50).
-〰️ 12.02: 🇭🇷 Хорватия - Dora 2026 (Полуфинал 1) (22:15).
-〰️ 13.02: 🇸🇪 Швеция - Релиз песен 3 полуфинала Melfest (00:00).
-〰️ 13.02: 🇬🇷 Греция - Sing for Greece (Полуфинал 2) (22:00).
-〰️ 13.02: 🇭🇷 Хорватия - Dora 2026 (Полуфинал 2) (22:15).
-〰️ 14.02: 🇪🇪 Эстония - Финал Eesti Laul 2026 (20:15).
-〰️ 14.02: 🇩🇰 Дания - Финал Dansk Melodi Grand Prix 2026 (21:00).
-〰️ 14.02: 🇱🇻 Латвия - Финал Supernova 2026 (21:10).
-〰️ 14.02: 🇪🇸 Испания - Финал Benidorm Fest 2026 (23:00).
-〰️ 14.02: 🇸🇪 Швеция - Melodifestivalen (Полуфинал 3) (21:00).
-〰️ 14.02: 🇱🇹 Литва - Eurovizija.LT (Полуфинал 4) (21:00).
-〰️ 15.02: 🇬🇷 Греция - Финал Sing for Greece (22:00).
-〰️ 15.02: 🇭🇷 Хорватия - Финал Dora 2026 (22:15).
-〰️ 20.02: 🇦🇹 Австрия - Финал "Vienna Calling" (21:15).
-〰️ 21.02: 🇸🇪 Швеция - Melodifestivalen (Полуфинал 4).
-〰️ 24.02: 🇷🇸 Сербия - ПЗЕ 2026 (Полуфинал 1) (22:00).
-〰️ 26.02: 🇷🇸 Сербия - ПЗЕ 2026 (Полуфинал 2) (22:00).
-〰️ 24.02 - 28.02: 🇮🇹 Италия - Festival di Sanremo 2026 (21:40).
-〰️ 27.02: 🇱🇹 Литва - Финал Eurovizija.LT 2026 (21:00).
-〰️ 28.02: 🇫🇮 Финляндия - Финал UMK 2026 (21:00).
-〰️ 28.02: 🇩🇪 Германия - Национальный финал (21:15).
-〰️ 28.02: 🇳🇴 Норвегия - Финал Melodi Grand Prix 2026 (20:50).
-〰️ 28.02: 🇧🇬 Болгария - Natsionalnata selektsiya (Финал) (21:00).
-〰️ 28.02: 🇷🇸 Сербия - Финал ПЗЕ 2026 (22:00).
+**Апрель**
+04.04 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 5 (21:30 CEST)
+11.04 🇳🇱 **Eurovision in Concert** (Amsterdam)
+11.04 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 6 (21:30 CEST)
+17.04 🇬🇧 London Eurovision Festival Fundraiser
+18.04 🇵🇱 Польша (JESC): The Voice Kids Battles 1 (21:30 CEST)
+19.04 🇬🇧 **London Eurovision Party**
+25.04 🇵🇱 Польша (JESC): The Voice Kids Battles 2 (21:30 CEST)
 
-Март 2026
-〰️ 07.03: 🇸🇪 Швеция - Финал Melodifestivalen 2026.
-〰️ 07.03: 🇸🇲 Сан-Марино - Финал San Marino Song Contest.
-〰️ 07.03: 🇵🇹 Португалия - Финал Festival da Canção.
-〰️ 11.03: 🇨🇭 Швейцария - Релиз песни Veronica Fusaro.
+**Май**
+02.05 🇵🇱 Польша (JESC): The Voice Kids Battles 3 (21:30 CEST)
+09.05 🇵🇱 Польша (JESC): The Voice Kids Final (21:30 CEST)
+12.05 ❤️ **SEMI-FINAL 1** (22:00 CEST)
+14.05 ❤️ **SEMI-FINAL 2** (22:00 CEST)
+16.05 ❤️ **GRAND FINAL** (22:00 CEST)
+30.05 🇦🇱 **Албания** (JESC): Festivali i Këngës për Fëmijë Night 1
+31.05 🇦🇱 **Албания** (JESC): Festivali i Këngës për Fëmijë Night 2
 
-Май 2026
-❤️ 12.05: 🎤 Вена - Первый полуфинал Евровидения 2026.
-❤️ 14.05: 🎤 Вена - Второй полуфинал Евровидения 2026.
-❤️ 16.05: 🎤 ГРАНД-ФИНАЛ ЕВРОВИДЕНИЯ 2026 в Вене!
+**Июнь**
+01.06 🇦🇱 **Албания** (JESC): Festivali i Këngës për Fëmijë Final Night
+06.06 🇦🇲 **Eurovision Young Musicians** (Yerevan)
 
-Июнь 2026
-❤️ 06.06: 🎤 Финал Eurovision Young Musicians 2026 в Ереване!
+**TBA (Февраль/Март)**
+🇦🇲 Армения, 🇦🇺 Австралия, 🇦🇿 Азербайджан, 🇨🇿 Чехия, 🇫🇷 Франция, 🇬🇪 Грузия.
 
-#YourVision #Eurovision2026 #JESC2025 #ESC2026
+#YourVision #Eurovision2026 #Calendar

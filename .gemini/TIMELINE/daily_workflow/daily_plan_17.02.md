@@ -1,7 +1,7 @@
-# 📅 DAILY PLAN: 17.02.2026
+# 📅 DAILY PLAN: 17.02.2026 (YourVision 2.0)
 **// STATUS: GENERATED | AUTO-SYNC ENABLED //**
 
-### 🔴 DEBTS / ДОЛГИ (С прошлого дня)
+### 🚨 CRITICAL DEBTS
 4.  **NB** | 09.02 | ❄️ **#OLYMPIC_VIBE: ДЕНЬ 3. ГОРНЫЙ ВАЙБ.** -  🔴 [ДОЛГ]
 5.  **NB** | 10.02 | ❄️ **#OLYMPIC_VIBE: ДЕНЬ 4. СЕРДЦЕ КОРТИНЫ.** -  🔴 [ДОЛГ]
 6.  **NB** | 11.02 | ❄️ **#OLYMPIC_VIBE: ДЕНЬ 5. ТЕХНОЛОГИИ ПОБЕДЫ.** -  🔴 [ДОЛГ]
@@ -19,29 +19,13 @@
 
 ---
 
-### 🗝️ ARCHITECT (Main)
-* 08:00 | **AC** | 🌍 #GLOBAL_EVENT_RADAR: Ultimate List (Day Digest). - ⬜ [ОЖИДАНИЕ]
-* 10:15 | **AC** | 🕰️ #TIME_WHEEL: Китайский цикл: Энергия Огня. - ⬜ [ОЖИДАНИЕ]
-* 12:30 | **AC** | 🔥 #SYMBOL_CODE: Огонь: Очищение и Страсть. - ⬜ [ОЖИДАНИЕ]
-* 15:00 | **AC** | 🧠 #SACRED_PERSON: Джордано Бруно: Тот, кто не сгорел. - ⬜ [ОЖИДАНИЕ]
-* 17:30 | **AC** | 🎨 #ART_SOUL: Искусство Возрождения: Человек-Творец. - ⬜ [ОЖИДАНИЕ]
-* 20:00 | **AC** | 🕯️ #NIGHT_OMEN: Шепот пламени. - ⬜ [ОЖИДАНИЕ]
-
-### 🕊️ NEIGHBORS (Soul)
-* 08:45 | **NB** | 🎭 #FESTIVAL_VIBE: Рио: Энергия Самбадрома. - ⬜ [ОЖИДАНИЕ]
-* 11:00 | **NB** | 🧥 #COSTUME_CODE: Шелк Династии Тан. - ⬜ [ОЖИДАНИЕ]
-* 13:15 | **NB** | 🎺 #TRADITION_KEEPER: Марди Гра: Джаз Нового Орлеана. - ⬜ [ОЖИДАНИЕ]
-* 16:00 | **NB** | 📜 #LEGEND_KEEPER: Легенда об Огненной Лошади. - ⬜ [ОЖИДАНИЕ]
-* 18:00 | **NB** | 📸 #VISUAL_JOURNEY: Перья и конфетти. - ⬜ [ОЖИДАНИЕ]
-* 22:30 | **NB** | ❄️ #OLYMPIC_DIARY: Итоги Дня 11. - ⬜ [ОЖИДАНИЕ]
-
-### 🍒 SWEET (Taste)
-* 09:30 | **SW** | 🥮 #SIGNATURE_CAKE: Лунный пряник (Mooncake). - ⬜ [ОЖИДАНИЕ]
-* 11:45 | **SW** | 🍵 #COZY_DRINK: Китайский чай Улун. - ⬜ [ОЖИДАНИЕ]
-* 14:00 | **SW** | 🏮 #GASTRO_HISTORY: Смыслы китайских сладостей. - ⬜ [ОЖИДАНИЕ] (EXTRA)
-* 17:00 | **SW** | 🍊 #SEASON_TASTE: Мандарин: Символ удачи. - ⬜ [ОЖИДАНИЕ]
-* 21:00 | **SW** | 📸 #SWEET_DREAM: Красный фонарь. - ⬜ [ОЖИДАНИЕ] (EXTRA)
-
 ### 📺 YOURVISION (Broadcaster)
-* 19:15 | **YV** | 📊 **ЧАРТ: WORLDSOUND GLOBAL LOVE SONGS 2015-2025 (ИТОГИ).** - ✅ [ГОТОВО]
-* 20:30 | **YV** | 📈 **ЧАРТ: RUTOP MODERN LOVE 2018-2025 (АНОНС).** - ✅ [ГОТОВО]
+* 10:00 | **YV** | 📻 **#ANNOUNCEMENT:** United Kingdom. Artist Announcement: Look Mum No Computer. - ⬜ [ОЖИДАНИЕ]
+* 14:00 | **YV** | [FLEX SLOT: NEWS] - ✅ [ГОТОВО]
+* 19:15 | **YV** | 📊 **#CHART_RESULTS:** AllMix Valentine Spectrum (Итоги). - ✅ [ГОТОВО]
+* 20:30 | **YV** | 📻 **#ANNOUNCEMENT:** San Marino. Semi-Finalists Reveal (Part 2). - ✅ [ГОТОВО]
+* 20:30 | **YV** | 📈 **#CHART_ANNOUNCE:** WorldSound Global Love (Старт). - ✅ [ГОТОВО]
+
+---
+### 🧊 ARCHIVE CHANNELS (ON PAUSE)
+*(AC, NB, SW content will be added here only if requested)*

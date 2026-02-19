@@ -3,26 +3,32 @@ import os
 import json
 from datetime import datetime
 
-# В будущем здесь будет вызов MCP инструментов
-# Сейчас создаем структуру сбора данных
+# INTEL HUB V2.0 (TIER-1 INTELLIGENCE)
+# Этот скрипт служит интерфейсом для запроса данных.
+# В реальном режиме агент использует его вывод для формирования поисковых запросов.
 
-def get_pulse():
-    pulse = {
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "reality_date": "2026-02-06",
-        "olympic_highlights": [
-            "Opening Ceremony at San Siro",
-            "Mariah Carey, Andrea Bocelli performed",
-            "Japan leads Figure Skating Team Event",
-            "Great Britain won first Curling match"
-        ],
-        "eurovision_news": [
-            "Ukraine Vidbir Final Tomorrow (Feb 7)",
-            "Sweden Melfest Heat 2 Rehearsals live",
-            "Benidorm Fest Final scheduled for Feb 14"
-        ]
+def get_target_url(mode):
+    resources = {
+        "Odds": "https://eurovisionworld.com/odds/eurovision",
+        "Charts": "https://kworb.net/spotify/country/global_daily.html",
+        "News": "https://eurovoix.com/"
     }
-    return pulse
+    return resources.get(mode, "Unknown")
+
+def run_intel(mode):
+    target = get_target_url(mode)
+    
+    report = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "mode": mode,
+        "target_url": target,
+        "status": "READY_FOR_FETCH",
+        "instruction": f"Agent, please execute 'web_fetch' or 'google_web_search' for: {target} to extract current {mode} data."
+    }
+    
+    # В будущем здесь можно подключить реальный парсинг, если будет доступ
+    print(json.dumps(report, indent=4))
 
 if __name__ == "__main__":
-    print(json.dumps(get_pulse(), indent=4))
+    mode = sys.argv[1] if len(sys.argv) > 1 else "Odds"
+    run_intel(mode)
