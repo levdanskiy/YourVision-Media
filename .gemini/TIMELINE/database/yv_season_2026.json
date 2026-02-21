@@ -71,6 +71,14 @@
     },
     {
       "date": "2026-02-24",
+      "time": "12:00",
+      "country": "International",
+      "event": "WorldSound: Global Love Songs",
+      "type": "CHART",
+      "status": "SCHEDULED"
+    },
+    {
+      "date": "2026-02-24",
       "time": "21:40",
       "country": "Italy",
       "event": "Sanremo (Night 1)",
@@ -206,6 +214,14 @@
     },
     {
       "date": "2026-03-03",
+      "time": "12:00",
+      "country": "International",
+      "event": "RuTop: Modern Love",
+      "type": "CHART",
+      "status": "SCHEDULED"
+    },
+    {
+      "date": "2026-03-03",
       "time": "22:00",
       "country": "San Marino",
       "event": "SMSC SF1",
@@ -276,6 +292,14 @@
       "broadcaster": "RTP"
     },
     {
+      "date": "2026-03-10",
+      "time": "12:00",
+      "country": "International",
+      "event": "AllMix: Women Power",
+      "type": "CHART",
+      "status": "SCHEDULED"
+    },
+    {
       "date": "2026-03-11",
       "time": "12:00",
       "country": "Switzerland",
@@ -283,6 +307,14 @@
       "type": "RELEASE",
       "status": "CONFIRMED",
       "broadcaster": "SRF"
+    },
+    {
+      "date": "2026-03-17",
+      "time": "12:00",
+      "country": "International",
+      "event": "EuroGroove: National Finals High Placers",
+      "type": "CHART",
+      "status": "SCHEDULED"
     },
     {
       "date": "2026-05-12",

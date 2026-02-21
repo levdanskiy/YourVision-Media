@@ -51,6 +51,6 @@
 * 19:00 | **YV** | 🧠 **#DEEP_DIVE:** Тема недели. - ⬜ [ОЖИДАНИЕ]
 
 ### 24.02 (Вт) — CHART DAY
-* 19:15 | **YV** | 📊 **#CHART_RESULTS:** WorldSound Global Love (Итоги). - ⬜ [ОЖИДАНИЕ]
-* 20:30 | **YV** | 📈 **#CHART_ANNOUNCE:** RuTop Modern Love (Старт). - ✅ [ГОТОВО]
+* 12:00 | **YV** | 📊 **#CHART_RELEASE:** WorldSound Global Love Songs 2015-2025. - ✅ [ГОТОВО]
+* 19:15 | **YV** | 📊 **#CHART_RESULTS:** (Итоги голосования). - ⬜ [ОЖИДАНИЕ]
 
