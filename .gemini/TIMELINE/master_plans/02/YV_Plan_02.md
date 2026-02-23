@@ -52,5 +52,5 @@
 
 ### 24.02 (Вт) — CHART DAY
 * 12:00 | **YV** | 📊 **#CHART_RELEASE:** WorldSound Global Love Songs 2015-2025. - ✅ [ГОТОВО]
-* 19:15 | **YV** | 📊 **#CHART_RESULTS:** (Итоги голосования). - ⬜ [ОЖИДАНИЕ]
+* 19:15 | **YV** | 📊 **#CHART_RESULTS:** (Итоги голосования). - ✅ [ГОТОВО]
 
