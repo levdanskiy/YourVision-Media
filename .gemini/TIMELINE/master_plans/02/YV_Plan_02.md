@@ -47,7 +47,7 @@
 * 19:00 | **YV** | 📊 **#CHART_FINAL:** WorldSound Global Love (Финиш). - ⬜ [ОЖИДАНИЕ]
 
 ### 23.02 (Пн) — WEEK START
-* 13:00 | **YV** | 📅 **#WEEK_AHEAD:** Roadmap (Week 04). - ⬜ [ОЖИДАНИЕ]
+* 13:00 | **YV** | 📅 **#WEEK_AHEAD:** Roadmap (Week 04). - ✅ [ГОТОВО]
 * 19:00 | **YV** | 🧠 **#DEEP_DIVE:** Тема недели. - ⬜ [ОЖИДАНИЕ]
 
 ### 24.02 (Вт) — CHART DAY
