@@ -13,7 +13,7 @@
 * 13:00 | **YV** | 🎞 **#EUROFLASHBACK:** История дня. - ✅ [ГОТОВО]
 * 17:50 | **YV** | 🗳️ **#CHART_REMINDER:** WorldSound Global Love. - ✅ [ГОТОВО]
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** WorldSound Global Love (Итоги). - ✅ [ГОТОВО]
-* 20:30 | **YV** | 📈 **#CHART_ANNOUNCE:** RuTop Modern Love (Старт). - ⬜ [ОЖИДАНИЕ]
+* 20:30 | **YV** | 📈 **#CHART_ANNOUNCE:** RuTop Modern Love (Старт). - ✅ [ГОТОВО]
 * 21:40 | **YV** | 🔴 **#FESTIVAL:** Italy. Sanremo (Night 1).
 * 22:00 | **YV** | 🔴 **#SEMI_FINAL:** Serbia. Песма за Евровизију SF1.
 
