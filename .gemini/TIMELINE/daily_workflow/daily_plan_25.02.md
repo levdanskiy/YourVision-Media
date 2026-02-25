@@ -11,7 +11,7 @@
 
 ### 📺 YOURVISION (Broadcaster)
 * 09:00 | **YV** | 🗓 **#EVENTS:** Гид по событиям дня. - ✅ [ГОТОВО]
-* 13:00 | **YV** | 🎞 **#EUROFLASHBACK:** История дня. - ⬜ [ОЖИДАНИЕ]
+* 13:00 | **YV** | 🎞 **#EUROFLASHBACK:** История дня. - ✅ [ГОТОВО]
 * 21:40 | **YV** | 🔴 **#FESTIVAL:** Italy. Sanremo (Night 2).
 
 ---
