@@ -33,6 +33,7 @@
 * 🇵🇹 **Португалия**: Festival da Canção Semi-Final 2 (23:00)
 
 **Март**
+01.03 🇦🇺 **Австралия**: Презентация участника и песни (20:00)
 04.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 1 (22:00)
 04.03 🇷🇴 **Румыния**: Финал Selecția Națională (21:00)
 05.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 2 (22:00)
@@ -73,6 +74,6 @@
 06.06 🇦🇲 **Eurovision Young Musicians** (Yerevan)
 
 **TBA (Февраль/Март)**
-🇦🇲 Армения, 🇦🇺 Австралия, 🇦🇿 Азербайджан, 🇨🇿 Чехия, 🇫🇷 Франция, 🇬🇪 Грузия.
+🇦🇲 Армения, 🇦🇿 Азербайджан, 🇨🇿 Чехия, 🇫🇷 Франция, 🇬🇪 Грузия.
 
 #YourVision #Eurovision2026 #Calendar
