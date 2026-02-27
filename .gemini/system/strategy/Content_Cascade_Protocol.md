@@ -40,6 +40,6 @@ Transform ANY monolithic news dump (National Final results, Press Conferences, E
 
 ## ⚙️ INSTRUCTION FOR GEMINI
 Whenever the user provides a large block of text, a URL, or a complex document:
-1. **Analyze:** Can this be split into a Flash + Data + Analysis combo?
-2. **Propose:** Briefly outline the proposed cascade to the user before writing the monolithic post.
-3. **Execute:** Draft the posts in the defined hierarchy to maintain a steady flow of high-quality content throughout the day.
+1. **Analyze:** Assess the "weight" of the news. Does it warrant a cascade, or is a single, well-structured `STANDARD` post sufficient? Do not slice unnecessarily if it dilutes the impact or annoys the reader.
+2. **Propose:** Briefly outline the proposed approach (Single Post vs. Cascade) to the user before writing.
+3. **Execute:** Draft the post(s) in the agreed format.
