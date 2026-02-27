@@ -12,23 +12,22 @@ Transform ANY monolithic news dump (National Final results, Press Conferences, E
 *   **Application:**
     *   *Results:* "Country X chose Artist Y."
     *   *Rules:* "EBU drops jury from semi-finals."
-    *   *Lineups:* "Superstar Z returns to Melodifestivalen."
 
 ### 2. THE AUTOPSY / DATA (Format: 📊 Standard / Snap | Grade: B or S)
 *   **Timing:** T+20 to 60 mins.
 *   **Goal:** Provide the full picture for the core fandom.
 *   **Application:**
     *   *Results:* Full scoreboard and voting percentages.
-    *   *Rules:* Detailed breakdown of how the new system works.
     *   *Lineups:* Full list of 30 participants / running order.
 
-### 3. THE VERDICT (Format: 🗳️ Poll / Snap | Grade: S)
-*   **Timing:** T+2 to 4 hours.
+### 3. THE VERDICT / POLLS (Format: 🗳️ Poll / Snap | Grade: S)
+*   **Timing:** T+1 to 2 hours (or alongside the main post if not using a cascade).
 *   **Goal:** Drive community engagement and comments.
-*   **Application:**
-    *   *Results:* "Did the right song win?"
-    *   *Rules:* "Do you support the new EBU voting system?"
-    *   *Lineups:* "Which semi-final looks the strongest?"
+*   **Mandatory Poll Triggers:**
+    1.  **Song/Artist Reveal:** Always ask the audience for their initial rating (e.g., "Winner vibes", "Finalist", "NQ", "Need time").
+    2.  **Super Saturday / Live Shows:** Always ask for expectations before the show ("Who are you watching?").
+    3.  **Controversial Rules/Results:** Ask if the audience agrees with the outcome.
+*   **Execution:** When generating a post that meets these triggers, ALWAYS propose/generate the poll text alongside the main post draft.
 
 ### 4. THE DEEP DIVE (Format: 🧠 Deep Dive | Grade: A)
 *   **Timing:** T+12 hours / Next Day.
