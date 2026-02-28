@@ -1,0 +1,86 @@
+{
+  "timezone": "UTC+3",
+  "optimal_windows": {
+    "monday": {
+      "peak_start": "19:00",
+      "peak_end": "21:00",
+      "optimal_post": "18:30"
+    },
+    "tuesday": {
+      "peak_start": "20:00",
+      "peak_end": "22:00",
+      "optimal_post": "19:30"
+    },
+    "wednesday": {
+      "peak_start": "20:00",
+      "peak_end": "22:00",
+      "optimal_post": "19:30"
+    },
+    "thursday": {
+      "peak_start": "19:00",
+      "peak_end": "21:00",
+      "optimal_post": "18:30"
+    },
+    "friday": {
+      "peak_start": "18:00",
+      "peak_end": "20:00",
+      "optimal_post": "17:30"
+    },
+    "saturday": {
+      "morning": {
+        "peak_start": "12:00",
+        "peak_end": "14:00",
+        "optimal_post": "11:30"
+      },
+      "evening": {
+        "peak_start": "20:00",
+        "peak_end": "23:00",
+        "optimal_post": "20:00"
+      }
+    },
+    "sunday": {
+      "peak_start": "20:00",
+      "peak_end": "22:00",
+      "optimal_post": "19:30"
+    }
+  },
+
+  "blackout_periods": [
+    {
+      "start": "01:00",
+      "end": "06:00",
+      "exception": "live_events"
+    }
+  ],
+
+  "wave_protocol": {
+    "wave_1": {
+      "offset_minutes": 0,
+      "content": ["flash", "poll"],
+      "description": "Молния + Опрос"
+    },
+    "wave_2": {
+      "offset_minutes": 15,
+      "content": ["snap", "data"],
+      "description": "Полные результаты"
+    },
+    "wave_3": {
+      "offset_minutes": 60,
+      "content": ["standard", "deep_dive"],
+      "description": "Аналитика"
+    },
+    "wave_4": {
+      "offset_minutes": 180,
+      "content": ["reactions"],
+      "description": "Реакции (опционально)"
+    }
+  },
+
+  "special_events": {
+    "live_coverage": {
+      "pre_show": -60,
+      "during_show": "real_time",
+      "post_show": [5, 15, 60]
+    }
+  }
+}

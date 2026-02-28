@@ -1,138 +1,294 @@
-import sys
-import os
-import re
+#!/usr/bin/env python3
+"""
+YourVision Publish Tool
+Скрипт валидации и публикации постов
+Версия: 2.5
 
-# YOURVISION 2.0 TIER-1 LIMITS
-LIMITS = {
-    'Q': (100, 300),    # QUOTE
-    'S': (301, 500),    # SNAP
-    'F': (501, 1000),   # FLASH / NEWS WIRE (Expanded)
-    'B': (701, 1300),   # BRIEF (Expanded)
-    'N': (1001, 1500),  # NOTE / VISUAL EXP
-    'C': (1301, 2000),  # COLUMN / DATA & CHARTS
-    'A': (1801, 3500),  # ANALYTICS / DEEP DIVE (Expanded for Longreads)
-    'R': (2401, 4000),  # REPORT / INVESTIGATION
-    'E': (3001, 5000),  # ESSAY
-    'M': (4001, 8000)   # MONOGRAPH
+Запуск: python3 publish_tool.py [путь_к_файлу]
+"""
+
+import sys
+import re
+import json
+from datetime import datetime
+from pathlib import Path
+from typing import Dict, List, Tuple, Optional
+
+
+# Границы грейдов по количеству знаков
+GRADE_LIMITS = {
+    "Q": (100, 300),
+    "S": (301, 500),
+    "F": (501, 1000),
+    "B": (1001, 1300),
+    "C": (1301, 1800),
+    "A": (1801, 2400),
 }
 
-def publish(file_path):
-    if not os.path.exists(file_path): return "ERROR: File not found."
-    with open(file_path, 'r', encoding='utf-8') as f: content = f.read()
+# Запрещённые слова
+FORBIDDEN_WORDS = [
+    "невероятный", "потрясающий", "ошеломительный", "долгожданный",
+    "невероятная", "потрясающая", "ошеломительная",
+    "невероятное", "потрясающее", "ошеломительное",
+]
 
-    # 1. Санитайзинг (Типографика)
-    content = content.replace("—", "-").replace("–", "-")
-    
-    # 2. Метаданные из поста
-    time_match = re.search(r"Время:?\s*(\d{2}:\d{2})", content)
-    date_match = re.search(r"Дата:?\s*(\d{2}\.\d{2}\.\d{4})", content)
-    channel_match = re.search(r"Канал:?\s*(AC|NB|SW|YV)", content)
-    grade_match = re.search(r"Grade:?\s*([QSFBNCAREM]{1,2})", content)
-    
-    if not all([time_match, date_match, channel_match, grade_match]):
-        # Fallback для старых форматов
-        return f"ERROR: Missing Metadata. Time={bool(time_match)}, Date={bool(date_match)}, Channel={bool(channel_match)}, Grade={bool(grade_match)}"
+# Запрещённая пунктуация
+FORBIDDEN_PUNCTUATION = [
+    ("—", "длинное тире"),
+    ("–", "среднее тире"),
+]
 
-    post_time = time_match.group(1)
-    post_date_full = date_match.group(1)
-    post_date_short = post_date_full[:5] # DD.MM
-    channel = channel_match.group(1)
-    grade = grade_match.group(1)
 
-    # 3. Объем (Умный подсчет)
-    # Считаем только текст между заголовком и промптом/системной инфой
-    try:
-        # Ищем начало текста (после статуса или заголовка)
-        start_marker = "СТАТУС: ГОТОВ"
-        end_marker_1 = "**PROMPT:**"
-        end_marker_2 = "---"
-        
-        if start_marker in content:
-            body = content.split(start_marker)[1]
-        else:
-            body = content # Fallback
+class PostValidator:
+    """Валидатор постов YourVision"""
 
-        # Обрезаем хвосты
-        if end_marker_1 in body:
-            body = body.split(end_marker_1)[0]
-        elif end_marker_2 in body: # Если промпта нет, ищем разделитель
-             body = body.split(end_marker_2)[0]
-        
-        count = len(body.strip())
-    except Exception as e:
-        return f"ERROR: Content parsing failed. {str(e)}"
+    def __init__(self, filepath: str):
+        self.filepath = Path(filepath)
+        self.content = ""
+        self.metadata = {}
+        self.body = ""
+        self.errors = []
+        self.warnings = []
 
-    low, high = LIMITS.get(grade, (0, 9999))
-    
-    # Soft Validation (Предупреждение вместо блока для пограничных значений)
-    validation_msg = ""
-    if count < low:
-        # Allow 10% deviation downwards
-        if count >= low * 0.9:
-            validation_msg = f"WARNING: Grade {grade} low ({count}/{low}). Allowed."
-        else:
-            return f"REJECTED: Grade {grade} underflow ({count} chars). Min: {low}"
-    elif count > high:
-        # Allow 10% deviation upwards
-        if count <= high * 1.1:
-             validation_msg = f"WARNING: Grade {grade} high ({count}/{high}). Allowed."
-        else:
-            return f"REJECTED: Grade {grade} overflow ({count} chars). Max: {high}"
+    def load(self) -> bool:
+        """Загрузка файла"""
+        if not self.filepath.exists():
+            self.errors.append(f"Файл не найден: {self.filepath}")
+            return False
 
-    # 4. Сохранение (Перезапись с исправленной типографикой)
-    with open(file_path, 'w', encoding='utf-8') as f: f.write(content)
+        with open(self.filepath, 'r', encoding='utf-8') as f:
+            self.content = f.read()
 
-    # 5. СИНХРОНИЗАЦИЯ ПЛАНОВ (Recursive Global Sync)
-    sync_report = []
-    timeline_dir = ".gemini/TIMELINE"
-    
-    # Стратегия: Ищем совпадение Time + Channel в любом файле плана
-    # Игнорируем дату, если это мастер-план (там даты в заголовках)
-    
-    for root, dirs, files in os.walk(timeline_dir):
-        for file in files:
-            if file.endswith(".md"):
-                p = os.path.join(root, file)
-                with open(p, 'r', encoding='utf-8') as f: lines = f.readlines()
-                
-                new_lines = []
-                modified = False
-                current_section_date = None
-                
-                for l in lines:
-                    # Попытка определить дату секции в мастер-плане
-                    section_match = re.search(r"### (\d{2}\.\d{2})", l)
-                    if section_match:
-                        current_section_date = section_match.group(1)
+        return True
 
-                    # Логика совпадения
-                    if post_time in l and f"**{channel}**" in l:
-                        is_target = False
-                        
-                        # 1. Это дневной план и дата в имени файла совпадает
-                        if f"daily_plan_{post_date_short}.md" in file:
-                            is_target = True
-                        
-                        # 2. Это мастер-план и мы внутри правильной секции
-                        elif "master_plans" in p and current_section_date == post_date_short:
-                            is_target = True
-                            
-                        # 3. Это Recovery Plan (без даты) - берем всё
-                        elif "recovery" in file:
-                            is_target = True
+    def parse(self) -> bool:
+        """Парсинг метаданных и тела"""
+        lines = self.content.split('\n')
 
-                        if is_target and any(x in l for x in ["⬜", "🔴"]):
-                            l = re.sub(r"[- ]*[🔴⬜]\s*\[(ДОЛГ|ОЖИДАНИЕ|FLEX SLOT.*)\]", " - ✅ [ГОТОВО]", l)
-                            modified = True
-                            
-                    new_lines.append(l)
-                
-                if modified:
-                    with open(p, 'w', encoding='utf-8') as f: f.writelines(new_lines)
-                    sync_report.append(os.path.basename(p))
+        # Парсинг системного заголовка
+        for line in lines[:10]:
+            if line.startswith("//"):
+                key_match = re.match(r'//\s*(\w+[^:]*):\s*(.+)', line)
+                if key_match:
+                    key = key_match.group(1).strip()
+                    value = key_match.group(2).strip()
+                    self.metadata[key] = value
 
-    return f"SUCCESS: Published. Sync: {', '.join(sync_report)} | {count} chars (Net). {validation_msg}"
+        # Поиск тела (после последней строки с //)
+        body_start = 0
+        for i, line in enumerate(lines):
+            if line.startswith("//"):
+                body_start = i + 1
+
+        self.body = '\n'.join(lines[body_start:])
+
+        # Удаление метрик футера для подсчёта
+        self.body_clean = re.sub(r'---\n`⏱.*?`', '', self.body)
+        self.body_clean = re.sub(r'\*\*\*.*', '', self.body_clean, flags=re.DOTALL)
+
+        return True
+
+    def validate_all(self) -> Dict:
+        """Полная валидация"""
+        results = {
+            "valid": True,
+            "errors": [],
+            "warnings": [],
+            "metadata": self.metadata,
+            "stats": {},
+        }
+
+        # 1. Проверка системного заголовка
+        header_valid = self._validate_header()
+        if not header_valid:
+            results["valid"] = False
+
+        # 2. Проверка грейда
+        grade_valid, grade_info = self._validate_grade()
+        if not grade_valid:
+            results["valid"] = False
+        results["stats"]["grade"] = grade_info
+
+        # 3. Проверка запрещённых слов
+        words_valid, words_found = self._validate_words()
+        if not words_valid:
+            results["warnings"].extend(words_found)
+
+        # 4. Проверка пунктуации
+        punct_valid, punct_errors = self._validate_punctuation()
+        if not punct_valid:
+            results["errors"].extend(punct_errors)
+            results["valid"] = False
+
+        # 5. Проверка структуры
+        struct_valid, struct_errors = self._validate_structure()
+        if not struct_valid:
+            results["warnings"].extend(struct_errors)
+
+        # 6. Статистика
+        results["stats"]["char_count"] = len(self.body_clean)
+        results["stats"]["word_count"] = len(self.body_clean.split())
+
+        results["errors"].extend(self.errors)
+        results["warnings"].extend(self.warnings)
+
+        return results
+
+    def _validate_header(self) -> bool:
+        """Проверка системного заголовка"""
+        required_fields = ["ИД-ПОСТА", "ТЕМА", "ДАТА ПУБЛИКАЦИИ", "СТАТУС"]
+        missing = []
+
+        for field in required_fields:
+            if field not in self.metadata:
+                missing.append(field)
+
+        if missing:
+            self.errors.append(f"Отсутствуют поля заголовка: {', '.join(missing)}")
+            return False
+
+        return True
+
+    def _validate_grade(self) -> Tuple[bool, Dict]:
+        """Проверка соответствия грейда"""
+        grade_info = {}
+
+        # Поиск грейда в файле
+        grade_match = re.search(r'\*\*Grade:\*\*\s*(\w)', self.content)
+        if not grade_match:
+            self.errors.append("Grade не указан в футере")
+            return False, grade_info
+
+        stated_grade = grade_match.group(1)
+        char_count = len(self.body_clean)
+
+        grade_info["stated"] = stated_grade
+        grade_info["char_count"] = char_count
+
+        # Проверка соответствия
+        if stated_grade not in GRADE_LIMITS:
+            self.errors.append(f"Неизвестный грейд: {stated_grade}")
+            return False, grade_info
+
+        min_len, max_len = GRADE_LIMITS[stated_grade]
+        grade_info["expected_range"] = f"{min_len}-{max_len}"
+
+        if min_len <= char_count <= max_len:
+            grade_info["match"] = True
+            return True, grade_info
+
+        # Предлагаем правильный грейд
+        for g, (mn, mx) in GRADE_LIMITS.items():
+            if mn <= char_count <= mx:
+                grade_info["suggested_grade"] = g
+                break
+
+        self.errors.append(
+            f"REJECTED: {char_count} chars doesn't match Grade {stated_grade} ({min_len}-{max_len}). "
+            f"Suggested: Grade {grade_info.get('suggested_grade', '?')}"
+        )
+        return False, grade_info
+
+    def _validate_words(self) -> Tuple[bool, List[str]]:
+        """Проверка на запрещённые слова"""
+        found = []
+        content_lower = self.content.lower()
+
+        for word in FORBIDDEN_WORDS:
+            if word in content_lower:
+                found.append(f"Запрещённое слово: «{word}»")
+
+        return len(found) == 0, found
+
+    def _validate_punctuation(self) -> Tuple[bool, List[str]]:
+        """Проверка пунктуации"""
+        errors = []
+
+        for char, name in FORBIDDEN_PUNCTUATION:
+            if char in self.content:
+                # Подсчёт вхождений
+                count = self.content.count(char)
+                errors.append(f"Запрещено {name} ({char}): найдено {count} вхождений. Используйте дефис (-)")
+
+        return len(errors) == 0, errors
+
+    def _validate_structure(self) -> Tuple[bool, List[str]]:
+        """Проверка структуры поста"""
+        warnings = []
+
+        # Проверка футера
+        if "⏱ Время чтения:" not in self.content:
+            warnings.append("Отсутствует метрика времени чтения в футере")
+
+        if "***" not in self.content:
+            warnings.append("Отсутствует разделитель *** в футере")
+
+        # Проверка промпта (только для не-POLL постов)
+        if "POLL" not in self.metadata.get("ПРОТОКОЛЫ", ""):
+            if "**Prompt:**" not in self.content:
+                warnings.append("Отсутствует промпт для Midjourney")
+
+        return True, warnings
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("Использование: python3 publish_tool.py [путь_к_файлу]")
+        sys.exit(1)
+
+    filepath = sys.argv[1]
+    validator = PostValidator(filepath)
+
+    # Загрузка и парсинг
+    if not validator.load():
+        print(f"❌ ОШИБКА: Файл не найден")
+        sys.exit(1)
+
+    validator.parse()
+
+    # Валидация
+    results = validator.validate_all()
+
+    # Вывод результатов
+    print("\n" + "=" * 60)
+    print("📋 ВАЛИДАЦИЯ ПОСТА")
+    print("=" * 60)
+    print(f"📄 Файл: {filepath}")
+    print(f"📊 Символов: {results['stats']['char_count']}")
+    print(f"📝 Слов: {results['stats']['word_count']}")
+
+    if results["stats"]["grade"]:
+        grade = results["stats"]["grade"]
+        print(f"📏 Grade: {grade['stated']} (диапазон: {grade.get('expected_range', '?')})")
+        if grade.get("suggested_grade"):
+            print(f"   💡 Рекомендуемый: Grade {grade['suggested_grade']}")
+
+    print("=" * 60)
+
+    if results["valid"]:
+        print("\n✅ СТАТУС: VALIDATED")
+        print("   Пост готов к публикации")
+
+        # Команда для Git
+        print("\n📌 Следующий шаг:")
+        print("   git add . && git commit -m \"feat: post published\" && git push")
+    else:
+        print("\n❌ СТАТУС: REJECTED")
+        print("   Требуются исправления:")
+
+        for error in results["errors"]:
+            print(f"   🔴 {error}")
+
+    if results["warnings"]:
+        print("\n⚠️ ПРЕДУПРЕЖДЕНИЯ:")
+        for warning in results["warnings"]:
+            print(f"   🟡 {warning}")
+
+    print("=" * 60 + "\n")
+
+    # Код возврата
+    sys.exit(0 if results["valid"] else 1)
+
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        print(publish(sys.argv[1]))
+    main()
