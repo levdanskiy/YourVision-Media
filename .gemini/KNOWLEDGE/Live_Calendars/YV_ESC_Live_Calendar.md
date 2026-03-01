@@ -44,6 +44,7 @@
 07.03 🇵🇹 **Португалия**: Финал Festival da Canção (23:00)
 07.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 1 (21:30)
 07-08.03 🇳🇱 Нидерланды (JESC): Second phase of auditions for Junior Songfestival
+08.03 🇨🇿 **Чехия**: Презентация участника и песни (TBA)
 09.03 🏆 **DEADLINE** for participating broadcasters to submit their entry
 11.03 🇨🇭 **Швейцария**: Релиз песни Veronica Fusaro
 14.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 2 (21:30)
@@ -74,6 +75,6 @@
 06.06 🇦🇲 **Eurovision Young Musicians** (Yerevan)
 
 **TBA (Февраль/Март)**
-🇦🇲 Армения, 🇦🇿 Азербайджан, 🇨🇿 Чехия, 🇫🇷 Франция, 🇬🇪 Грузия.
+🇦🇲 Армения, 🇦🇿 Азербайджан, 🇫🇷 Франция, 🇬🇪 Грузия.
 
 #YourVision #Eurovision2026 #Calendar

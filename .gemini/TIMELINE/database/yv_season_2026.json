@@ -180,6 +180,17 @@
       "type": "FINAL",
       "status": "CONFIRMED",
       "link": "https://rts.rs"
+    },
+    {
+      "id": "EVT017",
+      "date": "2026-03-08",
+      "time": "TBA",
+      "country": "CZ",
+      "country_name": "Чехия",
+      "event": "Презентация участника и песни",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": "https://ceskatelevize.cz"
     }
   ],
 

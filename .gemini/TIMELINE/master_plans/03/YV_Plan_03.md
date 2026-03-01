@@ -7,6 +7,9 @@
 ### 03.03 (Вт) — CHART DAY
 * 12:00 | **YV** | 📊 **#CHART_RELEASE:** RuTop Modern Love 2018-2025. - ⬜ [ОЖИДАНИЕ]
 
+### 08.03 (Вс) — CZECHIA REVEAL
+* TBA | **YV** | ⚡ **#NEWS_WIRE:** Чехия. Презентация участника и песни. - ⬜ [ОЖИДАНИЕ]
+
 ### 10.03 (Вт) — CHART DAY
 * 12:00 | **YV** | 📊 **#CHART_RELEASE:** AllMix Women Power. - ⬜ [ОЖИДАНИЕ]
 
