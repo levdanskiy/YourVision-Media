@@ -23,11 +23,11 @@ Transform ANY monolithic news dump (National Final results, Press Conferences, E
 ### 3. THE VERDICT / POLLS (Format: 🗳️ Poll / Snap | Grade: S)
 *   **Timing:** T+1 to 2 hours (or alongside the main post if not using a cascade).
 *   **Goal:** Drive community engagement and comments.
-*   **Mandatory Poll Triggers:**
-    1.  **Song/Artist Reveal:** Always ask the audience for their initial rating (e.g., "Winner vibes", "Finalist", "NQ", "Need time").
-    2.  **Super Saturday / Live Shows:** Always ask for expectations before the show ("Who are you watching?").
+*   **Strategic Poll Triggers (Avoid Spam):**
+    1.  **Song/Artist Reveal:** Ask the audience for their initial rating.
+    2.  **Super Saturday / Live Shows:** Ask for expectations before the show.
     3.  **Controversial Rules/Results:** Ask if the audience agrees with the outcome.
-*   **Execution:** When generating a post that meets these triggers, ALWAYS propose/generate the poll text alongside the main post draft.
+*   **Execution:** AI autonomously decides if an event is significant enough for a poll. Do NOT propose polls for routine news (e.g., filming announcements, minor scheduling updates).
 
 ### 4. THE DEEP DIVE (Format: 🧠 Deep Dive | Grade: A)
 *   **Timing:** T+12 hours / Next Day.
