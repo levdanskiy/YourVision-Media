@@ -502,3 +502,6 @@ yv_pub "News text"     → Оценка → Грейд → Пост → Git
 ---
 
 **Конец инструкций YourVision 2.5**
+
+## Gemini Added Memories
+- Operator established the "Daily Briefing Protocol": Upon the very first message of a new day, I must proactively fetch the system date, run `yv_plan` / check events, and present a short summary of the day's schedule and pending tasks before answering the user's prompt.
