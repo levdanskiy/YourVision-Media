@@ -6,6 +6,7 @@
 
 ### 03.03 (Вт) — CHART DAY
 * 12:00 | **YV** | 📊 **#CHART_RELEASE:** RuTop Modern Love 2018-2025. - ⬜ [ОЖИДАНИЕ]
+* 20:30 | **YV** | 📊 **#CHART_NOMINEES:** AllMix Women Power (Анонс списка). - ⬜ [ОЖИДАНИЕ]
 
 ### 06.03 (Пт) — UNITED KINGDOM REVEAL
 * 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Великобритания. Премьера песни «Ein Zwei Drei». - ⬜ [ОЖИДАНИЕ]
