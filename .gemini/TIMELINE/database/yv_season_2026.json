@@ -191,6 +191,17 @@
       "type": "RELEASE",
       "status": "CONFIRMED",
       "link": "https://ceskatelevize.cz"
+    },
+    {
+      "id": "EVT018",
+      "date": "2026-03-06",
+      "time": "10:00",
+      "country": "GB",
+      "country_name": "Великобритания",
+      "event": "Премьера песни «Ein Zwei Drei»",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": "https://www.bbc.co.uk/eurovision"
     }
   ],
 

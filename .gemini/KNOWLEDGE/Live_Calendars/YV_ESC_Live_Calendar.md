@@ -38,6 +38,7 @@
 04.03 🇷🇴 **Румыния**: Финал Selecția Națională (21:00)
 05.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 2 (22:00)
 05.03 🇮🇱 **Израиль**: Релиз песни Noam Bettan
+06.03 🇬🇧 **Великобритания**: Премьера песни «Ein Zwei Drei» (10:00)
 06.03 🇸🇲 **Сан-Марино**: Финал San Marino Song Contest (22:00)
 07.03 🇵🇱 **Польша**: Wielki Finał Polskich Kwalifikacji (18:35)
 07.03 🇸🇪 **Швеция**: Финал Melodifestivalen (21:00)
