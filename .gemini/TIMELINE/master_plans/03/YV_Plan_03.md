@@ -5,8 +5,8 @@
 * 20:00 | **YV** | ⚡ **#NEWS_WIRE:** Австралия. Презентация участника и песни. - ✅ [ГОТОВО]
 
 ### 03.03 (Вт) — CHART DAY: RUTOP + ALLMIX ANNOUNCEMENT
-* 12:00 | **YV** | 📊 **#CHART_RELEASE:** RuTop Modern Love 2018-2025. - ⬜ [ОЖИДАНИЕ]
 * 17:50 | **YV** | ⏳ **#CHART_REMINDER:** Голосование закрыто (Эфир в 18:00). - ✅ [ГОТОВО]
+* 19:20 | **YV** | 📊 **#RUTOP_RESULTS:** Итоги чарта RuTop Modern Love. - ✅ [ГОТОВО]
 * 20:30 | **YV** | 📊 **#CHART_NOMINEES:** AllMix Women Power (Анонс списка). - ✅ [ГОТОВО]
 
 ### 06.03 (Пт) — UNITED KINGDOM REVEAL
