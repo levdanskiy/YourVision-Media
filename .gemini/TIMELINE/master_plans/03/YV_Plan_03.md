@@ -11,9 +11,11 @@
 
 ### 06.03 (Пт) — UNITED KINGDOM REVEAL
 * 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Великобритания. Премьера песни «Ein Zwei Drei». - ⬜ [ОЖИДАНИЕ]
+* 18:00 | **YV** | ⏳ **#VOTING_REMINDER:** AllMix Women Power (Экватор). - ✅ [ГОТОВО]
 
 ### 08.03 (Вс) — CZECHIA REVEAL
 * TBA | **YV** | ⚡ **#NEWS_WIRE:** Чехия. Презентация участника и песни. - ⬜ [ОЖИДАНИЕ]
+* 20:00 | **YV** | ⏳ **#VOTING_REMINDER:** AllMix Women Power (Финальный отсчет). - ✅ [ГОТОВО]
 
 ### 10.03 (Вт) — CHART DAY: ALLMIX WOMEN POWER
 * 12:00 | **YV** | 🗳️ **#VOTING_CLOSE:** AllMix Women Power. - ⬜ [ОЖИДАНИЕ]
