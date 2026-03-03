@@ -9,6 +9,10 @@
 * 19:20 | **YV** | 📊 **#RUTOP_RESULTS:** Итоги чарта RuTop Modern Love. - ✅ [ГОТОВО]
 * 20:30 | **YV** | 📊 **#CHART_NOMINEES:** AllMix Women Power (Анонс списка). - ✅ [ГОТОВО]
 
+### 04.03 (Ср) — SPRING PHASE 0 START
+* 15:00 | **YV** | 🎯 **#MINI_RATE:** Оценка песен (Италия, Украина, Финляндия). - ⬜ [ОЖИДАНИЕ]
+* 22:00 | **YV** | ⚡ **#NEWS_WIRE:** Сан-Марино. Первый полуфинал. - ⬜ [ОЖИДАНИЕ]
+
 ### 06.03 (Пт) — UNITED KINGDOM REVEAL
 * 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Великобритания. Премьера песни «Ein Zwei Drei». - ⬜ [ОЖИДАНИЕ]
 * 18:00 | **YV** | ⏳ **#VOTING_REMINDER:** AllMix Women Power (Экватор). - ✅ [ГОТОВО]
