@@ -218,7 +218,10 @@
         "night_4": "2026-02-10",
         "final": "2026-02-11"
       },
-      "winner": null,
+      "winner": {
+        "artist": "Sal Da Vinci",
+        "song": "Per sempre sì"
+      },
       "participants": []
     },
     "benidorm_fest": {
@@ -255,7 +258,10 @@
       "dates": {
         "final": "2026-02-22"
       },
-      "winner": null,
+      "winner": {
+        "artist": "Leléka",
+        "song": "Ridnym"
+      },
       "participants": []
     },
     "pesma_za_eurovision": {
@@ -267,6 +273,19 @@
         "final": "2026-02-28"
       },
       "winner": null,
+      "participants": []
+    },
+    "umk": {
+      "country": "FI",
+      "country_name": "Финляндия",
+      "flag": "🇫🇮",
+      "dates": {
+        "final": "2026-02-28"
+      },
+      "winner": {
+        "artist": "Linda Lampenius & Pete Parkkonen",
+        "song": "Liekinheitin"
+      },
       "participants": []
     }
   },
