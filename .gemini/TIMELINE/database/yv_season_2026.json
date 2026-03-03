@@ -3,7 +3,6 @@
   "version": "2.5",
   "updated": "2026-02-01",
   "timezone": "Europe/Riga",
-
   "events": [
     {
       "id": "EVT001",
@@ -204,7 +203,6 @@
       "link": "https://www.bbc.co.uk/eurovision"
     }
   ],
-
   "national_selections": {
     "sanremo": {
       "country": "IT",
@@ -292,7 +290,6 @@
       "participants": []
     }
   },
-
   "eurovision": {
     "host_city": "Basel",
     "host_country": "CH",
@@ -303,7 +300,6 @@
       "final": "2026-05-16"
     }
   },
-
   "charts": {
     "RuTop": {
       "frequency": "weekly",
@@ -328,26 +324,280 @@
       "release_time": "12:00"
     }
   },
-
   "winners": {
-    "MT": {"country_name": "Мальта", "artist": "Aidan", "song": "Bella"},
-    "MD": {"country_name": "Молдова", "artist": "Satoshi", "song": "Viva, Moldova"},
-    "BG": {"country_name": "Болгария", "artist": "Dara", "song": "Bangaranga"},
-    "NO": {"country_name": "Норвегия", "artist": "Jonas Lovv", "song": "Ya ya ya"},
-    "EE": {"country_name": "Эстония", "artist": "Vanilla Ninja", "song": "Too Epic To Be True"},
-    "LV": {"country_name": "Латвия", "artist": "Atvara", "song": "Ēnā"},
-    "DK": {"country_name": "Дания", "artist": "Søren Torpegaard Lund", "song": "Før vi går hjem"},
-    "HR": {"country_name": "Хорватия", "artist": "Lelek", "song": "Andromeda"},
-    "GR": {"country_name": "Греция", "artist": "Akylas", "song": "Ferto"},
-    "LU": {"country_name": "Люксембург", "artist": "Eva Marija", "song": "Mother Nature"},
-    "LT": {"country_name": "Литва", "artist": "Lion Ceccah", "song": "Sólo quiero más"},
-    "DE": {"country_name": "Германия", "artist": "Sarah Engels", "song": "Fire"},
-    "AT": {"country_name": "Австрия", "artist": "Cosmó", "song": "Tanzschein"},
-    "IT": {"country_name": "Италия", "artist": "Sal Da Vinci", "song": "Per sempre sì"},
-    "UA": {"country_name": "Украина", "artist": "Leléka", "song": "Ridnym"},
-    "FI": {"country_name": "Финляндия", "artist": "Linda Lampenius & Pete Parkkonen", "song": "Liekinheitin"},
-    "RS": {"country_name": "Сербия", "artist": "Lavina", "song": "Kraj mene"}
+    "MT": {
+      "country_name": "Мальта",
+      "artist": "Aidan",
+      "song": "Bella"
+    },
+    "MD": {
+      "country_name": "Молдова",
+      "artist": "Satoshi",
+      "song": "Viva, Moldova"
+    },
+    "BG": {
+      "country_name": "Болгария",
+      "artist": "Dara",
+      "song": "Bangaranga"
+    },
+    "NO": {
+      "country_name": "Норвегия",
+      "artist": "Jonas Lovv",
+      "song": "Ya ya ya"
+    },
+    "EE": {
+      "country_name": "Эстония",
+      "artist": "Vanilla Ninja",
+      "song": "Too Epic To Be True"
+    },
+    "LV": {
+      "country_name": "Латвия",
+      "artist": "Atvara",
+      "song": "Ēnā"
+    },
+    "DK": {
+      "country_name": "Дания",
+      "artist": "Søren Torpegaard Lund",
+      "song": "Før vi går hjem"
+    },
+    "HR": {
+      "country_name": "Хорватия",
+      "artist": "Lelek",
+      "song": "Andromeda"
+    },
+    "GR": {
+      "country_name": "Греция",
+      "artist": "Akylas",
+      "song": "Ferto"
+    },
+    "LU": {
+      "country_name": "Люксембург",
+      "artist": "Eva Marija",
+      "song": "Mother Nature"
+    },
+    "LT": {
+      "country_name": "Литва",
+      "artist": "Lion Ceccah",
+      "song": "Sólo quiero más"
+    },
+    "DE": {
+      "country_name": "Германия",
+      "artist": "Sarah Engels",
+      "song": "Fire"
+    },
+    "AT": {
+      "country_name": "Австрия",
+      "artist": "Cosmó",
+      "song": "Tanzschein"
+    },
+    "IT": {
+      "country_name": "Италия",
+      "artist": "Sal Da Vinci",
+      "song": "Per sempre sì"
+    },
+    "UA": {
+      "country_name": "Украина",
+      "artist": "Leléka",
+      "song": "Ridnym"
+    },
+    "FI": {
+      "country_name": "Финляндия",
+      "artist": "Linda Lampenius & Pete Parkkonen",
+      "song": "Liekinheitin"
+    },
+    "RS": {
+      "country_name": "Сербия",
+      "artist": "Lavina",
+      "song": "Kraj mene"
+    }
   },
   "announced_artists": [],
-  "released_songs": []
+  "released_songs": [],
+  "countries": {
+    "MT": {
+      "name": "Мальта",
+      "artist": "Aidan",
+      "song": "Bella"
+    },
+    "MD": {
+      "name": "Молдова",
+      "artist": "Satoshi",
+      "song": "Viva, Moldova"
+    },
+    "BG": {
+      "name": "Болгария",
+      "artist": "Dara",
+      "song": "Bangaranga"
+    },
+    "NO": {
+      "name": "Норвегия",
+      "artist": "Jonas Lovv",
+      "song": "Ya ya ya"
+    },
+    "EE": {
+      "name": "Эстония",
+      "artist": "Vanilla Ninja",
+      "song": "Too Epic To Be True"
+    },
+    "LV": {
+      "name": "Латвия",
+      "artist": "Atvara",
+      "song": "Ēnā"
+    },
+    "DK": {
+      "name": "Дания",
+      "artist": "Søren Torpegaard Lund",
+      "song": "Før vi går hjem"
+    },
+    "HR": {
+      "name": "Хорватия",
+      "artist": "Lelek",
+      "song": "Andromeda"
+    },
+    "GR": {
+      "name": "Греция",
+      "artist": "Akylas",
+      "song": "Ferto"
+    },
+    "LU": {
+      "name": "Люксембург",
+      "artist": "Eva Marija",
+      "song": "Mother Nature"
+    },
+    "LT": {
+      "name": "Литва",
+      "artist": "Lion Ceccah",
+      "song": "Sólo quiero más"
+    },
+    "DE": {
+      "name": "Германия",
+      "artist": "Sarah Engels",
+      "song": "Fire"
+    },
+    "AT": {
+      "name": "Австрия",
+      "artist": "Cosmó",
+      "song": "Tanzschein"
+    },
+    "IT": {
+      "name": "Италия",
+      "artist": "Sal Da Vinci",
+      "song": "Per sempre sì"
+    },
+    "UA": {
+      "name": "Украина",
+      "artist": "Leléka",
+      "song": "Ridnym"
+    },
+    "FI": {
+      "name": "Финляндия",
+      "artist": "Linda Lampenius & Pete Parkkonen",
+      "song": "Liekinheitin"
+    },
+    "RS": {
+      "name": "Сербия",
+      "artist": "Lavina",
+      "song": "Kraj mene"
+    },
+    "GB": {
+      "name": "Великобритания",
+      "artist": "TBA",
+      "song": "Ein Zwei Drei",
+      "release_date": "06.03"
+    },
+    "IL": {
+      "name": "Израиль",
+      "artist": "Noam Bettan",
+      "song": "TBA",
+      "release_date": "05.03"
+    },
+    "CH": {
+      "name": "Швейцария",
+      "artist": "Veronica Fusaro",
+      "song": "TBA",
+      "release_date": "11.03"
+    },
+    "AU": {
+      "name": "Австралия",
+      "artist": "Delta Goodrem",
+      "song": "Eclipse",
+      "status": "Revealed"
+    },
+    "BE": {
+      "name": "Бельгия",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "SE": {
+      "name": "Швеция",
+      "artist": "TBA",
+      "song": "TBA",
+      "release_date": "07.03"
+    },
+    "PT": {
+      "name": "Португалия",
+      "artist": "TBA",
+      "song": "TBA",
+      "release_date": "07.03"
+    },
+    "SM": {
+      "name": "Сан-Марино",
+      "artist": "TBA",
+      "song": "TBA",
+      "release_date": "06.03"
+    },
+    "RO": {
+      "name": "Румыния",
+      "artist": "TBA",
+      "song": "TBA",
+      "release_date": "04.03"
+    },
+    "PL": {
+      "name": "Польша",
+      "artist": "TBA",
+      "song": "TBA",
+      "release_date": "07.03"
+    },
+    "CZ": {
+      "name": "Чехия",
+      "artist": "TBA",
+      "song": "TBA",
+      "release_date": "08.03"
+    },
+    "AM": {
+      "name": "Армения",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "AZ": {
+      "name": "Азербайджан",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "FR": {
+      "name": "Франция",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "GE": {
+      "name": "Грузия",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "ES": {
+      "name": "Испания",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "IE": {
+      "name": "Ирландия",
+      "artist": "TBA",
+      "song": "TBA"
+    },
+    "SI": {
+      "name": "Словения",
+      "artist": "TBA",
+      "song": "TBA"
+    }
+  }
 }
