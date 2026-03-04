@@ -291,9 +291,9 @@
     }
   },
   "eurovision": {
-    "host_city": "Basel",
-    "host_country": "CH",
-    "host_country_name": "Швейцария",
+    "host_city": "Vienna",
+    "host_country": "AT",
+    "host_country_name": "Австрия",
     "dates": {
       "semi_1": "2026-05-12",
       "semi_2": "2026-05-14",
@@ -327,13 +327,13 @@
   "winners": {
     "MT": {
       "country_name": "Мальта",
-      "artist": "Aidan",
+      "artist": "AIDAN",
       "song": "Bella"
     },
     "MD": {
       "country_name": "Молдова",
       "artist": "Satoshi",
-      "song": "Viva, Moldova"
+      "song": "Viva, Moldova!"
     },
     "BG": {
       "country_name": "Болгария",
@@ -342,8 +342,8 @@
     },
     "NO": {
       "country_name": "Норвегия",
-      "artist": "Jonas Lovv",
-      "song": "Ya ya ya"
+      "artist": "JONAS LOVV",
+      "song": "Ya Ya Ya"
     },
     "EE": {
       "country_name": "Эстония",
@@ -358,11 +358,11 @@
     "DK": {
       "country_name": "Дания",
       "artist": "Søren Torpegaard Lund",
-      "song": "Før vi går hjem"
+      "song": "Før Vi Går Hjem"
     },
     "HR": {
       "country_name": "Хорватия",
-      "artist": "Lelek",
+      "artist": "LELEK",
       "song": "Andromeda"
     },
     "GR": {
@@ -378,7 +378,7 @@
     "LT": {
       "country_name": "Литва",
       "artist": "Lion Ceccah",
-      "song": "Sólo quiero más"
+      "song": "Sólo Quiero Más"
     },
     "DE": {
       "country_name": "Германия",
@@ -387,8 +387,8 @@
     },
     "AT": {
       "country_name": "Австрия",
-      "artist": "Cosmó",
-      "song": "Tanzschein"
+      "artist": "COSMȮ",
+      "song": "TANZSCHEIN"
     },
     "IT": {
       "country_name": "Италия",
@@ -397,7 +397,7 @@
     },
     "UA": {
       "country_name": "Украина",
-      "artist": "Leléka",
+      "artist": "Lelėka",
       "song": "Ridnym"
     },
     "FI": {
@@ -409,6 +409,31 @@
       "country_name": "Сербия",
       "artist": "Lavina",
       "song": "Kraj mene"
+    },
+    "AL": {
+      "country_name": "Албания",
+      "artist": "Alis",
+      "song": "Nân"
+    },
+    "BE": {
+      "country_name": "Бельгия",
+      "artist": "Essyla",
+      "song": "Dancing on the ice"
+    },
+    "CY": {
+      "country_name": "Кипр",
+      "artist": "Antigoni",
+      "song": "JALLA"
+    },
+    "ME": {
+      "country_name": "Черногория",
+      "artist": "Tamara Živković",
+      "song": "Nova Zora"
+    },
+    "AU": {
+      "country_name": "Австралия",
+      "artist": "Delta Goodrem",
+      "song": "Eclipse"
     }
   },
   "announced_artists": [],
@@ -416,13 +441,13 @@
   "countries": {
     "MT": {
       "name": "Мальта",
-      "artist": "Aidan",
+      "artist": "AIDAN",
       "song": "Bella"
     },
     "MD": {
       "name": "Молдова",
       "artist": "Satoshi",
-      "song": "Viva, Moldova"
+      "song": "Viva, Moldova!"
     },
     "BG": {
       "name": "Болгария",
@@ -431,8 +456,8 @@
     },
     "NO": {
       "name": "Норвегия",
-      "artist": "Jonas Lovv",
-      "song": "Ya ya ya"
+      "artist": "JONAS LOVV",
+      "song": "Ya Ya Ya"
     },
     "EE": {
       "name": "Эстония",
@@ -447,11 +472,11 @@
     "DK": {
       "name": "Дания",
       "artist": "Søren Torpegaard Lund",
-      "song": "Før vi går hjem"
+      "song": "Før Vi Går Hjem"
     },
     "HR": {
       "name": "Хорватия",
-      "artist": "Lelek",
+      "artist": "LELEK",
       "song": "Andromeda"
     },
     "GR": {
@@ -467,7 +492,7 @@
     "LT": {
       "name": "Литва",
       "artist": "Lion Ceccah",
-      "song": "Sólo quiero más"
+      "song": "Sólo Quiero Más"
     },
     "DE": {
       "name": "Германия",
@@ -476,8 +501,8 @@
     },
     "AT": {
       "name": "Австрия",
-      "artist": "Cosmó",
-      "song": "Tanzschein"
+      "artist": "COSMȮ",
+      "song": "TANZSCHEIN"
     },
     "IT": {
       "name": "Италия",
@@ -486,7 +511,7 @@
     },
     "UA": {
       "name": "Украина",
-      "artist": "Leléka",
+      "artist": "Lelėka",
       "song": "Ridnym"
     },
     "FI": {
@@ -525,8 +550,8 @@
     },
     "BE": {
       "name": "Бельгия",
-      "artist": "TBA",
-      "song": "TBA"
+      "artist": "Essyla",
+      "song": "Dancing on the ice"
     },
     "SE": {
       "name": "Швеция",
@@ -581,23 +606,23 @@
     },
     "GE": {
       "name": "Грузия",
-      "artist": "TBA",
+      "artist": "Bzikebi",
       "song": "TBA"
     },
-    "ES": {
-      "name": "Испания",
-      "artist": "TBA",
-      "song": "TBA"
+    "AL": {
+      "name": "Албания",
+      "artist": "Alis",
+      "song": "Nân"
     },
-    "IE": {
-      "name": "Ирландия",
-      "artist": "TBA",
-      "song": "TBA"
+    "CY": {
+      "name": "Кипр",
+      "artist": "Antigoni",
+      "song": "JALLA"
     },
-    "SI": {
-      "name": "Словения",
-      "artist": "TBA",
-      "song": "TBA"
+    "ME": {
+      "name": "Черногория",
+      "artist": "Tamara Živković",
+      "song": "Nova Zora"
     }
   }
 }
