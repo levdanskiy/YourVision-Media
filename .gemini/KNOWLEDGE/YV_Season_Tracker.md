@@ -47,11 +47,11 @@
 ## ⏳ PENDING / KEY DATES (MARCH SPRINT)
 *   **March 4:** 🇷🇴 Romania (Final), 🇸🇲 San Marino (SF1)
 *   **March 5:** 🇮🇱 Israel (Song Release), 🇸🇲 San Marino (SF2)
-*   **March 6:** 🇬🇧 UK (Song Release), 🇸🇲 San Marino (Final)
+*   **March 6:** 🇦🇿 Azerbaijan (Artist Reveal), 🇬🇧 UK (Song Release), 🇸🇲 San Marino (Final)
 *   **March 7:** 🇸🇪 Sweden (Final), 🇵🇹 Portugal (Final), 🇵🇱 Poland (Final)
-*   **March 8:** 🇨🇿 Czechia (Artist & Song Reveal)
+*   **March 8:** 🇨🇿 Czechia (Artist Reveal), 🇵🇱 Poland (Results)
 *   **March 9:** 🏆 **DEADLINE** (HoD submissions close)
-*   **March 11:** 🇨🇭 Switzerland (Song Release)
+*   **March 11:** 🇨🇿 Czechia (Song Release), 🇨🇭 Switzerland (Song Release)
 
 ---
 
