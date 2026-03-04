@@ -30,7 +30,7 @@
 | 22 | 🇳🇴 **Норвегия** | JONAS LOVV | «Ya Ya Ya» | ✅ Selected / 02:49 |
 | 23 | 🇵🇱 **Польша** | *TBA* | *TBA* | ⬜ Final: March 7 |
 | 24 | 🇵🇹 **Португалия** | *TBA* | *TBA* | ⬜ Final: March 7 |
-| 25 | 🇷🇴 **Румыния** | *TBA* | *TBA* | ⬜ Final: March 4 |
+| 25 | 🇷🇴 **Румыния** | Alexandra Căpitănescu | «Choke Me» | ✅ Selected / 4.03 |
 | 26 | 🇸🇲 **Сан-Марино** | *TBA* | *TBA* | ⬜ Final: March 6 |
 | 27 | 🇷🇸 **Сербия** | Lavina | «Kraj mene» | ✅ Selected / 03:01 |
 | 28 | 🇸🇪 **Швеция** | *TBA* | *TBA* | ⬜ Final: March 7 |
