@@ -507,6 +507,11 @@
       "country_name": "Австралия",
       "artist": "Delta Goodrem",
       "song": "Eclipse"
+    },
+    "RO": {
+      "country_name": "Румыния",
+      "artist": "Alexandra Căpitănescu",
+      "song": "Choke Me"
     }
   },
   "announced_artists": [],
@@ -646,8 +651,8 @@
     },
     "RO": {
       "name": "Румыния",
-      "artist": "TBA",
-      "song": "TBA",
+      "artist": "Alexandra Căpitănescu",
+      "song": "Choke Me",
       "release_date": "04.03"
     },
     "PL": {
