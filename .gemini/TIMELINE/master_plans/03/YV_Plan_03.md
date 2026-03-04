@@ -17,18 +17,28 @@
 * 20:00 | **YV** | 🗓 **#EVENT:** 🇷🇴 **Румыния**: Финал Selecția Națională (20:00). - ⬜ [ОЖИДАНИЕ]
 * 22:05 | **YV** | 🗓 **#EVENT:** 🇸🇲 **Сан-Марино**: San Marino Song Contest SF1 (22:05). - ⬜ [ОЖИДАНИЕ]
 
-### 06.03 (Пт) — UNITED KINGDOM REVEAL
+### 05.03 (Чт) — ISRAEL REVEAL & SM SF2
+* 20:30 | **YV** | ⚡ **#NEWS_WIRE:** Израиль. Релиз песни Noam Bettan. - ⬜ [ОЖИДАНИЕ]
+* 22:05 | **YV** | ⚡ **#NEWS_WIRE:** Сан-Марино. Второй полуфинал. - ⬜ [ОЖИДАНИЕ]
+
+### 06.03 (Пт) — UK & AZERBAIJAN REVEAL
 * 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Великобритания. Премьера песни «Ein Zwei Drei». - ⬜ [ОЖИДАНИЕ]
+* 16:00 | **YV** | ⚡ **#NEWS_WIRE:** Азербайджан. Объявление представителя. - ⬜ [ОЖИДАНИЕ]
 * 18:00 | **YV** | ⏳ **#VOTING_REMINDER:** AllMix Women Power (Экватор). - ✅ [ГОТОВО]
 
-### 08.03 (Вс) — CZECHIA REVEAL
-* TBA | **YV** | ⚡ **#NEWS_WIRE:** Чехия. Презентация участника и песни. - ⬜ [ОЖИДАНИЕ]
+### 08.03 (Вс) — POLAND & CZECHIA REVEAL
+* 11:00 | **YV** | ⚡ **#NEWS_WIRE:** Польша. Объявление победителя отбора. - ⬜ [ОЖИДАНИЕ]
+* 21:00 | **YV** | ⚡ **#NEWS_WIRE:** Чехия. Объявление представителя. - ⬜ [ОЖИДАНИЕ]
 * 20:00 | **YV** | ⏳ **#VOTING_REMINDER:** AllMix Women Power (Финальный отсчет). - ✅ [ГОТОВО]
 
 ### 10.03 (Вт) — CHART DAY: ALLMIX WOMEN POWER
 * 12:00 | **YV** | 🗳️ **#VOTING_CLOSE:** AllMix Women Power. - ⬜ [ОЖИДАНИЕ]
 * 18:00 | **YV** | 📻 **#RADIO_PREMIERE:** AllMix Women Power на радио. - ⬜ [ОЖИДАНИЕ]
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** AllMix Women Power (Итоги). - ⬜ [ОЖИДАНИЕ]
+
+### 11.03 (Ср) — RELEASES: CH & CZ
+* 13:00 | **YV** | ⚡ **#NEWS_WIRE:** Швейцария. Релиз песни Veronica Fusaro. - ⬜ [ОЖИДАНИЕ]
+* 21:00 | **YV** | ⚡ **#NEWS_WIRE:** Чехия. Презентация песни. - ⬜ [ОЖИДАНИЕ]
 
 ### 17.03 (Вт) — CHART DAY
 * 12:00 | **YV** | 📊 **#CHART_RELEASE:** EuroGroove National Finals High Placers. - ⬜ [ОЖИДАНИЕ]

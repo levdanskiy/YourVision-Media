@@ -37,17 +37,20 @@
 04.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 1 (22:05)
 04.03 🇷🇴 **Румыния**: Финал Selecția Națională (20:00)
 05.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 2 (22:00)
-05.03 🇮🇱 **Израиль**: Релиз песни Noam Bettan
+05.03 🇮🇱 **Израиль**: Релиз песни Noam Bettan (20:30)
 06.03 🇬🇧 **Великобритания**: Премьера песни «Ein Zwei Drei» (10:00)
+06.03 🇦🇿 **Азербайджан**: Объявление представителя (16:00)
 06.03 🇸🇲 **Сан-Марино**: Финал San Marino Song Contest (22:00)
 07.03 🇵🇱 **Польша**: Wielki Finał Polskich Kwalifikacji (18:35)
 07.03 🇸🇪 **Швеция**: Финал Melodifestivalen (21:00)
 07.03 🇵🇹 **Португалия**: Финал Festival da Canção (23:00)
 07.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 1 (21:30)
 07-08.03 🇳🇱 Нидерланды (JESC): Second phase of auditions for Junior Songfestival
-08.03 🇨🇿 **Чехия**: Презентация участника и песни (TBA)
+08.03 🇵🇱 **Польша**: Объявление результатов отбора (11:00)
+08.03 🇨🇿 **Чехия**: Объявление представителя (21:00)
 09.03 🏆 **DEADLINE** for participating broadcasters to submit their entry
-11.03 🇨🇭 **Швейцария**: Релиз песни Veronica Fusaro
+11.03 🇨🇭 **Швейцария**: Релиз песни Veronica Fusaro (13:00)
+11.03 🇨🇿 **Чехия**: Презентация конкурсной песни (21:00)
 14.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 2 (21:30)
 17.03 🇦🇹 **HoD Meeting**: Heads of Delegation Meeting
 21.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 3 (21:30)

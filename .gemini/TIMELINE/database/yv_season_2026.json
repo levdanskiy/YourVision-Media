@@ -181,17 +181,6 @@
       "link": "https://rts.rs"
     },
     {
-      "id": "EVT017",
-      "date": "2026-03-08",
-      "time": "TBA",
-      "country": "CZ",
-      "country_name": "Чехия",
-      "event": "Презентация участника и песни",
-      "type": "RELEASE",
-      "status": "CONFIRMED",
-      "link": "https://ceskatelevize.cz"
-    },
-    {
       "id": "EVT018",
       "date": "2026-03-06",
       "time": "10:00",
@@ -219,6 +208,72 @@
       "type": "SEMI",
       "id": "EVT_SM_SEMI",
       "status": "CONFIRMED"
+    },
+    {
+      "id": "EVT_AZ_REV",
+      "date": "2026-03-06",
+      "time": "16:00",
+      "country": "AZ",
+      "country_name": "Азербайджан",
+      "event": "Объявление представителя",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_CZ_ART",
+      "date": "2026-03-08",
+      "time": "21:00",
+      "country": "CZ",
+      "country_name": "Чехия",
+      "event": "Объявление представителя",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_PL_RES",
+      "date": "2026-03-08",
+      "time": "11:00",
+      "country": "PL",
+      "country_name": "Польша",
+      "event": "Объявление результатов отбора",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_CZ_SONG",
+      "date": "2026-03-11",
+      "time": "21:00",
+      "country": "CZ",
+      "country_name": "Чехия",
+      "event": "Презентация песни",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_CH_SONG",
+      "date": "2026-03-11",
+      "time": "13:00",
+      "country": "CH",
+      "country_name": "Швейцария",
+      "event": "Релиз песни Veronica Fusaro",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_IL_SONG",
+      "date": "2026-03-05",
+      "time": "20:30",
+      "country": "IL",
+      "country_name": "Израиль",
+      "event": "Специальная трансляция презентации песни Noam Bettan (с участием Yuval Raphael и Eden Golan)",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": "https://www.kan.org.il/"
     }
   ],
   "national_selections": {
