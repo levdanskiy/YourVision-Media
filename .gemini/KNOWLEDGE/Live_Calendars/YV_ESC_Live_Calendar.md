@@ -34,7 +34,7 @@
 
 **Март**
 01.03 🇦🇺 **Австралия**: Презентация участника и песни (20:00)
-04.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 1 (22:05)
+04.03 🇸🇲 Сан-Марино: Semi-Final 1 (Results: ORPHY, P.Pibigas, A.Smith, MYKY, M.Ferreira) ✅
 04.03 🇷🇴 **Румыния**: Alexandra Căpitănescu - «Choke Me» (Winner) ✅
 05.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 2 (22:00)
 05.03 🇮🇱 **Израиль**: Релиз песни Noam Bettan (20:30)

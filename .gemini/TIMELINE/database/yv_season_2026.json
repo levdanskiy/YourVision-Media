@@ -361,6 +361,36 @@
         "song": "Liekinheitin"
       },
       "participants": []
+    },
+    "san_marino": {
+      "country": "SM",
+      "finalists": [
+        {
+          "artist": "ORPHY",
+          "song": "Rise Again",
+          "source": "SF1"
+        },
+        {
+          "artist": "Pellegrina Pibigas",
+          "song": "Il giorno che arrivarono gli alieni",
+          "source": "SF1"
+        },
+        {
+          "artist": "Anna Smith",
+          "song": "Bruised",
+          "source": "SF1"
+        },
+        {
+          "artist": "MYKY",
+          "song": "Outta Tune",
+          "source": "SF1"
+        },
+        {
+          "artist": "Matias Ferreira",
+          "song": "PAURA",
+          "source": "SF1"
+        }
+      ]
     }
   },
   "eurovision": {
