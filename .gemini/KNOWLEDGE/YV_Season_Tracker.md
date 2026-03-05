@@ -18,7 +18,7 @@
 | 10 | 🇬🇪 **Грузия** | Bzikebi | *TBA* | ⬜ Pending |
 | 11 | 🇬🇷 **Греция** | Akylas | «Ferto» | ✅ Selected / 03:00 |
 | 12 | 🇩🇰 **Дания** | Søren Torpegaard Lund | «Før Vi Går Hjem» | ✅ Selected / 02:54 |
-| 13 | 🇮🇱 **Израиль** | Noam Bettan | *TBA* | ⬜ Release: March 5 |
+| 13 | 🇮🇱 **Израиль** | Noam Bettan | «Michelle» | ✅ Selected / 5.03 |
 | 14 | 🇮🇹 **Италия** | Sal Da Vinci | «Per sempre sì» | ✅ Selected / 02:55 |
 | 15 | 🇨🇾 **Кипр** | Antigoni | «JALLA» | ✅ Selected / 03:00 |
 | 16 | 🇱🇻 **Латвия** | Atvara | «Ēnā» | ✅ Selected / 02:53 |

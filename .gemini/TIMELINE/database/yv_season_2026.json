@@ -400,6 +400,11 @@
           "artist": "Matias Ferreira",
           "song": "PAURA",
           "source": "SF1"
+        },
+        {
+          "artist": "Marco",
+          "song": "Shine",
+          "source": "Wildcard"
         }
       ]
     }
@@ -554,6 +559,11 @@
       "artist": "Alexandra Căpitănescu",
       "song": "Choke Me",
       "link": "https://youtu.be/KYLjJIf9qfc?si=2C2HzgWnM6_kLIv-"
+    },
+    "IL": {
+      "country_name": "Израиль",
+      "artist": "Noam Bettan",
+      "song": "Michelle"
     }
   },
   "announced_artists": [],
@@ -653,7 +663,7 @@
     "IL": {
       "name": "Израиль",
       "artist": "Noam Bettan",
-      "song": "TBA",
+      "song": "Michelle",
       "release_date": "05.03"
     },
     "CH": {
