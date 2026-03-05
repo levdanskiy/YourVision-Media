@@ -274,6 +274,17 @@
       "type": "RELEASE",
       "status": "CONFIRMED",
       "link": "https://www.kan.org.il/"
+    },
+    {
+      "id": "EVT_SM_SF2",
+      "date": "2026-03-05",
+      "time": "22:05",
+      "country": "SM",
+      "country_name": "Сан-Марино",
+      "event": "San Marino Song Contest 2026 - Semi-Final Two",
+      "type": "SEMI",
+      "status": "CONFIRMED",
+      "link": "https://www.sanmarinortv.sm/"
     }
   ],
   "national_selections": {
