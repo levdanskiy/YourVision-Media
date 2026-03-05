@@ -38,7 +38,7 @@
 04.03 🇷🇴 **Румыния**: Alexandra Căpitănescu - «Choke Me» (Winner) ✅
 05.03 🇸🇲 Сан-Марино: San Marino Song Contest Semi-Final 2 (22:00)
 05.03 🇮🇱 **Израиль**: Noam Bettan - «Michelle» (Song Reveal) ✅
-06.03 🇬🇧 **Великобритания**: Премьера песни «Ein Zwei Drei» (10:00)
+06.03 🇬🇧 **Великобритания**: Премьера песни «Ein Zwei Drei» (10:30)
 06.03 🇦🇿 **Азербайджан**: Объявление представителя (16:00)
 06.03 🇸🇲 **Сан-Марино**: Финал San Marino Song Contest (22:00) (21 Finalists)
 07.03 🇵🇱 **Польша**: Wielki Finał Polskich Kwalifikacji (18:35)
