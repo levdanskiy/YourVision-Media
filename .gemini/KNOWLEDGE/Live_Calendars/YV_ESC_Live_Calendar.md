@@ -48,6 +48,7 @@
 07.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 1 (21:30)
 07-08.03 🇳🇱 Нидерланды (JESC): Second phase of auditions for Junior Songfestival
 08.03 🇵🇱 **Польша**: Объявление результатов отбора (11:00)
+08.03 🇲🇪 **Черногория**: Премьера ревампированной версии «Nova Zora» (15:00)
 08.03 🇨🇿 **Чехия**: Объявление представителя (21:00)
 09.03 🏆 **DEADLINE** for participating broadcasters to submit their entry
 11.03 🇨🇭 **Швейцария**: Релиз песни Veronica Fusaro (13:00)
