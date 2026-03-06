@@ -296,6 +296,17 @@
       "type": "FINAL",
       "status": "CONFIRMED",
       "link": "https://www.sanmarinortv.sm/"
+    },
+    {
+      "id": "EVT_FR_REV",
+      "date": "2026-03-06",
+      "time": "TBA",
+      "country": "FR",
+      "country_name": "Франция",
+      "event": "Анонс представителя и песни",
+      "type": "RELEASE",
+      "status": "CONFIRMED",
+      "link": ""
     }
   ],
   "national_selections": {
