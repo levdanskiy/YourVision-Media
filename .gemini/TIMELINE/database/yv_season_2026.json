@@ -300,13 +300,13 @@
     {
       "id": "EVT_FR_REV",
       "date": "2026-03-06",
-      "time": "TBA",
+      "time": "19:00",
       "country": "FR",
       "country_name": "Франция",
       "event": "Анонс представителя и песни",
       "type": "RELEASE",
       "status": "CONFIRMED",
-      "link": ""
+      "link": "https://www.youtube.com/watch?v=ujoCYrvvTYQ&list=RDujoCYrvvTYQ&start_radio=1"
     }
   ],
   "national_selections": {
@@ -618,6 +618,12 @@
       "artist": "Look Mum No Computer",
       "song": "Eins, Zwei, Drei",
       "link": "https://www.youtube.com/watch?v=niMKvJ-Itq8&list=RDniMKvJ-Itq8&start_radio=1"
+    },
+    "FR": {
+      "country_name": "Франция",
+      "artist": "Monroe",
+      "song": "Regarde",
+      "link": "https://www.youtube.com/watch?v=ujoCYrvvTYQ&list=RDujoCYrvvTYQ&start_radio=1"
     }
   },
   "announced_artists": [],
@@ -785,8 +791,8 @@
     },
     "FR": {
       "name": "Франция",
-      "artist": "TBA",
-      "song": "TBA"
+      "artist": "Monroe",
+      "song": "Regarde"
     },
     "GE": {
       "name": "Грузия",
