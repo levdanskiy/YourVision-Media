@@ -405,6 +405,31 @@
           "artist": "Marco",
           "song": "Shine",
           "source": "Wildcard"
+        },
+        {
+          "artist": "IUNA",
+          "song": "Freedom calling",
+          "source": "SF2"
+        },
+        {
+          "artist": "KLEM",
+          "song": "OK RESPIRA",
+          "source": "SF2"
+        },
+        {
+          "artist": "Luka Basi",
+          "song": "CHICOLO",
+          "source": "SF2"
+        },
+        {
+          "artist": "Magdalena Tul",
+          "song": "I’ll be around",
+          "source": "SF2"
+        },
+        {
+          "artist": "Maya Azucena",
+          "song": "My sin",
+          "source": "SF2"
         }
       ]
     }
