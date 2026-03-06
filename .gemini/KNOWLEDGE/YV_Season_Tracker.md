@@ -13,7 +13,7 @@
 | 5 | 🇦🇲 **Армения** | *TBA* | *TBA* | ⬜ Pending |
 | 6 | 🇧🇪 **Бельгия** | Essyla | «Dancing on the ice» | ✅ Selected / 03:08 |
 | 7 | 🇧🇬 **Болгария** | Dara | «Bangaranga» | ✅ Selected / 02:58 |
-| 8 | 🇬🇧 **Великобритания** | *TBA* | «Ein Zwei Drei» | ⬜ Release: March 6 |
+| 8 | 🇬🇧 **Великобритания** | Look Mum No Computer | «Eins, Zwei, Drei» | ✅ Selected / 6.03 |
 | 9 | 🇩🇪 **Германия** | Sarah Engels | «Fire» | ✅ Selected / 02:57 |
 | 10 | 🇬🇪 **Грузия** | Bzikebi | *TBA* | ⬜ Pending |
 | 11 | 🇬🇷 **Греция** | Akylas | «Ferto» | ✅ Selected / 03:00 |

@@ -612,6 +612,12 @@
       "artist": "Noam Bettan",
       "song": "Michelle",
       "link": "https://www.youtube.com/watch?v=j2uPlJndByI"
+    },
+    "GB": {
+      "country_name": "Великобритания",
+      "artist": "Look Mum No Computer",
+      "song": "Eins, Zwei, Drei",
+      "link": "https://www.youtube.com/watch?v=niMKvJ-Itq8&list=RDniMKvJ-Itq8&start_radio=1"
     }
   },
   "announced_artists": [],
@@ -704,8 +710,8 @@
     },
     "GB": {
       "name": "Великобритания",
-      "artist": "TBA",
-      "song": "Ein Zwei Drei",
+      "artist": "Look Mum No Computer",
+      "song": "Eins, Zwei, Drei",
       "release_date": "06.03"
     },
     "IL": {
