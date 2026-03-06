@@ -44,7 +44,6 @@
       "optimal_post": "19:30"
     }
   },
-
   "blackout_periods": [
     {
       "start": "01:00",
@@ -52,35 +51,48 @@
       "exception": "live_events"
     }
   ],
-
   "wave_protocol": {
     "wave_1": {
       "offset_minutes": 0,
-      "content": ["flash", "poll"],
+      "content": [
+        "flash",
+        "poll"
+      ],
       "description": "Молния + Опрос"
     },
     "wave_2": {
       "offset_minutes": 15,
-      "content": ["snap", "data"],
+      "content": [
+        "snap",
+        "data"
+      ],
       "description": "Полные результаты"
     },
     "wave_3": {
       "offset_minutes": 60,
-      "content": ["standard", "deep_dive"],
+      "content": [
+        "standard",
+        "deep_dive"
+      ],
       "description": "Аналитика"
     },
     "wave_4": {
       "offset_minutes": 180,
-      "content": ["reactions"],
+      "content": [
+        "reactions"
+      ],
       "description": "Реакции (опционально)"
     }
   },
-
   "special_events": {
     "live_coverage": {
-      "pre_show": -60,
+      "pre_show": -10,
       "during_show": "real_time",
-      "post_show": [5, 15, 60]
+      "post_show": [
+        5,
+        15,
+        60
+      ]
     }
   }
 }
