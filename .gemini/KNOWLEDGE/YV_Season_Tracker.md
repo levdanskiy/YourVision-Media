@@ -8,7 +8,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | 🇦🇺 **Австралия** | Delta Goodrem | «Eclipse» | ✅ Selected / 03:00 |
 | 2 | 🇦🇹 **Австрия** | COSMȮ | «TANZSCHEIN» | ✅ Selected / 02:42 |
-| 3 | 🇦🇿 **Азербайджан** | *TBA* | *TBA* | ⬜ Pending |
+| 3 | 🇦🇿 **Азербайджан** | JIVA | *TBA* | ✅ Artist Reveal / 6.03 |
 | 4 | 🇦🇱 **Албания** | Alis | «Nân» | ✅ Selected / 03:09 |
 | 5 | 🇦🇲 **Армения** | *TBA* | *TBA* | ⬜ Pending |
 | 6 | 🇧🇪 **Бельгия** | Essyla | «Dancing on the ice» | ✅ Selected / 03:08 |

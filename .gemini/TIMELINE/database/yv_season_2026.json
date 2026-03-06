@@ -624,6 +624,11 @@
       "artist": "Monroe",
       "song": "Regarde",
       "link": "https://www.youtube.com/watch?v=ujoCYrvvTYQ&list=RDujoCYrvvTYQ&start_radio=1"
+    },
+    "AZ": {
+      "country_name": "Азербайджан",
+      "artist": "JIVA",
+      "song": "TBA"
     }
   },
   "announced_artists": [],
@@ -786,7 +791,7 @@
     },
     "AZ": {
       "name": "Азербайджан",
-      "artist": "TBA",
+      "artist": "JIVA",
       "song": "TBA"
     },
     "FR": {
