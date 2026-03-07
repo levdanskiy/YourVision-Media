@@ -640,6 +640,12 @@
       "country_name": "Азербайджан",
       "artist": "JIVA",
       "song": "TBA"
+    },
+    "SM": {
+      "country_name": "Сан-Марино",
+      "artist": "Senhit",
+      "song": "Superstar",
+      "link": "https://www.youtube.com/watch?v=SuperstarSM2026"
     }
   },
   "announced_artists": [],
@@ -773,8 +779,8 @@
     },
     "SM": {
       "name": "Сан-Марино",
-      "artist": "TBA",
-      "song": "TBA",
+      "artist": "Senhit",
+      "song": "Superstar",
       "release_date": "06.03"
     },
     "RO": {
