@@ -31,7 +31,7 @@
 | 23 | 🇵🇱 **Польша** | *TBA* | *TBA* | ⬜ Final: March 7 |
 | 24 | 🇵🇹 **Португалия** | *TBA* | *TBA* | ⬜ Final: March 7 |
 | 25 | 🇷🇴 **Румыния** | Alexandra Căpitănescu | «Choke Me» | ✅ Selected / 4.03 |
-| 26 | 🇸🇲 **Сан-Марино** | *TBA* | *TBA* | ⬜ Final: March 6 |
+| 26 | 🇸🇲 **Сан-Марино** | Senhit | «Superstar» | ✅ Selected / 7.03 |
 | 27 | 🇷🇸 **Сербия** | Lavina | «Kraj mene» | ✅ Selected / 03:01 |
 | 28 | 🇸🇪 **Швеция** | *TBA* | *TBA* | ⬜ Final: March 7 |
 | 29 | 🇨🇭 **Швейцария** | Veronica Fusaro | *TBA* | ⬜ Release: March 11 |
