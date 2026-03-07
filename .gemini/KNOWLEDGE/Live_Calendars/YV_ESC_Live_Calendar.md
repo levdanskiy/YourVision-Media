@@ -41,7 +41,7 @@
 06.03 🇬🇧 **Великобритания**: Премьера песни «Ein Zwei Drei» (10:30)
 06.03 🇦🇿 **Азербайджан**: Объявление представителя (16:00)
 06.03 🇫🇷 **Франция**: Monroe - «Regarde» (Release 19:00) ✅
-06.03 🇸🇲 **Сан-Марино**: Финал San Marino Song Contest (21:30)
+06.03 🇸🇲 **Сан-Марино**: Senhit - «Superstar» (Winner) ✅
 07.03 🇵🇱 **Польша**: Wielki Finał Polskich Kwalifikacji (18:35)
 07.03 🇸🇪 **Швеция**: Финал Melodifestivalen (21:00)
 07.03 🇵🇹 **Португалия**: Финал Festival da Canção (23:00)
