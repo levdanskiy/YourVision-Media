@@ -318,6 +318,39 @@
       "type": "RELEASE",
       "status": "CONFIRMED",
       "link": "https://www.youtube.com/@EurovisionSongContest"
+    },
+    {
+      "id": "EVT_PL_FINAL",
+      "date": "2026-03-07",
+      "time": "18:35",
+      "country": "PL",
+      "country_name": "Польша",
+      "event": "Finał polskich kwalifikacji - Финал",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_SE_FINAL",
+      "date": "2026-03-07",
+      "time": "21:00",
+      "country": "SE",
+      "country_name": "Швеция",
+      "event": "Melodifestivalen 2026 - Финал",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "link": ""
+    },
+    {
+      "id": "EVT_PT_FINAL",
+      "date": "2026-03-07",
+      "time": "23:15",
+      "country": "PT",
+      "country_name": "Португалия",
+      "event": "Festival da Canção 2026 - Финал",
+      "type": "FINAL",
+      "status": "CONFIRMED",
+      "link": ""
     }
   ],
   "national_selections": {
