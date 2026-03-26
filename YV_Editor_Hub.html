@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourVision | Vienna 2026 Insider Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a021a">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:wght@900&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" type="image/webp">
+    <style>
+        :root {
+            --bg-deep: #0a021a; --accent-pink: #ff007f; --accent-cyan: #00f5ff; --accent-acid: #ccff00;
+            --glass-bg: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08); --text-main: #e0e0e0; --text-dim: #777;
+        }
+        body { 
+            background: var(--bg-deep); color: var(--text-main); font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; letter-spacing: -0.02em; 
+            background-image: linear-gradient(to bottom, rgba(10, 2, 26, 0.8), rgba(10, 2, 26, 0.95)), url('https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/newwebsite_70png/NewWebsite_70-fill_size%3D1600x900-fill_size%3D1600x900.png');
+            background-attachment: fixed; background-size: cover; background-position: center;
+        }
+        body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('https://grainy-gradients.vercel.app/noise.svg'); opacity: 0.05; pointer-events: none; z-index: 9999; }
+
+        .hero-view { min-height: 100vh; display: flex; flex-direction: column; padding: 40px; box-sizing: border-box; }
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; }
+        .logo-box { display: flex; flex-direction: column; text-decoration: none; line-height: 0.9; }
+        .logo, .logo-sub { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-transform: uppercase; margin: 0; letter-spacing: -0.02em; }
+        .logo span { color: var(--accent-pink); }
+        .logo-sub { color: var(--accent-cyan); margin-top: 5px; text-shadow: 0 0 20px var(--accent-cyan); }
+        #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
+
+        .timers-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 80px; }
+        .timer-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; display: flex; backdrop-filter: blur(10px); flex-direction: column; transition: 0.3s; text-decoration: none; cursor: pointer; }
+        .timer-card:hover { transform: translateY(-5px); border-color: var(--accent-cyan); box-shadow: 0 10px 30px rgba(0, 245, 255, 0.2); }
+        .timer-poster { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-bottom: 1px solid var(--glass-border); transition: 0.5s; }
+        .timer-card:hover .timer-poster { filter: brightness(1.2); }
+        .timer-info { padding: 25px 20px; background: rgba(0,0,0,0.7); border-top: 1px solid var(--glass-border); }
+        .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 2.8rem; font-weight: 900; color: #fff; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 30px rgba(255,255,255,0.2); }
+        .timer-label { font-family: 'Inter Tight', sans-serif; font-size: 1.1rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent-cyan); opacity: 1; display: block; text-shadow: 0 0 15px var(--accent-cyan); }
+
+        .layout { display: grid; grid-template-columns: 380px 1fr 450px; gap: 40px; align-items: start; }
+        .column { display: flex; flex-direction: column; gap: 30px; }
+        .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
+
+        .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
+        .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+        
+        .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+        .heart-bubble { width: 35px; height: auto; }
+        .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
+        .status-q { border-bottom: 2px solid var(--accent-acid); }
+        .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
+
+        .bracket-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .match-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px; transition: 0.3s; }
+        .match-card:hover { border-color: var(--accent-pink); background: rgba(255,255,255,0.05); }
+        .match-header { font-size: 0.6rem; font-weight: 900; text-transform: uppercase; color: var(--accent-cyan); letter-spacing: 0.1em; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+        .match-teams { display: flex; align-items: center; justify-content: space-between; }
+        .team { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 0.9rem; }
+        .vs { font-size: 0.6rem; font-weight: 900; color: var(--accent-pink); }
+
+        .chart-table { width: 100%; border-collapse: collapse; }
+        .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .chart-cell { padding: 12px 5px; vertical-align: middle; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 45px; text-align: center; font-size: 1.1rem; }
+        .track-cover { width: 45px; height: 45px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .info-cell { display: flex; flex-direction: column; gap: 2px; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; line-height: 1.1; }
+        .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
+        .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
+
+        /* NEWS FEED MAGAZINE LAYOUT - COMPACT ELITE */
+        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 2.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 30px var(--accent-pink); margin: 50px 0 30px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.2em; border-bottom: 2px solid var(--accent-pink); display: block; padding-bottom: 15px; }
+        .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; transition: 0.3s; padding: 30px; position: relative; box-shadow: inset 0 0 30px rgba(255,255,255,0.01); }
+        .post-card:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); transform: translateY(-3px); box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+        .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 10px; display: block; letter-spacing: 0.15em; opacity: 0.7; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.7rem; font-weight: 900; line-height: 1.2; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 15px; transition: 0.3s; }
+        .post-h:hover { color: var(--accent-pink); }
+        .post-img-container { float: left; width: 42%; max-width: 450px; margin: 0 25px 15px 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #000; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        .post-img { width: 100%; height: auto; display: block; transition: 0.5s; filter: brightness(0.9); }
+        .post-card:hover .post-img { filter: brightness(1.1); }
+        .post-video-iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; min-height: 240px; }
+        .post-b { font-size: 1.05rem; color: #ccc; line-height: 1.65; white-space: pre-wrap; text-align: left; }
+        .post-b a { color: var(--accent-cyan); text-decoration: none; font-weight: 700; border-bottom: 1px solid rgba(0, 245, 255, 0.3); }
+        .post-b a:hover { color: var(--accent-pink); border-color: var(--accent-pink); }
+        
+        .post-body-h { font-family: 'Inter Tight', sans-serif; font-size: 1.15rem; font-weight: 900; color: #fff; text-shadow: 0 0 15px rgba(255, 0, 127, 0.4); text-transform: uppercase; display: block; margin-top: 25px; margin-bottom: 10px; border-left: 4px solid var(--accent-pink); padding-left: 15px; letter-spacing: 0.05em; background: rgba(255, 0, 127, 0.03); padding-top: 8px; padding-bottom: 8px; }
+        .post-body-sh { color: var(--accent-acid); font-weight: 900; text-transform: uppercase; font-size: 0.95rem; display: block; margin-top: 20px; margin-bottom: 8px; border-left: 3px solid var(--accent-acid); padding-left: 12px; letter-spacing: 0.05em; }
+        
+        .post-card::after { content: ""; display: table; clear: both; }
+        
+        @media (max-width: 1100px) {
+            .post-img-container { float: none; width: 100%; max-width: none; margin: 0 0 20px 0; }
+            .post-h { font-size: 1.5rem; }
+        }
+
+        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
+        .on-air-live { position: absolute; top: 20px; right: 20px; background: var(--accent-pink); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; z-index: 10; }
+        .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); background-image: url('https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'); }
+        .player-artist, .player-song { font-weight: 900; font-size: 1.5rem; display: block; text-align: center; text-transform: uppercase; }
+        .player-artist { color: var(--accent-pink); }
+        .player-song { color: var(--accent-cyan); margin-top: 8px; }
+        .timer-container { margin-top: 20px; display: flex; align-items: center; gap: 15px; }
+        .progress-bg { flex-grow: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; }
+        .progress-bar { height: 100%; background: var(--accent-pink); width: 0%; }
+        .timer-text { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 900; color: var(--accent-cyan); min-width: 40px; text-align: right; }
+
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+
+        footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .footer-brand { display: flex; align-items: center; gap: 20px; text-decoration: none; }
+        .footer-logo-heart { height: 60px; }
+        .footer-links { display: flex; gap: 30px; }
+        .footer-link { color: #fff; text-decoration: none; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
+    </style>
+</head>
+<body>
+    <div class="hero-view">
+        <nav>
+            <a href="https://t.me/YourEurovision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
+            <div id="clock">RIGA: 00:00:00</div>
+        </nav>
+
+        <div class="timers-hero">
+            <a href="https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf1">...</span><span class="timer-label">Semi-Final 1 / 12.05</span></div></a>
+            <a href="https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf2">...</span><span class="timer-label">Semi-Final 2 / 14.05</span></div></a>
+            <a href="https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-gf">...</span><span class="timer-label">Grand Final / 16.05</span></div></a>
+        </div>
+
+        <div class="layout">
+            <aside class="column">
+                <div class="card">
+                    <span id="live-badge" class="on-air-live">On Air LIVE</span>
+                    <div id="player-cover" class="player-cover"></div>
+                    <span class="player-artist" id="radio-artist">YourVision Radio</span>
+                    <span class="player-song" id="radio-song">United by Music</span>
+                    <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">0:00 / 0:00</span></div>
+                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
+
+                    <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
+                    <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
+                </div>
+                <div class="card"><div class="section-title-pink">Recently Played [15]</div><table class="chart-table" id="history-list"></table></div>
+            </aside>
+
+            <main class="column">
+                <div class="card">
+                    <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
+                    <div id="bracket-view">
+                        <div class="grid-sub-header">PLAY-OFF BRACKET [ROUND OF 16]</div>
+                        <div id="bracket-list" class="bracket-grid"></div>
+                    </div>
+                    <div class="grid-sub-header">QUALIFIED COUNTRIES</div>
+                    <div id="grid-qualifiers" class="tournament-grid"></div>
+                    <div class="grid-sub-header">ELIMINATED</div>
+                    <div id="grid-eliminated" class="tournament-grid"></div>
+                </div>
+                <div class="feed-title">INSIDER NEWS FEED [20]</div>
+                <div id="news-grid" class="news-grid-main"></div>
+            </main>
+
+            <aside class="column">
+                <div class="card">
+                    <div class="section-title">EUROGROOVE / FULL TOP 24</div>
+                    <table class="chart-table" id="chart-body"></table>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="https://t.me/YourEurovision" class="footer-brand">
+                <img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" class="footer-logo-heart">
+                <div class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></div>
+            </a>
+            <div class="footer-links">
+                <a href="https://t.me/YourEurovision" target="_blank" class="footer-link">Telegram News</a>
+                <a href="https://t.me/almanac_marginalia" target="_blank" class="footer-link">Almanac</a>
+                <a href="https://www.youtube.com/@levdanskiy" target="_blank" class="footer-link">YouTube</a>
+                <a href="https://myradio24.com/ru/table/levdanskiy" target="_blank" class="footer-link">Radio Order</a>
+            </div>
+        </div>
+        <div class="footer-copy">&copy; 2026 YOURVISION INSIDER | Vienna Edition | Zemgale, Latvia</div>
+    </footer>
+
+    <script>
+        var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
+        var DATA = {
+            qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}, {id: "at"}, {id: "me"}],
+            eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
+            matches: [
+                { id: 1, p1: "fi", p2: "me" }, { id: 2, p1: "dk", p2: "at" },
+                { id: 3, p1: "gr", p2: "al" }, { id: 4, p1: "au", p2: "ge" },
+                { id: 5, p1: "se", p2: "am" }, { id: 6, p1: "it", p2: "md" },
+                { id: 7, p1: "cy", p2: "gb" }, { id: 8, p1: "mt", p2: "bg" }
+            ],
+            chart: [
+                { r: 1, a: "Greczula", s: "Half of Me", p: 91, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
+                { r: 2, a: "Sissal", s: "Infinity", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
+                { r: 3, a: "HVNDS", s: "Dor", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg" },
+                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: 65, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg" },
+                { r: 5, a: "Laud", s: "Lightkeeper", p: 61, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg" },
+                { r: 6, a: "Kautkaili", s: "Te un tagad", p: 55, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg" },
+                { r: 7, a: "Noёp", s: "Days Like This", p: 53, i: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/200x200bb.jpg" },
+                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: 47, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg" },
+                { r: 9, a: "Zejna", s: "Jugoslavija", p: 45, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg" },
+                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
+                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: 39, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg" },
+                { r: 12, a: "Alexander Rybak", s: "Rise", p: 37, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg" },
+                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: 36, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg" },
+                { r: 14, a: "SHWR", s: "Contact", p: 28, i: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg" },
+                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: 27, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
+                { r: 16, a: "Wavvyboi", s: "Black Glitter", p: 26, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg" },
+                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: 24, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg" },
+                { r: 18, a: "Dara", s: "Curse", p: 18, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg" },
+                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: 16, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg" },
+                { r: 20, a: "Dinis Mota", s: "Jurei", p: 16, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg" },
+                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: 13, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg" },
+                { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: 10, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg" },
+                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: 10, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg" },
+                { r: 24, a: "Kelly Joyce", s: "Oh la la", p: 5, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg" }
+            ],
+            news: [
+    {
+        "m": "25.03 | 10:38",
+        "id": "lv",
+        "u": "https://t.me/almanac_marginalia/5896",
+        "t": "🏛 MARGINALIA: ДЕНЬ АИСТА - БЕЛАЯ МАГИЯ ВОЗВРАЩЕНИЯ",
+        "b": "25 марта в балтийском календаре - это не просто дата. Это Bārbaļu diena, время, когда небо над Земгале и Курземе официально открывается для аистов. В народном сознании аист - это не просто птица, это «svētelis», священный гость, приносящий благословение дому, на крыше которого он совьет гнездо.\nСИМВОЛИЗМ (LORE)\nБелый цвет аиста в это утро становится точкой отсчета. Это цвет чистоты, нового начала и «невидимого якоря», который связывает нас с землей. В латышских дайнах возвращение аиста знаменует окончательную победу света над зимним оцепенением. Мы смотрим в небо не ради прогноза погоды, а ради подтверждения: жизнь продолжается, цикл замкнулся, мы снова дома.\nTHE FRAGMENT\n«Птица не несет весну на крыльях, она сама и есть весна, воплощенная в движении...» - из полевых заметок фольклориста. Сегодня, когда мы открываем стадию плей-офф нашего турнира, этот образ кажется особенно точным. Мы тоже возвращаемся к «большим битвам», ведомые инстинктом созидания.\nПусть сегодня каждый увидит свой «белый знак». Весна официально вступила в свои права.\n⏱️ Время чтения: 0.8 мин | 🏛 Almanac: Heritage",
+        "img": "https://cdn4.telesco.pe/file/ofU0HEffAKeU36QpIfqYVN0mh9gtZ9JhM-tPodrYGFzVrc3HgL-_yU_FSCJR4s7h8UUPhH9rsk-ZCtvXHnAGHLPPhMo0P6IRqHfjJZQtvgEs-ltJ4wY4-sZ4cHlCs5dXePakDzspQYdHditNBC1gJrqVztcsBKG9F6wCmbwMKg7cv9L-rP7tWZcNDcs5Q47m3VxOushfVHPgMjyapflmHuNG5W0erYtpsj0cI5o3FMBWQkFov5AhF0TRhhSUZ6t1YqS0NZZeHQNpOtAOygB4W4KyvNmKvTScNUjvetYUlkk1lnZNxTUr0Ip6XHS8pUMIGbq7sTT0IxIkzCnrJLKPAw.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "25.03 | 08:03",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5536",
+        "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #1",
+        "b": "Мы открываем стадию плей-офф! Первый матч - это столкновение абсолютного фаворита сезона и главной «темной лошадки» из Адриатики.\n🇫🇮 FINLAND: Lampenius & Parkkonen - «Liekinheitin»\nГлавный претендент на победу по версии букмекеров (28%). Финляндия привезла мощный стадионный гимн с агрессивной энергетикой и безупречным продакшном. В групповом этапе они не оставили шансов никому, набрав рекордные 100% голосов.\nvs\n🇲🇪 MONTENEGRO: Tamara Živković - «Nova zora»\nАртистка, которая пробилась в 1/8 вопреки прогнозам. Тамара берет невероятным вокалом и нуарной атмосферой «балканской баллады 2.0». Сможет ли она совершить невозможное и выбить фаворита в первом же раунде?\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Play-Off",
+        "img": "//telegram.org/img/emoji/40/E29A94.png",
+        "isVideo": false
+    },
+    {
+        "m": "25.03 | 08:02",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5535",
+        "t": "Update",
+        "b": "",
+        "img": "//telegram.org/img/emoji/40/F09F938A.png",
+        "isVideo": false
+    },
+    {
+        "m": "24.03 | 19:35",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5534",
+        "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ХОРВАТИЯ",
+        "b": "Хорватия пыталась продолжить «золотую серию» успеха Baby Lasagna, выбрав в этом году группу LELEK. Однако этно-электроника не помогла стране преодолеть групповой барьер. Сегодня мы сравниваем этот выбор с фаворитом прошлого года.\nДУЭЛЬ ПОКОЛЕНИЙ\n🇭🇷 2026: LELEK - «Andromeda»\nМистический электро-фолк, вдохновленный славянскими мифами. Мощный визуальный ряд, который, к сожалению, не конвертировался в баллы плей-офф.\n🇭🇷 2025: Marko Bošnjak - «Poison Cake»\nАльтернативный поп с уникальным вокальным тембром и мрачной эстетикой. Год назад Марко считался главным претендентом на высокую позицию в Базеле.\nВОПРОС К ЭКСПЕРТАМ\nЧья стратегия была более выигрышной? Нужна ли Хорватии мистика LELEK или стоило придерживаться курса Marko Bošnjak?\nГолосуйте в следующем посте! 👇\n⏱️ Время чтения: 1.1 мин | 🇭🇷 YourVision: Reset",
+        "img": "//telegram.org/img/emoji/40/F09FA7AA.png",
+        "isVideo": false
+    },
+    {
+        "m": "24.03 | 19:32",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5533",
+        "t": "Update",
+        "b": "",
+        "img": "//telegram.org/img/emoji/40/F09F938A.png",
+        "isVideo": false
+    },
+    {
+        "m": "24.03 | 18:01",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5532",
+        "t": "🧬 DNA: ИТАЛИЯ - SAL DA VINCI",
+        "b": "Сальваторе Майкл Соррентино, известный как Sal Da Vinci, - это артист, чья карьера началась в Нью-Йорке, но расцвела в самом сердце Неаполя. В 56 лет он возвращается на мировую сцену, чтобы доказать: итальянский неомелодизм - это не ностальгия, а вечная классика в премиальной упаковке.\nTHE JOURNEY (ПУТЬ)\nСаль - потомственный артист. Его дебют состоялся в 6 лет в дуэте с отцом, легендарным Марио Да Винчи. За плечами Саля - десятилетия работы в кино и театре, включая главную роль в культовом мюзикле «C'era una volta... Scugnizzi». Мировой успех пришел к нему еще в 90-х, когда его песня «Vera» разошлась тиражом более 4 млн копий. Победа на Сан-Ремо 2026 с треком «Per sempre sì» стала логичным итогом 17-летнего ожидания после «бронзы» в 2009 году. Это триумф артиста, который писал музыку для Орнеллы Ванони и Ренато Дзеро, оставаясь верным своим корням.\nSTYLE & SOUND (ДНК)\nЕго звук - это квинтэссенция неаполитанской школы, адаптированная под современный стадионный масштаб. «Per sempre sì» - это «свадебный гимн» нации, записанный при участии его сына Франческо и топовых хитмейкеров. Визуально Саль воплощает образ «Неаполитанского джентльмена»: безупречный крой, сдержанная роскошь и харизма, не требующая громких спецэффектов.\nVERDICT: Италия отправляет в Вену артиста с колоссальным опытом. Саль Да Винчи - это «сейф» для жюри и гарантированный эмоциональный катарсис для зрителей.\nСтанет ли неаполитанская искренность главным трендом мая?\n⏱️ Время чтения: 1.6 мин | 🇮🇹 YourVision: DNA",
+        "img": "https://cdn4.telesco.pe/file/IHhBmy253KCvYU2vgCUHVr_TOMF4rekkNDEKW-2snBLHw88bTfny2v5sqHv5U11SEqbl_cCoJx5clriyNsh2RYF13469-C2CECvylC-zwX11NCb_SSSi7e6LqhKEfNUFOfgH4E2Mi5OoA0V4i7cLyk3_PnPO2QSJhKY8J3vg_RZXd0UemV5pflmRNBfrhXTPRM6jSOXrJu5kYFIs1ZFYPOXFhAKV-ihkJxF3uWt31Gyb-I-OnnagCsr21okxXgPeqJZljX0alwPNSLTWVvmoYiAOztI-yXUOlYxn5D9xtFjpZjnHaGu9gR9qeDZwNlu2MV7cTJV4s6SCn-nFXOpqhQ",
+        "isVideo": true
+    },
+    {
+        "m": "24.03 | 16:02",
+        "id": "lv",
+        "u": "https://t.me/almanac_marginalia/5895",
+        "t": "🥐 ALMANAC: THE CALENDAR - ПИР ЖРЕБИЯ",
+        "b": "Пурим завершается, оставляя послевкусие мака, меда и осознания хрупкости момента. «Пурим» буквально означает «жребий». В 2026 году этот праздник напоминает нам о том, что время - это великий распределитель, но то, как мы делим этот жребий с другими, определяет нашу человечность.\nГЛОБАЛЬНЫЙ РИТУАЛ\nТрадиция Мишлоах Манот - обмена подарками и едой - сегодня превращается в мощный социальный код. Это не просто передача сладостей, это подтверждение связей в мире, который стремится к фрагментации. Один и тот же десерт (Гаманташен) сегодня связывает города и континенты, создавая невидимую сеть общего стола.\nЛИЧНЫЙ ВЕРДИКТ\nКогда мы делим еду, мы делим судьбу. В этом суть Альманаха: находить в простых кондитерских формах глубокие смыслы. Жребий брошен, праздник заканчивается, но ритм общего круга остается.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Тексты",
+        "img": "https://cdn4.telesco.pe/file/PGaJDgEzuhHKRA_bNlMqIFhPQtHgj5IZrFtUTv-r4RFViJIB3vfJalTDIwfgels-kybwF_YlM0N6qw4n67lo1K4M_D8tgt2amBmitwrPx4DyywRrutEXte-WSns6xyyX5wxONc6-sD35WzCdEqB20SJGGJpSczPMVkM2QHbpaPtKZ7PO5vqQsuArJVBjc3li7hEfnG0fgZsSWC2FxhL_JNb9s3vpiNNFCe7HqukkgbaPHRia6csQ6xm0Hi5Z86qXwxgi4dKEf0VJLQOOo_tWovTx_dd_7-QU0h0up9mmQ_BZ5BX2q1Hds-nJVNj9dB_bWCDPwwmMbI6VFnczJOXUhQ.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "24.03 | 14:16",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5531",
+        "t": "🏆 YOURVISION CUP: СЕТКА ПЛЕЙ-ОФФ СФОРМИРОВАНА",
+        "b": "Групповой этап и раунд «Второго шанса» остались позади. Из 35 стран осталось лишь 16 претендентов на кубок. Мы официально переходим к стадии матчей на вылет.\nДля распределения пар мы использовали систему Market Seeding. Позиции в сетке определены на основе актуальных коэффициентов букмекеров (Odds): самый высокий рейтинг играет против самого низкого. Это гарантирует, что титаны сезона не столкнутся друг с другом раньше времени.\n🏁 ПАРЫ 1/8 ФИНАЛА (ROUND OF 16):\n🤩 MATCH 1: 🇫🇮 Finland vs 🇲🇪 Montenegro\n🤩 MATCH 2: 🇩🇰 Denmark vs 🇦🇹 Austria\n🤩 MATCH 3: 🇬🇷 Greece vs 🇦🇱 Albania\n🤩 MATCH 4: 🇦🇺 Australia vs 🇬🇪 Georgia\n🤩 MATCH 5: 🇸🇪 Sweden vs 🇦🇲 Armenia\n🤩 MATCH 6: 🇮🇹 Italy vs 🇲🇩 Moldova\n🤩 MATCH 7: 🇨🇾 Cyprus vs 🇬🇧 United Kingdom\n🤩 MATCH 8: 🇲🇹 Malta vs 🇧🇬 Bulgaria\nПервый баттл стартует завтра в 10:00. Теперь каждое ваше решение - это приговор. Проигравший покидает турнир мгновенно.\nКто из этой восьмерки пар кажется вам самой непредсказуемой? Ждем ваши прогнозы в комментариях.\n⏱️ Время чтения: 0.9 мин | 🏆 YourVision: Tournament",
+        "img": "https://cdn4.telesco.pe/file/Qew4TbTxPapWaCG0Tq_hMxpz29RYnC7x-o_Kev-yg33TShM1vgMBoAXgAWZlchEwOMNxvZkcx8dZ0NWYlZAMuKw39UrA7ODreJ8b4DUabt_jRHS4FqqnraqsXYkhTmcfSf9Ar28SX1odIeOq3CizGe28oR5iPnCyafftZsIh014KrK7jWSgjWgjYU3-20IOxQJ_uFgXIiE6uuqrEmPlO-_Hn7lkkYE2doDS8kt-mBbmaADUZaLTNmG7_SzhgIclhhvsBq1FCCG1AR2TW5BShFnowKgnHKGKESzVoU_HeX1nW8YaoN05x8XUzL09p-Jp2JKkEJYEUjPeaafu45d5ObA.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "24.03 | 11:14",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5530",
+        "t": "📊 YOURVISION CUP: ИТОГИ «ВТОРОГО ШАНСА» - ПОСЛЕДНИЕ БИЛЕТЫ В 1/8",
+        "b": "Битва семи стран завершена. Аудитория сделала свой выбор. В плей-офф проходят два фаворита, показавших самый стабильный рост на протяжении группового этапа.\nИТОГОВАЯ ТАБЛИЦА\n🥇 [CY] КИПР: 53% - QUALIFIED\n🥈 [BG] БОЛГАРИЯ: 38% - QUALIFIED\n🇳🇴 Норвегия: 30%\n🇸🇲 Сан-Марино: 23%\n🇧🇪 Бельгия: 23%\n🇩🇪 Германия: 15%\n🇨🇭 Швейцария: 15%\nЧТО ЭТО ЗНАЧИТ?\nAntigoni и Dara закрывают список участников 1/8 финала. Турнирная сетка сформирована полностью. Впереди - матчи на вылет, где право на ошибку исчезает.\nПоздравляем Кипр и Болгарию! Кто из них станет «темной лошадкой» плей-офф?\n⏱️ Время чтения: 0.8 мин | 🗳 YourVision: Результаты",
+        "img": "https://cdn4.telesco.pe/file/Xfgy4MFLul4oeelAR01Lob-wRoqXQesHTOu2esM41vXlEbGZxlIKXQLBHJ_OfsS63FqlP0zi7Si8Y5osaGTLODDg3jdChWM2jRZHy-xdh82DnOdqk_Qd8Fg2dH5kNhGI0Ak-gUmwsGbhry6mXQl90ERFMDnX4lY_Q_wCRwCjKvqLkyb3HlDEFPR66A4XF5GgzBFl0o0ur51EiwrsUh1NHgMH-IRKx_f9c9xLyfhKgbmEDa8gi_Ap9iRtSuaxOe_WZa7pHzmnsvrP2rCx-d-1GtwoG2sOcb9mmAkY8_oiCR6II17r6LFlhpwbr0sp5abPL_qteQNsxYAFrwY2fCD85A.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "24.03 | 07:02",
+        "id": "lv",
+        "u": "https://t.me/almanac_marginalia/5894",
+        "t": "🏛 ALMANAC: THE FRAGMENT - АРХИТЕКТУРА ПАУЗЫ",
+        "b": "В 2026 году тишина стала самой дорогой роскошью. Мы проектируем свои дни как сложные инженерные конструкции, забывая, что прочность любого здания зависит от пустот между опорами.\nПауза - это не отсутствие действия, а его высшая точка. В выпечке это момент, когда тесто просто отдыхает, набирая силу. В жизни - это секунда перед тем, как нажать «Play». Позвольте себе этот дефицит сегодня утром.\n⏱️ Время чтения: 0.4 мин | 🏛 Almanac: Фрагменты\n***",
+        "img": "https://cdn4.telesco.pe/file/UK5J-XhX-5ofbC8FGyDSN7Bve4jWAcHZxquASGy_cXK1chX-S_zK_pww5NeDJVnTFwZpm7RhwdmpzcyQ2q1ajztdQZUfHBxzVsWbTGh-Gxb_jhHHSN3UpceoP6o9MWkPfdUXlb7EKkiAFWOAZyOnxF4I-Sk1tQFUi-_nDwnduY8NEDtoIM4LFZNXxV5QH5zprxeHhZTQa-CXPqGVnUsP5PuZRoE3uCM_TbpVnqohTxYFT_8KjmbGQazb1rx-6nXO3AipCjgmWj87DdMewpY9XWirniT6aVgYTtXBBFyZ3UdVGtXc6J-UaPD5q3-H4FK4Nq6g57e8MW86itq87zYNpA.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 20:15",
+        "id": "lv",
+        "u": "https://t.me/almanac_marginalia/5893",
+        "t": "🥐 ALMANAC: THE TEXT - РИТУАЛ НОЧНОГО ХЛЕБА",
+        "b": "Ночь - лучшее время для работы с тестом. Когда город затихает, процессы ферментации становятся слышны почти физически. Сегодня мы говорим о балтийской ржи (Rupjmaize) и о том, как превратить обычную выпечку в личный ритуал завершения дня.\nТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: Ржаная мука грубого помола, теплая вода, капля меда и натуральная закваска.\n• Нюанс: Добавьте тмин и щепотку морской соли. Тмин в Латвии - это не просто специя, это код узнавания «своих».\n• Метод: Не спешите. Ржаному тесту не нужны лишние движения. Дайте ему покой в темноте на 4-6 часов.\nЛИЧНЫЙ ВЗГЛЯД\nДля меня Rupjmaize - это «невидимый якорь». Запах свежеиспеченного ржаного хлеба в пустой кухне в 10 вечера возвращает чувство дома, где бы вы ни находились. Это простая геометрия вкуса, которая не требует украшений.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Тексты",
+        "img": "https://cdn4.telesco.pe/file/ZPtKAc6S5W9Xy8Mcr58C0RGkKOyPI1mLdAa6sJjuGXH82pVLT4fIrLRoS8QjslaxI9-563RdD6Sc68SB_xTTrirtaAtMGywCkOXzKUH-ysnrmTMEGLjLES1tLh_EC0jdk-FMukNuWXGGDCTH4z8wgDEGOFr8mHYunfRuIREB2fp-fsoEFgXbiO80pD4VxJ9_YOZAZjf6sHtofLyrwTnrvrXhY0dAotIzK71f2YmfKNxr3wPhFxA4jTducdxE201hwLKxGqO-jcv2mrmHhf9Xh3NARSmOnz9A6Vfecu1OWH8DrYlzuo2dFSSPoKmbuN1mcCh7HEQLgvipeQoLtIDOog.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 19:32",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5529",
+        "t": "Update",
+        "b": "",
+        "img": "//telegram.org/img/emoji/40/F09F938A.png",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 19:30",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5528",
+        "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - УКРАИНА",
+        "b": "Вылет Украины в групповом этапе YourVision Cup 2026 стал главным шоком сезона. Страна, привыкшая к доминированию, оказалась за бортом. Сегодня мы запускаем первый аудит: был ли выбор этого года ошибкой по сравнению с прошлым?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇺🇦 2026: Leléka - «Ridnym»\nГлубокий этнический эмбиент, фолк-мотивы и сакральная эстетика. Попытка уйти в «чистое искусство», которая не нашла отклика у широкого жюри.\n🇺🇦 2025: Ziferblat - «Bird of Pray»\nИнтеллектуальный арт-рок, драматичный вокал и сложная композиция. Год назад этот трек считался эталоном украинского отбора.\nВОПРОС К ЭКСПЕРТАМ\nКто из них был более жизнеспособен для большой сцены? Скучаете ли вы по стилю Ziferblat или Leléka просто не повезло с группой?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.2 мин | 🇺🇦 YourVision: Reset",
+        "img": "//telegram.org/img/emoji/40/F09FA7AA.png",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 18:42",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5527",
+        "t": "🎧 ПЛЕЙЛИСТЫ ЧАРТА:",
+        "b": "🤩 Spotify| 🤩 YT Music| 🤩 YouTube\n(Слушайте пульс мирового эфира на любой платформе)\n🗳 ГОЛОСОВАНИЕ:\nЛинии открыты до воскресенья, 22 марта, 23:59 по Риге.\nКакой трек заслуживает стать №1 в мировом эфире?\n🔗 ПРОГОЛОСОВАТЬ: Strawpoll",
+        "img": "https://cdn4.telesco.pe/file/mD5WCIZCPa8O5OQOAQThDdPTO7vyvuiSUYWuFDvnnp065NracPVcGJFSFbM6nfO69c_31Ovmv5cVHMrpw0KsaJbiVFtrPeabfW7D1LZHad2kVENjOkAYaaVLnSFv5yOmlyIS_o2HZCDRDEzAgX5iTgF-O0taAm3iWfzMdsu4_1TvybeH5QeB1lxwhvQ6L-FhLhYKjiiwG_qRIzRIXwazrsjBMM0wV5rop2FV38jzkEqbQI1dTNxo3jL9gDQfQHqWsUrEUpd5sccORksjEIsWMhy4uI6APGAMXiTei7d5SjtpNtRbUvWnP_pfl9ZJT32lMX-Q_DQNbkQFEdbqV9ugWg.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 18:13",
+        "id": "lv",
+        "u": "https://t.me/almanac_marginalia/5892",
+        "t": "🏛 ALMANAC: THE CALENDAR - ВЕЧЕРНИЙ СВЕТ",
+        "b": "Понедельник подходит к концу, оставляя за собой длинные тени рижских улиц. В балтийской традиции этот день связан не только с началом, но и с умением вовремя остановиться. Вечерний свет - это фильтр, который убирает лишний шум и оставляет только суть.\nРИТУАЛ МОМЕНТА\nСегодняшний вечер требует тишины. Мы часто бежим за временем, забывая, что время - это не дистанция, а объем. В Альманахе мы фиксируем не секунды, а ощущения. Посмотрите, как меняется цвет неба за окном. Это и есть реальность.\nTHE FRAGMENT\n«Свет - это только начало тьмы, которая учит нас видеть...» - мысли на полях старого архива. Завтра мы вернемся к рецептам, но сегодня - просто вдох.",
+        "img": "https://cdn4.telesco.pe/file/N3TpbER7sShFCcJ8QnTdk4okzKxtcZYs1q2Cma9Xm63wdPAg-spR6dyduzzGXTbitzT60bI4yeIRf4h9CxUpgKR7CIEFSTDIIEYC3_7j7MvkKHUcxgStPyTJss7uiCadbo2ka9nVY7nuxePYMpBDBEGcrf4BqcE-rhfw1XCpPuokgi6j3YVUZty8jpHbWvFLGH2uiui0swyBXbGiiY1ggV2h49aVVHVE-HgTwRrYQuihj7c_zVRsFT3pCvEPq1wD6dOG5i3-XHXeMtG1WZBeYb1nwIEjmE_BnH3H0YR9D8jXinf6JpYrmAu-w2OVMA1UUkRkw2qxCTNBYk92TvIiNw.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 18:03",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5526",
+        "t": "🧬 DNA: БОЛГАРИЯ - DARA",
+        "b": "Дарина Йотова (DARA) - поп-икона Болгарии, прошедшая путь от финалистки X Factor до статуса «победоносного тренера» в «The Voice of Bulgaria».\nTHE JOURNEY (ПУТЬ)\nДара - машина по производству хитов номер 1 в Болгарии с 2016 года. Она дважды выигрывала шоу «Голос» в качестве наставника, доказывая, что знает секрет идеального вокального продукта. Её победа на болгарском отборе 2026 года с треком «Bangaranga» (30 баллов) стала логичным шагом в карьере артистки, которая уже давно переросла локальный рынок.\nSTYLE & SOUND (ДНК)\n«Bangaranga» - это взрывоопасная смесь R&B, синти-попа и балканского темперамента. Дара - мастер стаджинга и работы на камеру. Её визуальный стиль - «Cyber-Balkan»: сочетание спортивного шика, футуристических материалов и традиционной болгарской энергии.\nVERDICT: Болгария привезла профессионализм высшей пробы. Дара - одна из самых технически подкованных артисток сезона, готовая бороться за место в первой пятерке.\n⏱️ Время чтения: 1.1 мин | 🧬 YourVision: DNA",
+        "img": "https://cdn4.telesco.pe/file/ePfwfTIqt4lqoiUEx4CFtFbA3k3T_7DVrwGFMkK6D1AyPt0njQY4ghxGVmOstNtV8xrD341PeASzYxGZsCTnMVm0gtQVkTzf2da2PKXwZZDGqFa1wzJOVjpICGSoy0jnuqfwjJaF_jVIto9-XT4sSGPK1izumzraat_vNhcWU6XGENaKEVPrrhxdSH0_qIhTG6lZA2_xFkIc84sDHhNq-7fIbHxUKf2VTP1RjP5QaKXDxtL2Chti2a3fQl-7OcyPBMXhI_SEBMhfKbl0Zgd9IeEgH2AMk-Qkv5-xZfammgvUcDZoyYYWfbBFTWxu9Ffp8AdkaRA6lQPSIXsx6iQezw",
+        "isVideo": true
+    },
+    {
+        "m": "23.03 | 10:04",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5525",
+        "t": "Update",
+        "b": "",
+        "img": "//telegram.org/img/emoji/40/F09F938A.png",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 10:00",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5523",
+        "t": "📊 YOURVISION CUP: ВТОРОЙ ШАНС - КТО ПРОЙДЕТ В ПЛЕЙ-ОФФ?",
+        "b": "Групповой этап завершен, но для семи стран борьба продолжается. В зоне «Второго шанса» оказались сильные игроки, которым не хватило совсем немного до прямой квалификации. Сегодня вы решаете, кто из них достоин занять два последних места в 1/8 финала.\nСПИСОК ПРЕТЕНДЕНТОВ\n1. 🇳🇴 Норвегия: Jonas Lovv - «Ya Ya Ya»\n2. 🇧🇬 Болгария: Dara - «Bangaranga»\n3. 🇩🇪 Германия: Sarah Engels - «Fire»\n4. 🇸🇲 Сан-Марино: Senhit - «Superstar»\n5. 🇨🇭 Швейцария: Veronica Fusaro - «Alice»\n6. 🇧🇪 Бельгия: Essyla - «Dancing on the Ice»\n7. 🇨🇾 Кипр: Antigoni - «Jalla»\nПРАВИЛА\nВыберите ДВА варианта. Две страны с наибольшим количеством голосов проходят в плей-офф. Остальные покидают турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 0.5 мин | 📊 YourVision: Опрос",
+        "img": "https://cdn4.telesco.pe/file/IydXiUSJ_0lF-1UD5o-mOzvdpsZY4JZVX1g8TmNf7Y4vjMgAEWm9RPlaLVtf-Xh9-nwFWK1iQVpzXPlC4C0QhLXUqCbdjBnehLCfCSaHaZEUlL8S3JuthxGn7gAkqXSzMDFZUje_eBQ9Ks7w-6risj05LoLfZ8Mtk7p1UUrhuo6i5LpLWzthqa-5TX8kkBjVreFHGi2CmieqXcQ2z8oPzA0_YmkVCl8iZIUagglbZyR3VGuEHdxFXCEPylVjuO4d086D4xVrbfbXRylcvKr8g8oIHIm3wqar38wKNDTMqgaUaCVKgxSvl3I5F9LxupF8sADrYQJ0XAFURBlRvE02zw.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "23.03 | 09:44",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5522",
+        "t": "📊 YOURVISION CUP: ИТОГИ ГРУППЫ G - ДАТСКОЕ ДОМИНИРОВАНИЕ",
+        "b": "Группа G завершила свое выступление. Дания устанавливает абсолютный рекорд раунда, набирая 83% голосов и не оставляя шансов конкурентам. Австрия вырывает вторую прямую путевку в плей-офф.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ\n🤩 🥇 ДАНИЯ: 83% (Søren Torpegaard Lund) - QUALIFIED\n🤩 🥈 АВСТРИЯ: 50% (COSMȮ) - QUALIFIED\n🤩 🥉 КИПР: 41% (Antigoni) - SECOND CHANCE\n🤩 4. ФРАНЦИЯ: 33% (Monroe) - ELIMINATED\n🤩 5. ПОЛЬША: 0% (Alicja) - ELIMINATED\nДания подтверждает статус одного из главных фаворитов сезона. Главная драма развернулась вокруг Франции: Monroe, на которую возлагали большие надежды, покидает турнир, уступив Кипру место в зоне «Второго шанса». Польша завершает участие с нулевым результатом.\n⏱️ Время чтения: 0.8 мин | 📊 YourVision: Результаты",
+        "img": "https://cdn4.telesco.pe/file/bCDLIfQtWDBNXOBoM-lDyk3SrZJoO8VTlAwd1Vc570TRcSZPK_7l38Sjo4fnAnnjTs5j0WFe_obC734Vh2Lk-oXBhbQg0ijX0qm74V8m4c7wY9n5OWlTSvL2k-C0lb0qlIXqcRk5JhzbxFBpavjmjhlpPmRLzA0F4Yo5QV9Jex5z5gipz5OZoYAzcOQ8FTPkqn3LABGDrev-Njog9IvfkyqBu0_tPpcnmCykbMofjnuCk05OTTU4RcG3NzLHnr1chrV9IzozBu-K0UwXOigRWCdSKhQITUJ6hirx4LlwygqfNfyB2V1ZpJCZfWUkeQmf8fPA2opeR1zpfeaWz-LpOg.jpg",
+        "isVideo": false
+    },
+    {
+        "m": "22.03 | 19:34",
+        "id": "70",
+        "u": "https://t.me/YourEurovision/5519",
+        "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - АНАЛИЗ ВЫБОРА",
+        "b": "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?\nМы запускаем новую рубрику - THE RESET.\nМЕХАНИКА ПРОТОКОЛА\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025).\nЭто не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами и была ли прошлогодняя стратегия более жизнеспособной для большой сцены.\nВАШ ВЕРДИКТ\nВаше голосование - это индикатор точности национального отбора. Мы не можем изменить реальный список участников в Вене, но мы можем зафиксировать наше коллективное мнение: был ли выбор этого года прогрессом или досадной ошибкой, которую хочется «сбросить».\nПервый аудит стартует завтра вечером. С какой страны начнем разбор?\nПишите в комментариях! 👇\n⏱️ Время чтения: 1.3 мин | 🧪 YourVision: The Reset",
+        "img": "https://cdn4.telesco.pe/file/n73Eii7Ml17Y76WxhK0yL5B-q_C5ingAuQEvlbur5SiwfIN_ehfGdz7SVwKQ0ewiNq97i_S05pGa-hPkXziurgYC_X3gxTjDmo_bZSpJ-LryMQyEPeidwnCSZDTp4nR8eN3L46ROaPxf0i4BLj4M1do_TIw0nptX0_Cvnp9ZaWrH9yEdo3KpgQ1RgHwn6gWFRZ6Ifgj8Dqh5ixGi5w0CcS-Q-o5OmfBDqAEToaeqmwWR-3IIYPLMu4S4pBkFi5k9ZCcpp75rSUp5jg4got0PJ7-PlXBJGF51hrGhwQX-LF-ucHxK9y3qM9BfoFmYrhEuK6n4FbqY-St8jHGh3G9mNQ.jpg",
+        "isVideo": false
+    }
+]
+        };
+
+        var isPlaying = false;
+        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
+        var songDuration = 180000, songStartedAt = 0, currentSongId = "";
+
+        playBtn.onclick = () => {
+            if (!isPlaying) {
+                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
+                audio.play().then(() => {
+                    isPlaying = true;
+                    playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+                }).catch(e => console.error("Play error:", e));
+            } else {
+                audio.pause(); audio.src = ""; isPlaying = false;
+                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg>';
+            }
+        };
+
+        async function syncRadio() {
+            try {
+                // Using Codetabs proxy for cleaner data retrieval
+                const apiBase = 'https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now();
+                const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(apiBase)}`);
+                const data = await res.json();
+                
+                const songs = data.songs || [];
+                const current = songs[songs.length - 1];
+                
+                if (current) {
+                    let fullSong = data.song || current.song || "YourVision - United by Music";
+                    let artist = "YourVision Radio", title = "United by Music";
+                    
+                    if (fullSong.includes(" - ")) {
+                        const parts = fullSong.split(" - ");
+                        artist = parts[0].trim();
+                        title = parts.slice(1).join(" - ").trim();
+                    }
+                    
+                    const artEl = document.getElementById('radio-artist');
+                    const songEl = document.getElementById('radio-song');
+                    if (artEl) artEl.innerText = artist;
+                    if (songEl) songEl.innerText = title;
+
+                    if (currentSongId !== (current.songid || fullSong)) {
+                        currentSongId = current.songid || fullSong;
+                        songStartedAt = Date.now();
+                        
+                        if (songs.length >= 2) {
+                            const prev = songs[songs.length - 2];
+                            const parseT = (t) => { 
+                                const [h, m] = t.split(':'); 
+                                const d = new Date();
+                                d.setHours(parseInt(h), parseInt(m), 0);
+                                return d.getTime();
+                            };
+                            const startMs = parseT(current.time);
+                            const prevStartMs = parseT(prev.time);
+                            songDuration = Math.abs(startMs - prevStartMs);
+                            if (songDuration > 600000 || songDuration < 30000) songDuration = 180000;
+                        } else {
+                            songDuration = 180000;
+                        }
+                    }
+
+                    let coverPath = data.imgbig || data.img || current.img || "";
+                    let finalCover = "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+                    
+                    if (coverPath && !coverPath.includes("nocover")) {
+                        finalCover = coverPath.startsWith("http") ? coverPath : `https://myradio24.com/${coverPath}`;
+                    }
+                    const coverEl = document.getElementById('player-cover');
+                    if (coverEl) coverEl.style.backgroundImage = `url('${finalCover}')`;
+                }
+                
+                const histEl = document.getElementById('history-list');
+                if (histEl) {
+                    histEl.innerHTML = songs.slice().reverse().slice(0,15).map(h => {
+                        const hImg = h.img ? (h.img.startsWith('http') ? h.img : `https://myradio24.com/${h.img}`) : "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+                        return `
+                            <tr class="chart-row">
+                                <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
+                                <td class="chart-cell"><img src="${hImg}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                                <td class="chart-cell info-cell"><span class="artist" style="font-size:0.85rem; color:#fff;">${h.song}</span></td>
+                            </tr>
+                        `;
+                    }).join('');
+                }
+                
+                const badge = document.getElementById('live-badge');
+                if (badge) {
+                    badge.innerText = "On Air LIVE";
+                    badge.style.background = "var(--accent-pink)";
+                    badge.style.animation = "pulse 1.5s infinite";
+                }
+            } catch(e) { 
+                console.error("Sync error:", e);
+                const badge = document.getElementById('live-badge');
+                if (badge) {
+                    badge.innerText = "Station OFFLINE";
+                    badge.style.animation = "none";
+                }
+            }
+        }
+
+        function update() {
+            const now = new Date();
+            document.getElementById('clock').innerText = "RIGA: " + now.toLocaleTimeString('ru-RU');
+            for (let id in DATES) {
+                const diff = DATES[id] - now.getTime();
+                const el = document.getElementById('timer-' + id);
+                if (el) {
+                    if (diff <= 0) { el.innerText = "LIVE!"; continue; }
+                    const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
+                    el.innerText = `${d}d ${h}h ${m}m ${s}s`;
+                }
+            }
+            
+            // Progress Bar Update
+            if (songStartedAt > 0) {
+                const elapsed = Date.now() - songStartedAt;
+                const m = Math.floor(elapsed / 60000), s = Math.floor((elapsed % 60000) / 1000);
+                const tm = Math.floor(songDuration / 60000), ts = Math.floor((songDuration % 60000) / 1000);
+                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / ${tm}:${ts < 10 ? '0' : ''}${ts}`;
+                progressBar.style.width = Math.min(100, (elapsed / songDuration) * 100) + "%";
+            }
+        }
+
+        function render() {
+            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
+            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
+            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
+            
+            if (DATA.matches && DATA.matches.length > 0) {
+                document.getElementById('bracket-list').innerHTML = DATA.matches.map(m => `
+                    <div class="match-card">
+                        <div class="match-header">Battle #${m.id}</div>
+                        <div class="match-teams">
+                            <div class="team"><img src="${getHeartUrl(m.p1)}" style="width:25px;"><span>${m.p1.toUpperCase()}</span></div>
+                            <div class="vs">VS</div>
+                            <div class="team"><span>${m.p2.toUpperCase()}</span><img src="${getHeartUrl(m.p2)}" style="width:25px;"></div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // STRICT SORTING (Safety Check)
+            const newsSource = (DATA.news || []).slice().sort((a, b) => {
+                const parseDate = s => {
+                    const parts = s.m.split('|');
+                    if (parts.length < 2) return 0;
+                    const [d, mo] = parts[0].trim().split('.');
+                    const [h, mi] = parts[1].trim().split(':');
+                    return new Date(2026, parseInt(mo)-1, parseInt(d), parseInt(h), parseInt(mi)).getTime();
+                };
+                return parseDate(b) - parseDate(a);
+            });
+            
+            const cardHtml = p => {
+                try {
+                    let media = '';
+                    let body = p.b;
+                    
+                    // 1. Heading and Subheading detection
+                    body = body.split('\n').map(line => {
+                        const trimmed = line.trim();
+                        if (!trimmed) return line;
+                        
+                        const letters = trimmed.replace(/[^a-zA-Zа-яА-Я]/g, '');
+                        const caps = letters.replace(/[^A-ZА-Я]/g, '');
+                        if (letters.length > 5 && caps.length / letters.length > 0.7) {
+                            return `<span class="post-body-h">${trimmed}</span>`;
+                        }
+                        
+                        if (/^[📊🧪🧬❤️📺⚔️🏛🥐🥇🥈🥉🏆🚨]/.test(trimmed)) {
+                             return `<span class="post-body-sh">${trimmed}</span>`;
+                        }
+                        return line;
+                    }).join('\n');
+
+                    // 2. Smart URL detection
+                    const urlRegex = /(https?:\/\/[^\s]+)/g;
+                    body = body.replace(urlRegex, (match) => {
+                        let cleanUrl = match.replace(/[.,!?;:]+$/, '');
+                        const trailing = match.substring(cleanUrl.length);
+                        
+                        const ytMatch = cleanUrl.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
+                        if (ytMatch && !media) {
+                            media = `<div class="post-img-container"><iframe src="https://www.youtube.com/embed/${ytMatch[1]}" class="post-video-iframe" frameborder="0" allowfullscreen></iframe></div>`;
+                        }
+                        return `<a href="${cleanUrl}" target="_blank">${cleanUrl}</a>${trailing}`;
+                    });
+
+                    if (!media) {
+                        if (p.isVideo) {
+                            const embedUrl = p.u + (p.u.includes('?') ? '&' : '?') + 'embed=1';
+                            media = `<div class="post-img-container"><iframe src="${embedUrl}" class="post-video-iframe" scrolling="no" frameborder="0" allowfullscreen></iframe></div>`;
+                        } else if (p.img) {
+                            media = `<div class="post-img-container"><img src="${p.img}" class="post-img" onerror="this.parentElement.style.display='none'"></div>`;
+                        }
+                    }
+
+                    return `
+                        <div class="post-card">
+                            <span class="post-meta">${p.m}</span>
+                            <a href="${p.u}" target="_blank" class="post-h">${p.t}</a>
+                            ${media}
+                            <div class="post-b">${body}</div>
+                        </div>`;
+                } catch(e) {
+                    console.error("Error rendering post", e, p);
+                    return '';
+                }
+            };
+            document.getElementById('news-grid').innerHTML = newsSource.map(cardHtml).join('');
+
+            document.getElementById('chart-body').innerHTML = DATA.chart.map(s => `
+                <tr class="chart-row"><td class="chart-cell rank">${s.r}</td><td class="chart-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td><td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td><td class="chart-cell pts">${s.p} pts</td></tr>
+            `).join('');
+        }
+
+        function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; }
+
+        setInterval(update, 1000);
+        setInterval(syncRadio, 20000);
+        render();
+        syncRadio();
+    </script>
+</body>
+</html>

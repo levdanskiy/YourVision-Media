@@ -1,0 +1,22 @@
+{
+  "name": "YourVision Hub",
+  "short_name": "YourVision",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0a021a",
+  "theme_color": "#ff007f",
+  "description": "YourVision Vienna 2026 Insider Hub - News, Radio & Tournament",
+  "icons": [
+    {
+      "src": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

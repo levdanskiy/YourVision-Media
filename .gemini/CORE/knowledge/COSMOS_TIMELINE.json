@@ -1,9 +1,0 @@
-{
-    "milestones": [
-        {"date": "31.01.1971", "mission": "Apollo 14", "event": "Launch to the Moon (Alan Shepard)"},
-        {"date": "05.02.1971", "mission": "Apollo 14", "event": "Lunar Landing at Fra Mauro"},
-        {"date": "12.04.1961", "mission": "Vostok 1", "event": "First human in space (Yuri Gagarin)"},
-        {"date": "20.07.1969", "mission": "Apollo 11", "event": "First Moon walk (Armstrong/Aldrin)"},
-        {"date": "24.04.1990", "mission": "STS-31", "event": "Hubble Space Telescope deployment"}
-    ]
-}

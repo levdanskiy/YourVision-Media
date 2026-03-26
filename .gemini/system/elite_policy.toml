@@ -1,0 +1,34 @@
+# YourVision Elite Automation Policy
+# Allows common editing and git operations without constant confirmation.
+
+# 1. Allow file editing tools
+[[rule]]
+toolName = ["write_file", "replace"]
+decision = "allow"
+priority = 10
+
+# 2. Allow Git and Sync operations
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "git"
+decision = "allow"
+priority = 20
+
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = "python3 yv_tg_sync.py"
+decision = "allow"
+priority = 30
+
+# 3. Allow directory listing and reading
+[[rule]]
+toolName = ["list_directory", "read_file", "glob", "grep_search"]
+decision = "allow"
+priority = 5
+
+# 4. Safety: Still ask before dangerous commands (like deleting or installing)
+[[rule]]
+toolName = "run_shell_command"
+commandPrefix = ["rm", "sudo", "npm install", "apt"]
+decision = "ask_user"
+priority = 100

@@ -1,0 +1,69 @@
+{
+    "phase": "ROUND_OF_16",
+    "groups": {
+        "A": ["NO", "GE", "AL", "LU", "RO"],
+        "B": ["SE", "LT", "HR", "GB", "BG"],
+        "C": ["IT", "LV", "GR", "DE", "CZ"],
+        "D": ["UA", "EE", "SM", "MT", "MD"],
+        "E": ["CH", "FI", "ME", "PT", "AZ"],
+        "F": ["IL", "BE", "RS", "AU", "AM"],
+        "G": ["FR", "DK", "CY", "AT", "PL"]
+    },
+    "qualifiers": [
+        {"country": "GE", "group": "A", "status": "QUALIFIED"},
+        {"country": "AL", "group": "A", "status": "QUALIFIED"},
+        {"country": "SE", "group": "B", "status": "QUALIFIED"},
+        {"country": "GB", "group": "B", "status": "QUALIFIED"},
+        {"country": "GR", "group": "C", "status": "QUALIFIED"},
+        {"country": "IT", "group": "C", "status": "QUALIFIED"},
+        {"country": "MD", "group": "D", "status": "QUALIFIED"},
+        {"country": "MT", "group": "D", "status": "QUALIFIED"},
+        {"country": "FI", "group": "E", "status": "QUALIFIED"},
+        {"country": "ME", "group": "E", "status": "QUALIFIED"},
+        {"country": "AM", "group": "F", "status": "QUALIFIED"},
+        {"country": "AU", "group": "F", "status": "QUALIFIED"},
+        {"country": "DK", "group": "G", "status": "QUALIFIED"},
+        {"country": "AT", "group": "G", "status": "QUALIFIED"},
+        {"country": "CY", "group": "G", "status": "QUALIFIED"},
+        {"country": "BG", "group": "B", "status": "QUALIFIED"}
+    ],
+    "eliminated": [
+        {"country": "NO", "group": "A", "score": "30%"},
+        {"country": "DE", "group": "C", "score": "15%"},
+        {"country": "SM", "group": "D", "score": "23%"},
+        {"country": "CH", "group": "E", "score": "15%"},
+        {"country": "BE", "group": "F", "score": "23%"},
+        {"country": "FR", "group": "G"},
+        {"country": "PL", "group": "G"},
+        {"country": "RO", "group": "A"},
+        {"country": "LU", "group": "A"},
+        {"country": "HR", "group": "B"},
+        {"country": "LT", "group": "B"},
+        {"country": "LV", "group": "C"},
+        {"country": "CZ", "group": "C"},
+        {"country": "UA", "group": "D"},
+        {"country": "EE", "group": "D"},
+        {"country": "PT", "group": "E"},
+        {"country": "AZ", "group": "E"},
+        {"country": "IL", "group": "F"},
+        {"country": "RS", "group": "F"}
+    ],
+    "bracket": {
+        "round_16": [
+            {"match": 1, "p1": "FI", "p2": "ME"},
+            {"match": 2, "p1": "DK", "p2": "AT"},
+            {"match": 3, "p1": "GR", "p2": "AL"},
+            {"match": 4, "p1": "AU", "p2": "GE"},
+            {"match": 5, "p1": "SE", "p2": "AM"},
+            {"match": 6, "p1": "IT", "p2": "MD"},
+            {"match": 7, "p1": "CY", "p2": "GB"},
+            {"match": 8, "p1": "MT", "p2": "BG"}
+        ],
+        "quarter_finals": [
+            {"match": 9, "p1": "TBD", "p2": "TBD", "from": [8, 1]},
+            {"match": 10, "p1": "TBD", "p2": "TBD", "from": [7, 2]},
+            {"match": 11, "p1": "TBD", "p2": "TBD", "from": [6, 3]},
+            {"match": 12, "p1": "TBD", "p2": "TBD", "from": [5, 4]}
+        ]
+    }
+}

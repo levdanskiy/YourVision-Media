@@ -10,7 +10,7 @@
 17.02 🇬🇧 **Великобритания**: Artist Announcement (10:35) ✅
 19.02 🇧🇪 **Бельгия**: Artist & Song Reveal (19:21)
 20.02 🇸🇪 Швеция: Melodifestivalen Heat 4 Entries Released (01:00)
-20.02 🇦🇹 **Австрия**: Финал Vienna Calling – Wer singt für Österreich? (21:15)
+20.02 🇦🇹 **Австрия**: Финал Vienna Calling - Wer singt für Österreich? (21:15)
 21.02 🇸🇪 Швеция: Melodifestivalen Heat 4 (21:00)
 21.02 🇱🇹 Литва: Eurovizija.LT Semi-Final 5 (21:00)
 21.02 🇵🇹 Португалия: Festival da Canção Semi-Final 1 (23:00)
@@ -39,11 +39,12 @@
 05.03 🇸🇲 Сан-Марино: Semi-Final 2 (Results: IUNA, KLEM, L.Basi, M.Tul, M.Azucena) ✅
 05.03 🇮🇱 **Израиль**: Noam Bettan - «Michelle» (Song Reveal) ✅
 06.03 🇬🇧 **Великобритания**: Премьера песни «Ein Zwei Drei» (10:30)
-06.03 🇦🇿 **Азербайджан**: Объявление представителя (16:00)
+06.03 🇦🇿 **Азербайджан**: JIVA (Artist Revealed) ✅
+09.03 🇦🇿 **Азербайджан**: JIVA - «Just Go» (Release 19:00) ✅
 06.03 🇫🇷 **Франция**: Monroe - «Regarde» (Release 19:00) ✅
 06.03 🇸🇲 **Сан-Марино**: Senhit - «Superstar» (Winner) ✅
 07.03 🇵🇱 **Польша**: Wielki Finał Polskich Kwalifikacji (18:35)
-07.03 🇸🇪 **Швеция**: Финал Melodifestivalen (21:00)
+07.03 🇸🇪 **Швеция**: Felicia - «My System» (Winner) ✅
 07.03 🇵🇹 **Португалия**: Финал Festival da Canção (23:00)
 07.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 1 (21:30)
 07-08.03 🇳🇱 Нидерланды (JESC): Second phase of auditions for Junior Songfestival
@@ -53,7 +54,15 @@
 09.03 🏆 **DEADLINE** for participating broadcasters to submit their entry
 11.03 🇨🇭 **Швейцария**: Релиз песни Veronica Fusaro (13:00)
 11.03 🇨🇿 **Чехия**: Презентация конкурсной песни (21:00)
+16.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа A (10:00)
+17.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа B (10:00)
+18.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа C (10:00)
+19.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа D (10:00)
+20.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа E (10:00)
+21.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа F (10:00)
+22.03 ⚔️ **YOURVISION CUP**: Групповой раунд. Группа G (10:00)
 14.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 2 (21:30)
+
 17.03 🇦🇹 **HoD Meeting**: Heads of Delegation Meeting
 21.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 3 (21:30)
 28.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 4 (21:30)
@@ -68,6 +77,7 @@
 25.04 🇵🇱 Польша (JESC): The Voice Kids Battles 2 (21:30 CEST)
 
 **Май**
+01.05 🇦🇹 **Вена**: Начало первых репетиций (09:00)
 02.05 🇵🇱 Польша (JESC): The Voice Kids Battles 3 (21:30 CEST)
 09.05 🇵🇱 Польша (JESC): The Voice Kids Final (21:30 CEST)
 12.05 ❤️ **SEMI-FINAL 1** (22:00 CEST)

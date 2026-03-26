@@ -340,8 +340,8 @@ minimalist plain text "YourVision" and "levdanskiy" at the bottom corner
 
 ```bash
 # Найти и заменить
-sed -i 's/—/-/g' файл.md
-sed -i 's/–/-/g' файл.md
+sed -i 's/-/-/g' файл.md
+sed -i 's/-/-/g' файл.md
 ```
 
 ### "Отсутствует промпт"

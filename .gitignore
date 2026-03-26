@@ -1,30 +1,17 @@
-# System & Personal
-.cache/
-.config/
-.dropbox/
-.dropbox-dist/
-.local/
-.mozilla/
-.npm/
-.pki/
-.ssh/
-.var/
-.bash_history
-.bash_logout
-.bashrc
-.profile
-.sudo_as_admin_successful
-.wget-hsts
-.DS_Store
 
-# Project мусор
-__pycache__/
-*.tmp
-.gemini/tmp/
-.gemini/TRASH/
-TRASH/
+# Secrets and Credentials
+.gemini/*.json
+!.gemini/projects.json
+.gemini/installation_id
+.gemini/.safety_lock
+.gemini/oauth_creds.json
+.gemini/credentials.json
 
-# Другие личные папки
+# Large binaries and muisic
+chrome/
+chromium/
+chromedriver/
+snap/
 AutoInvoice/
 Dropbox/
 Apsaimniekošana/
@@ -35,4 +22,7 @@ Apsaimniekošana/
 Документы/
 Рабочий стол/
 Шаблоны/
-Общедоступные/
+.gemini/ENGINE/repos/
+.gemini/tmp/
+.gemini/TRASH/
+

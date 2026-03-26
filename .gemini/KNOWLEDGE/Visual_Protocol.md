@@ -1,7 +1,7 @@
 # 🖼️ VISUAL PROTOCOL V5.0 (MULTI-CHANNEL AR MATRIX)
 **// 30+ Вариантов для каждого канала Almanac | Трендовая калибровка 2026 //**
 
-## 🏛️ ARCHITECT (AC) — 30 VARIANTS
+## 🏛️ ARCHITECT (AC) - 30 VARIANTS
 *Приоритет: Широкоформатная мощь и вертикальный брутализм.*
 1.  **[TREND]** `--ar 2.76:1` (Ultra Panavision)
 2.  **[TREND]** `--ar 1:3` (Extreme Skyscraper)
@@ -34,7 +34,7 @@
 29. `--ar 2.20:1` (Todd-AO)
 30. `--ar 4:1` (Extreme Horizon)
 
-## 🌍 NEIGHBORS (NB) — 30 VARIANTS
+## 🌍 NEIGHBORS (NB) - 30 VARIANTS
 *Приоритет: Честная фотография, пленочные форматы и "открыточный" стиль.*
 1.  **[TREND]** `--ar 6:7` (Ideal Format)
 2.  **[TREND]** `--ar 4:3` (Academy Ratio)
@@ -67,7 +67,7 @@
 29. `--ar 1.5:1` (Hybrid)
 30. `--ar 1:1.1` (Shifted Square)
 
-## 🍰 SWEET (SW) — 30 VARIANTS
+## 🍰 SWEET (SW) - 30 VARIANTS
 *Приоритет: Макро-вертикали, "Food Porn" и текстурные фокусы.*
 1.  **[TREND]** `--ar 10:16` (Ultra Vertical)
 2.  **[TREND]** `--ar 4:5` (Delicious Portrait)
