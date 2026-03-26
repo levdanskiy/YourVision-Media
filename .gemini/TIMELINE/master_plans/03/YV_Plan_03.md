@@ -44,8 +44,10 @@
 
 
 ### 31.03 (Вт) - ROUND OF 16: BATTLE #7
+* 09:00 | **AL** | 🏛 **#FRAGMENT:** Рижский Март: Исчезающий город. - ⬜ [ОЖИДАНИЕ]
 * 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #7: CY vs GB. - ✅ [ГОТОВО]
 * 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #6. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🥐 **#ALMANAC_FINALE:** Мартовское послевкусие: Итоги Marginalia. - ⬜ [ОЖИДАНИЕ]
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** WorldSound Airwave Velocity. - ✅ [ГОТОВО]
 
 ### 01.04 (Ср) - ROUND OF 16: BATTLE #8
