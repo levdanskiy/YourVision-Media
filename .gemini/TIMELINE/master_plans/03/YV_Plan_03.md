@@ -36,6 +36,8 @@
 * 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #5: SE vs AM. - ✅ [ГОТОВО]
 * 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #4. - ✅ [ГОТОВО]
 * 18:00 | **AL** | 🏛 **#FRAGMENT:** Югендстиль: Застывший миф. - ✅ [ГОТОВО]
+* 18:50 | **YV** | 📢 **#NEWS_WIRE:** 10 minutes to Alis premiere. - ⬜ [WAITING]
+* 19:00 | **YV** | ❤️ **#ALBM:** Albania: Alis - Nën (Piano Version Premiere). - ⬜ [WAITING]
 
 ### 30.03 (Пн) - ROUND OF 16: BATTLE #6
 * 09:00 | **AL** | 🏛 **#CALENDAR:** Апрельские тизеры: Предчувствие. - ⬜ [ОЖИДАНИЕ]
