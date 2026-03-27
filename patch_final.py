@@ -1,6 +1,6 @@
 import os
 
-# КОНСОЛИДИРОВАННЫЙ HTML С ДИЗАЙНОМ ТИТАН
+# КОНСОЛИДИРОВАННЫЙ HTML С ДИЗАЙНОМ ТИТАН И АВТО-ОЧИСТКОЙ
 final_html = """<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -49,9 +49,8 @@ final_html = """<!DOCTYPE html>
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
         .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-        .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 30px; }
+        .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px; }
         
-        /* TITAN BRACKET STYLES */
         .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 15px; padding: 25px; display: flex; flex-direction: column; gap: 15px; transition: 0.4s; position: relative; min-height: 200px; justify-content: center; }
         .battle-box-small { min-height: 120px; opacity: 0.6; padding: 15px; }
         .battle-box:hover { border-color: var(--accent-pink); transform: translateY(-5px); background: rgba(255,255,255,0.05); }
@@ -94,10 +93,12 @@ final_html = """<!DOCTYPE html>
 
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 30px; }
-        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
+        
+        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; cursor: pointer; text-decoration: none; }
+        .post-card:hover { transform: scale(1.01); background: rgba(255,255,255,0.05); border-color: var(--accent-pink); }
         .post-content { padding: 35px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.45rem; font-weight: 900; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin-bottom: 20px; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.45rem; font-weight: 900; color: #fff; text-transform: uppercase; display: block; margin-bottom: 20px; }
         .post-b { font-size: 1.05rem; color: #ddd; line-height: 1.8; white-space: pre-wrap; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; }
@@ -119,7 +120,7 @@ final_html = """<!DOCTYPE html>
 <body>
     <div class="hero-view">
         <nav>
-            <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
+            <a href="https://t.me/YourEurovision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
             <div id="clock">RIGA: 00:00:00</div>
         </nav>
 
@@ -276,15 +277,18 @@ final_html = """<!DOCTYPE html>
                 </tr>
             `).join('');
             
-            document.getElementById('news-grid').innerHTML = DATA.news.map(p => `
-                <div class="post-card">
+            document.getElementById('news-grid').innerHTML = DATA.news.map(p => {
+                const title = p.t.replace(/\\*/g, '');
+                const body = p.b.replace(/\\*/g, '');
+                return `
+                <a href="${p.u}" target="_blank" class="post-card">
                     <div class="post-content">
                         <span class="post-meta">${p.m}</span>
-                        <a href="${p.u}" target="_blank" class="post-h">${p.t}</a>
-                        <div class="post-b">${p.b}</div>
+                        <span class="post-h">${title}</span>
+                        <div class="post-b">${body}</div>
                     </div>
-                </div>
-            `).join('');
+                </a>
+            `}).join('');
         }
 
         var isPlaying = false;
@@ -326,4 +330,4 @@ final_html = """<!DOCTYPE html>
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(final_html)
-print("Titan Integrated Hub deployed with fixed data and covers.")
+print("Titan Integrated Hub with auto-strip and card-links deployed.")
