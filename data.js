@@ -1,53 +1,13 @@
 var DATA = {
     battles: [
-        { 
-            id: 1, n: "Match #1", qf: "TO QF1",
-            t1: "fi", a1: "Linda Lampenius and Pete Parkkonen", s1: "Liekinheitin", sc1: "71%", 
-            t2: "me", a2: "Tamara Živković", s2: "Nova zora", sc2: "29%", 
-            w: 1, status: "FINISHED" 
-        },
-        { 
-            id: 2, n: "Match #2", qf: "TO QF1",
-            t1: "dk", a1: "Søren Torpegaard Lund", s1: "Før vi går hjem", sc1: "77%", 
-            t2: "at", a2: "COSMØ", s2: "Tanzschein", sc2: "23%", 
-            w: 1, status: "FINISHED" 
-        },
-        { 
-            id: 3, n: "Match #3", qf: "TO QF2",
-            t1: "gr", a1: "Akylas", s1: "Ferto", sc1: "LIVE", 
-            t2: "al", a2: "Alis", s2: "Nën", sc2: "", 
-            w: 0, status: "LIVE" 
-        },
-        { 
-            id: 4, n: "Match #4", qf: "TO QF2",
-            t1: "au", a1: "Delta Goodrem", s1: "Eclipse", sc1: "WAIT", 
-            t2: "ge", a2: "Bzikebi", s2: "On Replay", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 5, n: "Match #5", qf: "TO QF3",
-            t1: "se", a1: "Felicia", s1: "My System", sc1: "WAIT", 
-            t2: "am", a2: "Simón", s2: "Paloma rumba", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 6, n: "Match #6", qf: "TO QF3",
-            t1: "it", a1: "Sal Da Vinci", s1: "Per sempre sì", sc1: "WAIT", 
-            t2: "md", a2: "Satoshi", s2: "Viva, Moldova!", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 7, n: "Match #7", qf: "TO QF4",
-            t1: "cy", a1: "Antigoni", s1: "Jalla", sc1: "WAIT", 
-            t2: "gb", a2: "Look Mum No Computer", s2: "Eins, Zwei, Drei", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 8, n: "Match #8", qf: "TO QF4",
-            t1: "mt", a1: "Aidan", s1: "Bella", sc1: "WAIT", 
-            t2: "bg", a2: "Dara", s2: "Bangaranga", sc2: "", 
-            w: 0, status: "WAITING" 
-        }
+        { id: 1, n: "Match #1", qf: "TO QF1", t1: "fi", a1: "Linda Lampenius and Pete Parkkonen", s1: "Liekinheitin", sc1: "71%", t2: "me", a2: "Tamara Živković", s2: "Nova zora", sc2: "29%", w: 1, status: "FINISHED" },
+        { id: 2, n: "Match #2", qf: "TO QF1", t1: "dk", a1: "Søren Torpegaard Lund", s1: "Før vi går hjem", sc1: "77%", t2: "at", a2: "COSMØ", s2: "Tanzschein", sc2: "23%", w: 1, status: "FINISHED" },
+        { id: 3, n: "Match #3", qf: "TO QF2", t1: "gr", a1: "Akylas", s1: "Ferto", sc1: "LIVE", t2: "al", a2: "Alis", s2: "Nën", sc2: "", w: 0, status: "LIVE" },
+        { id: 4, n: "Match #4", qf: "TO QF2", t1: "au", a1: "Delta Goodrem", s1: "Eclipse", sc1: "WAIT", t2: "ge", a2: "Bzikebi", s2: "On Replay", sc2: "", w: 0, status: "WAITING" },
+        { id: 5, n: "Match #5", qf: "TO QF3", t1: "se", a1: "Felicia", s1: "My System", sc1: "WAIT", t2: "am", a2: "Simón", s2: "Paloma rumba", sc2: "", w: 0, status: "WAITING" },
+        { id: 6, n: "Match #6", qf: "TO QF3", t1: "it", a1: "Sal Da Vinci", s1: "Per sempre sì", sc1: "WAIT", t2: "md", a2: "Satoshi", s2: "Viva, Moldova!", sc2: "", w: 0, status: "WAITING" },
+        { id: 7, n: "Match #7", qf: "TO QF4", t1: "cy", a1: "Antigoni", s1: "Jalla", sc1: "WAIT", t2: "gb", a2: "Look Mum No Computer", s2: "Eins, Zwei, Drei", sc2: "", w: 0, status: "WAITING" },
+        { id: 8, n: "Match #8", qf: "TO QF4", t1: "mt", a1: "Aidan", s1: "Bella", sc1: "WAIT", t2: "bg", a2: "Dara", s2: "Bangaranga", sc2: "", w: 0, status: "WAITING" }
     ],
     qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}],
     eliminated: [{id: "me"}, {id: "at"}, {id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
@@ -58,7 +18,7 @@ var DATA = {
         { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg" },
         { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg" },
         { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg" },
-        { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/07/fb/ec/07fbec8e-0b07-0b07-0b07-0b070b070b07/cover.jpg/200x200bb.jpg" },
+        { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/200x200bb.jpg" },
         { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg" },
         { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg" },
         { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
