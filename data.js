@@ -630,7 +630,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5544",
             "t": "❤️ АВСТРИЯ: ЕВРОВИДЕНИЕ 2026 - ВТОРАЯ ВОЛНА БИЛЕТОВ",
             "b": "Сегодня стартует второй раунд «Голодных игр» за право попасть в Wiener Stadthalle. В 16:00 по Риге откроется доступ к билетам для тех, кто прошел предварительную регистрацию, но остался ни с чем после первой волны.\nОрганизаторы подчеркивают: это закрытый этап. Ссылки на покупку получили только верифицированные фанаты. Если вы в списке - проверяйте почту и готовьтесь к цифровой очереди. Шанс занять место в фан-зоне или на трибунах Вены тает с каждой минутой. Мы ожидаем, что топовые категории (Final Live Show) будут распроданы менее чем за 15 минут.\nКто из вас уже получил заветное подтверждение и пакует чемоданы в Австрию?\n⏱️ Время чтения: 0.6 мин | 🇦🇹 YourVision: Билеты",
-            "img": "https://cdn4.telesco.pe/file/b41d6yqC3qccErrC3xrV0TdyoyY_HlDNaEUX64a8MxFaK9RZG84CEgfYHkskJIKsdXXHmLHYzDSpY8pPwNwg4VE_32tTHMOxawwrGy4i1cqOiYWmZFxsyzqCMswjuuJRvz0fYWshz2rzMXzXm0YwHI16pwpQmfBUO8mkyUOUjHd2jo4dXlRlRZhNXkc81g9bw7JG13u7xVxbpeY-J4dZAv-MIysmu2RxqzxgaTODpgmjayGJ4fZzHfijd_XxcOP3dZS-i--BAUKRRnY9m82-UdW2XOi1qFdzb9IqbI3s0HUhBxC1whYk0bSWemmDoaJk8ltcRJx1P5FgUwaziXibHw.jpg",
+            "img": "https://cdn4.telesco.pe/file/XX7WsvEDDCrw1_ZAU5fAUZKwXEXu9r2ahs8SgRtbAVHTAL773i7lo2Ew12AenG_XGxrIFEPTYIhQZhrE2HopQCpbJk1TeMh_3u8X4BeSKnWHhJCopvmgPEQsyrEYjNIUt2O8C7usgZAHhn9PEP3o66Tbi9Rmai4aO2qIhTe00cbziq9FlsOcuvoP1BI-QGTA9A4qejBq5rLzzhrxDGfPNjZJUL-GIrHjJL8ep6nzPOauQLGz3cxyz-FSlADqUutNKuQtD1dqv6Qe915Nc-D9ky0gdxffZhcetqoqoefI09j9tROi1Sw-WZH5kxNjBLM-MZUgDplPCwzSxgG3V_5nEw.jpg",
             "ts": 1774529494.0
         },
         {

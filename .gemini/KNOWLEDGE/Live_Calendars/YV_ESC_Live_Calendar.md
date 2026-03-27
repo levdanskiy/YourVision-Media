@@ -65,6 +65,7 @@
 
 17.03 🇦🇹 **HoD Meeting**: Heads of Delegation Meeting
 21.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 3 (21:30)
+28.03 🇱🇺 **Люксембург**: Eva Marija - Ne Partez Pas Sans Moi (Premiere) (19:00)
 28.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 4 (21:30)
 
 **Апрель**

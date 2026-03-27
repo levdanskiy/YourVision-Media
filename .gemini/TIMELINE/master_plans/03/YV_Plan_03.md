@@ -29,6 +29,7 @@
 * 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #4: AU vs GE. - ✅ [ГОТОВО]
 * 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #3. - ✅ [ГОТОВО]
 * 18:00 | **AL** | 🥐 **#TEXTS:** Ржаные чипсы: Искусство вычитания. - ✅ [ГОТОВО]
+* 19:00 | **YV** | ❤️ **#ALBM:** Luxembourg: Eva Marija - Ne Partez Pas Sans Moi (Premiere). - ✅ [ГОТОВО]
 
 ### 29.03 (Вс) - ROUND OF 16: BATTLE #5
 * 09:00 | **AL** | 🏛 **#CALENDAR:** Переход: Края Марта. - ✅ [ГОТОВО]

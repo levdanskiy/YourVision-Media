@@ -5,6 +5,15 @@
   "timezone": "Europe/Riga",
   "events": [
     {
+      "id": "ALBM_LU_01",
+      "date": "2026-03-28",
+      "time": "19:00",
+      "country": "Luxembourg",
+      "event": "Eva Marija - Ne Partez Pas Sans Moi (Premiere)",
+      "type": "ALBM",
+      "status": "WAITING"
+    },
+    {
       "id": "WS_CHART_01",
       "date": "2026-03-31",
       "time": "18:00",
