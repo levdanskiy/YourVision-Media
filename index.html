@@ -42,12 +42,18 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
+        /* HEADER COLORS */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
-        .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+        .header-gradient { background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; border-left: none; padding-left: 0; }
         
-        .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
+        .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+        .sub-qualified { color: var(--accent-acid); text-shadow: 0 0 10px rgba(204, 255, 0, 0.3); }
+        .sub-eliminated { color: #ff4d4d; opacity: 0.8; }
+        
+        .tournament-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
         .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px; }
         
+        /* TITAN BRACKET STYLES */
         .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 15px; padding: 25px; display: flex; flex-direction: column; gap: 15px; transition: 0.4s; position: relative; min-height: 200px; justify-content: center; }
         .battle-box-small { min-height: 120px; opacity: 0.6; padding: 15px; }
         .battle-box:hover { border-color: var(--accent-pink); transform: translateY(-5px); background: rgba(255,255,255,0.05); }
@@ -72,11 +78,17 @@
         @keyframes live-pulse { 0% { border-color: var(--accent-pink); box-shadow: 0 0 10px var(--accent-pink); } 50% { border-color: #fff; box-shadow: 0 0 30px var(--accent-pink); } 100% { border-color: var(--accent-pink); box-shadow: 0 0 10px var(--accent-pink); } }
         .status-live { animation: live-pulse 2s infinite; border-width: 2px; background: rgba(255,0,127,0.08); }
 
-        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; transition: 0.3s; }
-        .heart-bubble { width: 35px; height: auto; }
-        .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
-        .status-q { border-bottom: 2px solid var(--accent-acid); }
-        .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
+        /* COUNTRY BUBBLES 2.0 */
+        .country-bubble { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 12px; display: flex; align-items: center; gap: 12px; transition: 0.3s; width: 100%; box-sizing: border-box; }
+        .country-bubble:hover { background: rgba(255,255,255,0.06); border-color: var(--accent-cyan); transform: scale(1.02); }
+        .bubble-info { display: flex; flex-direction: column; gap: 1px; flex-grow: 1; }
+        .bubble-country { font-size: 0.55rem; font-weight: 900; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.1em; }
+        .bubble-artist { font-size: 0.65rem; color: #fff; font-weight: 700; line-height: 1.1; }
+        .bubble-song { font-size: 0.6rem; color: #888; font-weight: 400; }
+        .heart-bubble { width: 30px; height: auto; }
+        
+        .status-q { border-left: 3px solid var(--accent-acid); }
+        .status-el { border-left: 3px solid #444; opacity: 0.6; }
 
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
@@ -153,12 +165,12 @@
 
             <main class="column">
                 <div class="card">
-                    <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
+                    <div class="section-title header-gradient">YOURVISION CUP / 2026 STANDINGS</div>
                     <div class="grid-sub-header">PLAY-OFF BRACKET [ROUND OF 16]</div>
                     <div id="bracket-body" class="bracket-grid"></div>
-                    <div class="grid-sub-header">QUALIFIED COUNTRIES</div>
+                    <div class="grid-sub-header sub-qualified">QUALIFIED COUNTRIES</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
-                    <div class="grid-sub-header">ELIMINATED</div>
+                    <div class="grid-sub-header sub-eliminated">ELIMINATED</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
                 <div class="feed-title">INSIDER NEWS FEED [20]</div>
@@ -201,16 +213,13 @@
                 const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
                 const data = await res.json();
                 const current = data.songs[data.songs.length - 1];
-                
                 if (currentSongId !== current.songid) {
-                    currentSongId = current.songid;
-                    songStartedAt = Date.now(); 
+                    currentSongId = current.songid; songStartedAt = Date.now(); 
                     document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
                     document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
                     const img = (data.imgbig && !data.imgbig.includes('nocover')) ? `https://myradio24.com/${data.imgbig}` : `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
-
                 document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `
                     <tr class="chart-row">
                         <td class="chart-cell rank" style="font-size:0.6rem; color:var(--accent-pink);">${h.time}</td>
@@ -225,7 +234,16 @@
         }
 
         function render() {
-            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
+            const bubble = (c, st) => `
+                <div class="country-bubble ${st}">
+                    <img src="${getHeartUrl(c.id)}" class="heart-bubble">
+                    <div class="bubble-info">
+                        <span class="bubble-country">${c.id.toUpperCase()}</span>
+                        <span class="bubble-artist">${c.a}</span>
+                        <span class="bubble-song">${c.s}</span>
+                    </div>
+                </div>`;
+            
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
@@ -235,7 +253,6 @@
                 <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''} ${!isMajor ? 'battle-box-small' : ''}">
                     <div class="battle-n">${b.n}</div>
                     <div class="battle-qf-label">${b.qf}</div>
-                    
                     <div class="battle-team ${b.w===1?'winner-glow':(b.w===2?'team-lose':'')}">
                         <img src="${getHeartUrl(b.t1)}" style="width:35px; height:35px; border-radius:50%; border: 2px solid rgba(255,255,255,0.1);">
                         <div class="team-info">
@@ -244,11 +261,8 @@
                         </div>
                         <span class="team-score">${b.sc1}${b.w===1?' <span class="winner-tag-large">★</span>':''}</span>
                     </div>
-                    
                     ${isMajor ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc1}"></div></div>` : ''}
-                    
                     <div class="vs-label-large">VS</div>
-                    
                     <div class="battle-team ${b.w===2?'winner-glow':(b.w===1?'team-lose':'')}">
                         <img src="${getHeartUrl(b.t2)}" style="width:35px; height:35px; border-radius:50%; border: 2px solid rgba(255,255,255,0.1);">
                         <div class="team-info">
@@ -257,10 +271,9 @@
                         </div>
                         <span class="team-score">${b.sc2}${b.w===2?' <span class="winner-tag-large">★</span>':''}</span>
                     </div>
-                    
                     ${isMajor && b.sc2 ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc2}; background:var(--accent-cyan); box-shadow: 0 0 15px var(--accent-cyan);"></div></div>` : ''}
-                </div>
-            `}).join('');
+                </div>`;
+            }).join('');
 
             document.getElementById('chart-list').innerHTML = DATA.chart.map(i => `
                 <tr class="chart-row">
@@ -271,8 +284,7 @@
                         <span class="song" style="display:block; color:#888;">${i.s}</span>
                     </td>
                     <td class="chart-cell pts">${i.p}</td>
-                </tr>
-            `).join('');
+                </tr>`).join('');
             
             document.getElementById('news-grid').innerHTML = DATA.news.map(p => {
                 const title = p.t.replace(/\*/g, '');
@@ -284,13 +296,12 @@
                         <span class="post-h">${title}</span>
                         <div class="post-b">${body}</div>
                     </div>
-                </a>
-            `}).join('');
+                </a>`;
+            }).join('');
         }
 
         var isPlaying = false;
         var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
-        
         playBtn.onclick = () => {
             if (!isPlaying) {
                 audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
@@ -316,10 +327,7 @@
                 if(progressBar) progressBar.style.width = Math.min(100, (elapsed / songDuration) * 100) + "%";
             }
         }
-
-        setInterval(update, 1000);
-        setInterval(syncRadio, 15000); 
-        render(); syncRadio();
+        setInterval(update, 1000); setInterval(syncRadio, 15000); render(); syncRadio();
     </script>
 </body>
 </html>
