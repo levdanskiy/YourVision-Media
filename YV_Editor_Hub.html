@@ -46,19 +46,37 @@
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
         .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-        .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 30px; }
-        .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
-        .battle-n { font-family: 'Inter Tight', sans-serif; font-size: 0.5rem; font-weight: 900; color: var(--accent-pink); text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 4px; }
-        .battle-team { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; font-weight: 900; }
-        .team-win { color: var(--accent-acid); }
-        .team-lose { opacity: 0.4; filter: grayscale(1); text-decoration: line-through; }
-        .vs-label { font-size: 0.45rem; color: var(--text-dim); text-align: center; font-weight: 900; margin: -4px 0; }
+        .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px; }
+        
+        /* BRACKET CARDS */
+        .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px; transition: 0.3s; position: relative; }
+        .battle-box-small { padding: 10px; opacity: 0.7; }
+        .battle-box:hover { border-color: var(--accent-pink); transform: scale(1.02); background: rgba(255,255,255,0.04); }
+        .battle-n { font-family: 'Inter Tight', sans-serif; font-size: 0.6rem; font-weight: 900; color: var(--accent-pink); text-transform: uppercase; letter-spacing: 0.1em; }
+        .battle-qf-label { position: absolute; top: 15px; right: 15px; font-size: 0.5rem; color: var(--accent-cyan); font-weight: 900; opacity: 0.5; }
+        
+        .battle-team { display: flex; align-items: center; gap: 10px; position: relative; }
+        .team-info { display: flex; flex-direction: column; gap: 1px; }
+        .team-song { font-size: 0.75rem; font-weight: 900; color: #fff; line-height: 1.1; }
+        .team-artist { font-size: 0.6rem; color: #888; }
+        .team-score { margin-left: auto; font-family: 'Inter Tight', sans-serif; font-weight: 900; font-size: 0.9rem; color: var(--accent-cyan); }
+        
+        /* PROX BAR */
+        .score-bar-bg { width: 100%; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden; margin-top: 4px; }
+        .score-bar-fill { height: 100%; background: var(--accent-pink); transition: 1s width ease-in-out; }
+        
+        .team-win { border-left: 3px solid var(--accent-acid); padding-left: 8px; background: rgba(204, 255, 0, 0.02); }
+        .team-lose { opacity: 0.3; filter: grayscale(1); }
+        .winner-tag { color: var(--accent-acid); font-size: 0.6rem; margin-left: 5px; }
+        
+        @keyframes live-pulse { 0% { border-color: var(--accent-pink); box-shadow: 0 0 5px var(--accent-pink); } 50% { border-color: #fff; box-shadow: 0 0 20px var(--accent-pink); } 100% { border-color: var(--accent-pink); box-shadow: 0 0 5px var(--accent-pink); } }
+        .status-live { animation: live-pulse 2s infinite; border-width: 2px; background: rgba(255,0,127,0.05); }
 
-        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; transition: 0.3s; }
+        .country-bubble:hover { background: rgba(255,255,255,0.08); border-color: var(--accent-cyan); }
         .heart-bubble { width: 35px; height: auto; }
         .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
         .status-q { border-bottom: 2px solid var(--accent-acid); }
-        .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
         .chart-table { width: 100%; border-collapse: collapse; }
@@ -93,18 +111,6 @@
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
-    
-        .battle-box { transition: transform 0.3s, border-color 0.3s; cursor: pointer; position: relative; overflow: hidden; }
-        .battle-box:hover { transform: scale(1.02); border-color: var(--accent-pink); background: rgba(255,255,255,0.05); }
-        .battle-qf { font-size: 0.45rem; font-weight: 900; color: var(--accent-cyan); position: absolute; top: 5px; right: 10px; opacity: 0.6; }
-        .team-info-mini { display: flex; flex-direction: column; gap: 1px; }
-        .artist-mini { font-size: 0.55rem; color: #888; text-transform: none; font-weight: 400; line-height: 1; }
-        .song-mini { font-size: 0.65rem; color: #fff; font-weight: 700; line-height: 1.1; }
-        
-        @keyframes live-glow { 0% { box-shadow: 0 0 5px var(--accent-pink); } 50% { box-shadow: 0 0 20px var(--accent-pink); } 100% { box-shadow: 0 0 5px var(--accent-pink); } }
-        .status-live { border-color: var(--accent-pink) !important; animation: live-glow 2s infinite; }
-        .winner-crown { color: var(--accent-acid); font-size: 0.7rem; margin-left: 5px; }
-
     </style>
 </head>
 <body>
@@ -123,7 +129,7 @@
                 <div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div>
                 <div class="timer-info"><div class="timer-label">Semi-Final 2 / 14.05</div><div class="timer-val" id="timer-sf2">--d --h --m</div></div>
             </a>
-            <a href="https://www.youtube.com/watch?v=wYEIv2CurveqhYAI" target="_blank" class="timer-card">
+            <a href="https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" class="timer-card">
                 <div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div>
                 <div class="timer-info"><div class="timer-label">Grand Final / 16.05</div><div class="timer-val" id="timer-gf">--d --h --m</div></div>
             </a>
@@ -169,70 +175,8 @@
 
     <footer><div class="footer-copy">© 2026 YOURVISION INSIDER | Vienna Edition | Zemgale, Latvia</div></footer>
 
+    <script src="data.js"></script>
     <script>
-        var DATA = {
-            battles: [
-                { n: "Battle #1", t1: "fi", t2: "me", s1: "71%", s2: "29%", w: 1 },
-                { n: "Battle #2", t1: "dk", t2: "at", s1: "77%", s2: "23%", w: 1 },
-                { n: "Battle #3", t1: "gr", t2: "al", s1: "LIVE", s2: "", w: 0 },
-                { n: "Battle #4", t1: "au", t2: "ge", s1: "WAIT", s2: "", w: 0 },
-                { n: "Battle #5", t1: "se", t2: "am", s1: "WAIT", s2: "", w: 0 },
-                { n: "Battle #6", t1: "it", t2: "md", s1: "WAIT", s2: "", w: 0 },
-                { n: "Battle #7", t1: "cy", t2: "gb", s1: "WAIT", s2: "", w: 0 },
-                { n: "Battle #8", t1: "mt", t2: "bg", s1: "WAIT", s2: "", w: 0 }
-            ],
-            qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}, {id: "at"}, {id: "me"}],
-            eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
-            chart: [
-                { r: 1, a: "Greczula", s: "Half of Me", p: "91 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
-                { r: 2, a: "Sissal", s: "Infinity", p: "70 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
-                { r: 3, a: "HVNDS", s: "Dor", p: "70 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg" },
-                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg" },
-                { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg" },
-                { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg" },
-                { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/07/fb/ec/07fbec8e-0b07-0b07-0b07-0b070b070b07/cover.jpg/200x200bb.jpg" },
-                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg" },
-                { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg" },
-                { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
-                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: "39 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg" },
-                { r: 12, a: "Alexander Rybak", s: "Rise", p: "37 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg" },
-                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: "36 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg" },
-                { r: 14, a: "SHWR", s: "Contact", p: "28 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg" },
-                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: "27 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
-                { r: 16, a: "Wavvyboi", s: "Black Glitter", p: "26 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg" },
-                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: "24 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg" },
-                { r: 18, a: "Dara", s: "Curse", p: "18 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg" },
-                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: "16 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg" },
-                { r: 20, a: "Dinis Mota", s: "Jurei", p: "16 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg" },
-                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: "13 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg" },
-                { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: "10 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg" },
-                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: "10 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg" },
-                { r: 24, a: "Kelly Joyce", s: "Oh la la", p: "5 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg" }
-            ],
-            news: [
-                { m: "27.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇩🇰 RESULTS: ДАНИЯ В ЧЕТВЕРТЬФИНАЛЕ", b: "Дания (77%) громит Австрию (23%). Søren Torpegaard Lund в 1/4 финала! Поздравляем датскую делегацию с уверенной победой в Battle #2." },
-                { m: "27.03 | 10:00", u: "https://t.me/YourEurovision/", t: "⚔️ BATTLE #3: GREECE VS ALBANIA", b: "Третий поединок 1/8 финала стартовал! Столкновение греческого Akylas и албанского Alis. Голосуйте в канале!" },
-                { m: "26.03 | 15:00", u: "https://t.me/YourEurovision/", t: "🇦🇹 АВСТРИЯ: ВТОРАЯ ВОЛНА БИЛЕТОВ", b: "В Вене стартовал закрытый этап продаж. Билеты на полуфиналы разлетаются за минуты. Официальный сайт испытывает колоссальные нагрузки." },
-                { m: "26.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇫🇮 RESULTS: ФИНЛЯНДИЯ В 1/4 ФИНАЛА", b: "Battle #1 завершен. Lampenius & Parkkonen набирают 71%, не оставляя шансов Черногории. Первый четвертьфиналист YourVision Cup 2026 определен." },
-                { m: "25.03 | 10:38", u: "https://t.me/almanac_marginalia/", t: "🏛 MARGINALIA: ДЕНЬ АИСТА", b: "25 марта — Barbalu diena. Белая магия возвращения аистов. В балтийской традиции это священный момент победы света над зимним оцепенением. Время невидимого якоря." },
-                { m: "25.03 | 08:03", u: "https://t.me/YourEurovision/", t: "⚔️ YOURVISION CUP: BATTLE #1 START", b: "Стадия плей-офф открыта! Finland против Montenegro. Главный фаворит против главной темной лошадки. Голосование продлится 24 часа." },
-                { m: "24.03 | 19:35", u: "https://t.me/YourEurovision/", t: "🧪 #THERESET: КРОАТИЯ АУДИТ", b: "Сравнение 2026 (LELEK) и 2025 (Marko Bosnjak). Этно-электроника против альтернативного попа. Смогли ли LELEK удержать планку Baby Lasagna?" },
-                { m: "24.03 | 18:01", u: "https://t.me/YourEurovision/", t: "🧬 #DNA: ИТАЛИЯ — SAL DA VINCI", b: "История Сальваторе Майкла Соррентино. 17 лет ожидания после бронзы 2009 года. Неаполитанский неомелодизм в премиальной упаковке для Вены." },
-                { m: "24.03 | 16:02", u: "https://t.me/almanac_marginalia/", t: "🥨 ALMANAC: ПИР ЖРЕБИЯ", b: "Пурим завершается, оставляя вкус мака и меда. Время осознания хрупкости момента и того, как мы делим свой жребий с другими." },
-                { m: "24.03 | 11:14", u: "https://t.me/YourVision/", t: "🏆 СЕТКА ПЛЕЙ-ОФФ СФОРМИРОВАНА", b: "Из 35 стран осталось 16 претендентов. Пары распределены по системе Market Seeding на основе коэффициентов букмекеров." },
-                { m: "24.03 | 07:02", u: "https://t.me/YourEurovision/", t: "📊 ИТОГИ ВТОРОГО ШАНСА", b: "Кипр (53%) и Болгария (38%) забирают последние путевки в 1/8 финала. Норвегия и Сан-Марино покидают турнир." },
-                { m: "23.03 | 20:15", u: "https://t.me/almanac_marginalia/", t: "🥖 ALMANAC: РИТУАЛ НОЧНОГО ХЛЕБА", b: "Работа с ржаным тестом (Rupjmaize). Тмин и морская соль как код узнавания своих. Простая геометрия вкуса." },
-                { m: "23.03 | 19:30", u: "https://t.me/YourEurovision/", t: "🧪 #THERESET: УКРАИНА АУДИТ", b: "Шок сезона: вылет Украины. Сравниваем Leleka (2026) и Ziferblat (2025). Был ли уход в этно-эмбиент стратегической ошибкой?" },
-                { m: "23.03 | 18:42", u: "https://t.me/YourEurovision/", t: "🎧 ПЛЕЙЛИСТЫ ЧАРТА ОБНОВЛЕНЫ", b: "Eurogroove Top 24 доступен на Spotify, Apple Music и YouTube. Слушайте пульс мирового эфира прямо сейчас." },
-                { m: "23.03 | 18:03", u: "https://t.me/YourEurovision/", t: "🧬 #DNA: БОЛГАРИЯ — DARA", b: "Путь от X-Factor до победоносного тренера. Bangaranga как квинтэссенция стиля Cyber-Balkan." },
-                { m: "23.03 | 10:00", u: "https://t.me/YourEurovision/", t: "🗳️ ОПРОС: ВТОРОЙ ШАНС", b: "7 стран, 2 места. Кто достоин вернуться в игру? Решайте судьбу Норвегии, Болгарии, Германии, Сан-Марино, Швейцарии, Бельгии и Кипра." },
-                { m: "22.03 | 19:34", u: "https://t.me/YourEurovision/", t: "🔍 THE RESET: ПЕРВЫЙ ЗАПУСК", b: "Анонс новой рубрики. Ежедневный аудит стратегий стран, потерявших идентичность в погоне за трендами." },
-                { m: "22.03 | 10:05", u: "https://t.me/YourEurovision/", t: "📈 STATS: SPOTIFY MOMENTUM", b: "Анализ стриминга: Швеция и Греция показывают взрывной рост. Лидеры сезона по версии слушателей." },
-                { m: "21.03 | 21:00", u: "https://t.me/YourEurovision/", t: "⚡ FLASH: КИПР МЕНЯЕТ ПОСТАНОВКУ", b: "Инсайды с репетиций: Antigoni добавляет больше традиционных инструментов в финальную версию Jalla." },
-                { m: "21.03 | 12:00", u: "https://t.me/YourEurovision/", t: "🌍 WORLD SOUND: ИТОГИ НЕДЕЛИ", b: "Молдова удерживает лидерство в мировом чарте. Satoshi становится феноменом весны 2026." }
-            ]
-        };
-
         const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
 
         function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; }
@@ -279,38 +223,43 @@
             } catch(e) {}
         }
 
-        
         function render() {
             const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
-            document.getElementById('bracket-body').innerHTML = DATA.battles.map(b => `
-                <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''}">
+            document.getElementById('bracket-body').innerHTML = DATA.battles.map(b => {
+                const isFinished = b.status === 'FINISHED' || b.status === 'LIVE';
+                return `
+                <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''} ${!isFinished ? 'battle-box-small' : ''}">
                     <div class="battle-n">${b.n}</div>
-                    <div class="battle-qf">${b.qf}</div>
+                    <div class="battle-qf-label">${b.qf}</div>
                     
                     <div class="battle-team ${b.w===1?'team-win':(b.w===2?'team-lose':'')}">
                         <img src="${getHeartUrl(b.t1)}" style="width:20px; height:20px; border-radius:50%;">
-                        <div class="team-info-mini">
-                            <span class="song-mini">${b.s1}</span>
-                            <span class="artist-mini">${b.a1}</span>
+                        <div class="team-info">
+                            <span class="team-song">${b.s1}</span>
+                            <span class="team-artist">${b.a1}</span>
                         </div>
-                        <span style="margin-left:auto">${b.sc1}${b.w===1?' <span class="winner-crown">★</span>':''}</span>
+                        <span class="team-score">${b.sc1}${b.w===1?' <span class="winner-tag">★</span>':''}</span>
                     </div>
                     
-                    <div class="vs-label">VS</div>
+                    ${isFinished ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc1}"></div></div>` : ''}
+                    
+                    <div class="vs-label" style="margin: 5px 0;">VS</div>
                     
                     <div class="battle-team ${b.w===2?'team-win':(b.w===1?'team-lose':'')}">
                         <img src="${getHeartUrl(b.t2)}" style="width:20px; height:20px; border-radius:50%;">
-                        <div class="team-info-mini">
-                            <span class="song-mini">${b.s2}</span>
-                            <span class="artist-mini">${b.a2}</span>
+                        <div class="team-info">
+                            <span class="team-song">${b.s2}</span>
+                            <span class="team-artist">${b.a2}</span>
                         </div>
-                        <span style="margin-left:auto">${b.sc2}${b.w===2?' <span class="winner-crown">★</span>':''}</span>
+                        <span class="team-score">${b.sc2}${b.w===2?' <span class="winner-tag">★</span>':''}</span>
                     </div>
+                    
+                    ${isFinished && b.sc2 ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc2}; background:var(--accent-cyan);"></div></div>` : ''}
                 </div>
-            `).join('');
+            `}).join('');
 
             document.getElementById('chart-list').innerHTML = DATA.chart.map(i => `
                 <tr class="chart-row">
