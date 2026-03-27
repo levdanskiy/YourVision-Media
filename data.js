@@ -1,53 +1,13 @@
 var DATA = {
     battles: [
-        { 
-            id: 1, n: "Match #1", qf: "TO QF1",
-            t1: "fi", a1: "Lampenius & Parkkonen", s1: "Liekinheitin", sc1: "71%", 
-            t2: "me", a2: "Tamara Živković", s2: "Nova zora", sc2: "29%", 
-            w: 1, status: "FINISHED" 
-        },
-        { 
-            id: 2, n: "Match #2", qf: "TO QF1",
-            t1: "dk", a1: "Søren Torpegaard Lund", s1: "Lidenskab", sc1: "77%", 
-            t2: "at", a2: "COSMØ", s2: "Gravity", sc2: "23%", 
-            w: 1, status: "FINISHED" 
-        },
-        { 
-            id: 3, n: "Match #3", qf: "TO QF2",
-            t1: "gr", a1: "Akylas", s1: "Soma", sc1: "LIVE", 
-            t2: "al", a2: "Alis", s2: "Nân", sc2: "", 
-            w: 0, status: "LIVE" 
-        },
-        { 
-            id: 4, n: "Match #4", qf: "TO QF2",
-            t1: "au", a1: "Jonas Lovv", s1: "Ya Ya Ya", sc1: "WAIT", 
-            t2: "ge", a2: "Sarah Engels", s2: "Fire", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 5, n: "Match #5", qf: "TO QF3",
-            t1: "se", a1: "Alexander Rybak", s1: "Rise", sc1: "WAIT", 
-            t2: "am", a2: "Inis Neziri", s2: "Ta kam fal", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 6, n: "Match #6", qf: "TO QF3",
-            t1: "it", a1: "Sal Da Vinci", s1: "Per sempre si", sc1: "WAIT", 
-            t2: "md", a2: "Satoshi", s2: "Viva Moldova!", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 7, n: "Match #7", qf: "TO QF4",
-            t1: "cy", a1: "Antigoni", s1: "Jalla", sc1: "WAIT", 
-            t2: "gb", a2: "Good Job Nicky", s2: "Dark Side", sc2: "", 
-            w: 0, status: "WAITING" 
-        },
-        { 
-            id: 8, n: "Match #8", qf: "TO QF4",
-            t1: "mt", a1: "HVNDS", s1: "Dor", sc1: "WAIT", 
-            t2: "bg", a2: "Dara", s2: "Bangaranga", sc2: "", 
-            w: 0, status: "WAITING" 
-        }
+        { id: 1, n: "Match #1", qf: "TO QF1", t1: "fi", a1: "Lampenius & Parkkonen", s1: "Liekinheitin", sc1: "71%", t2: "me", a2: "Tamara Živković", s2: "Nova zora", sc2: "29%", w: 1, status: "FINISHED" },
+        { id: 2, n: "Match #2", qf: "TO QF1", t1: "dk", a1: "Søren Torpegaard Lund", s1: "Før vi går hjem", sc1: "77%", t2: "at", a2: "COSMØ", s2: "Gravity", sc2: "23%", w: 1, status: "FINISHED" },
+        { id: 3, n: "Match #3", qf: "TO QF2", t1: "gr", a1: "Akylas", s1: "Ferto", sc1: "LIVE", t2: "al", a2: "Alis", s2: "Nën", sc2: "", w: 0, status: "LIVE" },
+        { id: 4, n: "Match #4", qf: "TO QF2", t1: "au", a1: "Jonas Lovv", s1: "Ya Ya Ya", sc1: "WAIT", t2: "ge", a2: "Sarah Engels", s2: "Fire", sc2: "", w: 0, status: "WAITING" },
+        { id: 5, n: "Match #5", qf: "TO QF3", t1: "se", a1: "Alexander Rybak", s1: "Rise", sc1: "WAIT", t2: "am", a2: "Inis Neziri", s2: "Ta kam fal", sc2: "", w: 0, status: "WAITING" },
+        { id: 6, n: "Match #6", qf: "TO QF3", t1: "it", a1: "Sal Da Vinci", s1: "Per sempre si", sc1: "WAIT", t2: "md", a2: "Satoshi", s2: "Viva Moldova!", sc2: "", w: 0, status: "WAITING" },
+        { id: 7, n: "Match #7", qf: "TO QF4", t1: "cy", a1: "Antigoni", s1: "Jalla", sc1: "WAIT", t2: "gb", a2: "Good Job Nicky", s2: "Dark Side", sc2: "", w: 0, status: "WAITING" },
+        { id: 8, n: "Match #8", qf: "TO QF4", t1: "mt", a1: "HVNDS", s1: "Dor", sc1: "WAIT", t2: "bg", a2: "Dara", s2: "Bangaranga", sc2: "", w: 0, status: "WAITING" }
     ],
     qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}],
     eliminated: [{id: "me"}, {id: "at"}, {id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
@@ -87,7 +47,7 @@ var DATA = {
         { m: "24.03 | 19:35", u: "https://t.me/YourEurovision/", t: "🧪 #THERESET: КРОАТИЯ АУДИТ", b: "Сравнение 2026 (LELEK) и 2025 (Marko Bosnjak). Этно-электроника против альтернативного попа. Смогли ли LELEK удержать планку Baby Lasagna?" },
         { m: "24.03 | 18:01", u: "https://t.me/YourEurovision/", t: "🧬 #DNA: ИТАЛИЯ — SAL DA VINCI", b: "История Сальваторе Майкла Соррентино. 17 лет ожидания после бронзы 2009 года. Неаполитанский неомелодизм в премиальной упаковке для Вены." },
         { m: "24.03 | 16:02", u: "https://t.me/almanac_marginalia/", t: "🥨 ALMANAC: ПИР ЖРЕБИЯ", b: "Пурим завершается, оставляя вкус мака и меда. Время осознания хрупкости момента и того, как мы делим свой жребий с другими." },
-        { m: "24.03 | 11:14", u: "https://t.me/YourEurovision/", t: "🏆 СЕТКА ПЛЕЙ-ОФФ СФОРМИРОВАНА", b: "Из 35 стран осталось 16 претендентов. Пары распределены по системе Market Seeding на основе коэффициентов букмекеров." },
+        { m: "24.03 | 11:14", u: "https://t.me/YourVision/", t: "🏆 СЕТКА ПЛЕЙ-ОФФ СФОРМИРОВАНА", b: "Из 35 стран осталось 16 претендентов. Пары распределены по системе Market Seeding на основе коэффициентов букмекеров." },
         { m: "24.03 | 07:02", u: "https://t.me/YourEurovision/", t: "📊 ИТОГИ ВТОРОГО ШАНСА", b: "Кипр (53%) и Болгария (38%) забирают последние путевки в 1/8 финала. Норвегия и Сан-Марино покидают турнир." },
         { m: "23.03 | 20:15", u: "https://t.me/almanac_marginalia/", t: "🥖 ALMANAC: РИТУАЛ НОЧНОГО ХЛЕБА", b: "Работа с ржаным тестом (Rupjmaize). Тмин и морская соль как код узнавания своих. Простая геометрия вкуса." },
         { m: "23.03 | 19:30", u: "https://t.me/YourEurovision/", t: "🧪 #THERESET: УКРАИНА АУДИТ", b: "Шок сезона: вылет Украины. Сравниваем Leleka (2026) и Ziferblat (2025). Был ли уход в этно-эмбиент стратегической ошибкой?" },
