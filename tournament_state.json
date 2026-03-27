@@ -1,70 +1,15 @@
 {
-    "phase": "ROUND_OF_16",
-    "groups": {
-        "A": ["NO", "GE", "AL", "LU", "RO"],
-        "B": ["SE", "LT", "HR", "GB", "BG"],
-        "C": ["IT", "LV", "GR", "DE", "CZ"],
-        "D": ["UA", "EE", "SM", "MT", "MD"],
-        "E": ["CH", "FI", "ME", "PT", "AZ"],
-        "F": ["IL", "BE", "RS", "AU", "AM"],
-        "G": ["FR", "DK", "CY", "AT", "PL"]
-    },
-    "qualifiers": [
-        {"country": "GE", "group": "A", "status": "QUALIFIED"},
-        {"country": "AL", "group": "A", "status": "QUALIFIED"},
-        {"country": "SE", "group": "B", "status": "QUALIFIED"},
-        {"country": "GB", "group": "B", "status": "QUALIFIED"},
-        {"country": "GR", "group": "C", "status": "QUALIFIED"},
-        {"country": "IT", "group": "C", "status": "QUALIFIED"},
-        {"country": "MD", "group": "D", "status": "QUALIFIED"},
-        {"country": "MT", "group": "D", "status": "QUALIFIED"},
-        {"country": "FI", "group": "E", "status": "QUALIFIED", "round_16_score": "71%"},
-        {"country": "AM", "group": "F", "status": "QUALIFIED"},
-        {"country": "AU", "group": "F", "status": "QUALIFIED"},
-        {"country": "DK", "group": "G", "status": "QUALIFIED", "round_16_score": "77%"},
-        {"country": "AT", "group": "G", "status": "QUALIFIED"},
-        {"country": "CY", "group": "G", "status": "QUALIFIED"},
-        {"country": "BG", "group": "B", "status": "QUALIFIED"}
+    "round": "ROUND_OF_16",
+    "battles": [
+        { "id": 1, "t1": "fi", "t2": "me", "s1": 71, "s2": 29, "winner": "fi", "status": "FINISHED" },
+        { "id": 2, "t1": "dk", "t2": "at", "s1": 77, "s2": 23, "winner": "dk", "status": "FINISHED" },
+        { "id": 3, "t1": "gr", "t2": "al", "s1": 0, "s2": 0, "winner": null, "status": "LIVE" },
+        { "id": 4, "t1": "au", "t2": "ge", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
+        { "id": 5, "t1": "se", "t2": "am", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
+        { "id": 6, "t1": "it", "t2": "md", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
+        { "id": 7, "t1": "cy", "t2": "gb", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
+        { "id": 8, "t1": "mt", "t2": "bg", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" }
     ],
-    "eliminated": [
-        {"country": "AT", "group": "G", "score": "23%", "status": "OUT_ROUND_16"},
-        {"country": "ME", "group": "E", "score": "29%", "status": "OUT_ROUND_16"},
-        {"country": "NO", "group": "A", "score": "30%"},
-        {"country": "DE", "group": "C", "score": "15%"},
-        {"country": "SM", "group": "D", "score": "23%"},
-        {"country": "CH", "group": "E", "score": "15%"},
-        {"country": "BE", "group": "F", "score": "23%"},
-        {"country": "FR", "group": "G"},
-        {"country": "PL", "group": "G"},
-        {"country": "RO", "group": "A"},
-        {"country": "LU", "group": "A"},
-        {"country": "HR", "group": "B"},
-        {"country": "LT", "group": "B"},
-        {"country": "LV", "group": "C"},
-        {"country": "CZ", "group": "C"},
-        {"country": "UA", "group": "D"},
-        {"country": "EE", "group": "D"},
-        {"country": "PT", "group": "E"},
-        {"country": "AZ", "group": "E"},
-        {"country": "IL", "group": "F"},
-        {"country": "RS", "group": "F"}
-    ],
-    "bracket": {
-        "round_16": [
-            {"match": 1, "p1": "FI", "p2": "ME", "winner": "FI", "score": "71-29"},
-            {"match": 2, "p1": "DK", "p2": "AT", "winner": "DK", "score": "77-23"},
-            {"match": 3, "p1": "GR", "p2": "AL"},
-            {"match": 4, "p1": "AU", "p2": "GE"},
-            {"match": 5, "p1": "SE", "p2": "AM"},
-            {"match": 6, "p1": "IT", "p2": "MD"},
-            {"match": 7, "p1": "CY", "p2": "GB"},
-            {"match": 8, "p1": "MT", "p2": "BG"}
-        ],
-        "quarter_finals": [
-            {"match": 9, "p1": "FI", "p2": "TBD", "from": [8, 1]},
-            {"match": 10, "p1": "TBD", "p2": "DK", "from": [7, 2]},
-            {"match": 11, "p1": "TBD", "p2": "TBD", "from": [6, 3]},
-            {"match": 12, "p1": "TBD", "p2": "TBD", "from": [5, 4]}
-        ]
-    }
+    "qualified": ["fi", "dk", "gr", "au", "se", "it", "cy", "mt", "bg", "gb", "md", "am", "ge", "al", "at", "me"],
+    "eliminated": ["lu", "ro", "lt", "hr", "lv", "cz", "ua", "ee", "pt", "az", "il", "rs", "fr", "pl", "no", "de", "sm", "ch", "be"]
 }
