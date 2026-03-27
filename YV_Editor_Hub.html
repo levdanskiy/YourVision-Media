@@ -111,22 +111,6 @@
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
-    
-        .battle-box { padding: 25px !important; min-height: 180px; display: flex; flex-direction: column; justify-content: center; }
-        .battle-box-small { min-height: 100px; opacity: 0.6; padding: 15px !important; }
-        
-        .team-song { font-size: 1.3rem !important; text-shadow: 0 0 10px rgba(255,255,255,0.2); }
-        .team-artist { font-size: 0.9rem !important; color: var(--accent-cyan) !important; font-weight: 400; }
-        .team-score { font-size: 1.5rem !important; color: #fff !important; }
-        
-        .winner-glow { background: rgba(204, 255, 0, 0.05) !important; border-color: var(--accent-acid) !important; box-shadow: 0 0 30px rgba(204, 255, 0, 0.1); }
-        .winner-tag-large { font-size: 1.2rem; color: var(--accent-acid); text-shadow: 0 0 15px var(--accent-acid); margin-left: 10px; }
-        
-        .score-bar-bg { height: 6px !important; margin-top: 8px; background: rgba(255,255,255,0.1) !important; }
-        .score-bar-fill { box-shadow: 0 0 10px var(--accent-pink); }
-        
-        .vs-label-large { font-size: 0.8rem; letter-spacing: 0.5em; color: var(--text-dim); margin: 15px 0 !important; }
-
     </style>
 </head>
 <body>
@@ -239,42 +223,41 @@
             } catch(e) {}
         }
 
-        
         function render() {
             const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
             document.getElementById('bracket-body').innerHTML = DATA.battles.map(b => {
-                const isMajor = b.status === 'FINISHED' || b.status === 'LIVE';
+                const isFinished = b.status === 'FINISHED' || b.status === 'LIVE';
                 return `
-                <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''} ${!isMajor ? 'battle-box-small' : ''}">
+                <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''} ${!isFinished ? 'battle-box-small' : ''}">
                     <div class="battle-n">${b.n}</div>
                     <div class="battle-qf-label">${b.qf}</div>
                     
-                    <div class="battle-team ${b.w===1?'team-win winner-glow':(b.w===2?'team-lose':'')}">
-                        <img src="${getHeartUrl(b.t1)}" style="width:35px; height:35px; border-radius:50%; border: 2px solid rgba(255,255,255,0.1);">
+                    <div class="battle-team ${b.w===1?'team-win':(b.w===2?'team-lose':'')}">
+                        <img src="${getHeartUrl(b.t1)}" style="width:20px; height:20px; border-radius:50%;">
                         <div class="team-info">
                             <span class="team-song">${b.s1}</span>
                             <span class="team-artist">${b.a1}</span>
                         </div>
-                        <span class="team-score">${b.sc1}${b.w===1?' <span class="winner-tag-large">★</span>':''}</span>
+                        <span class="team-score">${b.sc1}${b.w===1?' <span class="winner-tag">★</span>':''}</span>
                     </div>
                     
-                    ${isMajor ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc1}"></div></div>` : ''}
+                    ${isFinished ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc1}"></div></div>` : ''}
                     
-                    <div class="vs-label-large">VS</div>
+                    <div class="vs-label" style="margin: 5px 0;">VS</div>
                     
-                    <div class="battle-team ${b.w===2?'team-win winner-glow':(b.w===1?'team-lose':'')}">
-                        <img src="${getHeartUrl(b.t2)}" style="width:35px; height:35px; border-radius:50%; border: 2px solid rgba(255,255,255,0.1);">
+                    <div class="battle-team ${b.w===2?'team-win':(b.w===1?'team-lose':'')}">
+                        <img src="${getHeartUrl(b.t2)}" style="width:20px; height:20px; border-radius:50%;">
                         <div class="team-info">
                             <span class="team-song">${b.s2}</span>
                             <span class="team-artist">${b.a2}</span>
                         </div>
-                        <span class="team-score">${b.sc2}${b.w===2?' <span class="winner-tag-large">★</span>':''}</span>
+                        <span class="team-score">${b.sc2}${b.w===2?' <span class="winner-tag">★</span>':''}</span>
                     </div>
                     
-                    ${isMajor && b.sc2 ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc2}; background:var(--accent-cyan); box-shadow: 0 0 10px var(--accent-cyan);"></div></div>` : ''}
+                    ${isFinished && b.sc2 ? `<div class="score-bar-bg"><div class="score-bar-fill" style="width:${b.sc2}; background:var(--accent-cyan);"></div></div>` : ''}
                 </div>
             `}).join('');
 
