@@ -39,13 +39,17 @@
         
         .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
         .bracket-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 40px; }
-        .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 15px; display: flex; flex-direction: column; gap: 8px; }
-        .battle-n { font-family: 'Inter Tight', sans-serif; font-size: 0.55rem; font-weight: 900; color: var(--accent-pink); text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; margin-bottom: 5px; }
-        .battle-team { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; font-weight: 900; }
-        .team-win { color: var(--accent-acid); }
-        .team-lose { color: #444; text-decoration: line-through; }
-        .team-pending { color: #888; }
-        .vs-label { font-size: 0.5rem; color: var(--text-dim); text-align: center; margin: 2px 0; font-weight: 900; }
+        .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 15px; display: flex; flex-direction: column; gap: 10px; position: relative; overflow: hidden; }
+        .battle-n { font-family: 'Inter Tight', sans-serif; font-size: 0.55rem; font-weight: 900; color: var(--accent-pink); text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; margin-bottom: 2px; }
+        .battle-team { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; font-weight: 900; padding: 5px 8px; border-radius: 6px; transition: 0.3s; }
+        .battle-flag { width: 20px; height: auto; }
+        .battle-score { margin-left: auto; font-family: 'Inter', sans-serif; font-size: 0.75rem; }
+        .team-win { background: rgba(204, 255, 0, 0.1); color: var(--accent-acid); border: 1px solid rgba(204, 255, 0, 0.2); }
+        .team-win .battle-score { color: var(--accent-acid); text-shadow: 0 0 10px var(--accent-acid); }
+        .team-lose { opacity: 0.4; filter: grayscale(1); }
+        .team-lose span { text-decoration: line-through; }
+        .team-pending { color: #888; border: 1px solid transparent; }
+        .vs-label { font-size: 0.5rem; color: var(--text-dim); text-align: center; font-weight: 900; margin: -5px 0; z-index: 2; background: var(--bg-deep); width: 25px; margin-left: auto; margin-right: auto; border-radius: 10px; }
 
         .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
         .heart-bubble { width: 35px; height: auto; }
