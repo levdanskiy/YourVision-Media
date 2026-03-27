@@ -105,7 +105,7 @@ def sync():
                     data_obj["news"] = final_news
                     # Очистка от тире перед записью
                     new_js = f"var DATA = {json.dumps(data_obj, ensure_ascii=False, indent=4)};"
-                    new_js = new_js.replace('—', '-').replace('–', '-')
+                    new_js = new_js.replace("...", ".").replace('—', '-').replace('–', '-')
                     with open("data.js", 'w', encoding='utf-8') as f:
                         f.write(new_js)
                     print(f"Sync Complete: {len(final_news)} items sorted by date (Newest First).")
