@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+final_html = """<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -339,3 +341,8 @@
     </script>
 </body>
 </html>
+"""
+
+with open('index.html', 'w', encoding='utf-8') as f:
+    f.write(final_html)
+print("Hub overwritten with full content successfully.")
