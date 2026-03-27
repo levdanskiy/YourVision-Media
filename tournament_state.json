@@ -10,6 +10,6 @@
         { "id": 7, "t1": "cy", "t2": "gb", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
         { "id": 8, "t1": "mt", "t2": "bg", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" }
     ],
-    "qualified": ["fi", "dk", "gr", "au", "se", "it", "cy", "mt", "bg", "gb", "md", "am", "ge", "al", "at", "me"],
-    "eliminated": ["lu", "ro", "lt", "hr", "lv", "cz", "ua", "ee", "pt", "az", "il", "rs", "fr", "pl", "no", "de", "sm", "ch", "be"]
+    "qualified": ["fi", "dk", "gr", "au", "se", "it", "cy", "mt", "bg", "gb", "md", "am", "ge", "al"],
+    "eliminated": ["me", "at", "lu", "ro", "lt", "hr", "lv", "cz", "ua", "ee", "pt", "az", "il", "rs", "fr", "pl", "no", "de", "sm", "ch", "be"]
 }
