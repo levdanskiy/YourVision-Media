@@ -1,6 +1,6 @@
 import os
 
-# КОНСОЛИДИРОВАННЫЙ HTML: STANDINGS 2.0 + TITAN UI
+# КОНСОЛИДИРОВАННЫЙ HTML: STANDINGS 2.0 + TITAN UI + HEART FLAGS
 final_html = """<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -45,7 +45,6 @@ final_html = """<!DOCTYPE html>
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* HEADER COLORS */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .header-gradient { background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; border-left: none; padding-left: 0; }
         
@@ -56,7 +55,6 @@ final_html = """<!DOCTYPE html>
         .tournament-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
         .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px; }
         
-        /* TITAN BRACKET STYLES */
         .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 15px; padding: 25px; display: flex; flex-direction: column; gap: 15px; transition: 0.4s; position: relative; min-height: 200px; justify-content: center; }
         .battle-box-small { min-height: 120px; opacity: 0.6; padding: 15px; }
         .battle-box:hover { border-color: var(--accent-pink); transform: translateY(-5px); background: rgba(255,255,255,0.05); }
@@ -81,7 +79,6 @@ final_html = """<!DOCTYPE html>
         @keyframes live-pulse { 0% { border-color: var(--accent-pink); box-shadow: 0 0 10px var(--accent-pink); } 50% { border-color: #fff; box-shadow: 0 0 30px var(--accent-pink); } 100% { border-color: var(--accent-pink); box-shadow: 0 0 10px var(--accent-pink); } }
         .status-live { animation: live-pulse 2s infinite; border-width: 2px; background: rgba(255,0,127,0.08); }
 
-        /* COUNTRY BUBBLES 2.0 */
         .country-bubble { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 12px; display: flex; align-items: center; gap: 12px; transition: 0.3s; width: 100%; box-sizing: border-box; }
         .country-bubble:hover { background: rgba(255,255,255,0.06); border-color: var(--accent-cyan); transform: scale(1.02); }
         .bubble-info { display: flex; flex-direction: column; gap: 1px; flex-grow: 1; }
@@ -132,7 +129,7 @@ final_html = """<!DOCTYPE html>
 <body>
     <div class="hero-view">
         <nav>
-            <a href="https://t.me/YourEurovision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
+            <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
             <div id="clock">RIGA: 00:00:00</div>
         </nav>
 
@@ -236,6 +233,15 @@ final_html = """<!DOCTYPE html>
             } catch(e) {}
         }
 
+        const flagMap = {"🇩🇰":"dk","🇸🇪":"se","🇺🇦":"ua","🇱🇺":"lu","🇫🇮":"fi","🇦🇹":"at","🇬🇷":"gr","🇦🇱":"al","🇮🇹":"it","🇦🇲":"am","🇨🇾":"cy","🇬🇧":"gb","🇲🇹":"mt","🇧🇬":"bg","🇲🇩":"md","🇬🇪":"ge","🇱🇹":"lt","🇪🇪":"ee","🇵🇱":"pl","🇳🇴":"no","🇩🇪":"de","🇸🇲":"sm","🇨🇭":"ch","🇧🇪":"be","🇮🇱":"il","🇦🇿":"az","🇵🇹":"pt","🇷🇸":"rs","🇫🇷":"fr","🇷🇴":"ro","🇭🇷":"hr","🇨🇿":"cz","🇱🇻":"lv","🇲🇪":"me","🇦🇺":"au"};
+        function replaceFlags(text) {
+            return text.replace(/([\\uD83C][\\uDDE6-\\uDDFF][\\uD83C][\\uDDE6-\\uDDFF])/g, (match) => {
+                const code = flagMap[match];
+                if (code) return `<img src="${getHeartUrl(code)}" style="width:28px; vertical-align:middle; margin-right:8px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));">`;
+                return match;
+            });
+        }
+
         function render() {
             const bubble = (c, st) => `
                 <div class="country-bubble ${st}">
@@ -290,8 +296,10 @@ final_html = """<!DOCTYPE html>
                 </tr>`).join('');
             
             document.getElementById('news-grid').innerHTML = DATA.news.map(p => {
-                const title = p.t.replace(/\\*/g, '');
-                const body = p.b.replace(/\\*/g, '');
+                let title = p.t.replace(/\\*/g, '');
+                let body = p.b.replace(/\\*/g, '');
+                title = replaceFlags(title);
+                body = replaceFlags(body);
                 return `
                 <a href="${p.u}" target="_blank" class="post-card">
                     <div class="post-content">
@@ -338,4 +346,4 @@ final_html = """<!DOCTYPE html>
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(final_html)
-print("Standings 2.0 with detailed country bubbles deployed.")
+print("Standings 2.0 with Heart Flags and Titan UI deployed.")
