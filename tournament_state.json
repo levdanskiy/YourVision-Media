@@ -18,16 +18,17 @@
         {"country": "IT", "group": "C", "status": "QUALIFIED"},
         {"country": "MD", "group": "D", "status": "QUALIFIED"},
         {"country": "MT", "group": "D", "status": "QUALIFIED"},
-        {"country": "FI", "group": "E", "status": "QUALIFIED"},
-        {"country": "ME", "group": "E", "status": "QUALIFIED"},
+        {"country": "FI", "group": "E", "status": "QUALIFIED", "round_16_score": "71%"},
         {"country": "AM", "group": "F", "status": "QUALIFIED"},
         {"country": "AU", "group": "F", "status": "QUALIFIED"},
-        {"country": "DK", "group": "G", "status": "QUALIFIED"},
+        {"country": "DK", "group": "G", "status": "QUALIFIED", "round_16_score": "77%"},
         {"country": "AT", "group": "G", "status": "QUALIFIED"},
         {"country": "CY", "group": "G", "status": "QUALIFIED"},
         {"country": "BG", "group": "B", "status": "QUALIFIED"}
     ],
     "eliminated": [
+        {"country": "AT", "group": "G", "score": "23%", "status": "OUT_ROUND_16"},
+        {"country": "ME", "group": "E", "score": "29%", "status": "OUT_ROUND_16"},
         {"country": "NO", "group": "A", "score": "30%"},
         {"country": "DE", "group": "C", "score": "15%"},
         {"country": "SM", "group": "D", "score": "23%"},
@@ -50,8 +51,8 @@
     ],
     "bracket": {
         "round_16": [
-            {"match": 1, "p1": "FI", "p2": "ME"},
-            {"match": 2, "p1": "DK", "p2": "AT"},
+            {"match": 1, "p1": "FI", "p2": "ME", "winner": "FI", "score": "71-29"},
+            {"match": 2, "p1": "DK", "p2": "AT", "winner": "DK", "score": "77-23"},
             {"match": 3, "p1": "GR", "p2": "AL"},
             {"match": 4, "p1": "AU", "p2": "GE"},
             {"match": 5, "p1": "SE", "p2": "AM"},
@@ -60,8 +61,8 @@
             {"match": 8, "p1": "MT", "p2": "BG"}
         ],
         "quarter_finals": [
-            {"match": 9, "p1": "TBD", "p2": "TBD", "from": [8, 1]},
-            {"match": 10, "p1": "TBD", "p2": "TBD", "from": [7, 2]},
+            {"match": 9, "p1": "FI", "p2": "TBD", "from": [8, 1]},
+            {"match": 10, "p1": "TBD", "p2": "DK", "from": [7, 2]},
             {"match": 11, "p1": "TBD", "p2": "TBD", "from": [6, 3]},
             {"match": 12, "p1": "TBD", "p2": "TBD", "from": [5, 4]}
         ]
