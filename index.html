@@ -155,7 +155,11 @@
             ]
         };
 
-        function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; }
+        function getHeartUrl(id) { 
+            const code = id.toLowerCase();
+            if (code === "70" || code === "ge") return "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+            return `https://flagcdn.com/w40/${code}.png`; 
+        }
 
         var isPlaying = false;
         var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
