@@ -9,13 +9,13 @@ var DATA = {
         { 
             id: 2, n: "Match #2", qf: "TO QF1",
             t1: "dk", a1: "Søren Torpegaard Lund", s1: "Før vi går hjem", sc1: "77%", 
-            t2: "at", a2: "COSMȮ", s2: "Tanzschein", sc2: "23%", 
+            t2: "at", a2: "COSMØ", s2: "Tanzschein", sc2: "23%", 
             w: 1, status: "FINISHED" 
         },
         { 
             id: 3, n: "Match #3", qf: "TO QF2",
             t1: "gr", a1: "Akylas", s1: "Ferto", sc1: "LIVE", 
-            t2: "al", a2: "Alis", s2: "Nân", sc2: "", 
+            t2: "al", a2: "Alis", s2: "Nën", sc2: "", 
             w: 0, status: "LIVE" 
         },
         { 
@@ -32,7 +32,7 @@ var DATA = {
         },
         { 
             id: 6, n: "Match #6", qf: "TO QF3",
-            t1: "it", a1: "Sal Da Vinci", s1: "Per sempre sì", sc1: "WAIT", 
+            t1: "it", a1: "Sal Da Vinci", s1: "Per всегда sì", sc1: "WAIT", 
             t2: "md", a2: "Satoshi", s2: "Viva, Moldova!", sc2: "", 
             w: 0, status: "WAITING" 
         },
