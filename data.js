@@ -1,46 +1,605 @@
 var DATA = {
-    battles: [
-        { id: 1, n: "Match #1", qf: "TO QF1", t1: "fi", a1: "Linda Lampenius and Pete Parkkonen", s1: "Liekinheitin", sc1: "71%", t2: "me", a2: "Tamara Živković", s2: "Nova zora", sc2: "29%", w: 1, status: "FINISHED" },
-        { id: 2, n: "Match #2", qf: "TO QF1", t1: "dk", a1: "Søren Torpegaard Lund", s1: "Før vi går hjem", sc1: "77%", t2: "at", a2: "COSMØ", s2: "Tanzschein", sc2: "23%", w: 1, status: "FINISHED" },
-        { id: 3, n: "Match #3", qf: "TO QF2", t1: "gr", a1: "Akylas", s1: "Ferto", sc1: "LIVE", t2: "al", a2: "Alis", s2: "Nën", sc2: "", w: 0, status: "LIVE" },
-        { id: 4, n: "Match #4", qf: "TO QF2", t1: "au", a1: "Delta Goodrem", s1: "Eclipse", sc1: "WAIT", t2: "ge", a2: "Bzikebi", s2: "On Replay", sc2: "", w: 0, status: "WAITING" },
-        { id: 5, n: "Match #5", qf: "TO QF3", t1: "se", a1: "Felicia", s1: "My System", sc1: "WAIT", t2: "am", a2: "Simón", s2: "Paloma rumba", sc2: "", w: 0, status: "WAITING" },
-        { id: 6, n: "Match #6", qf: "TO QF3", t1: "it", a1: "Sal Da Vinci", s1: "Per sempre sì", sc1: "WAIT", t2: "md", a2: "Satoshi", s2: "Viva, Moldova!", sc2: "", w: 0, status: "WAITING" },
-        { id: 7, n: "Match #7", qf: "TO QF4", t1: "cy", a1: "Antigoni", s1: "Jalla", sc1: "WAIT", t2: "gb", a2: "Look Mum No Computer", s2: "Eins, Zwei, Drei", sc2: "", w: 0, status: "WAITING" },
-        { id: 8, n: "Match #8", qf: "TO QF4", t1: "mt", a1: "Aidan", s1: "Bella", sc1: "WAIT", t2: "bg", a2: "Dara", s2: "Bangaranga", sc2: "", w: 0, status: "WAITING" }
+    "battles": [
+        {
+            "id": 1,
+            "n": "Match #1",
+            "qf": "TO QF1",
+            "t1": "fi",
+            "a1": "Linda Lampenius and Pete Parkkonen",
+            "s1": "Liekinheitin",
+            "sc1": "71%",
+            "t2": "me",
+            "a2": "Tamara Živković",
+            "s2": "Nova zora",
+            "sc2": "29%",
+            "w": 1,
+            "status": "FINISHED"
+        },
+        {
+            "id": 2,
+            "n": "Match #2",
+            "qf": "TO QF1",
+            "t1": "dk",
+            "a1": "Søren Torpegaard Lund",
+            "s1": "Før vi går hjem",
+            "sc1": "77%",
+            "t2": "at",
+            "a2": "COSMØ",
+            "s2": "Tanzschein",
+            "sc2": "23%",
+            "w": 1,
+            "status": "FINISHED"
+        },
+        {
+            "id": 3,
+            "n": "Match #3",
+            "qf": "TO QF2",
+            "t1": "gr",
+            "a1": "Akylas",
+            "s1": "Ferto",
+            "sc1": "LIVE",
+            "t2": "al",
+            "a2": "Alis",
+            "s2": "Nën",
+            "sc2": "",
+            "w": 0,
+            "status": "LIVE"
+        },
+        {
+            "id": 4,
+            "n": "Match #4",
+            "qf": "TO QF2",
+            "t1": "au",
+            "a1": "Delta Goodrem",
+            "s1": "Eclipse",
+            "sc1": "WAIT",
+            "t2": "ge",
+            "a2": "Bzikebi",
+            "s2": "On Replay",
+            "sc2": "",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 5,
+            "n": "Match #5",
+            "qf": "TO QF3",
+            "t1": "se",
+            "a1": "Felicia",
+            "s1": "My System",
+            "sc1": "WAIT",
+            "t2": "am",
+            "a2": "Simón",
+            "s2": "Paloma rumba",
+            "sc2": "",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 6,
+            "n": "Match #6",
+            "qf": "TO QF3",
+            "t1": "it",
+            "a1": "Sal Da Vinci",
+            "s1": "Per sempre sì",
+            "sc1": "WAIT",
+            "t2": "md",
+            "a2": "Satoshi",
+            "s2": "Viva, Moldova!",
+            "sc2": "",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 7,
+            "n": "Match #7",
+            "qf": "TO QF4",
+            "t1": "cy",
+            "a1": "Antigoni",
+            "s1": "Jalla",
+            "sc1": "WAIT",
+            "t2": "gb",
+            "a2": "Look Mum No Computer",
+            "s2": "Eins, Zwei, Drei",
+            "sc2": "",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 8,
+            "n": "Match #8",
+            "qf": "TO QF4",
+            "t1": "mt",
+            "a1": "HVNDS",
+            "s1": "Dor",
+            "sc1": "WAIT",
+            "t2": "bg",
+            "a2": "Dara",
+            "s2": "Bangaranga",
+            "sc2": "",
+            "w": 0,
+            "status": "WAITING"
+        }
     ],
-    qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}],
-    eliminated: [{id: "me"}, {id: "at"}, {id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
-    chart: [
-        { r: 1, a: "Greczula", s: "Half of Me", p: "91 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
-        { r: 2, a: "Sissal", s: "Infinity", p: "70 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
-        { r: 3, a: "HVNDS", s: "Dor", p: "70 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg" },
-        { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg" },
-        { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg" },
-        { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg" },
-        { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/200x200bb.jpg" },
-        { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg" },
-        { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg" },
-        { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
-        { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: "39 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg" },
-        { r: 12, a: "Alexander Rybak", s: "Rise", p: "37 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg" },
-        { r: 13, a: "Good Job Nicky", s: "Dark Side", p: "36 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg" },
-        { r: 14, a: "SHWR", s: "Contact", p: "28 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg" },
-        { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: "27 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
-        { r: 16, a: "Wavvyboi", s: "Black Glitter", p: "26 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg" },
-        { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: "24 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg" },
-        { r: 18, a: "Dara", s: "Curse", p: "18 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg" },
-        { r: 19, a: "Lena Schaur", s: "Painted Reality", p: "16 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg" },
-        { r: 20, a: "Dinis Mota", s: "Jurei", p: "16 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg" },
-        { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: "13 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg" },
-        { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: "10 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg" },
-        { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: "10 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg" },
-        { r: 24, a: "Kelly Joyce", s: "Oh la la", p: "5 pts", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg" }
+    "qualifiers": [
+        {
+            "id": "fi"
+        },
+        {
+            "id": "dk"
+        },
+        {
+            "id": "gr"
+        },
+        {
+            "id": "au"
+        },
+        {
+            "id": "se"
+        },
+        {
+            "id": "it"
+        },
+        {
+            "id": "cy"
+        },
+        {
+            "id": "mt"
+        },
+        {
+            "id": "bg"
+        },
+        {
+            "id": "gb"
+        },
+        {
+            "id": "md"
+        },
+        {
+            "id": "am"
+        },
+        {
+            "id": "ge"
+        },
+        {
+            "id": "al"
+        }
     ],
-    news: [
-        { m: "27.03 | 16:00", u: "https://t.me/YourEurovision/", t: "🚨 NEW ALBUM: 🇺🇦 JAMALA ВЫПУСТИЛА «РУХ МІЙ»", b: "Победительница Евровидения-2016 представила полноформатную пластинку. Над релизом работала команда топ-продюсеров, включая Евгения Филатова и Aniel Arin (саунд-продюсер заявок 2026 года).\n\nЧТО ВНУТРИ:\n• Коллаборации: The Maneken, Aniel Arin, Lucas Birds.\n• Связь с ESC: В альбоме чувствуется влияние продакшна, который Джамала курировала как продюсер Нацотбора-2026.\n• Жанр: Sophisti-pop / Electronic.\n\nВЕРДИКТ\nИскренняя исповедь о внутреннем перевоплощении и поиске свободы. Качественный скачок в звучании, который подчеркивает статус Джамалы как ключевого игрока индустрии.\n\nКакой трек с альбома вы бы отправили на конкурс в 2027-м?\n🔗 СЛУШАТЬ: Streaming Links (https://album.link/xkp2hbr5z04gt)\n⏱ Время чтения: 0.8 мин | 🇺🇦 YourVision: News" },
-        { m: "27.03 | 14:00", u: "https://t.me/YourEurovision/", t: "🚨 NEW RELEASE: 🇸🇪 LOREEN ПРЕЗЕНТОВАЛА «WILDFIRE»", b: "Спустя три года после исторического дубля в Ливерпуле, Loreen выпускает полноформатный альбом «WILDFIRE». Работа, посвященная внутреннему переосмыслению и поиску истины, уже штурмует чарты Apple Music в Скандинавии.\n\nВЕРДИКТ\nЛорин продолжает использовать свой голос как инструмент, создавая многослойный саунд-дизайн. Это релиз для тех, кто ищет в музыке не только ритм, но и духовный опыт.\n\nГотов ли «WILDFIRE» стать альбомом года по вашей версии?\n🔗 СЛУШАТЬ: Loreen Linktree (https://loreen.lnk.to/WILDFIRE)\n⏱ Время чтения: 0.8 мин | 🇸🇪 YourVision: News" },
-        { m: "27.03 | 12:30", u: "https://t.me/YourEurovision/", t: "🇱🇺 ЛЮКСЕМБУРГ: ROCKLAB ОТКРЫВАЕТ ЗАВОД ЕВРОХИТОВ ДЛЯ 2027 ГОДА", b: "Люксембург не собирается сбавлять обороты после триумфального возвращения. С 29 мая по 2 июня Rocklabstudio превратится в закрытый инкубатор для создателей контента LSC 2027. После успеха «Mother Nature» (Eva Marija), рожденной именно здесь, планка ожиданий поднята на уровень топ-10 Евровидения.\n\nКТО ЗА ПУЛЬТОМ? (FACILITATORS)\n• Peter Bostrom: Человек, стоящий за «Euphoria» и «Tattoo».\n• Greig Watts & Imad Eljattari: Мастера A&R.\n• Maria Broberg: Автор победной «Mother Nature» 2026 года.\n\nДЕТАЛИ ДЛЯ ПРОФИ\nКэмп ориентирован на создание материала «под ключ». Дедлайн подачи заявок - 26 апреля.\n⏱ Время чтения: 1.2 мин | 🇱🇺 YourVision: Insider" },
-.
+    "eliminated": [
+        {
+            "id": "me"
+        },
+        {
+            "id": "at"
+        },
+        {
+            "id": "lu"
+        },
+        {
+            "id": "ro"
+        },
+        {
+            "id": "lt"
+        },
+        {
+            "id": "hr"
+        },
+        {
+            "id": "lv"
+        },
+        {
+            "id": "cz"
+        },
+        {
+            "id": "ua"
+        },
+        {
+            "id": "ee"
+        },
+        {
+            "id": "pt"
+        },
+        {
+            "id": "az"
+        },
+        {
+            "id": "il"
+        },
+        {
+            "id": "rs"
+        },
+        {
+            "id": "fr"
+        },
+        {
+            "id": "pl"
+        },
+        {
+            "id": "no"
+        },
+        {
+            "id": "de"
+        },
+        {
+            "id": "sm"
+        },
+        {
+            "id": "ch"
+        },
+        {
+            "id": "be"
+        }
+    ],
+    "chart": [
+        {
+            "r": 1,
+            "a": "Greczula",
+            "s": "Half of Me",
+            "p": "91 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 2,
+            "a": "Sissal",
+            "s": "Infinity",
+            "p": "70 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 3,
+            "a": "HVNDS",
+            "s": "Dor",
+            "p": "70 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 4,
+            "a": "Cold Snap",
+            "s": "Mucho Macho",
+            "p": "65 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 5,
+            "a": "Laud",
+            "s": "Lightkeeper",
+            "p": "61 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 6,
+            "a": "Kautkaili",
+            "s": "Te un tagad",
+            "p": "55 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 7,
+            "a": "Noëp",
+            "s": "Days Like This",
+            "p": "53 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 8,
+            "a": "Antti Paalanen",
+            "s": "Takatukka",
+            "p": "47 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 9,
+            "a": "Zejna",
+            "s": "Jugoslavija",
+            "p": "45 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg"
+        },
+        {
+            "r": 10,
+            "a": "Matt Bixck",
+            "s": "The Flute",
+            "p": "40 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 11,
+            "a": "Sayf",
+            "s": "Tu mi piaci tanto",
+            "p": "39 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 12,
+            "a": "Alexander Rybak",
+            "s": "Rise",
+            "p": "37 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 13,
+            "a": "Good Job Nicky",
+            "s": "Dark Side",
+            "p": "36 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 14,
+            "a": "SHWR",
+            "s": "Contact",
+            "p": "28 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 15,
+            "a": "Steve Castile",
+            "s": "Sweet Tooth",
+            "p": "27 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 16,
+            "a": "Wavvyboi",
+            "s": "Black Glitter",
+            "p": "26 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 17,
+            "a": "Lara Baltic",
+            "s": "Rythm Boy",
+            "p": "24 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg"
+        },
+        {
+            "r": 18,
+            "a": "Dara",
+            "s": "Curse",
+            "p": "18 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 19,
+            "a": "Lena Schaur",
+            "s": "Painted Reality",
+            "p": "16 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 20,
+            "a": "Dinis Mota",
+            "s": "Jurei",
+            "p": "16 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 21,
+            "a": "Inis Neziri",
+            "s": "Ta kam fal",
+            "p": "13 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 22,
+            "a": "Ola Antoniak",
+            "s": "Don't You Try",
+            "p": "10 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 23,
+            "a": "Pavel Orlov",
+            "s": "Can't Say Goodbye",
+            "p": "10 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 24,
+            "a": "Kelly Joyce",
+            "s": "Oh la la",
+            "p": "5 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg"
+        }
+    ],
+    "news": [
+        {
+            "m": "23.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ЧЕРНОГОРИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Tamara Živković («Nova zora») - Новый курс\n🔴 2025: Nina Žižić («Dobrodošli») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776969060.0
+        },
+        {
+            "m": "23.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ЧЕРНОГОРИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Tamara Živković («Nova zora») - Новый курс\n🔴 2025: Nina Žižić («Dobrodošli») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776969060.0
+        },
+        {
+            "m": "23.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ЧЕРНОГОРИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Tamara Živković («Nova zora») - Новый курс\n🔴 2025: Nina Žižić («Dobrodošli») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776969060.0
+        },
+        {
+            "m": "23.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ЧЕРНОГОРИЯ**",
+            "b": "Анализ смены курса в стратегии Черногория. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776969000.0
+        },
+        {
+            "m": "23.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ЧЕРНОГОРИЯ**",
+            "b": "Анализ смены курса в стратегии Черногория. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776969000.0
+        },
+        {
+            "m": "23.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ЧЕРНОГОРИЯ**",
+            "b": "Анализ смены курса в стратегии Черногория. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776969000.0
+        },
+        {
+            "m": "22.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ШВЕЦИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Felicia («My System») - Новый курс\n🔴 2025: KAJ («Bara bada bastu») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776882660.0
+        },
+        {
+            "m": "22.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ШВЕЦИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Felicia («My System») - Новый курс\n🔴 2025: KAJ («Bara bada bastu») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776882660.0
+        },
+        {
+            "m": "22.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ШВЕЦИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Felicia («My System») - Новый курс\n🔴 2025: KAJ («Bara bada bastu») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776882660.0
+        },
+        {
+            "m": "22.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ШВЕЦИЯ**",
+            "b": "Анализ смены курса в стратегии Швеция. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776882600.0
+        },
+        {
+            "m": "22.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ШВЕЦИЯ**",
+            "b": "Анализ смены курса в стратегии Швеция. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776882600.0
+        },
+        {
+            "m": "22.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ШВЕЦИЯ**",
+            "b": "Анализ смены курса в стратегии Швеция. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776882600.0
+        },
+        {
+            "m": "21.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ЛАТВИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Atvara («Ēnā») - Новый курс\n🔴 2025: Tautumeitas («Bur man laimi») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776796260.0
+        },
+        {
+            "m": "21.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ЛАТВИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Atvara («Ēnā») - Новый курс\n🔴 2025: Tautumeitas («Bur man laimi») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776796260.0
+        },
+        {
+            "m": "21.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ЛАТВИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Atvara («Ēnā») - Новый курс\n🔴 2025: Tautumeitas («Bur man laimi») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776796260.0
+        },
+        {
+            "m": "21.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ЛАТВИЯ**",
+            "b": "Анализ смены курса в стратегии Латвия. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776796200.0
+        },
+        {
+            "m": "21.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ЛАТВИЯ**",
+            "b": "Анализ смены курса в стратегии Латвия. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776796200.0
+        },
+        {
+            "m": "21.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ЛАТВИЯ**",
+            "b": "Анализ смены курса в стратегии Латвия. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776796200.0
+        },
+        {
+            "m": "20.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ИТАЛИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Sal Da Vinci («Per sempre sì») - Новый курс\n🔴 2025: Lucio Corsi («Volevo essere un duro») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776709860.0
+        },
+        {
+            "m": "20.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ИТАЛИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Sal Da Vinci («Per sempre sì») - Новый курс\n🔴 2025: Lucio Corsi («Volevo essere un duro») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776709860.0
+        },
+        {
+            "m": "20.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ИТАЛИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Sal Da Vinci («Per sempre sì») - Новый курс\n🔴 2025: Lucio Corsi («Volevo essere un duro») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776709860.0
+        },
+        {
+            "m": "20.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ИТАЛИЯ**",
+            "b": "Анализ смены курса в стратегии Италия. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776709800.0
+        },
+        {
+            "m": "20.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ИТАЛИЯ**",
+            "b": "Анализ смены курса в стратегии Италия. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776709800.0
+        },
+        {
+            "m": "20.04 | 21:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "🧪 **YOURVISION: ПРОТОКОЛ «THE RESET» - ИТАЛИЯ**",
+            "b": "Анализ смены курса в стратегии Италия. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?",
+            "ts": 1776709800.0
+        },
+        {
+            "m": "19.04 | 21:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision",
+            "t": "📊 **THE RESET: ГРЕЦИЯ**",
+            "b": "Чья стратегия кажется вам более перспективной?\n🔵 2026: Akylas («Ferto») - Новый курс\n🔴 2025: Klavdia («Asteromata») - Прошлый сезон\n🟡 Оба подхода по-своему сильны\n🟣 Нужны новые идеи\nГолосуйте!",
+            "ts": 1776623460.0
+        }
     ]
 };
