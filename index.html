@@ -71,7 +71,6 @@
         .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
 
-        /* NEWS FEED */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
@@ -96,7 +95,7 @@
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
     </style>
 </head>
-<body>
+<body id="ROOT_BODY">
     <div class="hero-view">
         <nav>
             <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
@@ -173,35 +172,23 @@
             qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}, {id: "at"}, {id: "me"}],
             eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
             chart: [
-                { r: 1, a: "Greczula", s: "Half of Me", p: "91 pts" },
-                { r: 2, a: "Sissal", s: "Infinity", p: "70 pts" },
-                { r: 3, a: "HVNDS", s: "Dor", p: "70 pts" },
-                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts" },
-                { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts" },
-                { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts" },
-                { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts" },
-                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts" },
-                { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts" },
-                { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts" },
-                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: "39 pts" },
-                { r: 12, a: "Alexander Rybak", s: "Rise", p: "37 pts" },
-                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: "36 pts" },
-                { r: 14, a: "SHWR", s: "Contact", p: "28 pts" },
-                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: "27 pts" },
-                { r: 16, a: "Wavvyboi", s: "Black Glitter", p: "26 pts" },
-                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: "24 pts" },
-                { r: 18, a: "Dara", s: "Curse", p: "18 pts" },
-                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: "16 pts" },
-                { r: 20, a: "Dinis Mota", s: "Jurei", p: "16 pts" },
-                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: "13 pts" },
-                { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: "10 pts" },
-                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: "10 pts" },
-                { r: 24, a: "Kelly Joyce", s: "Oh la la", p: "5 pts" }
+                { r: 1, a: "Greczula", s: "Half of Me", p: "91 pts" }, { r: 2, a: "Sissal", s: "Infinity", p: "70 pts" },
+                { r: 3, a: "HVNDS", s: "Dor", p: "70 pts" }, { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts" },
+                { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts" }, { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts" },
+                { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts" }, { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts" },
+                { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts" }, { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts" },
+                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: "39 pts" }, { r: 12, a: "Alexander Rybak", s: "Rise", p: "37 pts" },
+                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: "36 pts" }, { r: 14, a: "SHWR", s: "Contact", p: "28 pts" },
+                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: "27 pts" }, { r: 16, a: "Wavvyboi", s: "Black Glitter", p: "26 pts" },
+                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: "24 pts" }, { r: 18, a: "Dara", s: "Curse", p: "18 pts" },
+                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: "16 pts" }, { r: 20, a: "Dinis Mota", s: "Jurei", p: "16 pts" },
+                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: "13 pts" }, { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: "10 pts" },
+                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: "10 pts" }, { r: 24, a: "Kelly Joyce", s: "Oh la la", p: "5 pts" }
             ],
             news: [
-                { m: "27.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇩🇰 RESULTS: ДАНИЯ В ЧЕТВЕРТЬФИНАЛЕ", b: "Battle #2: Дания (77%) громит Австрию (23%). Søren Torpegaard Lund в 1/4 финала!" },
-                { m: "26.03 | 15:00", u: "https://t.me/YourEurovision/", t: "🇦🇹 АВСТРИЯ: ВТОРАЯ ВОЛНА БИЛЕТОВ", b: "В Вене стартовал закрытый этап продаж. Билеты разлетаются за минуты." },
-                { m: "25.03 | 10:38", u: "https://t.me/almanac_marginalia/", t: "🏛 MARGINALIA: ДЕНЬ АИСТА", b: "25 марта в балтийском календаре - это Bārbaļu diena. Белая магия возвращения аистов." }
+                { m: "27.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇩🇰 RESULTS: ДАНИЯ В ЧЕТВЕРТЬФИНАЛЕ", b: "Дания (77%) громит Австрию (23%). Søren Torpegaard Lund в 1/4 финала!" },
+                { m: "25.03 | 10:38", u: "https://t.me/almanac_marginalia/", t: "🏛 MARGINALIA: ДЕНЬ АИСТА", b: "25 марта в балтийском календаре — Bārbaļu diena. Время возвращения аистов и белой магии." },
+                { m: "26.03 | 15:00", u: "https://t.me/YourEurovision/", t: "🇦🇹 АВСТРИЯ: ВТОРАЯ ВОЛНА БИЛЕТОВ", b: "В Вене стартовал закрытый этап продаж. Билеты разлетаются за минуты." }
             ]
         };
 
@@ -215,13 +202,14 @@
                 const diff = DATES[k] - now;
                 if (diff < 0) { document.getElementById('timer-'+k).innerText = "LIVE"; return; }
                 const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
-                document.getElementById('timer-'+k).innerText = `${d}d ${h}h ${m}m ${s}s`;
+                const el = document.getElementById('timer-'+k);
+                if(el) el.innerText = `${d}d ${h}h ${m}m ${s}s`;
             });
         }
 
-        var currentSongId = "";
-        var songStartedAt = 0;
-        var songDuration = 180000;
+        var isPlaying = false;
+        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
+        var songDuration = 180000, songStartedAt = 0, currentSongId = "";
 
         async function syncRadio() {
             try {
@@ -238,7 +226,7 @@
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
 
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,10).map(h => `<tr><td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td><td class="chart-cell info-cell"><span class="artist" style="font-size:0.8rem; color:#fff;">${h.song}</span></td></tr>`).join('');
+                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `<tr><td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td><td class="chart-cell info-cell"><span class="artist" style="font-size:0.8rem; color:#fff;">${h.song}</span></td></tr>`).join('');
             } catch(e) {}
         }
 
@@ -260,8 +248,6 @@
             document.getElementById('news-grid').innerHTML = DATA.news.map(p => `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><a href="${p.u}" target="_blank" class="post-h">${p.t}</a><div class="post-b">${p.b}</div></div></div>`).join('');
         }
 
-        var isPlaying = false;
-        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
         playBtn.onclick = () => {
             if (!isPlaying) {
                 audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
