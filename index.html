@@ -95,7 +95,7 @@
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
     </style>
 </head>
-<body id="ROOT_BODY">
+<body>
     <div class="hero-view">
         <nav>
             <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
@@ -105,15 +105,15 @@
         <div class="timers-hero">
             <a href="https://www.youtube.com/eurovision" target="_blank" class="timer-card">
                 <div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div>
-                <div class="timer-info"><div class="timer-label">Semi-Final 1 / 12.05</div><div class="timer-val" id="timer-sf1">--d --h --m --s</div></div>
+                <div class="timer-info"><div class="timer-label">Semi-Final 1 / 12.05</div><div class="timer-val" id="timer-sf1">--d --h --m</div></div>
             </a>
             <a href="https://www.youtube.com/eurovision" target="_blank" class="timer-card">
                 <div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div>
-                <div class="timer-info"><div class="timer-label">Semi-Final 2 / 14.05</div><div class="timer-val" id="timer-sf2">--d --h --m --s</div></div>
+                <div class="timer-info"><div class="timer-label">Semi-Final 2 / 14.05</div><div class="timer-val" id="timer-sf2">--d --h --m</div></div>
             </a>
             <a href="https://www.youtube.com/eurovision" target="_blank" class="timer-card">
                 <div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div>
-                <div class="timer-info"><div class="timer-label">Grand Final / 16.05</div><div class="timer-val" id="timer-gf">--d --h --m --s</div></div>
+                <div class="timer-info"><div class="timer-label">Grand Final / 16.05</div><div class="timer-val" id="timer-gf">--d --h --m</div></div>
             </a>
         </div>
 
@@ -172,23 +172,52 @@
             qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}, {id: "at"}, {id: "me"}],
             eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
             chart: [
-                { r: 1, a: "Greczula", s: "Half of Me", p: "91 pts" }, { r: 2, a: "Sissal", s: "Infinity", p: "70 pts" },
-                { r: 3, a: "HVNDS", s: "Dor", p: "70 pts" }, { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts" },
-                { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts" }, { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts" },
-                { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts" }, { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts" },
-                { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts" }, { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts" },
-                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: "39 pts" }, { r: 12, a: "Alexander Rybak", s: "Rise", p: "37 pts" },
-                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: "36 pts" }, { r: 14, a: "SHWR", s: "Contact", p: "28 pts" },
-                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: "27 pts" }, { r: 16, a: "Wavvyboi", s: "Black Glitter", p: "26 pts" },
-                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: "24 pts" }, { r: 18, a: "Dara", s: "Curse", p: "18 pts" },
-                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: "16 pts" }, { r: 20, a: "Dinis Mota", s: "Jurei", p: "16 pts" },
-                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: "13 pts" }, { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: "10 pts" },
-                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: "10 pts" }, { r: 24, a: "Kelly Joyce", s: "Oh la la", p: "5 pts" }
+                { r: 1, a: "Greczula", s: "Half of Me", p: "91 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 2, a: "Sissal", s: "Infinity", p: "70 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 3, a: "HVNDS", s: "Dor", p: "70 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: "65 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 5, a: "Laud", s: "Lightkeeper", p: "61 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 6, a: "Kautkaili", s: "Te un tagad", p: "55 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 7, a: "Noëp", s: "Days Like This", p: "53 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: "47 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 9, a: "Zejna", s: "Jugoslavija", p: "45 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 10, a: "Matt Bixck", s: "The Flute", p: "40 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: "39 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 12, a: "Alexander Rybak", s: "Rise", p: "37 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: "36 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 14, a: "SHWR", s: "Contact", p: "28 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: "27 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 16, a: "Wavvyboi", s: "Black Glitter", p: "26 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: "24 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 18, a: "Dara", s: "Curse", p: "18 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: "16 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 20, a: "Dinis Mota", s: "Jurei", p: "16 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: "13 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: "10 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: "10 pts", img: "https://myradio24.com/img/no_cover.png" },
+                { r: 24, a: "Kelly Joyce", s: "Oh la la", p: "5 pts", img: "https://myradio24.com/img/no_cover.png" }
             ],
             news: [
-                { m: "27.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇩🇰 RESULTS: ДАНИЯ В ЧЕТВЕРТЬФИНАЛЕ", b: "Дания (77%) громит Австрию (23%). Søren Torpegaard Lund в 1/4 финала!" },
-                { m: "25.03 | 10:38", u: "https://t.me/almanac_marginalia/", t: "🏛 MARGINALIA: ДЕНЬ АИСТА", b: "25 марта в балтийском календаре — Bārbaļu diena. Время возвращения аистов и белой магии." },
-                { m: "26.03 | 15:00", u: "https://t.me/YourEurovision/", t: "🇦🇹 АВСТРИЯ: ВТОРАЯ ВОЛНА БИЛЕТОВ", b: "В Вене стартовал закрытый этап продаж. Билеты разлетаются за минуты." }
+                { m: "27.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇩🇰 RESULTS: ДАНИЯ В ЧЕТВЕРТЬФИНАЛЕ", b: "Дания (77%) громит Австрию (23%). Søren Torpegaard Lund в 1/4 финала! Поздравляем датскую делегацию с уверенной победой в Battle #2." },
+                { m: "27.03 | 10:00", u: "https://t.me/YourEurovision/", t: "⚔️ BATTLE #3: GREECE VS ALBANIA", b: "Третий поединок 1/8 финала стартовал! Столкновение греческого Akylas и албанского Alis. Голосуйте в канале!" },
+                { m: "26.03 | 15:00", u: "https://t.me/YourEurovision/", t: "🇦🇹 АВСТРИЯ: ВТОРАЯ ВОЛНА БИЛЕТОВ", b: "В Вене стартовал закрытый этап продаж. Билеты на полуфиналы разлетаются за минуты. Официальный сайт испытывает колоссальные нагрузки." },
+                { m: "26.03 | 10:05", u: "https://t.me/YourEurovision/", t: "🇫🇮 RESULTS: ФИНЛЯНДИЯ В 1/4 ФИНАЛА", b: "Battle #1 завершен. Lampenius & Parkkonen набирают 71%, не оставляя шансов Черногории. Первый четвертьфиналист определен." },
+                { m: "25.03 | 10:38", u: "https://t.me/almanac_marginalia/", t: "🏛 MARGINALIA: ДЕНЬ АИСТА", b: "25 марта — Bārbaļu diena. Белая магия возвращения аистов. В балтийской традиции это священный момент победы света над зимним оцепенением. Время «невидимого якоря»." },
+                { m: "25.03 | 08:03", u: "https://t.me/YourEurovision/", t: "⚔️ YOURVISION CUP: BATTLE #1 START", b: "Стадия плей-офф открыта! Finland против Montenegro. Главный фаворит против главной «темной лошадки». Голосование продлится 24 часа." },
+                { m: "24.03 | 19:35", u: "https://t.me/YourEurovision/", t: "🧪 #THERESET: КРОАТИЯ АУДИТ", b: "Сравнение 2026 (LELEK) и 2025 (Marko Bošnjak). Этно-электроника против альтернативного попа. Смогли ли LELEK удержать планку Baby Lasagna?" },
+                { m: "24.03 | 18:01", u: "https://t.me/YourEurovision/", t: "🧬 #DNA: ИТАЛИЯ — SAL DA VINCI", b: "История Сальваторе Майкла Соррентино. 17 лет ожидания после бронзы 2009 года. Неаполитанский неомелодизм в премиальной упаковке для Вены." },
+                { m: "24.03 | 16:02", u: "https://t.me/almanac_marginalia/", t: "🥨 ALMANAC: ПИР ЖРЕБИЯ", b: "Пурим завершается, оставляя вкус мака и меда. Время осознания хрупкости момента и того, как мы делим свой жребий с другими." },
+                { m: "24.03 | 11:14", u: "https://t.me/YourEurovision/", t: "🏆 СЕТКА ПЛЕЙ-ОФФ СФОРМИРОВАНА", b: "Из 35 стран осталось 16 претендентов. Пары распределены по системе Market Seeding на основе коэффициентов букмекеров." },
+                { m: "24.03 | 07:02", u: "https://t.me/YourEurovision/", t: "📊 ИТОГИ «ВТОРОГО ШАНСА»", b: "Кипр (53%) и Болгария (38%) забирают последние путевки в 1/8 финала. Норвегия и Сан-Марино покидают турнир." },
+                { m: "23.03 | 20:15", u: "https://t.me/almanac_marginalia/", t: "🥖 ALMANAC: РИТУАЛ НОЧНОГО ХЛЕБА", b: "Работа с ржаным тестом (Rupjmaize). Балтийский тмин и морская соль как код узнавания «своих». Простая геометрия вкуса." },
+                { m: "23.03 | 19:30", u: "https://t.me/YourEurovision/", t: "🧪 #THERESET: УКРАИНА АУДИТ", b: "Шок сезона: вылет Украины. Сравниваем Lelēka (2026) и Ziferblat (2025). Был ли уход в этно-эмбиент стратегической ошибкой?" },
+                { m: "23.03 | 18:42", u: "https://t.me/YourEurovision/", t: "🎧 ПЛЕЙЛИСТЫ ЧАРТА ОБНОВЛЕНЫ", b: "Eurogroove Top 24 доступен на Spotify, Apple Music и YouTube. Слушайте пульс мирового эфира прямо сейчас." },
+                { m: "23.03 | 18:03", u: "https://t.me/YourEurovision/", t: "🧬 #DNA: БОЛГАРИЯ — DARA", b: "Путь от X-Factor до «победоносного тренера». Bangaranga как квинтэссенция стиля Cyber-Balkan." },
+                { m: "23.03 | 10:00", u: "https://t.me/YourEurovision/", t: "🗳️ ОПРОС: ВТОРОЙ ШАНС", b: "7 стран, 2 места. Кто достоин вернуться в игру? Решайте судьбу Норвегии, Болгарии, Германии, Сан-Марино, Швейцарии, Бельгии и Кипра." },
+                { m: "22.03 | 19:34", u: "https://t.me/YourEurovision/", t: "🔍 THE RESET: ПЕРВЫЙ ЗАПУСК", b: "Анонс новой рубрики. Ежедневный аудит стратегий стран, потерявших идентичность в погоне за трендами." },
+                { m: "22.03 | 10:05", u: "https://t.me/YourEurovision/", t: "📈 STATS: SPOTIFY MOMENTUM", b: "Анализ стриминга: Швеция и Греция показывают взрывной рост. Лидеры сезона по версии слушателей." },
+                { m: "21.03 | 21:00", u: "https://t.me/YourEurovision/", t: "⚡ FLASH: КИПР МЕНЯЕТ ПОСТАНОВКУ", b: "Инсайды с репетиций: Antigoni добавляет больше традиционных инструментов в финальную версию Jalla." },
+                { m: "21.03 | 12:00", u: "https://t.me/YourEurovision/", t: "🌍 WORLD SOUND: ИТОГИ НЕДЕЛИ", b: "Молдова удерживает лидерство в чарте. Satoshi становится феноменом весны 2026." }
             ]
         };
 
@@ -200,16 +229,15 @@
             const now = new Date();
             Object.keys(DATES).forEach(k => {
                 const diff = DATES[k] - now;
-                if (diff < 0) { document.getElementById('timer-'+k).innerText = "LIVE"; return; }
-                const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
                 const el = document.getElementById('timer-'+k);
-                if(el) el.innerText = `${d}d ${h}h ${m}m ${s}s`;
+                if (!el) return;
+                if (diff < 0) { el.innerText = "LIVE"; return; }
+                const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
+                el.innerText = `${d}d ${h}h ${m}m ${s}s`;
             });
         }
 
-        var isPlaying = false;
-        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
-        var songDuration = 180000, songStartedAt = 0, currentSongId = "";
+        var currentSongId = ""; var songStartedAt = 0; var songDuration = 180000;
 
         async function syncRadio() {
             try {
@@ -226,7 +254,13 @@
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
 
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `<tr><td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td><td class="chart-cell info-cell"><span class="artist" style="font-size:0.8rem; color:#fff;">${h.song}</span></td></tr>`).join('');
+                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `
+                    <tr class="chart-row">
+                        <td class="chart-cell rank" style="font-size:0.6rem; color:var(--accent-pink);">${h.time}</td>
+                        <td class="chart-cell"><img src="https://myradio24.com/${h.img || 'img/no_cover.png'}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.8rem;">${h.song.split(' - ')[0]}</span><span class="song" style="font-size:0.7rem;">${h.song.split(' - ')[1] || ''}</span></td>
+                    </tr>
+                `).join('');
             } catch(e) {}
         }
 
@@ -244,10 +278,29 @@
                 </div>
             `).join('');
 
-            document.getElementById('chart-list').innerHTML = DATA.chart.map(i => `<tr class="chart-row"><td class="chart-cell rank">${i.r}</td><td class="chart-cell info-cell"><span class="artist">${i.a}</span><span class="song">${i.s}</span></td><td class="chart-cell pts">${i.p}</td></tr>`).join('');
-            document.getElementById('news-grid').innerHTML = DATA.news.map(p => `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><a href="${p.u}" target="_blank" class="post-h">${p.t}</a><div class="post-b">${p.b}</div></div></div>`).join('');
+            document.getElementById('chart-list').innerHTML = DATA.chart.map(i => `
+                <tr class="chart-row">
+                    <td class="chart-cell rank">${i.r}</td>
+                    <td class="chart-cell"><img src="${i.img}" class="track-cover"></td>
+                    <td class="chart-cell info-cell"><span class="artist">${i.a}</span><span class="song">${i.s}</span></td>
+                    <td class="chart-cell pts">${i.p}</td>
+                </tr>
+            `).join('');
+            
+            document.getElementById('news-grid').innerHTML = DATA.news.map(p => `
+                <div class="post-card">
+                    <div class="post-content">
+                        <span class="post-meta">${p.m}</span>
+                        <a href="${p.u}" target="_blank" class="post-h">${p.t}</a>
+                        <div class="post-b">${p.b}</div>
+                    </div>
+                </div>
+            `).join('');
         }
 
+        var isPlaying = false;
+        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
+        
         playBtn.onclick = () => {
             if (!isPlaying) {
                 audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
@@ -262,14 +315,15 @@
         };
 
         function update() {
-            document.getElementById('clock').innerText = "RIGA: " + new Date().toLocaleTimeString('ru-RU');
+            const clock = document.getElementById('clock');
+            if(clock) clock.innerText = "RIGA: " + new Date().toLocaleTimeString('ru-RU');
             updateTimers();
             if (songStartedAt > 0) {
                 const elapsed = Date.now() - songStartedAt;
                 const m = Math.floor(elapsed / 60000), s = Math.floor((elapsed % 60000) / 1000);
                 const tm = Math.floor(songDuration / 60000), ts = Math.floor((songDuration % 60000) / 1000);
-                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / ${tm}:${ts < 10 ? '0' : ''}${ts}`;
-                progressBar.style.width = Math.min(100, (elapsed / songDuration) * 100) + "%";
+                if(timerText) timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / ${tm}:${ts < 10 ? '0' : ''}${ts}`;
+                if(progressBar) progressBar.style.width = Math.min(100, (elapsed / songDuration) * 100) + "%";
             }
         }
 
