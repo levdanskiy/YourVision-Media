@@ -93,6 +93,18 @@
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
+    
+        .battle-box { transition: transform 0.3s, border-color 0.3s; cursor: pointer; position: relative; overflow: hidden; }
+        .battle-box:hover { transform: scale(1.02); border-color: var(--accent-pink); background: rgba(255,255,255,0.05); }
+        .battle-qf { font-size: 0.45rem; font-weight: 900; color: var(--accent-cyan); position: absolute; top: 5px; right: 10px; opacity: 0.6; }
+        .team-info-mini { display: flex; flex-direction: column; gap: 1px; }
+        .artist-mini { font-size: 0.55rem; color: #888; text-transform: none; font-weight: 400; line-height: 1; }
+        .song-mini { font-size: 0.65rem; color: #fff; font-weight: 700; line-height: 1.1; }
+        
+        @keyframes live-glow { 0% { box-shadow: 0 0 5px var(--accent-pink); } 50% { box-shadow: 0 0 20px var(--accent-pink); } 100% { box-shadow: 0 0 5px var(--accent-pink); } }
+        .status-live { border-color: var(--accent-pink) !important; animation: live-glow 2s infinite; }
+        .winner-crown { color: var(--accent-acid); font-size: 0.7rem; margin-left: 5px; }
+
     </style>
 </head>
 <body>
@@ -267,17 +279,36 @@
             } catch(e) {}
         }
 
+        
         function render() {
             const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
             document.getElementById('bracket-body').innerHTML = DATA.battles.map(b => `
-                <div class="battle-box">
+                <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''}">
                     <div class="battle-n">${b.n}</div>
-                    <div class="battle-team ${b.w===1?'team-win':(b.w===2?'team-lose':'')}"><img src="${getHeartUrl(b.t1)}" style="width:18px;"><span>${b.t1.toUpperCase()}</span><span style="margin-left:auto">${b.s1}</span></div>
+                    <div class="battle-qf">${b.qf}</div>
+                    
+                    <div class="battle-team ${b.w===1?'team-win':(b.w===2?'team-lose':'')}">
+                        <img src="${getHeartUrl(b.t1)}" style="width:20px; height:20px; border-radius:50%;">
+                        <div class="team-info-mini">
+                            <span class="song-mini">${b.s1}</span>
+                            <span class="artist-mini">${b.a1}</span>
+                        </div>
+                        <span style="margin-left:auto">${b.sc1}${b.w===1?' <span class="winner-crown">★</span>':''}</span>
+                    </div>
+                    
                     <div class="vs-label">VS</div>
-                    <div class="battle-team ${b.w===2?'team-win':(b.w===1?'team-lose':'')}"><img src="${getHeartUrl(b.t2)}" style="width:18px;"><span>${b.t2.toUpperCase()}</span><span style="margin-left:auto">${b.s2}</span></div>
+                    
+                    <div class="battle-team ${b.w===2?'team-win':(b.w===1?'team-lose':'')}">
+                        <img src="${getHeartUrl(b.t2)}" style="width:20px; height:20px; border-radius:50%;">
+                        <div class="team-info-mini">
+                            <span class="song-mini">${b.s2}</span>
+                            <span class="artist-mini">${b.a2}</span>
+                        </div>
+                        <span style="margin-left:auto">${b.sc2}${b.w===2?' <span class="winner-crown">★</span>':''}</span>
+                    </div>
                 </div>
             `).join('');
 
