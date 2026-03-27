@@ -257,7 +257,7 @@
                 document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `
                     <tr class="chart-row">
                         <td class="chart-cell rank" style="font-size:0.6rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="https://myradio24.com/${h.imgbig}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                        <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
                         <td class="chart-cell info-cell">
                             <span class="artist" style="font-size:0.8rem; display:block; color:#fff;">${h.song.split(' - ')[0]}</span>
                             <span class="song" style="font-size:0.7rem; display:block; color:#888;">${h.song.split(' - ')[1] || ''}</span>
