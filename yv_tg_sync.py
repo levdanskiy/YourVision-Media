@@ -56,66 +56,61 @@ def get_telegram_news():
 def get_local_posts():
     local_posts = []
     now = datetime.now()
-    # Проверяем последние 3 дня
-    for i in range(3):
-        date_seg = (datetime.now()).strftime("%Y/%m/%d") # Упростим для теста
-        for ch in CHANNELS:
-            # Рекурсивный поиск в папке канала
-            base_path = ch["path"]
-            if not os.path.exists(base_path): continue
-            for root, dirs, files in os.walk(base_path):
-                for filename in files:
-                    if not filename.endswith(".md"): continue
-                    try:
-                        with open(os.path.join(root, filename), 'r', encoding='utf-8') as f:
-                            content = f.read()
-                        if "// СТАТУС: ГОТОВ" not in content: continue
-                        
-                        date_match = re.search(r'ДАТА ПУБЛИКАЦИИ:\s*(\d{2}\.\d{2}\.\d{4},\s*\d{2}:\d{2})', content)
-                        if not date_match: continue
-                        pub_dt = datetime.strptime(date_match.group(1), "%d.%m.%Y, %H:%M")
-                        
-                        header_end = content.find('\n\n')
-                        body_start = content.find('---', header_end)
-                        raw_body = content[header_end:body_start].strip()
-                        lines = [l.strip() for l in raw_body.split('\n') if l.strip()]
-                        
-                        local_posts.append({
-                            "m": pub_dt.strftime("%d.%m | %H:%M"),
-                            "id": ch["id"], "u": "https://t.me/" + ch["username"].replace('@', ''), 
-                            "t": lines[0] if lines else "Update", 
-                            "b": '\n'.join(lines[1:]) if len(lines) > 1 else "",
-                            "ts": pub_dt.timestamp()
-                        })
-                    except: continue
+    for ch in CHANNELS:
+        base_path = ch["path"]
+        if not os.path.exists(base_path): continue
+        for root, dirs, files in os.walk(base_path):
+            for filename in files:
+                if not filename.endswith(".md"): continue
+                try:
+                    with open(os.path.join(root, file), 'r', encoding='utf-8') as f:
+                        content = f.read()
+                    if "// СТАТУС: ГОТОВ" not in content: continue
+                    
+                    date_match = re.search(r'ДАТА ПУБЛИКАЦИИ:\s*(\d{2}\.\d{2}\.\d{4},\s*\d{2}:\d{2})', content)
+                    if not date_match: continue
+                    pub_dt = datetime.strptime(date_match.group(1), "%d.%m.%Y, %H:%M")
+                    
+                    header_end = content.find('\n\n')
+                    body_start = content.find('---', header_end)
+                    raw_body = content[header_end:body_start].strip()
+                    lines = [l.strip() for l in raw_body.split('\n') if l.strip()]
+                    
+                    local_posts.append({
+                        "m": pub_dt.strftime("%d.%m | %H:%M"),
+                        "id": ch["id"], "u": "https://t.me/" + ch["username"].replace('@', ''), 
+                        "t": lines[0] if lines else "Update", 
+                        "b": '\n'.join(lines[1:]) if len(lines) > 1 else "",
+                        "ts": pub_dt.timestamp()
+                    })
+                except: continue
     return local_posts
 
 def sync():
     tg_posts = get_telegram_news()
-    local_posts = get_local_posts()
+    # Фильтруем пустые и битые
+    tg_posts = [p for p in tg_posts if p["t"] and p["ts"]]
     
-    titles_in_tg = set([p["t"] for p in tg_posts])
-    for lp in local_posts:
-        if lp["t"] not in titles_in_tg:
-            tg_posts.append(lp)
-            
+    # Сортируем: САМЫЕ НОВЫЕ ВВЕРХУ
     tg_posts.sort(key=lambda x: x["ts"], reverse=True)
     final_news = tg_posts[:25]
     
-    # Читаем текущий DATA из data.js, чтобы сохранить Battles и Chart
     if os.path.exists("data.js"):
         with open("data.js", 'r', encoding='utf-8') as f:
             js_content = f.read()
-            # Извлекаем объект DATA через regex
             match = re.search(r'var DATA = (\{.*\});', js_content, re.DOTALL)
             if match:
-                data_obj = json.loads(match.group(1))
-                data_obj["news"] = final_news
-                
-                new_js = f"var DATA = {json.dumps(data_obj, ensure_ascii=False, indent=4)};"
-                with open("data.js", 'w', encoding='utf-8') as f:
-                    f.write(new_js)
-                print(f"Updated data.js with {len(final_news)} mixed items (YV + Almanac)")
+                try:
+                    data_obj = json.loads(match.group(1))
+                    data_obj["news"] = final_news
+                    # Очистка от тире перед записью
+                    new_js = f"var DATA = {json.dumps(data_obj, ensure_ascii=False, indent=4)};"
+                    new_js = new_js.replace('—', '-').replace('–', '-')
+                    with open("data.js", 'w', encoding='utf-8') as f:
+                        f.write(new_js)
+                    print(f"Sync Complete: {len(final_news)} items sorted by date (Newest First).")
+                except Exception as e:
+                    print(f"JSON Error: {e}")
 
 if __name__ == "__main__":
     sync()
