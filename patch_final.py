@@ -1,6 +1,6 @@
 import os
 
-# КОНСОЛИДИРОВАННЫЙ HTML: STANDINGS 2.0 + TITAN UI + HEART FLAGS
+# КОНСОЛИДИРОВАННЫЙ HTML: TITAN UI + STANDINGS 2.0 + PREMIUM NEWS
 final_html = """<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -55,6 +55,7 @@ final_html = """<!DOCTYPE html>
         .tournament-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
         .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px; }
         
+        /* TITAN BRACKET STYLES */
         .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 15px; padding: 25px; display: flex; flex-direction: column; gap: 15px; transition: 0.4s; position: relative; min-height: 200px; justify-content: center; }
         .battle-box-small { min-height: 120px; opacity: 0.6; padding: 15px; }
         .battle-box:hover { border-color: var(--accent-pink); transform: translateY(-5px); background: rgba(255,255,255,0.05); }
@@ -103,12 +104,23 @@ final_html = """<!DOCTYPE html>
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 30px; }
         
-        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; cursor: pointer; text-decoration: none; }
-        .post-card:hover { transform: scale(1.01); background: rgba(255,255,255,0.05); border-color: var(--accent-pink); }
-        .post-content { padding: 35px; flex-grow: 1; }
-        .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.45rem; font-weight: 900; color: #fff; text-transform: uppercase; display: block; margin-bottom: 20px; }
-        .post-b { font-size: 1.05rem; color: #ddd; line-height: 1.8; white-space: pre-wrap; }
+        /* PREMIUM NEWS CARDS */
+        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; cursor: pointer; text-decoration: none; position: relative; }
+        .post-card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.05); border-color: var(--accent-pink); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        
+        .post-yv { border-left: 5px solid var(--accent-pink); }
+        .post-lv { border-left: 5px solid var(--accent-cyan); }
+        
+        .post-content { padding: 40px; flex-grow: 1; }
+        .post-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .post-meta { font-size: 0.7rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; letter-spacing: 0.15em; }
+        
+        .source-badge { font-size: 0.55rem; font-weight: 900; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.1em; }
+        .badge-yv { background: rgba(255,0,127,0.1); color: var(--accent-pink); border: 1px solid rgba(255,0,127,0.2); }
+        .badge-lv { background: rgba(0,245,255,0.1); color: var(--accent-cyan); border: 1px solid rgba(0,245,255,0.2); }
+        
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.6rem; font-weight: 900; color: #fff; text-transform: uppercase; display: block; margin-bottom: 25px; line-height: 1.2; text-shadow: 0 0 20px rgba(255,255,255,0.1); }
+        .post-b { font-size: 1.1rem; color: #ccc; line-height: 1.7; white-space: pre-wrap; font-weight: 400; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; }
         .on-air-live { position: absolute; top: 20px; right: 20px; background: var(--accent-pink); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; z-index: 10; }
@@ -129,7 +141,7 @@ final_html = """<!DOCTYPE html>
 <body>
     <div class="hero-view">
         <nav>
-            <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
+            <a href="https://t.me/YourEurovision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
             <div id="clock">RIGA: 00:00:00</div>
         </nav>
 
@@ -296,14 +308,16 @@ final_html = """<!DOCTYPE html>
                 </tr>`).join('');
             
             document.getElementById('news-grid').innerHTML = DATA.news.map(p => {
-                let title = p.t.replace(/\\*/g, '');
-                let body = p.b.replace(/\\*/g, '');
-                title = replaceFlags(title);
-                body = replaceFlags(body);
+                const title = replaceFlags(p.t.replace(/\\*/g, ''));
+                const body = replaceFlags(p.b.replace(/\\*/g, ''));
+                const isLV = p.id === "lv";
                 return `
-                <a href="${p.u}" target="_blank" class="post-card">
+                <a href="${p.u}" target="_blank" class="post-card ${isLV ? 'post-lv' : 'post-yv'}">
                     <div class="post-content">
-                        <span class="post-meta">${p.m}</span>
+                        <div class="post-header">
+                            <span class="post-meta">${p.m}</span>
+                            <span class="source-badge ${isLV ? 'badge-lv' : 'badge-yv'}">${isLV ? 'Marginalia' : 'YourVision'}</span>
+                        </div>
                         <span class="post-h">${title}</span>
                         <div class="post-b">${body}</div>
                     </div>
@@ -346,4 +360,4 @@ final_html = """<!DOCTYPE html>
 
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(final_html)
-print("Standings 2.0 with Heart Flags and Titan UI deployed.")
+print("Premium News Design with Source Badges and Titan UI integrated.")
