@@ -37,13 +37,13 @@ var DATA = {
             "t1": "gr",
             "a1": "Akylas",
             "s1": "Ferto",
-            "sc1": "LIVE",
+            "sc1": "56% ★",
             "t2": "al",
             "a2": "Alis",
             "s2": "Nën",
-            "sc2": "",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "44%",
+            "w": 1,
+            "status": "FINISHED"
         },
         {
             "id": 4,
@@ -56,8 +56,8 @@ var DATA = {
             "t2": "ge",
             "a2": "Bzikebi",
             "s2": "On Replay",
-            "sc2": "",
-            "w": 0,
+            "sc2": "44%",
+            "w": 1,
             "status": "WAITING"
         },
         {
@@ -71,8 +71,8 @@ var DATA = {
             "t2": "am",
             "a2": "Simón",
             "s2": "Paloma rumba",
-            "sc2": "",
-            "w": 0,
+            "sc2": "44%",
+            "w": 1,
             "status": "WAITING"
         },
         {
@@ -86,8 +86,8 @@ var DATA = {
             "t2": "md",
             "a2": "Satoshi",
             "s2": "Viva, Moldova!",
-            "sc2": "",
-            "w": 0,
+            "sc2": "44%",
+            "w": 1,
             "status": "WAITING"
         },
         {
@@ -101,8 +101,8 @@ var DATA = {
             "t2": "gb",
             "a2": "Look Mum No Computer",
             "s2": "Eins, Zwei, Drei",
-            "sc2": "",
-            "w": 0,
+            "sc2": "44%",
+            "w": 1,
             "status": "WAITING"
         },
         {
@@ -116,8 +116,8 @@ var DATA = {
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
-            "sc2": "",
-            "w": 0,
+            "sc2": "44%",
+            "w": 1,
             "status": "WAITING"
         }
     ],
@@ -187,13 +187,13 @@ var DATA = {
             "a": "Bzikebi",
             "s": "On Replay"
         },
+    ],
+    "eliminated": [
         {
             "id": "al",
             "a": "Alis",
             "s": "Nën"
-        }
-    ],
-    "eliminated": [
+        },
         {
             "id": "me",
             "a": "Tamara Živković",
