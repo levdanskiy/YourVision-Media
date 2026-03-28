@@ -40,7 +40,7 @@ var DATA = {
             "sc1": "56% ★",
             "t2": "al",
             "a2": "Alis",
-            "s2": "Nën",
+            "s2": "Nân",
             "sc2": "44%",
             "w": 1,
             "status": "FINISHED"
@@ -110,8 +110,8 @@ var DATA = {
             "n": "Match #8",
             "qf": "TO QF4",
             "t1": "mt",
-            "a1": "Aidan",
-            "s1": "Bella",
+            "a1": "HVNDS",
+            "s1": "Dor",
             "sc1": "WAIT",
             "t2": "bg",
             "a2": "Dara",
@@ -186,14 +186,14 @@ var DATA = {
             "id": "ge",
             "a": "Bzikebi",
             "s": "On Replay"
-        },
-        {
-            "id": "al",
-            "a": "Alis",
-            "s": "Nën"
         }
     ],
     "eliminated": [
+        {
+            "id": "al",
+            "a": "Alis",
+            "s": "Nân"
+        },
         {
             "id": "me",
             "a": "Tamara Živković",
@@ -256,7 +256,99 @@ var DATA = {
         },
         {
             "id": "il",
-            "a": "Noëp", "s": "Days Like This", "p": "53 pts", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
+            "a": "Noam Bettan",
+            "s": "Michelle"
+        },
+        {
+            "id": "rs",
+            "a": "Lavina",
+            "s": "Kraj mene"
+        },
+        {
+            "id": "fr",
+            "a": "Monroe",
+            "s": "Regarde !"
+        },
+        {
+            "id": "pl",
+            "a": "Alicja",
+            "s": "Pray"
+        },
+        {
+            "id": "no",
+            "a": "Jonas Lovv",
+            "s": "Ya Ya Ya"
+        },
+        {
+            "id": "de",
+            "a": "Sarah Engels",
+            "s": "Fire"
+        },
+        {
+            "id": "sm",
+            "a": "Senhit",
+            "s": "Superstar"
+        },
+        {
+            "id": "ch",
+            "a": "Veronica Fusaro",
+            "s": "Alice"
+        },
+        {
+            "id": "be",
+            "a": "Essyla",
+            "s": "Dancing on the Ice"
+        }
+    ],
+    "chart": [
+        {
+            "r": 1,
+            "a": "Greczula",
+            "s": "Half of Me",
+            "p": "91 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 2,
+            "a": "Sissal",
+            "s": "Infinity",
+            "p": "70 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 3,
+            "a": "HVNDS",
+            "s": "Dor",
+            "p": "70 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 4,
+            "a": "Cold Snap",
+            "s": "Mucho Macho",
+            "p": "65 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 5,
+            "a": "Laud",
+            "s": "Lightkeeper",
+            "p": "61 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 6,
+            "a": "Kautkaili",
+            "s": "Te un tagad",
+            "p": "55 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 7,
+            "a": "Noëp",
+            "s": "Days Like This",
+            "p": "53 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
         },
         {
             "r": 8,
