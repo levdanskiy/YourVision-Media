@@ -1,240 +1,256 @@
 {
-  "season": "2026",
-  "version": "2.6",
-  "updated": "2026-03-24",
-  "timezone": "Europe/Riga",
-  "events": [
-    {
-      "id": "ALBM_LU_01",
-      "date": "2026-03-28",
-      "time": "19:00",
-      "country": "Luxembourg",
-      "event": "Eva Marija - Ne Partez Pas Sans Moi (Premiere)",
-      "type": "ALBM",
-      "status": "WAITING"
-    },
-    {
-      "id": "ALBM_AL_01",
-      "date": "2026-03-29",
-      "time": "19:00",
-      "country": "Albania",
-      "event": "Alis - Nân (Piano Version Premiere)",
-      "type": "ALBM",
-      "status": "WAITING"
-    },
-    {
-      "id": "WS_CHART_01",
-      "date": "2026-03-31",
-      "time": "18:00",
-      "country": "World",
-      "event": "WORLDSOUND: AIRWAVE VELOCITY",
-      "type": "CHART",
-      "status": "WAITING",
-      "voting_deadline": "2026-03-29 23:59"
-    },
-    {
-      "id": "NL_HGSF_01",
-      "date": "2026-04-03",
-      "time": "TBA",
-      "country": "Norway",
-      "event": "Het Grote Songfestivalfeest 2025 (NRKTV)",
-      "type": "RELEASE",
-      "status": "WAITING"
-    },
-    {
-      "id": "NL_HGSF_02",
-      "date": "2026-05-15",
-      "time": "21:25",
-      "country": "Netherlands",
-      "event": "Het Grote Songfestivalfeest 2025 (NPO3)",
-      "type": "RELEASE",
-      "status": "WAITING"
-    },
-    {
-      "id": "NL_HGSF_03",
-      "date": "2026-05-17",
-      "time": "20:30",
-      "country": "Online",
-      "event": "Het Grote Songfestivalfeest 2025 (YouTube)",
-      "type": "RELEASE",
-      "status": "WAITING"
+    "season": "2026",
+    "version": "2.6",
+    "updated": "2026-03-24",
+    "timezone": "Europe/Riga",
+    "events": [
+        {
+            "id": "ALBM_LU_01",
+            "date": "2026-03-28",
+            "time": "19:00",
+            "country": "Luxembourg",
+            "event": "Eva Marija - Ne Partez Pas Sans Moi (Premiere)",
+            "type": "ALBM",
+            "status": "WAITING"
+        },
+        {
+            "id": "ALBM_AL_01",
+            "date": "2026-03-29",
+            "time": "19:00",
+            "country": "Albania",
+            "event": "Alis - Nân (Piano Version Premiere)",
+            "type": "ALBM",
+            "status": "WAITING"
+        },
+        {
+            "id": "WS_CHART_01",
+            "date": "2026-03-31",
+            "time": "18:00",
+            "country": "World",
+            "event": "WORLDSOUND: AIRWAVE VELOCITY",
+            "type": "CHART",
+            "status": "WAITING",
+            "voting_deadline": "2026-03-29 23:59"
+        },
+        {
+            "id": "NL_HGSF_01",
+            "date": "2026-04-03",
+            "time": "TBA",
+            "country": "Norway",
+            "event": "Het Grote Songfestivalfeest 2025 (NRKTV)",
+            "type": "RELEASE",
+            "status": "WAITING"
+        },
+        {
+            "id": "NL_HGSF_02",
+            "date": "2026-05-15",
+            "time": "21:25",
+            "country": "Netherlands",
+            "event": "Het Grote Songfestivalfeest 2025 (NPO3)",
+            "type": "RELEASE",
+            "status": "WAITING"
+        },
+        {
+            "id": "NL_HGSF_03",
+            "date": "2026-05-17",
+            "time": "20:30",
+            "country": "Online",
+            "event": "Het Grote Songfestivalfeest 2025 (YouTube)",
+            "type": "RELEASE",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-04-01",
+            "time": "18:00",
+            "country": "AL",
+            "event": "#BAKERY: Тромплей (Иллюзия)",
+            "type": "ALMANAC",
+            "status": "PLANNED"
+        },
+        {
+            "date": "2026-04-01",
+            "time": "21:00",
+            "country": "AL",
+            "event": "#LISTS: Великие мистификации",
+            "type": "ALMANAC",
+            "status": "PLANNED"
+        }
+    ],
+    "winners": {
+        "AL": {
+            "country_name": "Албания",
+            "artist": "Alis",
+            "song": "Nân"
+        },
+        "AM": {
+            "country_name": "Армения",
+            "artist": "Simón",
+            "song": "Paloma rumba"
+        },
+        "AU": {
+            "country_name": "Австралия",
+            "artist": "Delta Goodrem",
+            "song": "Eclipse"
+        },
+        "AT": {
+            "country_name": "Австрия",
+            "artist": "COSMȮ",
+            "song": "Tanzschein"
+        },
+        "AZ": {
+            "country_name": "Азербайджан",
+            "artist": "Jiva",
+            "song": "Just Go"
+        },
+        "BE": {
+            "country_name": "Бельгия",
+            "artist": "Essyla",
+            "song": "Dancing on the Ice"
+        },
+        "BG": {
+            "country_name": "Болгария",
+            "artist": "Dara",
+            "song": "Bangaranga"
+        },
+        "HR": {
+            "country_name": "Хорватия",
+            "artist": "Lelek",
+            "song": "Andromeda"
+        },
+        "CY": {
+            "country_name": "Кипр",
+            "artist": "Antigoni",
+            "song": "Jalla"
+        },
+        "CZ": {
+            "country_name": "Чехия",
+            "artist": "Daniel Zizka",
+            "song": "Crossroads"
+        },
+        "DK": {
+            "country_name": "Дания",
+            "artist": "Søren Torpegaard Lund",
+            "song": "Før vi går hjem"
+        },
+        "EE": {
+            "country_name": "Эстония",
+            "artist": "Vanilla Ninja",
+            "song": "Too Epic to Be True"
+        },
+        "FI": {
+            "country_name": "Финляндия",
+            "artist": "Linda Lampenius and Pete Parkkonen",
+            "song": "Liekinheitin"
+        },
+        "FR": {
+            "country_name": "Франция",
+            "artist": "Monroe",
+            "song": "Regarde !"
+        },
+        "GE": {
+            "country_name": "Грузия",
+            "artist": "Bzikebi",
+            "song": "On Replay"
+        },
+        "DE": {
+            "country_name": "Германия",
+            "artist": "Sarah Engels",
+            "song": "Fire"
+        },
+        "GR": {
+            "country_name": "Греция",
+            "artist": "Akylas",
+            "song": "Ferto"
+        },
+        "IL": {
+            "country_name": "Израиль",
+            "artist": "Noam Bettan",
+            "song": "Michelle"
+        },
+        "IT": {
+            "country_name": "Италия",
+            "artist": "Sal Da Vinci",
+            "song": "Per sempre sì"
+        },
+        "LV": {
+            "country_name": "Латвия",
+            "artist": "Atvara",
+            "song": "Ēnā"
+        },
+        "LT": {
+            "country_name": "Литва",
+            "artist": "Lion Ceccah",
+            "song": "Sólo quiero más"
+        },
+        "LU": {
+            "country_name": "Люксембург",
+            "artist": "Eva Marija",
+            "song": "Mother Nature"
+        },
+        "MT": {
+            "country_name": "Мальта",
+            "artist": "Aidan",
+            "song": "Bella"
+        },
+        "MD": {
+            "country_name": "Молдова",
+            "artist": "Satoshi",
+            "song": "Viva, Moldova!"
+        },
+        "ME": {
+            "country_name": "Черногория",
+            "artist": "Tamara Živković",
+            "song": "Nova zora"
+        },
+        "NO": {
+            "country_name": "Норвегия",
+            "artist": "Jonas Lovv",
+            "song": "Ya Ya Ya"
+        },
+        "PL": {
+            "country_name": "Польша",
+            "artist": "Alicja",
+            "song": "Pray"
+        },
+        "PT": {
+            "country_name": "Португалия",
+            "artist": "Bandidos do Cante",
+            "song": "Rosa"
+        },
+        "RO": {
+            "country_name": "Румыния",
+            "artist": "Alexandra Căpitănescu",
+            "song": "Choke Me"
+        },
+        "SM": {
+            "country_name": "Сан-Марино",
+            "artist": "Senhit",
+            "song": "Superstar"
+        },
+        "RS": {
+            "country_name": "Сербия",
+            "artist": "Lavina",
+            "song": "Kraj mene"
+        },
+        "SE": {
+            "country_name": "Швеция",
+            "artist": "Felicia",
+            "song": "My System"
+        },
+        "CH": {
+            "country_name": "Швейцария",
+            "artist": "Veronica Fusaro",
+            "song": "Alice"
+        },
+        "UA": {
+            "country_name": "Украина",
+            "artist": "Leléka",
+            "song": "Ridnym"
+        },
+        "GB": {
+            "country_name": "Великобритания",
+            "artist": "Look Mum No Computer",
+            "song": "Eins, Zwei, Drei"
+        }
     }
-  ],
-  "winners": {
-    "AL": {
-      "country_name": "Албания",
-      "artist": "Alis",
-      "song": "Nân"
-    },
-    "AM": {
-      "country_name": "Армения",
-      "artist": "Simón",
-      "song": "Paloma rumba"
-    },
-    "AU": {
-      "country_name": "Австралия",
-      "artist": "Delta Goodrem",
-      "song": "Eclipse"
-    },
-    "AT": {
-      "country_name": "Австрия",
-      "artist": "COSMȮ",
-      "song": "Tanzschein"
-    },
-    "AZ": {
-      "country_name": "Азербайджан",
-      "artist": "Jiva",
-      "song": "Just Go"
-    },
-    "BE": {
-      "country_name": "Бельгия",
-      "artist": "Essyla",
-      "song": "Dancing on the Ice"
-    },
-    "BG": {
-      "country_name": "Болгария",
-      "artist": "Dara",
-      "song": "Bangaranga"
-    },
-    "HR": {
-      "country_name": "Хорватия",
-      "artist": "Lelek",
-      "song": "Andromeda"
-    },
-    "CY": {
-      "country_name": "Кипр",
-      "artist": "Antigoni",
-      "song": "Jalla"
-    },
-    "CZ": {
-      "country_name": "Чехия",
-      "artist": "Daniel Zizka",
-      "song": "Crossroads"
-    },
-    "DK": {
-      "country_name": "Дания",
-      "artist": "Søren Torpegaard Lund",
-      "song": "Før vi går hjem"
-    },
-    "EE": {
-      "country_name": "Эстония",
-      "artist": "Vanilla Ninja",
-      "song": "Too Epic to Be True"
-    },
-    "FI": {
-      "country_name": "Финляндия",
-      "artist": "Linda Lampenius and Pete Parkkonen",
-      "song": "Liekinheitin"
-    },
-    "FR": {
-      "country_name": "Франция",
-      "artist": "Monroe",
-      "song": "Regarde !"
-    },
-    "GE": {
-      "country_name": "Грузия",
-      "artist": "Bzikebi",
-      "song": "On Replay"
-    },
-    "DE": {
-      "country_name": "Германия",
-      "artist": "Sarah Engels",
-      "song": "Fire"
-    },
-    "GR": {
-      "country_name": "Греция",
-      "artist": "Akylas",
-      "song": "Ferto"
-    },
-    "IL": {
-      "country_name": "Израиль",
-      "artist": "Noam Bettan",
-      "song": "Michelle"
-    },
-    "IT": {
-      "country_name": "Италия",
-      "artist": "Sal Da Vinci",
-      "song": "Per sempre sì"
-    },
-    "LV": {
-      "country_name": "Латвия",
-      "artist": "Atvara",
-      "song": "Ēnā"
-    },
-    "LT": {
-      "country_name": "Литва",
-      "artist": "Lion Ceccah",
-      "song": "Sólo quiero más"
-    },
-    "LU": {
-      "country_name": "Люксембург",
-      "artist": "Eva Marija",
-      "song": "Mother Nature"
-    },
-    "MT": {
-      "country_name": "Мальта",
-      "artist": "Aidan",
-      "song": "Bella"
-    },
-    "MD": {
-      "country_name": "Молдова",
-      "artist": "Satoshi",
-      "song": "Viva, Moldova!"
-    },
-    "ME": {
-      "country_name": "Черногория",
-      "artist": "Tamara Živković",
-      "song": "Nova zora"
-    },
-    "NO": {
-      "country_name": "Норвегия",
-      "artist": "Jonas Lovv",
-      "song": "Ya Ya Ya"
-    },
-    "PL": {
-      "country_name": "Польша",
-      "artist": "Alicja",
-      "song": "Pray"
-    },
-    "PT": {
-      "country_name": "Португалия",
-      "artist": "Bandidos do Cante",
-      "song": "Rosa"
-    },
-    "RO": {
-      "country_name": "Румыния",
-      "artist": "Alexandra Căpitănescu",
-      "song": "Choke Me"
-    },
-    "SM": {
-      "country_name": "Сан-Марино",
-      "artist": "Senhit",
-      "song": "Superstar"
-    },
-    "RS": {
-      "country_name": "Сербия",
-      "artist": "Lavina",
-      "song": "Kraj mene"
-    },
-    "SE": {
-      "country_name": "Швеция",
-      "artist": "Felicia",
-      "song": "My System"
-    },
-    "CH": {
-      "country_name": "Швейцария",
-      "artist": "Veronica Fusaro",
-      "song": "Alice"
-    },
-    "UA": {
-      "country_name": "Украина",
-      "artist": "Leléka",
-      "song": "Ridnym"
-    },
-    "GB": {
-      "country_name": "Великобритания",
-      "artist": "Look Mum No Computer",
-      "song": "Eins, Zwei, Drei"
-    }
-  }
 }
