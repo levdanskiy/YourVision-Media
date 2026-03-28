@@ -67,7 +67,7 @@
 21.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 3 (21:30)
 28.03 🇱🇺 **Люксембург**: Eva Marija - Ne Partez Pas Sans Moi (Premiere) (19:00)
 28.03 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 4 (21:30)
-29.03 🇦🇱 **Албания**: Alis - Nën (Piano Version Premiere) (19:00) ⬜ [WAITING]
+29.03 🇦🇱 **Албания**: Alis - Nân (Piano Version Premiere) (19:00) ⬜ [WAITING]
 
 **Апрель**
 04.04 🇵🇱 Польша (JESC): The Voice Kids Blind Auditions 5 (21:30 CEST)
