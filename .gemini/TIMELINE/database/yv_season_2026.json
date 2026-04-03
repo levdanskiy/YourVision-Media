@@ -1,7 +1,7 @@
 {
     "season": "2026",
     "version": "2.6",
-    "updated": "2026-03-24",
+    "updated": "2026-04-02",
     "timezone": "Europe/Riga",
     "events": [
         {
@@ -60,6 +60,15 @@
             "status": "WAITING"
         },
         {
+            "id": "ALBM_AU_01",
+            "date": "2026-04-03",
+            "time": "09:50",
+            "country": "Australia",
+            "event": "Delta Goodrem - Eclipse (Steve Anderson Remix)",
+            "type": "ALBM",
+            "status": "FINISHED"
+        },
+        {
             "date": "2026-04-01",
             "time": "18:00",
             "country": "AL",
@@ -80,177 +89,248 @@
         "AL": {
             "country_name": "Албания",
             "artist": "Alis",
-            "song": "Nân"
+            "song": "Nân",
+            "sf": 2,
+            "ro": 13
         },
         "AM": {
             "country_name": "Армения",
             "artist": "Simón",
-            "song": "Paloma rumba"
+            "song": "Paloma rumba",
+            "sf": 2,
+            "ro": 6
         },
         "AU": {
             "country_name": "Австралия",
             "artist": "Delta Goodrem",
-            "song": "Eclipse"
+            "song": "Eclipse",
+            "sf": 2,
+            "ro": 11
         },
         "AT": {
             "country_name": "Австрия",
             "artist": "COSMȮ",
-            "song": "Tanzschein"
+            "song": "Tanzschein",
+            "sf": 2,
+            "ro": null,
+            "final_ro": 25
         },
         "AZ": {
             "country_name": "Азербайджан",
             "artist": "Jiva",
-            "song": "Just Go"
+            "song": "Just Go",
+            "sf": 2,
+            "ro": 2
         },
         "BE": {
             "country_name": "Бельгия",
             "artist": "Essyla",
-            "song": "Dancing on the Ice"
+            "song": "Dancing on the Ice",
+            "sf": 1,
+            "ro": 11
         },
         "BG": {
             "country_name": "Болгария",
             "artist": "Dara",
-            "song": "Bangaranga"
+            "song": "Bangaranga",
+            "sf": 2,
+            "ro": 1
         },
         "HR": {
             "country_name": "Хорватия",
             "artist": "Lelek",
-            "song": "Andromeda"
+            "song": "Andromeda",
+            "sf": 1,
+            "ro": 3
         },
         "CY": {
             "country_name": "Кипр",
             "artist": "Antigoni",
-            "song": "Jalla"
+            "song": "Jalla",
+            "sf": 2,
+            "ro": 8
         },
         "CZ": {
             "country_name": "Чехия",
             "artist": "Daniel Zizka",
-            "song": "Crossroads"
+            "song": "Crossroads",
+            "sf": 2,
+            "ro": 5
         },
         "DK": {
             "country_name": "Дания",
             "artist": "Søren Torpegaard Lund",
-            "song": "Før vi går hjem"
+            "song": "Før vi går hjem",
+            "sf": 2,
+            "ro": 10
         },
         "EE": {
             "country_name": "Эстония",
             "artist": "Vanilla Ninja",
-            "song": "Too Epic to Be True"
+            "song": "Too Epic to Be True",
+            "sf": 1,
+            "ro": 9
         },
         "FI": {
             "country_name": "Финляндия",
             "artist": "Linda Lampenius and Pete Parkkonen",
-            "song": "Liekinheitin"
+            "song": "Liekinheitin",
+            "sf": 1,
+            "ro": 7
         },
         "FR": {
             "country_name": "Франция",
             "artist": "Monroe",
-            "song": "Regarde !"
+            "song": "Regarde !",
+            "sf": 2,
+            "ro": null
         },
         "GE": {
             "country_name": "Грузия",
             "artist": "Bzikebi",
-            "song": "On Replay"
+            "song": "On Replay",
+            "sf": 1,
+            "ro": 6
         },
         "DE": {
             "country_name": "Германия",
             "artist": "Sarah Engels",
-            "song": "Fire"
+            "song": "Fire",
+            "sf": 1,
+            "ro": null
         },
         "GR": {
             "country_name": "Греция",
             "artist": "Akylas",
-            "song": "Ferto"
+            "song": "Ferto",
+            "sf": 1,
+            "ro": 4
         },
         "IL": {
             "country_name": "Израиль",
             "artist": "Noam Bettan",
-            "song": "Michelle"
+            "song": "Michelle",
+            "sf": 1,
+            "ro": 10
         },
         "IT": {
             "country_name": "Италия",
             "artist": "Sal Da Vinci",
-            "song": "Per sempre sì"
+            "song": "Per sempre sì",
+            "sf": 1,
+            "ro": null
         },
         "LV": {
             "country_name": "Латвия",
             "artist": "Atvara",
-            "song": "Ēnā"
+            "song": "Ēnā",
+            "sf": 2,
+            "ro": 9
         },
         "LT": {
             "country_name": "Литва",
             "artist": "Lion Ceccah",
-            "song": "Sólo quiero más"
+            "song": "Sólo quiero más",
+            "sf": 1,
+            "ro": 12
         },
         "LU": {
             "country_name": "Люксембург",
             "artist": "Eva Marija",
-            "song": "Mother Nature"
+            "song": "Mother Nature",
+            "sf": 2,
+            "ro": 4
         },
         "MT": {
             "country_name": "Мальта",
             "artist": "Aidan",
-            "song": "Bella"
+            "song": "Bella",
+            "sf": 2,
+            "ro": 14
         },
         "MD": {
             "country_name": "Молдова",
             "artist": "Satoshi",
-            "song": "Viva, Moldova!"
+            "song": "Viva, Moldova!",
+            "sf": 1,
+            "ro": 1
         },
         "ME": {
             "country_name": "Черногория",
             "artist": "Tamara Živković",
-            "song": "Nova zora"
+            "song": "Nova zora",
+            "sf": 1,
+            "ro": 8
         },
         "NO": {
             "country_name": "Норвегия",
             "artist": "Jonas Lovv",
-            "song": "Ya Ya Ya"
+            "song": "Ya Ya Ya",
+            "sf": 2,
+            "ro": 15
         },
         "PL": {
             "country_name": "Польша",
             "artist": "Alicja",
-            "song": "Pray"
+            "song": "Pray",
+            "sf": 1,
+            "ro": 14
         },
         "PT": {
             "country_name": "Португалия",
             "artist": "Bandidos do Cante",
-            "song": "Rosa"
+            "song": "Rosa",
+            "sf": 1,
+            "ro": 5
         },
         "RO": {
             "country_name": "Румыния",
             "artist": "Alexandra Căpitănescu",
-            "song": "Choke Me"
+            "song": "Choke Me",
+            "sf": 2,
+            "ro": 3
         },
         "SM": {
             "country_name": "Сан-Марино",
             "artist": "Senhit",
-            "song": "Superstar"
+            "song": "Superstar",
+            "sf": 1,
+            "ro": 13
         },
         "RS": {
             "country_name": "Сербия",
             "artist": "Lavina",
-            "song": "Kraj mene"
+            "song": "Kraj mene",
+            "sf": 1,
+            "ro": 15
         },
         "SE": {
             "country_name": "Швеция",
             "artist": "Felicia",
-            "song": "My System"
+            "song": "My System",
+            "sf": 1,
+            "ro": 2
         },
         "CH": {
             "country_name": "Швейцария",
             "artist": "Veronica Fusaro",
-            "song": "Alice"
+            "song": "Alice",
+            "sf": 2,
+            "ro": 7
         },
         "UA": {
             "country_name": "Украина",
             "artist": "Leléka",
-            "song": "Ridnym"
+            "song": "Ridnym",
+            "sf": 2,
+            "ro": 12
         },
         "GB": {
             "country_name": "Великобритания",
             "artist": "Look Mum No Computer",
-            "song": "Eins, Zwei, Drei"
+            "song": "Eins, Zwei, Drei",
+            "sf": 2,
+            "ro": null
         }
     }
 }

@@ -1,0 +1,13 @@
+{
+  "pairings": {
+    "COFFEE": {
+      "morning": "Ethopian Yirgacheffe + Single Note Jasmine",
+      "afternoon": "Double Espresso + Dark Chocolate 85%",
+      "ritual": "Ceramic cup, rough texture, 92°C"
+    },
+    "WINE": {
+      "winter": "Full-bodied Amarone + Aged Parmesan",
+      "evening": "Peaty Islay Scotch + Sea Salt"
+    }
+  }
+}

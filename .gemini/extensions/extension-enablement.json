@@ -1,0 +1,17 @@
+{
+  "genkit": {
+    "overrides": [
+      "/home/levdanskiy/*"
+    ]
+  },
+  "nanobanana": {
+    "overrides": [
+      "/home/levdanskiy/*"
+    ]
+  },
+  "github": {
+    "overrides": [
+      "/home/levdanskiy/*"
+    ]
+  }
+}
