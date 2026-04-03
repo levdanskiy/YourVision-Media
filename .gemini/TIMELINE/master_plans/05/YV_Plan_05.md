@@ -1,9 +1,12 @@
 # 📅 YOURVISION: MASTER PLAN - MAY 2026
 📍 TIMEZONE: Europe/Riga (EEST)
 
-### 01.05 (Пт) - 10.05 (Вс)
+### 01.05 (Пт) - 09.05 (Сб)
 * Репетиционный период в Вене (Wiener Stadthalle).
 * Ежедневные обзоры репетиций #REHEARSAL_REPORTS.
+
+### 10.05 (Вс)
+* 22:55 | **YV** | 📺 **#EVENT:** 70 Jahre ESC — Das Konzert (ORF 1). - ⬜ [ОЖИДАНИЕ]
 
 ### 11.05 (Пн)
 * 22:00 | **YV** | 🏆 **#PREVIEW:** Semi-Final 1 Jury Show. - ⬜ [ОЖИДАНИЕ]

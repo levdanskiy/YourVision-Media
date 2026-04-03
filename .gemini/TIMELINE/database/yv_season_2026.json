@@ -78,6 +78,15 @@
             "status": "WAITING"
         },
         {
+            "id": "ORF_70_CONCERT",
+            "date": "2026-05-10",
+            "time": "22:55",
+            "country": "Austria",
+            "event": "70 Jahre ESC - Das Konzert (ORF 1)",
+            "type": "RELEASE",
+            "status": "WAITING"
+        },
+        {
             "date": "2026-04-01",
             "time": "18:00",
             "country": "AL",
