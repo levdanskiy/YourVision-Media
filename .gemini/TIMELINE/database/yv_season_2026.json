@@ -87,6 +87,15 @@
             "status": "WAITING"
         },
         {
+            "id": "ORF_HOD_APPOINTMENT",
+            "date": "2026-04-03",
+            "time": "13:00",
+            "country": "Austria",
+            "event": "Katharina Rossek appointed as Austrian HoD",
+            "type": "RELEASE",
+            "status": "FINISHED"
+        },
+        {
             "date": "2026-04-01",
             "time": "18:00",
             "country": "AL",

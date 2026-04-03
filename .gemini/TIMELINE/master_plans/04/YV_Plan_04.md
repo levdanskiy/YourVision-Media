@@ -15,6 +15,7 @@
 
 ### 03.04 (Пт)
 * 09:50 | **YV** | 🇦🇺 **#ALBM:** Delta Goodrem - Eclipse (Steve Anderson Remix). - ✅ [ГОТОВО]
+* 13:00 | **YV** | 🇦🇹 **#NEWS_WIRE:** Katharina Rossek appointed as Austrian HoD. - ✅ [ГОТОВО]
 * 10:00 | **YV** | ⚔️ **#CUP:** 1/4 FINAL #1 - Linda & Pete vs Søren. - ⬜ [ОЖИДАНИЕ]
 * 18:00 | **AL** | 📜 **#SOURCE:** Геометрия тишины: Пифагорейцы в эмбиенте. - ⬜ [ОЖИДАНИЕ]
 * 20:30 | **YV** | 📢 **#NEWS_WIRE:** Het Grote Songfestivalfeest (NRKTV). - ⬜ [ОЖИДАНИЕ]
