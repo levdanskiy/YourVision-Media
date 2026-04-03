@@ -69,6 +69,15 @@
             "status": "FINISHED"
         },
         {
+            "id": "ALBM_ME_02",
+            "date": "2026-04-04",
+            "time": "14:00",
+            "country": "Montenegro",
+            "event": "Tamara Živković - Nova Zora (English Version)",
+            "type": "ALBM",
+            "status": "WAITING"
+        },
+        {
             "date": "2026-04-01",
             "time": "18:00",
             "country": "AL",

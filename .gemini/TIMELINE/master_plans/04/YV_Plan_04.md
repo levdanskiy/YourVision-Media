@@ -23,6 +23,7 @@
 ### 04.04 (Сб)
 * 10:00 | **YV** | ⚔️ **#CUP:** 1/4 FINAL #2 - Akylas vs Bzikebi. - ⬜ [ОЖИДАНИЕ]
 * 11:00 | **YV** | 📊 **#RESULTS:** QF #1 Winner Announced. - ⬜ [ОЖИДАНИЕ]
+* 14:00 | **YV** | 🇲🇪 **#ALBM:** Tamara Živković - Nova Zora (English Version). - ⬜ [ОЖИДАНИЕ]
 * 18:00 | **AL** | 🍰 **#RECIPE:** Облачный тарт: Секреты идеальной меренги. - ⬜ [ОЖИДАНИЕ]
 * 21:00 | **AL** | 📑 **#TEXTS:** Поэтика порога: Ожидание как форма. - ⬜ [ОЖИДАНИЕ]
 * 21:30 | **YV** | 🇵🇱 **#JESC:** The Voice Kids Poland (Blind Auditions 5). - ⬜ [ОЖИДАНИЕ]
