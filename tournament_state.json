@@ -1,15 +1,19 @@
 {
-    "round": "ROUND_OF_16",
+    "round": "QUARTER_FINALS",
     "battles": [
         { "id": 1, "t1": "fi", "t2": "me", "s1": 71, "s2": 29, "winner": "fi", "status": "FINISHED" },
         { "id": 2, "t1": "dk", "t2": "at", "s1": 77, "s2": 23, "winner": "dk", "status": "FINISHED" },
-        { "id": 3, "t1": "gr", "t2": "al", "s1": 0, "s2": 0, "winner": null, "status": "LIVE" },
-        { "id": 4, "t1": "au", "t2": "ge", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
-        { "id": 5, "t1": "se", "t2": "am", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
-        { "id": 6, "t1": "it", "t2": "md", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
-        { "id": 7, "t1": "cy", "t2": "gb", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
-        { "id": 8, "t1": "mt", "t2": "bg", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" }
+        { "id": 3, "t1": "gr", "t2": "al", "s1": 56, "s2": 44, "winner": "gr", "status": "FINISHED" },
+        { "id": 4, "t1": "au", "t2": "ge", "s1": 48, "s2": 52, "winner": "ge", "status": "FINISHED" },
+        { "id": 5, "t1": "se", "t2": "am", "s1": 58, "s2": 42, "winner": "se", "status": "FINISHED" },
+        { "id": 6, "t1": "it", "t2": "md", "s1": 45, "s2": 55, "winner": "md", "status": "FINISHED" },
+        { "id": 7, "t1": "cy", "t2": "gb", "s1": 44, "s2": 56, "winner": "gb", "status": "FINISHED" },
+        { "id": 8, "t1": "mt", "t2": "bg", "s1": 41, "s2": 59, "winner": "bg", "status": "FINISHED" },
+        { "id": 9, "t1": "fi", "t2": "dk", "s1": 82, "s2": 18, "winner": "fi", "status": "FINISHED" },
+        { "id": 10, "t1": "gr", "t2": "ge", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
+        { "id": 11, "t1": "se", "t2": "md", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" },
+        { "id": 12, "t1": "gb", "t2": "bg", "s1": 0, "s2": 0, "winner": null, "status": "WAITING" }
     ],
-    "qualified": ["fi", "dk", "gr", "au", "se", "it", "cy", "mt", "bg", "gb", "md", "am", "ge", "al"],
-    "eliminated": ["me", "at", "lu", "ro", "lt", "hr", "lv", "cz", "ua", "ee", "pt", "az", "il", "rs", "fr", "pl", "no", "de", "sm", "ch", "be"]
+    "qualified": ["fi", "dk", "gr", "ge", "se", "md", "gb", "bg"],
+    "eliminated": ["me", "at", "al", "au", "am", "it", "cy", "mt", "lu", "ro", "lt", "hr", "lv", "cz", "ua", "ee", "pt", "az", "il", "rs", "fr", "pl", "no", "de", "sm", "ch", "be"]
 }
