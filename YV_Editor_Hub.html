@@ -2,300 +2,1506 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>YourVision | Vienna 2026 Insider Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:ital,wght@0,900;1,900&family=Forum&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <style>
         :root {
-            --bg-deep: #0a021a; --accent-pink: #ff007f; --accent-cyan: #00f5ff; --accent-acid: #ccff00;
-            --glass-bg: rgba(255, 255, 255, 0.03); --glass-border: rgba(255, 255, 255, 0.08); --text-main: #e0e0e0; --text-dim: #777;
+            --bg: #1e1e22; --card: rgba(45, 45, 50, 0.8); --border: rgba(255,255,255,0.1);
+            --pink: #ff007f; --cyan: #00f5ff; --acid: #ccff00; --text: #ffffff;
+        }
+
+        /* PRESS TICKER */
+        .ticker-wrap {
+            position: fixed; top: 0; left: 0; width: 100%; height: 30px;
+            background: var(--pink); color: #000; z-index: 10001;
+            display: flex; align-items: center; overflow: hidden;
+            font-family: "Inter Tight"; font-weight: 900; font-size: 0.7rem;
+            text-transform: uppercase; letter-spacing: 0.1em;
+        }
+        .ticker-move {
+            display: flex; white-space: nowrap;
+            animation: ticker-move 60s linear infinite;
+        }
+        @keyframes ticker-move {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .ticker-item { padding: 0 40px; display: flex; align-items: center; gap: 10px; }
+
+        /* AURORA BACKDROP */
+        .aurora-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; overflow: hidden; pointer-events: none;
+            background: var(--bg);
+        }
+        .aurora-blob {
+            position: absolute; width: 600px; height: 600px;
+            border-radius: 50%; filter: blur(120px); opacity: 0.15;
+            animation: aurora-move 20s infinite alternate ease-in-out;
+        }
+        .aurora-1 { background: var(--pink); top: -10%; left: -10%; }
+        .aurora-2 { background: var(--cyan); bottom: -10%; right: -10%; animation-delay: -5s; }
+        .aurora-3 { background: var(--acid); top: 40%; left: 30%; animation-duration: 25s; opacity: 0.08; }
+        
+        @keyframes aurora-move {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(100px, 50px) scale(1.2); }
+        }
+
+        /* FILM GRAIN TEXTURE */
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Single_Color_Noise.png');
+            opacity: 0.04; pointer-events: none; z-index: 10000;
+            animation: grain 0.8s steps(10) infinite;
+        }
+        @keyframes grain {
+            0%, 100% { transform: translate(0, 0); }
+            10% { transform: translate(-5%, -5%); }
+            30% { transform: translate(5%, -10%); }
+            50% { transform: translate(-15%, 5%); }
+            70% { transform: translate(10%, 10%); }
+            90% { transform: translate(-5%, 15%); }
         }
         body { 
-            background: var(--bg-deep); color: var(--text-main); font-family: 'Inter', sans-serif; margin: 0; overflow-x: hidden; letter-spacing: -0.02em; 
-            background-image: linear-gradient(to bottom, rgba(10, 2, 26, 0.8), rgba(10, 2, 26, 0.95)), url('https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/newwebsite_70png/NewWebsite_70-fill_size%3D1600x900-fill_size%3D1600x900.png');
-            background-attachment: fixed; background-size: cover; background-position: center;
+            background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; margin: 0; padding: 15px; 
+            background-image: radial-gradient(circle at 50% 0%, #1a1a2e 0%, var(--bg) 80%);
+            background-attachment: fixed; letter-spacing: -0.02em;
         }
-        .hero-view { min-height: 100vh; display: flex; flex-direction: column; padding: 40px; box-sizing: border-box; }
-        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; }
-        .logo-box { display: flex; flex-direction: column; text-decoration: none; line-height: 0.9; }
-        .logo { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-transform: uppercase; margin: 0; }
-        .logo span { color: var(--accent-pink); }
-        .logo-sub { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; color: var(--accent-cyan); text-transform: uppercase; margin: 0; margin-top: 5px; text-shadow: 0 0 20px var(--accent-cyan); }
-        #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
-
-        .timers-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 60px; }
-        .timer-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; display: flex; backdrop-filter: blur(10px); flex-direction: column; text-decoration: none; transition: 0.3s; }
-        .timer-card:hover { transform: translateY(-5px); border-color: var(--accent-pink); box-shadow: 0 10px 30px rgba(255,0,127,0.3); }
-        .timer-poster { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-bottom: 1px solid var(--glass-border); filter: brightness(0.6); transition: 0.3s; }
-        .timer-card:hover .timer-poster { filter: brightness(0.9); }
-        .timer-info { padding: 15px 20px; background: rgba(0,0,0,0.6); }
-        .timer-val { font-family: "Inter Tight", sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff; margin-top: 5px; }
-        .timer-label { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-cyan); }
-
-        .layout { display: grid; grid-template-columns: 380px 1fr 450px; gap: 40px; align-items: start; }
-        .column { display: flex; flex-direction: column; gap: 30px; }
-        .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
-
-        .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
-        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; text-align: center; }
+        .logo-box { 
+            margin-bottom: 15px; 
+            position: sticky; top: 30px; z-index: 1000; 
+            background: rgba(30, 30, 34, 0.95); backdrop-filter: blur(30px); 
+            -webkit-backdrop-filter: blur(30px);
+            padding: 15px 0; margin-top: -15px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
         
-        .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
-        .sub-qualified { color: var(--accent-acid); }
-        .sub-eliminated { color: #ff4d4d; }
+        /* Mobile Navigation Bar */
+        .mobile-nav {
+            display: none;
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+            width: 90%; max-width: 400px; height: 65px;
+            background: rgba(255,255,255,0.05); backdrop-filter: blur(30px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 10px;
+            z-index: 9999; justify-content: space-around; align-items: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+        }
+        .mobile-nav-btn { color: #888; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; }
+        .mobile-nav-btn i { font-size: 1.2rem; }
+        .mobile-nav-btn:hover { color: var(--cyan); }
+        .mobile-nav-btn.active { color: var(--pink); }
 
-        .bracket-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 30px; }
-        .battle-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 15px; padding: 20px; transition: 0.3s; position: relative; }
-        .battle-box:hover { border-color: var(--accent-pink); }
-        .status-live { border: 2px solid var(--accent-pink); box-shadow: 0 0 20px var(--accent-pink); animation: live-pulse 2s infinite; }
-        @keyframes live-pulse { 0% { border-color: var(--accent-pink); box-shadow: 0 0 10px var(--accent-pink); } 50% { border-color: #fff; box-shadow: 0 0 30px var(--accent-pink); } 100% { border-color: var(--accent-pink); box-shadow: 0 0 10px var(--accent-pink); } }
+        @media (max-width: 768px) {
+            .mobile-nav { display: flex; }
+            .logo-box { position: relative; background: transparent; backdrop-filter: none; }
+        }
+        .logo { font-family: "Inter Tight", sans-serif; font-size: 1.8rem; text-transform: uppercase; color: #fff; font-weight: 900; line-height: 0.9; font-style: italic; }
+        .logo span { color: var(--pink); text-shadow: 0 0 20px var(--pink); }
+        .nav-menu { display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; }
+        .nav-link { 
+            display: flex; align-items: center; gap: 8px; 
+            color: #aaa; text-decoration: none; font-family: "Inter Tight"; 
+            font-weight: 900; font-size: 0.6rem; text-transform: uppercase; 
+            letter-spacing: 0.1em; transition: 0.3s; padding: 4px 8px;
+            border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+        }
+        .nav-link i { font-size: 0.9rem; color: var(--cyan); }
+        .nav-link:hover { 
+            color: #fff; background: rgba(255,255,255,0.08); 
+            border-color: var(--cyan); 
+            box-shadow: 0 0 20px rgba(0,245,255,0.3), inset 0 0 10px rgba(0,245,255,0.1); 
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
         
-        .battle-n { font-size: 0.6rem; color: var(--accent-pink); font-weight: 900; text-transform: uppercase; margin-bottom: 10px; }
-        .battle-team { display: flex; align-items: center; gap: 15px; padding: 8px 0; }
-        .team-song { font-size: 1.1rem; font-weight: 900; color: #fff; line-height: 1.1; }
-        .team-artist { font-size: 0.8rem; color: var(--accent-cyan); }
-        .team-score { margin-left: auto; font-family: 'Inter Tight', sans-serif; font-weight: 900; font-size: 1.3rem; color: #fff; }
-        .winner-glow { color: var(--accent-acid); text-shadow: 0 0 15px var(--accent-acid); }
+        .timers-hero { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 12px; 
+            margin-bottom: 30px; 
+        }
+        @keyframes neon-pulse {
+            0% { border-color: rgba(0,245,255,0.2); box-shadow: 0 0 5px rgba(0,245,255,0.1); }
+            50% { border-color: rgba(0,245,255,0.6); box-shadow: 0 0 20px rgba(0,245,255,0.3); }
+            100% { border-color: rgba(0,245,255,0.2); box-shadow: 0 0 5px rgba(0,245,255,0.1); }
+        }
+        
+        .timer-card { 
+            background: rgba(255,255,255,0.03); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            border-radius: 10px; 
+            overflow: hidden; 
+            display: flex; 
+            backdrop-filter: blur(25px); 
+            -webkit-backdrop-filter: blur(25px);
+            flex-direction: column; 
+            transition: 0.5s; 
+            animation: neon-pulse 4s infinite ease-in-out;
+        }
+        .timer-card:hover { border-color: var(--pink); transform: translateY(-10px) scale(1.02); box-shadow: 0 0 30px rgba(255,0,127,0.4); animation: none; }
+        .timer-poster { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-bottom: 1px solid rgba(255,255,255,0.1); filter: brightness(0.6); }
+        .timer-info { padding: 25px; background: rgba(0,0,0,0.5); }
+        .timer-val { font-family: "Inter Tight", sans-serif; font-size: 1.3rem; font-weight: 900; color: var(--pink); text-shadow: 0 0 30px rgba(255,0,127,0.6); line-height: 1; font-style: italic; }
+        .timer-label { font-size: 0.9rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.2em; color: var(--cyan); opacity: 0.9; margin-bottom: 5px; display: block; font-style: italic; }
 
-        .tournament-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-        .country-bubble { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 12px; display: flex; align-items: center; gap: 12px; }
-        .heart-bubble { width: 30px; height: 30px; }
-        .bubble-info { display: flex; flex-direction: column; }
-        .bubble-country { font-size: 0.55rem; font-weight: 900; color: var(--accent-cyan); }
-        .bubble-artist { font-size: 0.7rem; font-weight: 700; color: #fff; }
+        .layout { 
+            display: grid; 
+            grid-template-columns: 320px 1fr 380px; 
+            gap: 12px; 
+            align-items: start; 
+            max-width: 1800px;
+            margin: 0 auto;
+        }
 
-        .chart-table { width: 100%; border-collapse: collapse; }
-        .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .chart-cell { padding: 12px 5px; vertical-align: middle; }
-        .rank { font-weight: 900; color: var(--accent-cyan); width: 40px; text-align: center; }
-        .track-cover { width: 45px; height: 45px; border-radius: 6px; }
-        .pts { font-weight: 900; color: var(--accent-pink); text-align: right; }
+        /* Responsive Breakpoints */
+        @media (max-width: 1600px) {
+            .layout { grid-template-columns: 320px 1fr 350px; gap: 25px; }
+        }
 
-        /* JOURNALISTIC NEWS */
-        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; border-bottom: 3px solid var(--accent-pink); padding-bottom: 20px; }
-        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 40px; text-decoration: none; display: block; margin-bottom: 30px; transition: 0.4s; }
-        .post-card:hover { border-color: var(--accent-pink); transform: translateY(-5px); }
-        .post-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        .post-meta { font-size: 0.7rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; }
-        .source-badge { font-size: 0.55rem; font-weight: 900; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
-        .badge-yv { background: rgba(255,0,127,0.1); color: var(--accent-pink); border: 1px solid var(--accent-pink); }
-        .badge-lv { background: rgba(0,245,255,0.1); color: var(--accent-cyan); border: 1px solid var(--accent-cyan); }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; margin-bottom: 25px; display: block; text-transform: uppercase; }
-        .post-image, .post-video { width: 380px; height: auto; max-height: 550px; float: left; margin-right: 35px; margin-bottom: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: block; }
-        .post-b { font-size: 1.15rem; color: #ccc; line-height: 1.7; white-space: pre-wrap; display: block; }
-        .post-b a { color: var(--accent-cyan); text-decoration: none; font-weight: 700; border-bottom: 1px dashed var(--accent-cyan); }
-        .poll-container { margin-top: 25px; display: flex; flex-direction: column; gap: 12px; clear: both; }
-        .poll-option { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 18px 25px; border-radius: 12px; font-size: 1rem; color: #fff; font-weight: 700; display: flex; align-items: center; }
-        .poll-option::before { content: "○"; margin-right: 15px; color: var(--accent-cyan); }
+        @media (max-width: 1200px) {
+            body { padding: 12px; }
+            .layout { grid-template-columns: 1fr; }
+            .timers-hero { grid-template-columns: 1fr 1fr; gap: 15px; }
+            .timer-val { font-size: 0.85rem; }
+            .column:nth-child(1) { order: 2; } /* Radio goes after news */
+            .column:nth-child(2) { order: 1; } /* News first */
+            .column:nth-child(3) { order: 3; } /* Standings last */
+        }
 
-        .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.1); }
-        .player-artist, .player-song { font-weight: 900; font-size: 1.5rem; display: block; text-align: center; text-transform: uppercase; }
-        .player-artist { color: var(--accent-pink); }
-        .player-song { color: var(--accent-cyan); margin-top: 8px; }
-        .timer-container { margin-top: 20px; display: flex; align-items: center; gap: 15px; }
-        .progress-bg { flex-grow: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; }
-        .progress-bar { height: 100%; background: var(--accent-pink); width: 0%; }
-        .timer-text { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 900; color: var(--accent-cyan); min-width: 40px; text-align: right; }
+        @media (max-width: 768px) {
+            .timers-hero { grid-template-columns: 1fr; gap: 10px; }
+            .timer-val { font-size: 2.5rem; }
+            .post-h { font-size: 2.5rem; }
+            .post-card { padding: 15px; border-radius: 10px; }
+            .post-media { width: 100%; float: none; margin: 0 0 20px 0; }
+            .post-card.featured .post-h { font-size: 1.3rem; }
+            .logo { font-size: 1.3rem; }
+            #bracket { grid-template-columns: 1fr !important; }
+            .bracket-connector { display: none; } /* Hide connectors on mobile for space */
+        }
+
+        .column { display: flex; flex-direction: column; gap: 12px; position: relative; }
+        
+        /* Editorial Background Numbers */
+        .column::before {
+            position: absolute; top: -50px; left: -20px;
+            font-family: "Inter Tight", sans-serif; font-weight: 900; font-size: 15rem;
+            color: rgba(255,255,255,0.03); font-style: italic; z-index: -1;
+            pointer-events: none;
+        }
+        .column:nth-child(1)::before { content: "01"; }
+        .column:nth-child(2)::before { content: "02"; }
+        .column:nth-child(3)::before { content: "03"; }
+
+        /* Radio Visualizer */
+        .visualizer {
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 15px;
+            margin-left: 12px;
+            display: inline-flex;
+        }
+        .vis-bar {
+            width: 3px;
+            background: var(--cyan);
+            border-radius: 1px;
+            animation: vis-grow 1s ease-in-out infinite;
+        }
+        .vis-bar:nth-child(2) { animation-delay: 0.2s; }
+        .vis-bar:nth-child(3) { animation-delay: 0.4s; }
+        .vis-bar:nth-child(4) { animation-delay: 0.1s; }
+        @keyframes vis-grow {
+            0%, 100% { height: 4px; opacity: 0.5; }
+            50% { height: 15px; opacity: 1; }
+        }
+
+        .card { 
+            background: var(--card); 
+            border: 1px solid var(--border); 
+            border-radius: 10px; 
+            padding: 12px; 
+            backdrop-filter: blur(20px); 
+            position: relative; 
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .card::after {
+            content: "";
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent,
+                rgba(255, 255, 255, 0.03),
+                transparent
+            );
+            transform: rotate(45deg);
+            transition: 0.6s;
+            pointer-events: none;
+        }
+        .card:hover::after {
+            left: 100%;
+            top: 100%;
+        }
+        .card:hover { 
+            transform: translateY(-8px) scale(1.01); 
+            border-color: rgba(255,255,255,0.25); 
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 20px rgba(255,255,255,0.05);
+        }
+        
+        /* Pulse for LIVE content */
+        .status-live-pulse {
+            animation: pulse-border 2s infinite ease-in-out;
+        }
+        @keyframes pulse-border {
+            0%, 100% { border-color: var(--border); }
+            50% { border-color: var(--acid); box-shadow: 0 0 15px rgba(204,255,0,0.2); }
+        }
+        
+        .section-title-base { 
+            font-family: "Inter Tight", sans-serif; font-weight: 900; font-style: italic; 
+            text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 20px; 
+            display: block; width: 100%; position: relative;
+        }
+        .section-title-base::after {
+            content: ""; position: absolute; bottom: -5px; left: 0; width: 40px; height: 4px;
+            background: currentColor; opacity: 0.5;
+        }
+        .title-pink { 
+            color: var(--pink); 
+            text-shadow: 0 0 15px rgba(255,0,127,0.5), 0 0 30px rgba(255,0,127,0.2); 
+            border-bottom: 2px solid var(--pink); 
+            padding-bottom: 10px; text-align: center; font-size: 0.85rem; 
+            filter: drop-shadow(0 5px 15px rgba(255,0,127,0.2));
+        }
+        .title-cyan { 
+            color: var(--cyan); 
+            text-shadow: 0 0 15px rgba(0,245,255,0.5), 0 0 30px rgba(0,245,255,0.2); 
+            border-bottom: 2px solid var(--cyan); 
+            padding-bottom: 10px; text-align: center; font-size: 0.85rem; 
+            filter: drop-shadow(0 5px 15px rgba(0,245,255,0.2));
+        }
+        .title-acid { 
+            color: var(--acid); 
+            text-shadow: 0 0 15px rgba(204,255,0,0.5), 0 0 30px rgba(204,255,0,0.2); 
+            border-bottom: 2px solid var(--acid); 
+            padding-bottom: 10px; text-align: center; font-size: 0.85rem; 
+            filter: drop-shadow(0 5px 15px rgba(204,255,0,0.2));
+        }
+        
+        .side-label { font-family: "Inter Tight", sans-serif; font-weight: 900; font-style: italic; font-size: 0.8rem; letter-spacing: 0.15em; margin-bottom: 20px; display: block; }
+        .heart-shape { 
+            clip-path: url(#official-h-mask) !important; 
+            -webkit-clip-path: url(#official-h-mask) !important; 
+            width: 22px; height: 22px; 
+            object-fit: cover; 
+            background: #fff; 
+            display: inline-block; 
+            vertical-align: middle; 
+            border: 1px solid rgba(255,255,255,0.1); 
+            transition: 0.3s ease;
+        }
+        .bubble:hover .heart-shape { 
+            transform: scale(1.2); 
+            clip-path: url(#official-h-mask) !important;
+            -webkit-clip-path: url(#official-h-mask) !important;
+        }
+        .card:hover .heart-shape { transform: scale(1.15) rotate(5deg); }
+        .winner-glow { 
+            border: 2px solid #ffd700 !important; 
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3) !important; 
+            background: rgba(255, 215, 0, 0.05) !important; 
+            border-radius: 15px !important; 
+            padding: 12px !important; 
+            margin: -2px 0 !important;
+            transform: scale(1.02);
+            position: relative;
+        }
+        .winner-badge {
+            position: absolute; top: -10px; left: -10px;
+            background: #ffd700; color: #000; width: 20px; height: 20px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 0.6rem; font-weight: 900; box-shadow: 0 0 15px #ffd700;
+            z-index: 3;
+        }
+        
+        .chart-cover { 
+            width: 30px !important; height: 30px !important; 
+            border-radius: 8px !important; object-fit: cover !important; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4); 
+            border: 1px solid rgba(255,255,255,0.1);
+            margin: 0 10px;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bubble:hover .chart-cover { transform: scale(1.1) rotate(-3deg); border-color: var(--cyan); }
+        .score-bar-bg { width: 100px; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+        .vote-bar-fill { height: 100%; background: var(--cyan); border-radius: 2px; transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
+        .winner-glow .vote-bar-fill { background: #ffd700; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+        
+        .bracket-connector { 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            position: relative; width: 60px; height: 100%; 
+        }
+        .connector-line { 
+            width: 2px; height: 100%; 
+            background: linear-gradient(to bottom, rgba(255,0,127,0.2), var(--cyan), rgba(255,0,127,0.2)); 
+            box-shadow: 0 0 10px rgba(0,245,255,0.2);
+        }
+        .qf-label { 
+            position: absolute; background: #05010d; padding: 5px 10px; 
+            border: 1px solid var(--border); border-radius: 8px; 
+            font-size: 0.55rem; color: var(--pink); font-weight: 900; 
+            white-space: nowrap; transform: rotate(-90deg); 
+            letter-spacing: 0.1em; box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            z-index: 2;
+        }
+        
+        .artist-rich { font-family: "Inter Tight", sans-serif; font-weight: 900; text-transform: uppercase; color: #fff; font-size: 0.8rem; display: block; line-height: 1.1; }
+        .song-rich { font-family: "Inter", sans-serif; color: var(--cyan); font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; font-weight: 900; }
+        
+        /* NEWS GRID BENTO SYSTEM */
+        #news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        
+        .post-card { 
+            padding: 25px; margin-bottom: 0; border-radius: 40px; 
+            border: 1px solid var(--border); 
+            background: rgba(255,255,255,0.015); 
+            backdrop-filter: blur(30px); 
+            -webkit-backdrop-filter: blur(30px);
+            overflow: hidden; transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+            position: relative; 
+            display: flex;
+            flex-direction: column;
+        }
+        .post-card:hover { 
+            background: rgba(255,255,255,0.03); 
+            border-color: rgba(255,255,255,0.25);
+            transform: translateY(-10px);
+            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+        }
+        
+        /* Featured Post Upgrade */
+        .post-card.featured { 
+            grid-column: span 2;
+            background: linear-gradient(145deg, rgba(255,0,127,0.05), rgba(255,255,255,0.02));
+            border-color: rgba(255,0,127,0.3);
+            box-shadow: 0 0 50px rgba(255,0,127,0.1);
+            padding: 30px;
+        }
+        .post-card.featured .post-h { font-size: 4.5rem; margin-bottom: 45px; }
+        .post-card.featured .post-media { width: 100%; float: none; height: 500px; object-fit: cover; margin: 0 0 40px 0; }
+        .post-card.featured .post-b { font-size: 1.5rem; color: #fff; }
+
+        .date-divider {
+            grid-column: span 2;
+            padding: 10px 0;
+            margin: 30px 0 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: sticky;
+            top: 90px;
+            background: var(--bg);
+            z-index: 10;
+        }
+        .date-divider-val {
+            font-family: "Inter Tight";
+            font-weight: 900;
+            font-size: 0.9rem;
+            color: var(--pink);
+            letter-spacing: 0.3em;
+            font-style: italic;
+            opacity: 0.8;
+        }
+        .date-divider-line {
+            height: 1px;
+            flex-grow: 1;
+            background: linear-gradient(to right, var(--pink), transparent);
+            opacity: 0.2;
+        }
+
+        @media (max-width: 1000px) {
+            .date-divider { grid-column: span 1; top: 70px; }
+        }
+        
+        .post-content-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        @media (min-width: 1300px) {
+            .post-card:not(.featured):not(.is-expanded) .post-content-wrap {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .post-card:not(.featured):not(.is-expanded) .post-media {
+                width: 180px;
+                height: 180px;
+                flex-shrink: 0;
+                margin-bottom: 0;
+                object-fit: cover;
+            }
+            .post-card:not(.featured):not(.is-expanded) .post-b {
+                max-height: 8.8rem;
+            }
+        }
+
+        .post-tag { 
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 4px 10px; border-radius: 6px; font-size: 0.6rem; font-weight: 900;
+            text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tag-results { background: rgba(255, 215, 0, 0.1); color: #ffd700; border-color: rgba(255, 215, 0, 0.3); }
+        .tag-cup { background: rgba(0, 245, 255, 0.1); color: var(--cyan); border-color: rgba(0, 245, 255, 0.3); }
+        .tag-chart { background: rgba(255, 0, 127, 0.1); color: var(--pink); border-color: rgba(255, 0, 127, 0.3); }
+        .tag-insider { background: rgba(204, 255, 0, 0.1); color: var(--acid); border-color: rgba(204, 255, 0, 0.3); }
+        
+        .post-h { 
+            font-family: "Inter Tight", sans-serif; 
+            font-size: 0.85rem; 
+            font-weight: 900; 
+            line-height: 1.1; 
+            text-transform: uppercase; 
+            margin-bottom: 20px; 
+            background: linear-gradient(to bottom, #fff 20%, var(--pink) 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-style: italic;
+            letter-spacing: -0.01em;
+        }
+        .post-media { 
+            width: 100%; border-radius: 10px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); 
+            transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .post-card.featured .post-h { font-size: 3.2rem; margin-bottom: 15px; }
+        .post-card.featured .post-media { height: 300px; }
+        .post-card:hover .post-media { transform: scale(1.05); box-shadow: 0 50px 100px rgba(0,0,0,0.9); }
+        .post-b { 
+            font-size: 0.85rem; line-height: 1.4; color: #ccc; letter-spacing: 0.01em; 
+            max-height: 8.8rem; /* Exact 5 lines (1.1 * 1.6 * 5) */
+            overflow: hidden; position: relative;
+            transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+        .post-b.expanded { 
+            max-height: 5000px; 
+        }
+        .post-b::after {
+            content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;
+            background: linear-gradient(to bottom, transparent, rgba(10,10,10,0.95));
+            transition: 0.3s; pointer-events: none;
+        }
+        .post-b.expanded::after { opacity: 0; }
+        .post-b br { content: ""; display: block; margin-bottom: 10px; }
+        
+        .read-more-btn {
+            background: none; border: none; color: var(--cyan); font-family: "Inter Tight";
+            font-weight: 900; font-size: 0.75rem; text-transform: uppercase;
+            cursor: pointer; padding: 10px 0; display: flex; align-items: center; gap: 5px;
+            letter-spacing: 0.1em; transition: 0.3s;
+        }
+        .read-more-btn:hover { color: #fff; text-shadow: 0 0 10px var(--cyan); }
+        .post-b strong { color: var(--pink); font-weight: 900; text-shadow: 0 0 10px rgba(255,0,127,0.3); }
+        .post-meta { font-size: 0.8rem; color: var(--pink); font-weight: 900; text-transform: uppercase; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; letter-spacing: 0.2em; font-style: italic; }
+        .post-meta::after { content: ""; height: 2px; flex-grow: 1; background: linear-gradient(to right, var(--pink), transparent); opacity: 0.3; }
+        .post-sub-h { font-family: "Inter Tight", sans-serif; font-weight: 900; display: block; color: var(--cyan); font-size: 1.3rem; margin: 45px 0 20px 0; text-transform: uppercase; border-left: 10px solid var(--cyan); padding-left: 20px; font-style: italic; }
+
+        /* Search System */
+        .search-container { margin-bottom: 15px; position: relative; }
+        .search-input { 
+            width: 100%; padding: 20px 30px 20px 60px; 
+            background: rgba(255,255,255,0.03); border: 1px solid var(--border); 
+            border-radius: 10px; color: #fff; font-family: "Inter Tight"; 
+            font-size: 0.85rem; outline: none; transition: 0.3s;
+            box-sizing: border-box;
+        }
+        .search-input:focus { border-color: var(--cyan); box-shadow: 0 0 30px rgba(0,245,255,0.15); background: rgba(255,255,255,0.05); }
+        .search-icon { position: absolute; left: 25px; top: 25px; color: var(--cyan); font-size: 1.2rem; }
+
+        .filter-btn {
+            padding: 6px 15px; border-radius: 8px; background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border); color: #777; font-size: 0.6rem;
+            font-weight: 900; letter-spacing: 0.1em; cursor: pointer; transition: 0.3s;
+        }
+        .filter-btn:hover { background: rgba(255,255,255,0.08); color: #fff; }
+        .filter-btn.active { 
+            background: var(--cyan); border-color: var(--cyan); color: #000;
+            box-shadow: 0 0 15px rgba(0,245,255,0.3);
+        }
+
+        .post-actions { display: flex; align-items: center; gap: 15px; margin-top: 35px; border-top: 1px solid var(--border); padding-top: 25px; clear: both; }
+
+        /* Reaction System */
+        .reaction-bar { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+        .reaction-btn { 
+            background: rgba(255,255,255,0.03); border: 1px solid var(--border); 
+            padding: 4px 8px; border-radius: 10px; cursor: pointer; 
+            font-size: 0.8rem; transition: 0.3s; display: flex; align-items: center; gap: 6px;
+        }
+        .reaction-btn:hover { background: rgba(255,255,255,0.08); transform: scale(1.1); }
+        .reaction-btn.active { background: rgba(255,0,127,0.1); border-color: var(--pink); box-shadow: 0 0 15px rgba(255,0,127,0.2); }
+        .reaction-count { font-size: 0.6rem; font-weight: 900; color: #888; font-family: "Inter Tight"; }
+        .reaction-btn.active .reaction-count { color: var(--pink); }
+
+        .action-btn { 
+            display: flex; align-items: center; gap: 8px; 
+            padding: 8px 18px; border-radius: 10px; background: rgba(255,255,255,0.03); 
+        ...
+            border: 1px solid var(--border); color: #888; font-size: 0.75rem; 
+            font-weight: 900; text-transform: uppercase; cursor: pointer; transition: 0.3s;
+            text-decoration: none; font-family: "Inter Tight"; font-style: italic;
+        }
+        .action-btn:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.3); }
+        .action-btn.share:hover { background: rgba(0,245,255,0.1); color: var(--cyan); border-color: var(--cyan); }
+        .read-tag { margin-left: auto; color: #555; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; }
+        
+        .poll-box { margin-top: 45px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; clear: both; }
+        .poll-option { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 10px; padding: 20px 30px; font-family: "Inter Tight", sans-serif; font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; display: flex; align-items: center; justify-content: space-between; transition: 0.4s; cursor: pointer; position: relative; overflow: hidden; font-style: italic; }
+        .poll-option:hover { background: rgba(255,0,127,0.08); border-color: var(--pink); transform: translateY(-3px); }
+        .poll-option.voted { border-color: var(--pink); background: rgba(255,0,127,0.1); }
+        .poll-option.voted::before { content: ""; position: absolute; left: 0; top: 0; height: 100%; width: var(--p-width, 0%); background: rgba(255,0,127,0.15); z-index: -1; transition: 1s ease-out; }
+        .poll-percent { color: var(--cyan); font-size: 0.85rem; text-shadow: 0 0 10px var(--cyan); display: none; }
+        .poll-option.voted .poll-percent { display: block; }
+        
+        .num-highlight { color: var(--cyan); font-weight: 900; font-family: "Inter Tight", sans-serif; text-shadow: 0 0 15px rgba(0,245,255,0.4); }
+        .bubble { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.03); padding: 12px 18px; border-radius: 40px; margin-bottom: 10px; border: 1px solid var(--border); transition: 0.3s; }
+        .bubble:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.2); transform: translateX(5px); }
+        .bubble img { transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .bubble:hover img { transform: scale(1.25); box-shadow: 0 10px 20px rgba(0,0,0,0.5); z-index: 2; }
+        
+        /* Chart Podium Styling */
+        .chart-podium-1 { background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(255,255,255,0.02)) !important; border-color: #ffd700 !important; transform: scale(1.05); margin-bottom: 20px !important; padding: 20px 25px !important; box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15); }
+        .chart-podium-1 img { width: 70px !important; height: 70px !important; box-shadow: 0 0 20px #ffd700; }
+        .chart-podium-1 .artist-rich { font-size: 1.2rem !important; }
+        
+        .chart-podium-2 { background: linear-gradient(145deg, rgba(192, 192, 192, 0.1), rgba(255,255,255,0.02)) !important; border-color: #c0c0c0 !important; transform: scale(1.02); margin-bottom: 15px !important; padding: 15px 20px !important; }
+        .chart-podium-2 img { width: 55px !important; height: 55px !important; }
+        
+        .chart-podium-3 { background: linear-gradient(145deg, rgba(205, 127, 50, 0.1), rgba(255,255,255,0.02)) !important; border-color: #cd7f32 !important; margin-bottom: 12px !important; }
+        
+        /* Trend Indicators */
+        .trend-box { display: flex; flex-direction: column; align-items: center; width: 25px; font-size: 0.75rem; font-weight: 900; }
+        .trend-up { color: #00ff88; text-shadow: 0 0 10px rgba(0,255,136,0.5); }
+        .trend-down { color: #ff4d4d; text-shadow: 0 0 10px rgba(255,77,77,0.5); }
+        .trend-steady { color: #555; }
+        
+        /* Chart Score Bars */
+        .chart-cover { 
+            width: 30px !important; height: 30px !important; 
+            border-radius: 8px !important; object-fit: cover !important; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4); 
+            border: 1px solid rgba(255,255,255,0.1);
+            margin: 0 10px;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bubble:hover .chart-cover { transform: scale(1.1) rotate(-3deg); border-color: var(--cyan); }
+        .score-bar-bg { width: 100px; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+        .score-bar-fill { height: 100%; background: var(--pink); border-radius: 1px; opacity: 0.6; transition: 1s ease-out; }
+        .bubble:hover .score-bar-fill { opacity: 1; box-shadow: 0 0 10px var(--pink); }
+        
+        /* Chart Actions */
+        .chart-discovery { display: flex; gap: 8px; margin-left: 15px; opacity: 0; transition: 0.3s; }
+        .bubble:hover .chart-discovery { opacity: 1; }
+        .chart-discovery a { color: var(--pink); font-size: 0.8rem; text-decoration: none; transition: 0.2s; }
+        .chart-discovery a:hover { color: #fff; transform: scale(1.2); }
+        
+        /* Compact Eliminated Grid */
+        #e-list { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+        .elim-bubble { 
+            position: relative; cursor: help; transition: 0.3s; 
+            filter: grayscale(0.8); opacity: 0.4;
+        }
+        .elim-bubble:hover { filter: grayscale(0); opacity: 1; transform: scale(1.2) translateY(-5px); z-index: 5; }
+        .elim-bubble .tooltip { 
+            position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+            background: #000; color: #fff; padding: 5px 10px; border-radius: 6px;
+            font-size: 0.6rem; font-weight: 900; white-space: nowrap;
+            visibility: hidden; opacity: 0; transition: 0.3s;
+            border: 1px solid var(--pink); box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            pointer-events: none; margin-bottom: 8px;
+        }
+        .elim-bubble:hover .tooltip { visibility: visible; opacity: 1; }
+        
+        /* Timeline History */
+        #hist-list { 
+            position: relative; 
+            padding-left: 30px; 
+            margin-top: 20px;
+        }
+        #hist-list::before { 
+            content: ""; position: absolute; left: 10px; top: 10px; bottom: 10px; 
+            width: 2px; background: linear-gradient(to bottom, var(--pink), var(--cyan), transparent);
+            opacity: 0.3;
+        }
+        .hist-item { 
+            position: relative; margin-bottom: 25px; 
+            display: flex; align-items: flex-start; gap: 15px;
+        }
+        .hist-item::before { 
+            content: ""; position: absolute; left: -24px; top: 12px; 
+            width: 10px; height: 10px; border-radius: 50%; 
+            background: #05010d; border: 2px solid var(--cyan);
+            box-shadow: 0 0 10px var(--cyan); z-index: 2;
+        }
+        .hist-now::before { border-color: var(--pink); box-shadow: 0 0 15px var(--pink); animation: blink 1s infinite; }
+        
+        .hist-cover { width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--border); flex-shrink: 0; background-size: cover; background-position: center; }
+        .hist-content { display: flex; flex-direction: column; gap: 3px; }
+        
+        .hist-badge { 
+            display: inline-block; padding: 2px 6px; border-radius: 4px; 
+            background: var(--pink); color: #fff; font-size: 0.55rem; 
+            font-weight: 900; margin-bottom: 5px; letter-spacing: 0.1em;
+        }
+        
+        .hist-time { font-size: 0.75rem; font-weight: 900; color: var(--pink); font-family: "Inter Tight"; font-style: italic; opacity: 0.8; }
+        .hist-track { font-size: 0.9rem; font-weight: 700; color: #eee; line-height: 1.2; }
+        .hist-artist { color: var(--cyan); font-family: "Inter Tight"; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
+        
+        .hist-discovery { display: flex; gap: 10px; margin-top: 5px; opacity: 0.3; transition: 0.3s; }
+        .hist-item:hover .hist-discovery { opacity: 1; }
+        .hist-discovery a { color: #fff; font-size: 0.6rem; text-decoration: none; }
+        .hist-discovery a:hover { color: var(--pink); }
+        
+        .player-container { position: relative; z-index: 1; transition: 0.5s; }
+        .ambient-glow { position: absolute; top: 0; left: 0; width: 100%; aspect-ratio: 1; border-radius: 50%; filter: blur(60px); opacity: 0.4; z-index: -1; transition: background 1s ease; }
+        
+        .progress-container { width: 100%; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; margin: 15px 0; overflow: hidden; position: relative; }
+        #progress-bar { width: 0%; height: 100%; background: var(--cyan); transition: width 1s linear; box-shadow: 0 0 10px var(--cyan); }
+        
+        .discovery-box { display: flex; justify-content: center; gap: 15px; margin-top: 15px; }
+        .discovery-btn { width: 35px; height: 35px; border-radius: 50%; background: rgba(255,255,255,0.05); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: 0.3s; font-size: 0.8rem; }
+        .discovery-btn:hover { background: var(--pink); border-color: var(--pink); transform: scale(1.1); box-shadow: 0 0 15px var(--pink); }
+        .discovery-btn.spotify:hover { background: #1DB954; border-color: #1DB954; box-shadow: 0 0 15px #1DB954; }
+        
+        .share-btn { margin-top: 10px; width: 100%; background: rgba(0,245,255,0.1); border: 1px solid var(--cyan); color: var(--cyan); padding: 10px; border-radius: 12px; font-family: "Inter Tight"; font-weight: 900; font-style: italic; cursor: pointer; transition: 0.3s; text-transform: uppercase; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .share-btn:hover { background: var(--cyan); color: #000; box-shadow: 0 0 20px var(--cyan); }
+        .order-btn { margin-top: 20px; width: 100%; background: rgba(255,0,127,0.1); border: 1px solid var(--pink); color: var(--pink); padding: 12px; border-radius: 12px; font-family: "Inter Tight"; font-weight: 900; font-style: italic; cursor: pointer; transition: 0.3s; text-transform: uppercase; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; }
+        .order-btn:hover { background: var(--pink); color: #fff; box-shadow: 0 0 25px var(--pink); transform: translateY(-2px); }
+        
+        .volume-box { display: flex; align-items: center; gap: 10px; margin-top: 20px; width: 100%; opacity: 0.7; transition: 0.3s; }
+        .volume-box:hover { opacity: 1; }
+        .volume-slider { flex-grow: 1; -webkit-appearance: none; background: rgba(255,255,255,0.1); height: 4px; border-radius: 2px; outline: none; cursor: pointer; }
+        .volume-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--cyan); border-radius: 50%; box-shadow: 0 0 10px var(--cyan); cursor: pointer; }
+        .volume-icon { color: var(--cyan); font-size: 0.9rem; }
+        .vienna-clock { font-size: 0.8rem; color: #888; font-family: "Inter Tight"; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+        .cal-btn { 
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 8px 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+            border-radius: 10px; color: #fff; font-size: 0.6rem; font-weight: 900; 
+            text-transform: uppercase; text-decoration: none; transition: 0.3s; margin-top: 10px;
+            font-family: "Inter Tight"; font-style: italic;
+        }
+        .cal-btn:hover { background: var(--cyan); color: #000; border-color: var(--cyan); box-shadow: 0 0 15px var(--cyan); }
+
+        @keyframes live-flow {
+            0% { border-color: var(--pink); box-shadow: 0 0 15px rgba(255,0,127,0.3); }
+            50% { border-color: var(--cyan); box-shadow: 0 0 25px rgba(0,245,255,0.5); }
+            100% { border-color: var(--pink); box-shadow: 0 0 15px rgba(255,0,127,0.3); }
+        }
+        
+        .status-live-box { 
+            animation: live-flow 3s infinite ease-in-out !important; 
+            background: rgba(255,255,255,0.03) !important; 
+            border-width: 2px !important;
+            position: relative;
+        }
+        
+        .live-tag {
+            position: absolute; top: 15px; right: 20px;
+            display: flex; align-items: center; gap: 6px;
+            font-size: 0.6rem; font-weight: 900; color: var(--pink);
+            text-transform: uppercase; letter-spacing: 0.15em;
+        }
+        .live-tag .dot { width: 6px; height: 6px; background: var(--pink); border-radius: 50%; animation: blink 1s infinite; }
+        
+        /* Signal FX Layers */
+        .signal-overlay { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            pointer-events: none; z-index: 9999; opacity: 0.03; 
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Noisy_Texture.png');
+            animation: noise 0.2s infinite;
+        }
+        .scanlines {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none; z-index: 9998; opacity: 0.1;
+        }
+        @keyframes noise {
+            0%, 100% { transform: translate(0,0); }
+            10% { transform: translate(-1%,-1%); }
+            30% { transform: translate(1%,1%); }
+            50% { transform: translate(-0.5%,1.5%); }
+            70% { transform: translate(1.5%,0.5%); }
+            90% { transform: translate(-1.5%,-0.5%); }
+        }
     </style>
 </head>
-<body>
-    <div class="hero-view">
-        <nav>
-            <div class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></div>
-            <div id="clock">RIGA: 00:00:00</div>
-        </nav>
-
-        <div class="timers-hero">
-            <a href="https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" class="timer-card">
-                <div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div>
-                <div class="timer-info"><div class="timer-label">Semi-Final 1 / 12.05</div><div class="timer-val" id="timer-sf1">--d --h --m --s</div></div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" class="timer-card">
-                <div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div>
-                <div class="timer-info"><div class="timer-label">Semi-Final 2 / 14.05</div><div class="timer-val" id="timer-sf2">--d --h --m --s</div></div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" class="timer-card">
-                <div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div>
-                <div class="timer-info"><div class="timer-label">Grand Final / 16.05</div><div class="timer-val" id="timer-gf">--d --h --m --s</div></div>
+<body onclick="syncRadio()">
+    <div class="ticker-wrap">
+        <div class="ticker-move" id="ticker-content"></div>
+    </div>
+    <div class="aurora-container">
+        <div class="aurora-blob aurora-1"></div>
+        <div class="aurora-blob aurora-2"></div>
+        <div class="aurora-blob aurora-3"></div>
+    </div>
+    <div class="film-grain"></div>
+    <div class="signal-overlay"></div>
+    <div class="scanlines"></div>
+    <svg width="0" height="0" style="position:absolute;"><defs><clipPath id="official-h-mask" clipPathUnits="objectBoundingBox"><path transform="scale(0.0042, 0.004)" d="M180.938 1c-25.317 0-55.258 18.698-73.381 49.771-4.89-11.222-22.313-23.451-43.024-23.451-16.689 0-63.533 20.858-63.533 88.178 0 86.88 87.901 104.725 105.671 131.729 1.221 1.857 5.154 3.26 6.655-1.177 14.179-41.845 124.125-89.125 124.125-174.279-0.001-47.756-31.197-70.771-56.513-70.771z"></path></clipPath></defs></svg>
+    <div class="logo-box">
+        <div style="max-width:1800px; margin:0 auto; padding:0 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+            <div>
+                <div class="logo">Your<span>Vision</span></div>
+                <div class="nav-menu" style="margin-top:10px;">
+                    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+                        <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document"></i> News</a>
+                        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="nav-link" id="nav-cup"><i class="fi fi-rr-trophy"></i> Cup</a>
+                        <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower"></i> Radio</a>
+                        <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats"></i> Chart</a>
+                        <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" id="nav-odds" style="color:var(--cyan);"><i class="fi fi-rr-chart-line-up"></i> Odds</a>
+                        <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" id="nav-vote" style="color:var(--acid);"><i class="fi fi-rr-checkbox"></i> Vote</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align:right; font-family:'Inter Tight';">
+                <div style="display:flex; justify-content:flex-end; gap:8px; margin-bottom:10px;">
+                    <span class="filter-btn" onclick="setLanguage('ru')" id="lang-ru" style="padding:2px 6px; font-size:0.5rem;">RU</span>
+                    <span class="filter-btn" onclick="setLanguage('en')" id="lang-en" style="padding:2px 6px; font-size:0.5rem;">EN</span>
+                    <span class="filter-btn" onclick="setLanguage('ua')" id="lang-ua" style="padding:2px 6px; font-size:0.5rem;">UA</span>
+                    <span class="filter-btn" onclick="setLanguage('lv')" id="lang-lv" style="padding:2px 6px; font-size:0.5rem;">LV</span>
+                    <span class="filter-btn" onclick="setLanguage('se')" id="lang-se" style="padding:2px 6px; font-size:0.5rem;">SE</span>
+                </div>
+                <div id="full-date" style="font-weight:900; font-size:0.8rem; color:var(--pink); letter-spacing:0.15em; text-transform:uppercase; font-style:italic;">-- --- 2026</div>
+                <div style="display:flex; align-items:center; gap:15px; margin-top:5px; justify-content:flex-end;">
+                    <div style="color:var(--cyan); font-weight:900; font-size:1.1rem; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
+                        <span id="clock-label" style="color:#555; font-size:0.6rem; margin-top:2px; text-transform:uppercase;">DETECTING...</span> 
+                        <span id="clock">00:00:00</span>
+                        <span id="local-temp" style="color:var(--cyan); font-size:0.8rem; font-weight:700; opacity:0.6;">--°C</span>
+                    </div>
+                    <div style="color:#aaa; font-size:0.8rem; font-weight:700; border-left:1px solid rgba(255,255,255,0.1); padding-left:15px; display:flex; align-items:center; gap:8px;">
+                        <span id="vienna-label" style="color:#555; font-size:0.6rem; margin-top:1px;">VIENNA:</span> 
+                        <span id="vienna-clock" style="color:#eee;">00:00:00</span>
+                        <span id="vienna-temp" style="color:var(--pink); font-size:0.8rem; font-weight:700; opacity:0.6;">--°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="timers-hero">
+        <div style="display:flex; flex-direction:column;">
+            <a href="https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" style="text-decoration:none;"><div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-label"><i class="fi fi-rr-calendar"></i> Semi-Final 1 / 12.05</span><div id="timer-sf1" class="timer-val">--d --h --m --s</div></div></div></a>
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Eurovision+2026:+Semi-Final+1&dates=20260512T190000Z/20260512T220000Z&details=Live+from+Vienna:+https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" class="cal-btn">
+                <i class="fi fi-rr-calendar-plus"></i> Add to Calendar
             </a>
         </div>
-
-        <div class="layout">
-            <aside class="column">
-                <div class="card">
-                    <span class="on-air-live" style="animation: live-pulse 1.5s infinite">On Air LIVE</span>
-                    <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist" id="radio-artist">Loading...</span>
-                    <span class="player-song" id="radio-song">Wait...</span>
-                    <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">0:00 / 0:00</span></div>
-                    <div style="display:flex; justify-content:center; margin-top:20px;"><button id="toggle-play" style="background:#fff; border:none; width:50px; height:50px; border-radius:50%; cursor:pointer;"><svg viewBox="0 0 24 24" width="24"><path d="M8 5v14l11-7z"/></svg></button></div>
-                    <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
-                </div>
-                <div class="card"><div class="section-title-pink">Recently Played [15]</div><table class="chart-table" id="history-list"></table></div>
-            </aside>
-
-            <main class="column">
-                <div class="card">
-                    <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
-                    <div class="grid-sub-header">PLAY-OFF BRACKET [ROUND OF 16]</div>
-                    <div id="bracket-body" class="bracket-grid"></div>
-                    <div class="grid-sub-header sub-qualified" style="color:var(--accent-acid)">QUALIFIED COUNTRIES</div>
-                    <div id="grid-qualifiers" class="tournament-grid"></div>
-                    <div class="grid-sub-header sub-eliminated" style="color:#ff4d4d">ELIMINATED</div>
-                    <div id="grid-eliminated" class="tournament-grid"></div>
-                </div>
-                <div class="feed-title">INSIDER NEWS FEED [20]</div>
-                <div id="news-grid"></div>
-            </main>
-
-            <aside class="column">
-                <div class="card">
-                    <div class="section-title-pink">Eurogroove / Full Top 24</div>
-                    <table class="chart-table" id="chart-list"></table>
-                </div>
-            </aside>
+        <div style="display:flex; flex-direction:column;">
+            <a href="https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" style="text-decoration:none;"><div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-label"><i class="fi fi-rr-calendar"></i> Semi-Final 2 / 14.05</span><div id="timer-sf2" class="timer-val">--d --h --m --s</div></div></div></a>
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Eurovision+2026:+Semi-Final+2&dates=20260514T190000Z/20260514T220000Z&details=Live+from+Vienna:+https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" class="cal-btn">
+                <i class="fi fi-rr-calendar-plus"></i> Add to Calendar
+            </a>
+        </div>
+        <div style="display:flex; flex-direction:column;">
+            <a href="https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" style="text-decoration:none;"><div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-label"><i class="fi fi-rr-calendar"></i> Grand Final / 16.05</span><div id="timer-gf" class="timer-val">--d --h --m --s</div></div></div></a>
+            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Eurovision+2026:+Grand+Final&dates=20260516T190000Z/20260516T230000Z&details=Live+from+Vienna:+https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" class="cal-btn">
+                <i class="fi fi-rr-calendar-plus"></i> Add to Calendar
+            </a>
         </div>
     </div>
 
-    <script src="data.js"></script>
-    <script>
-        const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
+    <div class="layout">
+        <aside class="column" id="radio-sect">
+            <div class="card">
+                <div class="section-title-base title-cyan" style="display:flex; align-items:center; justify-content:center;">
+                    <i class="fi fi-rr-broadcast-tower"></i> ON AIR LIVE
+                    <div class="visualizer">
+                        <div class="vis-bar"></div>
+                        <div class="vis-bar"></div>
+                        <div class="vis-bar"></div>
+                        <div class="vis-bar"></div>
+                    </div>
+                </div>
+                <div class="player-container">
+                    <div id="ambient-glow" class="ambient-glow"></div>
+                    <div id="player-cover" style="width:100%; aspect-ratio:1; border-radius:20px; background-size:cover; background-position:center; margin-bottom:20px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position:relative; z-index:2;"></div>
+                </div>
+                
+                <div id="radio-artist" class="artist-rich" style="color:var(--pink); font-size:1.4rem; text-align:center; font-style:italic;">Loading...</div>
+                <div id="radio-song" class="song-rich" style="text-align:center; font-size:1rem; margin-top:5px; font-style:italic;">Wait...</div>
+                
+                <div class="discovery-box">
+                    <a id="spotify-link" href="#" target="_blank" class="discovery-btn spotify" title="Search on Spotify"><i class="fi fi-brands-spotify"></i></a>
+                    <a id="apple-link" href="#" target="_blank" class="discovery-btn" title="Search on Apple Music"><i class="fi fi-brands-apple"></i></a>
+                </div>
 
-        function getHeartUrl(id) { 
-            return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; 
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+
+                <div style="display:flex; justify-content:center; margin-top:15px;">
+                    <button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><i class="fi fi-rr-play" style="font-size:1.5rem;"></i></button>
+                </div>
+
+                <div class="volume-box">
+                    <i class="fi fi-rr-volume-down volume-icon"></i>
+                    <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <i class="fi fi-rr-volume-up volume-icon"></i>
+                </div>
+                
+                <a href="https://myradio24.com/ru/table/levdanskiy" target="_blank" class="order-btn">
+                    <i class="fi fi-rr-music-alt"></i> Order Song / Заказать
+                </a>
+
+                <button id="share-btn" class="share-btn">
+                    <i class="fi fi-rr-share"></i> Share to Telegram
+                </button>
+
+                <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
+            </div>
+            <div class="card">
+                <div class="section-title-base title-acid"><i class="fi fi-rr-history"></i> RECENTLY PLAYED</div>
+                <div id="hist-list"></div>
+            </div>
+
+            <div id="odds-sect" class="card" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-chart-line-up"></i> BOOKMAKERS ODDS</div>
+                <div id="odds-list"></div>
+                <div style="font-size:0.6rem; color:#555; text-align:center; margin-top:15px; text-transform:uppercase; letter-spacing:0.1em;">Source: Eurovisionworld</div>
+            </div>
+        </aside>
+        
+        <main class="column">
+            <div class="card" id="cup-sect">
+                <div class="section-title-base title-pink" style="font-size:2rem;"><i class="fi fi-rr-trophy"></i> YOURVISION CUP / 2026 STANDINGS</div>
+                <div id="bracket" style="display:grid; grid-template-columns:1fr 60px 1fr; gap:20px; align-items:center; margin-bottom:40px;"></div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px;">
+                    <div><span class="side-label" style="color:var(--acid);"><i class="fi fi-rr-check"></i> QUALIFIED [QF]</span><div id="q-list"></div></div>
+                    <div><span class="side-label" style="color:var(--pink);"><i class="fi fi-rr-cross"></i> ELIMINATED</span><div id="e-list"></div></div>
+                </div>
+            </div>
+            <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-book-alt"></i> ENCYCLOPEDIA 2026 / PARTICIPANTS</div>
+                <div id="encyclo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:15px; margin-top:20px;"></div>
+                <div id="ency-anchor"></div>
+            </div>
+            <div class="search-container" id="news-sect">
+                <i class="fi fi-rr-search search-icon"></i>
+                <input type="text" id="news-search" class="search-input" placeholder="SEARCH FOR SIGNALS, COUNTRIES OR RESULTS..." oninput="render()">
+                
+                <div class="filter-bar" style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
+                    <div class="filter-btn active" onclick="setFilter('all')" id="filter-all">ALL SIGNALS</div>
+                    <div class="filter-btn" onclick="setFilter('results')" id="filter-results">#RESULTS</div>
+                    <div class="filter-btn" onclick="setFilter('cup')" id="filter-cup">#CUP_BATTLE</div>
+                    <div class="filter-btn" onclick="setFilter('chart')" id="filter-chart">#CHART</div>
+                    <div class="filter-btn" onclick="setFilter('insider')" id="filter-insider">#INSIDER</div>
+                </div>
+            </div>
+            <div id="news-grid"></div>
+        </main>
+        
+        <aside class="column" id="chart-sect">
+            <div class="card" id="roadmap-sect" style="margin-bottom:30px; border-color:var(--pink); background:rgba(255,0,127,0.02);">
+                <div class="section-title-base" style="color:var(--pink); border-bottom:2px solid var(--pink); padding-bottom:10px;"><i class="fi fi-rr-calendar-lines"></i> INTERACTIVE ROADMAP</div>
+                <div id="roadmap-list" style="margin-top:20px;"></div>
+            </div>
+
+            <div class="card">
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> WORLDSOUND: AIRWAVE VELOCITY — 31.03.2026</div>
+                <div id="chart-list"></div>
+            </div>
+            
+            <div id="vote-sect" class="card" style="margin-top:30px; border-color:var(--acid);">
+                <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;">VOTE NOW: RUTOP — SIGNAL 20</div>
+                <div id="nominee-list"></div>
+                
+                <div style="margin-top:25px; padding:20px; background:rgba(204,255,0,0.05); border-radius:20px; border:1px solid rgba(204,255,0,0.1);">
+                    <div style="font-weight:900; color:var(--acid); font-size:0.7rem; text-transform:uppercase; margin-bottom:15px; letter-spacing:0.1em;">🎵 LISTEN TO NOMINEES:</div>
+                    <div style="display:flex; flex-direction:column; gap:10px;">
+                        <a href="https://open.spotify.com/playlist/4gJEGeaYPeLFMmMdbgjTtG?si=3ecc0a88e218470f" target="_blank" class="nav-link" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.1);"><i class="fi fi-brands-spotify"></i> Spotify Playlist</a>
+                        <a href="https://music.youtube.com/playlist?list=PLk4_4ipLm5Q1gCZ5wjfdd9dHGKu0VbbqX&si=Z8Eg8q8X0YT6rg8i" target="_blank" class="nav-link" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.1);"><i class="fi fi-brands-youtube"></i> YT Music Playlist</a>
+                        <a href="https://youtube.com/playlist?list=PLm7BqXxXyyAjf72JopkqKN6R0xHWWwyYr&si=xF8fs-ufzMKcT4ox" target="_blank" class="nav-link" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.1);"><i class="fi fi-rr-play-alt"></i> YouTube Playlist</a>
+                    </div>
+                    
+                    <div style="margin-top:20px; padding-top:15px; border-top:1px solid rgba(204,255,0,0.1);">
+                        <div style="color:#aaa; font-size:0.75rem; line-height:1.4;">
+                            🗳 <b>Голосование до:</b> 5 апреля, 23:59 (Рига)<br>
+                            📻 <b>Премьера итогов:</b> 7 апреля, 18:00
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://strawpoll.com/mpnb105Xby5" target="_blank" class="order-btn" style="background:var(--acid); border-color:var(--acid); color:#000; margin-top:20px; font-weight:900;"><i class="fi fi-rr-checkbox"></i> OPEN STRAWPOLL VOTE</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- LOAD EXTERNAL DATA.JS -->
+    <div class="mobile-nav">
+        <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="mobile-nav-btn"><i class="fi fi-rr-broadcast-tower"></i><span>Radio</span></a>
+        <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="mobile-nav-btn"><i class="fi fi-rr-document"></i><span>News</span></a>
+        <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="mobile-nav-btn"><i class="fi fi-rr-chart-line-up"></i><span>Odds</span></a>
+        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
+    </div>
+
+    <script src="data.js?v=1775125563"></script>
+    <script>
+        const LANGS = {
+            ru: {
+                news: "Новости", cup: "Кубок", radio: "Радио", chart: "Чарт", odds: "Ставки", vote: "Голос",
+                recently: "НЕДАВНО В ЭФИРЕ", bookmakers: "СТАВКИ БУКМЕКЕРОВ", standings: "YOURVISION CUP / 2026 ТАБЛИЦА",
+                qualified: "ПРОШЛИ", eliminated: "ВЫБЫЛИ", search: "ПОИСК СИГНАЛОВ, СТРАН ИЛИ РЕЗУЛЬТАТОВ...",
+                roadmap: "ИНТЕРАКТИВНЫЙ ГРАФИК", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
+                vote_now: "ГОЛОСУЙТЕ: RUTOP — SIGNAL 20", listen: "СЛУШАТЬ НОМИНАНТОВ:", open_vote: "ОТКРЫТЬ ГОЛОСОВАНИЕ",
+                read_more: "ЧИТАТЬ ПОЛНОСТЬЮ", show_less: "СВЕРНУТЬ", copy: "Копировать", share: "Поделиться", read_min: "мин чтения",
+                vienna: "ВЕНА", riga: "РИГА", deadline: "Голосование до:", premiere: "Премьера итогов:",
+                your_time: "ВАШЕ ВРЕМЯ", your_city: "ЛОКАЦИЯ", translate: "ПЕРЕВЕСТИ",
+                months: ["ЯНВАРЯ", "ФЕВРАЛЯ", "МАРТА", "АПРЕЛЯ", "МАЯ", "ИЮНЯ", "ИЮЛЯ", "АВГУСТА", "СЕНТЯБРЯ", "ОКТЯБРЯ", "НОЯБРЯ", "ДЕКАБРЯ"],
+                ticker: [
+                    "🚨 МОЛНИЯ: EUROVISION ASIA 2026 ОФИЦИАЛЬНО ЗАПУЩЕН В БАНГКОКЕ",
+                    "📊 СТАВКИ: ФИНЛЯНДИЯ ЛИДИРУЕТ С ВЕРОЯТНОСТЬЮ 28%",
+                    "⚔️ КУБОК: ВЕЛИКОБРИТАНИЯ ПРОШЛА В ЧЕТВЕРТЬФИНАЛ",
+                    "📻 В ЭФИРЕ: СЛУШАЙТЕ RADIO YOURVISION — ТОЛЬКО ХИТЫ"
+                ]
+            },
+            en: {
+                news: "News", cup: "Cup", radio: "Radio", chart: "Chart", odds: "Odds", vote: "Vote",
+                recently: "RECENTLY PLAYED", bookmakers: "BOOKMAKERS ODDS", standings: "YOURVISION CUP / 2026 STANDINGS",
+                qualified: "QUALIFIED", eliminated: "ELIMINATED", search: "SEARCH FOR SIGNALS, COUNTRIES OR RESULTS...",
+                roadmap: "INTERACTIVE ROADMAP", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
+                vote_now: "VOTE NOW: RUTOP — SIGNAL 20", listen: "LISTEN TO NOMINEES:", open_vote: "OPEN STRAWPOLL VOTE",
+                read_more: "READ FULL INSIDE", show_less: "SHOW LESS", copy: "Copy Link", share: "Share", read_min: "min read",
+                vienna: "VIENNA", riga: "RIGA", deadline: "Deadline:", premiere: "Premiere:",
+                your_time: "YOUR TIME", your_city: "LOCATION", translate: "TRANSLATE",
+                months: ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"],
+                ticker: [
+                    "🚨 BREAKING: EUROVISION ASIA 2026 OFFICIALLY LAUNCHED IN BANGKOK",
+                    "📊 ODDS UPDATE: FINLAND LEADS WITH 28% PROBABILITY",
+                    "⚔️ CUP UPDATE: UNITED KINGDOM QUALIFIED FOR QUARTER-FINALS",
+                    "📻 ON AIR: TUNE IN TO YOURVISION RADIO FOR NON-STOP SIGNALS"
+                ]
+            },
+            ua: {
+                news: "Новини", cup: "Кубок", radio: "Радіо", chart: "Чарт", odds: "Ставки", vote: "Голос",
+                recently: "НЕЩОДАВНО В ЕФІРІ", bookmakers: "СТАВКИ БУКМЕКЕРІВ", standings: "YOURVISION CUP / 2026 ТАБЛИЦЯ",
+                qualified: "ПРОЙШЛИ", eliminated: "ВИБУЛИ", search: "ПОШУК СИГНАЛІВ, КРАЇН АБО РЕЗУЛЬТАТІВ...",
+                roadmap: "ІНТЕРАКТИВНИЙ ГРАФИК", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
+                vote_now: "ГОЛОСУЙТЕ: RUTOP — SIGNAL 20", listen: "СЛУХАТИ НОМІНАНТОВ:", open_vote: "ВІДКРИТИ ГОЛОСУВАННЯ",
+                read_more: "ЧИТАТИ ПОВНІСТЮ", show_less: "ЗГОРНУТИ", copy: "Копіювати", share: "Поділитися", read_min: "хв читання",
+                vienna: "ВІДЕНЬ", riga: "РИГА", deadline: "Голосування до:", premiere: "Прем'єра підсумків:",
+                your_time: "ВАШ ЧАС", your_city: "ЛОКАЦІЯ", translate: "ПЕРЕКЛАСТИ",
+                months: ["СІЧНЯ", "ЛЮТОГО", "БЕРЕЗНЯ", "КВІТНЯ", "ТРАВНЯ", "ЧЕРВНЯ", "ЛИПНЯ", "СЕРПНЯ", "ВЕРЕСНЯ", "ЖОВТНЯ", "ЛИСТОПАДА", "ГРУДНЯ"],
+                ticker: [
+                    "🚨 БЛИСКАВКА: EUROVISION ASIA 2026 ОФІЦІЙНО ЗАПУЩЕНО В БАНГКОКУ",
+                    "📊 СТАВКИ: ФІНЛЯНДІЯ ЛІДИРУЄ З ІМОВІРНІСТЮ 28%",
+                    "⚔️ КУБОК: ВЕЛИКОБРИТАНІЯ ПРОЙШЛА В ЧВЕРТЬФИНАЛ",
+                    "📻 В ЕФІРІ: СЛУХАЙТЕ RADIO YOURVISION — ТІЛЬКИ ХИТИ"
+                ]
+            },
+            lv: {
+                news: "Ziņas", cup: "Kauss", radio: "Radio", chart: "Tops", odds: "Likmes", vote: "Balss",
+                recently: "NESEN SKANĒJA", bookmakers: "BUKMEIKERU PROGNOZES", standings: "YOURVISION KAUSS / 2026 REZULTĀTI",
+                qualified: "KVALIFICĒJĀS", eliminated: "IZSTĀJĀS", search: "MEKLĒT SIGNĀLUS, VALSTIS VAI REZULTĀTUS...",
+                roadmap: "INTERAKTĪVAIS PLĀNS", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
+                vote_now: "BALSOJIET: RUTOP — SIGNAL 20", listen: "KLAUSĪTIES NOMINANTUS:", open_vote: "ATVERT BALSOŠANU",
+                read_more: "LASĪT VAIRĀK", show_less: "RĀDĪT MAZĀK", copy: "Kopēt saiti", share: "Dalīties", read_min: "min lasīšanai",
+                vienna: "VĪNE", riga: "RĪGA", deadline: "Balsošana līdz:", premiere: "Rezultātu pirmizrāde:",
+                your_time: "JŪSU LAIKS", your_city: "LOKĀCIJA", translate: "PĀRTULKOT",
+                months: ["JANVĀRĪ", "FEBRUĀRĪ", "MARTĀ", "APRĪLĪ", "MAIJĀ", "JŪNIJĀ", "JŪLIJĀ", "AUGUSTĀ", "SEPTEMBRĪ", "OKTOBRĪ", "NOVEMBRĪ", "DECEMBRĪ"],
+                ticker: [
+                    "🚨 JAUNUMI: EUROVISION ASIA 2026 OFICIĀLI ATKLĀTS BANGKOKĀ",
+                    "📊 LIKMES: SOMIJA IR LĪDERE AR 28% IESPĒJAMĪBU",
+                    "⚔️ KAUSS: APVIENOTĀ KARALISTE KVALIFICĒJĀS CETURTDAĻFINĀLAM",
+                    "📻 ĒTERĀ: KLAUSIETIES YOURVISION RADIO — TIKAI HITI"
+                ]
+            },
+            se: {
+                news: "Nyheter", cup: "Kup", radio: "Radio", chart: "Topp", odds: "Odds", vote: "Rösta",
+                recently: "NYLIGEN SPELADE", bookmakers: "BOOKMAKERS ODDS", standings: "YOURVISION CUP / 2026 STÄLLNING",
+                qualified: "KVALIFICERADE", eliminated: "ELIMINERADE", search: "SÖK SIGNALE, LÄNDER ELLER RESULTAT...",
+                roadmap: "INTERAKTIV ROADMAP", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
+                vote_now: "RÖSTA NU: RUTOP — SIGNAL 20", listen: "LYSSNA PÅ NOMINERADE:", open_vote: "ÖPPNA RÖSTNING",
+                read_more: "LÄS HELA INSIDAN", show_less: "VISA MINDRE", copy: "Kopiera länk", share: "Dela", read_min: "min läsning",
+                vienna: "WIEN", riga: "RIGA", deadline: "Röstning till:", premiere: "Premiär för resultat:",
+                your_time: "DIN TID", your_city: "PLATS", translate: "ÖVERSÄTTA",
+                months: ["JANUARI", "FEBRUARI", "MARS", "APRIL", "MAJ", "JUNI", "JULI", "AUGUSTI", "SEPTEMBER", "OKTOBER", "NOVEMBER", "DECEMBER"],
+                ticker: [
+                    "🚨 BREAKING: EUROVISION ASIA 2026 OFFICIELLT LANSERAD I BANGKOK",
+                    "📊 ODDS: FINLAND LEDER MED 28% SANNOLIKHET",
+                    "⚔️ CUP: STORBRITANNIEN KVALIFICERAD FÖR KVARTSFINAL",
+                    "📻 ON AIR: LYSSNA PÅ YOURVISION RADIO — BARA HITS"
+                ]
+            }
+        };
+        let currentLang = localStorage.getItem('yv_lang') || 'ru';
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('yv_lang', lang);
+            document.querySelectorAll('[id^="lang-"]').forEach(b => b.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            render();
         }
 
-        function updateTimers() {
+        const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
+        const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
+        const getH = (id) => {
+            if (id === "70") return "assets/heart_white_2026.svg";
+            const asia = ["kh","vn","th","my","ph","np","bd","la","bt"];
+            if (asia.includes(id.toLowerCase())) return `https://flagcdn.com/w160/${id.toLowerCase()}.png`;
+            return `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`;
+        };
+        const decodeS = (s) => { try { return JSON.parse('"' + s.replace(/"/g, '\\"') + '"'); } catch(e) { return s; } };
+        const emojiMap = {"📊": '<i class="fi fi-rr-stats"></i>',"🔗": '<i class="fi fi-rr-link"></i>',"🎧": '<i class="fi fi-rr-headphones"></i>',"⏱": '<i class="fi fi-rr-clock"></i>',"🚨": '<i class="fi fi-rr-alarm-exclamation"></i>',"🏆": '<i class="fi fi-rr-trophy"></i>',"⚡": '<i class="fi fi-rr-bolt"></i>',"🏛": '<i class="fi fi-rr-bank"></i>',"📅": '<i class="fi fi-rr-calendar"></i>',"🗳": '<i class="fi fi-rr-box-ballot"></i>'};
+        const flagMap = {"🇦🇱":"al","🇦🇲":"am","🇦🇺":"au","🇦🇹":"at","🇦🇿":"az","🇧🇪":"be","🇧🇬":"bg","🇭🇷":"hr","🇨🇾":"cy","🇨🇿":"cz","🇩🇰":"dk","🇪🇪":"ee","🇫🇮":"fi","🇫🇷":"fr","🇬🇪":"ge","🇩🇪":"de","🇬🇷":"gr","🇮🇱":"il","🇮🇹":"it","🇱🇻":"lv","🇱🇹":"lt","🇱🇺":"lu","🇲🇹":"mt","🇲🇩":"md","🇲🇪":"me","🇳🇴":"no","🇵🇱":"pl","🇵🇹":"pt","🇷🇴":"ro","🇸🇲":"sm","🇷🇸":"rs","🇸🇪":"se","🇨🇭":"ch","🇺🇦":"ua","🇬🇧":"gb","🇰🇭":"kh","🇻🇳":"vn","🇹🇭":"th","🇲🇾":"my","🇵🇭":"ph","🇳🇵":"np","🇧🇩":"bd","🇱🇦":"la","🇧🇹":"bt"};
+
+        async function fetchWeather() {
+            const t = LANGS[currentLang];
+            
+            // 1. Всегда грузим Вену (она не зависит от IP)
+            fetch('https://api.open-meteo.com/v1/forecast?latitude=48.2082&longitude=16.3738&current_weather=true')
+                .then(r => r.json())
+                .then(data => {
+                    const vTemp = Math.round(data.current_weather.temperature);
+                    document.getElementById('vienna-temp').innerText = vTemp + "°C";
+                    document.getElementById('vienna-label').innerText = `${t.vienna}:`;
+                })
+                .catch(e => console.error("Vienna weather error", e));
+
+            // 2. Пытаемся определить город и его погоду
+            try {
+                let city = "RIGA", lat = 56.9, lon = 24.1;
+                
+                // Пробуем первый сервис геолокации
+                const locRes = await fetch('https://ipapi.co/json/').catch(() => null);
+                if (locRes && locRes.ok) {
+                    const d = await locRes.json();
+                    city = d.city || city; lat = d.latitude || lat; lon = d.longitude || lon;
+                } else {
+                    // Резервный сервис геолокации
+                    const altRes = await fetch('https://ipwho.is/').catch(() => null);
+                    if (altRes && altRes.ok) {
+                        const d = await altRes.json();
+                        city = d.city || city; lat = d.latitude || lat; lon = d.longitude || lon;
+                    }
+                }
+
+                const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
+                const wData = await weatherRes.json();
+                const lTemp = Math.round(wData.current_weather.temperature);
+                
+                document.getElementById('local-temp').innerText = lTemp + "°C";
+                document.getElementById('clock-label').innerText = `${city.toUpperCase()}:`;
+
+            } catch (e) {
+                console.error("Local weather error", e);
+                document.getElementById('local-temp').innerText = "??°C";
+                document.getElementById('clock-label').innerText = `${t.your_time}:`;
+            }
+        }
+
+        function update() {
+            // Map our lang codes to real locales
+            const localeMap = { ru: 'ru-RU', en: 'en-GB', ua: 'uk-UA', lv: 'lv-LV', se: 'sv-SE' };
+            const currentLocale = localeMap[currentLang] || 'en-GB';
+
+            const cl = document.getElementById('clock'); 
+            if(cl) cl.innerText = new Date().toLocaleTimeString(currentLocale);
+            
+            const vcl = document.getElementById('vienna-clock');
+            if(vcl) {
+                const viennaTime = new Date().toLocaleTimeString(currentLocale, { 
+                    timeZone: "Europe/Vienna", 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit' 
+                });
+                vcl.innerText = viennaTime;
+            }
+
             const now = new Date();
             Object.keys(DATES).forEach(k => {
+                const el = document.getElementById('timer-'+k); if (!el) return;
                 const diff = DATES[k] - now;
-                const el = document.getElementById('timer-'+k);
-                if (!el) return;
                 if (diff < 0) { el.innerText = "LIVE"; return; }
                 const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
                 el.innerText = `${d}d ${h}h ${m}m ${s}s`;
             });
         }
 
-        function linkify(text) {
-            if (!text) return "";
-            const urlPattern = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-            return text.replace(urlPattern, '<a href="$1" target="_blank">$1</a>');
-        }
-
-        const flagMap = {"🇦🇱":"al","🇦🇲":"am","🇦🇺":"au","🇦🇹":"at","🇦🇿":"az","🇧🇪":"be","🇧🇬":"bg","🇭🇷":"hr","🇨🇾":"cy","🇨🇿":"cz","🇩🇰":"dk","🇪🇪":"ee","🇫🇮":"fi","🇫🇷":"fr","🇬🇪":"ge","🇩🇪":"de","🇬🇷":"gr","🇮🇱":"il","🇮🇹":"it","🇱🇻":"lv","🇱🇹":"lt","🇱🇺":"lu","🇲🇹":"mt","🇲🇩":"md","🇲🇪":"me","🇳🇴":"no","🇵🇱":"pl","🇵🇹":"pt","🇷🇴":"ro","🇸🇲":"sm","🇷🇸":"rs","🇸🇪":"se","🇨🇭":"ch","🇺🇦":"ua","🇬🇧":"gb"};
         function replaceFlags(text) {
             if (!text) return "";
-            return text.replace(/([\uD83C][\uDDE6-\uDDFF][\uD83C][\uDDE6-\uDDFF])/g, (match) => {
-                const code = flagMap[match];
-                if (code) return `<img src="${getHeartUrl(code)}" style="width:24px; vertical-align:middle; margin-right:5px;">`;
-                return match;
-            });
+            let res = text.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:40px; height:40px; vertical-align:middle; margin-right:15px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.5));">`);
+            res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+            res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
+            res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
+            for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
+            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:30px; height:30px; vertical-align:middle; margin-right:8px;">`); }
+            return res;
         }
 
-        async function syncRadio() {
+        function handleVote(postId, optIdx) { localStorage.setItem('yv_vote_'+postId, optIdx); render(); }
+
+                                let currentFilter = 'all';
+        function setFilter(tag) {
+            currentFilter = tag;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('filter-' + tag).classList.add('active');
+            render();
+        }
+
+                                                function render() {
+            if(!window.DATA) return;
+            const t = LANGS[currentLang];
+            
+            // 0. Update Lang Buttons status
+            document.querySelectorAll('[id^="lang-"]').forEach(b => b.classList.remove('active'));
+            const activeBtn = document.getElementById('lang-' + currentLang); if(activeBtn) activeBtn.classList.add('active');
+
             try {
-                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
-                const data = await res.json();
-                const current = data.songs[data.songs.length - 1];
-                document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
-                document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
-                const img = (data.imgbig && !data.imgbig.includes('nocover')) ? `https://myradio24.com/${data.imgbig}` : `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp`;
-                document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `
-                    <tr class="chart-row">
-                        <td class="chart-cell rank" style="font-size:0.6rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="${h.img ? `https://myradio24.com/${h.img}` : 'https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.8rem; color:#fff;">${h.song}</span></td>
-                    </tr>
-                `).join('');
+                const now = new Date();
+                const day = String(now.getDate()).padStart(2, '0');
+                const mName = t.months[now.getMonth()];
+                const fDate = document.getElementById('full-date'); if(fDate) fDate.innerText = `${day} ${mName} ${now.getFullYear()}`;
+                const tContent = document.getElementById("ticker-content");
+                if(tContent) { const ti = t.ticker.map(item => `<div class="ticker-item">${item}</div>`).join(""); tContent.innerHTML = ti + ti; }
+                const navs = { 'nav-news': t.news, 'nav-cup': t.cup, 'nav-radio': t.radio, 'nav-chart': t.chart, 'nav-odds': t.odds, 'nav-vote': t.vote };
+                for(const id in navs) { const el = document.getElementById(id); if(el) el.innerHTML = `<i class="fi fi-rr-${id.split('-')[1]}"></i> ${navs[id]}`; }
+            } catch(e) {}
+
+            // 1. Qualified / Eliminated & Archive
+            try {
+                const qList = document.getElementById("q-list");
+                if(qList) {
+                    const qLab = qList.parentElement.querySelector(".side-label"); if(qLab) qLab.innerHTML = `<i class="fi fi-rr-check"></i> ${t.qualified}`;
+                    qList.innerHTML = DATA.qualifiers.map(c => `<div class="bubble"><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"><span class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(c.a)}</span></div>`).join("");
+                }
+                const eList = document.getElementById("e-list");
+                if(eList) {
+                    const eLab = eList.parentElement.querySelector(".side-label"); if(eLab) eLab.innerHTML = `<i class="fi fi-rr-cross"></i> ${t.eliminated}`;
+                    const eHtml = DATA.eliminated.map(c => `<div class="elim-bubble"><div class="tooltip">${decodeS(c.a)}</div><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"></div>`).join("");
+                    const hist18 = DATA.battles.filter(b => b.id <= 8);
+                    let hHtml = "";
+                    if(hist18.length > 0) {
+                        hHtml = `<div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:15px;">` +
+                                `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">1/8 FINALS ARCHIVE</div>` +
+                                hist18.map(b => {
+                                    const win1 = b.w === 1, win2 = b.w === 2;
+                                    return `<div style="font-size:0.55rem; color:#666; margin-bottom:6px; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
+                                    `<div style="display:flex; justify-content:space-between; ${win1?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a1)}</span> <span>${b.sc1}</span></div>` +
+                                    `<div style="display:flex; justify-content:space-between; ${win2?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a2)}</span> <span>${b.sc2}</span></div></div>`;
+                                }).join('') + `</div>`;
+                    }
+                    eList.innerHTML = eHtml + hHtml;
+                }
+            } catch(e) {}
+
+            // 2. Enhanced QF Bracket
+            try {
+                const battles = DATA.battles.filter(b => b.id >= 9);
+                const qfDetails = {
+                    9: { name: "THE NORTHERN DUEL", tag1: "ELECTRO-CHAO", tag2: "NORDIC POP" },
+                    10: { name: "ETHNO COLLISION", tag1: "FOLK-CORE", tag2: "RETRO-POP" },
+                    11: { name: "MELODIC BATTLE", tag1: "SCANDI-POP", tag2: "BALKAN BEAT" },
+                    12: { name: "EXPERIMENTAL NIGHT", tag1: "HARDWARE", tag2: "POP-GLOW" }
+                };
+
+                let bHtml = "";
+                battles.forEach((b, i) => {
+                    if(i % 2 === 0) {
+                        const b1 = b, b2 = battles[i+1];
+                        const rM = (m) => {
+                            if(!m) return "";
+                            const details = qfDetails[m.id] || { name: "QF MATCH", tag1: "INSIDER", tag2: "INSIDER" };
+                            const isL = m.status === 'LIVE';
+                            const p1 = parseInt(m.sc1) || 0, p2 = parseInt(m.sc2) || 0;
+                            return `<div class="card ${isL?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.02); margin-bottom:15px; border-top: 4px solid var(--cyan);">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                                    <span style="font-size:0.55rem; color:var(--cyan); font-weight:900; letter-spacing:0.2em;">${details.name}</span>
+                                    ${isL ? '<span class="live-tag" style="margin:0; padding:2px 6px; font-size:0.5rem;">LIVE</span>' : ''}
+                                </div>
+                                
+                                <div style="display:flex; align-items:center; gap:12px;">
+                                    <img src="${getH(m.t1)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
+                                    <div style="flex-grow:1;">
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a1)}</div>
+                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc1}</div>
+                                        </div>
+                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag1}</div>
+                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p1}%; background:var(--cyan);"></div></div>
+                                    </div>
+                                </div>
+
+                                <div style="display:flex; align-items:center; gap:12px; margin-top:20px;">
+                                    <img src="${getH(m.t2)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
+                                    <div style="flex-grow:1;">
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a2)}</div>
+                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc2}</div>
+                                        </div>
+                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag2}</div>
+                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p2}%; background:var(--cyan);"></div></div>
+                                    </div>
+                                </div>
+                            </div>`;
+                        };
+                        bHtml += rM(b1) + (b2 ? `<div style="text-align:center; margin:10px 0; opacity:0.2;"><div style="height:1px; background:#fff; width:100px; margin:0 auto;"></div></div>` + rM(b2) : "");
+                    }
+                });
+                const bCont = document.getElementById("bracket"); if(bCont) bCont.innerHTML = bHtml;
+                const cSect = document.getElementById("cup-sect"); if(cSect) {
+                    const cTitle = cSect.querySelector(".section-title-base"); if(cTitle) cTitle.innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.standings}`;
+                }
+            } catch(e) {}
+
+            // 3. Roadmap & Chart & Vote & Odds
+            try {
+                const rs = document.getElementById("roadmap-sect"); if(rs) rs.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-calendar-lines"></i> ${t.roadmap}`;
+                if(DATA.roadmap) document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map(item => `<div class="bubble ${item.s==='LIVE'?'status-live-pulse':''}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${item.s==='LIVE'?'var(--acid)':(item.s==='MAJOR'?'var(--pink)':'#333')};"><div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span><span style="font-size:0.6rem; font-weight:900; color:${item.s==='LIVE'?'var(--acid)':'#555'}; text-transform:uppercase;">${item.s}</span></div><div style="margin-top:5px;"><div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div><div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div></div></div>`).join("");
+                
+                const cs = document.getElementById("chart-sect"); if(cs) {
+                    const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 31.03.2026`;
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:30px; height:30px; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
+                }
+
+                const os = document.getElementById("odds-sect"); if(os) {
+                    os.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-chart-line-up"></i> ${t.bookmakers}`;
+                    document.getElementById("odds-list").innerHTML = DATA.odds.map(o => `<div class="bubble" style="padding:8px; margin-bottom:5px;"><span style="color:var(--cyan); font-weight:900; width:20px;">${o.r}</span><img src="${getH(o.id)}" class="heart-shape" style="width:20px; height:20px; margin:0 8px;"><div style="flex-grow:1; font-size:0.8rem;">${o.c}</div><span style="font-weight:900; color:var(--cyan);">${o.p}</span></div>`).join("");
+                }
+
+                const vs = document.getElementById("vote-sect"); if(vs) {
+                    vs.querySelector(".section-title-base").innerText = t.vote_now;
+                    const vbs = vs.querySelectorAll("b"); if(vbs.length>=2){vbs[0].innerText=t.deadline; vbs[1].innerText=t.premiere;}
+                    const vBtn = vs.querySelector(".order-btn"); if(vBtn) vBtn.innerHTML = `<i class="fi fi-rr-checkbox"></i> ${t.open_vote}`;
+                    if(DATA.nominees) document.getElementById("nominee-list").innerHTML = DATA.nominees.map(n => `<div class="bubble" style="padding: 8px 10px; margin-bottom:10px; border-radius:10px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);"><img src="${n.img}" class="chart-cover" style="width:30px !important; height:30px !important; margin:0 12px 0 0; border-radius:10px !important;"><div style="overflow:hidden; flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(n.a)}</div><div style="font-size:0.75rem; opacity:0.6;">${decodeS(n.s)}</div></div><a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a></div>`).join("");
+                }
+            } catch(e) {}
+
+            // 7. News
+            try {
+                const nSearch = document.getElementById("news-search"); if(nSearch) {
+                    nSearch.placeholder = t.search;
+                    const sVal = nSearch.value.toLowerCase().trim();
+                    const fNews = DATA.news.filter(p => (p.t+p.b).toLowerCase().includes(sVal));
+                    let curD = "";
+                    document.getElementById("news-grid").innerHTML = fNews.map(p => {
+                        const pIdx = DATA.news.indexOf(p);
+                        const isF = pIdx === 0 && sVal === "" && currentLang === 'ru';
+                        const pD = p.m.split(' | ')[0];
+                        let dH = ""; if(pD !== curD) { curD = pD; dH = `<div class="date-divider"><span class="date-divider-val">${pD}</span><div class="date-divider-line"></div></div>`; }
+                        return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
+                            <span class="post-meta">${p.m}</span>
+                            <div class="post-h">${replaceFlags(p.t)}</div>
+                            <div class="post-content-wrap">
+                                ${p.img ? `<img src="${p.img}" class="post-media">` : ""}
+                                <div style="flex-grow:1;">
+                                    <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
+                                    <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="action-btn" onclick="translatePost(${pIdx})" id="trans-btn-${pIdx}"><i class="fi fi-rr-globe"></i> ${t.translate}</button>
+                                <button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> ${t.copy}</button>
+                            </div>
+                        </div>`;
+                    }).join("");
+                }
             } catch(e) {}
         }
 
-        function render() {
-            if (!window.DATA) return;
+
+        async function translatePost(idx) {
+            const t = LANGS[currentLang];
+            const titleEl = document.querySelector(`#post-${idx} .post-h`);
+            const bodyEl = document.getElementById(`post-body-${idx}`);
+            const btn = document.getElementById(`trans-btn-${idx}`);
             
-            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => `
-                <div class="country-bubble">
-                    <img src="${getHeartUrl(c.id)}" class="heart-bubble">
-                    <div class="bubble-info"><span class="bubble-country">${c.id.toUpperCase()}</span><span class="bubble-artist">${c.a}</span></div>
-                </div>`).join('');
-            
-            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => `
-                <div class="country-bubble" style="opacity:0.5">
-                    <img src="${getHeartUrl(c.id)}" class="heart-bubble">
-                    <div class="bubble-info"><span class="bubble-country">${c.id.toUpperCase()}</span><span class="bubble-artist">${c.a}</span></div>
-                </div>`).join('');
+            if (btn.classList.contains('loading')) return;
+            btn.classList.add('loading');
+            btn.innerHTML = `<i class="fi fi-rr-spinner"></i> ...`;
 
-            document.getElementById('bracket-body').innerHTML = DATA.battles.map(b => `
-                <div class="battle-box ${b.status === 'LIVE' ? 'status-live' : ''}">
-                    <div class="battle-n">${b.n}</div>
-                    <div class="battle-team">
-                        <img src="${getHeartUrl(b.t1)}" style="width:30px;">
-                        <div class="team-info"><span class="team-song" style="font-size:1rem;">${b.s1}</span><br><span class="team-artist" style="font-size:0.75rem;">${b.a1}</span></div>
-                        <span class="team-score ${b.w===1?'winner-glow':''}">${b.sc1}</span>
-                    </div>
-                    <div class="battle-team">
-                        <img src="${getHeartUrl(b.t2)}" style="width:30px;">
-                        <div class="team-info"><span class="team-song" style="font-size:1rem;">${b.s2}</span><br><span class="team-artist" style="font-size:0.75rem;">${b.a2}</span></div>
-                        <span class="team-score ${b.w===2?'winner-glow':''}">${b.sc2}</span>
-                    </div>
-                </div>`).join('');
+            const textToTranslate = `${titleEl.innerText} ||| ${DATA.news[idx].b}`;
+            let targetLang = currentLang;
+            if (targetLang === 'ua') targetLang = 'uk'; // Google uses 'uk' for Ukrainian
 
-            document.getElementById('chart-list').innerHTML = DATA.chart.map(i => `
-                <tr class="chart-row">
-                    <td class="chart-cell rank">${i.r}</td>
-                    <td class="chart-cell"><img src="${i.img}" class="track-cover"></td>
-                    <td class="chart-cell"><span class="artist">${i.a}</span><br><small>${i.s}</small></td>
-                    <td class="chart-cell pts">${i.p}</td>
-                </tr>`).join('');
-
-            document.getElementById('news-grid').innerHTML = DATA.news.map(p => {
-                const title = replaceFlags(p.t);
-                const body = linkify(replaceFlags(p.b));
-                let mediaHtml = "";
-                if (p.isVideo && p.vid) {
-                    mediaHtml = `<video class="post-video" src="${p.vid}" autoplay loop muted playsinline controls></video>`;
-                } else if (p.img && !p.img.includes("telegram.org/img/emoji")) {
-                    mediaHtml = `<img class="post-image" src="${p.img}">`;
-                }
-                let pollHtml = "";
-                if (p.poll && p.poll.options) {
-                    pollHtml = `<div class="poll-container">${p.poll.options.map(opt => `<div class="poll-option">${opt}</div>`).join("")}</div>`;
-                }
-                return `
-                <div class="post-card">
-                    <div class="post-header">
-                        <span class="post-meta">${p.m}</span>
-                        <span class="source-badge ${p.id === 'lv' ? 'badge-lv' : 'badge-yv'}">${p.id === 'lv' ? 'Marginalia' : 'YourVision'}</span>
-                    </div>
-                    <a href="${p.u}" target="_blank" style="text-decoration:none;"><span class="post-h">${title}</span></a>
-                    ${mediaHtml}
-                    <div class="post-b">${body}</div>
-                    ${pollHtml}
-                    <div style="clear:both;"></div>
-                </div>`;
-            }).join('');
+            try {
+                const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t&q=${encodeURIComponent(textToTranslate)}`);
+                const data = await res.json();
+                let translated = data[0].map(item => item[0]).join("");
+                
+                const parts = translated.split("|||");
+                titleEl.innerText = parts[0].trim();
+                bodyEl.innerHTML = parts[1].trim().replace(/\n/g, "<br>");
+                
+                btn.innerHTML = `<i class="fi fi-rr-check"></i> DONE`;
+                btn.style.color = "var(--acid)";
+            } catch (e) {
+                console.error("Translation error", e);
+                btn.innerHTML = `<i class="fi fi-rr-cross"></i> ERROR`;
+            }
         }
+
+        function togglePost(idx) {
+            const card = document.getElementById(`post-${idx}`);
+            const body = document.getElementById(`post-body-${idx}`);
+            const btn = document.getElementById(`post-btn-${idx}`);
+            const t = LANGS[currentLang];
+            if (body.classList.contains('expanded')) {
+                body.classList.remove('expanded');
+                card.classList.remove('is-expanded');
+                btn.innerHTML = `<i class="fi fi-rr-angle-small-down"></i> ${t.read_more}`;
+            } else {
+                body.classList.add('expanded');
+                card.classList.add('is-expanded');
+                btn.innerHTML = `<i class="fi fi-rr-angle-small-up"></i> ${t.show_less}`;
+            }
+        }
+
+        function handleReaction(pIdx, emoji) {
+            const rKey = `yv_react_${pIdx}_${emoji}`;
+            if (localStorage.getItem(rKey)) localStorage.removeItem(rKey);
+            else localStorage.setItem(rKey, '1');
+            render();
+        }
+
+        function copyPost(idx) {
+            const url = window.location.origin + window.location.pathname + '#post-' + idx;
+            navigator.clipboard.writeText(url);
+            alert('Link copied to clipboard!');
+        }
+
+        function scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                const headerOffset = 150;
+                const elementPosition = el.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+            }
+        }
+
+        let trackStart = 0, trackDur = 0;
+
+        async function syncRadio() {
+            try {
+                const r = await fetch("https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=" + Date.now());
+                const d = await r.json();
+                const cur = d.songs[d.songs.length - 1];
+                const artist = decodeS(d.artist || cur.song.split(" - ")[0]);
+                const song = decodeS(d.songtitle || cur.song.split(" - ")[1]);
+                
+                document.getElementById("radio-artist").innerText = artist;
+                document.getElementById("radio-song").innerText = song;
+                
+                const coverUrl = `https://myradio24.com/${d.imgbig && !d.imgbig.includes('nocover') ? d.imgbig : 'assets/heart_white_2026.svg'}`;
+                document.getElementById("player-cover").style.backgroundImage = `url("${coverUrl}")`;
+                document.getElementById("ambient-glow").style.background = d.imgbig && !d.imgbig.includes('nocover') ? 'var(--pink)' : 'var(--cyan)';
+                
+                // Discovery
+                const query = encodeURIComponent(`${artist} ${song}`);
+                document.getElementById("spotify-link").href = `https://open.spotify.com/search/${query}`;
+                document.getElementById("apple-link").href = `https://music.apple.com/search?term=${query}`;
+                
+                // Share
+                document.getElementById("share-btn").onclick = () => {
+                    const text = encodeURIComponent(`Слушаю ${artist} — «${song}» на YourVision Radio! 🎧\nПрисоединяйся к инсайдерам: https://levdanskiy.github.io/YourEurovision-Hub/`);
+                    window.open(`https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/&text=${text}`, '_blank');
+                };
+
+                // Progress logic
+                const timeParts = cur.time.split(":");
+                const now = new Date();
+                const start = new Date();
+                start.setHours(timeParts[0], timeParts[1], timeParts[2]);
+                trackStart = start.getTime() / 1000;
+                trackDur = d.next_in > 0 ? d.next_in : 180; // mock 3m if not provided
+
+                document.getElementById("hist-list").innerHTML = d.songs.slice().reverse().slice(0,10).map((h, idx) => {
+                    const pts = decodeS(h.song).split(" - ");
+                    const artist = pts[0], song = pts[1] || '...';
+                    const query = encodeURIComponent(`${artist} ${song}`);
+                    const isNow = idx === 0;
+                    const cover = h.img ? "https://myradio24.com/" + h.img : "assets/heart_white_2026.svg";
+                    
+                    return `<div class="hist-item ${isNow?'hist-now':''}">
+                        <div class="hist-cover" style="background-image:url('${cover}')"></div>
+                        <div class="hist-content">
+                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time">${h.time.substring(0,5)}</span>`}
+                            <div class="hist-artist">${artist}</div>
+                            <div class="hist-track">${song}</div>
+                            <div class="hist-discovery">
+                                <a href="https://open.spotify.com/search/${query}" target="_blank" title="Spotify"><i class="fi fi-brands-spotify"></i></a>
+                                <a href="https://music.apple.com/search?term=${query}" target="_blank" title="Apple Music"><i class="fi fi-brands-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>`;
+                }).join("");
+            } catch(e) {}
+        }
+
+        function updateProgress() {
+            if (!trackStart) return;
+            const now = Date.now() / 1000;
+            const elapsed = now - trackStart;
+            if (elapsed < 0) return;
+            const pct = Math.min((elapsed / trackDur) * 100, 100);
+            document.getElementById("progress-bar").style.width = pct + "%";
+        }
+
+        setInterval(update, 1000); 
+        setInterval(syncRadio, 15000);
+        setInterval(updateProgress, 1000);
+        window.onload = () => { update(); render(); syncRadio(); fetchWeather(); };
 
         var isPlaying = false;
-        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play');
-        playBtn.onclick = () => {
-            if (!isPlaying) {
-                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
-                audio.play(); isPlaying = true;
-                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-            } else {
-                audio.pause(); audio.src = ""; isPlaying = false;
-                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24"><path d="M8 5v14l11-7z"/></svg>';
-            }
+        var audio = document.getElementById("audio-stream"), playBtn = document.getElementById("toggle-play");
+        var volSlider = document.getElementById("volume-slider");
+
+        // Load saved volume
+        const savedVol = localStorage.getItem('yv_volume') || 0.5;
+        audio.volume = savedVol;
+        volSlider.value = savedVol;
+
+        volSlider.oninput = (e) => {
+            const val = e.target.value;
+            audio.volume = val;
+            localStorage.setItem('yv_volume', val);
         };
 
-        function update() {
-            document.getElementById('clock').innerText = "RIGA: " + new Date().toLocaleTimeString('ru-RU');
-            updateTimers();
-        }
-        setInterval(update, 1000); setInterval(syncRadio, 15000);
-        window.onload = () => { render(); syncRadio(); };
+        playBtn.onclick = () => {
+            if (!isPlaying) { 
+                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now(); 
+                audio.muted = false;
+                audio.play(); isPlaying = true; 
+                playBtn.style.background = "var(--pink)";
+                playBtn.innerHTML = '<i class="fi fi-rr-stop" style="font-size:1.5rem; color:white;"></i>';
+            } else { 
+                audio.pause(); audio.src = ""; isPlaying = false; 
+                playBtn.style.background = "white";
+                playBtn.innerHTML = '<i class="fi fi-rr-play" style="font-size:1.5rem; color:black;"></i>';
+            }
+        };
     </script>
 </body>
 </html>

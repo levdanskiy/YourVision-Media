@@ -1,4 +1,4 @@
-var DATA = {
+{
     "battles": [
         {
             "id": 9,
@@ -1019,4 +1019,4 @@ var DATA = {
             "s": "MAJOR"
         }
     ]
-};
+}
