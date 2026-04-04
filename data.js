@@ -903,21 +903,21 @@ var DATA = {
     ],
     "roadmap": [
         {
-            "d": "02.04",
-            "t": "DAY OFF",
-            "e": "Rest & Strategy Session",
-            "s": "WAITING"
-        },
-        {
-            "d": "03.04",
-            "t": "1/4 FINAL #1",
-            "e": "🇫🇮 Linda & Pete vs 🇩🇰 Søren",
-            "s": "FINISHED"
-        },
-        {
             "d": "04.04",
             "t": "1/4 FINAL #2",
             "e": "🇬🇷 Akylas vs 🇬🇪 Bzikebi",
+            "s": "MAJOR"
+        },
+        {
+            "d": "05.04",
+            "t": "1/4 FINAL #3",
+            "e": "🇸🇪 Felicia vs 🇲🇩 Satoshi",
+            "s": "MAJOR"
+        },
+        {
+            "d": "06.04",
+            "t": "1/4 FINAL #4",
+            "e": "🇬🇧 LMNC vs 🇧🇬 Dara",
             "s": "MAJOR"
         },
         {
