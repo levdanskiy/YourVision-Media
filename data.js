@@ -577,16 +577,46 @@ var DATA = {
     ],
     "news": [
         {
-            "m": "04.04 | 11:05",
-            "id": "fi",
-            "u": "https://t.me/YourEurovision/5628",
+            "m": "04.04 | 07:13",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5630",
             "t": "🇫🇮 RESULTS: ФИНЛЯНДИЯ ЗАБИРАЕТ ПЕРВУЮ ПУТЕВКУ В ПОЛУФИНАЛ",
-            "b": "Северное дерби в первом четвертьфинале YourVision Cup 2026 завершилось безоговорочной капитуляцией Дании. Финский «Огнемет» прошелся по сетке турнира, не оставив шансов меланхоличному сторителлингу Сорена Лунда.\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #1):\n• ПОБЕДИТЕЛЬ: 🇫🇮 Finland (Linda & Pete) - 82% ★\n• Второе место: 🇩🇰 Denmark (Søren Torpegaard Lund) - 18%\nРазрыв в 64% становится самым крупным в истории текущего плей-офф. Финляндия официально подтверждает статус главного фаворита верхней части сетки и первой проходит в ПОЛУФИНАЛ 1.\n🔗 ИНТЕРАКТИВНАЯ СЕТКА: Хаб YourVision\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup",
+            "b": "Северное дерби в первом четвертьфинале YourVision Cup 2026 завершилось безоговорочной капитуляцией Дании. Финский «Огнемет» прошелся по сетке турнира, не оставив шансов меланхоличному сторителлингу Сорена Лунда.\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #1):\n• ПОБЕДИТЕЛЬ: 🇫🇮 Finland (Linda & Pete) - 82% ★\n• Второе место: 🇩🇰 Denmark (Søren Torpegaard Lund) - 18%\nРазрыв в 64% становится самым крупным в истории текущего плей-офф. Финляндия официально подтверждает статус главного фаворита верхней части сетки и первой проходит в ПОЛУФИНАЛ 1, где будет ждать победителя пары Греция - Грузия.\n🚨 ВЕРДИКТ: Линда Лампениус и Пит Паркконен создали импульс, который сейчас кажется неостановимым. Дания покидает турнир на стадии 1/4 финала, показав технически безупречный, но недостаточно энергичный продукт для этой стадии баттлов.\nСможет ли кто-то сбить пламя «Liekinheitin» на пути к финалу?\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup",
+            "img": "https://cdn4.telesco.pe/file/RE5Z75u8Rl26Oans-3cLoqufSdtDQUk_NGv_H1PSUfLpyq7AAyn8JMKlhuKWxwdX2kqgp4Uwqex0zNcyrvIKv0oxZgviK06VrR9KKjUx02LBorlWRdlPGQsJQDuu84wkCr5QngmhqVnA3ATxVseIat9iTnbrKhZYBss6GVbAyBix80NYz1jHuKMTVx1WjUIsoYVhkPRBS49M2phyPmOWMXdESS4gWjajZkurB7Uy0oeZkTM06aiBNrt4E0GMy74ech7dB7WdDqd0oWQc1DOZuBHqlYrx7In0KXuHJ9vph-eCz3GSeSOvmGgbASFnVlQNzjpKD-E9Ulf-hzIgHbEndQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775286819.0,
+            "poll": null
+        },
+        {
+            "m": "04.04 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5629",
+            "t": "⚔️ YOURVISION CUP: 1/4 ФИНАЛА - QF #2: ETHNO COLLISION",
+            "b": "Второй четвертьфинал - это битва концепций. Греческая драма против грузинского ретро-футуризма.\n🇬🇷 GREECE: Akylas - «Ferto»\nАкилас - главное открытие сезона. Его «Ferto» - это концентрированная средиземноморская энергия, TikTok-виральность и безупречный вокал. Греция идет по турниру уверенно, демонстрируя, как традиционные мотивы могут звучать максимально актуально в 2026 году.\nvs\n🇬🇪 GEORGIA: Bzikebi - «On Replay»\nЛегендарные триумфаторы JESC вернулись, чтобы покорить взрослую сцену. «On Replay» - это стильный, ироничный и невероятно цепкий ретро-поп. Грузия прошла в 1/4 финала в драматичной борьбе (50/50 по «звезде»), доказав, что их фан-база - одна из самых преданных.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в ПОЛУФИНАЛ (SF1).\nПроигравший покидает турнир.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.3 мин | ⚔️ YourVision: Quarter-Final",
             "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1775300700.0,
+            "ts": 1775286144.0,
             "poll": null
+        },
+        {
+            "m": "04.04 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5628",
+            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В ПОЛУФИНАЛ?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775286121.0,
+            "poll": {
+                "question": "📊 КТО ПРОЙДЕТ В ПОЛУФИНАЛ?",
+                "options": [
+                    "🇬🇷 GREECE (Akylas)",
+                    "🇬🇪 GEORGIA (Bzikebi)"
+                ]
+            }
         },
         {
             "m": "03.04 | 18:33",
@@ -811,18 +841,6 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "02.04 | 15:50",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5610",
-            "t": "🇸🇲 САН-МАРИНО: SENHIT ПЕРЕОСМЫСЛЯЕТ «SUPERSTAR» ДЛЯ #ALBM",
-            "b": "Официальный канал Eurovision продолжает серию «A Little Bit More». Сегодня в эфире - Senhit, «Freaky Queen» конкурса, с неожиданно камерной интерпретацией своего энергичного трека «Superstar».\nДля акустической сессии Senhit выбрала эстетику минимализма, доверив производство команде ROCKETT (Directing: Fabrizio Cestari). В этой версии «Superstar» лишается танцевального бита, обнажая чистый тембр и джазовые интонации артистки. Это не просто «кавер на саму себя», а демонстрация высокого уровня продакшна болонской студии Fonoprint.\nСтанет ли акустический «Superstar» новым фаворитом ваших плейлистов или вы предпочитаете оригинальный драйв Сенхит?\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 1.2 мин | 🇸🇲 YourVision: Insider",
-            "img": "https://cdn4.telesco.pe/file/YNO6171CVWIcz9TuKUgdIcTpw7n6S_C1iP8BAxp2LBbHmYe9H2h3MlJOLfHrSDF3t0wTjfOm78La6C32m5JzmOng9mIv27dN6Cy9JxtB1LQNDnFR8tpx2A23fwqUEkuzD3ORhaQ6dVGEaHJgZCIpbcs9g0iPoc7XO9Ke0qJJTMG66L2t1CXpRRmL2h_c0d-uZKpvKaqdMLanPqd3mcmKNOB_tKe8iTc8ftrg6f36b2W3cAHUB-lWTMcOWXRNksAtUjLkj2_p-NLsDOKFxnZ15GN-TUhTNGqhRyXn6fbE6bxp7RwhN5dI7Z_i7lBm7P0qOZD-cKWCLIqyr6wfox3TDA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775145020.0,
-            "poll": null
-        },
-        {
             "m": "02.04 | 15:02",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5912",
@@ -832,30 +850,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1775142126.0,
-            "poll": null
-        },
-        {
-            "m": "02.04 | 13:28",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5609",
-            "t": "🎟 ВЕНА 2026 - РОЗЫГРЫШ БИЛЕТОВ К 70-ЛЕТИЮ КОНКУРСА",
-            "b": "Европейский вещательный союз (EBU) совместно с Moroccanoil запускает празднование 70-летия Евровидения. На кону - шесть пар билетов на главные шоу сезона в Вене (финал или полуфиналы).\n📋 КАК ПРИНЯТЬ УЧАСТИЕ:\n1.  Подписаться на @Eurovision и @moroccanoileu в Instagram.\n2.  Поставить лайк под постом о розыгрыше.\n3.  Оставить комментарий с эмодзи-флагом вашей любимой песни этого сезона.\nГотовы ли вы увидеть триумф 2026 года своими глазами?\n🔗 УСЛОВИЯ: Instagram\n⏱️ Время чтения: 1.1 мин | 🌍 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/I6Urp6JeqyOhuG7LIMS7htKfUClVXs76Q3eXPqMIjIEhA2Rh-VzuKGbipMCZcHCXTJgulfzPpDCR-8o3Y5zS8QJAtF8o7Bzv_OQMDZre97l4YtaRLCA7zEH19ub0UI5tO96TJ2Z7T2GTWXm9MIIrsMzhjus6XXEqmKguf2nlMk9yP_DhV1F9h3h6Lw0b8lzgIXFyVOJ8qcSifgDTkEnfwXbCxl186AapJcW7G-cxE1u2vKCB7uyZHjjWpoOPzLaSh9wzafL0XAdVdZGYtNbx4CBBfRkn8zPgnySgBSWzKnlWDcGh9F4XecWHIyPk-z96UP5hZVUz_Yo-hVK4oQlKJA",
-            "vid": "https://cdn4.telesco.pe/file/f2683aa026.mp4?token=OKRpvvR58FkfvbsDUEsuMbYQSTn3sub-vZDhAU2OhrDwxcDKoUyaNPngJMWwI-PUR0-PFFi44vlcN9Hhbev8RVpoIZG-xf7ALMiPGJkRR1SIRp1pjGIZKeeH3zEYoE4Xxww9QyTTc2eL3F4KYgjGnp9hJGrgUJZW9UKhwRhph1gTeCNwQE80BFyXU_agx4JJrK7u_U-3AA-YgUMylVczKDAwo1kC54XpSG8fbC19KYIDqa5QfRGQpXHap-NFoAzJVCXymi9YL9Wwuj2Ygx8KFn9BlyWOylyUEzWNDQ-2iSEPb-8CkDHu-PLO3eQLtpjIIJTkSfYaCLHN4d0gEM8LGA",
-            "isVideo": true,
-            "ts": 1775136523.0,
-            "poll": null
-        },
-        {
-            "m": "02.04 | 09:23",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5608",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА ЗАВЕРШЕНА - СЕТКА 1/4 ОПРЕДЕЛЕНА",
-            "b": "Последний слот в четвертьфинале забирает Dara. Болгарская поп-дива с треком «Bangaranga» набрала 57% голосов, остановив Айдена из Мальты.\n🏆 ИТОГИ BATTLE #8:\n🇧🇬 Bulgaria (Dara): 57% (Winner)\n🇲🇹 Malta (Aidan): 43%\nСегодня в кубке ВЫХОДНОЙ. Восемь сильнейших артистов сезона 2026 готовы к решающим битвам за выход в полуфинал.\nПАРЫ 1/4 ФИНАЛА (START: 03.04):\n1. QF1: THE NORTHERN DUEL\n🇫🇮 Linda & Pete vs 🇩🇰 Søren Torpegaard\nБитва Скандинавии: скрипичный драйв против датского меланхоличного попа.\n2. QF2: ETHNO COLLISION\n🇬🇷 Akylas vs 🇬🇪 Bzikebi\nСтолкновение греческого и грузинского бэнгеров.\n3. QF3: MELODIC BATTLE\n🇸🇪 Felicia vs 🇲🇩 Satoshi\nЧистый шведский продакшн против молдавской энергии.\n4. QF4: EXPERIMENTAL NIGHT\n🇬🇧 Look Mum No Computer vs 🇧🇬 Dara\nБитва за SF2: аналоговые синтезаторы против мощного поп-вокала.\nЛОГИКА: Пары сформированы согласно турнирной сетке. Нас ждут четыре дня экстремального голосования. Кто из этой восьмерки достоин короны в Вене?\n🔗 СЛЕДИТЬ ЗА СЕТКОЙ: Hub\n⏱️ Время чтения: 1.5 мин | 🏆 YourVision: Cup",
-            "img": "https://cdn4.telesco.pe/file/bM2TQvFuA4_SK1ZZ6np3VSCPoVNo80qyvukQeorpFKHwM3bb_MPQUqE764OzTjPal0Tz94tHmQt1D0ubJw68WF7u4aiJy5NuITyzFilefjVQ6CkrMth1IUz2FtDn3N6zcMu0MDqYr4puYglEDBhmkHllYHszfIlTpluDK_oIBenfCZdH9OVOLumGNNAOXSHbrXWbomX0dUDTbfSYssVYuio7j8F4PCPXZN8p7fvb8HwmQJpt4UrSDkM_GCOQnRPtKk8gBvroGX4BMMqoBNXgS62rYPDtP-dJhZ5m1qlweEzNT1rHKPfDIpGEJB92jXCMfHBLzIrRxNRhA82DPDRXOw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775121789.0,
             "poll": null
         },
         {
