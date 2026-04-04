@@ -408,23 +408,23 @@ var DATA = {
     "chart": [
         {
             "r": 1,
-            "a": "Greczula",
-            "s": "Half of Me",
-            "p": "91 pts",
+            "a": "Taylor Swift",
+            "s": "The Fate Of Ophelia",
+            "p": "99 pts",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
         },
         {
             "r": 2,
-            "a": "Sissal",
-            "s": "Infinity",
-            "p": "70 pts",
+            "a": "sombr",
+            "s": "12 to 12",
+            "p": "89 pts",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
         },
         {
             "r": 3,
-            "a": "HVNDS",
-            "s": "Dor",
-            "p": "70 pts",
+            "a": "RAYE",
+            "s": "WHERE IS MY HUSBAND!",
+            "p": "89 pts",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
         },
         {
@@ -899,6 +899,396 @@ var DATA = {
             "isVideo": false,
             "ts": 1774936838.0,
             "poll": null
+        }
+    ],
+    "roadmap": [
+        {
+            "d": "04.04",
+            "t": "1/4 FINAL #2",
+            "e": "🇬🇷 Akylas vs 🇬🇪 Bzikebi",
+            "s": "MAJOR"
+        },
+        {
+            "d": "05.04",
+            "t": "1/4 FINAL #3",
+            "e": "🇸🇪 Felicia vs 🇲🇩 Satoshi",
+            "s": "MAJOR"
+        },
+        {
+            "d": "06.04",
+            "t": "1/4 FINAL #4",
+            "e": "🇬🇧 LMNC vs 🇧🇬 Dara",
+            "s": "MAJOR"
+        },
+        {
+            "d": "12.05",
+            "t": "SEMI-FINAL 1",
+            "e": "Live from Vienna",
+            "s": "CRITICAL"
+        },
+        {
+            "d": "14.05",
+            "t": "SEMI-FINAL 2",
+            "e": "Live from Vienna",
+            "s": "CRITICAL"
+        },
+        {
+            "d": "16.05",
+            "t": "GRAND FINAL",
+            "e": "Live from Vienna",
+            "s": "CRITICAL"
+        }
+    ],
+    "esc": {
+        "sf1": [
+            {
+                "ro": 1,
+                "id": "md",
+                "c": "Moldova"
+            },
+            {
+                "ro": 2,
+                "id": "se",
+                "c": "Sweden"
+            },
+            {
+                "ro": 3,
+                "id": "hr",
+                "c": "Croatia"
+            },
+            {
+                "ro": 4,
+                "id": "gr",
+                "c": "Greece"
+            },
+            {
+                "ro": 5,
+                "id": "pt",
+                "c": "Portugal"
+            },
+            {
+                "ro": 6,
+                "id": "ge",
+                "c": "Georgia"
+            },
+            {
+                "ro": 0,
+                "id": "it",
+                "c": "Italy (Guest)"
+            },
+            {
+                "ro": 7,
+                "id": "fi",
+                "c": "Finland"
+            },
+            {
+                "ro": 8,
+                "id": "me",
+                "c": "Montenegro"
+            },
+            {
+                "ro": 9,
+                "id": "ee",
+                "c": "Estonia"
+            },
+            {
+                "ro": 10,
+                "id": "il",
+                "c": "Israel"
+            },
+            {
+                "ro": 0,
+                "id": "de",
+                "c": "Germany (Guest)"
+            },
+            {
+                "ro": 11,
+                "id": "be",
+                "c": "Belgium"
+            },
+            {
+                "ro": 12,
+                "id": "lt",
+                "c": "Lithuania"
+            },
+            {
+                "ro": 13,
+                "id": "sm",
+                "c": "San Marino"
+            },
+            {
+                "ro": 14,
+                "id": "pl",
+                "c": "Poland"
+            },
+            {
+                "ro": 15,
+                "id": "rs",
+                "c": "Serbia"
+            }
+        ],
+        "sf2": [
+            {
+                "ro": 1,
+                "id": "bg",
+                "c": "Bulgaria"
+            },
+            {
+                "ro": 2,
+                "id": "az",
+                "c": "Azerbaijan"
+            },
+            {
+                "ro": 3,
+                "id": "ro",
+                "c": "Romania"
+            },
+            {
+                "ro": 4,
+                "id": "lu",
+                "c": "Luxembourg"
+            },
+            {
+                "ro": 5,
+                "id": "cz",
+                "c": "Czechia"
+            },
+            {
+                "ro": 0,
+                "id": "fr",
+                "c": "France (Guest)"
+            },
+            {
+                "ro": 6,
+                "id": "am",
+                "c": "Armenia"
+            },
+            {
+                "ro": 7,
+                "id": "ch",
+                "c": "Switzerland"
+            },
+            {
+                "ro": 8,
+                "id": "cy",
+                "c": "Cyprus"
+            },
+            {
+                "ro": 0,
+                "id": "at",
+                "c": "Austria (Guest)"
+            },
+            {
+                "ro": 9,
+                "id": "lv",
+                "c": "Latvia"
+            },
+            {
+                "ro": 10,
+                "id": "dk",
+                "c": "Denmark"
+            },
+            {
+                "ro": 11,
+                "id": "au",
+                "c": "Australia"
+            },
+            {
+                "ro": 12,
+                "id": "ua",
+                "c": "Ukraine"
+            },
+            {
+                "ro": 0,
+                "id": "gb",
+                "c": "United Kingdom (Guest)"
+            },
+            {
+                "ro": 13,
+                "id": "al",
+                "c": "Albania"
+            },
+            {
+                "ro": 14,
+                "id": "mt",
+                "c": "Malta"
+            },
+            {
+                "ro": 15,
+                "id": "no",
+                "c": "Norway"
+            }
+        ],
+        "final": [
+            {
+                "ro": 25,
+                "id": "at",
+                "c": "Austria"
+            }
+        ]
+    },
+    "odds": [
+        {
+            "r": 1,
+            "id": "fi",
+            "c": "Finland",
+            "p": "32%"
+        },
+        {
+            "r": 2,
+            "id": "fr",
+            "c": "France",
+            "p": "11%"
+        },
+        {
+            "r": 3,
+            "id": "dk",
+            "c": "Denmark",
+            "p": "9%"
+        },
+        {
+            "r": 4,
+            "id": "au",
+            "c": "Australia",
+            "p": "8%"
+        },
+        {
+            "r": 5,
+            "id": "gr",
+            "c": "Greece",
+            "p": "8%"
+        },
+        {
+            "r": 6,
+            "id": "se",
+            "c": "Sweden",
+            "p": "5%"
+        },
+        {
+            "r": 7,
+            "id": "il",
+            "c": "Israel",
+            "p": "4%"
+        },
+        {
+            "r": 8,
+            "id": "ua",
+            "c": "Ukraine",
+            "p": "3%"
+        },
+        {
+            "r": 9,
+            "id": "it",
+            "c": "Italy",
+            "p": "3%"
+        },
+        {
+            "r": 10,
+            "id": "ro",
+            "c": "Romania",
+            "p": "2%"
+        }
+    ],
+    "nominees": [
+        {
+            "a": "HOLLYFLAME",
+            "s": "ТОНУ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "SQWOZ BAB",
+            "s": "КУПЕР",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/ff/19/e5ff194d-5f9b-f4a3-835e-6484b50579cf/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ICEGERGERT & ZIVERT",
+            "s": "БАНК",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/2d/39/782d39a5-f7f2-4565-4b25-a1430343f8a3/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "UNCLEFLEXXX",
+            "s": "SMS",
+            "img": "https://i.scdn.co/image/ab67616d0000b2735a1ab9191ed8bcdbf1bac491"
+        },
+        {
+            "a": "ВАНЯ ДМИТРИЕНКО",
+            "s": "РТУТЬ",
+            "img": "https://i1.sndcdn.com/artworks-EgxKKeZ3XVE2-0-t500x500.jpg"
+        },
+        {
+            "a": "5STA FAMILY",
+            "s": "РАЗ, ДВА",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/0b/f6/8f0bf6e8-07ee-71df-0c89-9d466d778cd1/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "MONA",
+            "s": "ПОПРОШУ ТЕБЯ",
+            "img": "https://i.scdn.co/image/ab67616d0000b273263162ce269963fe01a5d2f3"
+        },
+        {
+            "a": "ЛЮБОВЬ УСПЕНСКАЯ & JAKONE",
+            "s": "ПЛАКАЛА НАДЕЖДА",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "FILATOV & KARAS",
+            "s": "ВКЛЮЧИ МУЗЫКУ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "МОТ",
+            "s": "НАМЁК НА НАС",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "SABI & MIA BOYKA",
+            "s": "БАЗОВЫЙ МИНИМУМ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "GAYAZOV$ BROTHER$",
+            "s": "РУССКАЯ РУЛЕТКА",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "XCHO",
+            "s": "ТЫ И Я",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ЛЁША СВИК & NYUSHA",
+            "s": "ПРОБУДИ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "MACAN",
+            "s": "ОСТАНЬСЯ ОБРАЗОМ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "LYRIQ",
+            "s": "КАССЕТЫ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/12/8e/b7128e10-03f8-d81e-ba7f-4e5f76fb177d/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "JONY",
+            "s": "ПОМНЮ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "SERYABKINA",
+            "s": "АСФАЛЬТ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ARTIK & ASTI",
+            "s": "МОДНЫЙ ПОП",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "КЛАВА КОКА",
+            "s": "СПЛЕТНИ. ШУМ. ЛУК.",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
         }
     ]
 };
