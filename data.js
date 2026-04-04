@@ -900,5 +900,99 @@ var DATA = {
             "ts": 1774936838.0,
             "poll": null
         }
+    ],
+    "roadmap": [
+        {
+            "d": "02.04",
+            "t": "DAY OFF",
+            "e": "Rest & Strategy Session",
+            "s": "WAITING"
+        },
+        {
+            "d": "03.04",
+            "t": "1/4 FINAL #1",
+            "e": "🇫🇮 Linda & Pete vs 🇩🇰 Søren",
+            "s": "FINISHED"
+        },
+        {
+            "d": "04.04",
+            "t": "1/4 FINAL #2",
+            "e": "🇬🇷 Akylas vs 🇬🇪 Bzikebi",
+            "s": "MAJOR"
+        },
+        {
+            "d": "12.05",
+            "t": "SEMI-FINAL 1",
+            "e": "Live from Vienna",
+            "s": "CRITICAL"
+        },
+        {
+            "d": "14.05",
+            "t": "SEMI-FINAL 2",
+            "e": "Live from Vienna",
+            "s": "CRITICAL"
+        },
+        {
+            "d": "16.05",
+            "t": "GRAND FINAL",
+            "e": "Live from Vienna",
+            "s": "CRITICAL"
+        }
+    ],
+    "esc": {
+        "sf1": [
+            {"ro": 1, "id": "md", "c": "Moldova"},
+            {"ro": 2, "id": "se", "c": "Sweden"},
+            {"ro": 3, "id": "hr", "c": "Croatia"},
+            {"ro": 4, "id": "gr", "c": "Greece"},
+            {"ro": 5, "id": "pt", "c": "Portugal"},
+            {"ro": 6, "id": "ge", "c": "Georgia"},
+            {"ro": 0, "id": "it", "c": "Italy (Guest)"},
+            {"ro": 7, "id": "fi", "c": "Finland"},
+            {"ro": 8, "id": "me", "c": "Montenegro"},
+            {"ro": 9, "id": "ee", "c": "Estonia"},
+            {"ro": 10, "id": "il", "c": "Israel"},
+            {"ro": 0, "id": "de", "c": "Germany (Guest)"},
+            {"ro": 11, "id": "be", "c": "Belgium"},
+            {"ro": 12, "id": "lt", "c": "Lithuania"},
+            {"ro": 13, "id": "sm", "c": "San Marino"},
+            {"ro": 14, "id": "pl", "c": "Poland"},
+            {"ro": 15, "id": "rs", "c": "Serbia"}
+        ],
+        "sf2": [
+            {"ro": 1, "id": "bg", "c": "Bulgaria"},
+            {"ro": 2, "id": "az", "c": "Azerbaijan"},
+            {"ro": 3, "id": "ro", "c": "Romania"},
+            {"ro": 4, "id": "lu", "c": "Luxembourg"},
+            {"ro": 5, "id": "cz", "c": "Czechia"},
+            {"ro": 0, "id": "fr", "c": "France (Guest)"},
+            {"ro": 6, "id": "am", "c": "Armenia"},
+            {"ro": 7, "id": "ch", "c": "Switzerland"},
+            {"ro": 8, "id": "cy", "c": "Cyprus"},
+            {"ro": 0, "id": "at", "c": "Austria (Guest)"},
+            {"ro": 9, "id": "lv", "c": "Latvia"},
+            {"ro": 10, "id": "dk", "c": "Denmark"},
+            {"ro": 11, "id": "au", "c": "Australia"},
+            {"ro": 12, "id": "ua", "c": "Ukraine"},
+            {"ro": 0, "id": "gb", "c": "United Kingdom (Guest)"},
+            {"ro": 13, "id": "al", "c": "Albania"},
+            {"ro": 14, "id": "mt", "c": "Malta"},
+            {"ro": 15, "id": "no", "c": "Norway"}
+        ],
+        "final": [
+            {"ro": 25, "id": "at", "c": "Austria"}
+        ]
+    },
+    "odds": [
+        { "r": 1, "id": "fi", "c": "Finland", "p": "32%" },
+        { "r": 2, "id": "fr", "c": "France", "p": "11%" },
+        { "r": 3, "id": "dk", "c": "Denmark", "p": "9%" },
+        { "r": 4, "id": "au", "c": "Australia", "p": "8%" },
+        { "r": 5, "id": "gr", "c": "Greece", "p": "8%" },
+        { "r": 6, "id": "se", "c": "Sweden", "p": "5%" },
+        { "r": 7, "id": "il", "c": "Israel", "p": "4%" },
+        { "r": 8, "id": "ua", "c": "Ukraine", "p": "3%" },
+        { "r": 9, "id": "it", "c": "Italy", "p": "3%" },
+        { "r": 10, "id": "ro", "c": "Romania", "p": "2%" }
     ]
 };
