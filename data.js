@@ -22,13 +22,13 @@ var DATA = {
             "t1": "gr",
             "a1": "Akylas",
             "s1": "Ferto",
-            "sc1": "0%",
+            "sc1": "64% ★",
             "t2": "ge",
             "a2": "Bzikebi",
             "s2": "On Replay",
-            "sc2": "0%",
-            "w": 0,
-            "status": "WAITING"
+            "sc2": "36%",
+            "w": 1,
+            "status": "DONE"
         },
         {
             "id": 11,
@@ -43,7 +43,7 @@ var DATA = {
             "s2": "Viva, Moldova!",
             "sc2": "0%",
             "w": 0,
-            "status": "WAITING"
+            "status": "LIVE"
         },
         {
             "id": 12,
@@ -679,10 +679,6 @@ var DATA = {
             "a": "Akylas"
         },
         {
-            "id": "ge",
-            "a": "Bzikebi"
-        },
-        {
             "id": "se",
             "a": "Felicia"
         },
@@ -833,6 +829,10 @@ var DATA = {
         {
             "id": "dk",
             "a": "Søren"
+        },
+        {
+            "id": "ge",
+            "a": "Bzikebi"
         }
     ],
     "nominees": [
