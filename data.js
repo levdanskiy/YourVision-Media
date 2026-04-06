@@ -37,13 +37,13 @@ var DATA = {
             "t1": "se",
             "a1": "Felicia",
             "s1": "My System",
-            "sc1": "0%",
+            "sc1": "44%",
             "t2": "md",
             "a2": "Satoshi",
             "s2": "Viva, Moldova!",
-            "sc2": "0%",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "56% ★",
+            "w": 2,
+            "status": "DONE"
         },
         {
             "id": 12,
@@ -58,7 +58,7 @@ var DATA = {
             "s2": "Bangaranga",
             "sc2": "0%",
             "w": 0,
-            "status": "WAITING"
+            "status": "LIVE"
         },
         {
             "id": 1,
@@ -679,10 +679,6 @@ var DATA = {
             "a": "Akylas"
         },
         {
-            "id": "se",
-            "a": "Felicia"
-        },
-        {
             "id": "md",
             "a": "Satoshi"
         },
@@ -833,6 +829,10 @@ var DATA = {
         {
             "id": "ge",
             "a": "Bzikebi"
+        },
+        {
+            "id": "se",
+            "a": "Felicia"
         }
     ],
     "nominees": [
