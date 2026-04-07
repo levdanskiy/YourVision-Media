@@ -52,13 +52,13 @@
             "t1": "gb",
             "a1": "Look Mum No Computer",
             "s1": "Eins, Zwei, Drei",
-            "sc1": "0%",
+            "sc1": "50%",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
-            "sc2": "0%",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "50% ★",
+            "w": 2,
+            "status": "DONE"
         },
         {
             "id": 1,
@@ -179,6 +179,36 @@
             "sc2": "57%",
             "w": 2,
             "status": "FINISHED"
+        },
+        {
+            "id": 13,
+            "n": "SF #1",
+            "qf": "TO FINAL",
+            "t1": "fi",
+            "a1": "Linda & Pete",
+            "s1": "Liekinheitin",
+            "sc1": "-",
+            "t2": "gr",
+            "a2": "Akylas",
+            "s2": "Ferto",
+            "sc2": "-",
+            "w": 0,
+            "status": "PENDING"
+        },
+        {
+            "id": 14,
+            "n": "SF #2",
+            "qf": "TO FINAL",
+            "t1": "md",
+            "a1": "Satoshi",
+            "s1": "Viva, Moldova!",
+            "sc1": "-",
+            "t2": "bg",
+            "a2": "Dara",
+            "s2": "Bangaranga",
+            "sc2": "-",
+            "w": 0,
+            "status": "PENDING"
         }
     ],
     "chart": [
@@ -683,10 +713,6 @@
             "a": "Satoshi"
         },
         {
-            "id": "gb",
-            "a": "LMNC"
-        },
-        {
             "id": "bg",
             "a": "Dara"
         }
@@ -833,6 +859,10 @@
         {
             "id": "se",
             "a": "Felicia"
+        },
+        {
+            "id": "gb",
+            "a": "LMNC"
         }
     ],
     "nominees": [
