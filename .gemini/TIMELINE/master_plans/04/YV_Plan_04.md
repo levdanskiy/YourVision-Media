@@ -40,3 +40,12 @@
 * 11:00 | **YV** | 📊 **#RESULTS:** QF #3 Winner Announced. - ⬜ [ОЖИДАНИЕ]
 * 18:00 | **AL** | 📜 **#SOURCE:** Время песка: Метафора циклического возврата. - ⬜ [ОЖИДАНИЕ]
 * 21:00 | **AL** | 🖼️ **#FRAGMENT:** Ритм брусчатки: Звук городской среды. - ⬜ [ОЖИДАНИЕ]
+
+### 13.04 (Пн)
+* 20:30 | **YV** | 🆕 **#CHART_ANNOUNCE:** Eurogroove: Vienna Prelude (Start). - ⬜ [ОЖИДАНИЕ]
+
+### 14.04 (Вт)
+* 12:00 | **YV** | 🗳️ **#VOTING_CLOSE:** Eurogroove: Vienna Prelude. - ⬜ [ОЖИДАНИЕ]
+* 17:50 | **YV** | 📢 **#CHART_REMINDER:** Eurogroove (20:30 Start). - ⬜ [ОЖИДАНИЕ]
+* 18:00 | **YV** | 📻 **#RADIO:** AllMix / Eurogroove Radio Show. - ⬜ [ОЖИДАНИЕ]
+* 19:20 | **YV** | 📊 **#CHART_RESULTS:** Eurogroove: Vienna Prelude (Final). - ⬜ [ОЖИДАНИЕ]
