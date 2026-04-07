@@ -42,6 +42,15 @@
             "status": "WAITING"
         },
         {
+            "id": "TURQUOISE_CARPET_2026",
+            "date": "2026-05-10",
+            "time": "18:00",
+            "country": "Austria",
+            "event": "Turquoise Carpet: Opening Ceremony",
+            "type": "RELEASE",
+            "status": "WAITING"
+        },
+        {
             "id": "NL_HGSF_02",
             "date": "2026-05-15",
             "time": "21:25",
