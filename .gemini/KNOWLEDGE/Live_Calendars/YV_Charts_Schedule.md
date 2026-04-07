@@ -17,7 +17,7 @@
 
 ## 🇪🇺 EUROGROOVE SERIES
 
-*   🆕 **СТАРТ (20:30):** 🇪🇺 **Eurogroove: Vienna Prelude** - ⬜ 13.04.2026
+*   🆕 **СТАРТ (20:30):** 🇪🇺 **Eurogroove: Vienna Prelude** - ⬜ 07.04.2026
 *   🏆 **ФИНАЛ (19:20):** 🇪🇺 **Eurogroove: Vienna Prelude** - ⬜ 14.04.2026
 
 ---
