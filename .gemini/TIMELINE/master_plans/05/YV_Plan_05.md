@@ -14,10 +14,11 @@
 * 22:00 | **YV** | 🏆 **#PREVIEW:** Semi-Final 1 Jury Show. - ⬜ [ОЖИДАНИЕ]
 
 ### 12.05 (Вт) - SEMI-FINAL 1
-* 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Morning update from Vienna.
-* 18:00 | **YV** | 📊 **#PREDICTION:** Final qualifiers prediction for SF1.
+* 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Morning update from Vienna. - ⬜ [ОЖИДАНИЕ]
+* 18:00 | **YV** | 📊 **#PREDICTION:** Final qualifiers prediction for SF1. - ⬜ [ОЖИДАНИЕ]
+* 21:50 | **YV** | 📢 **#LIVE_REMINDER:** Первый полуфинал: Прямой эфир (через 10 мин). - ⬜ [ОЖИДАНИЕ]
 * 22:00 | **YV** | 🏆 **#LIVE:** EUROVISION 2026 - SEMI-FINAL 1. - ⬜ [ОЖИДАНИЕ]
-* 00:15 | **YV** | ⚡ **#RESULTS:** SF1 Qualifiers announced.
+* 00:15 | **YV** | ⚡ **#RESULTS:** SF1 Qualifiers announced. - ⬜ [ОЖИДАНИЕ]
 
 ### 13.05 (Ср)
 * 12:00 | **YV** | 🧠 **#ANALYSIS:** SF1 Results and voting trends.
