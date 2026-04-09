@@ -38,11 +38,12 @@
 * 22:00 | **YV** | 🏆 **#PREVIEW:** Grand Final Jury Show.
 
 ### 16.05 (Сб) - GRAND FINAL
-* 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Final morning in Vienna.
-* 15:00 | **YV** | 📻 **#SPECIAL:** AllMix Special: Vienna 2026.
-* 19:00 | **YV** | 📊 **#PREDICTION:** Grand Final Winner Prediction.
+* 10:00 | **YV** | ⚡ **#NEWS_WIRE:** Final morning in Vienna. - ⬜ [ОЖИДАНИЕ]
+* 15:00 | **YV** | 📻 **#SPECIAL:** AllMix Special: Vienna 2026. - ⬜ [ОЖИДАНИЕ]
+* 19:00 | **YV** | 📊 **#PREDICTION:** Grand Final Winner Prediction. - ⬜ [ОЖИДАНИЕ]
+* 21:50 | **YV** | 📢 **#LIVE_REMINDER:** Гранд-Финал: Прямой эфир (через 10 мин). - ⬜ [ОЖИДАНИЕ]
 * 22:00 | **YV** | 🏆 **#LIVE:** EUROVISION 2026 - GRAND FINAL. - ⬜ [ОЖИДАНИЕ]
-* 01:45 | **YV** | 👑 **#WINNER:** Eurovision 2026 Winner announced.
+* 01:45 | **YV** | 👑 **#WINNER:** Eurovision 2026 Winner announced. - ⬜ [ОЖИДАНИЕ]
 
 ### 17.05 (Вс)
 * 12:00 | **YV** | 🏆 **#SUMMARY:** Detailed voting results (Semi-finals + Final).
