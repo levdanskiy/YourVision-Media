@@ -368,5 +368,24 @@
             "sf": 2,
             "ro": null
         }
-    }
+    },
+    "history_2025": {
+        "winner": "Austria",
+        "artist": "JJ",
+        "song": "Wasted Love",
+        "host_city": "Basel",
+        "participants_count": 37
+    },
+    "newcomers_2026": [
+        "Bulgaria",
+        "Moldova",
+        "Romania"
+    ],
+    "boycott_2026": [
+        "Iceland",
+        "Ireland",
+        "Netherlands",
+        "Slovenia",
+        "Spain"
+    ]
 }
