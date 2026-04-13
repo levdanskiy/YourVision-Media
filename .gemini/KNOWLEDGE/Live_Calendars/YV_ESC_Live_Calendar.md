@@ -67,3 +67,4 @@
 
 ### НОЯБРЬ
 * 14.11 🌏 **Бангкок (ESC Asia)**: GRAND FINAL 2026 (Live from Thailand)
+  • 🇮🇳 **Индия** (Confirmed Debut)
