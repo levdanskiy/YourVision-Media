@@ -356,6 +356,29 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "13.04 | 10:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/senhit_albm",
+            "t": "🇸🇲 САН-МАРИНО: SENHIT - OCCIDENTALI'S KARMA (COVER)",
+            "b": "Королева цифровых перформансов Senhit представила свою версию «Occidentali's Karma» в рамках серии «A Little Bit More». https://www.youtube.com/watch?v=8U_LLb06g6g",
+            "img": "https://img.youtube.com/vi/8U_LLb06g6g/maxresdefault.jpg",
+            "vid": "https://www.youtube.com/watch?v=8U_LLb06g6g",
+            "isVideo": true,
+            "ts": 1776065400
+        },
+        {
+            "m": "13.04 | 07:39",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5699",
+            "t": "🇸🇲 САН-МАРИНО: SENHIT - OCCIDENTALI'S KARMA (COVER)",
+            "b": "Королева цифровых перформансов возвращается. Представительница Сан-Марино Senhit представила свою версию итальянского суперхита «Occidentali's Karma» в рамках серии «A Little Bit More».\nРабота, созданная совместно с командой ROCKETT и режиссером Фабрицио Честари, - это больше, чем просто кавер. Это высокобюджетное визуальное высказывание, в котором Senhit мастерски сочетает иронию оригинала Франческо Габбани со своим фирменным «Freaky»-стилем. Безупречный продакшн, записанный в Болонье, еще раз подтверждает: Сан-Марино в этом году не просто участвует, а задает стандарты визуального контента для всего сезона.\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 0.8 мин | 🇸🇲 YourVision: #EurovisionALBM",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1776065971.0,
+            "poll": null
+        },
+        {
             "m": "13.04 | 07:22",
             "id": "70",
             "u": "https://t.me/YourEurovision/5698",
@@ -647,30 +670,6 @@ var DATA = {
             "vid": "https://cdn4.telesco.pe/file/e5d54a0dda.mp4?token=Sj764gPnUXmibQDrS7fTxU6WdRTr3lBWIMpOI55DfNU-Ih3jZJKPgO-wBYA8mI7E4Mn2o62baRb-4i01aBOLfAmobQdL_LyrONXqS0pl26ISLDyu-pjtHxchuPtad0NK-2CQD7gd4bGFSvUBz7aQWtD0nV94NCOOlq_I0930H410lUOI-mXTTmNV7kLDEHeeSRSN8eJwL5IQa1jFeXoH-kO4iHDWPUYE61d87nplPnZFtUIIacWNPCltFLHpUz_vm1NsiHACKHIfW0vjNwm8N1o5ZIEIHweCIfPF5dbOXfuvV_fB-NcQB5_-eioJGZZq97opztNO8XY3TLLM_7xAHjzoLYYGMqknLXWitR9ENcuYlvuH2_duRcW1gSNrDutwJRiNb4oohoOr2QiJZhWoYyGpijaw_6z9cGAq5qraeb67jIHbQJRGf3qFSIx1nXYKlYBH2IGEFbmyeDQT784STQ5YPI-eEt4U2NpNTzs5qqOhyJVQlX8AwFaoOXyE8JMF1U5N6F2kgYRk9lSL-fG7i4rS94h3rQJ8XKuOf9GXGF6tJT-wZRWgCS1AQJnzDxJQ0sz9GR52DM9Ho7mOsVJxsH0JrprSkZ-jLGCuNWz4izHcr0djjMAgjRxHVogYUkwXcmv5R27x7EdgEMGthHOr_gJwSqXM3BRMKCcD7HrBjy0",
             "isVideo": true,
             "ts": 1775808113.0,
-            "poll": null
-        },
-        {
-            "m": "10.04 | 07:58",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5680",
-            "t": ".🏆 RESULTS: ПОЛУФИНАЛ #2 - ПОП-ФУТУРИЗМ ЗАХВАТЫВАЕТ СЦЕНУ",
-            "b": "Второй полуфинальный поединок YourVision Cup 2026 завершен. Сенсации не случилось: фаворит европейских чартов Dara (Болгария) уверенно забирает последнюю путевку в решающую битву сезона.\nИТОГИ ГОЛОСОВАНИЯ (SF #2):\n🇧🇬 Болгария (Dara) - 64% ★ (Проход в Гранд-Финал)\n🇲🇩 Молдова (Satoshi) - 36%\nГРАНД-ФИНАЛ СФОРМИРОВАН:\n🇫🇮 Финляндия (Linda & Pete) vs 🇧🇬 Болгария (Dara).\nЭто битва, где лёд техно-скрипки танцует с пламенем балканского драйва. Нас ждет лобовое столкновение двух абсолютно разных, но одинаково мощных музыкальных кодов.\nРАСПИСАНИЕ:\nСегодня (10.04) в чемпионате объявлен выходной. Гранд-Финал YourVision Cup 2026 состоится завтра, в субботу, 11 апреля.\nСможет ли Болгария навязать свою игру фаворитам из Хельсинки или финский каток «Liekinheitin» уже не остановить?\n⏱️ Время чтения: 0.9 мин | 🏆 YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/pS9dLG95bxxUZ52zZhzmREKAwa9cgehQYBp8bz6UHnrDnCANCPpcjA3bk3KQo-s-92vOW5dC805sQZ29IqPJ_J3jfoYRpCmH1b3XNBVlLx1VIMmh1D6loKXCza1xIegK15th-r9hSvoisXzUD33puBwJYxszw62zJuvXwMupDtc7ewAyKRd7tCHCbXlVvCi2clOFtM-_pRmAhr6IyAI0i8_dsMsFIrK2suNBWu6uNkzgPiArXbST4Mp1fShteRn-ZFWmiIqoYyJHpw7Yi0oHl_KK7wGr3zACV9Eftv0ox9D2y4e2-6_cdP6sBWuXAwA4Y2Dw3VjpPBczPZ4QcACfjA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775807931.0,
-            "poll": null
-        },
-        {
-            "m": "09.04 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5679",
-            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - МАЛЬТА",
-            "b": "Анализ смены курса в стратегии Мальта. Мы наблюдаем попытку переосмыслить национальный код через призму современных трендов. Что эффективнее: верность традициям или радикальный апгрейд?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇲🇹 2026: Aidan - «Bella»\nСмена вектора на более концептуальное звучание. В этом году Мальта ставит на атмосферу и точно выверенный саунд, отходя от прямолинейности прошлого сезона.\n🇲🇹 2025: Miriana Conte - «Serving»\nПрошлогодняя стратегия строилась на яркости и динамике. Это была попытка захватить внимание через энергию, которая сейчас кажется фундаментом для нынешнего прогресса.\nВОПРОС К ЭКСПЕРТАМ\nСтал ли этот «сброс» настроек оправданным? Удалось ли Мальта найти ту самую золотую середину между прошлым и будущим?\nВаш голос определяет вектор развития.\n⏱️ Время чтения: 1.2 мин | MT YourVision: Reset",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775759531.0,
             "poll": null
         }
     ],
