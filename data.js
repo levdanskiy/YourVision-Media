@@ -237,134 +237,159 @@ var DATA = {
             "a": "ВАНЯ ДМИТРИЕНКО",
             "s": "РТУТЬ",
             "p": "63 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3f/ca/fc/3fcafcbe-3e34-e199-8fe1-a3a138699f45/0.jpg/600x600cc.webp"
+            "img": "https://myradio24.com/levdanskiy/covers/vanya.jpg"
         },
         {
             "a": "HOLLYFLAME",
             "s": "ТОНУ",
             "p": "62 pts (↓-1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/hollyflame.jpg"
         },
         {
             "a": "JONY",
             "s": "ПОМНЮ",
             "p": "53 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/jony.jpg"
         },
         {
             "a": "SQWOZ BAB",
             "s": "КУПЕР",
             "p": "51 pts (=)",
-            "img": "https://i.scdn.co/image/ab67616d0000b273da67945924bd52e2294348b8"
+            "img": "https://myradio24.com/levdanskiy/covers/sqwozbab.jpg"
         },
         {
             "a": "ICEGERGERT & ZIVERT",
             "s": "БАНК",
             "p": "42 pts (=)",
-            "img": "https://i.scdn.co/image/ab67616d0000b2731ec4298df8c3e233ecf1c401"
+            "img": "https://myradio24.com/levdanskiy/covers/zivert.jpg"
         },
         {
             "a": "УСПЕНСКАЯ & JAKONE",
             "s": "ПЛАКАЛА НАДЕЖДА",
             "p": "40 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/uspenskaya.jpg"
         },
         {
             "a": "MACAN",
             "s": "ОСТАНЬСЯ ОБРАЗОМ",
             "p": "39 pts (↑+5)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/macan.jpg"
         },
         {
             "a": "МОТ",
             "s": "НАМЁК НА НАС",
             "p": "38 pts (↓-2)",
-            "img": "https://i.scdn.co/image/ab67616d0000b27336a7644298c97ecaac71de3e"
+            "img": "https://myradio24.com/levdanskiy/covers/mot.jpg"
         },
         {
             "a": "LYRIQ",
             "s": "КАССЕТЫ",
             "p": "36 pts (=)",
-            "img": "https://avatars.yandex.net/get-music-content/15406468/91a00ea1.a.40767822-1/600x600"
+            "img": "https://myradio24.com/levdanskiy/covers/lyriq.jpg"
         },
         {
             "a": "MONA",
             "s": "ПОПРОШУ ТЕБЯ",
             "p": "35 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/5b/70/505b7028-cf03-18bf-1a36-6580550ac972/cover.png/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/mona.jpg"
         },
         {
             "a": "ARTIK & ASTI",
             "s": "МОДНЫЙ ПОП",
             "p": "34 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/artikasti.jpg"
         },
         {
             "a": "5STA FAMILY",
             "s": "РАЗ, ДВА",
             "p": "33 pts (↓-4)",
-            "img": "https://i.scdn.co/image/ab67616d0000b273b0fec65994ed98568cbef2a7"
+            "img": "https://myradio24.com/levdanskiy/covers/5sta.jpg"
         },
         {
             "a": "UNCLEFLEXXX",
             "s": "SMS",
             "p": "22 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3b/c9/be/3bc9be74-b15a-db19-5d2d-897700a1804a/cover.png/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/uncle.jpg"
         },
         {
             "a": "SABI & MIA BOYKA",
             "s": "БАЗОВЫЙ МИНИМУМ",
             "p": "21 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/600x600cc.webp"
+            "img": "https://myradio24.com/levdanskiy/covers/boyka.jpg"
         },
         {
             "a": "КЛАВА КОКА",
             "s": "СПЛЕТНИ. ШУМ. ЛУК.",
             "p": "17 pts (↑+4)",
-            "img": "https://avatars.yandex.net/get-music-content/16154377/40f85b07.a.39274793-1/m1000x1000"
+            "img": "https://myradio24.com/levdanskiy/covers/klava.jpg"
         },
         {
             "a": "XCHO",
             "s": "ТЫ И Я",
             "p": "17 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/xcho.jpg"
         },
         {
             "a": "FILATOV & KARAS",
             "s": "ВКЛЮЧИ МУЗЫКУ",
             "p": "16 pts (↓-3)",
-            "img": "https://i.scdn.co/image/ab67616d00001e0285f51c6831bfabd6d12e31d8"
+            "img": "https://myradio24.com/levdanskiy/covers/filatov.jpg"
         },
         {
             "a": "SERYABKINA",
             "s": "АСФАЛЬТ",
             "p": "16 pts (↓-2)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/600x600cc.webp"
+            "img": "https://myradio24.com/levdanskiy/covers/seryabkina.jpg"
         },
         {
             "a": "GAYAZOV$ BROTHER$",
             "s": "РУССКАЯ РУЛЕТКА",
             "p": "13 pts (↓-1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/gayazovs.jpg"
         },
         {
             "a": "ЛЁША СВИК & NYUSHA",
             "s": "ПРОБУДИ",
             "p": "9 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/600x600bf-60.jpg"
+            "img": "https://myradio24.com/levdanskiy/covers/nyusha.jpg"
         }
     ],
     "news": [
         {
-            "m": "13.04 | 10:30",
+            "m": "13.04 | 17:04",
             "id": "70",
-            "u": "https://t.me/YourEurovision/senhit_albm",
-            "t": "🇸🇲 САН-МАРИНО: SENHIT - OCCIDENTALI'S KARMA (COVER)",
-            "b": "Королева цифровых перформансов Senhit представила свою версию «Occidentali's Karma» в рамках серии «A Little Bit More». https://www.youtube.com/watch?v=8U_LLb06g6g",
-            "img": "https://img.youtube.com/vi/8U_LLb06g6g/maxresdefault.jpg",
-            "vid": "https://www.youtube.com/watch?v=8U_LLb06g6g",
+            "u": "https://t.me/YourEurovision/5700",
+            "t": "🧬 DNA: ФРАНЦИЯ - MONROE",
+            "b": "Франция в 2026 году привозит в Вену чистое вокальное совершенство. Монро Вата Ригби, выступающая под сценическим именем Monroe, - 17-летняя сенсация, чей голос объединяет классические традиции и современную поп-чувственность. Её песня «Regarde !» - это ода красоте и умению видеть главное в деталях.\nTHE JOURNEY (ПУТЬ)\nМонро родилась в США в семье мормонов (мать - иммигрантка из Конго, отец - американец). С детства она пела в церковном хоре, где и открыла страсть к классике. Настоящий прорыв случился во Франции на шоу «Prodiges» (11 сезон), где она одержала убедительную победу. Её дебютный альбом «Monroe» (2025) возглавил классические чарты страны. В марте 2026 года France Télévisions выбрала её для представления страны в Вене, сделав ставку на юность и безупречную вокальную школу.\nSTYLE & SOUND (ДНК)\nДНК Monroe - это «классический кроссовер». «Regarde !» (Посмотри!) строится на мощном оркестровом фундаменте и виртуозном вокале Монро, который легко переходит от интимного шепота к оперным высотам. Это музыка вне времени, торжественная и светлая. Визуально это эстетика «Classical Future»: сочетание исторических французских мотивов с авангардной модой и футуристическим освещением.\nVERDICT: Франция возвращается к своим корням, делая акцент на высоком искусстве. Monroe - это голос, который невозможно игнорировать, и один из главных претендентов на победу в Гранд-Финале.\n⏱️ Время чтения: 1.4 мин | 🧬 YourVision: DNA",
+            "img": "https://cdn4.telesco.pe/file/gEHhXzr9mi1vrDVPv7JL9-b_DEfGWQN6Zl4utbe3zWJH1fUIHVwseZ6VOJ9mAzMNJfgPM1uIe259YI28vX_0JKyhlS09iCKoAaC8BkYMsBcXS9LoSlb3Dqyg2NkiRw_i7FAni3OiBuwhCoxFK9LlGsWis1SOuiesAC5ekM9Wr5wBSG8fIGMxnPjQxQDVNOu6L1uL8t-TLPqzU4ED-GIClR8zFA2i_djVblsZAMIvKV_UL2YKDZIuy_FoVJujOv5U6KSvVLuv3x2wjfIMRySaKyATd-wcaslkrA1xB1zzi8bM8zP6i0sFf0cHRgNIQbM64KQqLbhLJrJj2q7I8oJjMw",
+            "vid": "https://cdn4.telesco.pe/file/5ecb342398.mp4?token=CefYPJicz4QFVREVjzm70i0SE5sjUenAhre0A8MVtr1OUqV0zkpkmj8K62Hc0kowUc-TB6LXfB0M07PjvPZP4J5s5UC05n886Bmk3pvwHOY1iljAvAMSQXA9GbBQVc-Ftna7dT4HErE-XaPkYy3ZJjIl7xprHLRmpJRrGVnIl2WPaUcSHpY3WitbLJZI2EVID9Ile1i9kvWRfg9CJhuaSi5nT0DUcJLSoGxDOfX6wrEfcELrUBYoc_2FUNxeBkrfrRNUQaJnmS-OunxSu7F94vbMX25QwPxlRt_3xLQzlExo50JJefiF96MBGJ29C7y84qzt0eAeDTOmX6Uz9zoEGw",
             "isVideo": true,
-            "ts": 1776065400
+            "ts": 1776099892.0,
+            "poll": null
+        },
+        {
+            "m": "13.04 | 15:02",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5935",
+            "t": "🏛 MARGINALIA: АРХЕТИП СПЯЩЕГО ЛЕСА",
+            "b": "В глобальной мифологии лес редко выступает просто фоном. От классических сказок братьев Гримм до современной мрачной эстетики, густая чаща - это всегда мыслящая сущность, наделенная собственной волей и памятью. Но самый тревожный и притягательный мотив - это мотив спящего леса.\nСпящий лес - это пространство остановленного времени. Место, где физиологические процессы замерли по воле проклятия или древнего пакта. Деревья, оплетенные непроницаемой стеной шиповника, не мертвы - они застыли в ожидании, сохраняя энергию внутри стволов. Это состояние лиминальности, где нет ни роста, ни распада.\nФИЗИКА ИНОМИРЬЯ:\nПогружение в такую чащу - всегда акт трансгрессии. Герой, прорубающий путь сквозь шипы, нарушает не просто физическую границу, но границу временную. Спящий лес изолирует ядро мифа от внешнего, суетливого мира, консервируя сюжет до момента, когда появится тот, кто способен запустить часы заново.\nВ этом состоянии оцепенения лес накапливает плотную, почти осязаемую тишину. Тишину, которая способна поглотить любой звук извне.\n⏱️ Время чтения: 1.3 мин | 🏛 Almanac: Lore",
+            "img": "https://cdn4.telesco.pe/file/d-ZYEUOnWAge9Rj1aSjCYMQ3TtJEJd8uXCLlWT0IqNQSq9-i6zoCGUXxgQI7v1Xa1A1gPtXau63aYau55xHHd9hHYjun-v7hR-m9xXWAnKhYT6cu2oHQGN0fuu7uVIyauQUboYvMLml_a6dsmGa70gnX2JOBme_ISxiZFNQAOj1o4AxPGInHiavhT9tjrSLyBfrimam_KCrU7OUJg5v7M4w5cl6Ro8lPnZkkyZqGF-3jdDJBbAb_wWByj_3AMGRVg2uqZB2bk6mWNbta-1vr6s0azIWuIVAuI0JYRRVbfqwPFskUOPjJpkpX5osthxusKFAQVImHnUF_S1mbj4eWGQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1776092521.0,
+            "poll": null
+        },
+        {
+            "m": "13.04 | 12:04",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5934",
+            "t": "🥐 MARGINALIA: ПЕСОЧНАЯ ГЕОМЕТРИЯ - МЕХАНИКА ПАЛЬМЬЕ",
+            "b": "Есть особая медитация в работе со слоеным тестом. Это процесс, где усилие раскатывания холодного масла превращается в хрупкую архитектуру. Сегодня мы смотрим на слоеное ушко - пальмье - как на инженерный шедевр.\nСотни тончайших слоев теста, переложенных маслом и усыпанных сахаром, сворачиваются навстречу друг другу. При запекании пар раздвигает слои, а сахар плавится, фиксируя эту конструкцию.\nКарамель выполняет роль цемента. Она запечатывает края и создает стеклянную корочку, ломающуюся при первом укусе.\nАРХИТЕКТУРА И МАТЕРИАЛЫ:\n• 250 г холодного сливочного масла (82%)\n• 250 г муки (с высоким содержанием белка)\n• 125 мл ледяной воды\n• 1 ч.л. мелкой соли\n• 150 г тростникового сахара\nМЕХАНИКА ПРОЦЕССА:\n1. База: Смешайте муку и соль. Перетрите холодное масло с мукой в грубую крошку. Влейте ледяную воду и соберите в ком. Кусочки масла должны остаться целыми.\n2. Слоистость: Раскатайте тесто. Сложите втрое. Уберите в холод на 30 минут. Повторите раскатку и складывание 3-4 раза, охлаждая тесто между подходами.\n3. Форма: Обильно посыпьте поверхность и тесто сахаром. Раскатайте в прямоугольник толщиной 3-4 мм.\n4. Геометрия: Сверните левый и правый края рулетом навстречу друг другу до центра. Охладите двойной рулет 20 минут.\n5. Сечение: Нарежьте рулет на ломтики в 1 см. Разложите на противне с большим запасом места.\n6. Фиксация: Выпекайте при 200°C около 15-18 минут. За 5 минут до готовности переверните каждое ушко.\nИдеальное пальмье - это хрупкий баланс между сливочной мягкостью и карамельной жесткостью.\n⏱️ Время чтения: 2.1 мин | 🥐 Almanac: Bakery",
+            "img": "https://cdn4.telesco.pe/file/haNeUfQDkBDASC7Au2MLxsoHW4hCCYwf8FBbSDZQR1kzGk6kjZ9tGWux-zrPZeE_POoB5Y8ORiMnB79WLg0zY7PqTD_ldadCN_sDCXibMGQUd_2YGq608aLQ4cGCZuAzkmupJ3oal07ZVuU8qPFz-n5mmLoFwMwTB8YkVAPmKy5nZuCJ-UqEC9GYv-JmCZ6IYA_CkmAjrDyB78z9yxTNDCZf4Lt0OYXGvRdEJfBmzQhi1JQReq-oevPttECloxB2TMt1f_PANBPIXNgz2-W1Ons09z36Ouda32acXwz5qxenP27_e7XyWka8AZY1hMkrk9iZu_NG8Nb1-igkiMBqJQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1776081841.0,
+            "poll": null
         },
         {
             "m": "13.04 | 07:39",
@@ -420,8 +445,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5695",
             "t": "🧬 DNA: АРМЕНИЯ - SIMÓN",
             "b": "Армения в 2026 году приглашает нас в мир безудержного ритма и танца. Симон Оганесян, выступающий под именем Simón, привозит в Вену «Paloma rumba» - трек, в котором армянская идентичность встречается с глобальными танцевальными трендами.\nTHE JOURNEY (ПУТЬ)\nСимон родился в Раздане в семье врачей. Несмотря на диплом экономиста, он выбрал путь музыки и профессионального танца. Его восхождение началось в 2025 году на «Depi Evratesil», где он выиграл голосование жюри и стал вице-чемпионом отбора. В марте 2026 года AMPTV официально объявило его представителем страны в Вене. Симон - это пример артиста-перформера, для которого визуальный ряд и движение так же важны, как и звук.\nSTYLE & SOUND (ДНК)\nДНК Симона - это «этно-диско». «Paloma rumba» - это взрывная смесь латинских ритмов, современной электроники и традиционных армянских мотивов. Это песня-праздник, созданная для того, чтобы поднять на ноги весь стадион. Его вокал - энергичный и харизматичный, идеально дополняющий сложную хореографию. Визуально это эстетика «Street Avant-Garde»: яркие цвета, оверсайз-стиль и акцент на динамике кадра.\nVERDICT: Армения делает ставку на шоу и харизму. Simón привозит один из самых зажигательных номеров сезона, который имеет все шансы стать главным танцевальным хитом года.\n⏱️ Время чтения: 1.2 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/V-mDeqQcLkaCb-YsFh3TuZ_GHG_VwwnzP0REjFw0iV1U9940N509ZJAV8vf-FCqUV-fpwhy3cQz4veH-qKh1ivt7f-hZbpFQ9k1rnakfNLYvQ_J9bJuRhqtQFbUQkcpXK-r110kNL__BR_l11DfmgmvRbW3RSQFEQC-dUNMM4tM-TJzZFJsJ2oAql1BMGFVfm2jLHXOrTJnyDAu37Xa9Wjb63cBV5Q-JuCB_mgNc_MDquDVnjqa7PLBsEDB4DTaMWxXXVML3Qw_p0TeNNSZKucIFVsFgx6Ej7NnNcW3bZKEL3XVCJGo8jPaDQSLh6bn4NzkvBdbrCpYqd1cbqDlfJA",
-            "vid": "https://cdn4.telesco.pe/file/5d6931d13b.mp4?token=TsYMEta57viB_Bdyzycx_bGWufUHiqXYMBgNhI4H4C9YNPAvKj7ynlMYnfRLz2E0MU8qmwZbMM-RCGywcWuMNvOSBmCXhiOMrN6R5L0TVrMzPd79lyYaPoQXn5EVUGHToTp4KMnb7kid4R68n6heLU8wvWeqMpvKEZAvrTWGZD8sH3zCWNT_-M92W9vymNaxmPBb71sNKHnsZpaNzHzT6nX_enEHQ4CTmJ_Y5W3vhoecNUx4OBKuC1whANw1KsZ6b45jL7lXDjek3RrX66WC49NIKYIxZdggdUD0zB-VESA6A7HDkVOlHH8EpIZT0JEOIKCGaQCoEZBZn2rwoHD4g7ljI3gVG5S1wZ4-qoNIf0YFFdzzo5tYxVT_d3RzSsmc4DKeloyxy8aUcAO-jWVRrP1eIs0vE3nfccubs-AnDMcjKGtI1LrGFAQEUOg1OrkjDu5HfXM9pwdXRPYd9XI1zQ2cGo-mreody52REaGdIDdT2zrPlorbQGjadu_Hv6TeQFGSFcU13ngJHhUzJuzdxa6eK-sKmSJTR9X-y-ibqFPEBRfdo25o_orgXODM3CWvufCp3MkbgDTx-nKeHluo9_0oOxsJVYHv2LTzHPr_KjoV_uREFee1qzUlrS2S0xNBZ7RoPzN1WuJiXRFCC-XUi2rFRMr1uvx05XPmNY8Bo78",
+            "img": "https://cdn4.telesco.pe/file/oeD4fQTJmgRNCXVlun4oy0cX2g-iTyPFu5Qyxv4jr9nqIM2SpK2E33IrPMDjtaUbkTr4hnlc7Mof77fPQr9uvmDw5JWXSvhdCsvhgwTdJYTkVaaQ1Yuya02DJTISr1htDRMMjnrcNG3JxgSiNdjruoxdthNt7tta8IvBKRIiBB2Ys5WXoM6bxc7xzvwheGDrLVWeQIpcM0pkA1MyPceHUpkihgkFgOCM5WQn7nRYti0gTEs-gYWKQ8aQs22BNWzOToncyp1oWTsD8pn6SydvxDaqF4iQTULBh2mtrDWHLuOYmMbqxcGIipK-4oZiP5JpOsboAEb6z6KUXmWPc2gkfg",
+            "vid": "https://cdn4.telesco.pe/file/5d6931d13b.mp4?token=KhYepjgzgfB4SV7tKiKIDW1E2BXGgnF77hs-PJ61OXi7wlFztz42CAikKQ9JPcAC5ykArOXijnVvdXzRizqIlIN2lBfMcXnT-Hcs_EmQ1iOBYRsmxmJ5u2L4QNFetfWwujffaEsBFoH6HyrSI08_Xc1-eEtfMOjGDCaEk8tjPby1oH43qz0N2BQTS2xyEVUOOKyNLInltHkFnI4wunPnPo4T2L3nK8Vc6QQxO8YWVbNGsgArTJiZfNk97Y4QdFRavv-GTjTCPanK8jbHfc1rg8rPy3DG_PW4349GELINIG3Hp28wPXF2wyNNwPI_ZUU7nyjjHPXRJ6vXUwsk7zFClxHo_fhx76UtqwH_VYlNPRlbXzXKP_Cilu8zNcXz9ihka3T0A-2yn0n7LRLhFPOKDrHnndNaoLJAO56t0Yvz2QtO5ZDU3516gfEO4KxCVfaZ4MWj5PpHcMPdLgoz3g-tqFYNDnHjGWYP_Ku2VNcwnDFnF8Hi6uBjCLa1QZRewkNXoI7FAEd9uGulmY77INDNV8A4r2l3rOgevqfuM7-0E6VFZSA2LEIP22tvbmsrUIpxm2om3vV2TW1II9vjQ_kUB40Bli-v72Vizbt9JAW5O08d1zkDmpwOI-WmYnkJY2vSP-ErRiUHntCYOZNaMlHChg47SaVJv677aL-V1Ivdfew",
             "isVideo": true,
             "ts": 1776013367.0,
             "poll": null
@@ -432,7 +457,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5933",
             "t": "#LORE: КОРНИ ВСЕЛЕННОЙ",
             "b": "В скандинавском фольклоре Иггдрасиль - это не просто дерево. Это живая нейросеть миров. Его корни уходят в прошлое, ствол пронзает настоящее, а ветви формируют будущее. Сказка говорит, что пока древо живо - живы и мы.\nЭто высшая форма экосистемы. В литературе Севера Иггдрасиль часто описывают как нечто, страдающее от времени, но бесконечно обновляющееся. Его грызут змеи, его поливают норны, на нем принес себя в жертву Один ради знаний.\nСегодня я смотрю на старые дубы в тумане и понимаю: мы все связаны невидимыми нитями этого древа. Каждое наше действие - это импульс, идущий по стволу к самым дальним мирам. Быть частью Иггдрасиля - значит нести ответственность за всю систему. Мы не одинокие острова в океане времени, мы - листья на ветвях того, что было задолго до нас и останется после.\n⏱️ Время чтения: 1.0 мин | 🌳 Almanac: Lore",
-            "img": "https://cdn4.telesco.pe/file/YpCvO9sSSsQiz50RE7US-f5MWmM8oKaM2YGRGmFFs8iLHn14LSElND_yEdjS29yeJkS3R9a3gQ5hN2QkYwlhDvRATmHW7IGM3SuOlbLY-lrlLnPjIAUoaEVsRTOoNF2s077miE3mYF9gAVoji9shyKBl8Q7vXUId8A1CuSdmWg7_1N0sbgFHCVW7wTWQvMb9DRTReZa5EfNuHAU1i5tdUNJZTttGGCktRrWwectj4qqxwKs8n6eq1mcf8OqHLnx7n5xD3wA-xf0kU9dI_lbIuiOO2Zsh-Sbw-UqnLnxr4Gvfy4LTCSEPuUTzJN9J2-2viyG6n2BbW3MYOEIi0bmv3A.jpg",
+            "img": "https://cdn4.telesco.pe/file/LrXCKCdDpOe4LR6drik0M4zsV_KTZc2BAi_xcf33Tfg4FUEUs6AkTo2CnPa0hnYbmPgYne0AaXZiV14BtsyMkwem5E2SxQy16hPksnAV_XZKwr9p9XlRjJ5zOWNxGJPbrOGqNR65krCzQ9aE9ppDc9nU1pDvxL8MMAsbpyBbHhgCtYgiEscBqP3R6TlSACirIrIqNAOV-c4skKVfiu3L4aWSWpnRR-pVAH8LXKPbyH3vfvpM4scrP2boFVcYsKXVkwjJdGaUaOFVdCH6oT4YPHTkT2ZzpHOVOLYQZqQ06qEHes2w-1nkFAtHn0oXo4BJq4_8S3d-0zwtbhWZP-yLpQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1776006121.0,
@@ -444,7 +469,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5932",
             "t": "#BAKERY: АМБРОЗИЯ. КУХНЯ ОЛИМПА",
             "b": "В мифах Амброзия даровала бессмертие. В реальности 2026 года - это десерт, который сочетает в себе нектар (мед), золото (цитрусы) и облака (сливочный мусс). Сказка о вечности и Реализм идеального баланса кислотности.\nИНГРЕДИЕНТЫ:\n• Сливки 33%: 250мл\n• Сыр маскарпоне: 200г\n• Мед липовый: 50г\n• Мандарины (дольки): 4-5 шт.\n• Кокосовая стружка: 30г\n• Орехи пекан: 50г\nWORKFLOW:\n1. МУСС. Взбить сливки до мягких пиков. Добавить маскарпоне и мед. Перемешать до состояния «плотного облака».\n2. СБОРКА. В прозрачные бокалы выкладывать слоями: кокосовая стружка, дольки мандаринов (очищенные от пленок!), сливочный мусс.\n3. АКЦЕНТЫ. Сверху посыпать карамелизированным пеканом.\n4. ВЫДЕРЖКА. Оставить в холоде на 2 часа.\nЭто вкус золотого века. Десерт, который не требует выпечки, потому что магия холода здесь важнее огня.\n⏱️ Время чтения: 0.9 мин | 🍯 Almanac: Bakery",
-            "img": "https://cdn4.telesco.pe/file/iaZc0hdBg1AyBBT68i34OfIapGKMG1IZkIBpnnCwuZbcTjrbBVP-gui0tIcHTAt5whPJ5ZZAOmrCprzLqAjLeqe2RDPzKC3dF_lc6060FxHUUUbxaXNVCa-Y9hgPc5bgQLm83KmUIO2cIM3JBtc93ovbITyEdPfdgCH8slF8OYb5LlaBqZEhHEg5swIHi6smlMi4wszSuGgDAekGVRa0UNQdGREP1AtpYH726kfbCp0hLyluNpk8IPI2zWCw38VMutZgxGd-TQE5SZUCAiGCXmtn07FzDXALM-mHof4OK6OFN4825mHBB4Q5TaQY365wAtC1KWqlZKalvWbjTqorCw.jpg",
+            "img": "https://cdn4.telesco.pe/file/dbF-LxS8LmEKZ3krmdYGl-j5_HHPa5PgvzghSr4BMRPAgjg6YaRpIZ2PCHsUk0Ua-GKU17FWhooZZHKlVjIjixV2A0F98yvADvUfyhFzPGOxdlRL3zKLbX4Ako2MMTZNZbWA6gZ13CmZWOwaEzh7FBPLj0kZopsA2PhqmXboZliNRprHoA-1FsquF8tULFHx08KPMaYh7k9iwkKvm__-wyvx7550Mxaz35JgxF4_0Lh8dwdhr_wGslo2xVB7MzEvjZlnE6O3WrN03lf64YbbvdVz2eaUbDf4Lqiu07Z8GDLJkmzEVbHKfQAqBd4bU_yoIzPbks-PkTizbyhynt7bbg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775995441.0,
@@ -456,7 +481,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5694",
             "t": "🏆 YOURVISION CUP 2026: ФИНЛЯНДИЯ - АБСОЛЮТНЫЙ ЧЕМПИОН",
             "b": "Голосование экспертного сообщества завершено. С колоссальным отрывом победу в предсезонном турнире YourVision Cup 2026 одерживает ФИНЛЯНДИЯ.\nЛинда Лампениус и Пит Паркконен с их взрывным хитом «Liekinheitin» сумели объединить аудиторию, продемонстрировав готовность к большим аренам. Для Финляндии это мощнейший сигнал перед стартом официальных репетиций в Вене.\n📊 ИТОГОВАЯ ТАБЛИЦА ФИНАЛА:\n• 🥇  🇫🇮 ФИНЛЯНДИЯ: 77% (Победитель)\n• 🥈 🇧🇬 БОЛГАРИЯ: 23%\nВсего проголосовало: 13 человек (Verified Insiders).\nБолгария в лице Dara совершила рывок в этом сезоне, вернув страну в центр внимания европейских медиа. Однако сегодня «огнемёт» оказался сильнее. Поздравляем победителей!\nКубок YourVision Cup официально закрыт. Следующая остановка - Гранд-Финал 70-го конкурса Евровидение в мае.\n⏱️ Время чтения: 0.9 мин | 🏆 YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/ci51jGMRAJhcG51TGrTSZEYzwbTCsUiHwtslLL6-cC4A7RVqYy4cIyFd4WhAZXl8XjSZ_QCGw3mPSJfPbYaYAKC66TjImRj-aq_vohrxyEJhnssazzjzlSA6JJBZUVieEb3C083CSB6dShpOdUZT2ZnsKFkZ1sVubu2oKdV-i3aebVSacMXazH8aaydBJsb3xeIA-xjBEB27ELxaVw30FKaFZA1ZwOGItNQjdxNxTa94NH3cgmYD7Sv4trgUctSDasuKe2XJsCu5WeL-g2h_lSkjeEP0QQY2HjFhcTrRtU-aqtUF-FScSW51URP0UjEUInhrEC_dBK4lrDAPHRjSVQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/VcFW7u5cPNEDx6MN30lin0DH3Q6_mEhAiXtZFksHEtCCUhMw7136N1mnDoaT_-ul-Wqd452vxIc3EpFh841CoBh30PpzIJkStPCAwdBd2nrDSP3Nyk81g2R88ojWLGAWkOjFKBmu0hvybIUBYzQSb0UpvjTTbQ-1_llp6mdGsSIWySuDqX4Ke5a8EQRJW1DLma1rl4MKzOYxw_v-VAPdyyOw1EIqk5cejynhE4zWuzfqJqxtLGD6zfFphbN_0vOCCjHF43pmqk8WmcF6ix4ch5DHtzEZr_icjLzqObUBFy6kuudpsS7ctfP6wCPytV1wcfCJ86I7LfqBhfXs-Jrgzw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775984003.0,
@@ -498,8 +523,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5691",
             "t": "🧬 DNA: АВСТРАЛИЯ - DELTA GOODREM",
             "b": "Австралия в 2026 году выставляет «тяжелую артиллерию». Дельта Гудрем - живая легенда, чей голос и музыка определили целое десятилетие австралийской поп-культуры. В Вену она привозит «Eclipse» - мощный, вдохновляющий трек, знаменующий её новую эру как независимой артистки.\nTHE JOURNEY (ПУТЬ)\nДельта подписала контракт с Sony в 15 лет, и её дебютный альбом «Innocent Eyes» (2003) стал вторым самым продаваемым диском в истории Австралии. Её путь - это история триумфа над обстоятельствами: борьба с раком в 18 лет не сломила её, а сделала музыку глубже. Обладательница 9 хитов №1, 12 наград ARIA и Ордена Австралии (AM), Дельта долгие годы была наставником в «The Voice». В 2026 году она возвращается на мировую арену через Евровидение, представляя «Eclipse» - песню о возрождении и силе духа.\nSTYLE & SOUND (ДНК)\nДНК Дельты - это «кристальный поп-рок». Её музыка всегда строится вокруг фортепиано, на котором она часто играет босиком, и её уникального сопрано. «Eclipse» - это эпический трек с масштабным оркестровым звучанием и вдохновляющим текстом. Её вокал, одновременно нежный и стальной, пробирает до мурашек. Визуально это эстетика «Ethereal Majesty»: светлые тона, летящие ткани, игра света и тени и образ современной королевы поп-музыки.\nVERDICT: Австралия привезла профессионализм космического уровня. Дельта Гудрем - артистка, которой не нужно ничего доказывать, её присутствие на сцене само по себе является событием. Это главный претендент на топ-5 Гранд-Финала.\n⏱️ Время чтения: 1.6 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/No7bI9WGCIEmtGJawVwpEZf4ob61MgJn4EHFV-Nb4h8aXZMdvGQ7VeMsP7sAtZ7vb6x4yz823h4yOZG7RTdk8RkOl3fKn1Fe7VNvlzO2I8y7_vNaQJ7JZqDM8vlmkWba2nvu9EFQc7Uw8VuzsX-W1VAchgLxmF8LjeBSrAJaJ9XPWQYamI2b8SDNdl7wDE9HbzouJjK6bJNbQ3z8VL5kJhEsbmH0grI2hn9ef_hd2texsW8FTLIrNw2yhIN4ks6URwZhZQFc6j5lpBbBLLk0HTpBa2Y9NzNNee92LiUq4iMdRrQhPrGG_ypaycHzjXoPxm-xvc5U2KBz4fc0cTTjyQ",
-            "vid": "https://cdn4.telesco.pe/file/1df87f8120.mp4?token=L33iVyCVFD2ortjcP8_uTtoDQeRaCXTIOM8_sJc8-tK_E2SXyGTYX1_YJpmV4nlS0HP_r25Q_tWlm9XLJpmTgermA2trrWV86gZJQNVy1oXctHaIhw2msFvuYJ4uH6KNBAFHzi69Xvy7NTZTNxhtHx6HllXLL-RTSfKcK7p99G-L0PD1MUpGvnGqnhqemI1r4rSTeQhQJ9PQ7r5zAEB4qzymfpQaorJJ3UfTBUMY_wkH40qne7-i9C7MpHi8K8yBO0fPXgmkBk6vAc97L0twle3IvmJc17UpxjGmMf4pSKNEGmX3jTvjwR4pl3JdB9XEcWFnLC5vPmOxKsS2KnWrsg",
+            "img": "https://cdn4.telesco.pe/file/hQcVSFg5w-inYg-B2bkvXSbBReRKl5chRDfuiecnM5Up2YAJXufJaMmojL7pDiUvHZzyXRoXezb2qXmb6O042HWT_tIw2IGGjsEWplBfJHilq3ypaINwPLI38gJWtsGIW0NnFaHo-iOOz65i5teD5FnUgMlv_KPP8EgXXRqITRTr90s1oqH6q5NiM8Ufqg-1s-M6ftxADTT3FnfuCWreXiHuiMx2hJ92yq18xRYM3YASYJvZN7WC9XEtwgxEv7EfzGdDp7uZLYG2wA0zLL3vn0eJ_0LWJFFoAyc8Hu-teNk4LMb02n1zcrWg9bHjgNEMFyl-UQnVVHV1HTg6SXbzmg",
+            "vid": "https://cdn4.telesco.pe/file/1df87f8120.mp4?token=EjGwnD5AzOl_tNbBP_m4zZ4-srTNOwPFc17k23ob0R4O7TEcLcijaXXyGnm2v8z-3bOKg7A1si_AzUmOIxhZbxw2HOKgM84mPBz1OhWMus0CkFVYOfmbQtm0KNC4iJRa8kClmaNNRc3iExdAp5wXoxDXpoH3wwN8SlFY55LEzOoYMhwcwOgGb5QkjKVmT-oQVC75cfdtV2uhi_Wc-w65KNx1FWCL8s-qNGy9eWbdfwVWUqrZV03p0794IRkcw8C4wukf3XaIEFkgMHlcE9IKRFLs69IfKOqvC5tJIJc4GXiSGDLzATDUoeXFeaM8l3wMk-Vqsud6INvHtOWZJ9iLGA",
             "isVideo": true,
             "ts": 1775927032.0,
             "poll": null
@@ -510,7 +535,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5931",
             "t": "#FRAGMENT: АРХИТЕКТУРА СТРАХА",
             "b": "Миф о Лабиринте - это не история о герое и монстре. Это история о том, как мы строим стены вокруг собственного стыда. Дедал создал Лабиринт не для того, чтобы удержать Минотавра, а для того, чтобы скрыть его от глаз.\nМинотавр - это Сплит своего времени. Существо, которое не вписалось в каноны ни людей, ни богов. Лабиринт - это физическое воплощение изоляции. В литературе это вечный символ поиска истины, которая всегда находится в самом центре боли.\nМы часто думаем, что выход из лабиринта - это победа. Но настоящая Сказка начинается тогда, когда ты решаешь не убивать монстра в центре, а заговорить с ним. Лабиринт - это не ловушка, это место встречи с тем, что мы в себе подавляем. А нить Ариадны - это всего лишь эмпатия, единственный инструмент, способный вывести нас из тьмы к свету, не потеряв при этом душу.\n⏱️ Время чтения: 1.1 мин | 🐂 Almanac: Fragment",
-            "img": "https://cdn4.telesco.pe/file/CNC_yWYJgKomjzZQTjwRVngkslkmOWpGr32oZS8M_d1I0nfYpL1E8i2oF1vdj5yTUsK7kcbuJOA4IQ8qOXcDDtY1uuvgIfMZPsPOPKGU3lrGsoVykkSKJS1dH7vplqEVCmvYql-p5fHKRIutHE8d10MDQpCA5eVYxvvk_FXGJK3tEYRTnuthaifS_Dfr-H1-y7NptnSCXG0X6UYELryjGjVLwdm8qiMKla8-tthysA5FfbZOmuh3f9nGbdEisBxskxT6KdOE_pEY6ApsOoE3xSsLLSZEMS5oNneW0fRezFDFhx4PxTPXL-Yqgf8f81JEs2lKYdgMhe--XgAWRpfSXg.jpg",
+            "img": "https://cdn4.telesco.pe/file/FJCkwKm_pLuNnPigj8hA7BNd5KIbfKlhbaKS7sGNAt-A1SCdDSM3pIPxApwt7MYxEspQ7cyYG1FigkqQy0awGSLUQCZHIeLbzSpPWNgzcMTGF-HjN6HPcSTqiczHKuKLydrE69SkdSi_weQMI0Xs7uVLbLteHmBhFaEbhI_mhTFOmPSip2OoeWCGr3Hzu3__vX9jsrpBfPpqf8096mRINxyKinVBe1hevT7mOllNwXYGj2iam8fU1VH_hppp9EDelUwtRGY3KpOaiKRSBxWrowiSW58LEbBBvkdF4nV4y7KxfxJ8nNI03rE1D-n3c7IC0G0W3ExrXaVkHFj5kRjnNA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775919721.0,
@@ -522,7 +547,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5930",
             "t": "#BAKERY: ПАВЛОВА. АКУСТИКА БЕЛОГО",
             "b": "Десерт, созданный в честь великой Анны Павловой во время её турне по Австралии. Хрупкий, как пачка балерины, и невесомый, как её прыжок. Сказка о грации и Реализм точной температуры меренги.\nИНГРЕДИЕНТЫ:\n• Белки (комнатной температуры): 4 шт.\n• Сахарная пудра: 200г\n• Кукурузный крахмал: 1 ч.л.\n• Лимонный сок: 1 ч.л.\n• Начинка: Сливки 33% (200мл) + Свежие ягоды\nWORKFLOW:\n1. МЕРЕНГА. Взбивать белки до мягких пиков, постепенно всыпая пудру. В конце добавить крахмал и сок - это сделает центр нежным, как маршмэллоу, а корочку хрустящей.\n2. ФОРМОВКА. Выложить массу на пергамент в виде высокого «гнезда» с углублением в центре.\n3. СУШКА (КРИТИЧНО). Духовка: 100-110°C, 1.5 часа. Оставить остывать в выключенной духовке с приоткрытой дверцей. Никаких резких движений.\n4. СБОРКА. Прямо перед подачей заполнить центр взбитыми сливками и украсить ягодами.\nПавлова не терпит ожидания. Её нужно есть сразу, пока хрупкий мир сахара не растаял от влаги сливок.\n⏱️ Время чтения: 1.2 мин | 🩰 Almanac: Bakery",
-            "img": "https://cdn4.telesco.pe/file/OCTDvsp3S7YY0-QjL-RJU0HWl81Klhk9oTgGm35GbXBTtQiJQvwqokiE1GAZMLr-8_fq52xU1AD7IbigKjPQg-94ppw6iPzDkX3bHoOnGC0Xetd4PMeHgHPSedx5iUbwBfzEr3FWgvTmkto08CXPIPqiGCx_S1xiij0wvcOMrsFcusGrZ6Mn-zeX4Pnlf-I09vFTHkctDwMd5C4XOIh5xahV7QqujVr9SoZjq1pkeIjKaqtIZD4I6WC8bHboOCCasjbxi6gfXAvYq5EjYYiudl4uUwR1xt_fbNXGaHAq1rYhpHoCxXhAg2fTdsbCk18bTNQSg8ZXdIsIBL3wELbC_Q.jpg",
+            "img": "https://cdn4.telesco.pe/file/BfowGR4WWMe-A79YnzLUbEUcJ-S0vV2aiFy86WDN_uCK6IhWdEzia6QNk02ajd7qSi1DYeFchBIJZti7_BgdnXriA8hBmAA2Vg_yZB6j9B4gUF0NtdXlZIjhbrUWsdQRPUmYEbMSBUpThMT5PhjNmh-AUX03I7SHFFbZIU5Rcklx1k__eMmA5X0GRjwcAvCFiFUhxGjLUDV_xabhDypphovyuaJskIM7wiv-qaclSs8N_5PwfzKsU_JYsrhdpLLdK-gvFBKjT_hAMRH6PZs0TEPLpVh5eryV68M3w7HER63eTg2_FW3k8JYAdWpw8GvETFuTeaY3u6DnXJRaU2E5lA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775909041.0,
@@ -606,8 +631,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5685",
             "t": "🧬 DNA: СЕРБИЯ - LAVINA",
             "b": "Сербия в 2026 году обрушивает на конкурс настоящую звуковую лавину. Группа Lavina из города Ниш привозит в Вену «Kraj mene» - композицию, которая доказывает, что прогрессив-метал может звучать органично и мощно на главной поп-сцене Европы.\nTHE JOURNEY (ПУТЬ)\nГруппа сформировалась в середине 2020 года и быстро стала заметным игроком на сербской альтернативной сцене. Их дебютный альбом «Odyssey» (2022) заложил основу их техничного и сложного звучания. Пройдя путь через крупнейшие рок-фестивали региона (Arsenal Fest), Lavina решили бросить вызов «Pesma za Evroviziju '26». Победа в финале национального отбора стала триумфом жанра: «Kraj mene» - это их первая песня на родном языке, созданная специально для покорения Европы.\nSTYLE & SOUND (ДНК)\nДНК группы Lavina - это «математическая ярость». Их музыка сочетает в себе сложнейшие гитарные риффы, атмосферные клавишные и пронзительный вокал Луки Аранджеловича. «Kraj mene» (Рядом со мной) - это мощный стейтмент о внутренней силе и поддержке. Визуально это эстетика «Industrial Neo-Gothic»: кожа, металл, резкие тени и динамичное световое шоу. Это не просто выступление, это концентрированная энергия стихии.\nVERDICT: Сербия идет на смелый эксперимент, который явно выделится на фоне конкурентов. Lavina - это глоток свежего воздуха для тех, кто ищет на конкурсе драйв, сложность и настоящую инструментальную мощь.\n⏱️ Время чтения: 1.5 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/owpJhh3EcSjK86v-6PuiA357isiBdO7SQrs7LWNlJHLIAyfmDUsE2OmqrIDYZy5ZwLCITOR3qpV4K9FaisMOnN9Rb62mFPWr61i3czgPbMCfT44Mh17kFu4tvDBWVpzuAaSGKfA62Lb4toW00KO_uHUU45Oitrs2WX6rK874fF5lZv1WDOEnBkRzmrqUxjUJebfXFJdNmK8uc1PRdcKax3kBgyxcmN24TsS9hW2Y2lOkaan2gJysL6BS4RYMEeMfmyGWk5MIreva_w-C3vEKMGQuJXHQ-ujiUDXacym5vD2AE0QaqmL6_wBGgqPCitGO6x96FIGuLfW5mwG4qruLcA",
-            "vid": "https://cdn4.telesco.pe/file/a9ed292438.mp4?token=KZHYOb0rn6cCUw9zRauHYO0Hf_zUq_FkR85qsFxYcMfun3rznbMOkDFhsFndGUrVyklNOKXe1ZXEyQomMtIqh3jR88nWrPhkrfI33qgljxlTd3U8Isjusi1TyMAnl8ozBtGlzWOkh0A0n4ETP6m9h3ccWwKVJjsDlCxvD7V1oK5UYKqmU-kO206E_bQg49rc7Ou12PgCNMRh1Zz-PJhOuWydLWVeCBUBsI8AtIiKGJk-WoVyD-KxH-iYEO6Yj9Yubx0tlRBuhncuHRurT6B0peS2PVx_rqEQGVDtyhcTCJtPvbbjiVH7cxDWqr9qFvmImcV9RHMmc_WHF_-XJbn1YzpnqrxIejvZlL1iAQpJqX-8ZfRx4QIpv0ZXjtzHOaD2den3IblZ1XoGi4yO3-PEx7AFVo_JLryjwYSnBFdlNZ2ofYv6rNdCpKp_ey1usdWByxR3nohKFsY-pYtEO7Dn7s62O7tBevwWR_zQXQi6KmJQUVO8ttTqfZjK5j1_NuhBhKmfCi1uVn6tMNa2k2Efz1t6qYH1ULhIDzNLr7l7ptZjNl-HVUkNKMeL5ACymHeO5j-2w0-fl4VYjKBc9HYTwScw_irFTuobAC2HksRtF7AQA1uKt5VUm8R_k3U_CN8Hu5NRECnPibZrCxZhSdNWMTOLcQSxqAvkRjbnUdwuexo",
+            "img": "https://cdn4.telesco.pe/file/FcrUQAgzzlE-iQRqgGpSaDu7jSZNSSaJUSMTRwmPz2jLe5-WgPRcstwZp81lfFvZD7t9C3VPbGXQ9BCROctZ4L775Bl3s_yTgyrxDmvxGs3RiYsbGHpDptVEK-N2OjNFC7oA62IPOsQIgwmuB-1lZ8BTubMQktRNKg0FqiMMrNWfcTzAE2m5oC9_zu2YeLkVHYYWBOzYgS7bSI_6tOtcj1hAjejkQGywp0tF6oy6fY2BxkIp3DEdCe1-ZFem7F2LCD0UzzPip6qEFy0Ajny0DuEs8hMfizPU0PmFUba7Owz9DvSBMX1ODbOrygEndggf4uxIcAHJdd6eNtZgQOAXaA",
+            "vid": "https://cdn4.telesco.pe/file/a9ed292438.mp4?token=eeJPNcmj-rj3UUC3l43yY5Fg4QsarzG5P-nyIKYzWdH5Q74eoNI8u3zP6sfo7HyDiwXi_i2AOeTm1ChkexQhrJy5nwB1ky3rPmQzFHfrGtV2tb5QGBKcAlrjKdrVpLqF9nD9d3jQ-UWr8G4k_e-nBAALPdECHyeuTx2g6G9-Pd724OIJApYs3txcLwablH3n3PgYliYe7H0Rn9wvp-TpH125UW1Clnbn0zawcsZtuaSn7MBMsRudAHuSLG3cPvrqGUHy_CVibVTGAl5kQaFcp2DkrAc06keB2STLN32xZ4Df4C6OgsqZxC7Dw5Y9BnJJna7WBkXgiYq7qpz3NcJB7aUGUf8jX0uE-CUhLDaXOAjG8dfjYEqUPZk95OLjQCO1U_BLrmlMGQjHVyTCU6OLdKCJMCX6-uaa7MukIv31Y-Ez6MQpM9HrvzPSBZUTsmX5a2InoGFCRYj6GlAoY4O_kkACHqzRFIeCpvyoK6aw4qi4DfrerC02IkE8udn-RIajPJ4lA-2Upf-zyewLb9yhcFByJLD3W27xIFj4-Cgl0QvZxwdqqELRNVO3nMxQH4mjrB3JrqgAH2_Ps3Hit--OU467a0vwlluZO0XdCAzOZZsVBSDawy4pNX1V6QXsHK8wOLvxHpOH6xjgmWYYvZdEIjvbgDecKSweiUiInbvJCjQ",
             "isVideo": true,
             "ts": 1775840420.0,
             "poll": null
@@ -630,7 +655,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5929",
             "t": "#CHRONOS: ГЕОМЕТРИЯ ПЕРЕХОДА",
             "b": "Янус - бог с двумя лицами, смотрящий одновременно в прошлое и будущее. Он охраняет входы и выходы, двери и пороги. Апрель - это месяц Януса в моем личном календаре. Это время, когда мы уже не в зиме, но еще не в лете.\nПорог - самое мистическое место в доме. Сказка говорит, что на пороге нельзя здороваться, чтобы не разорвать связь между мирами. В литературе порог - это момент выбора, точка, после которой герой никогда не будет прежним.\nСегодня я чувствую этот переход кожей. Одно моё лицо еще помнит холод мартовских ветров, другое - уже ловит первые лучи теплого солнца. Находиться на пороге - значит быть максимально живым. Это неустойчивое равновесие, которое заставляет нас двигаться вперед. Не бойтесь своих двух лиц - именно они позволяют нам видеть мир во всей его полноте.\n⏱️ Время чтения: 1.0 мин | 🎭 Almanac: Chronos",
-            "img": "https://cdn4.telesco.pe/file/QDAFiZ5xNy-Jd_m1diVZAIz4kJsjwhliZlblPukrXvNyMm2jKGlJ-qErDt3gyvhBp6NMJ7W5zLMuW7Mdbbz2q4lNn_fRW4-qbMja-TWKYiLfHA_zh_3mvujowODvhkk8DVjfSgz0KDkmdyvSqYIuZFrLCw9HjHFhmLAYLyZ4c73dUAN2MOnyXnzkSjCji5Ddc71pUHoDwf50q10KKJ6ILzNyDZ-w3PrwgYNcTSJcCLSkLztZiWd8dbTyPyKiPYOrPM1r3PTvpyQzNM3QrCUvQ55bP2TZ9_Jcul-fb8UtuRiO_XL4swc8GhW8FK1Iss-g2KHR6bYvTiHUMXkh1bjpjg.jpg",
+            "img": "https://cdn4.telesco.pe/file/llSQt-w32NZdsjcbvyJr0B_9nXSkC_qVnYiyRi_x3um2SUA7p6EMsD58lnP3bVutweURFLGxgPKwFHQapNmmzA2HKVVNomxcIqKTz3-G7U09kdrA4PdQMCCqEEzMsfNl2Wfalj47JOTMjNMgBFE48Gk3B6a_t2jpPt21-CJM9fnu-Vr_ct1NqAPTs1YJn-q5e2u5CFSTevmWFqz8Z5shTh-qzq_cWDZbtemPYFqijPl5z-iIsGqSekQazSh5QFuQhisoH2XcZKuEOyMqCv8BwaGpjNFG9LiDt2FQvn3lt_tQIKasrqY1qzdQeDgS3xj7GCjFnZ9_fwS3g2lYaiuAjQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775833321.0,
@@ -646,30 +671,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1775832917.0,
-            "poll": null
-        },
-        {
-            "m": "10.04 | 12:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5928",
-            "t": "#BAKERY: МАДЛЕН. ПОРТАЛ В ПРОШЛОЕ",
-            "b": "Марсель Пруст обессмертил это маленькое печенье, превратив его в ключ к потерянному времени. Сказка о памяти и Реализм идеального бисквитного «горбика».\nИНГРЕДИЕНТЫ:\n• Яйца: 2 шт.\n• Сахар: 80г\n• Мед акациевый: 20г\n• Мука: 100г\n• Разрыхлитель: 3г\n• Сливочное масло (растопленное и охлажденное): 100г\n• Лимонная цедра: 1 ч.л.\nWORKFLOW:\n1. ЗАМЕС. Взбить яйца с сахаром и медом до пены. Добавить муку с разрыхлителем, затем масло и цедру.\n2. ХОЛОД (КРИТИЧНО). Тесто должно провести в холодильнике минимум 12 часов. Именно разница температур создает ту самую легендарную форму.\n3. ВЫПЕКАНИЕ. Формы для Мадлен смазать маслом. Духовка: 200°C - 4 минуты (до появления горбика), затем 180°C еще 4-5 минут.\n4. ФИНАЛ. Вынимать немедленно.\nОдин укус - и вы уже не здесь. Вы в саду своего детства, где магия была такой же естественной, как солнечный свет.\n⏱️ Время чтения: 1.1 мин | 🐚 Almanac: Bakery",
-            "img": "https://cdn4.telesco.pe/file/cVE5n4Huugj_n5MAgGQF0XAq9KKSbTdeCb2IBbtN_4g4lJhXi4JT4qWtJV_A76rM9xhVai4fOo03eLWNan9sDuCfMVeYjVyn3_XumiOx6mB_8qhUvAvKM2uHWC7KND9SPMEuhQnKxqVJCIflv2IFn1baBIp5JWNXF0yAIU5ZlcC8DP3n-X56F_YUCC-Z-7gVgUszlkhWp4obB95GOK47cojTwQJDTmJPeg0xFkjFPR966bJIuBHph8VN1ARjfG13eH4WW3b02bEYgAIr98bXNREINVuS0rrTdo4xH-wfzKMc81w0QTQN1HkFnpN4D2VP5Swl3LUuExPDDNVg-Ow-Eg.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775822641.0,
-            "poll": null
-        },
-        {
-            "m": "10.04 | 08:01",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5681",
-            "t": "🇸🇪 ШВЕЦИЯ: FELICIA - «MY SYSTEM» В АКУСТИКЕ",
-            "b": "Шведская серия «A Little Bit More» пополнилась долгожданным видео. Felicia представила акустическую версию своего конкурсного хита «My System», полностью переосмыслив его звучание.\nЕсли оригинал - это мощный электронный поп с акцентом на бит, то акустический вариант превращает песню в интимную исповедь. Живое фортепиано и виолончель подчеркивают каждую нюансировку вокала, раскрывая текст с новой, более уязвимой стороны.\nРежиссером видео выступил Линус Ларссон, сохранив строгую и чистую эстетику шведского минимализма. Каждый кадр пропитан холодным северным светом, что идеально дополняет меланхоличный вайб аранжировки. Эта работа наглядно демонстрирует многогранность артистки: Felicia одинаково уверенно чувствует себя как в масштабных стадионных шоу, так и в камерных акустических сессиях. Видео уже доступно на всех платформах и обещает стать одним из самых обсуждаемых релизов недели в рамках промо-тура к конкурсу в Вене.\nДЕТАЛИ РЕЛИЗА:\n• Артист: Felicia\n• Версия: Acoustic\n• Продакшн: Warner Music Sweden\n• Режиссер: Linus Larsson\n🔗 СМОТРЕТЬ: YouTube\nСмогла ли акустика затмить оригинальный драйв, или «My System» всё же создана для танцполов и больших арен?\n⏱️ Время чтения: 0.8 мин | 🇸🇪 YourVision: #ALBM",
-            "img": "",
-            "vid": "https://cdn4.telesco.pe/file/e5d54a0dda.mp4?token=Sj764gPnUXmibQDrS7fTxU6WdRTr3lBWIMpOI55DfNU-Ih3jZJKPgO-wBYA8mI7E4Mn2o62baRb-4i01aBOLfAmobQdL_LyrONXqS0pl26ISLDyu-pjtHxchuPtad0NK-2CQD7gd4bGFSvUBz7aQWtD0nV94NCOOlq_I0930H410lUOI-mXTTmNV7kLDEHeeSRSN8eJwL5IQa1jFeXoH-kO4iHDWPUYE61d87nplPnZFtUIIacWNPCltFLHpUz_vm1NsiHACKHIfW0vjNwm8N1o5ZIEIHweCIfPF5dbOXfuvV_fB-NcQB5_-eioJGZZq97opztNO8XY3TLLM_7xAHjzoLYYGMqknLXWitR9ENcuYlvuH2_duRcW1gSNrDutwJRiNb4oohoOr2QiJZhWoYyGpijaw_6z9cGAq5qraeb67jIHbQJRGf3qFSIx1nXYKlYBH2IGEFbmyeDQT784STQ5YPI-eEt4U2NpNTzs5qqOhyJVQlX8AwFaoOXyE8JMF1U5N6F2kgYRk9lSL-fG7i4rS94h3rQJ8XKuOf9GXGF6tJT-wZRWgCS1AQJnzDxJQ0sz9GR52DM9Ho7mOsVJxsH0JrprSkZ-jLGCuNWz4izHcr0djjMAgjRxHVogYUkwXcmv5R27x7EdgEMGthHOr_gJwSqXM3BRMKCcD7HrBjy0",
-            "isVideo": true,
-            "ts": 1775808113.0,
             "poll": null
         }
     ],
