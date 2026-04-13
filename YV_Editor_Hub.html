@@ -344,6 +344,16 @@
         .score-bar-bg { width: 100px; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; margin-top: 6px; overflow: hidden; }
         .vote-bar-fill { height: 100%; background: var(--cyan); border-radius: 2px; transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
         .winner-glow .vote-bar-fill { background: #ffd700; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+
+        /* Rank Glows */
+        .gold-glow { border-color: #ffd700 !important; background: rgba(255, 215, 0, 0.05) !important; box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); }
+        .gold-glow .trend-box span { color: #ffd700 !important; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+        
+        .silver-glow { border-color: #c0c0c0 !important; background: rgba(192, 192, 192, 0.05) !important; box-shadow: 0 0 15px rgba(192, 192, 192, 0.2); }
+        .silver-glow .trend-box span { color: #c0c0c0 !important; text-shadow: 0 0 10px rgba(192, 192, 192, 0.5); }
+        
+        .bronze-glow { border-color: #cd7f32 !important; background: rgba(205, 127, 50, 0.05) !important; box-shadow: 0 0 15px rgba(205, 127, 50, 0.2); }
+        .bronze-glow .trend-box span { color: #cd7f32 !important; text-shadow: 0 0 10px rgba(205, 127, 50, 0.5); }
         
         .bracket-connector { 
             display: flex; flex-direction: column; align-items: center; justify-content: center; 
@@ -400,7 +410,7 @@
             padding: 30px;
         }
         .post-card.featured .post-h { font-size: 4.5rem; margin-bottom: 45px; }
-        .post-card.featured .post-media { width: 100%; float: none; height: 500px; object-fit: cover; margin: 0 0 40px 0; }
+        .post-card.featured .post-media { width: 100%; float: none; max-height: 450px; height: auto; object-fit: contain; background: rgba(0,0,0,0.3); margin: 0 0 30px 0; border-radius: 15px; }
         .post-card.featured .post-b { font-size: 1.5rem; color: #fff; }
 
         .date-divider {
@@ -437,25 +447,28 @@
         }
         
         .post-content-wrap {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            display: block;
+            position: relative;
+            max-height: 280px;
+            overflow: hidden;
+            transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .post-content-wrap.expanded {
+            max-height: 5000px;
+        }
+        .post-content-wrap::after {
+            content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 60px;
+            background: linear-gradient(to bottom, transparent, rgba(10,10,10,0.95));
+            transition: 0.3s; pointer-events: none;
+        }
+        .post-content-wrap.expanded::after { opacity: 0; }
         
         @media (min-width: 1300px) {
-            .post-card:not(.featured):not(.is-expanded) .post-content-wrap {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            .post-card:not(.featured):not(.is-expanded) .post-media {
-                width: 180px;
-                height: 180px;
-                flex-shrink: 0;
-                margin-bottom: 0;
-                object-fit: cover;
-            }
-            .post-card:not(.featured):not(.is-expanded) .post-b {
-                max-height: 8.8rem;
+            .post-card:not(.featured) .post-media, .post-card:not(.featured) .video-container {
+                width: 45%;
+                max-width: 300px;
+                float: left;
+                margin: 0 20px 10px 0;
             }
         }
 
@@ -483,33 +496,30 @@
             font-style: italic;
             letter-spacing: -0.01em;
         }
-        .post-media { 
-            width: 100%; border-radius: 10px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); 
-            transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-bottom: 20px;
-            object-fit: cover;
+        .post-media {
+            float: left;
+            width: 45%; max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);
+            margin: 0 20px 10px 0;
+            object-fit: contain;
+            background: rgba(0,0,0,0.3);
+            max-height: 260px;
         }
+        .post-card.featured .post-content-wrap { max-height: 400px; }
+        .post-card.featured .post-content-wrap.expanded { max-height: 5000px; }
         .post-card.featured .post-h { font-size: 3.2rem; margin-bottom: 15px; }
-        .post-card.featured .post-media { height: 300px; }
-        .post-card:hover .post-media { transform: scale(1.05); box-shadow: 0 50px 100px rgba(0,0,0,0.9); }
+        .post-card.featured .post-media, .post-card.featured .video-container { 
+            float: right; 
+            width: 50%; max-width: 450px; 
+            margin: 0 0 20px 25px; 
+            max-height: 380px; height: auto; 
+        }
         .post-b { 
-            font-size: 0.85rem; line-height: 1.4; color: #ccc; letter-spacing: 0.01em; 
-            max-height: 8.8rem; /* Exact 5 lines (1.1 * 1.6 * 5) */
-            overflow: hidden; position: relative;
-            transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.85rem; line-height: 1.5; color: #ccc; letter-spacing: 0.01em; 
             overflow-wrap: break-word;
             word-wrap: break-word;
         }
-        .post-b.expanded { 
-            max-height: 5000px; 
-        }
-        .post-b::after {
-            content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;
-            background: linear-gradient(to bottom, transparent, rgba(10,10,10,0.95));
-            transition: 0.3s; pointer-events: none;
-        }
-        .post-b.expanded::after { opacity: 0; }
         .post-b br { content: ""; display: block; margin-bottom: 10px; }
         
         .read-more-btn {
@@ -648,8 +658,8 @@
         }
         #hist-list::before { 
             content: ""; position: absolute; left: 10px; top: 10px; bottom: 10px; 
-            width: 2px; background: linear-gradient(to bottom, var(--pink), var(--cyan), transparent);
-            opacity: 0.3;
+            width: 2px; background: linear-gradient(to bottom, var(--pink), var(--cyan));
+            opacity: 0.6;
         }
         .hist-item { 
             position: relative; margin-bottom: 25px; 
@@ -672,7 +682,7 @@
             font-weight: 900; margin-bottom: 5px; letter-spacing: 0.1em;
         }
         
-        .hist-time { font-size: 0.75rem; font-weight: 900; color: var(--pink); font-family: "Inter Tight"; font-style: italic; opacity: 0.8; }
+        .hist-time { font-size: 0.75rem; font-weight: 900; color: var(--pink); font-family: "Inter Tight"; font-style: italic; display: block; margin-bottom: 2px; }
         .hist-track { font-size: 0.9rem; font-weight: 700; color: #eee; line-height: 1.2; }
         .hist-artist { color: var(--cyan); font-family: "Inter Tight"; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
         
@@ -754,6 +764,24 @@
             70% { transform: translate(1.5%,0.5%); }
             90% { transform: translate(-1.5%,-0.5%); }
         }
+        .post-link { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; transition: opacity 0.2s; cursor: pointer; }
+        .post-link:hover { opacity: 0.7; }
+        
+        .video-container { float: left; width: 45%; max-width: 300px; aspect-ratio: 16/9; position: relative; border-radius: 15px; overflow: hidden; margin: 0 20px 10px 0; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); clear: none; }
+        .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: contain; }
+        
+        .post-content-wrap { clear: both; }
+        .read-more-btn { clear: both; margin-top: 15px; }
+        
+        @media (max-width: 768px) {
+            .post-media, .video-container, .post-card.featured .post-media, .post-card.featured .video-container {
+                float: none !important;
+                width: 100% !important;
+                max-width: none !important;
+                max-height: 300px !important;
+                margin: 0 0 15px 0 !important;
+            }
+        }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -776,7 +804,6 @@
                 <div class="nav-menu" style="margin-top:10px;">
                     <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
                         <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document"></i> News</a>
-                        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="nav-link" id="nav-cup"><i class="fi fi-rr-trophy"></i> Cup</a>
                         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower"></i> Radio</a>
                         <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats"></i> Chart</a>
                         <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" id="nav-odds" style="color:var(--cyan);"><i class="fi fi-rr-chart-line-up"></i> Odds</a>
@@ -893,19 +920,8 @@
         </aside>
         
         <main class="column">
-            <div class="card" id="cup-sect">
-                <div class="section-title-base title-pink" style="font-size:2rem;"><i class="fi fi-rr-trophy"></i> YOURVISION CUP / 2026 STANDINGS</div>
-                <div id="bracket" style="display:grid; grid-template-columns:1fr 60px 1fr; gap:20px; align-items:center; margin-bottom:40px;"></div>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px;">
-                    <div><span class="side-label" style="color:var(--acid);"><i class="fi fi-rr-check"></i> QUALIFIED [QF]</span><div id="q-list"></div></div>
-                    <div><span class="side-label" style="color:var(--pink);"><i class="fi fi-rr-cross"></i> ELIMINATED</span><div id="e-list"></div></div>
-                </div>
-            </div>
-            <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-book-alt"></i> ENCYCLOPEDIA 2026 / PARTICIPANTS</div>
-                <div id="encyclo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:15px; margin-top:20px;"></div>
-                <div id="ency-anchor"></div>
-            </div>
+            <div id="champion-side-widget"></div>
+            
             <div class="search-container" id="news-sect">
                 <i class="fi fi-rr-search search-icon"></i>
                 <input type="text" id="news-search" class="search-input" placeholder="SEARCH FOR SIGNALS, COUNTRIES OR RESULTS..." oninput="render()">
@@ -919,7 +935,8 @@
                 </div>
             </div>
             <div id="news-grid"></div>
-        </main>
+
+            <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
         
         <aside class="column" id="chart-sect">
             <div class="card" id="roadmap-sect" style="margin-bottom:30px; border-color:var(--pink); background:rgba(255,0,127,0.02);">
@@ -928,12 +945,12 @@
             </div>
 
             <div class="card">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> WORLDSOUND: AIRWAVE VELOCITY — 31.03.2026</div>
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> RU-TOP: SIGNAL 20 — 07.04.2026</div>
                 <div id="chart-list"></div>
             </div>
             
             <div id="vote-sect" class="card" style="margin-top:30px; border-color:var(--acid);">
-                <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;">VOTE NOW: RUTOP — SIGNAL 20</div>
+                <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;">VOTE NOW: EUROGROOVE — VIENNA PRELUDE</div>
                 <div id="nominee-list"></div>
                 
                 <div style="margin-top:25px; padding:20px; background:rgba(204,255,0,0.05); border-radius:20px; border:1px solid rgba(204,255,0,0.1);">
@@ -962,7 +979,6 @@
         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="mobile-nav-btn"><i class="fi fi-rr-broadcast-tower"></i><span>Radio</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="mobile-nav-btn"><i class="fi fi-rr-document"></i><span>News</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="mobile-nav-btn"><i class="fi fi-rr-chart-line-up"></i><span>Odds</span></a>
-        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
     <script src="data.js?v=1775125563"></script>
@@ -972,8 +988,8 @@
                 news: "Новости", cup: "Кубок", radio: "Радио", chart: "Чарт", odds: "Ставки", vote: "Голос",
                 recently: "НЕДАВНО В ЭФИРЕ", bookmakers: "СТАВКИ БУКМЕКЕРОВ", standings: "YOURVISION CUP / 2026 ТАБЛИЦА",
                 qualified: "ПРОШЛИ", eliminated: "ВЫБЫЛИ", search: "ПОИСК СИГНАЛОВ, СТРАН ИЛИ РЕЗУЛЬТАТОВ...",
-                roadmap: "ИНТЕРАКТИВНЫЙ ГРАФИК", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
-                vote_now: "ГОЛОСУЙТЕ: RUTOP — SIGNAL 20", listen: "СЛУШАТЬ НОМИНАНТОВ:", open_vote: "ОТКРЫТЬ ГОЛОСОВАНИЕ",
+                roadmap: "ИНТЕРАКТИВНЫЙ ГРАФИК", ws_chart: "RU-TOP: SIGNAL 20",
+                vote_now: "ГОЛОСУЙТЕ: EUROGROOVE — VIENNA PRELUDE", listen: "СЛУШАТЬ НОМИНАНТОВ:", open_vote: "ОТКРЫТЬ ГОЛОСОВАНИЕ",
                 read_more: "ЧИТАТЬ ПОЛНОСТЬЮ", show_less: "СВЕРНУТЬ", copy: "Копировать", share: "Поделиться", read_min: "мин чтения",
                 vienna: "ВЕНА", riga: "РИГА", deadline: "Голосование до:", premiere: "Премьера итогов:",
                 your_time: "ВАШЕ ВРЕМЯ", your_city: "ЛОКАЦИЯ", translate: "ПЕРЕВЕСТИ",
@@ -989,8 +1005,8 @@
                 news: "News", cup: "Cup", radio: "Radio", chart: "Chart", odds: "Odds", vote: "Vote",
                 recently: "RECENTLY PLAYED", bookmakers: "BOOKMAKERS ODDS", standings: "YOURVISION CUP / 2026 STANDINGS",
                 qualified: "QUALIFIED", eliminated: "ELIMINATED", search: "SEARCH FOR SIGNALS, COUNTRIES OR RESULTS...",
-                roadmap: "INTERACTIVE ROADMAP", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
-                vote_now: "VOTE NOW: RUTOP — SIGNAL 20", listen: "LISTEN TO NOMINEES:", open_vote: "OPEN STRAWPOLL VOTE",
+                roadmap: "INTERACTIVE ROADMAP", ws_chart: "RU-TOP: SIGNAL 20",
+                vote_now: "VOTE NOW: EUROGROOVE — VIENNA PRELUDE", listen: "LISTEN TO NOMINEES:", open_vote: "OPEN STRAWPOLL VOTE",
                 read_more: "READ FULL INSIDE", show_less: "SHOW LESS", copy: "Copy Link", share: "Share", read_min: "min read",
                 vienna: "VIENNA", riga: "RIGA", deadline: "Deadline:", premiere: "Premiere:",
                 your_time: "YOUR TIME", your_city: "LOCATION", translate: "TRANSLATE",
@@ -1006,8 +1022,8 @@
                 news: "Новини", cup: "Кубок", radio: "Радіо", chart: "Чарт", odds: "Ставки", vote: "Голос",
                 recently: "НЕЩОДАВНО В ЕФІРІ", bookmakers: "СТАВКИ БУКМЕКЕРІВ", standings: "YOURVISION CUP / 2026 ТАБЛИЦЯ",
                 qualified: "ПРОЙШЛИ", eliminated: "ВИБУЛИ", search: "ПОШУК СИГНАЛІВ, КРАЇН АБО РЕЗУЛЬТАТІВ...",
-                roadmap: "ІНТЕРАКТИВНИЙ ГРАФИК", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
-                vote_now: "ГОЛОСУЙТЕ: RUTOP — SIGNAL 20", listen: "СЛУХАТИ НОМІНАНТОВ:", open_vote: "ВІДКРИТИ ГОЛОСУВАННЯ",
+                roadmap: "ІНТЕРАКТИВНИЙ ГРАФИК", ws_chart: "RU-TOP: SIGNAL 20",
+                vote_now: "ГОЛОСУЙТЕ: EUROGROOVE — VIENNA PRELUDE", listen: "СЛУХАТИ НОМІНАНТОВ:", open_vote: "ВІДКРИТИ ГОЛОСУВАННЯ",
                 read_more: "ЧИТАТИ ПОВНІСТЮ", show_less: "ЗГОРНУТИ", copy: "Копіювати", share: "Поділитися", read_min: "хв читання",
                 vienna: "ВІДЕНЬ", riga: "РИГА", deadline: "Голосування до:", premiere: "Прем'єра підсумків:",
                 your_time: "ВАШ ЧАС", your_city: "ЛОКАЦІЯ", translate: "ПЕРЕКЛАСТИ",
@@ -1023,8 +1039,8 @@
                 news: "Ziņas", cup: "Kauss", radio: "Radio", chart: "Tops", odds: "Likmes", vote: "Balss",
                 recently: "NESEN SKANĒJA", bookmakers: "BUKMEIKERU PROGNOZES", standings: "YOURVISION KAUSS / 2026 REZULTĀTI",
                 qualified: "KVALIFICĒJĀS", eliminated: "IZSTĀJĀS", search: "MEKLĒT SIGNĀLUS, VALSTIS VAI REZULTĀTUS...",
-                roadmap: "INTERAKTĪVAIS PLĀNS", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
-                vote_now: "BALSOJIET: RUTOP — SIGNAL 20", listen: "KLAUSĪTIES NOMINANTUS:", open_vote: "ATVERT BALSOŠANU",
+                roadmap: "INTERAKTĪVAIS PLĀNS", ws_chart: "RU-TOP: SIGNAL 20",
+                vote_now: "BALSOJIET: EUROGROOVE — VIENNA PRELUDE", listen: "KLAUSĪTIES NOMINANTUS:", open_vote: "ATVERT BALSOŠANU",
                 read_more: "LASĪT VAIRĀK", show_less: "RĀDĪT MAZĀK", copy: "Kopēt saiti", share: "Dalīties", read_min: "min lasīšanai",
                 vienna: "VĪNE", riga: "RĪGA", deadline: "Balsošana līdz:", premiere: "Rezultātu pirmizrāde:",
                 your_time: "JŪSU LAIKS", your_city: "LOKĀCIJA", translate: "PĀRTULKOT",
@@ -1040,8 +1056,8 @@
                 news: "Nyheter", cup: "Kup", radio: "Radio", chart: "Topp", odds: "Odds", vote: "Rösta",
                 recently: "NYLIGEN SPELADE", bookmakers: "BOOKMAKERS ODDS", standings: "YOURVISION CUP / 2026 STÄLLNING",
                 qualified: "KVALIFICERADE", eliminated: "ELIMINERADE", search: "SÖK SIGNALE, LÄNDER ELLER RESULTAT...",
-                roadmap: "INTERAKTIV ROADMAP", ws_chart: "WORLDSOUND: AIRWAVE VELOCITY",
-                vote_now: "RÖSTA NU: RUTOP — SIGNAL 20", listen: "LYSSNA PÅ NOMINERADE:", open_vote: "ÖPPNA RÖSTNING",
+                roadmap: "INTERAKTIV ROADMAP", ws_chart: "RU-TOP: SIGNAL 20",
+                vote_now: "RÖSTA NU: EUROGROOVE — VIENNA PRELUDE", listen: "LYSSNA PÅ NOMINERADE:", open_vote: "ÖPPNA RÖSTNING",
                 read_more: "LÄS HELA INSIDAN", show_less: "VISA MINDRE", copy: "Kopiera länk", share: "Dela", read_min: "min läsning",
                 vienna: "WIEN", riga: "RIGA", deadline: "Röstning till:", premiere: "Premiär för resultat:",
                 your_time: "DIN TID", your_city: "PLATS", translate: "ÖVERSÄTTA",
@@ -1151,12 +1167,14 @@
 
         function replaceFlags(text) {
             if (!text) return "";
-            let res = text.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:40px; height:40px; vertical-align:middle; margin-right:15px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.5));">`);
+            let res = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" onclick="window.open(\'$2\', \'_blank\'); return false;" class="post-link">$1</a>');
+            res = res.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:22px; height:22px; vertical-align:middle; margin-right:8px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.3));">`);
             res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-            res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
+            res = res.replace(/(?<![="])\b(\d+%?)\b(?![=">])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
+            res = res.replace(/🇪🇺|👑/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
-            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:30px; height:30px; vertical-align:middle; margin-right:8px;">`); }
+            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">`); }
             return res;
         }
 
@@ -1170,7 +1188,14 @@
             render();
         }
 
-                                                function render() {
+                                                function getYTId(url) {
+            if (!url) return null;
+            const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+            const match = url.match(regExp);
+            return (match && match[2].length === 11) ? match[2] : null;
+        }
+
+        function render() {
             if(!window.DATA) return;
             const t = LANGS[currentLang];
             
@@ -1185,7 +1210,6 @@
                 const fDate = document.getElementById('full-date'); if(fDate) fDate.innerText = `${day} ${mName} ${now.getFullYear()}`;
                 const tContent = document.getElementById("ticker-content");
                 if(tContent) { const ti = t.ticker.map(item => `<div class="ticker-item">${item}</div>`).join(""); tContent.innerHTML = ti + ti; }
-                const navs = { 'nav-news': t.news, 'nav-cup': t.cup, 'nav-radio': t.radio, 'nav-chart': t.chart, 'nav-odds': t.odds, 'nav-vote': t.vote };
                 for(const id in navs) { const el = document.getElementById(id); if(el) el.innerHTML = `<i class="fi fi-rr-${id.split('-')[1]}"></i> ${navs[id]}`; }
             } catch(e) {}
 
@@ -1201,88 +1225,91 @@
                     const eLab = eList.parentElement.querySelector(".side-label"); if(eLab) eLab.innerHTML = `<i class="fi fi-rr-cross"></i> ${t.eliminated}`;
                     const eHtml = DATA.eliminated.map(c => `<div class="elim-bubble"><div class="tooltip">${decodeS(c.a)}</div><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"></div>`).join("");
                     const hist18 = DATA.battles.filter(b => b.id <= 8);
+                    const hist14 = DATA.battles.filter(b => b.id >= 9 && b.id <= 12);
                     let hHtml = "";
-                    if(hist18.length > 0) {
+                    if(hist18.length > 0 || hist14.length > 0) {
                         hHtml = `<div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:15px;">` +
-                                `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">1/8 FINALS ARCHIVE</div>` +
-                                hist18.map(b => {
+                                `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">MATCHES ARCHIVE (1/8 & 1/4)</div>` +
+                                `<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">` +
+                                [...hist18, ...hist14].map(b => {
                                     const win1 = b.w === 1, win2 = b.w === 2;
-                                    return `<div style="font-size:0.55rem; color:#666; margin-bottom:6px; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
+                                    return `<div style="font-size:0.55rem; color:#666; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
                                     `<div style="display:flex; justify-content:space-between; ${win1?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a1)}</span> <span>${b.sc1}</span></div>` +
                                     `<div style="display:flex; justify-content:space-between; ${win2?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a2)}</span> <span>${b.sc2}</span></div></div>`;
-                                }).join('') + `</div>`;
+                                }).join('') + `</div></div>`;
                     }
                     eList.innerHTML = eHtml + hHtml;
                 }
             } catch(e) {}
 
-            // 2. Enhanced QF Bracket
+            // 2. Champion Widget
             try {
-                const battles = DATA.battles.filter(b => b.id >= 9);
-                const qfDetails = {
-                    9: { name: "THE NORTHERN DUEL", tag1: "ELECTRO-CHAO", tag2: "NORDIC POP" },
-                    10: { name: "ETHNO COLLISION", tag1: "FOLK-CORE", tag2: "RETRO-POP" },
-                    11: { name: "MELODIC BATTLE", tag1: "SCANDI-POP", tag2: "BALKAN BEAT" },
-                    12: { name: "EXPERIMENTAL NIGHT", tag1: "HARDWARE", tag2: "POP-GLOW" }
-                };
+                const finalBattle = DATA.battles.find(b => b.id === 15 && b.status === 'DONE');
+                const champEl = document.getElementById("champion-side-widget");
+                if(finalBattle && champEl) {
+                    const win1 = finalBattle.w === 1;
+                    const wA = win1 ? finalBattle.a1 : finalBattle.a2;
+                    const wI = win1 ? finalBattle.img1 : finalBattle.img2;
+                    const wT = win1 ? finalBattle.t1 : finalBattle.t2;
 
-                let bHtml = "";
-                battles.forEach((b, i) => {
-                    if(i % 2 === 0) {
-                        const b1 = b, b2 = battles[i+1];
-                        const rM = (m) => {
-                            if(!m) return "";
-                            const details = qfDetails[m.id] || { name: "QF MATCH", tag1: "INSIDER", tag2: "INSIDER" };
-                            const isL = m.status === 'LIVE';
-                            const p1 = parseInt(m.sc1) || 0, p2 = parseInt(m.sc2) || 0;
-                            return `<div class="card ${isL?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.02); margin-bottom:15px; border-top: 4px solid var(--cyan);">
-                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                                    <span style="font-size:0.55rem; color:var(--cyan); font-weight:900; letter-spacing:0.2em;">${details.name}</span>
-                                    ${isL ? '<span class="live-tag" style="margin:0; padding:2px 6px; font-size:0.5rem;">LIVE</span>' : ''}
-                                </div>
-                                
-                                <div style="display:flex; align-items:center; gap:12px;">
-                                    <img src="${getH(m.t1)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
-                                    <div style="flex-grow:1;">
-                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
-                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a1)}</div>
-                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc1}</div>
-                                        </div>
-                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag1}</div>
-                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p1}%; background:var(--cyan);"></div></div>
-                                    </div>
-                                </div>
-
-                                <div style="display:flex; align-items:center; gap:12px; margin-top:20px;">
-                                    <img src="${getH(m.t2)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
-                                    <div style="flex-grow:1;">
-                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
-                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a2)}</div>
-                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc2}</div>
-                                        </div>
-                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag2}</div>
-                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p2}%; background:var(--cyan);"></div></div>
-                                    </div>
-                                </div>
-                            </div>`;
-                        };
-                        bHtml += rM(b1) + (b2 ? `<div style="text-align:center; margin:10px 0; opacity:0.2;"><div style="height:1px; background:#fff; width:100px; margin:0 auto;"></div></div>` + rM(b2) : "");
-                    }
-                });
-                const bCont = document.getElementById("bracket"); if(bCont) bCont.innerHTML = bHtml;
-                const cSect = document.getElementById("cup-sect"); if(cSect) {
-                    const cTitle = cSect.querySelector(".section-title-base"); if(cTitle) cTitle.innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.standings}`;
+                    champEl.innerHTML = `<div class="card" style="margin-bottom:20px; border-color:var(--pink); background:rgba(255,0,127,0.05); padding:12px; display:flex; align-items:center; gap:15px; border-radius:15px; border-left: 4px solid var(--pink);">
+                            <img src="${wI}" style="width:50px; height:50px; border-radius:10px; object-fit:cover; border:1px solid var(--pink);">
+                            <div style="flex-grow:1;">
+                                <div style="font-size:0.5rem; color:var(--pink); font-weight:900; letter-spacing:0.2em;">CUP CHAMPION</div>
+                                <div class="artist-rich" style="font-size:1rem; color:#fff;">${decodeS(wA)}</div>
+                            </div>
+                            <img src="${getH(wT)}" class="heart-shape" style="width:30px; height:30px;">
+                        </div>`;
+                } else if (champEl) {
+                    champEl.innerHTML = "";
                 }
             } catch(e) {}
 
             // 3. Roadmap & Chart & Vote & Odds
             try {
                 const rs = document.getElementById("roadmap-sect"); if(rs) rs.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-calendar-lines"></i> ${t.roadmap}`;
-                if(DATA.roadmap) document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map(item => `<div class="bubble ${item.s==='LIVE'?'status-live-pulse':''}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${item.s==='LIVE'?'var(--acid)':(item.s==='MAJOR'?'var(--pink)':'#333')};"><div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span><span style="font-size:0.6rem; font-weight:900; color:${item.s==='LIVE'?'var(--acid)':'#555'}; text-transform:uppercase;">${item.s}</span></div><div style="margin-top:5px;"><div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div><div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div></div></div>`).join("");
+                if(DATA.roadmap) {
+                    const now = new Date();
+                    const currentDay = now.getDate();
+                    const currentMonth = now.getMonth() + 1;
+
+                    document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map(item => {
+                        const [d, m] = item.d.split('.').map(Number);
+                        let autoStatus = item.s;
+                        let statusClass = "";
+                        let statusColor = "#333";
+
+                        if (m < currentMonth || (m === currentMonth && d < currentDay)) {
+                            autoStatus = "DONE";
+                            statusColor = "#555";
+                        } else if (d === currentDay && m === currentMonth) {
+                            autoStatus = "LIVE";
+                            statusClass = "status-live-pulse";
+                            statusColor = "var(--acid)";
+                        } else {
+                            autoStatus = item.s === 'MAJOR' ? 'MAJOR' : 'WAITING';
+                            statusColor = item.s === 'MAJOR' ? 'var(--pink)' : '#555';
+                        }
+
+                        return `<div class="bubble ${statusClass}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${statusColor};">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span>
+                                <span style="font-size:0.6rem; font-weight:900; color:${statusColor}; text-transform:uppercase;">${autoStatus}</span>
+                            </div>
+                            <div style="margin-top:5px;">
+                                <div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div>
+                                <div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div>
+                            </div>
+                        </div>`;
+                    }).join("");
+                }
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
-                    const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 31.03.2026`;
-                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:30px; height:30px; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
+                    const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 07.04.2026`;
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => {
+                        const rc = idx === 0 ? 'gold-glow' : (idx === 1 ? 'silver-glow' : (idx === 2 ? 'bronze-glow' : ''));
+                        return `<div class="bubble ${rc}"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:12px !important; margin:0 15px; object-fit:cover;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`;
+                    }).join("");
                 }
 
                 const os = document.getElementById("odds-sect"); if(os) {
@@ -1290,12 +1317,12 @@
                     document.getElementById("odds-list").innerHTML = DATA.odds.map(o => `<div class="bubble" style="padding:8px; margin-bottom:5px;"><span style="color:var(--cyan); font-weight:900; width:20px;">${o.r}</span><img src="${getH(o.id)}" class="heart-shape" style="width:20px; height:20px; margin:0 8px;"><div style="flex-grow:1; font-size:0.8rem;">${o.c}</div><span style="font-weight:900; color:var(--cyan);">${o.p}</span></div>`).join("");
                 }
 
-                const vs = document.getElementById("vote-sect"); if(vs) {
-                    vs.querySelector(".section-title-base").innerText = t.vote_now;
-                    const vbs = vs.querySelectorAll("b"); if(vbs.length>=2){vbs[0].innerText=t.deadline; vbs[1].innerText=t.premiere;}
-                    const vBtn = vs.querySelector(".order-btn"); if(vBtn) vBtn.innerHTML = `<i class="fi fi-rr-checkbox"></i> ${t.open_vote}`;
-                    if(DATA.nominees) document.getElementById("nominee-list").innerHTML = DATA.nominees.map(n => `<div class="bubble" style="padding: 8px 10px; margin-bottom:10px; border-radius:10px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);"><img src="${n.img}" class="chart-cover" style="width:30px !important; height:30px !important; margin:0 12px 0 0; border-radius:10px !important;"><div style="overflow:hidden; flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(n.a)}</div><div style="font-size:0.75rem; opacity:0.6;">${decodeS(n.s)}</div></div><a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a></div>`).join("");
-                }
+                    const vs = document.getElementById("vote-sect"); if(vs) {
+                        vs.querySelector(".section-title-base").innerText = t.vote_now;
+                        const vbs = vs.querySelectorAll("b"); if(vbs.length>=2){vbs[0].innerText=t.deadline; vbs[1].innerText=t.premiere;}
+                        const vBtn = vs.querySelector(".order-btn"); if(vBtn) vBtn.innerHTML = `<i class="fi fi-rr-checkbox"></i> ${t.open_vote}`;
+                        if(DATA.nominees) document.getElementById("nominee-list").innerHTML = DATA.nominees.map(n => `<div class="bubble" style="padding: 10px 12px; margin-bottom:10px; border-radius:12px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);"><img src="${n.img}" class="chart-cover" style="width:55px !important; height:55px !important; margin:0 15px 0 0; border-radius:12px !important;"><div style="overflow:hidden; flex-grow:1;"><div class="artist-rich" style="font-size:0.9rem; color:#fff;">${decodeS(n.a)}</div><div style="font-size:0.75rem; opacity:0.6;">${decodeS(n.s)}</div></div><a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1.2rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a></div>`).join("");
+                    }
             } catch(e) {}
 
             // 7. News
@@ -1310,16 +1337,38 @@
                         const isF = pIdx === 0 && sVal === "" && currentLang === 'ru';
                         const pD = p.m.split(' | ')[0];
                         let dH = ""; if(pD !== curD) { curD = pD; dH = `<div class="date-divider"><span class="date-divider-val">${pD}</span><div class="date-divider-line"></div></div>`; }
+                        
+                        // Advanced Video & Link Detection
+                        let videoId = getYTId(p.vid);
+                        let isDirectVideo = p.vid && (p.vid.includes('.mp4') || p.vid.includes('.mov') || p.vid.includes('.webm'));
+                        
+                        if(!videoId && !isDirectVideo && p.b) {
+                            const ytMatch = p.b.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
+                            if(ytMatch) videoId = ytMatch[1];
+                        }
+
+                        let mediaHtml = "";
+                        if(videoId) {
+                            mediaHtml = `<div class="video-container"><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+                        } else if(isDirectVideo) {
+                            mediaHtml = `<div class="video-container"><video src="${p.vid}" controls poster="${p.img}"></video></div>`;
+                        } else if(p.img) {
+                            mediaHtml = `<img src="${p.img}" class="post-media">`;
+                        }
+
+                        function linkify(text) {
+                            const urlRegex = /(https?:\/\/[^\s<]+)/g;
+                            return text.replace(urlRegex, url => `<a href="${url}" target="_blank" style="color:var(--cyan); text-decoration:underline;">${url}</a>`);
+                        }
+
                         return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
                             <span class="post-meta">${p.m}</span>
                             <div class="post-h">${replaceFlags(p.t)}</div>
-                            <div class="post-content-wrap">
-                                ${p.img ? `<img src="${p.img}" class="post-media">` : ""}
-                                <div style="flex-grow:1;">
-                                    <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
-                                    <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
-                                </div>
+                            <div class="post-content-wrap" id="post-body-${pIdx}">
+                                ${mediaHtml}
+                                <div class="post-b">${linkify(replaceFlags(p.b.replace(/\n/g, "<br>")))}</div>
                             </div>
+                            <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
                             <div class="post-actions">
                                 <button class="action-btn" onclick="translatePost(${pIdx})" id="trans-btn-${pIdx}"><i class="fi fi-rr-globe"></i> ${t.translate}</button>
                                 <button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> ${t.copy}</button>
@@ -1443,11 +1492,12 @@
                     const query = encodeURIComponent(`${artist} ${song}`);
                     const isNow = idx === 0;
                     const cover = h.img ? "https://myradio24.com/" + h.img : "assets/heart_white_2026.svg";
+                    const playTime = h.time ? h.time.toString().substring(0,5) : "--:--";
                     
                     return `<div class="hist-item ${isNow?'hist-now':''}">
                         <div class="hist-cover" style="background-image:url('${cover}')"></div>
-                        <div class="hist-content">
-                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time">${h.time.substring(0,5)}</span>`}
+                        <div class="hist-content" style="padding-left: 5px;">
+                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time" style="display:block;">${playTime}</span>`}
                             <div class="hist-artist">${artist}</div>
                             <div class="hist-track">${song}</div>
                             <div class="hist-discovery">
