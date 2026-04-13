@@ -356,26 +356,16 @@ var DATA = {
     ],
     "news": [
         {
-            "m": "13.04 | 10:15",
+            "m": "13.04 | 07:22",
             "id": "70",
-            "u": "https://t.me/YourEurovision/jonas_lovv_albm",
+            "u": "https://t.me/YourEurovision/5698",
             "t": "🇳🇴 НОРВЕГИЯ: JONAS LOVV - ARCADE (COVER)",
-            "b": "Jonas Lovv представил свое прочтение победного хита 2019 года - «Arcade». Вокальный манифест перед Веной. https://www.youtube.com/watch?v=J5jhABNYmfA",
-            "img": "https://img.youtube.com/vi/J5jhABNYmfA/maxresdefault.jpg",
-            "vid": "https://www.youtube.com/watch?v=J5jhABNYmfA",
-            "isVideo": true,
-            "ts": 1776064500
-        },
-        {
-            "m": "13.04 | 10:00",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/essyla_albm",
-            "t": "🇧🇪 БЕЛЬГИЯ: ESSYLA - DANCING ON THE ICE (PIANO VERSION)",
-            "b": "Серия «A Little Bit More» продолжает раскрывать грани артистов. Essyla представила акустическую версию «Dancing on the Ice». https://www.youtube.com/watch?v=hYTi2htr29c",
-            "img": "https://img.youtube.com/vi/hYTi2htr29c/maxresdefault.jpg",
-            "vid": "https://www.youtube.com/watch?v=hYTi2htr29c",
-            "isVideo": true,
-            "ts": 1776063600
+            "b": "В рамках серии «A Little Bit More» представитель Норвегии Jonas Lovv представил свое прочтение победного хита 2019 года - «Arcade».\nЕсли в своей конкурсной песне «Ya Ya Ya» Йонас делает ставку на безудержную энергию и темп, то здесь мы видим совершенно другого артиста. Минималистичная аранжировка и фокус на чистом вокале позволяют прочувствовать каждую интонацию. Его интерпретация - это баланс между меланхолией оригинала и собственной северной сдержанностью. Это мощный сигнал конкурентам: вокальный диапазон Йонаса готов к любым вызовам в Вене.\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 0.7 мин | 🇳🇴 YourVision: #EurovisionALBM",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1776064957.0,
+            "poll": null
         },
         {
             "m": "13.04 | 07:03",
@@ -665,7 +655,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5680",
             "t": ".🏆 RESULTS: ПОЛУФИНАЛ #2 - ПОП-ФУТУРИЗМ ЗАХВАТЫВАЕТ СЦЕНУ",
             "b": "Второй полуфинальный поединок YourVision Cup 2026 завершен. Сенсации не случилось: фаворит европейских чартов Dara (Болгария) уверенно забирает последнюю путевку в решающую битву сезона.\nИТОГИ ГОЛОСОВАНИЯ (SF #2):\n🇧🇬 Болгария (Dara) - 64% ★ (Проход в Гранд-Финал)\n🇲🇩 Молдова (Satoshi) - 36%\nГРАНД-ФИНАЛ СФОРМИРОВАН:\n🇫🇮 Финляндия (Linda & Pete) vs 🇧🇬 Болгария (Dara).\nЭто битва, где лёд техно-скрипки танцует с пламенем балканского драйва. Нас ждет лобовое столкновение двух абсолютно разных, но одинаково мощных музыкальных кодов.\nРАСПИСАНИЕ:\nСегодня (10.04) в чемпионате объявлен выходной. Гранд-Финал YourVision Cup 2026 состоится завтра, в субботу, 11 апреля.\nСможет ли Болгария навязать свою игру фаворитам из Хельсинки или финский каток «Liekinheitin» уже не остановить?\n⏱️ Время чтения: 0.9 мин | 🏆 YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/R4Z2D9ugWRomUwuonu-FI8FRswlUjBtI8f8AdbP4i_PQXXm8cqTqFCQrZCRyXEOX2evqORQsTcN_Ufa0Yi6o5Rcsa4EZsSHRetpSvFHVe1q1DBDPEeoMFR1gJC220DIOsCY4XMuY0oAj-14GK549Gb_1itEq3vM821CXyxkgXsuWpfcFURxfNEfe_P1hUFdntAkie4RjfhmsnS5695CPbqmm99UJppTHwvYTLOkYgaWKChS329xM3iKg3b-VYf2zOWUDIotpoA6gwQihHg4xUk4Thx-C0AR9dPHNrX0HUxiTU1swnY112XSD4xrKPX4F_P5qMhWGbhGsdvW_saglVA.jpg",
+            "img": "https://cdn4.telesco.pe/file/pS9dLG95bxxUZ52zZhzmREKAwa9cgehQYBp8bz6UHnrDnCANCPpcjA3bk3KQo-s-92vOW5dC805sQZ29IqPJ_J3jfoYRpCmH1b3XNBVlLx1VIMmh1D6loKXCza1xIegK15th-r9hSvoisXzUD33puBwJYxszw62zJuvXwMupDtc7ewAyKRd7tCHCbXlVvCi2clOFtM-_pRmAhr6IyAI0i8_dsMsFIrK2suNBWu6uNkzgPiArXbST4Mp1fShteRn-ZFWmiIqoYyJHpw7Yi0oHl_KK7wGr3zACV9Eftv0ox9D2y4e2-6_cdP6sBWuXAwA4Y2Dw3VjpPBczPZ4QcACfjA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775807931.0,
@@ -682,24 +672,6 @@ var DATA = {
             "isVideo": false,
             "ts": 1775759531.0,
             "poll": null
-        },
-        {
-            "m": "09.04 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5678",
-            "t": "📊 ОПРОС: 📊 THE RESET: МАЛЬТАЧья стратегия кажется вам более перспективной?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775759521.0,
-            "poll": {
-                "question": "📊 THE RESET: МАЛЬТАЧья стратегия кажется вам более перспективной?",
-                "options": [
-                    "2026: Aidan («Bella») - Новый курс",
-                    "2025: Miriana Conte («Serving») - Прошлый сезон"
-                ]
-            }
         }
     ],
     "qualifiers": [
