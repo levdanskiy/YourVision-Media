@@ -391,6 +391,9 @@
     "asia_contest": {
         "participants": [
             "India"
+        ],
+        "invited": [
+            "Kazakhstan"
         ]
     }
 }
