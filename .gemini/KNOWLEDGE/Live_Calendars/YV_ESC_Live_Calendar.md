@@ -6,7 +6,10 @@
 * 11.04 🇳🇱 **Amsterdam**: Eurovision in Concert
 * 11.04 🇵🇱 **Польша (JESC)**: The Voice Kids Blind Auditions 6 (21:30 CEST)
 * 17.04 🇬🇧 **London**: Eurovision Festival Fundraiser
+* 18.04 🇦🇹 **#EurovisionAgain**: Vienna 1967 Watch-along (22:00).
+* 25.04 🇦🇹 **#EurovisionAgain**: Vienna 2015 Watch-along (22:00).
 * 18.04 🇵🇱 **Польша (JESC)**: The Voice Kids Battles 1 (21:30 CEST)
+* 25.04 🇦🇹 **#EurovisionAgain**: Vienna 2015 Watch-along (22:00).
 * 19.04 🇬🇧 **London**: Eurovision Party
 * 25.04 🇵🇱 **Польша (JESC)**: The Voice Kids Battles 2 (21:30 CEST)
 
