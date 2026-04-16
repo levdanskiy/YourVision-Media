@@ -4,6 +4,7 @@
 * 10:00 | **YV** | ⚔️ **#CUP:** 1/8 Final #8 - Aidan vs Dara. - ✅ [ГОТОВО]
 * 11:30 | **YV** | 🇷🇴 **#ALBM:** Alexandra Căpitănescu - Fuego. - ✅ [ГОТОВО]
 * 12:00 | **YV** | 🌍 **#INSIDER:** Martin Green Interview (Der Standard). - ✅ [ГОТОВО]
+* 16:00 | **YV** | 🇱🇹 **#REVAMP:** Lion Ceccah - Sólo quiero más. - ✅ [ГОТОВО]
 * 13:00 | **YV** | 🌏 **#GLOBAL:** Eurovision Asia 2026 Launch. - ✅ [ГОТОВО]
 * 18:00 | **AL** | 🥯 **#BAKERY:** Театр Тромплей: Технология съедобного камня. - ✅ [ГОТОВО]
 * 21:00 | **AL** | 📑 **#LISTS:** Величайшие мистификации в истории. - ✅ [ГОТОВО]
@@ -47,6 +48,7 @@
 ### 08.04 (Ср)
 * 10:00 | **YV** | ⚔️ **#CUP:** 1/2 FINAL #1 - Финляндия vs Греция. - ✅ [ГОТОВО]
 * 12:00 | **YV** | 🇱🇺 **#ALBM:** Eva Marija - Mother Nature (Folk Version). - ✅ [ГОТОВО]
+* 16:00 | **YV** | 🇱🇹 **#REVAMP:** Lion Ceccah - Sólo quiero más. - ✅ [ГОТОВО]
 * 12:30 | **YV** | 🇨🇾 **#ALBM:** Antigoni - My Number One (Cover). - ✅ [ГОТОВО]
 
 ### 09.04 (Чт)
@@ -70,6 +72,7 @@
 ### 14.04 (Вт)
 * 10:00 | **EY** | 🎓 **#STORY:** Урок физики Янтаря: Границы дозволенного. - ✅ [ГОТОВО]
 * 12:00 | **YV** | 🗳️ **#VOTING_CLOSE:** Eurogroove: Vienna Prelude. - ⬜ [ОЖИДАНИЕ]
+* 16:00 | **YV** | 🇱🇹 **#REVAMP:** Lion Ceccah - Sólo quiero más. - ✅ [ГОТОВО]
 * 15:04 | **AL** | 📑 **#LISTS:** 4 фильма с идеальным туманом. - ⬜ [ОЖИДАНИЕ]
 * 15:30 | **EY** | 🔦 **#STORY:** Заброшенное крыло: Потерянный дрон Марты. - ✅ [ГОТОВО]
 * 17:50 | **YV** | 📢 **#CHART_REMINDER:** Eurogroove (20:30 Start). - ⬜ [ОЖИДАНИЕ]
@@ -90,6 +93,7 @@
 * 11:40 | **YV** | 🇫🇷 **#ALBM:** Monroe - Regarde ! (Piano Version). - ✅ [ГОТОВО]
 * 11:31 | **YV** | 🇲🇪 **#ALBM:** Tamara Živković - Nova Zora (Orchestral Version). - ✅ [ГОТОВО]
 * 12:00 | **YV** | 🇩🇪 **#ALBM:** Sarah Engels - Nel Blu Dipinto Di Blu (Modugno Cover). - ⬜ [ОЖИДАНИЕ]
+* 16:00 | **YV** | 🇱🇹 **#REVAMP:** Lion Ceccah - Sólo quiero más. - ✅ [ГОТОВО]
 * 15:04 | **AL** | 🥐 **#BAKERY:** Коричный узел: Геометрия закручивания и секрет хруста. - ✅ [ГОТОВО]
 * 18:02 | **AL** | 📖 **#SOURCE:** Братья Гримм: Сахарные домики как архетип соблазна. - ✅ [ГОТОВО]
 
@@ -101,4 +105,5 @@
 ### 18.04 (Сб)
 * 22:00 | **YV** | 🏛 **#EurovisionAgain:** Vienna 1967 Watch-along. - ⬜ [ОЖИДАНИЕ]
 * 12:00 | **AL** | 🥧 **#BAKERY:** Черничный тарт: Цвет северных сумерек и песочная основа. - ✅ [ГОТОВО]
+* 16:00 | **YV** | 🇱🇹 **#REVAMP:** Lion Ceccah - Sólo quiero más. - ✅ [ГОТОВО]
 * 21:00 | **AL** | 📜 **#LORE:** Орнамент бесконечности: Космический код в тканом полотне. - ✅ [ГОТОВО]
