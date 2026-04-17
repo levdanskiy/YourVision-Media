@@ -17,7 +17,7 @@
 *   **Intimacy Archetype:** «The Grounding Shelter» (Заземляющее убежище).
 *   **Intimacy Behavior:** Primal, protective, and deeply physical. His lovemaking is heavy, slow, and focused on Jan's comfort.
 *   **Amber Bleed:** His sweat smells of cedar; his Pulse turns Jan's skin warm gold.
-*   **Taboo:** Physical Risk — His "Amber Thirst" is so vast he can accidentally drain Jan's Pulse to critical levels.
+*   **Taboo:** Physical Risk - His "Amber Thirst" is so vast he can accidentally drain Jan's Pulse to critical levels.
 *   **Shadow Preference:** Validation Obsession. Needs Jan to scream his name to confirm his existence outside the factory.
 *   **Obsession Trigger:** Jan's Submission. When the aristocrat-empath yields to the worker-split.
 *   **Soul Sync:** Jan perceives his soul as an "ancient root" deep in Eleja's soil. Pure, unbreakable loyalty.
@@ -44,7 +44,7 @@
 *   **Intimacy Archetype:** «The Fractal Architect» (Фрактальный архитектор).
 *   **Intimacy Behavior:** Precise, experimental, and intellectualized. High-frequency vibrations.
 *   **Amber Bleed:** Turquoise frost appears on his skin; the air becomes electric and cold.
-*   **Taboo:** Mind Resonance — During Sync-3, thoughts blend; Jan might see state-secret codes.
+*   **Taboo:** Mind Resonance - During Sync-3, thoughts blend; Jan might see state-secret codes.
 *   **Shadow Preference:** Voyeurism. Prefers to "view" feelings through his monocle even during sex.
 *   **Obsession Trigger:** Jan's Defiance. The intellectual challenge Jan presents before yielding.
 *   **Soul Sync:** His soul is an "infinite library" under the aurora borealis. A vast sea of knowledge traded for a moment of presence.
@@ -71,7 +71,7 @@
 *   **Intimacy Archetype:** «The Addictive Storm» (Зависимый шторм).
 *   **Intimacy Behavior:** Chaotic, desperate, and borderline aggressive. Touch of teeth and velvet.
 *   **Amber Bleed:** Pulse-tattoos turn pitch black; Jan experiences "Visual Static".
-*   **Taboo:** Empathic Intoxication — Felix is "contagious" with his trauma; sex is a trip into his nightmares.
+*   **Taboo:** Empathic Intoxication - Felix is "contagious" with his trauma; sex is a trip into his nightmares.
 *   **Shadow Preference:** Marking. Desires to brand Jan as his territory with "black amber" traces.
 *   **Obsession Trigger:** The scent of ozone from Jan (recalling the day of their breakup).
 *   **Soul Sync:** His soul is a "broken mirror" where every shard reflects Jan. A terrifying but hypnotic unity.
@@ -98,7 +98,7 @@
 *   **Intimacy Archetype:** «The Sovereign's Command» (Власть суверена).
 *   **Intimacy Behavior:** Dominant, ritualistic, sophisticated. Demands total surrender.
 *   **Amber Bleed:** The smell of white lilies becomes suffocating; shadows move independently.
-*   **Taboo:** Vampire Ritual — Sex always ends with a "Contract Bite", legally binding Jan to the Directorate.
+*   **Taboo:** Vampire Ritual - Sex always ends with a "Contract Bite", legally binding Jan to the Directorate.
 *   **Shadow Preference:** Total Control. Sensory deprivation (bounds, masks) so Jan only feels HIM.
 *   **Obsession Trigger:** Jan's Pulse under his fangs. The sound and rhythm of the energy.
 *   **Soul Sync:** His soul is a "dark cathedral" of black marble. In the center, a tiny altar dedicated to humanity.
@@ -125,7 +125,7 @@
 *   **Intimacy Archetype:** «The Silent Oasis» (Тихий оазис).
 *   **Intimacy Behavior:** Pure, tender, and "human". Just skin, breath, and heartbeat.
 *   **Amber Bleed:** Zero magical effects. Just the simple, honest heat of a human body.
-*   **Taboo:** System Error — The Alliance views intimacy with a "Blank" (human) as biological decay.
+*   **Taboo:** System Error - The Alliance views intimacy with a "Blank" (human) as biological decay.
 *   **Shadow Preference:** Simplicity. Absence of all "magical clutter" - just human warmth.
 *   **Obsession Trigger:** Jan's Silence. When Jan finally stops hearing the Palace's whispers in his arms.
 *   **Soul Sync:** His soul is a "sunny glade" in the middle of a storm. No secrets, just the joy of being.
