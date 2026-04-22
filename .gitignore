@@ -29,3 +29,4 @@ Apsaimniekošana/
 .env
 .local/
 snap/
+.cache/
