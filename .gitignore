@@ -26,3 +26,6 @@ Apsaimniekošana/
 .gemini/tmp/
 .gemini/TRASH/
 
+.env
+.local/
+snap/
