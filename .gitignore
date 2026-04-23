@@ -30,3 +30,8 @@ Apsaimniekošana/
 .local/
 snap/
 .cache/
+.cache/
+.local/
+.venv/
+tmp_env/
+node_modules/
