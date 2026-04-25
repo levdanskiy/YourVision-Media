@@ -1,3 +1,6 @@
-/*
-!.gitignore
-!.gemini/
+*
+!/.gitignore
+!/.gemini/
+!/.gemini/YOURVISION/01_BIBLES/04_CONTENT/
+!/.gemini/ELEYIA/04_CONTENT/
+!/.gemini/SHARED/01_SYSTEM/REAL_TIME.json
