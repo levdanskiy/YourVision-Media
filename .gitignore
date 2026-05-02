@@ -1,6 +1,16 @@
+<<<<<<< HEAD
+/*
+!.gitignore
+!.gemini/
+.gemini/tmp/
+.gemini/SHARED/01_SYSTEM/archive/
+*.jsonl
+.gemini/tmp/
+=======
 *
 !/.gitignore
 !/.gemini/
 !/.gemini/YOURVISION/01_BIBLES/04_CONTENT/
 !/.gemini/ELEYIA/04_CONTENT/
 !/.gemini/SHARED/01_SYSTEM/REAL_TIME.json
+>>>>>>> 033197aeb4693274398b317ae532a43035c5a8ca

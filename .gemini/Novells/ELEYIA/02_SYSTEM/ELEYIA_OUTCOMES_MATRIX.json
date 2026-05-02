@@ -1,0 +1,27 @@
+{
+  "event_id": "EL-28.04-OUTCOMES-FINAL",
+  "date": "2026-04-28",
+  "outcomes": {
+    "mask_partnership": {
+      "label": "МАСКА ПАРТНЕРСТВА",
+      "choice": "Требовать объяснений",
+      "votes": "100%",
+      "affinity_impact": {
+        "Dorian": -10,
+        "Elara": +5
+      },
+      "plot_flag": "DEFIANCE_ACTIVE"
+    },
+    "breaking_point": {
+      "label": "ПЕРЕЛОМНЫЙ МОМЕНТ",
+      "choice": "Попытка обхода",
+      "votes": "100%",
+      "location_change": "Ventilation_Shafts",
+      "danger_level": "+20%"
+    }
+  },
+  "metadata": {
+    "status": "ARCHIVED",
+    "punctuation_check": "PASSED (No long dashes)"
+  }
+}
