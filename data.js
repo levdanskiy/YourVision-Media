@@ -356,6 +356,18 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "03.05 | 07:04",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5974",
+            "t": "🏛 #SOURCE: ТЕНИ ГОФМАНА - ФИЗИКА ЛИМИНАЛЬНОСТИ",
+            "b": "Эрнст Теодор Амадей Гофман был первым, кто превратил сказку в технический чертеж тревоги. В его текстах (особенно в «Песочном человеке») мы видим не просто магию, а физику процесса: как привычные объекты - зеркала, куклы, линзы очков - становятся порталами в Иномирье.\nГЕРМЕНЕВТИКА СТРАХА:\nГофман описывает границу между «живым» и «механическим». В начале мая, когда природа совершает свой самый мощный рывок, этот контраст ощущается особенно остро. Страх перед автоматизмом (автоматами-куклами) у Гофмана - это предчувствие утраты искры Резонанса в мире, где форма начинает доминировать над содержанием.\nЯКОРЬ В СОВРЕМЕННОСТИ:\nСегодня мы называем это «эффектом зловещей долины». Гофман предсказал наше неуютное чувство перед слишком совершенным ИИ или реалистичной графикой. Он учит нас, что истина всегда скрыта в несовершенстве, в той самой «тени», которую невозможно оцифровать.\nРИТУАЛ МОМЕНТА:\nВыключите весь свет. Зажгите одну свечу перед зеркалом. Посмотрите не на себя, а на отражение теней за вашей спиной. Это упражнение возвращает понимание того, что реальность - это лишь узкая полоска света в бесконечном архиве теней.\n🎹 SOUNDSCAPE: Скрип старого паркета, тиканье механических часов, шелест сухой бумаги.\n🎒 ИНВЕНТАРЬ: Свеча, зеркало, том Гофмана.\n⏱️ 2.3 мин | 🏛 Thought Layer | May 3",
+            "img": "https://cdn4.telesco.pe/file/NIoYDWFdzk2L51f0tzm39ADX8dZ8TO5CfaSoM2XuGq51RJj1xD3j-xZL8QZhRRD0rypVejGMexfI2yL9L88u1oKLUHKpnIyQokiP_V0HWe3a_5dB2ZSwx7S0tC8VcEOZvMFOpEs08PxVaO4dJwbs-4cC3u4I6oSR5ToKC7kDVWhsXt5DR8dJqKdrlQIxsAthaulgazVftvomN8T9SXwdGE570qSghsylSOJk5D3FJZRM7_8m9Zh3dhTHxEyjgyOLKvBWeLWcIeQDmlKFcPGhLIyffr29FOeG4ab28CyQOhq0CcEhYJj_jcOYZuepdKRiHvSzJwOF95jkWLYrirBXVA.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1777791841.0,
+            "poll": null
+        },
+        {
             "m": "02.05 | 18:32",
             "id": "70",
             "u": "https://t.me/YourEurovision/5819",
@@ -517,7 +529,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5972",
             "t": "🏛 #LORE: ПАРКИ - ГЕОМЕТРИЯ СУДЬБЫ",
             "b": "Май - это время, когда нить судьбы, согласно античным и германским мифам, становится максимально гибкой. Это период «растяжения» полотна реальности. Ткачихи судьбы (Парки у римлян, Мойры у греков, Норны у северных народов) в эти дни работают над новыми узорами. Пока мир расцветает, они фиксируют основы будущего года.\nГЕРМЕНЕВТИКА УЗЛА:\nПочему мы до сих пор завязываем «узелки на память»? В древнем сознании узел - это не просто способ закрепить предмет, это акт остановки времени. Завязывая нить в начале мая, человек пытался «поймать» удачу, зафиксировать благоприятный резонанс весны. Узел - это точка концентрации воли.\nЯКОРЬ В СОВРЕМЕННОСТИ:\nНаше увлечение сложным плетением в интерьере, ношение браслетов-оберегов или даже использование узлов в дизайне одежды - это всё тот же поиск стабильности в хаосе. Мы инстинктивно ищем форму, способную удержать смысл. Май учит нас, что судьба - это не то, что «случается», а то, что мы выплетаем из ежедневных действий.\nРИТУАЛ:\nВозьмите любую нить. Просто подержите её в руках, чувствуя фактуру. Осознайте её длину как возможность. Это простейшее действие возвращает нас к пониманию того, что жизнь состоит из связей, которые мы вольны укреплять или разрывать.\n🎹 SOUNDSCAPE: Монотонный звук ткацкого станка, шелест нитей, треск камина.\n🎒 ИНВЕНТАРЬ: Льняная нить, старые ножницы, деревянное веретено.\n⏱️ 2.2 мин | 🏛 Thought Layer | May 2",
-            "img": "https://cdn4.telesco.pe/file/kyP_3LN1vNUsU_GS6giyjSP1rFOUz5ygAOGWqNnBym1rc7HWSWZExvagS7ip5igN9RdCgQlxeyvQXT-Srz_6eLkKMAPExOU1lRcKMzf91Gb9rN1EnvSVA6_EdSvzjuslvwjdsvehhZMK-AIa6s7vKHOGaeByoBLS-FoLa9c9S3H5R2eNCcEIKgYZnTTKFSiXQT28AZf6F5zOS9RjvYYIPtMZZKkbIfYScK-Sy50fTlz8K-tUiOkNn8qO1h2d7lPkFmy0fbiIsP7nCBF3kryRZ9Bur7I-ED1LEG06Awhvfpiamx0pMnPVVE7hj3UNZWabW7itUqhcgVa7Su45U0H-Ew.jpg",
+            "img": "https://cdn4.telesco.pe/file/fDA0vsAkm751N677sUsIn5fMRICtdv95rsRyD3dNQq7Oj-iRv_pTszWxV2qWyN67JqyDKFzJFVkc2_FT7TZugFaBQlaCjDcMGRaMpD5b8inwG0gLY16ZRFFwTqiLi1gbEF3SLWMH-vNm61gEsOdv-aucDrZlZgOCfuI0z_8dcQy-FLHhab5L3OTinmZDDu5bgvRhr0Any7ZcjdS0zHIIOds5Om-UzX6gFHRbqfTmfCtvtVQ5hVnvxkrys8y_L6CqITami4-6to1A-HQH2gk6SgM_Rqe7kRu0SU6E_LFRObsiNWk7UdrDPGP2389LISIj10DVJ52X-mnXuV31HfOPJA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1777705441.0,
@@ -529,7 +541,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5806",
             "t": "😘 ВЕНА: ЕВРОВИДЕНИЕ-2026 НАЧИНАЕТСЯ - ПЕРВЫЙ ДЕНЬ РЕПЕТИЦИЙ",
             "b": "Официальный отсчет пошел. Спустя 11 лет Евровидение возвращается в Австрию. Сегодня на сцене Wiener Stadthalle стартует марафон первых индивидуальных репетиций. Каждый артист получит 40 минут на то, чтобы синхронизировать свои амбиции с техническими возможностями площадки.\nВ этом году EBU ужесточил правила: видео-футажи первых прогонов публиковаться не будут. Инсайдеры получат только по три официальных кадра от каждого делегата. YourVision обеспечит текстовый live-мониторинг событий.\n📅 ГРАФИК ПЕРВОГО ДНЯ (02.05):\n• 🇲🇩 Молдова: Satoshi - «Viva Moldova!» (11:30 - 12:00)\n• 🇸🇪 Швеция: Felicia - «My System» (12:10 - 12:40)\n• 🇭🇷 Хорватия: Lelek - «Andromeda» (12:50 - 13:20)\n• 🇬🇷 Греция: Akylas - «Ferto» (13:45 - 14:15)\n• 🇵🇹 Португалия: Bandidos do Cante - «Rosa» (14:25 - 14:55)\n• 🇬🇪 Грузия: Bzikebi - «On Replay» (16:00 - 16:30)\n• 🇫🇮 Финляндия: Linda Lampenius and Pete Parkkonen - «Liekinheitin» (16:40 - 17:10)\nКто из этой семерки сможет пробить «стеклянный потолок» ожиданий уже сегодня? Ждем первые кадры.\n⏱️ Время чтения: 1.1 мин | 🇦🇹 YourVision: Репетиции",
-            "img": "https://cdn4.telesco.pe/file/kI9N-bkQQAa8TOjCtPSk6VVkBcaZSOnyTGU8EdAz6JncUXvekiQpqDaUmjo-66l7iToOC7bWGYTEXAWs5mgXyMIy6sgEUxq3AK4cMecPo6M9uOZfZrzPAgPx7FIkG7AFoffxJnqigqL21p3IWc_e1Zq1Hmm4e8GS_J-tOUNVNWjQ7B9Yjt5qfPedonfK9Nb57BNaHivvrG06VksRitV0SZFop6EK92eBayC0gxZo1ohdjwiGX0D7D66zjczCE8ruJWa-Bwq-0yDrKIZSpBBC03rm6I2yTzAe4y6ckqNeI4Zs70wJVUGIQjQ8HTr_PsCXQYM295n2Ph0FmwDtk8dBeg.jpg",
+            "img": "https://cdn4.telesco.pe/file/cCl_9SFGI97ysZPWYBd-IETXew3-9oDBiglamaBS3HG2MyxeryhZCCVEEbtr-ykGGS_eGGbQIKfjr3TPeLAiFEStw96xBMvMpmWq7nQyo9skHvtr5ZaKofe1C_JHtUaE1FqcA5UYVrFcxb94SkeREm5yxhCKdTsjndHofBHWOC9k0TJr9h5l4p-zvf90bIxGzjSDiJ4PRcC5S7u26O3jtZ3EdVbVYPaVIOMziaOagBLfbUf_DMTRM7RuQfyG1qS1CXicSY1xNtnsVuhOGcw5DBq7IdLBQe3OAYInKaqG-ZuVcj0HVNwXiKMVZOCh2DZwlPf8NNfAIyKwHezftyakkw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1777701902.0,
@@ -553,7 +565,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5970",
             "t": "⏳ #CHRONOS: МАЙСКАЯ РОСА - ТОЧКА ОБНУЛЕНИЯ",
             "b": "Первое майское утро в мировой мифологии - это не просто начало календарного месяца. Это момент, когда «небесная влага» (роса) обретает свойства алхимического серебра. В дохристианской традиции Северной Европы считалось, что умывание росой на рассвете этого дня смывает «старую кожу» - груз прошлых ошибок и застойную энергию зимы.\nГЕРМЕНЕВТИКА СВЕТА:\nРоса здесь выступает как лиминальная субстанция. Она - конденсат ночи, проявленный в лучах восходящего солнца. Это физическое воплощение границы между тьмой и светом. Тот, кто соприкасается с ней, на мгновение выходит за пределы линейного времени и входит в пространство Kairos - момента истины.\nЯКОРЬ В СОВРЕМЕННОСТИ:\nСегодня этот архетип живет в нашем подсознательном стремлении к весеннему очищению. Желание «выбросить лишнее», обновить интерьер или радикально сменить гардероб в начале мая - это отголосок того самого древнего ритуала. Мы всё еще пытаемся смыть «зимнюю копоть», используя современные средства, но ищем того же эффекта - ясности взгляда.\nРИТУАЛ МОМЕНТА:\nНайдите точку, где утренний свет касается стекла. Посмотрите сквозь него на мир. Это упражнение возвращает глазу способность видеть не «объекты», а «потенциал». Позвольте себе сегодня быть чистым листом.\n🎹 SOUNDSCAPE: Звонкая тишина, далекое пение птиц, шум ветра в старом саду.\n🎒 ИНВЕНТАРЬ: Стеклянный сосуд, чистая вода, первый луч.\n⏱️ 1.8 мин | 🏛 Thought Layer | May 1",
-            "img": "https://cdn4.telesco.pe/file/gHRzhne3Aw6tx55K5l7KK9AwVHZLNhvBKR2QQVJ8BTRamWZj3iP6uZAILhZC_UmSrnDZ7Q1uVeR2Xoui6ivDVEX3iV9n_XkhOmYMOVo23VryBcjRfqErGXx8040_pysrc3ueq-244t0q1s7j2L5yf9BeklHQd9AXThJ0vR6hYFNZOvcYi8VuIM1NS_iFwSy4nthIoAqGaHVekRji1HnRJpFyhgq_WBAD5UAVupvMOYJGJZG37ZN92hyc1WnNLLQGidN9uTxxTT1IlbK_gXyID7iviDdyei1s8arrdDWYFa6IS4jxGwL7fYUEd8jrQF9UmvASWqgq0gSeevV5xXZpcA.jpg",
+            "img": "https://cdn4.telesco.pe/file/tMrS9CoaOgF4ebjpEInvvm83QIxTXCsFfzptPrHRL08BlSTvW2urZzr3T7ZZdW6epyc3Ao4ilCxWPTE0GDrYrpBJXQf6belFlvhyFbdAk3mHAxGZs0e8xtrn2zEyqViC-XXiWCJZKm9Xz6L_l1xIxZg4cBsk1J6uTGFKjttZ1ARqFqm44TNUpwDBz0rVNdm2QYvbcbK42iqRpxfuXSv18jcyM-mzdcmLxwQmkN8qjLs9g0UUYxaFad8hRqurbl1RjDYdqT5scI5czIab9OCBk0CS6KSnR6iSyf_f1VXEfEX1eaWOwnJFhp41cORRkdZdR3NOfX6wBZL7FJIV_t6Xww.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1777619041.0,
@@ -641,18 +653,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1777464241.0,
-            "poll": null
-        },
-        {
-            "m": "29.04 | 12:00",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5802",
-            "t": "😘 ВЕНА 2026: КАРТА ЭКСПАНСИИ - КТО КУПИЛ БИЛЕТЫ?",
-            "b": "Организаторы опубликовали официальную демографию проданных билетов на юбилейный сезон. Ожидаемое доминирование Австрии и Германии разбавляется неожиданным рывком из-за океана и инсайдами от соседей.\nТОП-10 СТРАН ПО ПРОДАЖАМ:\n1. 🇦🇹 Австрия\n2. 🇩🇪 Германия\n3. 🇬🇧 Великобритания\n4. 🇨🇭 Швейцария\n5. 🇺🇸 США\n6. 🇫🇷 Франция\n7. 🇦🇺 Австралия\n8. 🇨🇿 Чехия\n9. 🇸🇰 Словакия\n10. 🇳🇱 Нидерланды\nГЛАВНЫЕ ИНСАЙДЫ:\nФактор США: Пятое место Штатов - это больше не «туризм выходного дня», а сформировавшийся глобальный рынок. Интерес к Евровидению в Северной Америке достиг пика, превращая конкурс в по-настоящему трансатлантическое событие.\nСловацкий феномен: Девятая строчка для Словакии - страны, не участвующей в этом году, - подтверждает статус Вены как регионального хаба. Близость Братиславы сделает Stadthalle «домашней» ареной для фанатов со всей Центральной Европы.\nLoyalty Check: Великобритания и Австралия остаются в тройке лидеров среди иностранных гостей, подтверждая готовность фан-базы преодолевать любые расстояния ради качественного продакшна.\nВена готовится принять самый интернациональный контингент в истории 70-летия конкурса.\n⏱️ Время чтения: 0.9 мин | 🇦🇹 YourVision: News",
-            "img": "https://cdn4.telesco.pe/file/RfN75pq8sFprv91AW6dAbH5S15DYa_TciE9VMIT1tZeGLJ_WRuPww45dzt61s9wyL9SjDahvSmDDW-dJ1aKh06ZUvYoh-Lmglk_yhBuxkMQWyd-vxsNBYxiAj6WTd1ZFnhWN9xTXIQN8mwr1EgAjJLMMbDHOaVEIt19gxZvsq-SogNIHqVL6b84z8GQoaT1QMiFRr9efxoS9TEvwvLpvEroHeB_TWqR_MI6obAvDrKHd5jb8R3vJIBwdEkdTa91rCiBj5LHIvJoPawo82R2hLycmfdDigRbs69sKyTD6IIrvRZejaerLXCrCbLtsilfUXoXxjgMHBQyrJDKEW_sdZA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1777464029.0,
             "poll": null
         }
     ],
