@@ -356,6 +356,30 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "03.05 | 08:21",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5821",
+            "t": "Satoshi в объективе! Молдавская мегазвезда впервые взорвала Wiener Stadthalle, и вот как это выглядело. 🇲🇩📸",
+            "b": "🇲🇩 MOLDOVA: Satoshi - «VIVA, MOLDOVA!» #Eurovision",
+            "img": "https://cdn4.telesco.pe/file/kWh3cp6Pnhwwvg7f869XPLlqhRqzbDZtKkvfeyxT46GK3q-Bcebi6e6lkIli9ZaW8Bc4dfn2SN2ek2BNxCeGfQIjiiTOqi7HBZm3BNucUwBxvIglA8ioNWUZE_RJ1ZnH0PLjgyzTbHUJsCxDZcfwLIfnKEJ__TjK6JnacMgy2CyUO02-KJWkFos4IabbtHVppbTOgeccULuiQPH2sgNqjksLNs2meUOH0CFQGrsbktFUjpmRkTIt38tdaFu5ZKcqmXUVTt96yULO_CQMBuA6guFXmNraRQ2SdsVcp2QAG7jt_oKYlwmobKb07yLkDZoIH9xAGh1V3Xhtm7tR2gLwbQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1777796512.0,
+            "poll": null
+        },
+        {
+            "m": "03.05 | 07:44",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5820",
+            "t": "😘 ВЕНА: РЕПЕТИЦИИ, ДЕНЬ 2 - ГРАФИК И ГЛАВНЫЕ ОЖИДАНИЯ",
+            "b": "Сегодня в Wiener Stadthalle продолжаются первые прогоны участников 70-го сезона конкурса «Евровидение 2026». На сцену выйдут представители второй половины первого полуфинала. Сегодняшний день будет максимально насыщенным: восемь репетиций и публикация первых официальных фото вчерашних участников.\n📅 РАСПИСАНИЕ РЕПЕТИЦИЙ (ВРЕМЯ ПО РИГЕ):\n11:30 - 12:00 | 🇲🇪 Montenegro: Tamara Živković - «Nova zora»\n12:10 - 12:40 | 🇪🇪 Estonia: Vanilla Ninja - «Too Epic to Be True»\n12:50 - 13:20 | 🇮🇱 Israel: Noam Bettan - «Michelle»\n13:45 - 14:15 | 🇧🇪 Belgium: Essyla - «Dancing on the Ice»\n14:25 - 14:55 | 🇱🇹 Lithuania: Lion Ceecah - «Sólo quiero más»\n15:00 - 16:00 | ПЕРЕРЫВ\n16:00 - 16:30 | 🇸🇲 San Marino: Senhit feat. Boy George - «Superstar»\n16:40 - 17:10 | 🇵🇱 Poland: Alicja - «Pray»\n17:20 - 17:50 | 🇷🇸 Serbia: Lavina - «Kraj mene»\nВ течение дня мы будем публиковать оперативные текстовые отчеты о каждом номере. Фотографии сегодняшних репетиций появятся завтра утром, а прямо сейчас мы ожидаем первые кадры вчерашнего дня (Блок 1).\nСледим за Веной в реальном времени.\n⏱️ Время чтения: 1.1 мин | 🇦🇹 YourVision: Расписание\n#EUROVISION2026 #REHEARSALS #DAY2",
+            "img": "https://cdn4.telesco.pe/file/VDhqaY6Hqv-C1ej2uW48LJlf1afYg1NMwD1FWf2P9Q_TKROH77eTfT4IKOVzxrbaQkylwx7Ew6tdI-EP_HK4pbc2UIS-UUNF1ybV07N86hQ5UHU-TJL9k8webwsgm-SRHtWfD85nxh_o_wUE2ryJSMouJT3wtRIbZclw10OQRc0ajaX6-Qb92IQD8urdLDXirjwwXrv_p4aw9GGtEqIjuPSV1z73dxDKIZwoKnJtP6JaIv4zdgIgt8XoJ9-6ROzO4bndpvP3JwwqlejzAUnnDYCay8jvuHE8zRcIxSyPKEjIbhXADfxQQZ38McTMwTY3tTGPIvWv2kr9gXAAqJl-Vg.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1777794266.0,
+            "poll": null
+        },
+        {
             "m": "03.05 | 07:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5974",
@@ -620,18 +644,6 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "29.04 | 17:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5803",
-            "t": "🇨🇿 CZECHIA: DANIEL ZIZKA - AMAR PELOS DOIS (SALVADOR SOBRAL COVER)",
-            "b": "Чешский представитель Даниэль Жижка представил свою версию одного из самых титулованных победителей в истории конкурса. В рамках серии #EurovisionALBM он исполнил «Amar Pelos Dois» Сальвадора Собрала (Португалия 2017).\nДля Даниэля это не просто кавер, а дань уважения песне, которая изменила восприятие Евровидения. В его исполнении португальская классика звучит с новой, чешской меланхолией, сохраняя при этом хрупкость и интимность оригинала.\nОкунитесь в атмосферу португальского джаза в прочтении артиста из Праги.\n🔗 СМОТРЕТЬ ПРЕМЬЕРУ: YouTube\n⏱️ Время чтения: 0.7 мин | 🇨🇿 YourVision: ALBM",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1777482174.0,
-            "poll": null
-        },
-        {
             "m": "29.04 | 15:02",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5967",
@@ -641,18 +653,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1777474921.0,
-            "poll": null
-        },
-        {
-            "m": "29.04 | 12:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5966",
-            "t": "📜 LISTS: ТЯЖЕЛЫЙ ШЕЛК - ГЕОМЕТРИЯ «ДОРОГИХ ТЕНЕЙ»",
-            "b": "Шелк - это единственный материал, который способен работать со светом как живой организм. В зависимости от плетения нити, он может либо поглощать тени, превращая их в бархатную глубину, либо отталкивать их, создавая ослепительные блики. Мы собрали 4 фактуры, которые определяют эстетику «тихой роскоши».\n1. ШЕЛК МИКАДО (MIKADO)\nАрхитектурный тяжеловес. За счет плотного плетения он держит форму как тонкий лист металла. Его блеск приглушен, он не течет, а ломается на острые грани, создавая жесткие, почти графичные тени.\n2. ШАРМЁЗ (CHARMEUSE)\nАбсолютный антипод. Это «жидкое золото» (или серебро). Ткань, которая мгновенно принимает температуру тела и течет по нему как ртуть. Сатиновый блеск на лицевой стороне создает мягкие, размытые градиенты света.\n3. ДЮПИОН (DUPIONI)\nШелк с характером. Его фактура наполнена узелками и неровностями «дикого» шелка. Он матовый, шершавый на ощупь и идеально подходит для создания «шумного», текстурного кадра в стиле 35mm.\n4. КРЕПДЕШИН (CREPE DE CHINE)\nМастер маскировки. Мелкозернистая поверхность почти полностью поглощает свет, создавая эффект глубокой матовости. Это ткань для тех, кто ищет цвет без лишнего блеска.\nКакая текстура лучше всего описывает ваше текущее состояние: текучесть или структурность?\n⏱️ Время чтения: 1.1 мин | 📜 Almanac: Aesthetics",
-            "img": "https://cdn4.telesco.pe/file/rPF7BHErZxpa45rxTnfEzncQ7oSJQ594PBkYcpHoI_w4G6d80uCXQWud_yTfanbaNT27jLR_AtTUKt66kEFUxKkkt_wDRAHuY2yWoREIiVKU32G5MSvgH14P5UG9iOD_b7AoxSQrQeLxNICZ1unYo8rBQEm4Dz4h70wqVZZWVAdAELMyx9o_E8qi3M3xk-XYpez-MWnBFApddcUmPOXG8GEepMtp3eSQj9QwjBXcSO-qHwMrvz6ZBHBnKeyCJNQT8MKrRhuzKFuYrXW8mKvfZoGyhJe_XMUUmwuwm6leQVGCgIWXxduSfZsWPIEO5HiENJQ2NWVi7ZYHAP-grNsylg.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1777464241.0,
             "poll": null
         }
     ],
