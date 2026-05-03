@@ -361,7 +361,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5825",
             "t": "Удачи в попытках очистить систему от FELICIA. Мы официально не смогли уместить все её лазеры в один кадр. 🇸🇪📸",
             "b": "🇸🇪 SWEDEN: Felicia - «MY SYSTEM» #Eurovision",
-            "img": "https://cdn4.telesco.pe/file/psqZ4Uk6r9Hs8Teh540Z8FQINJvCEMTOgaRqse2I4OqDRMPTTqTgorRteOYEmkJP2S40F-CO4qjMvqt9IO8tUZz3rvWbLBhN8JXO_tSwtZZD_EdwJLAKJ1vfstSaUX3qJChnZ_BiEczRWWggDCwtF1SdhAMA7dKrZfCTWxgndmjYvqJneHTqsYptCjP5I-5rn4l_bIArUIo3pXUHaGASPZgLrZ-B5zjev0cCk9LD5F3Cc_jY64t3ntXJ1WWVmSo0dvhCj2mbY4tPSLmlEiY5mtT5m3Y7lNLC364fWqnrhdKTReqEvzw_C_kn6HIs_Z-yZv1J4IwVsl2w-1M0Q9hWhg.jpg",
+            "img": "https://cdn4.telesco.pe/file/icelV_yFmKvmSlHJ-_5yCibJsdstdmIRBsfokNRTVmIZEcAEwjiHSiWa_oIF5f0mpb0opcOaaU9pMRl7_SbVkxy5kQDTbOavovo7sVnY35AR6qZcaJl0RAxdpe5yptVg9Zj5cxzOmJxF2Mg62tGHcF4tpaD8AFyD4fu4Rfs1DSYwvnxGAq1Stjv2TMtjbnbAVV5Tp2zIK_digM7VM0mHc9Z3l_kilbMzhO6ETSLiE-Z0JhKawDVhknCwVxRo9n2y9-maSue9qvAr4xZ-ojMcgMPjltVnLX0eilPTlVwyHvMHuMmmjk6wluH4ksfdPy_ellMn6CUm2i3JbNPvKOntWA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1777797163.0,
