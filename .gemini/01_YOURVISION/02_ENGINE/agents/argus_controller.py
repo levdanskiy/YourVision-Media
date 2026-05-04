@@ -3,8 +3,8 @@ import os
 import json
 
 # Add repos to path
-sys.path.append("/home/levdanskiy/.gemini/ENGINE/repos")
-sys.path.append("/home/levdanskiy/.gemini/ENGINE/scripts")
+sys.path.append("/home/levdanskiy/.gemini/01_YOURVISION/_SHARED/02_ENGINE/repos")
+sys.path.append("/home/levdanskiy/.gemini/01_YOURVISION/_SHARED/02_ENGINE/scripts")
 
 from esc_repo import ESCRepo
 from knowledge_repo import KnowledgeRepo
@@ -13,7 +13,7 @@ class ArgusController:
     def __init__(self):
         self.esc_repo = ESCRepo()
         self.knowledge_repo = KnowledgeRepo()
-        self.scripts_path = "/home/levdanskiy/.gemini/ENGINE/scripts/"
+        self.scripts_path = "/home/levdanskiy/.gemini/01_YOURVISION/_SHARED/02_ENGINE/scripts/"
 
     def execute_mission(self, mission_type, target):
         print(f"👁️ ARGUS CONTROLLER: Starting mission '{mission_type}' on '{target}'")

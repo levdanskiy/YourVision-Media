@@ -1,6 +1,6 @@
 ---
 name: knowledge-crawler
-description: Индексация и поиск данных в Глобальном Мастер-Архиве (.gemini/ENGINE/repos/). Находит мифы, рецепты и фольклор по ключевым словам для Almanac: Marginalia.
+description: Индексация и поиск данных в Глобальном Мастер-Архиве (.gemini/01_YOURVISION/_SHARED/02_ENGINE/repos/). Находит мифы, рецепты и фольклор по ключевым словам для Almanac: Marginalia.
 ---
 
 # 📖 Knowledge Crawler V1.0
