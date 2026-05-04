@@ -21,3 +21,13 @@
 *   **ELEJA (The Academic Hub):** Neoclassical palace for the Elven elite. High-tech labs studying the physics of blood and energy.
 *   **RIGA-PRIME:** The vertical city of light. Power center of the Amber Alliance.
 *   **KONIGSBERG:** The "Vatican of Alchemy". A cold, concrete monolith where ancient elven secrets are digitized.
+
+## 5. SEASON 2: SHADOWS (REHEARSAL UPDATES)
+*   **The Second Wave:** Mass awakening of Split resonance in 11th grade.
+*   **Felix (Storm):** Incubus-destroyer from Lithuania. New primary antagonist/romance interest.
+*   **Trust Bracelets:** Neurological monitoring of student emotions.
+*   **Sub-Palace "Jupiter":** Forbidden research zone for the 1974 event.
+
+## 6. SEASON 1 ARCHIVE: FINAL RESONANCE (03.05.2026)
+*   **Result:** 50% Beacon (Mikas) | 50% Signal (Global).
+*   **Narrative Impact:** Jan enters Season 2 as a "Neutral Signal". This prevents immediate alignment with any faction but increases Static interference in Riga-Prime.

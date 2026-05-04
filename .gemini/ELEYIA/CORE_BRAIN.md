@@ -19,3 +19,7 @@
 - [[ALLIANCE_NEWS_WIRE]]
 - [[DAILY_PULSE_INDEX]]
 
+
+### SEASON 1 FINALE DATA
+* **Status:** Global Signal (50/50 split).
+* **Key Note:** Dorian is currently zero-influence (0% virus).
