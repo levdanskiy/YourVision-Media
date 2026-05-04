@@ -1,9 +1,9 @@
 ---
-name: community-analyst
-description: Анализ результатов турниров и опросов YourVision. Обработка данных вовлеченности и предложение контента на основе предпочтений аудитории.
+name: yv-tournament-analyst
+description: Анализ результатов турниров и опросов YourVision. Обработка данных голосований, расчёт мест, стратегия Watch Party.
 ---
 
-# 📊 Community Analyst V1.0
+# 📊 YV Tournament Analyst V1.1
 
 Этот навык переводит голоса аудитории в турнирную стратегию.
 

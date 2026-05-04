@@ -8,9 +8,9 @@ import logging
 # --- HIVE ENGINE CONFIGURATION (V8-STYLE) ---
 class HiveConfig:
     HIVE_ROOT = "/home/levdanskiy/.gemini/"
-    AGENTS_DIR = os.path.join(HIVE_ROOT, "ENGINE/agents/")
-    STATE_FILE = os.path.join(HIVE_ROOT, "CORE/knowledge/AGENT_HIVE.json")
-    LOG_FILE = os.path.join(HIVE_ROOT, "system/hive_engine.log")
+    AGENTS_DIR = "/home/levdanskiy/.gemini/01_YOURVISION/02_ENGINE/agents/"
+    STATE_FILE = "/home/levdanskiy/.gemini/01_YOURVISION/_SHARED/01_SYSTEM/knowledge/AGENT_HIVE.json"
+    LOG_FILE = "/home/levdanskiy/.gemini/01_YOURVISION/_SHARED/01_SYSTEM/hive_engine.log"
 
 class HiveEngine:
     """
@@ -51,16 +51,29 @@ class HiveEngine:
         """Executes a specific agent task in an isolated context."""
         if not self.is_initialized:
             return False
-        
+
         logging.info(f"Starting Isolate: {agent_name}")
-        
-        if agent_name == "ARGUS":
-            # Возвращаем глобальные задачи
-            os.popen(f"python3 {HiveConfig.HIVE_ROOT}ENGINE/agents/argus_global_scout.py").read()
-            self._update_state(agent_name, "GLOBAL_SCOUTING")
-        else:
-            self._update_state(agent_name, "ACTIVE")
-        
+        agents_dir = os.path.join(HiveConfig.HIVE_ROOT, "01_YOURVISION/02_ENGINE/agents")
+
+        dispatch = {
+            "ARGUS":      ("argus_global_scout.py",   "GLOBAL_SCOUTING"),
+            "VITRUVIUS":  ("vitruvius_media.py",       "MEDIA_MANAGEMENT"),
+            "MNEMOSYNE":  ("mnemosyne_nexus.py",       "KNOWLEDGE_SYNC"),
+            "HELIOS":     ("helios_publisher.py",      "PUBLISHING"),
+            "HERMES":     ("hermes_syndicator.py",     "SYNDICATION"),
+            "HEPHAESTUS": ("hephaestus_builder.py",    "BUILD_CHECK"),
+            "DIKE":       ("dike_auditor.py",          "QUALITY_AUDIT"),
+        }
+
+        if agent_name not in dispatch:
+            logging.warning(f"Unknown agent: {agent_name}")
+            return False
+
+        script, status = dispatch[agent_name]
+        script_path = os.path.join(agents_dir, script)
+        result = os.popen(f"python3 {script_path}").read().strip()
+        logging.info(f"{agent_name} → {result}")
+        self._update_state(agent_name, status)
         return True
 
     def _update_state(self, name, status):
