@@ -1,0 +1,51 @@
+{
+  "alert_keywords": {
+    "red_alert": {
+      "winner": ["победил", "победитель", "выиграл", "won", "winner"],
+      "disqualification": ["дисквалифицирован", "дисквалификация", "disqualified", "disqualification"],
+      "withdrawal": ["снялся", "отказался", "withdrawal", "withdrew", "снял заявку"],
+      "date_change": ["перенос", "новая дата", "changed date", "rescheduled"],
+      "city_change": ["новый город", "место проведения", "host city", "venue changed"]
+    },
+    "yellow_alert": {
+      "song_release": ["релиз", "выпустил песню", "новая песня", "released", "new song", "single"],
+      "artist_announced": ["представитель", "участник объявлен", "участница", "represent", "participant confirmed"],
+      "rumour_confirmed": ["подтверждён", "официально", "confirmed", "official announcement"]
+    },
+    "green_alert": {
+      "interview": ["интервью", "exclusive", "interview"],
+      "analysis": ["аналитика", "обзор", "analysis", "review"],
+      "rumour": ["слух", "по информации", "rumour", "according to sources"]
+    }
+  },
+
+  "response_times": {
+    "red": 5,
+    "yellow": 30,
+    "green": 240
+  },
+
+  "source_tiers": {
+    "tier_1": [
+      "eurovision.tv",
+      "ebu.ch",
+      "rai.it",
+      "svt.se",
+      "bbc.co.uk",
+      "instagram.com",
+      "twitter.com"
+    ],
+    "tier_2": [
+      "reuters.com",
+      "bbc.com",
+      "theguardian.com",
+      "billboard.com",
+      "variety.com"
+    ],
+    "tier_3": [
+      "wiwibloggs.com",
+      "escxtra.com",
+      "eurovoix.com"
+    ]
+  }
+}

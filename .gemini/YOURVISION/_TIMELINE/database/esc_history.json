@@ -1,0 +1,31 @@
+{
+  "02-17": [
+    {"year": 1979, "country": "Germany", "event": "Dschinghis Khan wins the German national final with 'Dschinghis Khan'."},
+    {"year": 2001, "country": "Croatia", "event": "Vanna wins Dora with 'Strings of My Heart'."},
+    {"year": 2007, "country": "Sweden", "event": "Måns Zelmerlöw debuts at Melodifestivalen (Cara Mia) in Heat 3."},
+    {"year": 2024, "country": "Lithuania", "event": "Silvester Belt wins Eurovizija.LT with the viral hit 'Luktelk'."},
+    {"year": 2024, "country": "Moldova", "event": "Natalia Barbu wins Etapa Națională for the second time with 'In The Middle'."}
+  ],
+  "02-18": [
+    {"year": 2023, "country": "France", "event": "La Zarra releases 'Évidemment'."}
+  ],
+  "02-19": [
+    {"year": 1994, "country": "UK", "event": "Frances Ruffelle wins the UK selection with 'We Will Be Free'."},
+    {"year": 2026, "country": "Belgium", "event": "Belgium is set to reveal its artist and song for Vienna."}
+  ],
+  "05-24": [
+    {"year": 1956, "country": "Switzerland", "event": "The 1st Eurovision Song Contest is held in Lugano. Lys Assia wins."}
+  ],
+  "04-06": [
+    {"year": 1974, "country": "UK", "event": "ABBA wins Eurovision with 'Waterloo' in Brighton."}
+  ],
+  "04-30": [
+    {"year": 1988, "country": "Ireland", "event": "Celine Dion wins Eurovision with 'Ne partez pas sans moi'."}
+  ],
+  "05-16": [
+    {"year": 2009, "country": "Russia", "event": "Alexander Rybak smashes records with 'Fairytale' in Moscow."}
+  ],
+  "05-22": [
+    {"year": 2021, "country": "Netherlands", "event": "Måneskin brings Rock'n'Roll back to the top in Rotterdam."}
+  ]
+}

@@ -1,0 +1,58 @@
+# 📅 YourVision Cup 2026: Мастер-план (Март-Апрель)
+
+## ЭТАП: ПЛЕЙ-ОФФ (MATCHES ON OUT)
+
+### 24.03 (Вт) - BRACKET REVEAL
+* 16:00 | **YV** | 📐 **#YV_BRACKET:** Официальная сетка плей-офф (Round of 16). - ✅ [ГОТОВО]
+
+### 25.03 (Ср) - ROUND OF 16: BATTLE #1
+* 12:25 | **AL** | 🏛 **#HERITAGE:** День Аиста (Bārbaļu diena). - ✅ [ГОТОВО]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #1: FI vs ME. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🥐 **#RECIPE:** «Птичье молоко»: Технология невесомости. - ✅ [ГОТОВО]
+* 19:00 | **YV** | ❤️ **#ALBM:** Хорватия (Lelek). Кавер «Wild Dances». - ✅ [ГОТОВО]
+
+### 26.03 (Чт) - ROUND OF 16: BATTLE #2
+* 09:00 | **AL** | 🏛 **#SOURCE:** Drafts: Ода черновикам. - ✅ [ГОТОВО]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #2: DK vs AT. - ✅ [ГОТОВО]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #1. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🥐 **#TEXTS:** Лимонный курд: Алхимия кислоты. - ✅ [ГОТОВО]
+* 18:50 | **YV** | ❤️ **#ALBM:** Молдова (Satoshi). «Viva Moldova!» (Hardstyle Remix). - ✅ [ГОТОВО]
+
+### 27.03 (Пт) - ROUND OF 16: BATTLE #3
+* 09:00 | **AL** | 🏛 **#CALENDAR:** Анатомия Маски. - ✅ [ГОТОВО]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #3: GR vs AL. - ✅ [ГОТОВО]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #2. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🥐 **#TEXTS:** Biezpiena sacepums: Технология уюта. - ✅ [ГОТОВО]
+
+### 28.03 (Сб) - ROUND OF 16: BATTLE #4
+* 09:00 | **AL** | 🏛 **#SOURCE:** Океан внутри: Миф о Нарциссе. - ✅ [ГОТОВО]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #4: AU vs GE. - ✅ [ГОТОВО]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #3. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🥐 **#TEXTS:** Ржаные чипсы: Искусство вычитания. - ✅ [ГОТОВО]
+* 19:00 | **YV** | ❤️ **#ALBM:** Luxembourg: Eva Marija - Ne Partez Pas Sans Moi (Premiere). - ✅ [ГОТОВО]
+
+### 29.03 (Вс) - ROUND OF 16: BATTLE #5
+* 09:00 | **AL** | 🏛 **#CALENDAR:** Переход: Края Марта. - ✅ [ГОТОВО]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #5: SE vs AM. - ✅ [ГОТОВО]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #4. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🏛 **#FRAGMENT:** Югендстиль: Застывший миф. - ✅ [ГОТОВО]
+* 18:50 | **YV** | 📢 **#NEWS_WIRE:** 10 minutes to Alis premiere. - ⬜ [WAITING]
+* 19:00 | **YV** | ❤️ **#ALBM:** Albania: Alis - Nân (Piano Version Premiere). - ⬜ [WAITING]
+
+### 30.03 (Пн) - ROUND OF 16: BATTLE #6
+* 09:00 | **AL** | 🏛 **#CALENDAR:** Апрельские тизеры: Предчувствие. - ⬜ [ОЖИДАНИЕ]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #6: IT vs MD. - ⬜ [ОЖИДАНИЕ]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #5. - ⬜ [ОЖИДАНИЕ]
+* 18:00 | **AL** | 🏛 **#SOURCE:** Миф о Персефоне: Физика возвращения. - ⬜ [ОЖИДАНИЕ]
+
+
+### 31.03 (Вт) - ROUND OF 16: BATTLE #7
+* 09:00 | **AL** | 🏛 **#FRAGMENT:** Архитектура тени: Геометрия уходящего марта. - ⬜ [ОЖИДАНИЕ]
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #7: CY vs GB. - ✅ [ГОТОВО]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #6. - ✅ [ГОТОВО]
+* 18:00 | **AL** | 🥐 **#ALMANAC_FINALE:** Граница сезонов: От Marginalia к Апрельским предчувствиям. - ⬜ [ОЖИДАНИЕ]
+* 19:20 | **YV** | 📊 **#CHART_RESULTS:** WorldSound Airwave Velocity. - ✅ [ГОТОВО]
+
+### 01.04 (Ср) - ROUND OF 16: BATTLE #8
+* 10:00 | **YV** | ⚔️ **#YV_CUP:** 1/8 финала. Battle #8: MT vs BG. - ✅ [ГОТОВО]
+* 10:05 | **YV** | 📊 **#YV_CUP_RESULTS:** Итоги Battle #7. - ✅ [ГОТОВО]

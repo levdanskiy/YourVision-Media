@@ -1,0 +1,19 @@
+{
+  "year": "2026",
+  "categories": {
+    "MUSIC": [
+      {"date": "01.02.2026", "event": "68th GRAMMY Awards", "location": "USA", "relevance": "High (Global Radar)"}
+    ],
+    "AWARDS": [
+      {"date": "15.03.2026", "event": "98th Academy Awards (OSCARS)", "location": "Hollywood, USA", "relevance": "High (Global Radar)"}
+    ],
+    "SPORTS": [
+      {"date": "08.02.2026", "event": "Super Bowl LX", "location": "USA", "relevance": "Medium (Half-time Show focus)"},
+      {"start_date": "06.02.2026", "end_date": "22.02.2026", "event": "Winter Olympics 2026", "location": "Milano Cortina, Italy", "relevance": "High (Sanremo overlap)"},
+      {"start_date": "11.06.2026", "end_date": "19.07.2026", "event": "FIFA World Cup 2026", "location": "USA/Canada/Mexico", "relevance": "Global"}
+    ]
+  },
+  "synergy_notes": {
+    "FEB_2026": "Критическое наложение: Зимняя Олимпиада в Италии (Милан) совпадает с финалом Сан-Ремо (07.02). Возможны изменения в эфирной сетке RAI."
+  }
+}
