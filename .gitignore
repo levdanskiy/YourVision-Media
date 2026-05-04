@@ -2,5 +2,5 @@
 !.gitignore
 !.gemini/
 .gemini/tmp/
-.gemini/YOURVISION/_SHARED/
+.gemini/01_YOURVISION/_SHARED/
 *.jsonl
