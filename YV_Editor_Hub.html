@@ -1564,28 +1564,30 @@
                     days[r.d].push(r);
                 });
 
-                let html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">';
+                let html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; padding:20px 0;">';
                 Object.keys(days).sort().reverse().forEach(date => {
                     html += `
-                        <div class="card" style="border:none; border-top:2px solid var(--acid); background:rgba(10,10,10,0.98); padding:20px; box-shadow:0 20px 40px rgba(0,0,0,0.6); position:relative; overflow:hidden;">
-                            <div style="color:var(--acid); font-size:0.55rem; letter-spacing:0.4em; font-weight:900; margin-bottom:8px; opacity:0.5; text-transform:uppercase;">&bull; Backstage Daily Log</div>
-                            <div style="color:#fff; font-size:1.4rem; font-weight:900; margin-bottom:20px; font-style:italic; letter-spacing:-0.02em;">MAY ${date}</div>
-                            <div style="display:flex; flex-direction:column; gap:14px;">
-                                ${days[date].map(r => `
-                                    <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.03);">
-                                        <div style="display:flex; align-items:center; gap:15px;">
-                                            <span style="font-family:monospace; color:var(--acid); font-weight:900; font-size:0.85rem; background:rgba(204,255,0,0.05); padding:2px 4px;">${r.t}</span>
-                                            <div style="display:flex; align-items:center; gap:10px;">
-                                                <img src="${getH(r.c)}" class="heart-shape" style="width:20px; height:20px; filter:contrast(1.2);">
-                                                <span style="font-weight:800; font-size:0.8rem; color:#eee; text-transform:uppercase; letter-spacing:0.05em;">${countryMap[r.c]}</span>
+                        <div style="position:relative; padding-left:30px; border-left:1px solid rgba(204,255,0,0.1);">
+                            <div style="position:absolute; left:-15px; top:0; font-size:6rem; font-weight:900; color:rgba(204,255,0,0.03); font-style:italic; line-height:0.8; pointer-events:none;">${date.split('.')[0]}</div>
+                            <div style="position:relative; z-index:1;">
+                                <div style="color:var(--acid); font-size:0.55rem; letter-spacing:0.6em; font-weight:900; text-transform:uppercase; margin-bottom:10px; opacity:0.6;">BACKSTAGE LOG</div>
+                                <div style="color:#fff; font-size:2.2rem; font-weight:900; margin-bottom:40px; font-style:italic; letter-spacing:-0.03em;">MAY ${date}</div>
+                                
+                                <div style="display:flex; flex-direction:column; gap:25px;">
+                                    ${days[date].map(r => `
+                                        <div style="display:grid; grid-template-columns: 120px 1fr; align-items:start; gap:20px; position:relative;">
+                                            <div style="font-family:monospace; font-size:0.7rem; color:var(--acid); font-weight:900; padding-top:4px;">${r.t.replace(' - ', ' — ')}</div>
+                                            <div style="display:flex; flex-direction:column; gap:8px;">
+                                                <div style="display:flex; align-items:center; gap:12px;">
+                                                    <img src="${getH(r.c)}" class="heart-shape" style="width:26px; height:26px; filter:grayscale(0.2) contrast(1.1);">
+                                                    <span style="font-weight:900; font-size:0.95rem; color:#fff; text-transform:uppercase; letter-spacing:0.02em;">${countryMap[r.c]}</span>
+                                                    <span style="width:6px; height:6px; border-radius:50%; margin-left:auto; background:${r.s==='DONE'?'var(--acid)':'rgba(255,255,255,0.1)'}; box-shadow:${r.s==='DONE'?'0 0 12px var(--acid)':'none'};"></span>
+                                                </div>
+                                                <div style="font-size:0.7rem; color:#888; font-weight:600; letter-spacing:0.05em; padding-left:38px;">${r.a}</div>
                                             </div>
                                         </div>
-                                        <div style="display:flex; align-items:center; gap:8px;">
-                                            <span style="font-size:0.75rem; color:#fff; font-weight:400; opacity:0.8;">${r.a}</span>
-                                            <span style="width:6px; height:6px; border-radius:50%; background:${r.s==='DONE'?'#0f0':'#ff0'}; box-shadow:0 0 10px ${r.s==='DONE'?'#0f0':'#ff0'};"></span>
-                                        </div>
-                                    </div>
-                                `).join("")}
+                                    `).join("")}
+                                </div>
                             </div>
                         </div>
                     `;
