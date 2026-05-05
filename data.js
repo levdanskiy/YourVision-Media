@@ -61,126 +61,6 @@ var DATA = {
             "status": "DONE"
         },
         {
-            "id": 1,
-            "n": "Match #1",
-            "qf": "TO QF1",
-            "t1": "fi",
-            "a1": "Linda Lampenius and Pete Parkkonen",
-            "s1": "Liekinheitin",
-            "sc1": "71%",
-            "t2": "me",
-            "a2": "Tamara Živković",
-            "s2": "Nova zora",
-            "sc2": "29%",
-            "w": 1,
-            "status": "FINISHED"
-        },
-        {
-            "id": 2,
-            "n": "Match #2",
-            "qf": "TO QF1",
-            "t1": "dk",
-            "a1": "Søren Torpegaard Lund",
-            "s1": "Før vi går hjem",
-            "sc1": "77%",
-            "t2": "at",
-            "a2": "COSMØ",
-            "s2": "Tanzschein",
-            "sc2": "23%",
-            "w": 1,
-            "status": "FINISHED"
-        },
-        {
-            "id": 3,
-            "n": "Match #3",
-            "qf": "TO QF2",
-            "t1": "gr",
-            "a1": "Akylas",
-            "s1": "Ferto",
-            "sc1": "56% ★",
-            "t2": "al",
-            "a2": "Alis",
-            "s2": "Nân",
-            "sc2": "44%",
-            "w": 1,
-            "status": "FINISHED"
-        },
-        {
-            "id": 4,
-            "n": "Match #4",
-            "qf": "TO QF2",
-            "t1": "au",
-            "a1": "Delta Goodrem",
-            "s1": "Eclipse",
-            "sc1": "50%",
-            "t2": "ge",
-            "a2": "Bzikebi",
-            "s2": "On Replay",
-            "sc2": "50% ★",
-            "w": 2,
-            "status": "FINISHED"
-        },
-        {
-            "id": 5,
-            "n": "Match #5",
-            "qf": "TO QF3",
-            "t1": "se",
-            "a1": "Felicia",
-            "s1": "My System",
-            "sc1": "58% ★",
-            "t2": "am",
-            "a2": "Simón",
-            "s2": "Paloma rumba",
-            "sc2": "42%",
-            "w": 1,
-            "status": "FINISHED"
-        },
-        {
-            "id": 6,
-            "n": "Match #6",
-            "qf": "TO QF3",
-            "t1": "it",
-            "a1": "Sal Da Vinci",
-            "s1": "Per sempre sì",
-            "sc1": "33%",
-            "t2": "md",
-            "a2": "Satoshi",
-            "s2": "Viva, Moldova!",
-            "sc2": "67% ★",
-            "w": 2,
-            "status": "FINISHED"
-        },
-        {
-            "id": 7,
-            "n": "Match #7",
-            "qf": "TO QF4",
-            "t1": "cy",
-            "a1": "Antigoni",
-            "s1": "Jalla",
-            "sc1": "44%",
-            "t2": "gb",
-            "a2": "Look Mum No Computer",
-            "s2": "Eins, Zwei, Drei",
-            "sc2": "56% ★",
-            "w": 2,
-            "status": "FINISHED"
-        },
-        {
-            "id": 8,
-            "n": "Match #8",
-            "qf": "TO QF4",
-            "t1": "mt",
-            "a1": "Aidan",
-            "s1": "Bella",
-            "sc1": "43%",
-            "t2": "bg",
-            "a2": "Dara",
-            "s2": "Bangaranga",
-            "sc2": "57%",
-            "w": 2,
-            "status": "FINISHED"
-        },
-        {
             "id": 13,
             "n": "SF #1",
             "qf": "TO FINAL",
@@ -188,12 +68,10 @@ var DATA = {
             "a1": "Linda Lampenius & Pete Parkkonen",
             "s1": "Liekinheitin",
             "sc1": "87% ★",
-            "img1": "assets/sf_finland.png",
             "t2": "gr",
             "a2": "Akylas",
             "s2": "Ferto",
             "sc2": "13%",
-            "img2": "assets/sf_greece.png",
             "w": 1,
             "status": "DONE"
         },
@@ -205,12 +83,10 @@ var DATA = {
             "a1": "Satoshi",
             "s1": "Viva, Moldova!",
             "sc1": "36%",
-            "img1": "assets/sf_moldova.png",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
             "sc2": "64% ★",
-            "img2": "assets/sf_bulgaria.png",
             "w": 2,
             "status": "DONE"
         },
@@ -222,14 +98,292 @@ var DATA = {
             "a1": "Linda Lampenius & Pete Parkkonen",
             "s1": "Liekinheitin",
             "sc1": "77%",
-            "img1": "assets/sf_finland.png",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
             "sc2": "23%",
-            "img2": "assets/sf_bulgaria.png",
             "w": 1,
             "status": "DONE"
+        }
+    ],
+    "rehearsals": [
+        {
+            "d": "02.05",
+            "t": "10:00",
+            "c": "md",
+            "a": "Satoshi",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "10:40",
+            "c": "se",
+            "a": "Felicia",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "11:20",
+            "c": "hr",
+            "a": "Lelek",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "12:00",
+            "c": "gr",
+            "a": "Akylas",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "13:30",
+            "c": "pt",
+            "a": "Bandidos do Cante",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "14:10",
+            "c": "ge",
+            "a": "Bzikebi",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "14:50",
+            "c": "fi",
+            "a": "Linda Lampenius x Pete Parkkonen",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "10:00",
+            "c": "me",
+            "a": "Tamara Živković",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "10:40",
+            "c": "ee",
+            "a": "Vanilla Ninja",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "11:20",
+            "c": "il",
+            "a": "Noam Bettan",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "12:00",
+            "c": "be",
+            "a": "Essyla",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "13:30",
+            "c": "lt",
+            "a": "Lion Ceccah",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "14:10",
+            "c": "sm",
+            "a": "Senhit",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "14:50",
+            "c": "pl",
+            "a": "Alicja",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "15:30",
+            "c": "rs",
+            "a": "Lavina",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "10:45",
+            "c": "bg",
+            "a": "Dara",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "11:40",
+            "c": "az",
+            "a": "Jiva",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "12:20",
+            "c": "ro",
+            "a": "Alexandra Căpitănescu",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "13:40",
+            "c": "lu",
+            "a": "Eva Marija",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "14:15",
+            "c": "cz",
+            "a": "Daniel Zizka",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "16:05",
+            "c": "am",
+            "a": "Simón",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "16:20",
+            "c": "ch",
+            "a": "Veronica Fusaro",
+            "s": "DONE"
+        },
+        {
+            "d": "05.05",
+            "t": "11:30",
+            "c": "cy",
+            "a": "Antigoni",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "12:10",
+            "c": "lv",
+            "a": "Atvara",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "12:50",
+            "c": "dk",
+            "a": "Søren Torpegaard Lund",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "13:45",
+            "c": "au",
+            "a": "Delta Goodrem",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "14:25",
+            "c": "ua",
+            "a": "Lelėka",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "16:00",
+            "c": "al",
+            "a": "Alis",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "16:40",
+            "c": "mt",
+            "a": "Aidan",
+            "s": "UPCOMING"
+        },
+        {
+            "d": "05.05",
+            "t": "17:20",
+            "c": "no",
+            "a": "Jonas Lovv",
+            "s": "UPCOMING"
+        }
+    ],
+    "roadmap": [
+        {
+            "d": "11.04",
+            "t": "YOURVISION CUP",
+            "e": "🏆 Grand Final: Finland vs Bulgaria",
+            "s": "DONE"
+        },
+        {
+            "d": "12.04",
+            "t": "THE RESET",
+            "e": "🇦🇺 Australia: Delta Goodrem selected",
+            "s": "DONE"
+        },
+        {
+            "d": "14.04",
+            "t": "EUROGROOVE",
+            "e": "🇪🇺 Spring Chart Results",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 1 Starts",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 2",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 3",
+            "s": "DONE"
+        },
+        {
+            "d": "05.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 4 (Final 1st)",
+            "s": "ACTIVE"
+        },
+        {
+            "d": "10.05",
+            "t": "TURQUOISE CARPET",
+            "e": "🇦🇹 Opening Ceremony in Vienna",
+            "s": "MAJOR"
+        },
+        {
+            "d": "12.05",
+            "t": "EUROVISION: SF1",
+            "e": "🇪🇺 Live from Wiener Stadthalle",
+            "s": "MAJOR"
+        },
+        {
+            "d": "14.05",
+            "t": "EUROVISION: SF2",
+            "e": "🇪🇺 Live from Wiener Stadthalle",
+            "s": "MAJOR"
+        },
+        {
+            "d": "16.05",
+            "t": "GRAND FINAL",
+            "e": "👑 70th Eurovision Song Contest",
+            "s": "MAJOR"
         }
     ],
     "chart": [
@@ -971,292 +1125,6 @@ var DATA = {
             "id": "ro",
             "c": "Romania",
             "p": "3%"
-        }
-    ],
-    "roadmap": [
-        {
-            "d": "11.04",
-            "t": "YOURVISION CUP",
-            "e": "🏆 Grand Final: Finland vs Bulgaria",
-            "s": "DONE"
-        },
-        {
-            "d": "12.04",
-            "t": "THE RESET",
-            "e": "🇦🇺 Australia: Delta Goodrem selected",
-            "s": "DONE"
-        },
-        {
-            "d": "14.04",
-            "t": "EUROGROOVE",
-            "e": "🇪🇺 Spring Chart Results",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "REHEARSALS",
-            "e": "Wiener Stadthalle: Day 1 Starts",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "REHEARSALS",
-            "e": "Wiener Stadthalle: Day 2",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "REHEARSALS",
-            "e": "Wiener Stadthalle: Day 3",
-            "s": "DONE"
-        },
-        {
-            "d": "05.05",
-            "t": "REHEARSALS",
-            "e": "Wiener Stadthalle: Day 4 (Final 1st)",
-            "s": "ACTIVE"
-        },
-        {
-            "d": "06.05",
-            "t": "REHEARSALS",
-            "e": "Wiener Stadthalle: 2nd Rehearsals Start",
-            "s": "COMING"
-        },
-        {
-            "d": "10.05",
-            "t": "TURQUOISE CARPET",
-            "e": "🇦🇹 Opening Ceremony in Vienna",
-            "s": "MAJOR"
-        },
-        {
-            "d": "12.05",
-            "t": "EUROVISION: SF1",
-            "e": "🇪🇺 Live from Wiener Stadthalle",
-            "s": "MAJOR"
-        },
-        {
-            "d": "14.05",
-            "t": "EUROVISION: SF2",
-            "e": "🇪🇺 Live from Wiener Stadthalle",
-            "s": "MAJOR"
-        },
-        {
-            "d": "16.05",
-            "t": "GRAND FINAL",
-            "e": "👑 70th Eurovision Song Contest",
-            "s": "MAJOR"
-        }
-    ],
-    "rehearsals": [
-        {
-            "d": "02.05",
-            "t": "10:00",
-            "c": "md",
-            "a": "Satoshi",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "10:40",
-            "c": "se",
-            "a": "Felicia",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "11:20",
-            "c": "hr",
-            "a": "Lelek",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "12:00",
-            "c": "gr",
-            "a": "Akylas",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "13:30",
-            "c": "pt",
-            "a": "Bandidos do Cante",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "14:10",
-            "c": "ge",
-            "a": "Bzikebi",
-            "s": "DONE"
-        },
-        {
-            "d": "02.05",
-            "t": "14:50",
-            "c": "fi",
-            "a": "Linda Lampenius x Pete Parkkonen",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "10:00",
-            "c": "me",
-            "a": "Tamara Živković",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "10:40",
-            "c": "ee",
-            "a": "Vanilla Ninja",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "11:20",
-            "c": "il",
-            "a": "Noam Bettan",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "12:00",
-            "c": "be",
-            "a": "Essyla",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "13:30",
-            "c": "lt",
-            "a": "Lion Ceccah",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "14:10",
-            "c": "sm",
-            "a": "Senhit",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "14:50",
-            "c": "pl",
-            "a": "Alicja",
-            "s": "DONE"
-        },
-        {
-            "d": "03.05",
-            "t": "15:30",
-            "c": "rs",
-            "a": "Lavina",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "10:45",
-            "c": "bg",
-            "a": "Dara",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "11:40",
-            "c": "az",
-            "a": "Jiva",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "12:20",
-            "c": "ro",
-            "a": "Alexandra Căpitănescu",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "13:40",
-            "c": "lu",
-            "a": "Eva Marija",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "14:15",
-            "c": "cz",
-            "a": "Daniel Zizka",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "16:05",
-            "c": "am",
-            "a": "Simón",
-            "s": "DONE"
-        },
-        {
-            "d": "04.05",
-            "t": "16:20",
-            "c": "ch",
-            "a": "Veronica Fusaro",
-            "s": "DONE"
-        },
-        {
-            "d": "05.05",
-            "t": "11:30",
-            "c": "cy",
-            "a": "Antigoni",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "12:10",
-            "c": "lv",
-            "a": "Atvara",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "12:50",
-            "c": "dk",
-            "a": "Søren Torpegaard Lund",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "13:45",
-            "c": "au",
-            "a": "Delta Goodrem",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "14:25",
-            "c": "ua",
-            "a": "Lelėka",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "16:00",
-            "c": "al",
-            "a": "Alis",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "16:40",
-            "c": "mt",
-            "a": "Aidan",
-            "s": "UPCOMING"
-        },
-        {
-            "d": "05.05",
-            "t": "17:20",
-            "c": "no",
-            "a": "Jonas Lovv",
-            "s": "UPCOMING"
         }
     ]
 };
