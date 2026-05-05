@@ -922,6 +922,8 @@
         <main class="column">
             <div id="champion-side-widget"></div>
             
+            <div id="rehearsal-sect" style="margin-bottom:20px;"></div>
+
             <div class="search-container" id="news-sect">
                 <i class="fi fi-rr-search search-icon"></i>
                 <input type="text" id="news-search" class="search-input" placeholder="SEARCH FOR SIGNALS, COUNTRIES OR RESULTS..." oninput="render()">
@@ -939,7 +941,6 @@
             <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
                 <div class="section-title-base title-cyan"><i class="fi fi-rr-book-alt"></i> ENCYCLOPEDIA 2026 / PARTICIPANTS</div>
                 <div id="encyclo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:15px; margin-top:20px;"></div>
-                <div id="ency-anchor"></div>
             </div>
         </main>
         
@@ -1528,66 +1529,68 @@
         setInterval(syncRadio, 15000);
         setInterval(updateProgress, 1000);
         function renderEncy() {
-            if(!window.DATA || !DATA.rehearsals) return;
+            if(!window.DATA) return;
+            
+            // 1. Participant Grid (Bottom)
             const grid = document.getElementById("encyclo-grid");
-            const anchor = document.getElementById("ency-anchor");
-            if(!grid || !anchor) return;
+            if(grid) {
+                const parts = [
+                    {id:"md", a:"Satoshi", s:"SF1 #1"}, {id:"se", a:"Felicia", s:"SF1 #2"}, {id:"hr", a:"Lelek", s:"SF1 #3"},
+                    {id:"gr", a:"Akylas", s:"SF1 #4"}, {id:"pt", a:"Bandidos do Cante", s:"SF1 #5"}, {id:"ge", a:"Bzikebi", s:"SF1 #6"},
+                    {id:"fi", a:"Linda Lampenius", s:"SF1 #7"}, {id:"me", a:"Tamara Živković", s:"SF1 #8"}, {id:"ee", a:"Vanilla Ninja", s:"SF1 #9"},
+                    {id:"il", a:"Noam Bettan", s:"SF1 #10"}, {id:"be", a:"Essyla", s:"SF1 #11"}, {id:"lt", a:"Lion Ceccah", s:"SF1 #12"},
+                    {id:"sm", a:"Senhit", s:"SF1 #13"}, {id:"pl", a:"Alicja", s:"SF1 #14"}, {id:"rs", a:"Lavina", s:"SF1 #15"},
+                    {id:"bg", a:"Dara", s:"SF2 #1"}, {id:"az", a:"Jiva", s:"SF2 #2"}, {id:"ro", a:"Alexandra C.", s:"SF2 #3"},
+                    {id:"lu", a:"Eva Marija", s:"SF2 #4"}, {id:"cz", a:"Daniel Zizka", s:"SF2 #5"}, {id:"am", a:"Simón", s:"SF2 #6"},
+                    {id:"ch", a:"Veronica Fusaro", s:"SF2 #7"}, {id:"cy", a:"Antigoni", s:"SF2 #8"}, {id:"lv", a:"Atvara", s:"SF2 #9"},
+                    {id:"dk", a:"Søren Torpegaard", s:"SF2 #10"}, {id:"au", a:"Delta Goodrem", s:"SF2 #11"}, {id:"ua", a:"Leléka", s:"SF2 #12"},
+                    {id:"al", a:"Alis", s:"SF2 #13"}, {id:"mt", a:"Aidan", s:"SF2 #14"}, {id:"no", a:"Jonas Lovv", s:"SF2 #15"}
+                ];
+                grid.innerHTML = parts.map(p => `
+                    <div class="card" style="padding:10px; text-align:center; border-color:rgba(0,245,255,0.1); background:rgba(0,245,255,0.01);">
+                        <img src="${getH(p.id)}" class="heart-shape" style="width:35px; height:35px; margin-bottom:8px;">
+                        <div style="font-weight:900; font-size:0.75rem; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.a}</div>
+                        <div style="font-size:0.6rem; color:var(--cyan); margin-top:2px;">${p.s}</div>
+                    </div>
+                `).join("");
+            }
 
-            // 1. Participant Grid (Static for 2026 based on data.js context or master calendar)
-            const parts = [
-                {id:"md", a:"Satoshi", s:"SF1 #1"}, {id:"se", a:"Felicia", s:"SF1 #2"}, {id:"hr", a:"Lelek", s:"SF1 #3"},
-                {id:"gr", a:"Akylas", s:"SF1 #4"}, {id:"pt", a:"Bandidos do Cante", s:"SF1 #5"}, {id:"ge", a:"Bzikebi", s:"SF1 #6"},
-                {id:"fi", a:"Linda Lampenius", s:"SF1 #7"}, {id:"me", a:"Tamara Živković", s:"SF1 #8"}, {id:"ee", a:"Vanilla Ninja", s:"SF1 #9"},
-                {id:"il", a:"Noam Bettan", s:"SF1 #10"}, {id:"be", a:"Essyla", s:"SF1 #11"}, {id:"lt", a:"Lion Ceccah", s:"SF1 #12"},
-                {id:"sm", a:"Senhit", s:"SF1 #13"}, {id:"pl", a:"Alicja", s:"SF1 #14"}, {id:"rs", a:"Lavina", s:"SF1 #15"},
-                {id:"bg", a:"Dara", s:"SF2 #1"}, {id:"az", a:"Jiva", s:"SF2 #2"}, {id:"ro", a:"Alexandra C.", s:"SF2 #3"},
-                {id:"lu", a:"Eva Marija", s:"SF2 #4"}, {id:"cz", a:"Daniel Zizka", s:"SF2 #5"}, {id:"am", a:"Simón", s:"SF2 #6"},
-                {id:"ch", a:"Veronica Fusaro", s:"SF2 #7"}, {id:"cy", a:"Antigoni", s:"SF2 #8"}, {id:"lv", a:"Atvara", s:"SF2 #9"},
-                {id:"dk", a:"Søren Torpegaard", s:"SF2 #10"}, {id:"au", a:"Delta Goodrem", s:"SF2 #11"}, {id:"ua", a:"Leléka", s:"SF2 #12"},
-                {id:"al", a:"Alis", s:"SF2 #13"}, {id:"mt", a:"Aidan", s:"SF2 #14"}, {id:"no", a:"Jonas Lovv", s:"SF2 #15"}
-            ];
+            // 2. Rehearsal Schedule (Top)
+            const rehSect = document.getElementById("rehearsal-sect");
+            if(rehSect && DATA.rehearsals) {
+                const days = {};
+                DATA.rehearsals.forEach(r => {
+                    if(!days[r.d]) days[r.d] = [];
+                    days[r.d].push(r);
+                });
 
-            grid.innerHTML = parts.map(p => `
-                <div class="card" style="padding:10px; text-align:center; border-color:rgba(0,245,255,0.1); background:rgba(0,245,255,0.01);">
-                    <img src="${getH(p.id)}" class="heart-shape" style="width:35px; height:35px; margin-bottom:8px;">
-                    <div style="font-weight:900; font-size:0.75rem; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${p.a}</div>
-                    <div style="font-size:0.6rem; color:var(--cyan); margin-top:2px;">${p.s}</div>
-                </div>
-            `).join("");
-
-            // 2. Rehearsal Schedule Table
-            anchor.innerHTML = `
-                <div class="card" style="margin-top:30px; border-color:var(--acid); background:rgba(204,255,0,0.02);">
-                    <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;"><i class="fi fi-rr-time-check"></i> REHEARSAL SCHEDULE / VIENNA 2026</div>
-                    <div style="margin-top:20px; overflow-x:auto;">
-                        <table style="width:100%; border-collapse:collapse; font-size:0.75rem; color:#ccc;">
-                            <thead>
-                                <tr style="text-align:left; border-bottom:1px solid rgba(204,255,0,0.2);">
-                                    <th style="padding:10px;">DATE</th>
-                                    <th style="padding:10px;">TIME</th>
-                                    <th style="padding:10px;">COUNTRY</th>
-                                    <th style="padding:10px;">ARTIST</th>
-                                    <th style="padding:10px;">STATUS</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${DATA.rehearsals.map(r => `
+                let html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:15px;">';
+                Object.keys(days).sort().reverse().forEach(date => {
+                    html += `
+                        <div class="card" style="border-color:var(--acid); background:rgba(204,255,0,0.02); padding:15px;">
+                            <div class="section-title-base" style="color:var(--acid); border-bottom:1px solid rgba(204,255,0,0.2); padding-bottom:8px; font-size:0.8rem; margin-bottom:10px;">
+                                <i class="fi fi-rr-calendar"></i> REHEARSALS: ${date} / MAY
+                            </div>
+                            <table style="width:100%; border-collapse:collapse; font-size:0.75rem; color:#ccc;">
+                                ${days[date].map(r => `
                                     <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                                        <td style="padding:10px; font-weight:900; color:var(--acid);">${r.d}</td>
-                                        <td style="padding:10px;">${r.t}</td>
-                                        <td style="padding:10px; display:flex; align-items:center; gap:8px;">
-                                            <img src="${getH(r.c)}" class="heart-shape" style="width:18px; height:18px;">
+                                        <td style="padding:8px 0; font-weight:900; color:var(--acid); width:55px;">${r.t}</td>
+                                        <td style="padding:8px 0; display:flex; align-items:center; gap:8px;">
+                                            <img src="${getH(r.c)}" class="heart-shape" style="width:16px; height:16px;">
                                             ${countryMap[r.c]}
                                         </td>
-                                        <td style="padding:10px;">${r.a}</td>
-                                        <td style="padding:10px;"><span style="font-size:0.6rem; padding:2px 6px; border-radius:4px; background:${r.s==='DONE'?'rgba(0,255,0,0.1)':'rgba(255,255,0,0.1)'}; color:${r.s==='DONE'?'#0f0':'#ff0'}; font-weight:900;">${r.s}</span></td>
+                                        <td style="padding:8px 0; text-align:right;">
+                                            <span style="font-size:0.6rem; padding:2px 6px; border-radius:4px; background:${r.s==='DONE'?'rgba(0,255,0,0.1)':'rgba(255,255,0,0.1)'}; color:${r.s==='DONE'?'#0f0':'#ff0'}; font-weight:900;">${r.s}</span>
+                                        </td>
                                     </tr>
                                 `).join("")}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            `;
+                            </table>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+                rehSect.innerHTML = html;
+            }
         }
 
         window.onload = () => { update(); render(); renderEncy(); syncRadio(); fetchWeather(); };
