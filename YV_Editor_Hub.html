@@ -1564,27 +1564,29 @@
                     days[r.d].push(r);
                 });
 
-                let html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:15px;">';
+                let html = '<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">';
                 Object.keys(days).sort().reverse().forEach(date => {
                     html += `
-                        <div class="card" style="border-color:var(--acid); background:rgba(204,255,0,0.02); padding:15px;">
-                            <div class="section-title-base" style="color:var(--acid); border-bottom:1px solid rgba(204,255,0,0.2); padding-bottom:8px; font-size:0.8rem; margin-bottom:10px;">
-                                <i class="fi fi-rr-calendar"></i> REHEARSALS: ${date} / MAY
-                            </div>
-                            <table style="width:100%; border-collapse:collapse; font-size:0.75rem; color:#ccc;">
+                        <div class="card" style="border:none; border-top:2px solid var(--acid); background:rgba(10,10,10,0.98); padding:20px; box-shadow:0 20px 40px rgba(0,0,0,0.6); position:relative; overflow:hidden;">
+                            <div style="color:var(--acid); font-size:0.55rem; letter-spacing:0.4em; font-weight:900; margin-bottom:8px; opacity:0.5; text-transform:uppercase;">&bull; Backstage Daily Log</div>
+                            <div style="color:#fff; font-size:1.4rem; font-weight:900; margin-bottom:20px; font-style:italic; letter-spacing:-0.02em;">MAY ${date}</div>
+                            <div style="display:flex; flex-direction:column; gap:14px;">
                                 ${days[date].map(r => `
-                                    <tr style="border-bottom:1px solid rgba(255,255,255,0.05);">
-                                        <td style="padding:8px 0; font-weight:900; color:var(--acid); width:55px;">${r.t}</td>
-                                        <td style="padding:8px 0; display:flex; align-items:center; gap:8px;">
-                                            <img src="${getH(r.c)}" class="heart-shape" style="width:16px; height:16px;">
-                                            ${countryMap[r.c]}
-                                        </td>
-                                        <td style="padding:8px 0; text-align:right;">
-                                            <span style="font-size:0.6rem; padding:2px 6px; border-radius:4px; background:${r.s==='DONE'?'rgba(0,255,0,0.1)':'rgba(255,255,0,0.1)'}; color:${r.s==='DONE'?'#0f0':'#ff0'}; font-weight:900;">${r.s}</span>
-                                        </td>
-                                    </tr>
+                                    <div style="display:flex; align-items:center; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.03);">
+                                        <div style="display:flex; align-items:center; gap:15px;">
+                                            <span style="font-family:monospace; color:var(--acid); font-weight:900; font-size:0.85rem; background:rgba(204,255,0,0.05); padding:2px 4px;">${r.t}</span>
+                                            <div style="display:flex; align-items:center; gap:10px;">
+                                                <img src="${getH(r.c)}" class="heart-shape" style="width:20px; height:20px; filter:contrast(1.2);">
+                                                <span style="font-weight:800; font-size:0.8rem; color:#eee; text-transform:uppercase; letter-spacing:0.05em;">${countryMap[r.c]}</span>
+                                            </div>
+                                        </div>
+                                        <div style="display:flex; align-items:center; gap:8px;">
+                                            <span style="font-size:0.75rem; color:#fff; font-weight:400; opacity:0.8;">${r.a}</span>
+                                            <span style="width:6px; height:6px; border-radius:50%; background:${r.s==='DONE'?'#0f0':'#ff0'}; box-shadow:0 0 10px ${r.s==='DONE'?'#0f0':'#ff0'};"></span>
+                                        </div>
+                                    </div>
                                 `).join("")}
-                            </table>
+                            </div>
                         </div>
                     `;
                 });
