@@ -356,6 +356,42 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "04.05 | 20:14",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5911",
+            "t": "Akylas разносит караоке-будку своим хитом «Ferto»! 🎤",
+            "b": "🇬🇷 Akylas - Ferto #Eurovision",
+            "img": "https://cdn4.telesco.pe/file/FbCfRL0WS8YepIvndjwToZQaZRdA58JVseKmGOdyc7WE03wNx2ZMwKv7G4d5MiDqDZ9lV4Ut5lo44sEiA1FCoRDiU1Pkl-DITgQHhZYp_Mp6oU2OBV3kmGoRPVGOiflVDwnq6yzCc4euenFMQ0_HqXwt4hEbo6_9PNP4lchCyYWxXhxCG8nTRlNDy1xWoYB6LBIZE0Hz9A2TJ0wQBuCAyKhpjmxRf0DC53oqOvL8TiJBPfdcW11Gm9NVNJ9Q-OI_7T8YU8OUHaeCGl_RAjFgse7kI4P_uZEtCvGYA6XpUs8g3VLLoZVcSYEm1JfD5lQvLV3w1LjNpDzaT9HCENDdZw",
+            "vid": "https://cdn4.telesco.pe/file/d8e4ff1584.mp4?token=kL9YOc2ei8Ht4f_3vN-NOXQu1v8KQqN5Wj1Wo6eK2J7QEdgYh3ADVsLHUpOY0hkW2uHIS6H04z8KsaU_asPLqW4T8Lxka4X_2ENJ2nXfYEl20EcVr3YloEBRWzTs52fj4psXY_9fi0ulsGjpLxcY6_h4G1QQwGTLE4zt_k5AiSttvVPqayFddT4nVKXQP4unvSZXyeN0OQJMeytYjQYBTuliwk8k1tJjccPW_9o5-D216IwlUA3K8JAFCNE7BGRWLV5T7K_hoA1GzZofN8yR3t61hcT8IQvM_8PmEbsu9ariaFnPGSx44J-i31P3xXB0jc4NXn8WhDjTMWqznr2SBw",
+            "isVideo": true,
+            "ts": 1777925691.0,
+            "poll": null
+        },
+        {
+            "m": "04.05 | 20:13",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5910",
+            "t": "Veronica Fusaro уже в Вене. Швейцария готова воплотить свое видение на главной сцене сезона. 💥",
+            "b": "🇨🇭 Veronica Fusaro - Alice #Eurovision",
+            "img": "https://cdn4.telesco.pe/file/j7E1IYtQQWusVjpm_QsUFR2nVBnI7PEHFBseIpCh3Mj8CS3lPiozAs-kQ3WtdVpwdMydwFgiTwxOflqHF6K9Sqd3w8HOrG7Z1CvbeQGyZvP_oFR5-On5GPMlqFuVOFm2Hu1Cej2bwptlgea6CaE260tViamks6Pm2AYQzhOg07y0grr00WNxJFGNwwZicjMhxj5va4LxDpAFr3jHMi871xVK5Lip7XVfvnCR9JLbg4ER1DGohFxwOFcIXA3xyfgeqB-bBk4QnxwlTGtPPkdT5xJmrc_8e-X09P9iICQNFLegpsN9yD_4fRDVACbicIVapGEB8Kc_lBAXODCQpV_-mw",
+            "vid": "https://cdn4.telesco.pe/file/de31fba208.mp4?token=fR3CNOZW8zE2ginuG14H-y05av2u9IumtrJm_jOD-Bf7eG_K8EZFs7BQ0ECFOLqLWE7nST-0b7G9S-UsI50IyJt52cpGOvYcKMw6zitcmgG8PsxAmxwDglqNHH3TNQyR_QfGXE106yUMP6T_5A8TxapigouljxnlZ0uRp7LwytuRRsFQO4GevcuHppFezK3X8hIu2fcU_Svz0NdFxwqEmfRXwWn-mDLK9tXuoHjorpURv1i8tfN16XdE6aW_V9k3Ctfomc5ib3wve-ie4icG5PNxtDgpctYJOGZe2pVh6JLtKpPTXbejyYrjGi8in6W5OqmrPE8FRbxOX9sQAnLz4g",
+            "isVideo": true,
+            "ts": 1777925593.0,
+            "poll": null
+        },
+        {
+            "m": "04.05 | 20:11",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5909",
+            "t": "Они привезли в Вену эмоции, энергию и настоящий огонь - и нам нужно больше. ❤️‍🔥",
+            "b": "🇫🇮  Linda Lampenius x Pete Parkkonen - Liekinheitin #Eurovision",
+            "img": "https://cdn4.telesco.pe/file/iEhrC9OErXRWAiEy63T4f3gupTu9DWBiw0AwN0XBZYmAVVW87u1dqyyuAOXt7ZXOWUfoV3_Emxxvwe6gNMnLVW1bH6x_nQxw608lXKL9G_IGZPvZjHSNLoK5JzpM7_7CcUqWHDD0J3KmxqdiF8GpVr0VQJVaBa3tfMbZGGf6VcacvXJYfQdaKHMMoz05N4ctCRJ0K0eSJKVIfo8vtcfXlppUH1199MoJNsYABhbLpQ_3zBxDSsqtlpp8MxFjE_bo4tXkxgqANo3b3hcPHKTKxqpfkMZgFP5GnrI6EJNza_0aDyEBtaLY5YrnpA7RA6X0YdvNvSoMAr3l083BzoKYMA",
+            "vid": "https://cdn4.telesco.pe/file/a26c8d3b65.mp4?token=aJ1QuN8-qMgJOTxEslJP9MV1TAoresUv5qvSBxYZ3xuEcNsTmneQizgBsg6my0LWDgMvsR6NoYZfhkvqVVkagGONH58oNhgWRtdZ54yvKFdjPnLWjqgxhYyQCMv30x_TM1n-CgvOmICsRy6Gkfe35CZFvmZwNSCk7TO4PttlBkkgW3sEf7_fLko0QjSoNg1PjDDdFMB7osYPOz8tHtLey8oT6Mk9T1c20dbBbybt3FjqfpJlu62DET_xf4alWIoeMR43JqAdyzo-FrhFZ-FdzluZkot2F2ODly9JvEO6JOiC3JJSrEA8gzEilbpaUKH_WBfKebfflY8VCVrCSrYSdg",
+            "isVideo": true,
+            "ts": 1777925512.0,
+            "poll": null
+        },
+        {
             "m": "04.05 | 18:24",
             "id": "70",
             "u": "https://t.me/YourEurovision/5908",
@@ -560,18 +596,6 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "04.05 | 13:01",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5886",
-            "t": "Сник-пик того, что ALICJA готовит для Вены 2026. 👀",
-            "b": "🇵🇱 ALICJA - Pray #Eurovision",
-            "img": "https://cdn4.telesco.pe/file/qdk4hkfsYCfpp0K99-GD6Ot3YYDQi6umX7aPHXZ0eaMJ9UNpNVCt0NyegAlZCY8bRnJRsvrRM76GrR9bkFrs2vARK3bikfUNsTL_oBJBrZUcOe3v2QbSPPQBifIlDeDQQFDSp8cdf606L_TWFogA-DZ_Z6PvyK7wCL4wlZPso8GGDlgdlve4mVn4NInBm3iPTyf-nr_qcgLhS_IFZXmFAnU1IEAX9leGXNer_g0sI7iaC9aWIb0ofKaWezYgPPjIbe_DAhxiwNIzr8mQ_jhvB-KEa0RV0FZuXU8tIPYVqztOZjopAF9paYx4h2MUfu3fIcj0J4DQZJaYu6POL-kX6A.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1777899689.0,
-            "poll": null
-        },
-        {
             "m": "04.05 | 12:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5976",
@@ -629,30 +653,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1777705441.0,
-            "poll": null
-        },
-        {
-            "m": "01.05 | 12:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5971",
-            "t": "🧁 #BAKERY: МИНДАЛЬНЫЙ ТОРТ «ОБЛАКО» - СЕНСОРИКА НАЧАЛА",
-            "b": "Миндаль в мировой культуре - это вестник. Дерево, которое зацветает первым, прорываясь сквозь остатки холода. Этот десерт задуман как гастрономическое воплощение майского утра: он должен быть почти невесомым, прохладным и оставлять тонкое послевкусие горечи, характерное для свежего ореха. Мы отказываемся от муки в пользу тончайшей миндальной пудры, чтобы сохранить чистоту текстуры.\nИНГРЕДИЕНТЫ (МАТЕРИЯ):\n• Миндальная мука (экстра-тонкого помола) - 200 г\n• Белки (комнатной температуры) - 6 шт.\n• Сахарная пудра - 150 г\n• Цедра одного лимона (для искры)\n• Щепотка морской соли\nТЕХНОЛОГИЧЕСКИЙ ПРОТОКОЛ (WORKFLOW):\n1. ТЕМПЕРАТУРНЫЙ ШОК: Белки необходимо взбивать на ледяной бане до появления «устойчивых пиков». Это создаст прочный каркас для тяжелой миндальной массы.\n2. МЕДИТАЦИЯ СМЕШИВАНИЯ: Миндальная мука вводится вручную, широкими круговыми движениями. Любая спешка здесь - враг. Мы должны сохранить воздух внутри «облака».\n3. АДАПТАЦИЯ (РЕЖИМ): Выпекаем при 160°C в режиме конвекции. Нижний нагрев должен быть минимальным, чтобы дно не карамелизовалось слишком быстро.\nСЕКРЕТ ХРУСТА:\nЗа пять минут до готовности приоткройте дверцу духовки на 1 см. Лишняя влага уйдет, и поверхность торта покроется тончайшей «кракелюрной» корочкой, которая будет звонко лопаться под ножом.\n🎹 SOUNDSCAPE: Хруст миндальной корочки, шипение духовки, звон тонкого фарфора.\n🎒 ИНВЕНТАРЬ: Венчик, сито, весенние цветы для декора.\n⏱️ 2.1 мин | 🧁 Matter Layer | May 1",
-            "img": "https://cdn4.telesco.pe/file/q2M2QekL4DA2oU2UuSyXJX5qumT8zvr-V6VNjvsRJG_4u8EcIXD5oy2WbxO0KqD_S2oMeLl9v9IDweLFYkOMOPJX1NpkrJO7pDlzXPtv2sNtRIPxombHKdGa0HUc7Tv0NMX-znigRJNB1v-JR_IarGe94bHuAx3HbsgPHEvMdlP7u_F2ez7CAjYFRX15awpFexdCHhxICNp5NtqQDnP9ZtVufus-e-Oe3HddUaDydCgV9hCKP86b8iQ-pk3I8jLJc_N6DyF7eL81clUKZJh4109zby3-S7nuxutd39vvDSMyYjiHi162n3mL7pMljqSrahJwcJFYZR6JkgvAeIIH2g.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1777637041.0,
-            "poll": null
-        },
-        {
-            "m": "01.05 | 07:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5970",
-            "t": "⏳ #CHRONOS: МАЙСКАЯ РОСА - ТОЧКА ОБНУЛЕНИЯ",
-            "b": "Первое майское утро в мировой мифологии - это не просто начало календарного месяца. Это момент, когда «небесная влага» (роса) обретает свойства алхимического серебра. В дохристианской традиции Северной Европы считалось, что умывание росой на рассвете этого дня смывает «старую кожу» - груз прошлых ошибок и застойную энергию зимы.\nГЕРМЕНЕВТИКА СВЕТА:\nРоса здесь выступает как лиминальная субстанция. Она - конденсат ночи, проявленный в лучах восходящего солнца. Это физическое воплощение границы между тьмой и светом. Тот, кто соприкасается с ней, на мгновение выходит за пределы линейного времени и входит в пространство Kairos - момента истины.\nЯКОРЬ В СОВРЕМЕННОСТИ:\nСегодня этот архетип живет в нашем подсознательном стремлении к весеннему очищению. Желание «выбросить лишнее», обновить интерьер или радикально сменить гардероб в начале мая - это отголосок того самого древнего ритуала. Мы всё еще пытаемся смыть «зимнюю копоть», используя современные средства, но ищем того же эффекта - ясности взгляда.\nРИТУАЛ МОМЕНТА:\nНайдите точку, где утренний свет касается стекла. Посмотрите сквозь него на мир. Это упражнение возвращает глазу способность видеть не «объекты», а «потенциал». Позвольте себе сегодня быть чистым листом.\n🎹 SOUNDSCAPE: Звонкая тишина, далекое пение птиц, шум ветра в старом саду.\n🎒 ИНВЕНТАРЬ: Стеклянный сосуд, чистая вода, первый луч.\n⏱️ 1.8 мин | 🏛 Thought Layer | May 1",
-            "img": "https://cdn4.telesco.pe/file/oYc5pdtVXSfRcVumAVeu4zv_ql2OuAJfXVpuauOZ3P-1VsEA5_rDe8cWIEcHb3JmrYU29SL-23S4SsDqf4X_9YgQVEULZjk0okSGnx_XuT5cl7VidMu5MFrL-SE5aVgcvEU_Sa0Jv83iqAPDNAfYav-bojwhvihi1HbyT5lAKnD1bIFuZlQ_fy4l-4w6i-Of5CsfGEbKy0ZbmgBN4PVjAfR-P6V1K_4i4U9YpDrCinCVTy-zHihk-e858dwWE30l1qoJ1CkhVynmMPG3P9nOXz-1BRtFMss5aVLuacmexHJmemJNsBmELuJHQazhRutSoFXjae-hgHXKsGCzovK6Fw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1777619041.0,
             "poll": null
         }
     ],
@@ -1019,158 +1019,214 @@ var DATA = {
     ],
     "rehearsals": [
         {
-            "d": "02.05",
-            "t": "10:00",
-            "c": "md",
-            "a": "Satoshi",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "10:00",
+                "c": "md",
+                "a": "Satoshi",
+                "s": "DONE"
         },
         {
-            "d": "02.05",
-            "t": "10:40",
-            "c": "se",
-            "a": "Felicia",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "10:40",
+                "c": "se",
+                "a": "Felicia",
+                "s": "DONE"
         },
         {
-            "d": "02.05",
-            "t": "11:20",
-            "c": "hr",
-            "a": "Lelek",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "11:20",
+                "c": "hr",
+                "a": "Lelek",
+                "s": "DONE"
         },
         {
-            "d": "02.05",
-            "t": "12:00",
-            "c": "gr",
-            "a": "Akylas",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "12:00",
+                "c": "gr",
+                "a": "Akylas",
+                "s": "DONE"
         },
         {
-            "d": "02.05",
-            "t": "13:30",
-            "c": "pt",
-            "a": "Bandidos do Cante",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "13:30",
+                "c": "pt",
+                "a": "Bandidos do Cante",
+                "s": "DONE"
         },
         {
-            "d": "02.05",
-            "t": "14:10",
-            "c": "ge",
-            "a": "Bzikebi",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "14:10",
+                "c": "ge",
+                "a": "Bzikebi",
+                "s": "DONE"
         },
         {
-            "d": "02.05",
-            "t": "14:50",
-            "c": "fi",
-            "a": "Linda Lampenius x Pete Parkkonen",
-            "s": "DONE"
+                "d": "02.05",
+                "t": "14:50",
+                "c": "fi",
+                "a": "Linda Lampenius x Pete Parkkonen",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "10:00",
-            "c": "me",
-            "a": "Tamara Živković",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "10:00",
+                "c": "me",
+                "a": "Tamara Živković",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "10:40",
-            "c": "ee",
-            "a": "Vanilla Ninja",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "10:40",
+                "c": "ee",
+                "a": "Vanilla Ninja",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "11:20",
-            "c": "il",
-            "a": "Noam Bettan",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "11:20",
+                "c": "il",
+                "a": "Noam Bettan",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "12:00",
-            "c": "be",
-            "a": "Essyla",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "12:00",
+                "c": "be",
+                "a": "Essyla",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "13:30",
-            "c": "lt",
-            "a": "Lion Ceccah",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "13:30",
+                "c": "lt",
+                "a": "Lion Ceccah",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "14:10",
-            "c": "sm",
-            "a": "Senhit ft. Boy George",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "14:10",
+                "c": "sm",
+                "a": "Senhit",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "14:50",
-            "c": "pl",
-            "a": "Alicja",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "14:50",
+                "c": "pl",
+                "a": "Alicja",
+                "s": "DONE"
         },
         {
-            "d": "03.05",
-            "t": "15:30",
-            "c": "rs",
-            "a": "Lavina",
-            "s": "DONE"
+                "d": "03.05",
+                "t": "15:30",
+                "c": "rs",
+                "a": "Lavina",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "10:30",
-            "c": "bg",
-            "a": "Dara",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "10:45",
+                "c": "bg",
+                "a": "Dara",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "11:10",
-            "c": "az",
-            "a": "JIVA",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "11:40",
+                "c": "az",
+                "a": "Jiva",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "11:50",
-            "c": "ro",
-            "a": "Alexandra Căpitănescu",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "12:20",
+                "c": "ro",
+                "a": "Alexandra Căpitănescu",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "12:45",
-            "c": "lu",
-            "a": "Eva Marija",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "13:40",
+                "c": "lu",
+                "a": "Eva Marija",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "13:25",
-            "c": "cz",
-            "a": "Daniel Zizka",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "14:15",
+                "c": "cz",
+                "a": "Daniel Zizka",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "15:00",
-            "c": "am",
-            "a": "SIMÓN",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "16:05",
+                "c": "am",
+                "a": "Simón",
+                "s": "DONE"
         },
         {
-            "d": "04.05",
-            "t": "15:40",
-            "c": "ch",
-            "a": "Veronica Fusaro",
-            "s": "UPCOMING"
+                "d": "04.05",
+                "t": "16:20",
+                "c": "ch",
+                "a": "Veronica Fusaro",
+                "s": "DONE"
+        },
+        {
+                "d": "05.05",
+                "t": "11:30",
+                "c": "cy",
+                "a": "Antigoni",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "12:10",
+                "c": "lv",
+                "a": "Atvara",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "12:50",
+                "c": "dk",
+                "a": "Søren Torpegaard Lund",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "13:45",
+                "c": "au",
+                "a": "Delta Goodrem",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "14:25",
+                "c": "ua",
+                "a": "Lelėka",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "16:00",
+                "c": "al",
+                "a": "Alis",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "16:40",
+                "c": "mt",
+                "a": "Aidan",
+                "s": "UPCOMING"
+        },
+        {
+                "d": "05.05",
+                "t": "17:20",
+                "c": "no",
+                "a": "Jonas Lovv",
+                "s": "UPCOMING"
         }
-    ]
+]
 };

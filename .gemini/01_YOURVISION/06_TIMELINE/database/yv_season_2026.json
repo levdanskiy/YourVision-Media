@@ -18,7 +18,7 @@
             "date": "2026-03-29",
             "time": "19:00",
             "country": "Albania",
-            "event": "Alis - N\u00e2n (Piano Version Premiere)",
+            "event": "Alis - Nân (Piano Version Premiere)",
             "type": "ALBM",
             "status": "WAITING"
         },
@@ -82,7 +82,7 @@
             "date": "2026-04-04",
             "time": "14:00",
             "country": "Montenegro",
-            "event": "Tamara \u017divkovi\u0107 - Nova Zora (English Version)",
+            "event": "Tamara Živković - Nova Zora (English Version)",
             "type": "ALBM",
             "status": "WAITING"
         },
@@ -108,7 +108,7 @@
             "date": "2026-04-01",
             "time": "18:00",
             "country": "AL",
-            "event": "#BAKERY: \u0422\u0440\u043e\u043c\u043f\u043b\u0435\u0439 (\u0418\u043b\u043b\u044e\u0437\u0438\u044f)",
+            "event": "#BAKERY: Тромплей (Иллюзия)",
             "type": "ALMANAC",
             "status": "PLANNED"
         },
@@ -116,253 +116,253 @@
             "date": "2026-04-01",
             "time": "21:00",
             "country": "AL",
-            "event": "#LISTS: \u0412\u0435\u043b\u0438\u043a\u0438\u0435 \u043c\u0438\u0441\u0442\u0438\u0444\u0438\u043a\u0430\u0446\u0438\u0438",
+            "event": "#LISTS: Великие мистификации",
             "type": "ALMANAC",
             "status": "PLANNED"
         }
     ],
     "winners": {
         "AL": {
-            "country_name": "\u0410\u043b\u0431\u0430\u043d\u0438\u044f",
+            "country_name": "Албания",
             "artist": "Alis",
-            "song": "N\u00e2n",
+            "song": "Nân",
             "sf": 2,
             "ro": 13
         },
         "AM": {
-            "country_name": "\u0410\u0440\u043c\u0435\u043d\u0438\u044f",
-            "artist": "Sim\u00f3n",
+            "country_name": "Армения",
+            "artist": "Simón",
             "song": "Paloma rumba",
             "sf": 2,
             "ro": 6
         },
         "AU": {
-            "country_name": "\u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u044f",
+            "country_name": "Австралия",
             "artist": "Delta Goodrem",
             "song": "Eclipse",
             "sf": 2,
             "ro": 11
         },
         "AT": {
-            "country_name": "\u0410\u0432\u0441\u0442\u0440\u0438\u044f",
-            "artist": "COSM\u022e",
+            "country_name": "Австрия",
+            "artist": "COSMȮ",
             "song": "Tanzschein",
             "sf": 2,
             "ro": null,
             "final_ro": 25
         },
         "AZ": {
-            "country_name": "\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043d",
+            "country_name": "Азербайджан",
             "artist": "Jiva",
             "song": "Just Go",
             "sf": 2,
             "ro": 2
         },
         "BE": {
-            "country_name": "\u0411\u0435\u043b\u044c\u0433\u0438\u044f",
+            "country_name": "Бельгия",
             "artist": "Essyla",
             "song": "Dancing on the Ice",
             "sf": 1,
             "ro": 11
         },
         "BG": {
-            "country_name": "\u0411\u043e\u043b\u0433\u0430\u0440\u0438\u044f",
+            "country_name": "Болгария",
             "artist": "Dara",
             "song": "Bangaranga",
             "sf": 2,
             "ro": 1
         },
         "HR": {
-            "country_name": "\u0425\u043e\u0440\u0432\u0430\u0442\u0438\u044f",
+            "country_name": "Хорватия",
             "artist": "Lelek",
             "song": "Andromeda",
             "sf": 1,
             "ro": 3
         },
         "CY": {
-            "country_name": "\u041a\u0438\u043f\u0440",
+            "country_name": "Кипр",
             "artist": "Antigoni",
             "song": "Jalla",
             "sf": 2,
             "ro": 8
         },
         "CZ": {
-            "country_name": "\u0427\u0435\u0445\u0438\u044f",
+            "country_name": "Чехия",
             "artist": "Daniel Zizka",
             "song": "Crossroads",
             "sf": 2,
             "ro": 5
         },
         "DK": {
-            "country_name": "\u0414\u0430\u043d\u0438\u044f",
-            "artist": "S\u00f8ren Torpegaard Lund",
-            "song": "F\u00f8r vi g\u00e5r hjem",
+            "country_name": "Дания",
+            "artist": "Søren Torpegaard Lund",
+            "song": "Før vi går hjem",
             "sf": 2,
             "ro": 10
         },
         "EE": {
-            "country_name": "\u042d\u0441\u0442\u043e\u043d\u0438\u044f",
+            "country_name": "Эстония",
             "artist": "Vanilla Ninja",
             "song": "Too Epic to Be True",
             "sf": 1,
             "ro": 9
         },
         "FI": {
-            "country_name": "\u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f",
+            "country_name": "Финляндия",
             "artist": "Linda Lampenius and Pete Parkkonen",
             "song": "Liekinheitin",
             "sf": 1,
             "ro": 7
         },
         "FR": {
-            "country_name": "\u0424\u0440\u0430\u043d\u0446\u0438\u044f",
+            "country_name": "Франция",
             "artist": "Monroe",
             "song": "Regarde !",
             "sf": 2,
             "ro": null
         },
         "GE": {
-            "country_name": "\u0413\u0440\u0443\u0437\u0438\u044f",
+            "country_name": "Грузия",
             "artist": "Bzikebi",
             "song": "On Replay",
             "sf": 1,
             "ro": 6
         },
         "DE": {
-            "country_name": "\u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f",
+            "country_name": "Германия",
             "artist": "Sarah Engels",
             "song": "Fire",
             "sf": 1,
             "ro": null
         },
         "GR": {
-            "country_name": "\u0413\u0440\u0435\u0446\u0438\u044f",
+            "country_name": "Греция",
             "artist": "Akylas",
             "song": "Ferto",
             "sf": 1,
             "ro": 4
         },
         "IL": {
-            "country_name": "\u0418\u0437\u0440\u0430\u0438\u043b\u044c",
+            "country_name": "Израиль",
             "artist": "Noam Bettan",
             "song": "Michelle",
             "sf": 1,
             "ro": 10
         },
         "IT": {
-            "country_name": "\u0418\u0442\u0430\u043b\u0438\u044f",
+            "country_name": "Италия",
             "artist": "Sal Da Vinci",
-            "song": "Per sempre s\u00ec",
+            "song": "Per sempre sì",
             "sf": 1,
             "ro": null
         },
         "LV": {
-            "country_name": "\u041b\u0430\u0442\u0432\u0438\u044f",
+            "country_name": "Латвия",
             "artist": "Atvara",
-            "song": "\u0112n\u0101",
+            "song": "Ēnā",
             "sf": 2,
             "ro": 9
         },
         "LT": {
-            "country_name": "\u041b\u0438\u0442\u0432\u0430",
+            "country_name": "Литва",
             "artist": "Lion Ceccah",
-            "song": "S\u00f3lo quiero m\u00e1s",
+            "song": "Sólo quiero más",
             "sf": 1,
             "ro": 12
         },
         "LU": {
-            "country_name": "\u041b\u044e\u043a\u0441\u0435\u043c\u0431\u0443\u0440\u0433",
+            "country_name": "Люксембург",
             "artist": "Eva Marija",
             "song": "Mother Nature",
             "sf": 2,
             "ro": 4
         },
         "MT": {
-            "country_name": "\u041c\u0430\u043b\u044c\u0442\u0430",
+            "country_name": "Мальта",
             "artist": "Aidan",
             "song": "Bella",
             "sf": 2,
             "ro": 14
         },
         "MD": {
-            "country_name": "\u041c\u043e\u043b\u0434\u043e\u0432\u0430",
+            "country_name": "Молдова",
             "artist": "Satoshi",
             "song": "Viva, Moldova!",
             "sf": 1,
             "ro": 1
         },
         "ME": {
-            "country_name": "\u0427\u0435\u0440\u043d\u043e\u0433\u043e\u0440\u0438\u044f",
-            "artist": "Tamara \u017divkovi\u0107",
+            "country_name": "Черногория",
+            "artist": "Tamara Živković",
             "song": "Nova zora",
             "sf": 1,
             "ro": 8
         },
         "NO": {
-            "country_name": "\u041d\u043e\u0440\u0432\u0435\u0433\u0438\u044f",
+            "country_name": "Норвегия",
             "artist": "Jonas Lovv",
             "song": "Ya Ya Ya",
             "sf": 2,
             "ro": 15
         },
         "PL": {
-            "country_name": "\u041f\u043e\u043b\u044c\u0448\u0430",
+            "country_name": "Польша",
             "artist": "Alicja",
             "song": "Pray",
             "sf": 1,
             "ro": 14
         },
         "PT": {
-            "country_name": "\u041f\u043e\u0440\u0442\u0443\u0433\u0430\u043b\u0438\u044f",
+            "country_name": "Португалия",
             "artist": "Bandidos do Cante",
             "song": "Rosa",
             "sf": 1,
             "ro": 5
         },
         "RO": {
-            "country_name": "\u0420\u0443\u043c\u044b\u043d\u0438\u044f",
-            "artist": "Alexandra C\u0103pit\u0103nescu",
+            "country_name": "Румыния",
+            "artist": "Alexandra Căpitănescu",
             "song": "Choke Me",
             "sf": 2,
             "ro": 3
         },
         "SM": {
-            "country_name": "\u0421\u0430\u043d-\u041c\u0430\u0440\u0438\u043d\u043e",
+            "country_name": "Сан-Марино",
             "artist": "Senhit",
             "song": "Superstar",
             "sf": 1,
             "ro": 13
         },
         "RS": {
-            "country_name": "\u0421\u0435\u0440\u0431\u0438\u044f",
+            "country_name": "Сербия",
             "artist": "Lavina",
             "song": "Kraj mene",
             "sf": 1,
             "ro": 15
         },
         "SE": {
-            "country_name": "\u0428\u0432\u0435\u0446\u0438\u044f",
+            "country_name": "Швеция",
             "artist": "Felicia",
             "song": "My System",
             "sf": 1,
             "ro": 2
         },
         "CH": {
-            "country_name": "\u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0438\u044f",
+            "country_name": "Швейцария",
             "artist": "Veronica Fusaro",
             "song": "Alice",
             "sf": 2,
             "ro": 7
         },
         "UA": {
-            "country_name": "\u0423\u043a\u0440\u0430\u0438\u043d\u0430",
-            "artist": "Lel\u00e9ka",
+            "country_name": "Украина",
+            "artist": "Leléka",
             "song": "Ridnym",
             "sf": 2,
             "ro": 12
         },
         "GB": {
-            "country_name": "\u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u044f",
+            "country_name": "Великобритания",
             "artist": "Look Mum No Computer",
             "song": "Eins, Zwei, Drei",
             "sf": 2,
@@ -395,5 +395,112 @@
         "invited": [
             "Kazakhstan"
         ]
-    }
+    },
+    "rehearsals_schedule": [
+        {
+            "date": "2026-05-04",
+            "time": "10:45",
+            "country": "Bulgaria",
+            "artist": "Dara",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-04",
+            "time": "11:40",
+            "country": "Azerbaijan",
+            "artist": "Jiva",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-04",
+            "time": "12:20",
+            "country": "Romania",
+            "artist": "Alexandra Căpitănescu",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-04",
+            "time": "13:40",
+            "country": "Luxembourg",
+            "artist": "Eva Marija",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-04",
+            "time": "14:15",
+            "country": "Czechia",
+            "artist": "Daniel Zizka",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-04",
+            "time": "16:05",
+            "country": "Armenia",
+            "artist": "Simón",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-04",
+            "time": "16:20",
+            "country": "Switzerland",
+            "artist": "Veronica Fusaro",
+            "status": "FINISHED"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "11:30",
+            "country": "Cyprus",
+            "artist": "Antigoni",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "12:10",
+            "country": "Latvia",
+            "artist": "Atvara",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "12:50",
+            "country": "Denmark",
+            "artist": "Søren Torpegaard Lund",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "13:45",
+            "country": "Australia",
+            "artist": "Delta Goodrem",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "14:25",
+            "country": "Ukraine",
+            "artist": "Lelėka",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "16:00",
+            "country": "Albania",
+            "artist": "Alis",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "16:40",
+            "country": "Malta",
+            "artist": "Aidan",
+            "status": "WAITING"
+        },
+        {
+            "date": "2026-05-05",
+            "time": "17:20",
+            "country": "Norway",
+            "artist": "Jonas Lovv",
+            "status": "WAITING"
+        }
+    ]
 }
