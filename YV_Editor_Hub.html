@@ -1091,7 +1091,7 @@
             if (id === "70") return "assets/heart_white_2026.svg";
             const asia = ["kh","vn","th","my","ph","np","bd","la","bt"];
             if (asia.includes(id.toLowerCase())) return `https://flagcdn.com/w160/${id.toLowerCase()}.png`;
-            return `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`;
+            return `https://www.eurovision.com/static/images/flags/heart_${id.toLowerCase()}.svg`;
         };
         const decodeS = (s) => { try { return JSON.parse('"' + s.replace(/"/g, '\\"') + '"'); } catch(e) { return s; } };
         const emojiMap = {"📊": '<i class="fi fi-rr-stats"></i>',"🔗": '<i class="fi fi-rr-link"></i>',"🎧": '<i class="fi fi-rr-headphones"></i>',"⏱": '<i class="fi fi-rr-clock"></i>',"🚨": '<i class="fi fi-rr-alarm-exclamation"></i>',"🏆": '<i class="fi fi-rr-trophy"></i>',"⚡": '<i class="fi fi-rr-bolt"></i>',"🏛": '<i class="fi fi-rr-bank"></i>',"📅": '<i class="fi fi-rr-calendar"></i>',"🗳": '<i class="fi fi-rr-box-ballot"></i>'};

@@ -976,20 +976,50 @@ var DATA = {
     "roadmap": [
         {
             "d": "11.04",
-            "t": "YOURVISION CUP: FINAL",
-            "e": "🏆 Finland vs Bulgaria (77% vs 23%)",
+            "t": "YOURVISION CUP",
+            "e": "🏆 Grand Final: Finland vs Bulgaria",
             "s": "DONE"
         },
         {
             "d": "12.04",
-            "t": "THE RESET: AUSTRALIA",
-            "e": "🇦🇺 Delta Goodrem vs Go-Jo",
+            "t": "THE RESET",
+            "e": "🇦🇺 Australia: Delta Goodrem selected",
             "s": "DONE"
         },
         {
             "d": "14.04",
-            "t": "EUROGROOVE: RESULTS",
-            "e": "🇪🇺 Top-25 Spring Chart Reveal",
+            "t": "EUROGROOVE",
+            "e": "🇪🇺 Spring Chart Results",
+            "s": "DONE"
+        },
+        {
+            "d": "02.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 1 Starts",
+            "s": "DONE"
+        },
+        {
+            "d": "03.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 2",
+            "s": "DONE"
+        },
+        {
+            "d": "04.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 3",
+            "s": "DONE"
+        },
+        {
+            "d": "05.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: Day 4 (Final 1st)",
+            "s": "ACTIVE"
+        },
+        {
+            "d": "06.05",
+            "t": "REHEARSALS",
+            "e": "Wiener Stadthalle: 2nd Rehearsals Start",
             "s": "COMING"
         },
         {
@@ -1012,8 +1042,8 @@ var DATA = {
         },
         {
             "d": "16.05",
-            "t": "GRAND FINAL (70th)",
-            "e": "👑 The Decisive Battle for the Crown",
+            "t": "GRAND FINAL",
+            "e": "👑 70th Eurovision Song Contest",
             "s": "MAJOR"
         }
     ],
