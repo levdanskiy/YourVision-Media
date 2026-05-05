@@ -1019,214 +1019,214 @@ var DATA = {
     ],
     "rehearsals": [
         {
-                "d": "02.05",
-                "t": "10:00",
-                "c": "md",
-                "a": "Satoshi",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "10:00",
+            "c": "md",
+            "a": "Satoshi",
+            "s": "DONE"
         },
         {
-                "d": "02.05",
-                "t": "10:40",
-                "c": "se",
-                "a": "Felicia",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "10:40",
+            "c": "se",
+            "a": "Felicia",
+            "s": "DONE"
         },
         {
-                "d": "02.05",
-                "t": "11:20",
-                "c": "hr",
-                "a": "Lelek",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "11:20",
+            "c": "hr",
+            "a": "Lelek",
+            "s": "DONE"
         },
         {
-                "d": "02.05",
-                "t": "12:00",
-                "c": "gr",
-                "a": "Akylas",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "12:00",
+            "c": "gr",
+            "a": "Akylas",
+            "s": "DONE"
         },
         {
-                "d": "02.05",
-                "t": "13:30",
-                "c": "pt",
-                "a": "Bandidos do Cante",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "13:30",
+            "c": "pt",
+            "a": "Bandidos do Cante",
+            "s": "DONE"
         },
         {
-                "d": "02.05",
-                "t": "14:10",
-                "c": "ge",
-                "a": "Bzikebi",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "14:10",
+            "c": "ge",
+            "a": "Bzikebi",
+            "s": "DONE"
         },
         {
-                "d": "02.05",
-                "t": "14:50",
-                "c": "fi",
-                "a": "Linda Lampenius x Pete Parkkonen",
-                "s": "DONE"
+            "d": "02.05",
+            "t": "14:50",
+            "c": "fi",
+            "a": "Linda Lampenius x Pete Parkkonen",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "10:00",
-                "c": "me",
-                "a": "Tamara Živković",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "10:00",
+            "c": "me",
+            "a": "Tamara Živković",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "10:40",
-                "c": "ee",
-                "a": "Vanilla Ninja",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "10:40",
+            "c": "ee",
+            "a": "Vanilla Ninja",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "11:20",
-                "c": "il",
-                "a": "Noam Bettan",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "11:20",
+            "c": "il",
+            "a": "Noam Bettan",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "12:00",
-                "c": "be",
-                "a": "Essyla",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "12:00",
+            "c": "be",
+            "a": "Essyla",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "13:30",
-                "c": "lt",
-                "a": "Lion Ceccah",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "13:30",
+            "c": "lt",
+            "a": "Lion Ceccah",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "14:10",
-                "c": "sm",
-                "a": "Senhit",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "14:10",
+            "c": "sm",
+            "a": "Senhit",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "14:50",
-                "c": "pl",
-                "a": "Alicja",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "14:50",
+            "c": "pl",
+            "a": "Alicja",
+            "s": "DONE"
         },
         {
-                "d": "03.05",
-                "t": "15:30",
-                "c": "rs",
-                "a": "Lavina",
-                "s": "DONE"
+            "d": "03.05",
+            "t": "15:30",
+            "c": "rs",
+            "a": "Lavina",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "10:45",
-                "c": "bg",
-                "a": "Dara",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "10:45",
+            "c": "bg",
+            "a": "Dara",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "11:40",
-                "c": "az",
-                "a": "Jiva",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "11:40",
+            "c": "az",
+            "a": "Jiva",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "12:20",
-                "c": "ro",
-                "a": "Alexandra Căpitănescu",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "12:20",
+            "c": "ro",
+            "a": "Alexandra Căpitănescu",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "13:40",
-                "c": "lu",
-                "a": "Eva Marija",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "13:40",
+            "c": "lu",
+            "a": "Eva Marija",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "14:15",
-                "c": "cz",
-                "a": "Daniel Zizka",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "14:15",
+            "c": "cz",
+            "a": "Daniel Zizka",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "16:05",
-                "c": "am",
-                "a": "Simón",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "16:05",
+            "c": "am",
+            "a": "Simón",
+            "s": "DONE"
         },
         {
-                "d": "04.05",
-                "t": "16:20",
-                "c": "ch",
-                "a": "Veronica Fusaro",
-                "s": "DONE"
+            "d": "04.05",
+            "t": "16:20",
+            "c": "ch",
+            "a": "Veronica Fusaro",
+            "s": "DONE"
         },
         {
-                "d": "05.05",
-                "t": "11:30",
-                "c": "cy",
-                "a": "Antigoni",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "11:30",
+            "c": "cy",
+            "a": "Antigoni",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "12:10",
-                "c": "lv",
-                "a": "Atvara",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "12:10",
+            "c": "lv",
+            "a": "Atvara",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "12:50",
-                "c": "dk",
-                "a": "Søren Torpegaard Lund",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "12:50",
+            "c": "dk",
+            "a": "Søren Torpegaard Lund",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "13:45",
-                "c": "au",
-                "a": "Delta Goodrem",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "13:45",
+            "c": "au",
+            "a": "Delta Goodrem",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "14:25",
-                "c": "ua",
-                "a": "Lelėka",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "14:25",
+            "c": "ua",
+            "a": "Lelėka",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "16:00",
-                "c": "al",
-                "a": "Alis",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "16:00",
+            "c": "al",
+            "a": "Alis",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "16:40",
-                "c": "mt",
-                "a": "Aidan",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "16:40",
+            "c": "mt",
+            "a": "Aidan",
+            "s": "UPCOMING"
         },
         {
-                "d": "05.05",
-                "t": "17:20",
-                "c": "no",
-                "a": "Jonas Lovv",
-                "s": "UPCOMING"
+            "d": "05.05",
+            "t": "17:20",
+            "c": "no",
+            "a": "Jonas Lovv",
+            "s": "UPCOMING"
         }
-]
+    ]
 };
