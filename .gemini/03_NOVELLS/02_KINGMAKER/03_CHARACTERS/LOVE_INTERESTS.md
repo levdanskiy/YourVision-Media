@@ -50,7 +50,7 @@
 *   **Touch:** Firm, architectural. Steadies rather than electrifies.
 *   **Artifact:** A burgundy leather dossier that never leaves his sight.
 *   **Voice:** Low and precise — the tone of someone who has already considered every outcome.
-*   **Shadow Hook:** He has been protecting the GG for longer than they know. The protection was not unsolicited.
+*   **Shadow Hook:** He has been protecting Nora for longer than she knows. The protection was not unsolicited.
 *   **Political Hook:** The only person with simultaneous access to all three branches of the Chancellery system.
 *   **Intimacy Archetype:** «The Forbidden Archive» — access requires trust, trust requires proof.
 *   **Intimacy Behavior:** Deliberate and entirely private. Treats intimacy as a classified document.
@@ -101,7 +101,7 @@
 *   **Touch:** Efficient and practical. Zero ceremony.
 *   **Artifact:** A custom-built laptop with hand-soldered components that no one else can operate.
 *   **Voice:** Rapid, technical — then suddenly quiet when something actually matters.
-*   **Shadow Hook:** She found a file on the GG that predates their first meeting by three years.
+*   **Shadow Hook:** She found a file on Nora that predates their first meeting by three years.
 *   **Political Hook:** She is the only person who can access "Black Velvet" anonymously. From both ends.
 *   **Intimacy Archetype:** «The Long Game» — the only one who stayed.
 *   **Intimacy Behavior:** Does not perform. Does not announce. Is simply there, and then closer.
