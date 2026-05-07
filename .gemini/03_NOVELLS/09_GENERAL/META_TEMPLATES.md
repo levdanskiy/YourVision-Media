@@ -12,7 +12,7 @@
 `[CHARACTER TAG] + [scene + environment + lighting] + [quality tags] + [aspect ratio]. No text, no logos.`
 
 **Базовые теги качества (всегда):**
-`Photorealistic, 8k, cinematic style, high contrast shadows, vibrant rich colors, cinematic color grading, high-end fashion editorial photography, shot on Kodak Portra 800`
+`Photorealistic, 8k, cinematic style, high contrast shadows, vibrant rich colors, cinematic color grading, high-end fashion editorial photography, shot on Kodak Portra 800, model-like features, editorial model appearance, perfect symmetrical face`
 
 **Kingmaker добавляет:** `Quiet Luxury Noir, dark interior, candlelight, obsidian and gold palette`
 **Vienna Special добавляет:** `backstage atmosphere, cold halogen lighting, documentary photography style`
