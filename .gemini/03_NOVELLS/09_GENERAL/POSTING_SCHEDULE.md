@@ -5,6 +5,31 @@
 
 ---
 
+## РИТМ ДНЯ — KINGMAKER (с 18.05)
+
+```
+09:45  VERDICT - итоги вчерашних опросов, анонс дня
+12:00  STORY (пост 1) → POLL
+17:00  STORY (пост 2) → POLL
+20:00  все опросы закрываются
+20:00+ читаем результаты, пишем контент на следующий день
+21:00  STORY (пост 3) - клиффхэнгер, без опроса
+```
+
+## РИТМ ДНЯ — VIENNA SPECIAL LIVE (11-17.05)
+
+```
+12:00  VS PERSONA (карточка героя)
+14:00  KM PERSONA (карточка героя)
+17:00  VS STORY (пост 1) → POLL
+19:00  VS STORY (пост 2) → POLL
+20:00  все опросы закрываются
+20:00+ читаем результаты, пишем контент на следующий день
+21:00  VS STORY (пост 3) - без опроса
+```
+
+---
+
 ## МАЙ 2026
 
 ### 04.05 (пн)
@@ -33,8 +58,8 @@
 ### 08.05 (пт)
 | Время | Проект | Тип | Файл |
 |-------|--------|-----|------|
-| 09:45 | Kingmaker | VERDICT (стиль + интимность) | — планируется |
-| 10:00 | Kingmaker | POLL (первое дело) | — планируется |
+| 09:45 | Kingmaker | VERDICT (стиль + интимность) | KM-08.05-09-45-VERDICT.md ✅ |
+| 10:00 | Kingmaker | POLL (первое дело) | KM-08.05-10-00-POLL-FIRST-CASE.md ✅ |
 
 ### 09.05 (сб)
 | Время | Проект | Тип | Файл |
@@ -48,34 +73,23 @@
 | 09:45 | Kingmaker | VERDICT (союзник) | — планируется |
 | 10:00 | Kingmaker | POLL (тональность Black Velvet) | — планируется |
 
----
-
-## 10.05 — ФИНАЛЬНЫЙ ПРОГРЕВ
-
-| Время | Проект | Тип |
-|-------|--------|-----|
-| 10:00 | Kingmaker | VERDICT (союзник) + POLL (тональность Black Velvet) |
-| 18:00 | Vienna Special | POLL (стиль Алекс в кризис) |
+*Vienna Special SIGNAL_02-06 + FULL REVEAL запланированы в Telegram.*
 
 ---
 
 ## 11-17 МАЯ — VIENNA SPECIAL LIVE
 
-Ритм дня: `12:00 STORY+POLL → 17:00 STORY+POLL → 21:00 STORY (без опроса)`
-Карточки героев: `12:00 VS PERSONA → 14:00 KM PERSONA`
-Все опросы закрываются до 20:00. После - пишем следующий день.
+| День | Дата | 12:00 | 14:00 | 17:00 | 19:00 | 21:00 |
+|------|------|-------|-------|-------|-------|-------|
+| День 1 | 11.05 | VS PERSONA - Алекс Вайс | KM PERSONA - Адриан | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 2 | 12.05 | VS PERSONA - Марко | KM PERSONA - Леон | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 3 | 13.05 | VS PERSONA - KORYNNYA | KM PERSONA - Дэмиен | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 4 | 14.05 | VS PERSONA - Эрик | KM PERSONA - Беатрис | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 5 | 15.05 | VS PERSONA - Теодора | KM PERSONA - Изабелла | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 6 | 16.05 | VS PERSONA - V-DYNAMO | KM PERSONA - Хлоя | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 7 | 17.05 | VS PERSONA - Жюльен | — | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 (ФИНАЛ) |
 
-| День | Дата | 12:00 | 14:00 | Вечер |
-|------|------|-------|-------|-------|
-| День 1 | 11.05 | VS PERSONA - Алекс Вайс | KM PERSONA - Адриан | VS LIVE - Day 1 |
-| День 2 | 12.05 | VS PERSONA - Марко | KM PERSONA - Леон | VS LIVE - Day 2 |
-| День 3 | 13.05 | VS PERSONA - KORYNNYA | KM PERSONA - Дэмиен | VS LIVE - Day 3 |
-| День 4 | 14.05 | VS PERSONA - Эрик | KM PERSONA - Беатрис | VS LIVE - Day 4 (SF1) |
-| День 5 | 15.05 | VS PERSONA - Теодора | KM PERSONA - Изабелла | VS LIVE - Day 5 |
-| День 6 | 16.05 | VS PERSONA - V-DYNAMO | KM PERSONA - Хлоя | VS LIVE - Day 6 (SF2) |
-| День 7 | 17.05 | VS PERSONA - Жюльен | — | VS LIVE - Day 7 (ФИНАЛ) |
-
-*Kingmaker на паузе 11-17.05 по нарративу. Карточки героев выходят по расписанию.*
+*Kingmaker нарратив на паузе 11-17.05. Карточки героев выходят по расписанию.*
 
 ---
 
@@ -89,7 +103,7 @@
 | День 4 | 21.05 | Фаза 1 | Данные от Леона. |
 | День 5 | 22.05 | Фаза 1 | Намёк Дэмиена. |
 | День 6 | 23.05 | Фаза 1 | Хлоя взламывает сервер. |
-| День 7 | 24.05 | Фаза 1 | 🗳️ MAJOR CHOICE: первый слив. |
+| День 7 | 24.05 | Фаза 1 | MAJOR CHOICE: первый слив. |
 
 ---
 
