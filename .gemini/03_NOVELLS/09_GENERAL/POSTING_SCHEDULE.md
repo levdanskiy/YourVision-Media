@@ -52,17 +52,17 @@
 
 ## 11-17 МАЯ — VIENNA SPECIAL LIVE
 
-| День | Дата | Проект | Тип |
-|------|------|--------|-----|
-| День 1 | 11.05 | Vienna Special | LIVE - Day 1 |
-| День 2 | 12.05 | Vienna Special | LIVE - Day 2 |
-| День 3 | 13.05 | Vienna Special | LIVE - Day 3 |
-| День 4 | 14.05 | Vienna Special | LIVE - Day 4 (SF1) |
-| День 5 | 15.05 | Vienna Special | LIVE - Day 5 |
-| День 6 | 16.05 | Vienna Special | LIVE - Day 6 (SF2) |
-| День 7 | 17.05 | Vienna Special | LIVE - Day 7 (ФИНАЛ) |
+| День | Дата | 12:00 | 14:00 | Вечер |
+|------|------|-------|-------|-------|
+| День 1 | 11.05 | VS PERSONA - Алекс Вайс | KM PERSONA - Адриан | VS LIVE - Day 1 |
+| День 2 | 12.05 | VS PERSONA - Марко | KM PERSONA - Леон | VS LIVE - Day 2 |
+| День 3 | 13.05 | VS PERSONA - KORYNNYA | KM PERSONA - Дэмиен | VS LIVE - Day 3 |
+| День 4 | 14.05 | VS PERSONA - Эрик | KM PERSONA - Беатрис | VS LIVE - Day 4 (SF1) |
+| День 5 | 15.05 | VS PERSONA - Теодора | KM PERSONA - Изабелла | VS LIVE - Day 5 |
+| День 6 | 16.05 | VS PERSONA - V-DYNAMO | KM PERSONA - Хлоя | VS LIVE - Day 6 (SF2) |
+| День 7 | 17.05 | VS PERSONA - Жюльен | — | VS LIVE - Day 7 (ФИНАЛ) |
 
-*Kingmaker на паузе 11-17.05. Возобновляется 18.05.*
+*Kingmaker на паузе 11-17.05 по нарративу. Карточки героев выходят по расписанию.*
 
 ---
 
