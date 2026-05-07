@@ -1,6 +1,11 @@
-# 📊 NOVELLS: META-LAYER TEMPLATES (V2.0)
+# 📊 NOVELLS: META-LAYER TEMPLATES (V3.0)
+
+---
+> **Шаблоны 1-2 — только Eleyia.** Шаблоны 3-8 — универсальные для всех проектов.
+---
 
 ## 1. GLOBAL PULSE INDEX (DAILY 23:00)
+*🔒 ELEYIA ONLY — специфика мира Amber Earth*
 **Format:**
 `// ИД-ПОСТА: EY-[ДД.ММ]-23-00-META-Pulse-Index`
 `// ПРОТОКОЛЫ: ELEYIA, GLOBAL_INDEX, STATUS`
@@ -22,6 +27,7 @@
 #[NOVELLA_NAME] #[SEASON]
 
 ## 2. RESONANCE CARD (WEEKLY SUNDAY)
+*🔒 ELEYIA ONLY — специфика Pulse/Sync механик*
 **Format:**
 `// ИД-ПОСТА: EY-[ДД.ММ]-META-Resonance-Card-[Name]`
 `// ПРОТОКОЛЫ: ELEYIA, CHARACTER_AUDIT, DATA`
