@@ -6,16 +6,23 @@
 
 ## ПРОМПТЫ — ПЛАТФОРМА И ФОРМАТ
 
-Все промпты генерируются на **app.reve.com**. Без Midjourney-флагов.
+Все промпты генерируются на **app.reve.com**. Всегда на английском. Без Midjourney-флагов.
 
-**Формула:** `[Объект + поза] + [Окружение + время суток] + [Освещение] + [Стиль] + [Ракурс] + [Камера]`
+**Формула:**
+`[CHARACTER TAG] + [scene + environment + lighting] + [quality tags] + [aspect ratio]. No text, no logos.`
 
-**Теги качества:** `фотореализм, 8k, кинематографичный стиль, детализация`
-**Камера:** `снято на Canon EOS R5` / `снято на Leica M11`
-**Kingmaker:** `Quiet Luxury Noir, тёмный интерьер, свечное освещение`
-**Vienna Special:** `backstage атмосфера, холодный галогенный свет, документальная фотография`
-**Всегда:** `no text, no logos` — если текст в кадре не нужен
-**Соотношение сторон:** пиши в промпте — `вертикальный кадр 9:16` / `квадратный кадр 1:1` / `горизонтальный кадр 16:9`
+**Базовые теги качества (всегда):**
+`Photorealistic, 8k, cinematic style, high contrast shadows, vibrant rich colors, cinematic color grading, high-end fashion editorial photography, shot on Kodak Portra 800`
+
+**Kingmaker добавляет:** `Quiet Luxury Noir, dark interior, candlelight, obsidian and gold palette`
+**Vienna Special добавляет:** `backstage atmosphere, cold halogen lighting, documentary photography style`
+
+**Соотношение сторон** — в тексте промпта:
+- `Square frame 1:1`
+- `Vertical frame 9:16`
+- `Horizontal frame 16:9`
+
+**Всегда в конце:** `No text, no logos`
 
 ---
 
