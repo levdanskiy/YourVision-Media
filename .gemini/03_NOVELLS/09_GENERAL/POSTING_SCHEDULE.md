@@ -79,15 +79,15 @@
 
 ## 11-17 МАЯ — VIENNA SPECIAL LIVE
 
-| День | Дата | 12:00 | 14:00 | 17:00 | 19:00 | 21:00 |
-|------|------|-------|-------|-------|-------|-------|
-| День 1 | 11.05 | VS PERSONA - Алекс Вайс | KM PERSONA - Адриан | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
-| День 2 | 12.05 | VS PERSONA - Марко | KM PERSONA - Леон | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
-| День 3 | 13.05 | VS PERSONA - KORYNNYA | KM PERSONA - Дэмиен | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
-| День 4 | 14.05 | VS PERSONA - Эрик | KM PERSONA - Беатрис | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
-| День 5 | 15.05 | VS PERSONA - Теодора | KM PERSONA - Изабелла | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
-| День 6 | 16.05 | VS PERSONA - V-DYNAMO | KM PERSONA - Хлоя | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
-| День 7 | 17.05 | VS PERSONA - Жюльен | — | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 (ФИНАЛ) |
+| День | Дата | Событие | 12:00 | 14:00 | 17:00 | 19:00 | 21:00 |
+|------|------|---------|-------|-------|-------|-------|-------|
+| День 1 | 11.05 | Прибытие | VS PERSONA - Алекс Вайс | KM PERSONA - Адриан | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 2 | 12.05 | **SF1** 🔥 | VS PERSONA - Марко | KM PERSONA - Леон | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 3 | 13.05 | После SF1 | VS PERSONA - KORYNNYA | KM PERSONA - Дэмиен | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 4 | 14.05 | **SF2** 🔥 | VS PERSONA - Эрик | KM PERSONA - Беатрис | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 5 | 15.05 | Перед финалом | VS PERSONA - Теодора | KM PERSONA - Изабелла | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 6 | 16.05 | **ФИНАЛ** 🏆 | VS PERSONA - V-DYNAMO | KM PERSONA - Хлоя | VS STORY 1 + POLL | VS STORY 2 + POLL | VS STORY 3 |
+| День 7 | 17.05 | Эпилог | VS PERSONA - Жюльен | — | VS RECAP + КОНЦОВКА | — | — |
 
 *Kingmaker нарратив на паузе 11-17.05. Карточки героев выходят по расписанию.*
 
