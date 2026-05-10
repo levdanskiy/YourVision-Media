@@ -75,6 +75,16 @@
 | 14:00 | Vienna Special | FULL REVEAL (все имена, конфликты, правила) | VS-10.05-14-00-FULL-REVEAL.md ✅ |
 | после 14:00 | CORE | НАВИГАТОР (закреплённый пост) | CORE-10.05-NAVIGATOR.md ✅ |
 
+### 11.05 (пн) — VS LIVE День 1: Прибытие
+| Время | Проект | Тип | Файл |
+|-------|--------|-----|------|
+| 09:45 | Kingmaker | VERDICT (BV tone: ничья 50/50) | KM-11.05-09-45-VERDICT.md ✅ |
+| 12:00 | Vienna Special | PERSONA (Алекс Вайс) | VS-11.05-12-00-PERSONA-ALEX.md ✅ |
+| 14:00 | Kingmaker | PERSONA (Адриан) | KM-11.05-14-00-PERSONA-ADRIAN.md ✅ |
+| 17:00 | Vienna Special | STORY 1 + POLL (Марко: этаж) | VS-11.05-17-00-STORY-MARCO.md ✅ |
+| 19:00 | Vienna Special | STORY 2 + POLL (Теодора: коридор) | VS-11.05-19-00-STORY-THEODORA.md ✅ |
+| 21:00 | Vienna Special | STORY 3 (3am cliffhanger, без опроса) | VS-11.05-21-00-STORY-3AM.md ✅ |
+
 *Навигатор: карта всех миров Мультиверса со статусами. Заперытые миры — с короткими тизерами.*
 *После навигатора обновить описание канала @core_novellas.*
 
