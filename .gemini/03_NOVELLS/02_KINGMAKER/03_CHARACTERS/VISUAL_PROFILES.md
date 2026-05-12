@@ -50,12 +50,12 @@
 
 ---
 
-## ДЭМИЕН (М, 44)
+## ДЭМИЕН (М, 38)
 *Глава Канцелярии. Теневой защитник.*
 
 **Внешность:**
-- Лицо: сильные черты, квадратная челюсть, взгляд человека который просчитал все выходы.
-- Волосы: тёмно-серые с серебром - соль с перцем, идеально уложены.
+- Лицо: сильные черты, квадратная челюсть, лёгкая щетина, взгляд человека который просчитал все выходы.
+- Волосы: тёмные, почти чёрные, с ранним серебром только на висках. Идеально уложены.
 - Глаза: тёмно-серые, почти стальные. Выражение неизменно.
 - Кожа: тёмно-оливковая, тёплая, загорелая.
 
@@ -65,10 +65,10 @@
 
 **Особенности:** Никогда не повышает голос. Никогда не торопится. Досье никогда не открывает при свидетелях. Запах серой фланели, горелого эспрессо, старых контрактов.
 
-**ЗАПРЕЩЕНО:** Светлые цвета, небрежность, эмоции на лице.
+**ЗАПРЕЩЕНО:** Светлые цвета, небрежность, эмоции на лице, седина больше чем на висках.
 
 **CHARACTER TAG:**
-`Damien, tall imposing man in his mid-forties, salt-and-pepper perfectly groomed hair, steel grey eyes, dark olive skin, broad shoulders, dark charcoal architectural suit, holding a burgundy leather dossier, immovable presence, no text, no logos`
+`Damien, tall imposing man late thirties around thirty-eight, dark almost black hair with early silver only at the temples, perfectly groomed, light stubble, steel grey eyes, dark olive skin, broad shoulders, dark charcoal architectural suit, holding a burgundy leather dossier, immovable presence, no text, no logos`
 
 ---
 
