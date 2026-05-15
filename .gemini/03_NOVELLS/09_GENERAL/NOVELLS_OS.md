@@ -303,6 +303,10 @@
 - [ ] Pre-commit хук на валидацию опроса (есть прошедший) - теперь возможно с JSON, но низкий приоритет
 - [ ] Скрипт `new-post` (создаёт папку и заполненный шаблон)
 - [x] Скрипт `audit` (выдаёт аудит на старте сессии): `tools/audit.sh <project>`
+- [x] Скрипт `new-post.sh` - скелет нового поста по типу/проекту/дате
+- [x] Скрипт `stats-apply.py` - применяет stats_deltas из POLL_LOG к STATS, проверяет пороги affinity
+- [x] Скрипт `voice-lint.sh` - проверяет пост по VOICE_LOCK (запрещённые слова, длина, имя в промпте)
+- [x] Voice-lint встроен в pre-commit hook (блокирует ошибки, показывает предупреждения)
 - [x] Миграция POLL_LOG в JSON (см. выше)
 - [x] Активация Reputation Mining + Affinity в KM (STATS.json + STATS_RULES.md + AFFINITY_UNLOCKS.md)
 - [x] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT (в `09_GENERAL/templates/`)

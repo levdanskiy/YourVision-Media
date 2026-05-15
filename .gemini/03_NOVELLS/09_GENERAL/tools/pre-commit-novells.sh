@@ -73,12 +73,44 @@ for file in $STAGED; do
 done
 
 # ============================================
+# CHECK 3: Voice-lint (per-project rules)
+# ============================================
+# Resolve actual script directory via symlink (hook is symlinked from .git/hooks/pre-commit)
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+VOICE_LINT="$SCRIPT_DIR/voice-lint.sh"
+
+if [ -x "$VOICE_LINT" ]; then
+  for file in $STAGED; do
+    if [ ! -f "$file" ]; then continue; fi
+    # Только content-файлы (не system-файлы вроде STATE.md, POLL_LOG.md, VOICE_LOCK.md)
+    if ! echo "$file" | grep -q "04_CONTENT"; then continue; fi
+
+    output=$("$VOICE_LINT" --auto "$file" 2>&1) || true
+    exit_code=$?
+    if [ $exit_code -eq 1 ]; then
+      # Блокирующие ошибки
+      echo ""
+      echo "❌ voice-lint ошибки в: $file"
+      echo "$output" | sed 's/^/   /'
+      ERROR=1
+    elif [ $exit_code -eq 2 ]; then
+      # Только предупреждения - показать, не блокировать
+      echo ""
+      echo "⚠️  voice-lint предупреждения в: $file"
+      echo "$output" | sed 's/^/   /'
+      WARN=1
+    fi
+  done
+fi
+
+# ============================================
 # RESULT
 # ============================================
 if [ "$ERROR" -ne 0 ]; then
   echo ""
-  echo "✋ Коммит заблокирован: эм-тире (—) запрещены в Novells."
-  echo "   Замени на дефис: sed -i 's/—/-/g' [file]"
+  echo "✋ Коммит заблокирован."
+  echo "   Эм-тире (—): замени на дефис: sed -i 's/—/-/g' [file]"
+  echo "   Voice-lint: проверь VOICE_LOCK проекта"
   exit 1
 fi
 
