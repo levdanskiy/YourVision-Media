@@ -304,7 +304,7 @@
 - [ ] Скрипт `audit` (выдаёт аудит на старте сессии)
 - [ ] Миграция POLL_LOG в JSON (для автоматизации)
 - [x] Активация Reputation Mining + Affinity в KM (STATS.json + STATS_RULES.md + AFFINITY_UNLOCKS.md)
-- [ ] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT
+- [x] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT (в `09_GENERAL/templates/`)
 - [ ] Временные шкалы остальных проектов (Orchid, Donor, Order, Horizon, Code, Anthropos, Eleyia S2)
 - [ ] Полная инвентаризация ENDINGS и TRUE_ROUTE для активных проектов
 
