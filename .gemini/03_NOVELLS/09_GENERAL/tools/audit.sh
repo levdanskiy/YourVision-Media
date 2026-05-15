@@ -112,11 +112,55 @@ fi
 # ============================================
 # 3. POLL_LOG - последние опросы
 # ============================================
-if [ -f "$DIR/02_SYSTEM/POLL_LOG.md" ]; then
-  echo "🗳 ПОСЛЕДНИЕ ОПРОСЫ (из POLL_LOG)"
+if [ -f "$DIR/02_SYSTEM/POLL_LOG.json" ]; then
+  echo "🗳 ПОСЛЕДНИЕ ОПРОСЫ (из POLL_LOG.json)"
+  echo "───────────────────────────────────────────────────────────────"
+  python3 << PYEOF 2>/dev/null
+import json
+try:
+    with open("$DIR/02_SYSTEM/POLL_LOG.json") as f:
+        data = json.load(f)
+
+    polls = data.get('polls', [])
+    if not polls:
+        print("  (нет опросов)")
+    else:
+        # Last 5 polls
+        for p in polls[-5:]:
+            day = p.get('narrative_day', '?')
+            pub = p.get('pub_date', '?')
+            q = p.get('question', '')[:60]
+            winner = p.get('winner')
+            wt = p.get('winner_type', '')
+            print(f"  День {day} / {pub} [{p.get('id')}]")
+            print(f"    Q: {q}")
+            if winner is None:
+                print(f"    ⏳ ОТКРЫТ (ждёт результатов)")
+            else:
+                print(f"    → {winner} ({wt})")
+                if p.get('tie_resolution'):
+                    tr = p['tie_resolution'][:80]
+                    print(f"    ⚖️  Резолюция: {tr}")
+                deltas = p.get('stats_deltas', [])
+                if deltas:
+                    delta_str = ', '.join([f"{d['character']}.{d['param']}{'+' if d['delta']>=0 else ''}{d['delta']}" for d in deltas])
+                    print(f"    Δ {delta_str}")
+            print()
+
+    # Open polls (those without total_votes set)
+    open_polls = [p for p in polls if p.get('total_votes') is None]
+    if open_polls:
+        print(f"  📍 ОТКРЫТЫХ ОПРОСОВ: {len(open_polls)}")
+        for p in open_polls:
+            print(f"    [{p.get('id')}] {p.get('question', '')[:60]}")
+        print()
+except Exception as e:
+    print(f"  (ошибка парсинга: {e})")
+PYEOF
+elif [ -f "$DIR/02_SYSTEM/POLL_LOG.md" ]; then
+  echo "🗳 ПОСЛЕДНИЕ ОПРОСЫ (из POLL_LOG.md - JSON ещё не мигрирован)"
   echo "───────────────────────────────────────────────────────────────"
   echo ""
-  # Берём последние 60 строк, фильтруем по ключевым полям
   tail -n 80 "$DIR/02_SYSTEM/POLL_LOG.md" \
     | grep -E "^(###|\*\*Конфликт|\*\*Победитель|\*\*Варианты)" \
     | tail -20 \

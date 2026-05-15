@@ -1,0 +1,163 @@
+{
+  "version": "1.0",
+  "project": "kingmaker",
+  "season": 1,
+  "last_updated": "2026-05-16",
+  "polls": [
+    {
+      "id": "km-0-d1-q1",
+      "phase": 0,
+      "narrative_day": 1,
+      "pub_date": "2026-05-05",
+      "category": "setup",
+      "question": "Кто она?",
+      "options": [
+        {"label": "Мужчина", "percent": 0, "votes": 0},
+        {"label": "Женщина", "percent": 100, "votes": 1}
+      ],
+      "total_votes": 1,
+      "winner": "Женщина",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Параметр зафиксирован в STATE.md и BIBLE",
+      "impact_content": "Все посты пишутся с Норой как женщиной",
+      "stats_deltas": [],
+      "post_id": null,
+      "notes": "Опрос конфигурации протагониста"
+    },
+    {
+      "id": "km-0-d2-q1",
+      "phase": 0,
+      "narrative_day": 2,
+      "pub_date": "2026-05-06",
+      "category": "setup",
+      "question": "Кто войдёт в её игру?",
+      "options": [
+        {"label": "Мужчины", "percent": 33, "votes": 1},
+        {"label": "Женщины", "percent": 0, "votes": 0},
+        {"label": "Полный спектр", "percent": 67, "votes": 2}
+      ],
+      "total_votes": 3,
+      "winner": "Полный спектр",
+      "winner_type": "plurality",
+      "tie_resolution": null,
+      "impact_scoreboard": "Все 6 персонажей активны как романтические линии",
+      "impact_content": "Все 6 LI (Адриан, Леон, Дэмиен, Беатрис, Изабелла, Хлоя) - доступны",
+      "stats_deltas": [],
+      "post_id": null,
+      "notes": "Опрос ориентации"
+    },
+    {
+      "id": "km-0-d3-q1",
+      "phase": 0,
+      "narrative_day": 3,
+      "pub_date": "2026-05-07",
+      "category": "setup",
+      "question": "Как она управляет?",
+      "options": [
+        {"label": "Обаяние", "percent": 100, "votes": 3},
+        {"label": "Холодный расчёт", "percent": 0, "votes": 0},
+        {"label": "Страх", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 3,
+      "winner": "Обаяние",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Стиль власти Норы - Обаяние",
+      "impact_content": "Её недооценивают - это оружие. Все сцены строятся вокруг этого преимущества",
+      "stats_deltas": [],
+      "post_id": null,
+      "notes": "Опрос стиля власти"
+    },
+    {
+      "id": "km-0-d3-q2",
+      "phase": 0,
+      "narrative_day": 3,
+      "pub_date": "2026-05-07",
+      "category": "setup",
+      "question": "За закрытыми дверями",
+      "options": [
+        {"label": "Открыто", "percent": 100, "votes": 3},
+        {"label": "Намёки и атмосфера", "percent": 0, "votes": 0},
+        {"label": "Только напряжение", "percent": 0, "votes": 0},
+        {"label": "Детализованно, но элегантно", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 3,
+      "winner": "Открыто",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Уровень интимности - открытые сцены без купюр",
+      "impact_content": "Интимные сцены пишутся открыто, без купюр",
+      "stats_deltas": [],
+      "post_id": null,
+      "notes": "Опрос уровня интимности"
+    },
+    {
+      "id": "km-0-d4-q1",
+      "phase": 0,
+      "narrative_day": 4,
+      "pub_date": "2026-05-08",
+      "category": "setup",
+      "question": "С кого начинается охота?",
+      "options": [
+        {"label": "Адриан", "percent": 50, "votes": 1},
+        {"label": "Беатрис", "percent": 0, "votes": 0},
+        {"label": "Леон", "percent": 0, "votes": 0},
+        {"label": "Хлоя", "percent": 50, "votes": 1}
+      ],
+      "total_votes": 2,
+      "winner": "Адриан + Хлоя (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Нора открывает оба досье одновременно",
+      "impact_scoreboard": "Адриан и Хлоя - первые активные линии сезона",
+      "impact_content": "Phase 1 - параллельное развитие обеих линий",
+      "stats_deltas": [],
+      "post_id": null,
+      "notes": "Опрос первого досье"
+    },
+    {
+      "id": "km-0-d5-q1",
+      "phase": 0,
+      "narrative_day": 5,
+      "pub_date": "2026-05-09",
+      "category": "setup",
+      "question": "Кто рядом с первого дня?",
+      "options": [
+        {"label": "Дэмиен", "percent": 33, "votes": 1},
+        {"label": "Хлоя", "percent": 0, "votes": 0},
+        {"label": "Никому", "percent": 67, "votes": 2}
+      ],
+      "total_votes": 3,
+      "winner": "Никому",
+      "winner_type": "plurality",
+      "tie_resolution": null,
+      "impact_scoreboard": "Нора работает в одиночку",
+      "impact_content": "Никто не получает доступа с первого дня. Союзников Нора будет формировать через сюжет",
+      "stats_deltas": [],
+      "post_id": null,
+      "notes": "Опрос первого союзника"
+    },
+    {
+      "id": "km-0-d6-q1",
+      "phase": 0,
+      "narrative_day": 6,
+      "pub_date": "2026-05-10",
+      "category": "setup",
+      "question": "Как звучит анонимный канал?",
+      "options": [
+        {"label": "Элегантные намёки", "percent": 50, "votes": 1},
+        {"label": "Сырые данные", "percent": 50, "votes": 1},
+        {"label": "Эмоциональный яд", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "Намёки + Данные (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Black Velvet работает на двух слоях одновременно: сверху наблюдение/намёк, под ним документ. Эмоциональный яд отвергнут.",
+      "impact_scoreboard": "Тон Black Velvet зафиксирован: двойной голос",
+      "impact_content": "Каждый слив - двойной: атмосферный наблюдательный текст + конкретный документ/факт",
+      "stats_deltas": [],
+      "post_id": "KM-11.05-09-45-VERDICT",
+      "notes": "Последний предстартовый опрос. Все настройки закрыты."
+    }
+  ]
+}

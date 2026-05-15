@@ -1,0 +1,287 @@
+{
+  "version": "1.0",
+  "project": "vienna_special",
+  "season": 1,
+  "last_updated": "2026-05-16",
+  "polls": [
+    {
+      "id": "vs-1-d1-q1",
+      "phase": 1,
+      "narrative_day": 1,
+      "pub_date": "2026-05-11",
+      "category": "live",
+      "question": "Что делаешь с требованием Марко об отдельном этаже?",
+      "options": [
+        {"label": "Этаж будет", "percent": 50, "votes": 1},
+        {"label": "Тихий блок", "percent": 50, "votes": 1},
+        {"label": "Типовой контракт", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "Этаж + Тихий блок (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Алекс доставила тихий блок как эквивалент этажа - третий путь, удовлетворяющий обе опции одновременно",
+      "impact_scoreboard": "Марко 3.2 → 2.9 (доволен, начал неделю уверенно)",
+      "impact_content": "Марко в комфорте, но в долгу. Продюсеры не в курсе. Голос пока стабилен.",
+      "stats_deltas": [
+        {"character": "marco", "param": "reputation", "delta": -0.3, "reason": "Решение по жилью прошло без скандала"}
+      ],
+      "post_id": "VS-11.05-17-00-STORY-MARCO",
+      "notes": "Первая ничья сезона. Заложила приём «третьего пути»."
+    },
+    {
+      "id": "vs-1-d1-q2",
+      "phase": 1,
+      "narrative_day": 1,
+      "pub_date": "2026-05-11",
+      "category": "live",
+      "question": "Как закончить разговор с Теодорой в коридоре?",
+      "options": [
+        {"label": "Зайду утром", "percent": 0, "votes": 0},
+        {"label": "Канал шесть", "percent": 0, "votes": 0},
+        {"label": "Доктор в 09:00", "percent": 100, "votes": 2}
+      ],
+      "total_votes": 2,
+      "winner": "Доктор в 09:00",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Теодора 9.8 → 12.0 (дистанция выбрана, 3am-сообщение)",
+      "impact_content": "Доктор пришёл в 09:00. В 03:14 - «Я не выйду. Прости.» Протокол не звонит в три ночи.",
+      "stats_deltas": [
+        {"character": "theodora", "param": "reputation", "delta": 2.2, "reason": "Дистанция выбрана, эмоциональное расстояние"}
+      ],
+      "post_id": "VS-11.05-19-00-STORY-THEODORA",
+      "notes": "Один из самых драматических исходов - формальный протокол не сработал эмоционально"
+    },
+    {
+      "id": "vs-1-d2-q1",
+      "phase": 1,
+      "narrative_day": 2,
+      "pub_date": "2026-05-12",
+      "category": "live",
+      "question": "Что советуешь KORYNNYA с заблокированными декорациями?",
+      "options": [
+        {"label": "Бороться за оригинал", "percent": 0, "votes": 0},
+        {"label": "Принять альтернативу (270° проекция)", "percent": 100, "votes": 2}
+      ],
+      "total_votes": 2,
+      "winner": "Принять альтернативу",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "KORYNNYA 3.2 → 2.8 (SF1 пройден, новая концепция работает)",
+      "impact_content": "День 3 - KORYNNYA строит выступление на 270° проекции. Оригинальные декорации закрыты навсегда.",
+      "stats_deltas": [
+        {"character": "korynnya", "param": "reputation", "delta": -0.4, "reason": "Альтернатива принята, концепция работает, SF1 пройден"}
+      ],
+      "post_id": "VS-12.05-12-00-STORY-KORYNNYA",
+      "notes": null
+    },
+    {
+      "id": "vs-1-d2-q2",
+      "phase": 1,
+      "narrative_day": 2,
+      "pub_date": "2026-05-12",
+      "category": "live",
+      "question": "Что отвечаешь Эрику про предателя в команде?",
+      "options": [
+        {"label": "Назвать имя", "percent": 100, "votes": 2},
+        {"label": "Промолчать", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "Назвать имя",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Эрик 3.8 → 3.4 (SF1 пройден, но разрыв внутри команды)",
+      "impact_content": "День 3 - Клавис Йоханссон назван публично, выдавлен из команды. Иск формально отозван, неформально - скандал.",
+      "stats_deltas": [
+        {"character": "erik", "param": "reputation", "delta": -0.4, "reason": "Имя названо, иск отозван, SF1 пройден"}
+      ],
+      "post_id": "VS-12.05-14-00-STORY-ERIK",
+      "notes": null
+    },
+    {
+      "id": "vs-1-d3-q1",
+      "phase": 1,
+      "narrative_day": 3,
+      "pub_date": "2026-05-13",
+      "category": "live",
+      "question": "Что делаешь утром после «Я не выйду» Теодоры?",
+      "options": [
+        {"label": "Ответить на её сообщение", "percent": 0, "votes": 0},
+        {"label": "Прийти к ней в номер", "percent": 100, "votes": 2},
+        {"label": "Молчать", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "Прийти к ней в номер",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Теодора - физический контакт перед SF2",
+      "impact_content": "День 4 - Алекс в номере 712 в 09:14. Личное присутствие за двенадцать часов до SF2.",
+      "stats_deltas": [],
+      "post_id": "VS-13.05-12-00-STORY-THEODORA",
+      "notes": "Эмоциональный поворот - физическое присутствие после формального протокола"
+    },
+    {
+      "id": "vs-1-d3-q2",
+      "phase": 1,
+      "narrative_day": 3,
+      "pub_date": "2026-05-13",
+      "category": "live",
+      "question": "Что советуешь Эрику с сообщением от Клависа?",
+      "options": [
+        {"label": "Иди", "percent": 50, "votes": 1},
+        {"label": "Заблокируй", "percent": 50, "votes": 1}
+      ],
+      "total_votes": 2,
+      "winner": "Иди + Заблокируй (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Алекс берёт встречу с Клависом на себя - третий путь. Эрик не идёт и не блокирует, ждёт.",
+      "impact_scoreboard": "Эрик в режиме ожидания. Алекс собирает информацию вне его поля зрения.",
+      "impact_content": "День 5 - Алекс встречается с Клависом. Узнаёт: иск подал Линус Берг (со-автор).",
+      "stats_deltas": [
+        {"character": "erik", "param": "reputation", "delta": 0.2, "reason": "Открыта новая угроза - иск переоткрыт через Линуса"}
+      ],
+      "post_id": "VS-13.05-14-00-STORY-ERIK",
+      "notes": "Вторая ничья - третий путь повторно успешен"
+    },
+    {
+      "id": "vs-1-d4-q1",
+      "phase": 1,
+      "narrative_day": 4,
+      "pub_date": "2026-05-14",
+      "category": "live",
+      "question": "Что делаешь в номере Теодоры утром перед SF2?",
+      "options": [
+        {"label": "Молчать рядом", "percent": 0, "votes": 0},
+        {"label": "Говорить", "percent": 50, "votes": 1},
+        {"label": "Действовать", "percent": 50, "votes": 1}
+      ],
+      "total_votes": 2,
+      "winner": "Говорить + Действовать (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Алекс делает оба одновременно - говорит во время действия (душ, костюм, дыхание). Молчание отвергнуто.",
+      "impact_scoreboard": "Теодора прошла SF2, котировки 13.5 → 9.0",
+      "impact_content": "Теодора прошла. Ушла из здания сразу после. Ответное сообщение пришло поздно вечером 15.05: «Я выйду. Без Лебедя. В чёрном.»",
+      "stats_deltas": [
+        {"character": "theodora", "param": "reputation", "delta": -4.5, "reason": "SF2 пройден, трансформация началась"}
+      ],
+      "post_id": "VS-14.05-12-00-STORY-THEODORA",
+      "notes": "Кульминация Теодоры - финалистка"
+    },
+    {
+      "id": "vs-1-d4-q2",
+      "phase": 1,
+      "narrative_day": 4,
+      "pub_date": "2026-05-14",
+      "category": "live",
+      "question": "К кому идёшь в конфликте V-DYNAMO (первый опрос о них)?",
+      "options": [
+        {"label": "К Максу", "percent": 50, "votes": 1},
+        {"label": "К Лукасу", "percent": 50, "votes": 1},
+        {"label": "Не вмешиваться", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "К Максу + К Лукасу (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Челночная дипломатия - сначала Лукас в коридоре, потом Макс с тем, что узнала. Невмешательство отвергнуто.",
+      "impact_scoreboard": "V-DYNAMO 6.1 → 6.3 (конфликт виден букмекерам)",
+      "impact_content": "V-DYNAMO вышли в финал вдвоём, но не разговаривают друг с другом. Стоят рядом - этого достаточно.",
+      "stats_deltas": [
+        {"character": "v_dynamo", "param": "reputation", "delta": 0.2, "reason": "Конфликт стал публичным, букмекеры реагируют"}
+      ],
+      "post_id": "VS-14.05-14-00-STORY-VDYNAMO",
+      "notes": "Первый опрос о V-DYNAMO, поздно в сезоне"
+    },
+    {
+      "id": "vs-1-d5-q1",
+      "phase": 1,
+      "narrative_day": 5,
+      "pub_date": "2026-05-15",
+      "category": "live",
+      "question": "Что делаешь с информацией о Линусе Берге?",
+      "options": [
+        {"label": "Идти в зал B (публично)", "percent": 0, "votes": 0},
+        {"label": "Найти Линуса приватно", "percent": 100, "votes": 2},
+        {"label": "Молчать до финала", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "Найти приватно",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Эрик 3.6 → 3.5 (приватный путь, без публичного скандала)",
+      "impact_content": "День 6 - Алекс встречается с Линусом в кафе на Шотландской. Линус излагает условия.",
+      "stats_deltas": [
+        {"character": "erik", "param": "reputation", "delta": -0.1, "reason": "Приватный путь, без публичного шума"}
+      ],
+      "post_id": "VS-15.05-12-00-STORY-ERIK",
+      "notes": null
+    },
+    {
+      "id": "vs-1-d5-q2",
+      "phase": 1,
+      "narrative_day": 5,
+      "pub_date": "2026-05-15",
+      "category": "live",
+      "question": "Что делаешь с Кларой Воссен (первый опрос о Жюльене)?",
+      "options": [
+        {"label": "Поговорить с Жюльеном напрямую", "percent": 50, "votes": 1},
+        {"label": "Доложить организаторам", "percent": 50, "votes": 1},
+        {"label": "Молчать", "percent": 0, "votes": 0}
+      ],
+      "total_votes": 2,
+      "winner": "Жюльен + Орг-комитет (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Третий путь - Алекс идёт к самой Кларе напрямую, не к Жюльену и не в орг-комитет. Источник к источнику.",
+      "impact_scoreboard": "Жюльен 5.5 → 5.7 (под наблюдением)",
+      "impact_content": "День 6 - Клара подходит к Алекс сама. Серебристый жёсткий диск с пропавшим документом.",
+      "stats_deltas": [
+        {"character": "julien", "param": "reputation", "delta": 0.2, "reason": "Внимание привлечено, скрутая тема"}
+      ],
+      "post_id": "VS-15.05-14-00-STORY-JULIEN",
+      "notes": "Первый опрос о Жюльене. Поздно, но успели."
+    },
+    {
+      "id": "vs-1-d6-q1",
+      "phase": 1,
+      "narrative_day": 6,
+      "pub_date": "2026-05-16",
+      "category": "endgame",
+      "question": "Что предлагаешь Линусу за отзыв иска?",
+      "options": [
+        {"label": "Публичные кредиты со-автора (анонс после Eurovision)", "percent": null, "votes": null},
+        {"label": "Только роялти. Приватный settlement", "percent": null, "votes": null},
+        {"label": "Эскалировать. Юристы.", "percent": null, "votes": null}
+      ],
+      "total_votes": null,
+      "winner": null,
+      "winner_type": null,
+      "tie_resolution": null,
+      "impact_scoreboard": null,
+      "impact_content": null,
+      "stats_deltas": [],
+      "post_id": "VS-16.05-12-00-STORY-ERIK",
+      "notes": "Опрос открыт. Результаты будут после закрытия."
+    },
+    {
+      "id": "vs-1-d6-q2",
+      "phase": 1,
+      "narrative_day": 6,
+      "pub_date": "2026-05-16",
+      "category": "endgame",
+      "question": "Что делаешь с диском Клары?",
+      "options": [
+        {"label": "Взять диск. Прочитать сейчас.", "percent": null, "votes": null},
+        {"label": "Отказаться. Финал сегодня.", "percent": null, "votes": null},
+        {"label": "Принять условие: посмотреть вместе с Кларой.", "percent": null, "votes": null}
+      ],
+      "total_votes": null,
+      "winner": null,
+      "winner_type": null,
+      "tie_resolution": null,
+      "impact_scoreboard": null,
+      "impact_content": null,
+      "stats_deltas": [],
+      "post_id": "VS-16.05-14-00-STORY-JULIEN",
+      "notes": "Опрос открыт. Финальный опрос сезона. Результаты повлияют на эпилог 17.05."
+    }
+  ]
+}

@@ -299,10 +299,11 @@
 - [x] `VOICE_LOCK.md` для Vienna Special (документация финала)
 - [x] Pre-commit хук на эм-тире (`tools/pre-commit-novells.sh`, установлен симлинком в `.git/hooks/pre-commit`)
 - [x] Pre-commit предупреждение на имена персонажей в промптах
-- [ ] Pre-commit хук на валидацию опроса (есть прошедший) - откладывается до миграции POLL_LOG в JSON
+- [x] Миграция POLL_LOG в JSON (схема в `POLL_LOG_SCHEMA.md`, рендер `tools/poll_log_render.py`, KM + VS мигрированы)
+- [ ] Pre-commit хук на валидацию опроса (есть прошедший) - теперь возможно с JSON, но низкий приоритет
 - [ ] Скрипт `new-post` (создаёт папку и заполненный шаблон)
 - [x] Скрипт `audit` (выдаёт аудит на старте сессии): `tools/audit.sh <project>`
-- [ ] Миграция POLL_LOG в JSON (для автоматизации)
+- [x] Миграция POLL_LOG в JSON (см. выше)
 - [x] Активация Reputation Mining + Affinity в KM (STATS.json + STATS_RULES.md + AFFINITY_UNLOCKS.md)
 - [x] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT (в `09_GENERAL/templates/`)
 - [ ] Временные шкалы остальных проектов (Orchid, Donor, Order, Horizon, Code, Anthropos, Eleyia S2)
