@@ -1,0 +1,262 @@
+{
+  "version": "1.0",
+  "project": "kingmaker",
+  "season": 1,
+  "current_phase": 1,
+  "current_pub_day": 0,
+  "current_narrative_day": 0,
+  "last_updated": "2026-05-16",
+  "notes": "Стартовое состояние. Phase 1 День 1 = 18.05.2026.",
+
+  "characters": {
+    "adrian": {
+      "name": "Адриан",
+      "role": "Кронпринц",
+      "reputation": {
+        "current": 2.5,
+        "start": 2.5,
+        "trend": "→",
+        "history": []
+      },
+      "affinity": {
+        "current": 0,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "Скрытая привычка - намёк на коллекционирование признаний (без раскрытия)"
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "Flashback - детство в комнате с зеркалами. Когда он впервые понял, что у него нет своих признаний."
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "Shadow Preferences - что Адриан секретно слушает в одиночестве (опера тихо? один и тот же романс?)"
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "Его зависимость - не вещества. Он коллекционирует чужие признания, потому что не может удержать свои."
+          }
+        },
+        "history": []
+      }
+    },
+
+    "leon": {
+      "name": "Леон",
+      "role": "Бастард-миллиардер",
+      "reputation": {
+        "current": 4.5,
+        "start": 4.5,
+        "trend": "→",
+        "history": []
+      },
+      "affinity": {
+        "current": 0,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "Технический паспорт его зашифрованного телефона. Производитель не значится в реестрах."
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "Flashback - как он стал миллиардером. Один документ, две подписи, тридцать секунд молчания."
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "Shadow Preferences - что Леон делает, когда выключает все мониторы (одна сигарета на крыше, один разворот газеты 1974 года)"
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "У него досье на каждого во дворце. На каждого - кроме одного человека, который только что вошёл."
+          }
+        },
+        "history": []
+      }
+    },
+
+    "damien": {
+      "name": "Дэмиен",
+      "role": "Глава Канцелярии",
+      "reputation": {
+        "current": 6.0,
+        "start": 6.0,
+        "trend": "→",
+        "history": []
+      },
+      "affinity": {
+        "current": 0,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "Шаблон расписания Дэмиена - в нём слишком много 'случайных' пересечений с маршрутом Норы."
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "Flashback - когда он впервые начал защищать Нору. Это случилось до того, как они встретились."
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "Shadow Preferences - то, что Дэмиен хранит в бордовом досье. Один лист, не для Комитета."
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "Он защищает Нору дольше, чем она знает. Защита была не запрошена."
+          }
+        },
+        "history": []
+      }
+    },
+
+    "beatrice": {
+      "name": "Беатрис",
+      "role": "Младшая принцесса",
+      "reputation": {
+        "current": 3.2,
+        "start": 3.2,
+        "trend": "→",
+        "history": []
+      },
+      "affinity": {
+        "current": 0,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "Расшифровка одного разговора - Беатрис в одиночестве, без камер, с другим голосом. Без театральности."
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "Flashback - когда Беатрис впервые решила стать 'глупой'. Возраст: восемь."
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "Shadow Preferences - её настоящий запах не белая гардения. Что-то острее, что она прячет под."
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "Она читает Black Velvet до публикации. У неё есть источник внутри."
+          }
+        },
+        "history": []
+      }
+    },
+
+    "isabella": {
+      "name": "Изабелла",
+      "role": "Глава медиа-холдинга",
+      "reputation": {
+        "current": 5.0,
+        "start": 5.0,
+        "trend": "→",
+        "history": []
+      },
+      "affinity": {
+        "current": 0,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "Один скриншот её алгоритма - три параметра, цветные графики. Что значит каждый - не подписано."
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "Flashback - как был получен документ-основание медиа-империи. Двадцать лет назад. Одна подпись."
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "Shadow Preferences - что Изабелла перечитывает каждые пять лет. Не корпоративное."
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "Медиа-империя построена на одном компромате, который она защищает двадцать лет."
+          }
+        },
+        "history": []
+      }
+    },
+
+    "chloe": {
+      "name": "Хлоя",
+      "role": "Хакерша, технический директор Норы",
+      "reputation": {
+        "current": 12.0,
+        "start": 12.0,
+        "trend": "→",
+        "history": []
+      },
+      "affinity": {
+        "current": 0,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "Лог одного взлома Хлои - таймстампы, действия, ноль логов на пути."
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "Flashback - как Хлоя впервые увидела Нору. С того расстояния, с которого Нора её не видела."
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "Shadow Preferences - что Хлоя сохраняет для Норы на отдельный носитель. Зашифровано."
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "Она нашла досье на Нору, существовавшее за три года до их первой встречи."
+          }
+        },
+        "history": []
+      }
+    }
+  },
+
+  "polls": [],
+
+  "black_velvet_leaks": []
+}

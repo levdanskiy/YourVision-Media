@@ -303,7 +303,7 @@
 - [ ] Скрипт `new-post` (создаёт папку и заполненный шаблон)
 - [ ] Скрипт `audit` (выдаёт аудит на старте сессии)
 - [ ] Миграция POLL_LOG в JSON (для автоматизации)
-- [ ] Активация Reputation Mining + Affinity в KM
+- [x] Активация Reputation Mining + Affinity в KM (STATS.json + STATS_RULES.md + AFFINITY_UNLOCKS.md)
 - [ ] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT
 - [ ] Временные шкалы остальных проектов (Orchid, Donor, Order, Horizon, Code, Anthropos, Eleyia S2)
 - [ ] Полная инвентаризация ENDINGS и TRUE_ROUTE для активных проектов
