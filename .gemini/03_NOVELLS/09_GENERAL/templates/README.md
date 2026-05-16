@@ -18,6 +18,7 @@
 | **BLACK VELVET LEAK** (KM) / **CHANNEL SIX** (VS) / эквивалент | [template_black_velvet.md](./template_black_velvet.md) | Анонимная утечка. Один факт + контекст + кто читает. |
 | **AUDIO TEMPLATE** | [template_audio.md](./template_audio.md) | Голосовое сообщение / запись в текстовом формате. Таймкоды, паузы. |
 | **TRUE ROUTE FRAGMENT** | [template_true_route.md](./template_true_route.md) | Скрытый фрагмент, доступный при определённых условиях. Affinity 100% или комбинации выборов. |
+| **TRAJECTORY** | [template_trajectory.md](./template_trajectory.md) | Раскрытие траектории ГГ за фазу. 4 оси личности + архетип. Раз в фазу после Phase Final. |
 
 ---
 

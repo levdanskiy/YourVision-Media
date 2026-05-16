@@ -1,12 +1,49 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "project": "kingmaker",
   "season": 1,
   "current_phase": 1,
   "current_pub_day": 0,
   "current_narrative_day": 0,
   "last_updated": "2026-05-16",
-  "notes": "Стартовое состояние. Phase 1 День 1 = 18.05.2026.",
+  "notes": "Стартовое состояние. Phase 1 День 1 = 18.05.2026. v1.1 - добавлен слой protagonist_traits.",
+
+  "protagonist": {
+    "name": "Нора",
+    "role": "Гроссмейстер Комитета по Престолонаследию",
+    "traits": {
+      "calculation_vs_empathy": {
+        "current": 0,
+        "scale": [-50, 50],
+        "negative_label": "Расчёт",
+        "positive_label": "Эмпатия",
+        "history": []
+      },
+      "shadow_vs_public": {
+        "current": 0,
+        "scale": [-50, 50],
+        "negative_label": "Тень",
+        "positive_label": "Публичность",
+        "history": []
+      },
+      "ruthless_vs_merciful": {
+        "current": 0,
+        "scale": [-50, 50],
+        "negative_label": "Жёсткость",
+        "positive_label": "Милосердие",
+        "history": []
+      },
+      "paranoid_vs_trusting": {
+        "current": 0,
+        "scale": [-50, 50],
+        "negative_label": "Паранойя",
+        "positive_label": "Доверие",
+        "history": []
+      }
+    },
+    "archetype": null,
+    "archetype_history": []
+  },
 
   "characters": {
     "adrian": {

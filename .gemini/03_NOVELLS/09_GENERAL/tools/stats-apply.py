@@ -76,12 +76,45 @@ def compute_trend(history, current):
 
 def apply_delta(stats, delta, poll_id, narrative_day):
     """Применяет один delta к STATS. Возвращает список событий (для лога)."""
-    char_id = delta["character"]
-    param = delta["param"]
     value = delta["delta"]
     reason = delta.get("reason", "")
-
     events = []
+
+    # PROTAGONIST TRAIT delta (новый тип, Phase 1+)
+    target = delta.get("target")
+    axis = delta.get("axis")
+    if target == "protagonist" and axis:
+        prot = stats.get("protagonist")
+        if not prot:
+            events.append({"type": "warn", "msg": "В STATS.json нет protagonist блока - пропуск trait delta"})
+            return events
+        traits = prot.get("traits", {})
+        if axis not in traits:
+            events.append({"type": "warn", "msg": f"Ось '{axis}' не найдена в protagonist.traits - пропуск"})
+            return events
+        trait = traits[axis]
+        old = trait.get("current", 0)
+        scale = trait.get("scale", [-50, 50])
+        new = max(scale[0], min(scale[1], old + value))
+        trait["current"] = new
+        history_entry = {
+            "day": narrative_day,
+            "poll_id": poll_id,
+            "delta": value,
+            "from": old,
+            "to": new,
+            "reason": reason,
+        }
+        trait.setdefault("history", []).append(history_entry)
+        neg = trait.get("negative_label", "-")
+        pos = trait.get("positive_label", "+")
+        direction = pos if new >= 0 else neg
+        events.append({"type": "info", "msg": f"  Нора.{axis}: {old} → {new} ({'+' if value >= 0 else ''}{value}) [{direction}]"})
+        return events
+
+    # Existing: character reputation/affinity delta
+    char_id = delta["character"]
+    param = delta["param"]
     chars = stats.setdefault("characters", {})
 
     if char_id not in chars:

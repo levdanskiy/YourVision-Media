@@ -338,6 +338,11 @@
 - [x] Voice-lint встроен в pre-commit hook (блокирует ошибки, показывает предупреждения)
 - [x] Миграция POLL_LOG в JSON (см. выше)
 - [x] Активация Reputation Mining + Affinity в KM (STATS.json + STATS_RULES.md + AFFINITY_UNLOCKS.md)
+- [x] **Слой 1 - Protagonist Traits в KM** (4 оси личности Норы, фазное расширение Вариант D)
+  - Phase 1: Layer 1 активирован (calculation/shadow/ruthless/paranoid axes)
+  - Phase 2: Layer 2 - World State (regime stability + BV reach) - TBD
+  - Phase 3: Layer 3 - Character Pressure (личные уязвимости 6 претендентов) - TBD
+- [x] Шаблон TRAJECTORY POST - раскрытие траектории ГГ раз в фазу
 - [x] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT (в `09_GENERAL/templates/`)
 - [ ] Временные шкалы остальных проектов (Orchid, Donor, Order, Horizon, Code, Anthropos, Eleyia S2)
 - [ ] Полная инвентаризация ENDINGS и TRUE_ROUTE для активных проектов
