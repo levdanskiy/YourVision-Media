@@ -343,6 +343,7 @@
   - Phase 2: Layer 2 - World State (regime stability + BV reach) - TBD
   - Phase 3: Layer 3 - Character Pressure (личные уязвимости 6 претендентов) - TBD
 - [x] Шаблон TRAJECTORY POST - раскрытие траектории ГГ раз в фазу
+- [x] **LORE.json для KM** - кросс-индекс персонажей, мест, объектов, терминов, событий (минимальная база) 
 - [x] Шаблоны новых форматов: DOSSIER, NOTEBOOK PAGE, BLACK VELVET, AUDIO, TRUE ROUTE FRAGMENT (в `09_GENERAL/templates/`)
 - [ ] Временные шкалы остальных проектов (Orchid, Donor, Order, Horizon, Code, Anthropos, Eleyia S2)
 - [ ] Полная инвентаризация ENDINGS и TRUE_ROUTE для активных проектов

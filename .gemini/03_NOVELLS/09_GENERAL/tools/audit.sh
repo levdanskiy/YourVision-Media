@@ -239,6 +239,7 @@ echo "────────────────────────�
 [ -f "$DIR/02_SYSTEM/STATS.json" ]    && echo "  STATS:       $DIR/02_SYSTEM/STATS.json"
 [ -f "$DIR/02_SYSTEM/STATS_RULES.md" ] && echo "  STATS_RULES: $DIR/02_SYSTEM/STATS_RULES.md"
 [ -f "$DIR/02_SYSTEM/AFFINITY_UNLOCKS.md" ] && echo "  AFFINITY:    $DIR/02_SYSTEM/AFFINITY_UNLOCKS.md"
+[ -f "$DIR/02_SYSTEM/LORE.json" ] && echo "  LORE:        $DIR/02_SYSTEM/LORE.json"
 [ -f "$DIR/02_SYSTEM/VOICE_LOCK.md" ] && echo "  VOICE_LOCK:  $DIR/02_SYSTEM/VOICE_LOCK.md"
 [ -f "$DIR/SEASON_1_ROADMAP.md" ]     && echo "  ROADMAP:     $DIR/SEASON_1_ROADMAP.md"
 echo ""

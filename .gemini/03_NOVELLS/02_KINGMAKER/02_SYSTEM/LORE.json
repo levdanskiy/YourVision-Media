@@ -1,0 +1,281 @@
+{
+  "version": "1.0",
+  "project": "kingmaker",
+  "last_updated": "2026-05-16",
+  "notes": "Минимальный лор-индекс. Источники истины: STATS.json (числа), VISUAL_PROFILES.md (внешность), LOVE_INTERESTS.md (роли/хуки). Этот файл - кросс-индекс + события/места/предметы/термины.",
+
+  "characters": {
+    "nora": {
+      "name": "Нора",
+      "role": "Гроссмейстер Комитета по Престолонаследию",
+      "type": "protagonist",
+      "aliases": ["Гроссмейстер", "ГГ"],
+      "first_mention": "День 1 - назначение",
+      "see_also": ["02_SYSTEM/STATE.md (NORA_CONFIG)", "STATS.json:protagonist", "NORA_CONFIG.md"]
+    },
+    "adrian": {
+      "name": "Адриан",
+      "role": "Кронпринц",
+      "type": "contender",
+      "age": 30,
+      "starting_reputation": 2.5,
+      "key_trait": "Право первой подписи на любом эдикте Комитета",
+      "shadow_hook": "Коллекционирует чужие признания (А.К. = Аудио-Коллекция)",
+      "see_also": ["03_CHARACTERS/LOVE_INTERESTS.md", "03_CHARACTERS/VISUAL_PROFILES.md", "AFFINITY_UNLOCKS.md"]
+    },
+    "leon": {
+      "name": "Леон",
+      "role": "Бастард-миллиардер, информационный стервятник",
+      "type": "contender",
+      "age": 32,
+      "starting_reputation": 4.5,
+      "key_trait": "Зашифрованный телефон без маркировки",
+      "shadow_hook": "Досье на всех во дворце - кроме одного человека",
+      "see_also": ["03_CHARACTERS/LOVE_INTERESTS.md", "03_CHARACTERS/VISUAL_PROFILES.md"]
+    },
+    "damien": {
+      "name": "Дэмиен",
+      "role": "Глава Канцелярии, теневой защитник",
+      "type": "contender",
+      "age": 38,
+      "starting_reputation": 6.0,
+      "key_trait": "Знает правду о смерти/исчезновении монарха",
+      "shadow_hook": "Защищает Нору дольше, чем она знает - десять лет",
+      "see_also": ["03_CHARACTERS/LOVE_INTERESTS.md", "03_CHARACTERS/VISUAL_PROFILES.md"]
+    },
+    "beatrice": {
+      "name": "Беатрис",
+      "role": "Младшая принцесса, фарфоровый хищник",
+      "type": "contender",
+      "age": 26,
+      "starting_reputation": 3.2,
+      "key_trait": "Видимость как оружие. Считается «глупой» - это её актив",
+      "shadow_hook": "Читает Black Velvet до публикации - источник внутри",
+      "see_also": ["03_CHARACTERS/LOVE_INTERESTS.md", "03_CHARACTERS/VISUAL_PROFILES.md"]
+    },
+    "isabella": {
+      "name": "Изабелла",
+      "role": "Глава медиа-холдинга, акула бизнеса",
+      "type": "contender",
+      "age": 38,
+      "starting_reputation": 5.0,
+      "key_trait": "Девяносто минут до раскрутки/похорон любой истории",
+      "shadow_hook": "Один документ 20-летней давности, на котором построена империя",
+      "see_also": ["03_CHARACTERS/LOVE_INTERESTS.md", "03_CHARACTERS/VISUAL_PROFILES.md"]
+    },
+    "chloe": {
+      "name": "Хлоя",
+      "role": "Хакерша, технический директор Норы",
+      "type": "contender",
+      "age": 24,
+      "starting_reputation": 12.0,
+      "key_trait": "Самосборный ноутбук, к которому никто не имеет доступа кроме неё",
+      "shadow_hook": "Досье на Нору, существовавшее за три года до их встречи",
+      "see_also": ["03_CHARACTERS/LOVE_INTERESTS.md", "03_CHARACTERS/VISUAL_PROFILES.md"]
+    },
+    "empress": {
+      "name": "Императрица",
+      "role": "Правительница, отсутствующая",
+      "type": "background",
+      "first_mention": "День 1 - BV Vol.1",
+      "status": "missing 12+ days",
+      "narrative_role": "Центральная загадка сезона. Причина отсутствия не известна публично."
+    },
+    "seventh_contender": {
+      "name": "Седьмой претендент",
+      "role": "Неизвестный кандидат на престол",
+      "type": "antagonist",
+      "first_mention": "Phase 2 День 8 (по плану)",
+      "status": "пока скрыт",
+      "narrative_role": "Появляется в Phase 2 как сюрпризный игрок. Связан с подписью на пред-Интеррегнум протоколах."
+    }
+  },
+
+  "places": [
+    {
+      "id": "committee_hall",
+      "name": "Зал Комитета",
+      "description": "Закрытый зал заседаний Комитета по Престолонаследию. Двенадцать мест за столом. Тронное место - пустое.",
+      "first_mention": "День 1",
+      "atmosphere": "Обсидиановые поверхности, тяжёлые бархатные шторы, единственный источник света сверху над троном"
+    },
+    {
+      "id": "chancellery",
+      "name": "Канцелярия",
+      "description": "Бюрократический центр Двора. Глава - Дэмиен. Архив. Источник BV Vol.1.",
+      "first_mention": "День 1 - BV Vol.1",
+      "atmosphere": "Длинные коридоры, бордовое кожаное досье, шёпот"
+    },
+    {
+      "id": "palace_throne_room",
+      "name": "Тронный зал",
+      "description": "Главный тронный зал дворца. С момента исчезновения Императрицы - пустой.",
+      "first_mention": "Phase 1 мотив",
+      "atmosphere": "Хрусталь без отражений. Свечи. Пустота."
+    },
+    {
+      "id": "archive",
+      "name": "Архив",
+      "description": "Хранилище протоколов и личных дел. Дэмиен здесь часто. Хлоя сюда взламывает.",
+      "first_mention": "День 6 (Хлоя взламывает)",
+      "atmosphere": "Стеллажи. Чёрное дерево. Латунные ярлыки."
+    },
+    {
+      "id": "nora_office",
+      "name": "Кабинет Гроссмейстера",
+      "description": "Личный кабинет Норы. Стол, бордовая обивка, единственная свеча. Окно на сад.",
+      "first_mention": "День 1"
+    }
+  ],
+
+  "objects": [
+    {
+      "id": "adrian_signet_ring",
+      "name": "Монограммный перстень Адриана",
+      "owner": "adrian",
+      "description": "Тёмный сапфир в золоте. Никогда не снимает.",
+      "narrative_significance": "Маркер положения. Sub Rosa-устройство - левая рука едва дрожит, когда касается"
+    },
+    {
+      "id": "damien_burgundy_dossier",
+      "name": "Бордовое кожаное досье",
+      "owner": "damien",
+      "description": "Всегда при нём. Никогда не открывает при свидетелях.",
+      "narrative_significance": "Содержит то, что не для Комитета. Возможно - эссе Норы 10-летней давности (см. Affinity 75%)"
+    },
+    {
+      "id": "beatrice_compact",
+      "name": "Компактное зеркальце Беатрис",
+      "owner": "beatrice",
+      "description": "Не для макияжа.",
+      "narrative_significance": "Видеть комнату за спиной. Sub Rosa-устройство - архитектура внимания."
+    },
+    {
+      "id": "leon_encrypted_phone",
+      "name": "Зашифрованный телефон Леона",
+      "owner": "leon",
+      "description": "Производитель не значится в реестрах. Серийный номер с буквами, которых нет ни в одной классификации.",
+      "narrative_significance": "Канал к источникам и компромату. Раскроется в 25% Affinity (DOSSIER)"
+    },
+    {
+      "id": "isabella_phone_algorithm",
+      "name": "Алгоритм Изабеллы",
+      "owner": "isabella",
+      "description": "Один телефон, на нём алгоритм считает лояльность, внимание, котировки одновременно.",
+      "narrative_significance": "Инструмент контроля медиа. 25% Affinity - один скриншот раскроется."
+    },
+    {
+      "id": "chloe_laptop",
+      "name": "Самодельный ноутбук Хлои",
+      "owner": "chloe",
+      "description": "Компоненты припаяны теми, кого нет в списках поставщиков.",
+      "narrative_significance": "Никто кроме неё не может им пользоваться. Хранит копии всех файлов Норы (75% Affinity)"
+    },
+    {
+      "id": "black_velvet_channel",
+      "name": "Канал Black Velvet",
+      "owner": "nora (anonymous)",
+      "description": "Анонимная подпольная публикация. Никто не знает что за каналом стоит Нора.",
+      "narrative_significance": "Инструмент Reputation Mining. Тон: намёки + данные (по предстартовому опросу).",
+      "see_also": ["templates/template_black_velvet.md"]
+    }
+  ],
+
+  "terms": [
+    {
+      "id": "black_velvet",
+      "name": "Black Velvet",
+      "type": "channel / mechanic",
+      "description": "Анонимный канал утечек. Инструмент Норы. Тон: намёки + данные, без яда.",
+      "see_also": ["templates/template_black_velvet.md", "STATS.json:black_velvet_leaks"]
+    },
+    {
+      "id": "sub_rosa",
+      "name": "Sub Rosa",
+      "type": "narrative technique / lore concept",
+      "description": "Двухслойность. В лоре - закрытое заседание (видимое vs скрытое). В прозе - сигнатурный приём KM (см. KM VOICE_LOCK раздел 8).",
+      "latin_origin": "«Под розой» - символ молчания в Древнем Риме."
+    },
+    {
+      "id": "reputation_mining",
+      "name": "Reputation Mining",
+      "type": "mechanic",
+      "description": "Манипуляция публичной репутацией претендентов через сливы и публичные ходы. Видна в STATS.json:characters[*].reputation"
+    },
+    {
+      "id": "affinity",
+      "name": "Affinity",
+      "type": "mechanic",
+      "description": "Личная близость персонажа к Норе. 0-100. Пороги: 25/50/75/100. Каждый - unlock-пост.",
+      "see_also": ["AFFINITY_UNLOCKS.md", "STATS.json:characters[*].affinity"]
+    },
+    {
+      "id": "interregnum",
+      "name": "Интеррегнум",
+      "type": "world concept",
+      "description": "Период между правлениями. Сейчас - после исчезновения Императрицы. Заседает Комитет, голосует за преемника."
+    },
+    {
+      "id": "committee",
+      "name": "Комитет по Престолонаследию",
+      "type": "institution",
+      "description": "Орган решающий вопрос преемства. Гроссмейстер - его глава. Двенадцать членов.",
+      "narrative_role": "Место заседаний и интриг. Black Velvet читают двое внутри Комитета (по Vol.1)."
+    },
+    {
+      "id": "grandmaster",
+      "name": "Гроссмейстер",
+      "type": "title",
+      "description": "Глава Комитета. Назначается экстренно при отсутствии монарха. Текущий - Нора."
+    },
+    {
+      "id": "pactum_sanguinis",
+      "name": "Pactum Sanguinis",
+      "type": "lore term",
+      "description": "«Кровавый пакт» - старый юридический термин. Используется как ссылка в архивах.",
+      "latin_origin": "Латынь, доимперский кодекс"
+    }
+  ],
+
+  "events": [
+    {
+      "id": "empress_disappearance",
+      "name": "Исчезновение Императрицы",
+      "narrative_date": "12 дней до Дня 1",
+      "publication_first_mention": "День 1 (BV Vol.1)",
+      "description": "Императрица не появляется на публике. Дворцовый график показывает повторяющийся незаписанный гость на 6, 7, 11 мая (нарративные даты).",
+      "consequences": ["Созыв Комитета", "Назначение Норы Гроссмейстером", "BV Vol.1"]
+    },
+    {
+      "id": "nora_appointment",
+      "name": "Назначение Норы Гроссмейстером",
+      "narrative_date": "День 1",
+      "description": "Экстренный созыв Комитета. Нора назначена Гроссмейстером.",
+      "see_also": ["SEASON_1_ROADMAP.md: Phase 1 Day 1"]
+    },
+    {
+      "id": "bv_vol1",
+      "name": "Black Velvet Vol. 1 - открытие канала",
+      "narrative_date": "День 1",
+      "publication_date": "2026-05-18",
+      "description": "Первая публикация Black Velvet. Тема: двенадцать дней Императрицы, повторяющийся незаписанный гость в графике, источник из Канцелярии.",
+      "post_id": "KM-18.05-09-00-LEAK-VOL01"
+    },
+    {
+      "id": "phase1_final",
+      "name": "Phase 1 Final - первая жертва Black Velvet",
+      "narrative_date": "День 7",
+      "publication_date": "2026-05-24",
+      "description": "MAJOR CHOICE на 6 опций - кого подставить первым сливом. Драматический сдвиг всех котировок.",
+      "scheduled": true
+    },
+    {
+      "id": "seventh_contender_reveal",
+      "name": "Появление 7-го претендента",
+      "narrative_date": "День 8 (Phase 2 старт)",
+      "publication_date": "2026-05-25 (по плану)",
+      "description": "Все шестеро реагируют впервые открыто. Котировки шатаются.",
+      "scheduled": true
+    }
+  ]
+}
