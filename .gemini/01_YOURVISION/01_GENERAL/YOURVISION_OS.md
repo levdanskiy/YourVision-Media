@@ -3,7 +3,7 @@
 Единый источник истины канала YourVision. Читать в начале каждой YV-сессии. Конфликт с любым другим документом разрешается в пользу OS.
 
 **Последнее обновление:** 2026-05-17 (handover Gemini → Claude, post-ESC 2026)
-**Автор канала:** только Claude. Gemini-инфраструктура архивирована в `_ARCHIVE/`.
+**Автор канала:** только Claude. Gemini-инфраструктура архивирована в `07_ARCHIVE/`.
 
 ---
 
@@ -118,13 +118,13 @@
 
 ```
 01_YOURVISION/
-├── 09_GENERAL/             ← OS и инструкции (этот файл)
-├── 03_ASSETS/              ← медиа, звуки, документы
+├── 01_GENERAL/             ← OS и инструкции (этот файл)
+├── 02_KNOWLEDGE/           ← живой лор и базы (CHANNEL_LORE, MASTER_DATABASE, Live_Calendars)
+├── 03_TEMPLATES/           ← живые шаблоны постов
 ├── 04_CONTENT/YYYY/MM/DD/  ← все опубликованные посты
-├── 05_KNOWLEDGE/           ← живой лор и базы (CHANNEL_LORE, MASTER_DATABASE, Live_Calendars)
+├── 05_ASSETS/              ← медиа, звуки, документы
 ├── 06_TIMELINE/            ← master_plans и database (yv_season_2026.json)
-├── 07_TEMPLATES/           ← живые шаблоны постов
-└── _ARCHIVE/               ← всё, что больше не нужно (Gemini engine, старые планы, legacy bibles)
+└── 07_ARCHIVE/             ← всё, что больше не нужно (Gemini engine, старые планы, legacy bibles)
 ```
 
 **Имя файла поста:**
@@ -161,7 +161,7 @@ YV-DD.MM-HH-MM-[RUBRIC|COUNTRY]-Topic.md
 1. **H1:** `[ИКОНКА] [RUBRIC]: [СТРАНА/ТЕМА] - [КЛЮЧЕВАЯ ХАРАКТЕРИСТИКА]`
    Пример: `🧬 DNA: ИТАЛИЯ - Sal Da Vinci, голос неаполитанской традиции`
 2. **Лид:** 1-2 предложения. Sniper-стиль. Цифра или твёрдый факт.
-3. **Контент** по структуре рубрики (см. §4 - конкретные шаблоны в `07_TEMPLATES/`).
+3. **Контент** по структуре рубрики (см. §4 - конкретные шаблоны в `03_TEMPLATES/`).
 4. **Хук** в конце - для рубрик с опросом или дискуссией. Один конкретный вопрос с явным выбором, не риторика.
 
 ### Footer (обязательный)
@@ -206,9 +206,9 @@ shot on 35mm film Kodak Portra 800, heavy film grain, Dazed magazine aesthetic -
 
 Всегда в начале сессии:
 1. Прочитать этот OS (1-2 минуты).
-2. Прочитать `05_KNOWLEDGE/YV_Season_2026.md` - последний state сезона.
+2. Прочитать `02_KNOWLEDGE/YV_Season_2026.md` - последний state сезона.
 3. Прочитать последнее в `04_CONTENT/2026/MM/DD/` - что уже опубликовано сегодня.
-4. Прочитать `05_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` - что в очереди.
+4. Прочитать `02_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` - что в очереди.
 5. Прочитать `06_TIMELINE/database/yv_season_2026.json` - источник правды по датам/слотам.
 
 ### 9.2 План
@@ -242,7 +242,7 @@ shot on 35mm film Kodak Portra 800, heavy film grain, Dazed magazine aesthetic -
 
 ### 9.6 Лог
 
-Обновить `06_TIMELINE/database/yv_season_2026.json` если событие сезонного масштаба. Обновить `05_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` если изменились слоты.
+Обновить `06_TIMELINE/database/yv_season_2026.json` если событие сезонного масштаба. Обновить `02_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` если изменились слоты.
 
 ---
 
@@ -290,10 +290,10 @@ ESC 2026 завершён 16.05 в Wiener Stadthalle. Окно две недел
 ## 11. БАЗЫ ДАННЫХ И ИСТОЧНИКИ
 
 **Внутренние:**
-- `05_KNOWLEDGE/CHANNEL_LORE_ESC_2025_2026.md` - полный список участников 2025 и 2026, running order, лор THE RESET.
-- `05_KNOWLEDGE/YV_Season_2026.md` - текущий state сезона (национальные отборы, песни, даты).
-- `05_KNOWLEDGE/ESC_2026_MASTER_DATABASE.md` - master-база сезона.
-- `05_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` - живой календарь слотов.
+- `02_KNOWLEDGE/CHANNEL_LORE_ESC_2025_2026.md` - полный список участников 2025 и 2026, running order, лор THE RESET.
+- `02_KNOWLEDGE/YV_Season_2026.md` - текущий state сезона (национальные отборы, песни, даты).
+- `02_KNOWLEDGE/ESC_2026_MASTER_DATABASE.md` - master-база сезона.
+- `02_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` - живой календарь слотов.
 - `06_TIMELINE/database/yv_season_2026.json` - программный source of truth.
 
 **Внешние (только официальные):**
@@ -311,7 +311,7 @@ ESC 2026 завершён 16.05 в Wiener Stadthalle. Окно две недел
 
 ## 12. АРХИВ И ИСТОРИЯ
 
-Что лежит в `_ARCHIVE/` и почему:
+Что лежит в `07_ARCHIVE/` и почему:
 
 - `02_ENGINE/` - python-инфраструктура Gemini-агентов (Argus, Dike, Helios, Hermes, Hive, Vitruvius и др.) + 100+ scripts. Не запускается. Сохранено для справки.
 - `_SHARED/` - общая Gemini-инфраструктура (CORE_MANIFESTO, OPERATOR_GUIDE, settings.json и т.д.). Не используется.
@@ -319,9 +319,9 @@ ESC 2026 завершён 16.05 в Wiener Stadthalle. Окно две недел
 - `master_plans_past/` - январь-апрель 2026.
 - `knowledge_legacy/` - дубликаты и устаревшие версии (Brand_Voice_Manifest_Ultimate, Rubric_Manifest_V20/V30, Style_Evolution_Log, Visual_Protocol, OPERATOR_DIRECTIVES, CHEATSHEET и др.). Их содержимое субсумировано этим OS.
 - `bibles_v6/` - YOURVISION_BIBLE.md V6.0. Заменён OS.
-- `templates_v4/` - шаблоны с маркером `EDITORIAL ANALYST V4.0`. Заменены файлами в `07_TEMPLATES/`.
+- `templates_v4/` - шаблоны с маркером `EDITORIAL ANALYST V4.0`. Заменены файлами в `03_TEMPLATES/`.
 
-Возвращать что-либо из `_ARCHIVE/` обратно в активное использование - только по явному решению оператора.
+Возвращать что-либо из `07_ARCHIVE/` обратно в активное использование - только по явному решению оператора.
 
 ---
 
