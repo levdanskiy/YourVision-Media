@@ -124,7 +124,8 @@
 ├── 04_CONTENT/YYYY/MM/DD/  ← все опубликованные посты
 ├── 05_ASSETS/              ← медиа, звуки, документы
 ├── 06_TIMELINE/            ← master_plans и database (yv_season_2026.json)
-└── 07_ARCHIVE/             ← всё, что больше не нужно (Gemini engine, старые планы, legacy bibles)
+├── 07_ARCHIVE/             ← всё, что больше не нужно (Gemini engine, старые планы, legacy bibles)
+└── 08_HUB/                 ← YV Hub (index.html + data.js + assets) - editorial dashboard, deploy на GitHub Pages
 ```
 
 **Имя файла поста:**
@@ -340,10 +341,12 @@ ESC 2026 завершён 16.05 в Wiener Stadthalle. Окно две недел
 
 **Внутренние:**
 - `02_KNOWLEDGE/CHANNEL_LORE_ESC_2025_2026.md` - полный список участников 2025 и 2026, running order, лор THE RESET.
-- `02_KNOWLEDGE/YV_Season_2026.md` - текущий state сезона (национальные отборы, песни, даты).
-- `02_KNOWLEDGE/ESC_2026_MASTER_DATABASE.md` - master-база сезона.
-- `02_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` - живой календарь слотов.
-- `06_TIMELINE/database/yv_season_2026.json` - программный source of truth.
+- `02_KNOWLEDGE/YV_Season_2026.md` - state сезона 2026 (закрыт 16.05.2026), финальные результаты, EBU/Asia/JESC данные.
+- `02_KNOWLEDGE/YV_Season_2027.md` - state сезона 2027 (заготовка, наполняется с 17.05.2026).
+- `02_KNOWLEDGE/ESC_2026_MASTER_DATABASE.md` - master-база сезона 2026.
+- `02_KNOWLEDGE/Live_Calendars/YV_ESC_Live_Calendar.md` - живой календарь слотов (look-ahead 90 дней).
+- `06_TIMELINE/database/yv_season_2026.json` - программный source of truth для сезона 2026.
+- `08_HUB/data.js` - визуальная модель сезона для editorial dashboard (Hub). При расхождении: `.md` базы > `data.js`. См. §13.
 
 **Внешние (только официальные):**
 - EBU / eurovision.tv для регламента и официальных списков.
@@ -355,6 +358,25 @@ ESC 2026 завершён 16.05 в Wiener Stadthalle. Окно две недел
 - Wiwibloggs/ESCXTRA - не цитируем без верификации.
 - Wikipedia - не цитируем как первоисточник.
 - Telegram-каналы конкурентов - не цитируем никогда.
+
+---
+
+## 13. YV HUB (editorial dashboard)
+
+`08_HUB/` - визуальная витрина YV: HTML+JS dashboard "Vienna 2026 Insider Hub" (Dazed-стиль, PWA-ready).
+
+**Структура:** `index.html` (UI) + `data.js` (модель сезона: battles, qualifiers, odds, awards) + `assets/` (флаги, обложки SF/GF, иконки).
+
+**Deploy:** GitHub Pages через отдельный репо `levdanskiy/YourEurovision-Hub`, локальное зеркало в `/home/levdanskiy/YourEurovision_Hub_Deploy/`. Подробный workflow синка - в `08_HUB/README.md`.
+
+**Правило источника правды:** `.md` базы из §11 - первичны. При публикации результата / котировок:
+1. Обновить `02_KNOWLEDGE/YV_Season_*.md` (§9.7).
+2. Обновить `08_HUB/data.js` соответствующими полями.
+3. Sync в deploy + git push (см. README).
+
+Не наоборот: data.js не источник, а отражение.
+
+**Безопасность:** GitHub PAT в remote URL деплоя и Telegram-токен в архивных скриптах - известные проблемы. Не использовать архивные скрипты без ротации токенов. См. предупреждения в `08_HUB/README.md`.
 
 ---
 
