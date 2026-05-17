@@ -501,6 +501,20 @@
             "country": "Norway",
             "artist": "Jonas Lovv",
             "status": "WAITING"
+        },
+        {
+            "date": "2026-05-07",
+            "time": "14:30",
+            "country": "Big 5 + Host",
+            "event": "First Rehearsals",
+            "status": "DONE"
+        },
+        {
+            "date": "2026-05-08",
+            "time": "11:30",
+            "country": "SF2 Part 1",
+            "event": "Second Rehearsals",
+            "status": "WAITING"
         }
     ]
 }
