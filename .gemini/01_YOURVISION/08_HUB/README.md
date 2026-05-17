@@ -9,8 +9,14 @@ Editorial dashboard "Vienna 2026 Insider Hub" - визуальная витри�
 ├── index.html      ← UI (Dazed-стиль: pink/cyan/acid, PWA-ready)
 ├── data.js         ← модель сезона (battles, qualifiers, odds, rehearsals, awards)
 ├── assets/         ← логотип, флаги SF, JPG-обложки SF/GF, иконки сердец
+├── tools/          ← скрипты обслуживания (yv_tg_sync cron + rebuilders) - см. tools/README.md
 └── README.md       ← этот файл
 ```
+
+## Открыть локально
+
+`file:///home/levdanskiy/YV_Editor_Hub.html` (симлинк на `08_HUB/index.html`) - старый удобный путь.
+Или прямо: `file:///home/levdanskiy/.gemini/01_YOURVISION/08_HUB/index.html`.
 
 ## Deploy
 
