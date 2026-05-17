@@ -247,19 +247,21 @@
       "category": "endgame",
       "question": "Что предлагаешь Линусу за отзыв иска?",
       "options": [
-        {"label": "Публичные кредиты со-автора (анонс после Eurovision)", "percent": null, "votes": null},
-        {"label": "Только роялти. Приватный settlement", "percent": null, "votes": null},
-        {"label": "Эскалировать. Юристы.", "percent": null, "votes": null}
+        {"label": "Публичные кредиты со-автора (анонс после Eurovision)", "percent": 50, "votes": 1},
+        {"label": "Только роялти. Приватный settlement", "percent": 50, "votes": 1},
+        {"label": "Эскалировать. Юристы.", "percent": 0, "votes": 0}
       ],
-      "total_votes": null,
-      "winner": null,
-      "winner_type": null,
-      "tie_resolution": null,
-      "impact_scoreboard": null,
-      "impact_content": null,
-      "stats_deltas": [],
+      "total_votes": 2,
+      "winner": "Кредиты + Роялти (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Третий путь - оба одновременно. Сегодня приватное соглашение (роялти 10% + NDA). После Eurovision - тихое обновление credits в стримингах через 6 недель. Эскалация отвергнута.",
+      "impact_scoreboard": "Эрик 3.5 → 3.3 (иск отозван за 2 часа до финала, чисто завершение)",
+      "impact_content": "День 7 - Алекс встречается с Линусом в холле «Империала», подписывает три документа. Эрик не узнаёт.",
+      "stats_deltas": [
+        {"character": "erik", "param": "reputation", "delta": -0.2, "reason": "Иск отозван приватно, без шума"}
+      ],
       "post_id": "VS-16.05-12-00-STORY-ERIK",
-      "notes": "Опрос открыт. Результаты будут после закрытия."
+      "notes": "Финальная ничья Эрика. Хибрид-резолюция как у Марко-тихого блока."
     },
     {
       "id": "vs-1-d6-q2",
@@ -269,19 +271,21 @@
       "category": "endgame",
       "question": "Что делаешь с диском Клары?",
       "options": [
-        {"label": "Взять диск. Прочитать сейчас.", "percent": null, "votes": null},
-        {"label": "Отказаться. Финал сегодня.", "percent": null, "votes": null},
-        {"label": "Принять условие: посмотреть вместе с Кларой.", "percent": null, "votes": null}
+        {"label": "Взять диск. Прочитать сейчас.", "percent": 50, "votes": 1},
+        {"label": "Отказаться. Финал сегодня.", "percent": 0, "votes": 0},
+        {"label": "Принять условие: посмотреть вместе с Кларой.", "percent": 50, "votes": 1}
       ],
-      "total_votes": null,
-      "winner": null,
-      "winner_type": null,
-      "tie_resolution": null,
-      "impact_scoreboard": null,
-      "impact_content": null,
-      "stats_deltas": [],
+      "total_votes": 2,
+      "winner": "Взять + Принять условие (ничья)",
+      "winner_type": "tie",
+      "tie_resolution": "Третий путь - и взять, и пригласить. Алекс берёт диск после Гранд-Финала (контроль), приглашает Клару на совместное чтение на следующее утро. Отказ отвергнут.",
+      "impact_scoreboard": "Жюльен 5.7 → 5.5 (угроза снята - Клара не за Жюльена, она за реабилитацию)",
+      "impact_content": "День 7 - совместное чтение протоколов жюри Базеля 2023. Клара была подставлена. Подпись сотрудника пресс-службы. Реабилитация без скандала.",
+      "stats_deltas": [
+        {"character": "julien", "param": "reputation", "delta": -0.2, "reason": "Угроза через предшественницу снята - Клара не атакует Eurovision"}
+      ],
       "post_id": "VS-16.05-14-00-STORY-JULIEN",
-      "notes": "Опрос открыт. Финальный опрос сезона. Результаты повлияют на эпилог 17.05."
+      "notes": "Финальный опрос сезона. Решение влияет на возможное возвращение Клары в систему."
     }
   ]
 }
