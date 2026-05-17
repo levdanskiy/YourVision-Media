@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>YourVision | Vienna 2026 Insider Hub</title>
+    <title>YourVision | ESC Insider Hub - Vienna closed, Sofia next</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:ital,wght@0,900;1,900&family=Forum&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <style>
@@ -838,23 +838,38 @@
     </div>
     
     <div class="timers-hero">
+        <!-- CARD 1: SEASON CLOSED (Vienna 2026 winner) -->
         <div style="display:flex; flex-direction:column;">
-            <a href="https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" style="text-decoration:none;"><div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-label"><i class="fi fi-rr-calendar"></i> Semi-Final 1 / 12.05</span><div id="timer-sf1" class="timer-val">--d --h --m --s</div></div></div></a>
-            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Eurovision+2026:+Semi-Final+1&dates=20260512T190000Z/20260512T220000Z&details=Live+from+Vienna:+https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" class="cal-btn">
-                <i class="fi fi-rr-calendar-plus"></i> Add to Calendar
-            </a>
+            <div class="timer-card" style="border-color:#ffd700; background:rgba(255,215,0,0.05); animation:none;">
+                <div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg'); filter:brightness(0.45) saturate(1.2);"></div>
+                <div class="timer-info">
+                    <span class="timer-label" style="color:#ffd700;"><i class="fi fi-rr-trophy-star"></i> Vienna 2026 / Closed 16.05</span>
+                    <div class="timer-val" style="color:#ffd700; font-size:1.4rem;">🇧🇬 DARA - 516</div>
+                    <div style="font-size:0.65rem; color:#aaa; margin-top:8px; text-transform:uppercase; letter-spacing:0.1em;">«Bangaranga» / Jury + Televote double win</div>
+                </div>
+            </div>
         </div>
+        <!-- CARD 2: NEXT EVENT (JESC Albania) -->
         <div style="display:flex; flex-direction:column;">
-            <a href="https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" style="text-decoration:none;"><div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-label"><i class="fi fi-rr-calendar"></i> Semi-Final 2 / 14.05</span><div id="timer-sf2" class="timer-val">--d --h --m --s</div></div></div></a>
-            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Eurovision+2026:+Semi-Final+2&dates=20260514T190000Z/20260514T220000Z&details=Live+from+Vienna:+https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" class="cal-btn">
-                <i class="fi fi-rr-calendar-plus"></i> Add to Calendar
-            </a>
+            <div class="timer-card">
+                <div class="timer-poster" style="background:linear-gradient(135deg, #c41e3a 0%, #000 100%);"></div>
+                <div class="timer-info">
+                    <span class="timer-label"><i class="fi fi-rr-calendar"></i> Next: JESC ALB / 30.05</span>
+                    <div id="timer-jescAlb" class="timer-val">--d --h --m --s</div>
+                    <div style="font-size:0.65rem; color:#aaa; margin-top:8px; text-transform:uppercase; letter-spacing:0.1em;">Festivali i Këngës për Fëmijë - Night 1</div>
+                </div>
+            </div>
         </div>
+        <!-- CARD 3: ROAD TO SOFIA 2027 -->
         <div style="display:flex; flex-direction:column;">
-            <a href="https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" style="text-decoration:none;"><div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-label"><i class="fi fi-rr-calendar"></i> Grand Final / 16.05</span><div id="timer-gf" class="timer-val">--d --h --m --s</div></div></div></a>
-            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Eurovision+2026:+Grand+Final&dates=20260516T190000Z/20260516T230000Z&details=Live+from+Vienna:+https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" class="cal-btn">
-                <i class="fi fi-rr-calendar-plus"></i> Add to Calendar
-            </a>
+            <div class="timer-card" style="border-color:var(--cyan);">
+                <div class="timer-poster" style="background:linear-gradient(135deg, #009b75 0%, #d62612 100%);"></div>
+                <div class="timer-info">
+                    <span class="timer-label" style="color:var(--cyan);"><i class="fi fi-rr-roadmap"></i> Road to Sofia 2027</span>
+                    <div id="timer-escSofia" class="timer-val" style="color:var(--cyan);">--d --h --m --s</div>
+                    <div style="font-size:0.65rem; color:#aaa; margin-top:8px; text-transform:uppercase; letter-spacing:0.1em;">Host: 🇧🇬 БНТ / City + arena TBA / target ~15.05.2027</div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -939,7 +954,7 @@
             <div id="news-grid"></div>
 
             <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-book-alt"></i> ENCYCLOPEDIA 2026 / PARTICIPANTS</div>
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-book-alt"></i> ENCYCLOPEDIA 2026 / ARCHIVE</div>
                 <div id="encyclo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:15px; margin-top:20px;"></div>
             </div>
         </main>
@@ -951,31 +966,41 @@
             </div>
 
             <div class="card">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> RU-TOP: SIGNAL 20 - 07.04.2026</div>
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> RU-TOP: SIGNAL 20 / FINAL CHART</div>
                 <div id="chart-list"></div>
             </div>
             
+            <!-- INDUSTRY MEMO (заменил Eurogroove vote, закрытый 05.04) -->
             <div id="vote-sect" class="card" style="margin-top:30px; border-color:var(--acid);">
-                <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;">VOTE NOW: EUROGROOVE - VIENNA PRELUDE</div>
+                <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;"><i class="fi fi-rr-document-signed"></i> INDUSTRY MEMO / POST-VIENNA</div>
                 <div id="nominee-list"></div>
-                
-                <div style="margin-top:25px; padding:20px; background:rgba(204,255,0,0.05); border-radius:20px; border:1px solid rgba(204,255,0,0.1);">
-                    <div style="font-weight:900; color:var(--acid); font-size:0.7rem; text-transform:uppercase; margin-bottom:15px; letter-spacing:0.1em;">🎵 LISTEN TO NOMINEES:</div>
-                    <div style="display:flex; flex-direction:column; gap:10px;">
-                        <a href="https://open.spotify.com/playlist/4gJEGeaYPeLFMmMdbgjTtG?si=3ecc0a88e218470f" target="_blank" class="nav-link" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.1);"><i class="fi fi-brands-spotify"></i> Spotify Playlist</a>
-                        <a href="https://music.youtube.com/playlist?list=PLk4_4ipLm5Q1gCZ5wjfdd9dHGKu0VbbqX&si=Z8Eg8q8X0YT6rg8i" target="_blank" class="nav-link" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.1);"><i class="fi fi-brands-youtube"></i> YT Music Playlist</a>
-                        <a href="https://youtube.com/playlist?list=PLm7BqXxXyyAjf72JopkqKN6R0xHWWwyYr&si=xF8fs-ufzMKcT4ox" target="_blank" class="nav-link" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.1);"><i class="fi fi-rr-play-alt"></i> YouTube Playlist</a>
+
+                <div style="display:flex; flex-direction:column; gap:14px; margin-top:10px;">
+                    <div style="padding:14px 16px; background:rgba(204,255,0,0.04); border-radius:12px; border-left:3px solid var(--acid);">
+                        <div style="font-weight:900; color:var(--acid); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:6px;">EBU / Martin Green</div>
+                        <div style="font-size:0.8rem; color:#ddd; line-height:1.5;">AI-композиции запрещены: «Песни всегда будут написаны исключительно людьми». Полный переход на онлайн-голосование тормозится 35 вещателями.</div>
                     </div>
-                    
-                    <div style="margin-top:20px; padding-top:15px; border-top:1px solid rgba(204,255,0,0.1);">
-                        <div style="color:#aaa; font-size:0.75rem; line-height:1.4;">
-                            🗳 <b>Голосование до:</b> 5 апреля, 23:59 (Рига)<br>
-                            📻 <b>Премьера итогов:</b> 7 апреля, 18:00
-                        </div>
+
+                    <div style="padding:14px 16px; background:rgba(204,255,0,0.04); border-radius:12px; border-left:3px solid var(--acid);">
+                        <div style="font-weight:900; color:var(--acid); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:6px;">🇨🇦 Canada watch</div>
+                        <div style="font-size:0.8rem; color:#ddd; line-height:1.5;">CBC/Radio-Canada прислали 3 наблюдателей в Вену. Ассоциированный член EBU с 1950. Дебют 2027 - открытый вопрос.</div>
+                    </div>
+
+                    <div style="padding:14px 16px; background:rgba(204,255,0,0.04); border-radius:12px; border-left:3px solid var(--acid);">
+                        <div style="font-weight:900; color:var(--acid); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:6px;">🇭🇺 Hungary return?</div>
+                        <div style="font-size:0.8rem; color:#ddd; line-height:1.5;">Грин допустил возвращение Венгрии после смены политического ландшафта. Не участвует с 2019.</div>
+                    </div>
+
+                    <div style="padding:14px 16px; background:rgba(204,255,0,0.04); border-radius:12px; border-left:3px solid var(--acid);">
+                        <div style="font-weight:900; color:var(--acid); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:6px;">🌏 ESC Asia / Бьоркман</div>
+                        <div style="font-size:0.8rem; color:#ddd; line-height:1.5;">Музыкальный директор азиатской версии - Кристер Бьоркман. Старт нацотборов - август 2026, первая страна 🇧🇹 Бутан. Финал 14.11 в Бангкоке.</div>
+                    </div>
+
+                    <div style="padding:14px 16px; background:rgba(255,215,0,0.04); border-radius:12px; border-left:3px solid #ffd700;">
+                        <div style="font-weight:900; color:#ffd700; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.12em; margin-bottom:6px;">🏆 Marcel Bezençon 2026</div>
+                        <div style="font-size:0.8rem; color:#ddd; line-height:1.5;">Press - 🇦🇺 Delta Goodrem. Artistic - 🇧🇬 DARA. Composer - 🇩🇰 Søren Torpegaard Lund («Før Vi Går Hjem»).</div>
                     </div>
                 </div>
-
-                <a href="https://strawpoll.com/mpnb105Xby5" target="_blank" class="order-btn" style="background:var(--acid); border-color:var(--acid); color:#000; margin-top:20px; font-weight:900;"><i class="fi fi-rr-checkbox"></i> OPEN STRAWPOLL VOTE</a>
             </div>
         </aside>
     </div>
@@ -995,7 +1020,7 @@
                 recently: "НЕДАВНО В ЭФИРЕ", bookmakers: "СТАВКИ БУКМЕКЕРОВ", standings: "YOURVISION CUP / 2026 ТАБЛИЦА",
                 qualified: "ПРОШЛИ", eliminated: "ВЫБЫЛИ", search: "ПОИСК СИГНАЛОВ, СТРАН ИЛИ РЕЗУЛЬТАТОВ...",
                 roadmap: "ИНТЕРАКТИВНЫЙ ГРАФИК", ws_chart: "RU-TOP: SIGNAL 20",
-                vote_now: "ГОЛОСУЙТЕ: EUROGROOVE - VIENNA PRELUDE", listen: "СЛУШАТЬ НОМИНАНТОВ:", open_vote: "ОТКРЫТЬ ГОЛОСОВАНИЕ",
+                vote_now: "INDUSTRY MEMO / POST-VIENNA", listen: "СЛУШАТЬ НОМИНАНТОВ:", open_vote: "ОТКРЫТЬ ГОЛОСОВАНИЕ",
                 read_more: "ЧИТАТЬ ПОЛНОСТЬЮ", show_less: "СВЕРНУТЬ", copy: "Копировать", share: "Поделиться", read_min: "мин чтения",
                 vienna: "ВЕНА", riga: "РИГА", deadline: "Голосование до:", premiere: "Премьера итогов:",
                 your_time: "ВАШЕ ВРЕМЯ", your_city: "ЛОКАЦИЯ", translate: "ПЕРЕВЕСТИ",
@@ -1012,7 +1037,7 @@
                 recently: "RECENTLY PLAYED", bookmakers: "BOOKMAKERS ODDS", standings: "YOURVISION CUP / 2026 STANDINGS",
                 qualified: "QUALIFIED", eliminated: "ELIMINATED", search: "SEARCH FOR SIGNALS, COUNTRIES OR RESULTS...",
                 roadmap: "INTERACTIVE ROADMAP", ws_chart: "RU-TOP: SIGNAL 20",
-                vote_now: "VOTE NOW: EUROGROOVE - VIENNA PRELUDE", listen: "LISTEN TO NOMINEES:", open_vote: "OPEN STRAWPOLL VOTE",
+                vote_now: "INDUSTRY MEMO / POST-VIENNA", listen: "LISTEN TO NOMINEES:", open_vote: "OPEN STRAWPOLL VOTE",
                 read_more: "READ FULL INSIDE", show_less: "SHOW LESS", copy: "Copy Link", share: "Share", read_min: "min read",
                 vienna: "VIENNA", riga: "RIGA", deadline: "Deadline:", premiere: "Premiere:",
                 your_time: "YOUR TIME", your_city: "LOCATION", translate: "TRANSLATE",
@@ -1029,7 +1054,7 @@
                 recently: "НЕЩОДАВНО В ЕФІРІ", bookmakers: "СТАВКИ БУКМЕКЕРІВ", standings: "YOURVISION CUP / 2026 ТАБЛИЦЯ",
                 qualified: "ПРОЙШЛИ", eliminated: "ВИБУЛИ", search: "ПОШУК СИГНАЛІВ, КРАЇН АБО РЕЗУЛЬТАТІВ...",
                 roadmap: "ІНТЕРАКТИВНИЙ ГРАФИК", ws_chart: "RU-TOP: SIGNAL 20",
-                vote_now: "ГОЛОСУЙТЕ: EUROGROOVE - VIENNA PRELUDE", listen: "СЛУХАТИ НОМІНАНТОВ:", open_vote: "ВІДКРИТИ ГОЛОСУВАННЯ",
+                vote_now: "ГАЛУЗЕВИЙ МЕМО / ПІСЛЯ ВІДНЯ", listen: "СЛУХАТИ НОМІНАНТОВ:", open_vote: "ВІДКРИТИ ГОЛОСУВАННЯ",
                 read_more: "ЧИТАТИ ПОВНІСТЮ", show_less: "ЗГОРНУТИ", copy: "Копіювати", share: "Поділитися", read_min: "хв читання",
                 vienna: "ВІДЕНЬ", riga: "РИГА", deadline: "Голосування до:", premiere: "Прем'єра підсумків:",
                 your_time: "ВАШ ЧАС", your_city: "ЛОКАЦІЯ", translate: "ПЕРЕКЛАСТИ",
@@ -1046,7 +1071,7 @@
                 recently: "NESEN SKANĒJA", bookmakers: "BUKMEIKERU PROGNOZES", standings: "YOURVISION KAUSS / 2026 REZULTĀTI",
                 qualified: "KVALIFICĒJĀS", eliminated: "IZSTĀJĀS", search: "MEKLĒT SIGNĀLUS, VALSTIS VAI REZULTĀTUS...",
                 roadmap: "INTERAKTĪVAIS PLĀNS", ws_chart: "RU-TOP: SIGNAL 20",
-                vote_now: "BALSOJIET: EUROGROOVE - VIENNA PRELUDE", listen: "KLAUSĪTIES NOMINANTUS:", open_vote: "ATVERT BALSOŠANU",
+                vote_now: "NOZARES MEMO / PĒC VĪNES", listen: "KLAUSĪTIES NOMINANTUS:", open_vote: "ATVERT BALSOŠANU",
                 read_more: "LASĪT VAIRĀK", show_less: "RĀDĪT MAZĀK", copy: "Kopēt saiti", share: "Dalīties", read_min: "min lasīšanai",
                 vienna: "VĪNE", riga: "RĪGA", deadline: "Balsošana līdz:", premiere: "Rezultātu pirmizrāde:",
                 your_time: "JŪSU LAIKS", your_city: "LOKĀCIJA", translate: "PĀRTULKOT",
@@ -1063,7 +1088,7 @@
                 recently: "NYLIGEN SPELADE", bookmakers: "BOOKMAKERS ODDS", standings: "YOURVISION CUP / 2026 STÄLLNING",
                 qualified: "KVALIFICERADE", eliminated: "ELIMINERADE", search: "SÖK SIGNALE, LÄNDER ELLER RESULTAT...",
                 roadmap: "INTERAKTIV ROADMAP", ws_chart: "RU-TOP: SIGNAL 20",
-                vote_now: "RÖSTA NU: EUROGROOVE - VIENNA PRELUDE", listen: "LYSSNA PÅ NOMINERADE:", open_vote: "ÖPPNA RÖSTNING",
+                vote_now: "BRANSCHMEMO / POST-WIEN", listen: "LYSSNA PÅ NOMINERADE:", open_vote: "ÖPPNA RÖSTNING",
                 read_more: "LÄS HELA INSIDAN", show_less: "VISA MINDRE", copy: "Kopiera länk", share: "Dela", read_min: "min läsning",
                 vienna: "WIEN", riga: "RIGA", deadline: "Röstning till:", premiere: "Premiär för resultat:",
                 your_time: "DIN TID", your_city: "PLATS", translate: "ÖVERSÄTTA",
@@ -1085,7 +1110,11 @@
             render();
         }
 
-        const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
+        const DATES = {
+            jescAlb: new Date('2026-05-30T20:00:00+02:00'),    // JESC Albania Night 1
+            umkOpen: new Date('2026-08-17T00:01:00+02:00'),    // UMK 2027 applications open
+            escSofia: new Date('2027-05-15T22:00:00+02:00')    // ESC 2027 Sofia (approximate, TBA)
+        };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
         const getH = (id) => {
             if (id === "70") return "assets/heart_white_2026.svg";
