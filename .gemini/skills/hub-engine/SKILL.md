@@ -9,8 +9,10 @@ description: Техническое управление интерактивн�
 
 ## 📁 ФАЙЛЫ
 
-- **`/home/levdanskiy/YV_Editor_Hub.html`** — основной интерфейс
-- **`/home/levdanskiy/data.js`** — данные: `news`, `qualifiers`, `wildcards`, `DATES`
+- **`/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/index.html`** — основной интерфейс (был `YV_Editor_Hub.html` в /home/levdanskiy/, перенесён 17.05.2026)
+- **`/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/data.js`** — данные: `news`, `qualifiers`, `wildcards`, `DATES`
+- **`/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/README.md`** — workflow и security warnings
+- **Deploy:** `/home/levdanskiy/YourEurovision_Hub_Deploy/` (отдельный git, GitHub Pages)
 
 ## 🧱 СТРУКТУРА ДАННЫХ
 
@@ -23,22 +25,11 @@ description: Техническое управление интерактивн�
 - **Covers:** Приоритет iTunes Search API перед MyRadio24.
 - **History:** Контроль корректности записи 10 последних треков в `localStorage`.
 
-## 🤖 ИНТЕГРАЦИЯ С HIVE
+## 🤖 ИНТЕГРАЦИЯ С HIVE (DEPRECATED 17.05.2026)
 
-- **HEPHAESTUS** автоматически проверяет Hub при каждом тике: `python3 hephaestus_builder.py`
-  - Результат в: `01_YOURVISION/_SHARED/build_report.json`
-  - Если статус `FAIL` — передать ошибку в `code-sentinel` → `deepseek-bridge`
-- **HELIOS** сканирует `content_plan.json` и флагует посты в `publish_queue.json`
-  - Hub отображает только посты со статусом `published`
+Hive-инфраструктура (HEPHAESTUS, HELIOS, hive_commander.py) архивирована в `01_YOURVISION/07_ARCHIVE/02_ENGINE/`. Канал управляется вручную Claude по правилам `01_YOURVISION/01_GENERAL/YOURVISION_OS.md`.
 
 ## 🛡 ПРОВЕРКА ПЕРЕД СОХРАНЕНИЕМ
 
-- После каждой правки `YV_Editor_Hub.html` убедиться, что не удалены закрывающие теги `</script>` или `</div>`.
-- Запустить: `node -c /home/levdanskiy/data.js` — должен пройти без ошибок.
-- Вызвать `code-sentinel` для финальной валидации.
-
-## 🔗 ИНТЕГРАЦИЯ
-
-- `code-sentinel` — валидация JS/HTML перед коммитом
-- `deepseek-bridge` — рефакторинг и исправление ошибок кода
-- `hive_commander.py` → HEPHAESTUS — автоматический мониторинг целостности
+- После каждой правки `index.html` убедиться, что не удалены закрывающие теги `</script>` или `</div>`.
+- Запустить: `node -c /home/levdanskiy/.gemini/01_YOURVISION/08_HUB/data.js` — должен пройти без ошибок.

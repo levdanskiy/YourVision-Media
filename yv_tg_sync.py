@@ -77,25 +77,29 @@ def get_telegram_news():
         except: continue
     return all_posts
 
+HUB_DIR = "/home/levdanskiy/.gemini/01_YOURVISION/08_HUB"
+DEPLOY_DIR = "/home/levdanskiy/YourEurovision_Hub_Deploy"
+
 def sync():
     posts = get_telegram_news()
     posts.sort(key=lambda x: x["ts"], reverse=True)
     final_news = posts[:25]
-    
-    if os.path.exists("data.js"):
-        with open("data.js", 'r', encoding='utf-8') as f:
+
+    data_path = os.path.join(HUB_DIR, "data.js")
+    if os.path.exists(data_path):
+        with open(data_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        
+
         # Надежный парсинг через JSON
         match = re.search(r"var DATA = ({.*});", content, re.DOTALL)
         if match:
             data_obj = json.loads(match.group(1))
             data_obj["news"] = final_news
             new_js = "var DATA = " + json.dumps(data_obj, indent=4, ensure_ascii=False) + ";"
-            
-            with open("data.js", 'w', encoding='utf-8') as f:
+
+            with open(data_path, 'w', encoding='utf-8') as f:
                 f.write(new_js)
-            with open("YourEurovision_Hub_Deploy/data.js", 'w', encoding='utf-8') as f:
+            with open(os.path.join(DEPLOY_DIR, "data.js"), 'w', encoding='utf-8') as f:
                 f.write(new_js)
             print("Sync complete. Data is clean.")
 
