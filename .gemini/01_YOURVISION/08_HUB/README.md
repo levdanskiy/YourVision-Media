@@ -49,6 +49,31 @@ data.js - это срез state'а сезона для визуализации.
 
 **Правило:** при изменении результатов / котировок / квалификаций сначала обновляем `.md` базы (см. OS §9bis), потом руками переносим в `data.js`. Не наоборот.
 
+## Правила визуала
+
+### Флаги стран = heart-shape ОБЯЗАТЕЛЬНО
+
+Все флаги стран в Хабе отображаются как `<img class="heart-shape">` с обрезкой по официальной маске сердца Eurovision. Это signature бренда YV.
+
+Источники:
+- Европа: `https://www.eurovision.com/static/images/flags/flag_XX.svg` (двухбуквенный ISO в нижнем регистре)
+- Азия (kh/vn/th/my/ph/np/bd/la/bt): `https://flagcdn.com/w160/XX.png`
+
+Стандартный inline-флаг (14px):
+```html
+<img src="https://www.eurovision.com/static/images/flags/flag_bg.svg" class="heart-shape" style="width:14px; height:14px; vertical-align:middle;">
+```
+
+**Запрещено:** текст-эмодзи флагов (🇧🇬 🇫🇮 и т.д.) в hardcoded HTML. Они выглядят как двухбуквенные коды на Windows/Linux и ломают визуальную узнаваемость.
+
+**Исключение:** эмодзи допустимы в news-постах и DATA-полях, проходящих через `replaceFlags()` - функция автоматически конвертирует их в heart-shape img.
+
+**Не флаги (можно эмодзи):** 🌏 (регион), 🏆 (награда), 🇪🇺 (отдельный обработчик).
+
+### Иконки рубрик и UI
+
+UI-иконки через flaticon UICons: `<i class="fi fi-rr-NAME"></i>`. Не смешивать с эмодзи.
+
 ## Безопасность
 
 ⚠️ В git remote деплой-репо вшит GitHub PAT в открытом виде (видно в `git remote -v`). Рекомендация - перевести на SSH-remote или хранить токен в `git credential helper`. Архивированный `07_ARCHIVE/02_ENGINE/scripts/hub_bot_sync.py` содержит Telegram bot-токен hardcoded - токен надо ротировать если планируется снова использовать.
