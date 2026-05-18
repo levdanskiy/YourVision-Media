@@ -48,7 +48,7 @@
             }
         }
 
-        /* PRESS TICKER - static, no animation */
+        /* PRESS TICKER - scrolling, restored */
         .ticker-wrap {
             position: fixed; top: 0; left: 0; width: 100%; height: 28px;
             background: var(--accent); color: #fff; z-index: 10001;
@@ -58,10 +58,14 @@
         }
         .ticker-move {
             display: flex; white-space: nowrap;
-            animation: none;
-            padding-left: 20px;
+            animation: ticker-move 90s linear infinite;
         }
-        .ticker-item { padding: 0 28px; display: flex; align-items: center; gap: 10px; opacity: 0.95; }
+        .ticker-wrap:hover .ticker-move { animation-play-state: paused; }
+        @keyframes ticker-move {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .ticker-item { padding: 0 32px; display: flex; align-items: center; gap: 8px; opacity: 0.95; }
 
         /* FILM GRAIN - removed (was animated noise, CPU waste + accessibility issue) */
         .film-grain, .aurora-container { display: none !important; }
@@ -1195,10 +1199,13 @@
                 your_time: "ВАШЕ ВРЕМЯ", your_city: "ЛОКАЦИЯ", translate: "ПЕРЕВЕСТИ",
                 months: ["ЯНВАРЯ", "ФЕВРАЛЯ", "МАРТА", "АПРЕЛЯ", "МАЯ", "ИЮНЯ", "ИЮЛЯ", "АВГУСТА", "СЕНТЯБРЯ", "ОКТЯБРЯ", "НОЯБРЯ", "ДЕКАБРЯ"],
                 ticker: [
-                    "🚨 МОЛНИЯ: EUROVISION ASIA 2026 ОФИЦИАЛЬНО ЗАПУЩЕН В БАНГКОКЕ",
-                    "📊 СТАВКИ: ФИНЛЯНДИЯ ЛИДИРУЕТ С ВЕРОЯТНОСТЬЮ 28%",
-                    "⚔️ КУБОК: ВЕЛИКОБРИТАНИЯ ПРОШЛА В ЧЕТВЕРТЬФИНАЛ",
-                    "📻 В ЭФИРЕ: СЛУШАЙТЕ RADIO YOURVISION - ТОЛЬКО ХИТЫ"
+                    "🏆 ESC 2026 ЗАКРЫТ: 🇧🇬 DARA «BANGARANGA» - 516 БАЛЛОВ, JURY+TELEVOTE",
+                    "🇧🇬 СОФИЯ 2027: BНТ ГОТОВИТСЯ ПРИНЯТЬ 71-Й КОНКУРС",
+                    "🇫🇮 UMK 2027: ФИНАЛ 20.02.2027 - NOKIA ARENA, TAMPERE",
+                    "🌏 EUROVISION ASIA: БЬОРКМАН ВОЗГЛАВИЛ МУЗ.ДЕПАРТАМЕНТ, СТАРТ В АВГУСТЕ",
+                    "🇨🇦 CBC/RADIO-CANADA: НАБЛЮДАТЕЛИ В ВЕНЕ, ДЕБЮТ 2027 ОБСУЖДАЕТСЯ",
+                    "🇭🇺 ВЕНГРИЯ: ГРИН ДОПУСТИЛ ВОЗВРАЩЕНИЕ ПОСЛЕ СМЕНЫ ВЛАСТИ",
+                    "📻 YV RADIO - В ЭФИРЕ КРУГЛОСУТОЧНО"
                 ]
             },
             en: {
@@ -1212,10 +1219,13 @@
                 your_time: "YOUR TIME", your_city: "LOCATION", translate: "TRANSLATE",
                 months: ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"],
                 ticker: [
-                    "🚨 BREAKING: EUROVISION ASIA 2026 OFFICIALLY LAUNCHED IN BANGKOK",
-                    "📊 ODDS UPDATE: FINLAND LEADS WITH 28% PROBABILITY",
-                    "⚔️ CUP UPDATE: UNITED KINGDOM QUALIFIED FOR QUARTER-FINALS",
-                    "📻 ON AIR: TUNE IN TO YOURVISION RADIO FOR NON-STOP SIGNALS"
+                    "🏆 ESC 2026 CLOSED: 🇧🇬 DARA «BANGARANGA» - 516 PTS, JURY+TELEVOTE DOUBLE WIN",
+                    "🇧🇬 SOFIA 2027: BNT PREPARING TO HOST THE 71ST CONTEST",
+                    "🇫🇮 UMK 2027 FINAL: 20.02.2027 - NOKIA ARENA, TAMPERE",
+                    "🌏 EUROVISION ASIA: BJORKMAN HEADS MUSIC DEPT, NATIONALS START AUGUST",
+                    "🇨🇦 CBC/RADIO-CANADA: OBSERVERS IN VIENNA, 2027 DEBUT DISCUSSED",
+                    "🇭🇺 HUNGARY: GREEN HINTED AT RETURN AFTER POLITICAL SHIFT",
+                    "📻 YV RADIO - ON AIR 24/7"
                 ]
             },
             ua: {
@@ -1229,10 +1239,13 @@
                 your_time: "ВАШ ЧАС", your_city: "ЛОКАЦІЯ", translate: "ПЕРЕКЛАСТИ",
                 months: ["СІЧНЯ", "ЛЮТОГО", "БЕРЕЗНЯ", "КВІТНЯ", "ТРАВНЯ", "ЧЕРВНЯ", "ЛИПНЯ", "СЕРПНЯ", "ВЕРЕСНЯ", "ЖОВТНЯ", "ЛИСТОПАДА", "ГРУДНЯ"],
                 ticker: [
-                    "🚨 БЛИСКАВКА: EUROVISION ASIA 2026 ОФІЦІЙНО ЗАПУЩЕНО В БАНГКОКУ",
-                    "📊 СТАВКИ: ФІНЛЯНДІЯ ЛІДИРУЄ З ІМОВІРНІСТЮ 28%",
-                    "⚔️ КУБОК: ВЕЛИКОБРИТАНІЯ ПРОЙШЛА В ЧВЕРТЬФИНАЛ",
-                    "📻 В ЕФІРІ: СЛУХАЙТЕ RADIO YOURVISION - ТІЛЬКИ ХИТИ"
+                    "🏆 ESC 2026 ЗАКРИТО: 🇧🇬 DARA «BANGARANGA» - 516 БАЛІВ",
+                    "🇧🇬 СОФІЯ 2027: BНТ ГОТУЄТЬСЯ ПРИЙНЯТИ 71-Й КОНКУРС",
+                    "🇫🇮 UMK 2027 ФІНАЛ: 20.02.2027 - NOKIA ARENA, ТАМПЕРЕ",
+                    "🌏 EUROVISION ASIA: БЬОРКМАН ОЧОЛИВ МУЗ.ДЕПАРТАМЕНТ, СТАРТ У СЕРПНІ",
+                    "🇨🇦 CBC/RADIO-CANADA: СПОСТЕРІГАЧІ В ВІДНІ, ДЕБЮТ 2027 ОБГОВОРЮЄТЬСЯ",
+                    "🇭🇺 УГОРЩИНА: ГРІН ДОПУСТИВ ПОВЕРНЕННЯ",
+                    "📻 YV RADIO - В ЕФІРІ ЦІЛОДОБОВО"
                 ]
             },
             lv: {
@@ -1246,10 +1259,13 @@
                 your_time: "JŪSU LAIKS", your_city: "LOKĀCIJA", translate: "PĀRTULKOT",
                 months: ["JANVĀRĪ", "FEBRUĀRĪ", "MARTĀ", "APRĪLĪ", "MAIJĀ", "JŪNIJĀ", "JŪLIJĀ", "AUGUSTĀ", "SEPTEMBRĪ", "OKTOBRĪ", "NOVEMBRĪ", "DECEMBRĪ"],
                 ticker: [
-                    "🚨 JAUNUMI: EUROVISION ASIA 2026 OFICIĀLI ATKLĀTS BANGKOKĀ",
-                    "📊 LIKMES: SOMIJA IR LĪDERE AR 28% IESPĒJAMĪBU",
-                    "⚔️ KAUSS: APVIENOTĀ KARALISTE KVALIFICĒJĀS CETURTDAĻFINĀLAM",
-                    "📻 ĒTERĀ: KLAUSIETIES YOURVISION RADIO - TIKAI HITI"
+                    "🏆 ESC 2026 NOSLĒDZIES: 🇧🇬 DARA «BANGARANGA» - 516 PUNKTI",
+                    "🇧🇬 SOFIJA 2027: BNT GATAVOJAS UZŅEMT 71. KONKURSU",
+                    "🇫🇮 UMK 2027 FINĀLS: 20.02.2027 - NOKIA ARENA, TAMPERE",
+                    "🌏 EUROVISION ASIA: BJĒRKMANS VADA MŪZIKAS DEPT., NACIONĀLIE SĀKAS AUGUSTĀ",
+                    "🇨🇦 CBC/RADIO-CANADA: NOVĒROTĀJI VĪNĒ, 2027 DEBIJA TIEK APSPRIESTA",
+                    "🇭🇺 UNGĀRIJA: GRĪNS PIEMINĒJA IESPĒJAMU ATGRIEŠANOS",
+                    "📻 YV RADIO - ĒTERĀ 24/7"
                 ]
             },
             se: {
@@ -1263,10 +1279,13 @@
                 your_time: "DIN TID", your_city: "PLATS", translate: "ÖVERSÄTTA",
                 months: ["JANUARI", "FEBRUARI", "MARS", "APRIL", "MAJ", "JUNI", "JULI", "AUGUSTI", "SEPTEMBER", "OKTOBER", "NOVEMBER", "DECEMBER"],
                 ticker: [
-                    "🚨 BREAKING: EUROVISION ASIA 2026 OFFICIELLT LANSERAD I BANGKOK",
-                    "📊 ODDS: FINLAND LEDER MED 28% SANNOLIKHET",
-                    "⚔️ CUP: STORBRITANNIEN KVALIFICERAD FÖR KVARTSFINAL",
-                    "📻 ON AIR: LYSSNA PÅ YOURVISION RADIO - BARA HITS"
+                    "🏆 ESC 2026 AVSLUTAT: 🇧🇬 DARA «BANGARANGA» - 516 POÄNG",
+                    "🇧🇬 SOFIA 2027: BNT FÖRBEREDER SIG ATT VÄRDA 71:A TÄVLINGEN",
+                    "🇫🇮 UMK 2027 FINAL: 20.02.2027 - NOKIA ARENA, TAMMERFORS",
+                    "🌏 EUROVISION ASIA: BJÖRKMAN LEDER MUSIKAVDELNINGEN, NATIONELLA STARTAR I AUGUSTI",
+                    "🇨🇦 CBC/RADIO-CANADA: OBSERVATÖRER I WIEN, 2027 DEBUT DISKUTERAS",
+                    "🇭🇺 UNGERN: GREEN ANTYDDE MÖJLIG ÅTERKOMST",
+                    "📻 YV RADIO - I ETERN 24/7"
                 ]
             }
         };
