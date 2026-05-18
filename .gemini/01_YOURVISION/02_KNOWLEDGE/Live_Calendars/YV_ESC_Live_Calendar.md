@@ -15,7 +15,11 @@
 | 17.05 | 02:30 | EU | Grand Final Deep Dive (DARA 516 баллов) | COVERED | `04_CONTENT/2026/05/17/YV-17.05-02-30-EU-GrandFinalDeepDive.md` |
 | 17.05 | TBA | 🇧🇬 BUL | Профиль DARA / разбор «Bangaranga» (DNA) | PENDING |  |
 | 17.05 | TBA | 🇧🇬 BUL | БНТ - первые заявления о хостинге 2027 | PENDING |  |
+| 18.05 | 13:00 | 🇵🇭 PHL | ABS-CBN объявил августовское окно нацотбора ESC Asia | COVERED | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
+| 18.05 | 18:30 | 🇧🇬 BGR | Шорт-лист 3 городов на ESC 2027: София/Пловдив/Варна | COVERED | `04_CONTENT/2026/05/18/YV-18.05-18-30-BG-HostCityShortlist.md` |
 | 18.05 | TBA | EU | Разбор сплита jury/televote (когда EBU опубликует) | PENDING |  |
+| 22-25.05 | TBA | 🇧🇬 BGR | Совет министров Болгарии создаёт оргкомитет ESC 2027 | PENDING |  |
+| июнь-июль | TBA | 🇧🇬 BGR | Финальный выбор города-хозяина из шорт-листа | TBA |  |
 | 18.05 | TBA | 🇫🇮 FIN | Финский провал: почему 6-е место (VISION) | PENDING |  |
 | 19.05 | TBA | 🇦🇺 AUS | Австралия 2-е: разбор стерильного вокала Delta Goodrem | PENDING |  |
 | 19.05 | TBA | 🇬🇧 GBR | UK 3-й год подряд 0 от зрителей: системный диагноз | PENDING |  |
