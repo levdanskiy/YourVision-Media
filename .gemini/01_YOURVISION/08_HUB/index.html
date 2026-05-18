@@ -1094,7 +1094,7 @@
                     <i class="fi fi-rr-share"></i> Share to Telegram
                 </button>
 
-                <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
+                <audio id="audio-stream" preload="none"></audio>
             </div>
             <div class="card">
                 <div class="section-title-base title-acid"><i class="fi fi-rr-history"></i> RECENTLY PLAYED</div>
@@ -1871,18 +1871,23 @@
         playBtn.onclick = (e) => {
             e.stopPropagation();  // prevent body onclick=syncRadio from interfering
             if (!isPlaying) {
-                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
+                // Use direct stream URL to avoid 302 redirect issues
+                audio.src = "https://listen7.myradio24.com/levdanskiy?v=" + Date.now();
                 audio.muted = false;
-                audio.volume = parseFloat(localStorage.getItem('yv_volume') || 0.5);
+                const savedVol = parseFloat(localStorage.getItem('yv_volume'));
+                audio.volume = isNaN(savedVol) || savedVol === 0 ? 0.5 : savedVol;
+                volSlider.value = audio.volume;
+
                 const p = audio.play();
                 if (p && p.then) {
                     p.then(() => {
                         isPlaying = true;
                         playBtn.style.background = "var(--accent)";
                         playBtn.innerHTML = '<i class="fi fi-rr-stop" style="font-size:1.5rem; color:#fff;" aria-hidden="true"></i>';
+                        console.log("Radio playing. Volume:", audio.volume, "Muted:", audio.muted);
                     }).catch(err => {
                         console.error("Radio play failed:", err);
-                        alert("Не удалось запустить радио: " + err.message + ". Проверь блокировку автозапуска в браузере.");
+                        alert("Радио не запускается: " + err.name + " - " + err.message);
                     });
                 }
             } else {
@@ -1891,6 +1896,14 @@
                 playBtn.innerHTML = '<i class="fi fi-rr-play" style="font-size:1.5rem; color:#000;" aria-hidden="true"></i>';
             }
         };
+
+        // Surface audio errors that don't throw on play()
+        audio.addEventListener('error', (e) => {
+            const err = audio.error;
+            if (err) console.error("Audio element error:", err.code, err.message);
+        });
+        audio.addEventListener('stalled', () => console.warn("Audio stalled"));
+        audio.addEventListener('playing', () => console.log("Audio playing event fired"));
     </script>
 </body>
 </html>
