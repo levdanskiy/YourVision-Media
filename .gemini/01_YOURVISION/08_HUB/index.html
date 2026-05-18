@@ -185,40 +185,54 @@
             font-style: normal;
         }
 
-        .layout { 
-            display: grid; 
-            grid-template-columns: 320px 1fr 380px; 
-            gap: 12px; 
-            align-items: start; 
-            max-width: 1800px;
+        /* Editorial newspaper layout (Phase 2 C3): main story + right rail */
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 360px;
+            grid-template-areas:
+                "main radio"
+                "main chart";
+            gap: 36px 48px;
+            align-items: start;
+            max-width: 1280px;
             margin: 0 auto;
         }
-
-        /* Responsive Breakpoints */
-        @media (max-width: 1600px) {
-            .layout { grid-template-columns: 320px 1fr 350px; gap: 25px; }
+        main.column { grid-area: main; max-width: 760px; }
+        #radio-sect.column { grid-area: radio; }
+        #chart-sect.column { grid-area: chart; }
+        .timers-hero {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        @media (max-width: 1200px) {
-            body { padding: 12px; }
-            .layout { grid-template-columns: 1fr; }
+        /* Responsive: tablet collapse */
+        @media (max-width: 1100px) {
+            .layout {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "main"
+                    "radio"
+                    "chart";
+                gap: 36px;
+            }
+            main.column { max-width: 100%; }
             .timers-hero { grid-template-columns: 1fr 1fr; gap: 15px; }
-            .timer-val { font-size: 0.85rem; }
-            .column:nth-child(1) { order: 2; } /* Radio goes after news */
-            .column:nth-child(2) { order: 1; } /* News first */
-            .column:nth-child(3) { order: 3; } /* Standings last */
+            .timer-val { font-size: 0.95rem; }
         }
 
         @media (max-width: 768px) {
-            .timers-hero { grid-template-columns: 1fr; gap: 10px; }
-            .timer-val { font-size: 2.5rem; }
-            .post-h { font-size: 2.5rem; }
-            .post-card { padding: 15px; border-radius: 10px; }
+            body { padding: 12px; }
+            .timers-hero { grid-template-columns: 1fr; gap: 12px; }
+            .timer-val { font-size: 1.4rem; }
+            .post-h { font-size: 2rem; }
+            .post-card { padding: 15px; border-radius: 6px; }
             .post-media { width: 100%; float: none; margin: 0 0 20px 0; }
             .post-card.featured .post-h { font-size: 1.3rem; }
-            .logo { font-size: 1.3rem; }
+            .logo { font-size: 1.6rem; }
             #bracket { grid-template-columns: 1fr !important; }
-            .bracket-connector { display: none; } /* Hide connectors on mobile for space */
+            .bracket-connector { display: none; }
+            .layout { gap: 28px; }
         }
 
         .column { display: flex; flex-direction: column; gap: 12px; position: relative; }
