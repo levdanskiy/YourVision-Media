@@ -32,8 +32,8 @@
 |---|---|---|---|---|---|
 | 01.06 | TBA | 🇦🇱 ALB | JESC отбор: Final Night | PENDING |  |
 | 06.06 | TBA | 🇦🇲 ARM | Eurovision Young Musicians (Yerevan) | PENDING |  |
-| 01.08 | TBA | 🇧🇹 BTN | ESC Asia: первый нацотбор (Бутан, под руководством Бьоркмана) | PENDING |  |
-| август | TBA | 🇵🇭 PHL | ESC Asia: нацотбор Филиппин (ABS-CBN, Roxy Liquigan) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
+| 01.08 | TBA | 🇧🇹 BTN | ESC Asia: нацотбор Бутана (BBS) | PENDING |  |
+| август | TBA | 🇵🇭 PHL | ESC Asia: нацотбор Филиппин (ABS-CBN, Roxy Liquigan, анонс 18.05) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
 | 17.08 | 00:01 | 🇫🇮 FIN | UMK 2027: открытие окна подачи заявок (yle.fi/umk) | PENDING |  |
 | 23.08 | 23:59 | 🇫🇮 FIN | UMK 2027: закрытие окна подачи заявок | PENDING |  |
 | август | TBA | 🌏 ASIA | ESC Asia: старт волны нацотборов | PENDING |  |
@@ -45,11 +45,16 @@
 
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
-| 19.09 | TBA | 🇳🇵 NEP | ESC Asia National Final (Himalaya TV) | PENDING |  |
+| 19.09 | TBA | 🇳🇵 NEP | ESC Asia: нацотбор Непала (Himalaya TV) | PENDING |  |
 | сентябрь | TBA | various | Подтверждения участия вещателей в ESC 2027 | TBA |  |
-| сентябрь | TBA | 🇮🇳 IND | ESC Asia: нацотбор Индии | TBA |  |
-| октябрь | TBA | 🇰🇿 KAZ | ESC Asia: нацотбор Казахстана | TBA |  |
-| 14.11 | TBA | 🌏 THA | ESC Asia Grand Final (Бангкок) | TBA |  |
+| сентябрь | TBA | 🇰🇷 KOR | ESC Asia: нацотбор Кореи (ENA / PK Inc) | TBA |  |
+| сентябрь-октябрь | TBA | 🇲🇾 MYS | ESC Asia: нацотбор Малайзии (Media Prima / TV3) | TBA |  |
+| сентябрь-октябрь | TBA | 🇻🇳 VNM | ESC Asia: нацотбор Вьетнама (VTV3) | TBA |  |
+| сентябрь-октябрь | TBA | 🇰🇭 KHM | ESC Asia: нацотбор Камбоджи (TV5) | TBA |  |
+| сентябрь-октябрь | TBA | 🇱🇦 LAO | ESC Asia: нацотбор Лаоса (VTE9) | TBA |  |
+| сентябрь-октябрь | TBA | 🇧🇩 BGD | ESC Asia: нацотбор Бангладеш (NTV) | TBA |  |
+| сентябрь-октябрь | TBA | 🇹🇭 THA | ESC Asia: нацотбор Таиланда (Channel 3, host) | TBA |  |
+| 14.11 | 14:00 | 🌏 THA | **ESC Asia Grand Final** (Бангкок, Channel 3 host) | TBA |  |
 | ноябрь | TBA | various | Первые анонсы артистов ESC 2027 (внутренние выборы) | TBA |  |
 | декабрь | TBA | 🇸🇪 SWE | Melodifestivalen 2027 - объявление участников | TBA |  |
 | декабрь | TBA | 🇮🇹 ITA | Sanremo 2027 - объявление big artists | TBA |  |
