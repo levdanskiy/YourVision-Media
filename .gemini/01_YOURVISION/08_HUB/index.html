@@ -2,7 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description" content="YourVision ESC Insider Hub - аналитика, ставки, чарты и инсайды Евровидения. Vienna 2026 closed, road to Sofia 2027.">
     <title>YourVision | ESC Insider Hub - Vienna closed, Sofia next</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,6 +106,51 @@
             .mobile-nav { display: flex; }
             .logo-box { position: relative; background: transparent; backdrop-filter: none; }
         }
+        /* Editorial header */
+        .header-inner {
+            max-width: 1280px; margin: 0 auto; padding: 0 20px;
+            display: flex; justify-content: space-between;
+            align-items: flex-start; flex-wrap: wrap; gap: 24px;
+        }
+        .header-brand { flex: 1 1 auto; min-width: 0; }
+        .header-meta {
+            text-align: right;
+            font-family: var(--font-display);
+            display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+        }
+        .lang-row { display: flex; gap: 4px; }
+        .lang-btn { padding: 3px 8px !important; font-size: 0.55rem !important; }
+        .header-date {
+            font-family: var(--font-mono);
+            font-weight: 500; font-size: 0.7rem;
+            color: var(--muted); letter-spacing: 0.12em;
+            text-transform: uppercase; font-style: normal;
+        }
+        .header-clocks {
+            display: flex; align-items: center; gap: 14px;
+            justify-content: flex-end;
+        }
+        .clock-block {
+            display: flex; align-items: baseline; gap: 6px;
+            font-family: var(--font-mono);
+            color: var(--text);
+        }
+        .clock-block-divider { padding-left: 14px; border-left: 1px solid var(--border); }
+        .clock-label {
+            color: var(--muted-2); font-size: 0.55rem;
+            text-transform: uppercase; letter-spacing: 0.18em;
+            font-family: var(--font-display); font-weight: 700;
+        }
+        .clock-time { font-size: 0.92rem; font-weight: 500; letter-spacing: 0.02em; color: var(--text); }
+        .clock-temp { font-size: 0.7rem; font-weight: 500; opacity: 0.6; color: var(--muted); }
+
+        @media (max-width: 768px) {
+            .header-inner { padding: 0 12px; gap: 16px; }
+            .header-meta { align-items: flex-start; text-align: left; }
+            .header-clocks { flex-wrap: wrap; justify-content: flex-start; gap: 10px 16px; }
+            .clock-block-divider { padding-left: 0; border-left: 0; }
+        }
+
         /* Editorial logo: serif italic mastered */
         .logo {
             font-family: var(--font-serif);
@@ -198,8 +246,13 @@
             margin: 0 auto;
         }
         main.column { grid-area: main; max-width: 760px; }
-        #radio-sect.column { grid-area: radio; }
+        #radio-sect.column { grid-area: radio; position: sticky; top: 92px; max-height: calc(100vh - 110px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--muted-2) transparent; }
+        #radio-sect.column::-webkit-scrollbar { width: 6px; }
+        #radio-sect.column::-webkit-scrollbar-thumb { background: var(--muted-2); border-radius: 3px; }
         #chart-sect.column { grid-area: chart; }
+        @media (max-width: 1100px) {
+            #radio-sect.column { position: static; max-height: none; overflow: visible; }
+        }
         .timers-hero {
             max-width: 1280px;
             margin-left: auto;
@@ -270,6 +323,31 @@
         @keyframes vis-grow {
             0%, 100% { height: 4px; opacity: 0.5; }
             50% { height: 15px; opacity: 1; }
+        }
+
+        /* Screen-reader only utility (a11y) */
+        .sr-only {
+            position: absolute !important;
+            width: 1px; height: 1px;
+            padding: 0; margin: -1px;
+            overflow: hidden; clip: rect(0,0,0,0);
+            white-space: nowrap; border: 0;
+        }
+
+        /* View Transitions API - smooth section changes (Phase 4 C3) */
+        @supports (view-transition-name: root) {
+            @view-transition { navigation: auto; }
+            ::view-transition-old(root),
+            ::view-transition-new(root) { animation-duration: 220ms; }
+        }
+
+        /* Container queries (Phase 4 C3) - cards adapt to container, not viewport */
+        main.column { container-type: inline-size; container-name: main-col; }
+        @container main-col (max-width: 560px) {
+            #news-grid { grid-template-columns: 1fr !important; }
+            .post-card.featured .post-h { font-size: 2rem; }
+            .post-card.featured .post-media,
+            .post-card.featured .video-container { float: none; width: 100%; margin: 0 0 18px 0; }
         }
 
         /* Editorial card - calm, no shimmer, minimal hover */
@@ -895,54 +973,45 @@
     <div class="ticker-wrap">
         <div class="ticker-move" id="ticker-content"></div>
     </div>
-    <div class="aurora-container">
-        <div class="aurora-blob aurora-1"></div>
-        <div class="aurora-blob aurora-2"></div>
-        <div class="aurora-blob aurora-3"></div>
-    </div>
-    <div class="film-grain"></div>
-    <div class="signal-overlay"></div>
-    <div class="scanlines"></div>
+    <!-- aurora/grain/signal/scanlines removed in Phase 4 C3 (were CSS-hidden in Phase 1) -->
     <svg width="0" height="0" style="position:absolute;"><defs><clipPath id="official-h-mask" clipPathUnits="objectBoundingBox"><path transform="scale(0.0042, 0.004)" d="M180.938 1c-25.317 0-55.258 18.698-73.381 49.771-4.89-11.222-22.313-23.451-43.024-23.451-16.689 0-63.533 20.858-63.533 88.178 0 86.88 87.901 104.725 105.671 131.729 1.221 1.857 5.154 3.26 6.655-1.177 14.179-41.845 124.125-89.125 124.125-174.279-0.001-47.756-31.197-70.771-56.513-70.771z"></path></clipPath></defs></svg>
-    <div class="logo-box">
-        <div style="max-width:1800px; margin:0 auto; padding:0 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
-            <div>
+    <header class="logo-box" role="banner">
+        <div class="header-inner">
+            <div class="header-brand">
                 <div class="logo">Your<span>Vision</span></div>
-                <div class="nav-menu" style="margin-top:10px;">
-                    <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
-                        <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document"></i> News</a>
-                        <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower"></i> Radio</a>
-                        <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats"></i> Chart</a>
-                        <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" id="nav-odds" style="color:var(--cyan);"><i class="fi fi-rr-chart-line-up"></i> Odds</a>
-                        <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" id="nav-vote" style="color:var(--acid);"><i class="fi fi-rr-checkbox"></i> Vote</a>
-                    </div>
-                </div>
+                <nav class="nav-menu" aria-label="Primary">
+                    <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document" aria-hidden="true"></i> News</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower" aria-hidden="true"></i> Radio</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats" aria-hidden="true"></i> Chart</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" id="nav-odds"><i class="fi fi-rr-chart-line-up" aria-hidden="true"></i> Odds</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" id="nav-vote"><i class="fi fi-rr-document-signed" aria-hidden="true"></i> Memo</a>
+                </nav>
             </div>
-            
-            <div style="text-align:right; font-family:'Inter Tight';">
-                <div style="display:flex; justify-content:flex-end; gap:8px; margin-bottom:10px;">
-                    <span class="filter-btn" onclick="setLanguage('ru')" id="lang-ru" style="padding:2px 6px; font-size:0.5rem;">RU</span>
-                    <span class="filter-btn" onclick="setLanguage('en')" id="lang-en" style="padding:2px 6px; font-size:0.5rem;">EN</span>
-                    <span class="filter-btn" onclick="setLanguage('ua')" id="lang-ua" style="padding:2px 6px; font-size:0.5rem;">UA</span>
-                    <span class="filter-btn" onclick="setLanguage('lv')" id="lang-lv" style="padding:2px 6px; font-size:0.5rem;">LV</span>
-                    <span class="filter-btn" onclick="setLanguage('se')" id="lang-se" style="padding:2px 6px; font-size:0.5rem;">SE</span>
+
+            <div class="header-meta">
+                <div class="lang-row" role="group" aria-label="Language">
+                    <span class="filter-btn lang-btn" onclick="setLanguage('ru')" id="lang-ru">RU</span>
+                    <span class="filter-btn lang-btn" onclick="setLanguage('en')" id="lang-en">EN</span>
+                    <span class="filter-btn lang-btn" onclick="setLanguage('ua')" id="lang-ua">UA</span>
+                    <span class="filter-btn lang-btn" onclick="setLanguage('lv')" id="lang-lv">LV</span>
+                    <span class="filter-btn lang-btn" onclick="setLanguage('se')" id="lang-se">SE</span>
                 </div>
-                <div id="full-date" style="font-weight:900; font-size:0.8rem; color:var(--pink); letter-spacing:0.15em; text-transform:uppercase; font-style:italic;">-- --- 2026</div>
-                <div style="display:flex; align-items:center; gap:15px; margin-top:5px; justify-content:flex-end;">
-                    <div style="color:var(--cyan); font-weight:900; font-size:1.1rem; letter-spacing:0.05em; display:flex; align-items:center; gap:8px;">
-                        <span id="clock-label" style="color:#555; font-size:0.6rem; margin-top:2px; text-transform:uppercase;">DETECTING...</span> 
-                        <span id="clock">00:00:00</span>
-                        <span id="local-temp" style="color:var(--cyan); font-size:0.8rem; font-weight:700; opacity:0.6;">--°C</span>
+                <div id="full-date" class="header-date">-- --- 2026</div>
+                <div class="header-clocks">
+                    <div class="clock-block">
+                        <span id="clock-label" class="clock-label">DETECTING…</span>
+                        <span id="clock" class="clock-time">00:00:00</span>
+                        <span id="local-temp" class="clock-temp">--°C</span>
                     </div>
-                    <div style="color:#aaa; font-size:0.8rem; font-weight:700; border-left:1px solid rgba(255,255,255,0.1); padding-left:15px; display:flex; align-items:center; gap:8px;">
-                        <span id="vienna-label" style="color:#555; font-size:0.6rem; margin-top:1px;">VIENNA:</span> 
-                        <span id="vienna-clock" style="color:#eee;">00:00:00</span>
-                        <span id="vienna-temp" style="color:var(--pink); font-size:0.8rem; font-weight:700; opacity:0.6;">--°C</span>
+                    <div class="clock-block clock-block-divider">
+                        <span id="vienna-label" class="clock-label">VIENNA:</span>
+                        <span id="vienna-clock" class="clock-time">00:00:00</span>
+                        <span id="vienna-temp" class="clock-temp">--°C</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     
     <div class="timers-hero">
         <!-- CARD 1: SEASON CLOSED (Vienna 2026 winner) -->
@@ -1010,12 +1079,12 @@
                 </div>
 
                 <div style="display:flex; justify-content:center; margin-top:15px;">
-                    <button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><i class="fi fi-rr-play" style="font-size:1.5rem;"></i></button>
+                    <button id="toggle-play" aria-label="Play/pause radio" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><i class="fi fi-rr-play" style="font-size:1.5rem;" aria-hidden="true"></i></button>
                 </div>
 
                 <div class="volume-box">
                     <i class="fi fi-rr-volume-down volume-icon"></i>
-                    <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.5" aria-label="Volume">
                     <i class="fi fi-rr-volume-up volume-icon"></i>
                 </div>
                 
@@ -1047,8 +1116,9 @@
             <!-- rehearsal-sect removed 17.05.2026 - Vienna rehearsals done. Restore from history if needed. -->
 
             <div class="search-container" id="news-sect">
-                <i class="fi fi-rr-search search-icon"></i>
-                <input type="text" id="news-search" class="search-input" placeholder="SEARCH FOR SIGNALS, COUNTRIES OR RESULTS..." oninput="render()">
+                <i class="fi fi-rr-search search-icon" aria-hidden="true"></i>
+                <label for="news-search" class="sr-only">Search news</label>
+                <input type="text" id="news-search" class="search-input" placeholder="Search signals, countries, results..." oninput="render()" aria-label="Search news">
                 
                 <div class="filter-bar" style="margin-top:15px; display:flex; gap:10px; flex-wrap:wrap;">
                     <div class="filter-btn active" onclick="setFilter('all')" id="filter-all">ALL SIGNALS</div>
