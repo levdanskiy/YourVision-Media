@@ -4,7 +4,7 @@
 // ПРОТОКОЛЫ: YourVision, [VISION|DNA]
 // СТАТУС: ГОТОВ
 
-[🔭|🧬] **[VISION|DNA]: [ТЕМА / СТРАНА - АРТИСТ]**
+[ФЛАГ] **[СТРАНА: ТЕМА - АРТИСТ / КЛЮЧЕВАЯ ХАРАКТЕРИСТИКА]**
 
 [Лид: одна сильная фраза, которая определяет тезис. Без введений типа "сегодня мы поговорим".]
 
@@ -39,7 +39,7 @@
 
 ---
 
-`Время чтения: X мин | [флаг] YourVision: [Vision|DNA]`
+`⏱ Время чтения: X мин | [флаг] YourVision: [Vision|DNA]`
 
 **Grade:** [A/B/C/D]
 **Prompt:** [портрет артиста для DNA / широкая аналитическая сцена для VISION], shot on 35mm film Kodak Portra 800, heavy film grain, Dazed magazine aesthetic --ar 1:1 --v 6.1 --style raw --s 750

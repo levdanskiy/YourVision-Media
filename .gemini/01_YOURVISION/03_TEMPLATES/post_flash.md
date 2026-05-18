@@ -4,9 +4,9 @@
 // ПРОТОКОЛЫ: YourVision, GLOBAL
 // СТАТУС: ГОТОВ
 
-🏛 **[BREAKING / GLOBAL]: [ФЛАГ] [СТРАНА] - [КОРОТКАЯ ФРАЗА]**
+[ФЛАГ] **[СТРАНА: КОРОТКАЯ ФРАЗА]**
 
-[Один факт. Точная цифра/имя/дата. Один источник в скобках или ссылкой.]
+[Лид. Можно начать с `⚡️ BREAKING:` для T+0. Один факт. Точная цифра/имя/дата. Один источник.]
 
 [Один абзац контекста: что это значит для сезона/индустрии.]
 
@@ -14,7 +14,7 @@
 
 ---
 
-`Время чтения: 0.5 мин | [флаг] YourVision: Global`
+`⏱ Время чтения: 0.5 мин | [флаг] YourVision: Global`
 
 **Grade:** [A/B/C/D]
 **Prompt:** documentary shot of [объект новости], natural light, candid, no posing, shot on 35mm film Kodak Portra 800, heavy film grain, Dazed magazine aesthetic --ar 1:1 --v 6.1 --style raw --s 750

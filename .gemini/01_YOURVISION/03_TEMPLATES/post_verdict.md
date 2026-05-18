@@ -4,7 +4,7 @@
 // ПРОТОКОЛЫ: YourVision, VERDICT
 // СТАТУС: ГОТОВ
 
-🎯 **VERDICT R[N]: [ФЛАГ] [СТРАНА]**
+[ФЛАГ] **[СТРАНА: ВЕРДИКТ R[N] - КЛЮЧЕВАЯ ХАРАКТЕРИСТИКА]**
 
 [Что изменилось по сравнению с нацотбором или предыдущей репетицией. Одно предложение.]
 
@@ -21,7 +21,7 @@
 
 ---
 
-`Время чтения: 0.5 мин | [флаг] YourVision: Verdict`
+`⏱ Время чтения: 0.5 мин | [флаг] YourVision: Verdict`
 
 **Grade:** [A/B/C/D]
 **Prompt:** editorial portrait of [артист], single point of light, dark background, stage atmosphere implied, shot on 35mm film Kodak Portra 800, heavy film grain, Dazed magazine aesthetic --ar 1:1 --v 6.1 --style raw --s 750

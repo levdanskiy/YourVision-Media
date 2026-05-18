@@ -4,7 +4,7 @@
 // ПРОТОКОЛЫ: YourVision, POLL, [сопутствующая рубрика]
 // СТАТУС: ГОТОВ
 
-📊 **POLL: [ТЕМА - КОНКРЕТНЫЙ ВЫБОР]**
+[ФЛАГ] **[ТЕМА: КОНКРЕТНЫЙ ВЫБОР]**
 
 [1-2 предложения контекста: почему этот вопрос сейчас. Без риторики.]
 
@@ -16,7 +16,7 @@
 
 ---
 
-`Время чтения: 0.3 мин | YourVision: Poll`
+`⏱ Время чтения: 0.3 мин | YourVision: Poll`
 
 **Grade:** [A/B/C/D]
 **Prompt:** split frame visual representing two opposing options [описать что], shot on 35mm film Kodak Portra 800, heavy film grain, Dazed magazine aesthetic --ar 1:1 --v 6.1 --style raw --s 750
