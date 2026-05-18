@@ -33,6 +33,7 @@
 | 01.06 | TBA | 🇦🇱 ALB | JESC отбор: Final Night | PENDING |  |
 | 06.06 | TBA | 🇦🇲 ARM | Eurovision Young Musicians (Yerevan) | PENDING |  |
 | 01.08 | TBA | 🇧🇹 BTN | ESC Asia: первый нацотбор (Бутан, под руководством Бьоркмана) | PENDING |  |
+| август | TBA | 🇵🇭 PHL | ESC Asia: нацотбор Филиппин (ABS-CBN, Roxy Liquigan) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
 | 17.08 | 00:01 | 🇫🇮 FIN | UMK 2027: открытие окна подачи заявок (yle.fi/umk) | PENDING |  |
 | 23.08 | 23:59 | 🇫🇮 FIN | UMK 2027: закрытие окна подачи заявок | PENDING |  |
 | август | TBA | 🌏 ASIA | ESC Asia: старт волны нацотборов | PENDING |  |
