@@ -1012,36 +1012,36 @@
     </header>
     
     <div class="timers-hero">
-        <!-- CARD 1: SEASON CLOSED (Vienna 2026 winner) -->
-        <div style="display:flex; flex-direction:column;">
-            <div class="timer-card" style="border-color:#ffd700; background:rgba(255,215,0,0.05); animation:none;">
-                <div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg'); filter:brightness(0.45) saturate(1.2);"></div>
-                <div class="timer-info">
-                    <span class="timer-label" style="color:#ffd700;"><i class="fi fi-rr-trophy-star"></i> Vienna 2026 / Closed 16.05</span>
-                    <div class="timer-val" style="color:#ffd700; font-size:1.4rem; display:flex; align-items:center; gap:8px;"><img src="https://www.eurovision.com/static/images/flags/flag_bg.svg" class="heart-shape" style="width:28px; height:28px;"> DARA - 516</div>
-                    <div style="font-size:0.65rem; color:#aaa; margin-top:8px; text-transform:uppercase; letter-spacing:0.1em;">«Bangaranga» / Jury + Televote double win</div>
-                </div>
-            </div>
-        </div>
-        <!-- CARD 2: NEXT EVENT (JESC Albania) -->
+        <!-- CARD 1: JESC 2026 Malta - 24.10.2026 -->
         <div style="display:flex; flex-direction:column;">
             <div class="timer-card">
-                <div class="timer-poster" style="background:linear-gradient(135deg, #c41e3a 0%, #000 100%);"></div>
+                <div class="timer-poster" style="background-image:url('assets/JESC_2026_Malta.jpg'); filter:brightness(0.85) saturate(1.05); background-position:center;"></div>
                 <div class="timer-info">
-                    <span class="timer-label"><i class="fi fi-rr-calendar"></i> Next: JESC ALB / 30.05</span>
-                    <div id="timer-jescAlb" class="timer-val">--d --h --m --s</div>
-                    <div style="font-size:0.65rem; color:#aaa; margin-top:8px; text-transform:uppercase; letter-spacing:0.1em;">Festivali i Këngës për Fëmijë - Night 1</div>
+                    <span class="timer-label"><i class="fi fi-rr-calendar" aria-hidden="true"></i> Junior Eurovision / <img src="https://www.eurovision.com/static/images/flags/flag_mt.svg" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> Malta - 24.10.2026</span>
+                    <div id="timer-jescMalta" class="timer-val">--d --h --m --s</div>
+                    <div style="font-size:0.65rem; color:var(--muted); margin-top:8px; text-transform:uppercase; letter-spacing:0.12em;">23-я детская версия конкурса</div>
                 </div>
             </div>
         </div>
-        <!-- CARD 3: ROAD TO SOFIA 2027 -->
+        <!-- CARD 2: Eurovision Asia 2026 Bangkok - 14.11.2026 -->
         <div style="display:flex; flex-direction:column;">
-            <div class="timer-card" style="border-color:var(--cyan);">
+            <div class="timer-card">
+                <div class="timer-poster" style="background-image:url('assets/ESC_Asia_2026_Bangkok.webp'); filter:brightness(0.85) saturate(1.05); background-position:center;"></div>
+                <div class="timer-info">
+                    <span class="timer-label"><i class="fi fi-rr-calendar" aria-hidden="true"></i> Eurovision Asia / <img src="https://flagcdn.com/w160/th.png" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> Bangkok - 14.11.2026</span>
+                    <div id="timer-escAsia" class="timer-val">--d --h --m --s</div>
+                    <div style="font-size:0.65rem; color:var(--muted); margin-top:8px; text-transform:uppercase; letter-spacing:0.12em;">Дебют: <img src="https://flagcdn.com/w160/in.png" class="heart-shape" style="width:12px; height:12px; vertical-align:middle;"> <img src="https://flagcdn.com/w160/kz.png" class="heart-shape" style="width:12px; height:12px; vertical-align:middle;"> <img src="https://flagcdn.com/w160/bt.png" class="heart-shape" style="width:12px; height:12px; vertical-align:middle;"> и др.</div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD 3: Eurovision 2027 - date TBA -->
+        <div style="display:flex; flex-direction:column;">
+            <div class="timer-card" style="border-color:var(--accent);">
                 <div class="timer-poster" style="background:linear-gradient(135deg, #009b75 0%, #d62612 100%);"></div>
                 <div class="timer-info">
-                    <span class="timer-label" style="color:var(--cyan);"><i class="fi fi-rr-roadmap"></i> Road to Sofia 2027</span>
-                    <div id="timer-escSofia" class="timer-val" style="color:var(--cyan);">--d --h --m --s</div>
-                    <div style="font-size:0.65rem; color:#aaa; margin-top:8px; text-transform:uppercase; letter-spacing:0.1em; display:flex; align-items:center; gap:5px; flex-wrap:wrap;">Host: <img src="https://www.eurovision.com/static/images/flags/flag_bg.svg" class="heart-shape" style="width:14px; height:14px;"> БНТ / City + arena TBA / target ~15.05.2027</div>
+                    <span class="timer-label" style="color:var(--accent);"><i class="fi fi-rr-roadmap" aria-hidden="true"></i> Eurovision 2027 / <img src="https://www.eurovision.com/static/images/flags/flag_bg.svg" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> София</span>
+                    <div class="timer-val" style="color:var(--accent); font-family:var(--font-serif); font-style:italic; font-size:1.5rem; letter-spacing:-0.02em;">Дата TBA</div>
+                    <div style="font-size:0.65rem; color:var(--muted); margin-top:8px; text-transform:uppercase; letter-spacing:0.12em;">Host: БНТ / Город и арена ожидаются от вещателя</div>
                 </div>
             </div>
         </div>
@@ -1299,9 +1299,9 @@
         }
 
         const DATES = {
-            jescAlb: new Date('2026-05-30T20:00:00+02:00'),    // JESC Albania Night 1
-            umkOpen: new Date('2026-08-17T00:01:00+02:00'),    // UMK 2027 applications open
-            escSofia: new Date('2027-05-15T22:00:00+02:00')    // ESC 2027 Sofia (approximate, TBA)
+            jescMalta: new Date('2026-10-24T21:00:00+03:00'),   // JESC 2026 Malta
+            escAsia: new Date('2026-11-14T14:00:00+03:00')      // Eurovision Asia 2026 Bangkok
+            // escSofia: date TBA - no countdown rendered (see hero card)
         };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
         const getH = (id) => {
@@ -1868,17 +1868,27 @@
             localStorage.setItem('yv_volume', val);
         };
 
-        playBtn.onclick = () => {
-            if (!isPlaying) { 
-                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now(); 
+        playBtn.onclick = (e) => {
+            e.stopPropagation();  // prevent body onclick=syncRadio from interfering
+            if (!isPlaying) {
+                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
                 audio.muted = false;
-                audio.play(); isPlaying = true; 
-                playBtn.style.background = "var(--pink)";
-                playBtn.innerHTML = '<i class="fi fi-rr-stop" style="font-size:1.5rem; color:white;"></i>';
-            } else { 
-                audio.pause(); audio.src = ""; isPlaying = false; 
-                playBtn.style.background = "white";
-                playBtn.innerHTML = '<i class="fi fi-rr-play" style="font-size:1.5rem; color:black;"></i>';
+                audio.volume = parseFloat(localStorage.getItem('yv_volume') || 0.5);
+                const p = audio.play();
+                if (p && p.then) {
+                    p.then(() => {
+                        isPlaying = true;
+                        playBtn.style.background = "var(--accent)";
+                        playBtn.innerHTML = '<i class="fi fi-rr-stop" style="font-size:1.5rem; color:#fff;" aria-hidden="true"></i>';
+                    }).catch(err => {
+                        console.error("Radio play failed:", err);
+                        alert("Не удалось запустить радио: " + err.message + ". Проверь блокировку автозапуска в браузере.");
+                    });
+                }
+            } else {
+                audio.pause(); audio.src = ""; isPlaying = false;
+                playBtn.style.background = "#fff";
+                playBtn.innerHTML = '<i class="fi fi-rr-play" style="font-size:1.5rem; color:#000;" aria-hidden="true"></i>';
             }
         };
     </script>
