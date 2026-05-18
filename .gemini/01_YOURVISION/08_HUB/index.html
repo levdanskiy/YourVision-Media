@@ -978,7 +978,6 @@
                     <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document" aria-hidden="true"></i> News</a>
                     <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower" aria-hidden="true"></i> Radio</a>
                     <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats" aria-hidden="true"></i> Chart</a>
-                    <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" id="nav-odds"><i class="fi fi-rr-chart-line-up" aria-hidden="true"></i> Odds</a>
                     <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" id="nav-vote"><i class="fi fi-rr-document-signed" aria-hidden="true"></i> Memo</a>
                 </nav>
             </div>
@@ -1098,10 +1097,9 @@
                 <div id="hist-list"></div>
             </div>
 
-            <div id="odds-sect" class="card" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-chart-line-up"></i> BOOKMAKERS ODDS</div>
+            <!-- odds-sect hidden 18.05.2026 (post-final). Bookmakers closed all winner lines on 17.05 at 02:14. Will return when 2027 lines open ~Sept-Oct 2026. Keep #odds-sect + #odds-list IDs in JS but skip render with .hidden class. -->
+            <div id="odds-sect" class="hidden" hidden aria-hidden="true">
                 <div id="odds-list"></div>
-                <div style="font-size:0.6rem; color:#555; text-align:center; margin-top:15px; text-transform:uppercase; letter-spacing:0.1em;">Source: Eurovisionworld</div>
             </div>
         </aside>
         
@@ -1181,7 +1179,6 @@
     <div class="mobile-nav">
         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="mobile-nav-btn"><i class="fi fi-rr-broadcast-tower"></i><span>Radio</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="mobile-nav-btn"><i class="fi fi-rr-document"></i><span>News</span></a>
-        <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="mobile-nav-btn"><i class="fi fi-rr-chart-line-up"></i><span>Odds</span></a>
     </div>
 
     <script src="data.js?v=1775125563"></script>
