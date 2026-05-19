@@ -22,10 +22,20 @@
             --text: #fafafa;
             --muted: #888;
             --muted-2: #555;
-            --accent: #d62612;            /* Bulgarian red - season theme */
+            --accent: #d62612;            /* Bulgarian red - ESC 2027 main accent */
             --accent-soft: rgba(214, 38, 18, 0.12);
             --gold: #d4a93b;              /* champion/winner accent */
             --live: #4ade80;              /* LIVE indicator green */
+
+            /* Per-contest semantic colors (Phase 5A - Aurora brief) */
+            --contest-esc: #d62612;       /* Eurovision Song Contest = Bulgarian red */
+            --contest-jesc: #5cd9d4;      /* Junior Eurovision = teal/candy cyan */
+            --contest-asia: #c64aa8;      /* Eurovision Asia = magenta */
+            --contest-asia-gold: #e8b341; /* ESC Asia secondary = gold */
+            --contest-radio: #7ad7ff;     /* Radio / live broadcast = ice blue */
+
+            /* Aurora ambient (Phase 5A) - very subtle dark navy hint top, fade to black */
+            --aurora-tint: rgba(40, 60, 120, 0.18);
 
             /* Backwards compat - mapped to new palette so legacy components still render */
             --pink: var(--accent);
@@ -71,7 +81,10 @@
         .film-grain, .aurora-container { display: none !important; }
 
         body {
-            background: var(--bg);
+            background:
+                radial-gradient(ellipse 80% 50% at 50% 0%, var(--aurora-tint) 0%, transparent 60%),
+                var(--bg);
+            background-attachment: fixed;
             color: var(--text);
             font-family: var(--font-sans);
             font-feature-settings: "ss01", "cv11";
@@ -81,9 +94,76 @@
             letter-spacing: -0.011em;
             line-height: 1.5;
         }
+
+        /* Calm mode (Phase 5A) - kills all motion, keeps colors and structure */
+        body.calm-mode * {
+            animation: none !important;
+            transition: none !important;
+        }
+        body.calm-mode .ticker-move { animation: none !important; }
+
+        /* Now Playing strip (Phase 5A) - slim live broadcast indicator */
+        .now-playing-strip {
+            position: fixed; top: 28px; left: 0; right: 0;
+            height: 32px; z-index: 10000;
+            background: linear-gradient(90deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.86) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-display);
+            font-size: 0.65rem; font-weight: 700;
+            letter-spacing: 0.15em; text-transform: uppercase;
+            color: var(--muted);
+            gap: 14px;
+        }
+        .now-playing-dot {
+            width: 7px; height: 7px; border-radius: 50%;
+            background: var(--contest-radio);
+            box-shadow: 0 0 10px var(--contest-radio);
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 0.5; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.15); }
+        }
+        .now-playing-label { color: var(--contest-radio); font-weight: 900; }
+        .now-playing-track { color: var(--text); font-weight: 700; max-width: 50vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .now-playing-listeners { color: var(--muted); font-family: var(--font-mono); font-weight: 500; }
+        .calm-toggle {
+            background: transparent; border: 1px solid var(--border);
+            color: var(--muted); cursor: pointer;
+            padding: 3px 10px; border-radius: 3px;
+            font-family: var(--font-display);
+            font-size: 0.55rem; font-weight: 700;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            margin-left: 12px;
+            transition: color 0.15s ease, border-color 0.15s ease;
+        }
+        .calm-toggle:hover { color: var(--text); border-color: var(--contest-radio); }
+        body.calm-mode .calm-toggle { color: var(--contest-radio); border-color: var(--contest-radio); }
+
+        @media (max-width: 768px) {
+            .now-playing-strip { font-size: 0.55rem; gap: 8px; padding: 0 8px; }
+            .now-playing-track { max-width: 40vw; }
+            .calm-toggle { font-size: 0.5rem; padding: 2px 6px; }
+        }
+
+        /* Per-contest hero card variants (Phase 5A) */
+        .timer-card.contest-jesc:hover { border-color: var(--contest-jesc); }
+        .timer-card.contest-jesc .timer-val { color: var(--contest-jesc); }
+        .timer-card.contest-jesc .timer-label { color: var(--contest-jesc); opacity: 0.75; }
+        .timer-card.contest-asia { border-color: rgba(198, 74, 168, 0.25); }
+        .timer-card.contest-asia:hover { border-color: var(--contest-asia); }
+        .timer-card.contest-asia .timer-val { color: var(--contest-asia); }
+        .timer-card.contest-asia .timer-label { color: var(--contest-asia-gold); opacity: 0.85; }
+        .timer-card.contest-esc { border-color: rgba(214, 38, 18, 0.3); }
+        .timer-card.contest-esc:hover { border-color: var(--contest-esc); }
+        .timer-card.contest-esc .timer-val { color: var(--contest-esc); }
+        .timer-card.contest-esc .timer-label { color: var(--contest-esc); opacity: 0.85; }
         .logo-box { 
             margin-bottom: 15px; 
-            position: sticky; top: 30px; z-index: 1000; 
+            position: sticky; top: 60px; z-index: 1000;
             background: rgba(30, 30, 34, 0.95); backdrop-filter: blur(30px); 
             -webkit-backdrop-filter: blur(30px);
             padding: 15px 0; margin-top: -15px;
@@ -972,6 +1052,13 @@
     <div class="ticker-wrap">
         <div class="ticker-move" id="ticker-content"></div>
     </div>
+    <div class="now-playing-strip" role="status" aria-live="polite">
+        <span class="now-playing-dot" aria-hidden="true"></span>
+        <span class="now-playing-label">ON AIR</span>
+        <span class="now-playing-track" id="np-track">Loading stream…</span>
+        <span class="now-playing-listeners" id="np-listeners"></span>
+        <button class="calm-toggle" id="calm-toggle" type="button" aria-label="Toggle calm mode" onclick="toggleCalmMode()">Calm</button>
+    </div>
     <!-- aurora/grain/signal/scanlines removed in Phase 4 C3 (were CSS-hidden in Phase 1) -->
     <svg width="0" height="0" style="position:absolute;"><defs><clipPath id="official-h-mask" clipPathUnits="objectBoundingBox"><path transform="scale(0.0042, 0.004)" d="M180.938 1c-25.317 0-55.258 18.698-73.381 49.771-4.89-11.222-22.313-23.451-43.024-23.451-16.689 0-63.533 20.858-63.533 88.178 0 86.88 87.901 104.725 105.671 131.729 1.221 1.857 5.154 3.26 6.655-1.177 14.179-41.845 124.125-89.125 124.125-174.279-0.001-47.756-31.197-70.771-56.513-70.771z"></path></clipPath></defs></svg>
     <header class="logo-box" role="banner">
@@ -1014,7 +1101,7 @@
     <div class="timers-hero">
         <!-- CARD 1: JESC 2026 Malta - 24.10.2026 -->
         <div style="display:flex; flex-direction:column;">
-            <div class="timer-card">
+            <div class="timer-card contest-jesc">
                 <div class="timer-poster" style="background-image:url('assets/JESC_2026_Malta.jpg'); filter:brightness(0.85) saturate(1.05); background-position:center;"></div>
                 <div class="timer-info">
                     <span class="timer-label"><i class="fi fi-rr-calendar" aria-hidden="true"></i> Junior Eurovision / <img src="https://www.eurovision.com/static/images/flags/flag_mt.svg" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> Malta - 24.10.2026</span>
@@ -1025,7 +1112,7 @@
         </div>
         <!-- CARD 2: Eurovision Asia 2026 Bangkok - 14.11.2026 -->
         <div style="display:flex; flex-direction:column;">
-            <div class="timer-card">
+            <div class="timer-card contest-asia">
                 <div class="timer-poster" style="background-image:url('assets/ESC_Asia_2026_Bangkok.webp'); filter:brightness(0.85) saturate(1.05); background-position:center;"></div>
                 <div class="timer-info">
                     <span class="timer-label"><i class="fi fi-rr-calendar" aria-hidden="true"></i> Eurovision Asia / <img src="https://flagcdn.com/w160/th.png" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> Bangkok - 14.11.2026</span>
@@ -1036,7 +1123,7 @@
         </div>
         <!-- CARD 3: Eurovision 2027 - date TBA -->
         <div style="display:flex; flex-direction:column;">
-            <div class="timer-card" style="border-color:var(--accent);">
+            <div class="timer-card contest-esc">
                 <div class="timer-poster" style="background:linear-gradient(135deg, #009b75 0%, #d62612 100%);"></div>
                 <div class="timer-info">
                     <span class="timer-label" style="color:var(--accent);"><i class="fi fi-rr-roadmap" aria-hidden="true"></i> Eurovision 2027 / <img src="https://www.eurovision.com/static/images/flags/flag_bg.svg" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> София</span>
@@ -1689,6 +1776,23 @@
             }
         }
 
+        // Calm mode toggle (Phase 5A)
+        function toggleCalmMode() {
+            const body = document.body;
+            const isCalm = body.classList.toggle("calm-mode");
+            localStorage.setItem("yv_calm_mode", isCalm ? "1" : "0");
+            const btn = document.getElementById("calm-toggle");
+            if (btn) btn.innerText = isCalm ? "Live" : "Calm";
+        }
+        // Restore calm mode on load
+        if (localStorage.getItem("yv_calm_mode") === "1") {
+            document.addEventListener("DOMContentLoaded", () => {
+                document.body.classList.add("calm-mode");
+                const btn = document.getElementById("calm-toggle");
+                if (btn) btn.innerText = "Live";
+            });
+        }
+
         let trackStart = 0, trackDur = 0;
 
         async function syncRadio() {
@@ -1701,7 +1805,21 @@
                 
                 document.getElementById("radio-artist").innerText = artist;
                 document.getElementById("radio-song").innerText = song;
-                
+
+                // Now Playing strip (Phase 5A)
+                const npTrack = document.getElementById("np-track");
+                if (npTrack) npTrack.innerText = `${artist} - ${song}`;
+                const npList = document.getElementById("np-listeners");
+                if (npList) {
+                    const live = Number.isFinite(+d.listeners) ? +d.listeners : 0;
+                    const peak = Number.isFinite(+d.plisteners) ? +d.plisteners : 0;
+                    if (live > 0 || peak > 0) {
+                        npList.innerText = `${live} live / ${peak} peak`;
+                    } else {
+                        npList.innerText = "";
+                    }
+                }
+
                 const coverUrl = `https://myradio24.com/${d.imgbig && !d.imgbig.includes('nocover') ? d.imgbig : 'assets/heart_white_2026.svg'}`;
                 document.getElementById("player-cover").style.backgroundImage = `url("${coverUrl}")`;
                 document.getElementById("ambient-glow").style.background = d.imgbig && !d.imgbig.includes('nocover') ? 'var(--pink)' : 'var(--cyan)';
