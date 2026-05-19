@@ -29,8 +29,8 @@
 | 19.05 | 18:00 | 🇲🇰 MKD | MRT: приём заявок на JESC 2026 до 29.05, кастинг 01.06 | COVERED | `04_CONTENT/2026/05/19/YV-19.05-18-00-MK-JESC2026Submissions.md` |
 | 19.05 | 21:00 | 🇳🇱 NLD | AVROTROS: финалисты Junior Songfestival 2026 объявлены | COVERED | `04_CONTENT/2026/05/19/YV-19.05-21-00-NL-JuniorSongfestival.md` |
 | 24.05 | TBA | 🇵🇹 PRT | The Voice Kids 2026 - финал, выбор JESC-представителя | PENDING |  |
-| 29.05 | 23:59 | 🇲🇰 MKD | MRT: дедлайн заявок артистов и песен JESC | PENDING |  |
-| 01.06 | TBA | 🇲🇰 MKD | MRT: прослушивания финалистов JESC | PENDING |  |
+| ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (до конца мая, ориентир по прошлым сезонам) | PENDING |  |
+| ~01.06 | TBA | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (начало июня) | PENDING |  |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор) | PENDING |  |
 | 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | PENDING |  |
 
@@ -64,7 +64,7 @@
 | сентябрь-октябрь | TBA | 🇱🇦 LAO | ESC Asia: нацотбор Лаоса (VTE9) | TBA |  |
 | сентябрь-октябрь | TBA | 🇧🇩 BGD | ESC Asia: нацотбор Бангладеш (NTV) | TBA |  |
 | сентябрь-октябрь | TBA | 🇹🇭 THA | ESC Asia: нацотбор Таиланда (Channel 3, host) | TBA |  |
-| 24.10 | TBA | 🇲🇹 MLT | **Junior Eurovision 2026** - Ta'Qali, Мальта (PBS), EBU подтвердил 18.05 | PENDING | `04_CONTENT/2026/05/18/YV-18.05-20-00-MT-JESC2026TaQali.md` |
+| 24.10 | TBA | 🇲🇹 MLT | **Junior Eurovision 2026** (24-й) - Malta Fairs & Conventions Centre, Та'Кали (PBS host) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-20-00-MT-JESC2026TaQali.md` |
 | 14.11 | 14:00 | 🌏 THA | **ESC Asia Grand Final** (Бангкок, Channel 3 host) | TBA |  |
 | ноябрь | TBA | various | Первые анонсы артистов ESC 2027 (внутренние выборы) | TBA |  |
 | декабрь | TBA | 🇸🇪 SWE | Melodifestivalen 2027 - объявление участников | TBA |  |
