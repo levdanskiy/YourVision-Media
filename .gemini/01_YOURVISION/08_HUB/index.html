@@ -1519,7 +1519,11 @@
                 const mName = t.months[now.getMonth()];
                 const fDate = document.getElementById('full-date'); if(fDate) fDate.innerText = `${day} ${mName} ${now.getFullYear()}`;
                 const tContent = document.getElementById("ticker-content");
-                if(tContent) { const ti = t.ticker.map(item => `<div class="ticker-item">${item}</div>`).join(""); tContent.innerHTML = ti + ti; }
+                if(tContent) {
+                    const items = buildTickerItems(t);
+                    const ti = items.map(item => `<div class="ticker-item">${item}</div>`).join("");
+                    tContent.innerHTML = ti + ti;
+                }
                 for(const id in navs) { const el = document.getElementById(id); if(el) el.innerHTML = `<i class="fi fi-rr-${id.split('-')[1]}"></i> ${navs[id]}`; }
             } catch(e) {}
 
@@ -1775,6 +1779,76 @@
                 window.scrollTo({ top: offsetPosition, behavior: "smooth" });
             }
         }
+
+        // Dynamic ticker pool (Phase 5A++)
+        // Combines static curated items + 3 latest news + upcoming roadmap events
+        // Shuffles. Rebuilds every 3 minutes.
+        function buildTickerItems(t) {
+            const pool = [];
+
+            // Layer 1: curated static (from LANGS[lang].ticker)
+            if (t && Array.isArray(t.ticker)) pool.push(...t.ticker);
+
+            // Layer 2: live news (latest 3 from DATA.news[])
+            try {
+                if (window.DATA && Array.isArray(DATA.news)) {
+                    const latestNews = DATA.news.slice(0, 3);
+                    latestNews.forEach(n => {
+                        const title = (n.t || "").replace(/\*\*/g, "").substring(0, 100);
+                        if (title) pool.push(`📰 ${title}`);
+                    });
+                }
+            } catch(e) {}
+
+            // Layer 3: upcoming roadmap events (next 4, with countdown)
+            try {
+                if (window.DATA && Array.isArray(DATA.roadmap)) {
+                    const now = new Date();
+                    const upcoming = DATA.roadmap.filter(item => {
+                        const [d, m] = (item.d || "").split('.').map(Number);
+                        if (!d || !m) return false;
+                        const evtDate = new Date(now.getFullYear(), m - 1, d);
+                        if (evtDate < now) evtDate.setFullYear(now.getFullYear() + 1);
+                        const diffDays = Math.floor((evtDate - now) / 86400000);
+                        return diffDays >= 0 && diffDays <= 60;
+                    }).slice(0, 4);
+
+                    upcoming.forEach(item => {
+                        const [d, m] = (item.d || "").split('.').map(Number);
+                        const evtDate = new Date(now.getFullYear(), m - 1, d);
+                        if (evtDate < now) evtDate.setFullYear(now.getFullYear() + 1);
+                        const diffDays = Math.floor((evtDate - now) / 86400000);
+                        const countdown = diffDays === 0 ? "СЕГОДНЯ" : diffDays === 1 ? "ЗАВТРА" : `ЧЕРЕЗ ${diffDays} ДНЕЙ`;
+                        pool.push(`⏳ ${countdown} - ${item.t}`);
+                    });
+                }
+            } catch(e) {}
+
+            // Fallback if pool too small
+            if (pool.length < 4) {
+                pool.push("📻 YV RADIO - В ЭФИРЕ КРУГЛОСУТОЧНО");
+            }
+
+            // Shuffle (Fisher-Yates), take up to 8
+            for (let i = pool.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [pool[i], pool[j]] = [pool[j], pool[i]];
+            }
+            return pool.slice(0, 8);
+        }
+
+        // Refresh ticker pool every 3 minutes during session
+        setInterval(() => {
+            try {
+                const t = LANGS[currentLang] || LANGS.ru;
+                const tContent = document.getElementById("ticker-content");
+                if (tContent) {
+                    const items = buildTickerItems(t);
+                    const ti = items.map(item => `<div class="ticker-item">${item}</div>`).join("");
+                    tContent.innerHTML = ti + ti;
+                }
+            } catch(e) {}
+        }, 180000);
 
         // Calm mode toggle (Phase 5A)
         function toggleCalmMode() {
