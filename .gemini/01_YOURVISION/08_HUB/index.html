@@ -976,7 +976,7 @@
         .volume-slider { flex-grow: 1; -webkit-appearance: none; background: rgba(255,255,255,0.1); height: 4px; border-radius: 2px; outline: none; cursor: pointer; }
         .volume-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--cyan); border-radius: 50%; box-shadow: 0 0 10px var(--cyan); cursor: pointer; }
         .volume-icon { color: var(--cyan); font-size: 0.9rem; }
-        .vienna-clock { font-size: 0.8rem; color: #888; font-family: "Inter Tight"; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
+        .sofia-clock, .vienna-clock { font-size: 0.8rem; color: #888; font-family: "Inter Tight"; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
         .cal-btn { 
             display: flex; align-items: center; justify-content: center; gap: 8px;
             padding: 8px 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--border);
@@ -1089,9 +1089,9 @@
                         <span id="local-temp" class="clock-temp">--°C</span>
                     </div>
                     <div class="clock-block clock-block-divider">
-                        <span id="vienna-label" class="clock-label">VIENNA:</span>
-                        <span id="vienna-clock" class="clock-time">00:00:00</span>
-                        <span id="vienna-temp" class="clock-temp">--°C</span>
+                        <span id="sofia-label" class="clock-label">SOFIA:</span>
+                        <span id="sofia-clock" class="clock-time">00:00:00</span>
+                        <span id="sofia-temp" class="clock-temp">--°C</span>
                     </div>
                 </div>
             </div>
@@ -1282,7 +1282,7 @@
                 roadmap: "ИНТЕРАКТИВНЫЙ ГРАФИК", ws_chart: "RU-TOP: SIGNAL 20",
                 vote_now: "INDUSTRY MEMO / POST-VIENNA", listen: "СЛУШАТЬ НОМИНАНТОВ:", open_vote: "ОТКРЫТЬ ГОЛОСОВАНИЕ",
                 read_more: "ЧИТАТЬ ПОЛНОСТЬЮ", show_less: "СВЕРНУТЬ", copy: "Копировать", share: "Поделиться", read_min: "мин чтения",
-                vienna: "ВЕНА", riga: "РИГА", deadline: "Голосование до:", premiere: "Премьера итогов:",
+                sofia: "СОФИЯ", riga: "РИГА", deadline: "Голосование до:", premiere: "Премьера итогов:",
                 your_time: "ВАШЕ ВРЕМЯ", your_city: "ЛОКАЦИЯ", translate: "ПЕРЕВЕСТИ",
                 months: ["ЯНВАРЯ", "ФЕВРАЛЯ", "МАРТА", "АПРЕЛЯ", "МАЯ", "ИЮНЯ", "ИЮЛЯ", "АВГУСТА", "СЕНТЯБРЯ", "ОКТЯБРЯ", "НОЯБРЯ", "ДЕКАБРЯ"],
                 ticker: [
@@ -1302,7 +1302,7 @@
                 roadmap: "INTERACTIVE ROADMAP", ws_chart: "RU-TOP: SIGNAL 20",
                 vote_now: "INDUSTRY MEMO / POST-VIENNA", listen: "LISTEN TO NOMINEES:", open_vote: "OPEN STRAWPOLL VOTE",
                 read_more: "READ FULL INSIDE", show_less: "SHOW LESS", copy: "Copy Link", share: "Share", read_min: "min read",
-                vienna: "VIENNA", riga: "RIGA", deadline: "Deadline:", premiere: "Premiere:",
+                sofia: "SOFIA", riga: "RIGA", deadline: "Deadline:", premiere: "Premiere:",
                 your_time: "YOUR TIME", your_city: "LOCATION", translate: "TRANSLATE",
                 months: ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"],
                 ticker: [
@@ -1322,7 +1322,7 @@
                 roadmap: "ІНТЕРАКТИВНИЙ ГРАФИК", ws_chart: "RU-TOP: SIGNAL 20",
                 vote_now: "ГАЛУЗЕВИЙ МЕМО / ПІСЛЯ ВІДНЯ", listen: "СЛУХАТИ НОМІНАНТОВ:", open_vote: "ВІДКРИТИ ГОЛОСУВАННЯ",
                 read_more: "ЧИТАТИ ПОВНІСТЮ", show_less: "ЗГОРНУТИ", copy: "Копіювати", share: "Поділитися", read_min: "хв читання",
-                vienna: "ВІДЕНЬ", riga: "РИГА", deadline: "Голосування до:", premiere: "Прем'єра підсумків:",
+                sofia: "СОФІЯ", riga: "РИГА", deadline: "Голосування до:", premiere: "Прем'єра підсумків:",
                 your_time: "ВАШ ЧАС", your_city: "ЛОКАЦІЯ", translate: "ПЕРЕКЛАСТИ",
                 months: ["СІЧНЯ", "ЛЮТОГО", "БЕРЕЗНЯ", "КВІТНЯ", "ТРАВНЯ", "ЧЕРВНЯ", "ЛИПНЯ", "СЕРПНЯ", "ВЕРЕСНЯ", "ЖОВТНЯ", "ЛИСТОПАДА", "ГРУДНЯ"],
                 ticker: [
@@ -1342,7 +1342,7 @@
                 roadmap: "INTERAKTĪVAIS PLĀNS", ws_chart: "RU-TOP: SIGNAL 20",
                 vote_now: "NOZARES MEMO / PĒC VĪNES", listen: "KLAUSĪTIES NOMINANTUS:", open_vote: "ATVERT BALSOŠANU",
                 read_more: "LASĪT VAIRĀK", show_less: "RĀDĪT MAZĀK", copy: "Kopēt saiti", share: "Dalīties", read_min: "min lasīšanai",
-                vienna: "VĪNE", riga: "RĪGA", deadline: "Balsošana līdz:", premiere: "Rezultātu pirmizrāde:",
+                sofia: "SOFIJA", riga: "RĪGA", deadline: "Balsošana līdz:", premiere: "Rezultātu pirmizrāde:",
                 your_time: "JŪSU LAIKS", your_city: "LOKĀCIJA", translate: "PĀRTULKOT",
                 months: ["JANVĀRĪ", "FEBRUĀRĪ", "MARTĀ", "APRĪLĪ", "MAIJĀ", "JŪNIJĀ", "JŪLIJĀ", "AUGUSTĀ", "SEPTEMBRĪ", "OKTOBRĪ", "NOVEMBRĪ", "DECEMBRĪ"],
                 ticker: [
@@ -1362,7 +1362,7 @@
                 roadmap: "INTERAKTIV ROADMAP", ws_chart: "RU-TOP: SIGNAL 20",
                 vote_now: "BRANSCHMEMO / POST-WIEN", listen: "LYSSNA PÅ NOMINERADE:", open_vote: "ÖPPNA RÖSTNING",
                 read_more: "LÄS HELA INSIDAN", show_less: "VISA MINDRE", copy: "Kopiera länk", share: "Dela", read_min: "min läsning",
-                vienna: "WIEN", riga: "RIGA", deadline: "Röstning till:", premiere: "Premiär för resultat:",
+                sofia: "SOFIA", riga: "RIGA", deadline: "Röstning till:", premiere: "Premiär för resultat:",
                 your_time: "DIN TID", your_city: "PLATS", translate: "ÖVERSÄTTA",
                 months: ["JANUARI", "FEBRUARI", "MARS", "APRIL", "MAJ", "JUNI", "JULI", "AUGUSTI", "SEPTEMBER", "OKTOBER", "NOVEMBER", "DECEMBER"],
                 ticker: [
@@ -1404,15 +1404,15 @@
         async function fetchWeather() {
             const t = LANGS[currentLang];
             
-            // 1. Всегда грузим Вену (она не зависит от IP)
-            fetch('https://api.open-meteo.com/v1/forecast?latitude=48.2082&longitude=16.3738&current_weather=true')
+            // 1. Sofia (host city ESC 2027) - не зависит от IP
+            fetch('https://api.open-meteo.com/v1/forecast?latitude=42.6977&longitude=23.3219&current_weather=true')
                 .then(r => r.json())
                 .then(data => {
-                    const vTemp = Math.round(data.current_weather.temperature);
-                    document.getElementById('vienna-temp').innerText = vTemp + "°C";
-                    document.getElementById('vienna-label').innerText = `${t.vienna}:`;
+                    const sTemp = Math.round(data.current_weather.temperature);
+                    document.getElementById('sofia-temp').innerText = sTemp + "°C";
+                    document.getElementById('sofia-label').innerText = `${t.sofia}:`;
                 })
-                .catch(e => console.error("Vienna weather error", e));
+                .catch(e => console.error("Sofia weather error", e));
 
             // 2. Пытаемся определить город и его погоду
             try {
@@ -1454,15 +1454,15 @@
             const cl = document.getElementById('clock'); 
             if(cl) cl.innerText = new Date().toLocaleTimeString(currentLocale);
             
-            const vcl = document.getElementById('vienna-clock');
-            if(vcl) {
-                const viennaTime = new Date().toLocaleTimeString(currentLocale, { 
-                    timeZone: "Europe/Vienna", 
-                    hour: '2-digit', 
-                    minute: '2-digit', 
-                    second: '2-digit' 
+            const scl = document.getElementById('sofia-clock');
+            if(scl) {
+                const sofiaTime = new Date().toLocaleTimeString(currentLocale, {
+                    timeZone: "Europe/Sofia",
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit'
                 });
-                vcl.innerText = viennaTime;
+                scl.innerText = sofiaTime;
             }
 
             const now = new Date();
