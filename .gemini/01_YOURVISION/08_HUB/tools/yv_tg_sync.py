@@ -79,29 +79,41 @@ def get_telegram_news():
 
 HUB_DIR = "/home/levdanskiy/.gemini/01_YOURVISION/08_HUB"
 DEPLOY_DIR = "/home/levdanskiy/YourEurovision_Hub_Deploy"
+LOCAL_ID = "local"  # marker used by sync_local_posts.py; preserved across cron cycles
+MAX_NEWS = 25
 
 def sync():
-    posts = get_telegram_news()
-    posts.sort(key=lambda x: x["ts"], reverse=True)
-    final_news = posts[:25]
+    tg_posts = get_telegram_news()
+    tg_posts.sort(key=lambda x: x["ts"], reverse=True)
 
     data_path = os.path.join(HUB_DIR, "data.js")
-    if os.path.exists(data_path):
-        with open(data_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+    if not os.path.exists(data_path):
+        return
 
-        # Надежный парсинг через JSON
-        match = re.search(r"var DATA = ({.*});", content, re.DOTALL)
-        if match:
-            data_obj = json.loads(match.group(1))
-            data_obj["news"] = final_news
-            new_js = "var DATA = " + json.dumps(data_obj, indent=4, ensure_ascii=False) + ";"
+    with open(data_path, 'r', encoding='utf-8') as f:
+        content = f.read()
 
-            with open(data_path, 'w', encoding='utf-8') as f:
-                f.write(new_js)
-            with open(os.path.join(DEPLOY_DIR, "data.js"), 'w', encoding='utf-8') as f:
-                f.write(new_js)
-            print("Sync complete. Data is clean.")
+    match = re.search(r"var DATA = ({.*});", content, re.DOTALL)
+    if not match:
+        return
+
+    data_obj = json.loads(match.group(1))
+    existing_news = data_obj.get("news", [])
+
+    # Cooperative merge: keep local entries from sync_local_posts.py untouched
+    local_news = [n for n in existing_news if n.get("id") == LOCAL_ID]
+    merged = local_news + tg_posts
+    merged.sort(key=lambda x: x.get("ts", 0), reverse=True)
+    merged = merged[:MAX_NEWS]
+    data_obj["news"] = merged
+
+    new_js = "var DATA = " + json.dumps(data_obj, indent=4, ensure_ascii=False) + ";"
+
+    with open(data_path, 'w', encoding='utf-8') as f:
+        f.write(new_js)
+    with open(os.path.join(DEPLOY_DIR, "data.js"), 'w', encoding='utf-8') as f:
+        f.write(new_js)
+    print(f"Sync complete. news[]: {len(merged)} ({sum(1 for n in merged if n.get('id') == LOCAL_ID)} local / {sum(1 for n in merged if n.get('id') != LOCAL_ID)} TG).")
 
 if __name__ == "__main__":
     sync()
