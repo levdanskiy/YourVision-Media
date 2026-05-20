@@ -392,25 +392,25 @@
         main.column { grid-area: main; max-width: 760px; }
         #radio-sect.column { grid-area: radio; }
 
-        /* Phase 5B: Radio player sizing - keep cover compact + consistent across breakpoints */
-        #radio-sect .card { container-type: inline-size; }
+        /* Phase 5B fix: Radio player cover sizing only - don't touch card sizing */
+        /* The radio-sect column already gets 360px from grid template; card fills it naturally. */
+        /* Cover gets a max-width cap to avoid stretching huge on mobile 1-col. */
         #player-cover {
-            max-width: 240px;
+            max-width: 280px;
             margin-left: auto !important;
             margin-right: auto !important;
             display: block;
         }
         @media (max-width: 1100px) {
-            /* On collapse to 1-col, center player and cap player block width */
-            #radio-sect .card:first-child {
-                max-width: 480px;
+            /* When collapsed to 1-col: center the whole radio aside content */
+            #radio-sect.column {
+                max-width: 600px;
                 margin-left: auto;
                 margin-right: auto;
             }
-            #player-cover { max-width: 280px; }
         }
         @media (max-width: 540px) {
-            #player-cover { max-width: 200px; }
+            #player-cover { max-width: 220px; }
         }
         #chart-sect.column { grid-area: chart; }
         .timers-hero {
