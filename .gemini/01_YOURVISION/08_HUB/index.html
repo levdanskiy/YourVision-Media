@@ -250,28 +250,31 @@
             .mobile-nav { display: flex; }
             .logo-box { position: relative; background: transparent; backdrop-filter: none; }
         }
-        /* Editorial header */
+        /* Editorial header - compact on wide screens */
         .header-inner {
             max-width: 1280px; margin: 0 auto; padding: 0 20px;
             display: flex; justify-content: space-between;
-            align-items: flex-start; flex-wrap: wrap; gap: 24px;
+            align-items: center; flex-wrap: wrap; gap: 16px;
         }
-        .header-brand { flex: 1 1 auto; min-width: 0; }
+        .header-brand { flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+        .header-brand .logo { line-height: 1; }
+        .header-brand .nav-menu { margin-top: 0; }
         .header-meta {
             text-align: right;
             font-family: var(--font-display);
-            display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+            display: flex; flex-direction: row; align-items: center; gap: 16px;
+            flex-wrap: wrap; justify-content: flex-end;
         }
-        .lang-row { display: flex; gap: 4px; }
-        .lang-btn { padding: 3px 8px !important; font-size: 0.55rem !important; }
+        .lang-row { display: flex; gap: 3px; }
+        .lang-btn { padding: 2px 7px !important; font-size: 0.52rem !important; }
         .header-date {
             font-family: var(--font-mono);
-            font-weight: 500; font-size: 0.7rem;
-            color: var(--muted); letter-spacing: 0.12em;
+            font-weight: 500; font-size: 0.65rem;
+            color: var(--muted); letter-spacing: 0.1em;
             text-transform: uppercase; font-style: normal;
         }
         .header-clocks {
-            display: flex; align-items: center; gap: 14px;
+            display: flex; align-items: center; gap: 12px;
             justify-content: flex-end;
         }
         .clock-block {
@@ -295,10 +298,10 @@
             .clock-block-divider { padding-left: 0; border-left: 0; }
         }
 
-        /* Editorial logo: serif italic mastered */
+        /* Editorial logo: serif italic mastered - smaller for compact header */
         .logo {
             font-family: var(--font-serif);
-            font-size: 2.2rem;
+            font-size: 1.7rem;
             color: var(--text);
             font-weight: 900;
             line-height: 0.95;
@@ -1037,7 +1040,7 @@
         .hist-discovery a:hover { color: var(--pink); }
         
         .player-container { position: relative; z-index: 1; transition: 0.5s; }
-        .ambient-glow { position: absolute; top: 0; left: 0; width: 100%; aspect-ratio: 1; border-radius: 50%; filter: blur(60px); opacity: 0.4; z-index: -1; transition: background 1s ease; }
+        .ambient-glow { position: absolute; top: 10%; left: 10%; width: 80%; aspect-ratio: 1; border-radius: 50%; filter: blur(40px); opacity: 0.22; z-index: -1; transition: background 1s ease; }
         
         .progress-container { width: 100%; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; margin: 15px 0; overflow: hidden; position: relative; }
         #progress-bar { width: 0%; height: 100%; background: var(--cyan); transition: width 1s linear; box-shadow: 0 0 10px var(--cyan); }
