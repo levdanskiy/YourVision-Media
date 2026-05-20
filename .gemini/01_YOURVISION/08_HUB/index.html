@@ -1316,7 +1316,16 @@
                 <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> RU-TOP: SIGNAL 20 / FINAL CHART</div>
                 <div id="chart-list"></div>
             </div>
-            
+
+            <!-- NEXT VOTE card (Phase 5C / Charts plan) - shows nominees for upcoming chart -->
+            <div id="next-vote-sect" class="card" style="margin-top:20px; border-color: rgba(122, 215, 255, 0.25); background: linear-gradient(180deg, rgba(122, 215, 255, 0.04) 0%, transparent 100%);" hidden>
+                <div class="section-title-base" style="color: var(--contest-radio); border-bottom: 1px solid var(--contest-radio); padding-bottom: 10px;"><i class="fi fi-rr-box-ballot"></i> <span id="next-vote-title">NEXT VOTE</span></div>
+                <div id="next-vote-meta" style="font-size: 0.62rem; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 12px; font-family: var(--font-display);"></div>
+                <div id="next-vote-list"></div>
+                <a id="next-vote-link" href="#" target="_blank" rel="noopener" class="order-btn" style="margin-top:14px; background: var(--contest-radio); color:#000; border-color: var(--contest-radio); font-weight:700;" hidden><i class="fi fi-rr-checkbox"></i> ОТКРЫТЬ ГОЛОСОВАНИЕ</a>
+            </div>
+
+
             <!-- INDUSTRY MEMO (заменил Eurogroove vote, закрытый 05.04) -->
             <div id="vote-sect" class="card" style="margin-top:30px; border-color:var(--acid);">
                 <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;"><i class="fi fi-rr-document-signed"></i> INDUSTRY MEMO / POST-VIENNA</div>
@@ -1761,12 +1770,56 @@
                 }
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
-                    const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} / SPRING '26 CLOSED`;
+                    // Chart label uses DATA.chart_meta if available, falls back to legacy
+                    const meta = (window.DATA && DATA.chart_meta) ? DATA.chart_meta : null;
+                    const ct = cs.querySelector(".title-cyan");
+                    if (ct) {
+                        if (meta && meta.series && meta.theme) {
+                            const statusLabel = meta.status === 'live' ? 'LIVE' : (meta.status === 'closed' ? 'CLOSED' : '');
+                            ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${meta.series.toUpperCase()}: ${meta.theme}${statusLabel ? ' / ' + statusLabel : ''}`;
+                        } else {
+                            ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} / SPRING '26 CLOSED`;
+                        }
+                    }
                     document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => {
                         const rc = idx === 0 ? 'gold-glow' : (idx === 1 ? 'silver-glow' : (idx === 2 ? 'bronze-glow' : ''));
                         return `<div class="bubble ${rc}"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:12px !important; margin:0 15px; object-fit:cover;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`;
                     }).join("");
                 }
+
+                // NEXT VOTE card - render only if DATA.next_chart present
+                try {
+                    const nv = document.getElementById("next-vote-sect");
+                    const nc = (window.DATA && DATA.next_chart) ? DATA.next_chart : null;
+                    if (nv && nc && Array.isArray(DATA.nominees) && DATA.nominees.length > 0) {
+                        nv.hidden = false;
+                        const title = document.getElementById("next-vote-title");
+                        if (title) title.textContent = `NEXT VOTE: ${(nc.series || '').toUpperCase()} - ${nc.theme || ''}`;
+                        const meta = document.getElementById("next-vote-meta");
+                        if (meta) {
+                            const opens = nc.opens ? new Date(nc.opens) : null;
+                            const closes = nc.closes ? new Date(nc.closes) : null;
+                            const fmt = d => d ? `${String(d.getDate()).padStart(2,'0')}.${String(d.getMonth()+1).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}` : '';
+                            meta.innerHTML = `${opens ? 'OPEN ' + fmt(opens) : ''}${opens && closes ? ' &nbsp;·&nbsp; ' : ''}${closes ? 'CLOSE ' + fmt(closes) : ''}`;
+                        }
+                        document.getElementById("next-vote-list").innerHTML = DATA.nominees.map(n => `
+                            <div class="bubble" style="padding:8px 10px; margin-bottom:6px; border-radius:8px; background:rgba(122,215,255,0.03); border:1px solid rgba(122,215,255,0.08); border-bottom: 1px solid rgba(122,215,255,0.08);">
+                                ${n.img ? `<img src="${n.img}" class="chart-cover" style="width:38px !important; height:38px !important; margin:0 10px 0 0; border-radius:6px !important;">` : ''}
+                                <div style="flex-grow:1; min-width:0;">
+                                    <div class="artist-rich" style="font-size:0.8rem; color:var(--text);">${decodeS(n.a || '')}</div>
+                                    <div style="font-size:0.68rem; opacity:0.65;">${decodeS(n.s || '')}</div>
+                                </div>
+                            </div>
+                        `).join("");
+                        const btn = document.getElementById("next-vote-link");
+                        if (btn) {
+                            if (nc.vote_url) { btn.href = nc.vote_url; btn.hidden = false; }
+                            else { btn.hidden = true; }
+                        }
+                    } else if (nv) {
+                        nv.hidden = true;
+                    }
+                } catch(e) {}
 
                 const os = document.getElementById("odds-sect"); if(os) {
                     os.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-chart-line-up"></i> ${t.bookmakers}`;
