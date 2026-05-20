@@ -149,6 +149,66 @@
             .calm-toggle { font-size: 0.5rem; padding: 2px 6px; }
         }
 
+        /* Phase 5B: contest theme classes - shift body accent based on active contest filter */
+        body.theme-jesc { --accent: var(--contest-jesc); --accent-soft: rgba(92, 217, 212, 0.12); }
+        body.theme-asia { --accent: var(--contest-asia); --accent-soft: rgba(198, 74, 168, 0.12); }
+        body.theme-almanac { --accent: #b8a684; --accent-soft: rgba(184, 166, 132, 0.12); }
+        /* theme-esc uses default (Bulgarian red) - no override */
+
+        /* Nav contest pillars - small accent dot on hover/active */
+        .nav-link.nav-contest-esc i { color: var(--contest-esc); }
+        .nav-link.nav-contest-jesc i { color: var(--contest-jesc); }
+        .nav-link.nav-contest-asia i { color: var(--contest-asia); }
+        .nav-link.active {
+            color: var(--text);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+        .nav-link.active i { color: var(--accent); }
+
+        /* ALMANAC mini-strip in right rail (Phase 5B) */
+        .almanac-strip {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 14px 16px;
+            background: linear-gradient(180deg, rgba(184,166,132,0.04) 0%, transparent 100%);
+            margin-top: 20px;
+        }
+        .almanac-strip-title {
+            font-family: var(--font-display);
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: #b8a684;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .almanac-strip-title::before {
+            content: ""; width: 6px; height: 6px; border-radius: 50%;
+            background: #b8a684;
+            box-shadow: 0 0 8px rgba(184,166,132,0.5);
+        }
+        .almanac-item {
+            padding: 8px 0;
+            border-bottom: 1px dotted var(--border);
+            font-size: 0.78rem;
+            line-height: 1.4;
+            color: var(--text);
+        }
+        .almanac-item:last-child { border-bottom: 0; }
+        .almanac-item-meta {
+            font-family: var(--font-mono);
+            font-size: 0.6rem;
+            color: var(--muted-2);
+            display: block;
+            margin-bottom: 3px;
+        }
+        .almanac-item a { color: var(--text); text-decoration: none; }
+        .almanac-item a:hover { color: #b8a684; }
+
         /* Per-contest hero card variants (Phase 5A) */
         .timer-card.contest-jesc:hover { border-color: var(--contest-jesc); }
         .timer-card.contest-jesc .timer-val { color: var(--contest-jesc); }
@@ -331,6 +391,27 @@
         }
         main.column { grid-area: main; max-width: 760px; }
         #radio-sect.column { grid-area: radio; }
+
+        /* Phase 5B: Radio player sizing - keep cover compact + consistent across breakpoints */
+        #radio-sect .card { container-type: inline-size; }
+        #player-cover {
+            max-width: 240px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: block;
+        }
+        @media (max-width: 1100px) {
+            /* On collapse to 1-col, center player and cap player block width */
+            #radio-sect .card:first-child {
+                max-width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #player-cover { max-width: 280px; }
+        }
+        @media (max-width: 540px) {
+            #player-cover { max-width: 200px; }
+        }
         #chart-sect.column { grid-area: chart; }
         .timers-hero {
             max-width: 1280px;
@@ -1066,10 +1147,12 @@
             <div class="header-brand">
                 <div class="logo">Your<span>Vision</span></div>
                 <nav class="nav-menu" aria-label="Primary">
-                    <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document" aria-hidden="true"></i> News</a>
+                    <a href="javascript:void(0)" onclick="setFilter('all')" class="nav-link active" id="nav-all"><i class="fi fi-rr-grid" aria-hidden="true"></i> All</a>
+                    <a href="javascript:void(0)" onclick="setFilter('esc')" class="nav-link nav-contest-esc" id="nav-esc"><i class="fi fi-rr-trophy" aria-hidden="true"></i> Eurovision</a>
+                    <a href="javascript:void(0)" onclick="setFilter('jesc')" class="nav-link nav-contest-jesc" id="nav-jesc"><i class="fi fi-rr-star" aria-hidden="true"></i> Junior</a>
+                    <a href="javascript:void(0)" onclick="setFilter('asia')" class="nav-link nav-contest-asia" id="nav-asia"><i class="fi fi-rr-globe" aria-hidden="true"></i> Asia</a>
                     <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower" aria-hidden="true"></i> Radio</a>
-                    <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats" aria-hidden="true"></i> Chart</a>
-                    <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" id="nav-vote"><i class="fi fi-rr-document-signed" aria-hidden="true"></i> Memo</a>
+                    <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" id="nav-memo"><i class="fi fi-rr-document-signed" aria-hidden="true"></i> Memo</a>
                 </nav>
             </div>
 
@@ -1263,14 +1346,23 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ALMANAC mini-strip (Phase 5B) - daily mood pieces from @almanac_marginalia -->
+            <div class="almanac-strip" id="almanac-strip" aria-label="From ALMANAC channel">
+                <div class="almanac-strip-title"><span>From ALMANAC</span></div>
+                <div id="almanac-list"></div>
+            </div>
         </aside>
     </div>
 
     <!-- LOAD EXTERNAL DATA.JS -->
-    <div class="mobile-nav">
+    <nav class="mobile-nav" aria-label="Mobile contest switcher">
+        <a href="javascript:void(0)" onclick="setFilter('all')" class="mobile-nav-btn" id="mnav-all"><i class="fi fi-rr-grid"></i><span>All</span></a>
+        <a href="javascript:void(0)" onclick="setFilter('esc')" class="mobile-nav-btn" id="mnav-esc"><i class="fi fi-rr-trophy"></i><span>ESC</span></a>
+        <a href="javascript:void(0)" onclick="setFilter('jesc')" class="mobile-nav-btn" id="mnav-jesc"><i class="fi fi-rr-star"></i><span>JESC</span></a>
+        <a href="javascript:void(0)" onclick="setFilter('asia')" class="mobile-nav-btn" id="mnav-asia"><i class="fi fi-rr-globe"></i><span>Asia</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="mobile-nav-btn"><i class="fi fi-rr-broadcast-tower"></i><span>Radio</span></a>
-        <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="mobile-nav-btn"><i class="fi fi-rr-document"></i><span>News</span></a>
-    </div>
+    </nav>
 
     <script src="data.js?v=1775125563"></script>
     <script>
@@ -1490,11 +1582,42 @@
 
         function handleVote(postId, optIdx) { localStorage.setItem('yv_vote_'+postId, optIdx); render(); }
 
-                                let currentFilter = 'all';
+        // Phase 5B: contest auto-tagging
+        // Inspects news post id + title to assign contest bucket
+        function getPostContest(p) {
+            if (!p) return 'esc';
+            if (p.id === 'lv') return 'almanac';
+            const title = (p.t || '').toLowerCase();
+            const body  = (p.b || '').toLowerCase();
+            const blob = title + ' ' + body;
+            if (/jesc|junior\s*eurov|дитяч|детск|junior\s*songfest|voice\s*kids/i.test(blob)) return 'jesc';
+            if (/(esc\s*asia|eurovision\s*asia|bangkok|asia\s*2026|asia\s*national|abs[- ]cbn|channel\s*3\s*thailand)/i.test(blob)) return 'asia';
+            return 'esc';
+        }
+
+        let currentFilter = 'all';
         function setFilter(tag) {
             currentFilter = tag;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById('filter-' + tag).classList.add('active');
+            document.querySelectorAll('.filter-btn,.nav-link,.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+            ['filter-' + tag, 'nav-' + tag, 'mnav-' + tag].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add('active');
+            });
+
+            // Apply theme class on body to shift accent under selected contest
+            document.body.classList.remove('theme-esc','theme-jesc','theme-asia','theme-almanac');
+            if (tag === 'esc' || tag === 'jesc' || tag === 'asia' || tag === 'almanac') {
+                document.body.classList.add('theme-' + tag);
+            }
+
+            // Scroll to news section when contest is chosen
+            if (tag !== 'all') {
+                const ns = document.getElementById('news-sect');
+                if (ns) {
+                    const off = ns.getBoundingClientRect().top + window.pageYOffset - 130;
+                    window.scrollTo({ top: off, behavior: 'smooth' });
+                }
+            }
             render();
         }
 
@@ -1657,10 +1780,35 @@
 
             // 7. News
             try {
+                // Phase 5B: populate ALMANAC mini-strip in right rail
+                try {
+                    const alist = document.getElementById("almanac-list");
+                    if (alist) {
+                        const alm = DATA.news.filter(p => getPostContest(p) === 'almanac').slice(0, 5);
+                        if (alm.length === 0) {
+                            alist.innerHTML = '<div class="almanac-item" style="color:var(--muted-2); font-style:italic;">Сейчас тихо в эфире ALMANAC.</div>';
+                        } else {
+                            alist.innerHTML = alm.map(p => {
+                                const title = (p.t || '').replace(/\*\*/g, '');
+                                const meta = p.m || '';
+                                const url = p.u || '#';
+                                return `<div class="almanac-item"><span class="almanac-item-meta">${meta}</span><a href="${url}" target="_blank" rel="noopener">${title}</a></div>`;
+                            }).join("");
+                        }
+                    }
+                } catch(e) {}
+
                 const nSearch = document.getElementById("news-search"); if(nSearch) {
                     nSearch.placeholder = t.search;
                     const sVal = nSearch.value.toLowerCase().trim();
-                    const fNews = DATA.news.filter(p => (p.t+p.b).toLowerCase().includes(sVal));
+                    const fNews = DATA.news.filter(p => {
+                        if ((p.t+p.b).toLowerCase().includes(sVal) === false) return false;
+                        const c = getPostContest(p);
+                        // ALMANAC posts are excluded from main news feed (live in right-rail strip)
+                        if (c === 'almanac') return false;
+                        if (currentFilter === 'all' || currentFilter === 'radio' || currentFilter === 'memo') return true;
+                        return c === currentFilter;
+                    });
                     let curD = "";
                     document.getElementById("news-grid").innerHTML = fNews.map(p => {
                         const pIdx = DATA.news.indexOf(p);
