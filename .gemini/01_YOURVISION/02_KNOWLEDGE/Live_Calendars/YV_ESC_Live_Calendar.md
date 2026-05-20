@@ -24,7 +24,9 @@
 | 19.05 | TBA | 🇦🇺 AUS | Австралия 2-е: разбор стерильного вокала Delta Goodrem | PENDING |  |
 | 19.05 | TBA | 🇬🇧 GBR | UK 3-й год подряд 0 от зрителей: системный диагноз | PENDING |  |
 | 20-25.05 | TBA | various | Заявления вещателей о возвращении/неучастии 2027 | PENDING |  |
+| 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов, голосование до 31.05) | SCHEDULED |  |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
+| 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 | 19.05 | 13:00 | 🇵🇹 PRT | The Voice Kids 2026: 8 финалистов объявлены, финал 24.05 → JESC | COVERED | `04_CONTENT/2026/05/19/YV-19.05-13-00-PT-VoiceKidsFinal.md` |
 | 19.05 | 18:00 | 🇲🇰 MKD | MRT: приём заявок на JESC 2026 до 29.05, кастинг 01.06 | COVERED | `04_CONTENT/2026/05/19/YV-19.05-18-00-MK-JESC2026Submissions.md` |
 | 19.05 | 21:00 | 🇳🇱 NLD | AVROTROS: финалисты Junior Songfestival 2026 объявлены | COVERED | `04_CONTENT/2026/05/19/YV-19.05-21-00-NL-JuniorSongfestival.md` |
