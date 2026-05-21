@@ -24,6 +24,7 @@
 | 19.05 | TBA | 🇦🇺 AUS | Австралия 2-е: разбор стерильного вокала Delta Goodrem | PENDING |  |
 | 19.05 | TBA | 🇬🇧 GBR | UK 3-й год подряд 0 от зрителей: системный диагноз | PENDING |  |
 | 20-25.05 | TBA | various | Заявления вещателей о возвращении/неучастии 2027 | PENDING |  |
+| 21.05 | 14:30 | 🇲🇰 MKD | MRT подтвердил возвращение на ESC 2027 (Ристоски) | COVERED | `04_CONTENT/2026/05/21/YV-21.05-14-30-MK-Return2027.md` |
 | 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов, голосование до 31.05) | SCHEDULED |  |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
