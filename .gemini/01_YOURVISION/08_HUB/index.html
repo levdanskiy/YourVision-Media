@@ -1497,13 +1497,28 @@
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
         const getH = (id) => {
             if (id === "70") return "assets/heart_white_2026.svg";
-            const asia = ["kh","vn","th","my","ph","np","bd","la","bt"];
-            if (asia.includes(id.toLowerCase())) return `https://flagcdn.com/w160/${id.toLowerCase()}.png`;
+            // Countries without Eurovision.com flag SVG (Asia / new observers) - use flagcdn
+            const flagcdnFallback = ["kh","vn","th","my","ph","np","bd","la","bt","in","kr","kz","ca"];
+            if (flagcdnFallback.includes(id.toLowerCase())) return `https://flagcdn.com/w160/${id.toLowerCase()}.png`;
             return `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`;
         };
         const decodeS = (s) => { try { return JSON.parse('"' + s.replace(/"/g, '\\"') + '"'); } catch(e) { return s; } };
         const emojiMap = {"📊": '<i class="fi fi-rr-stats"></i>',"🔗": '<i class="fi fi-rr-link"></i>',"🎧": '<i class="fi fi-rr-headphones"></i>',"⏱": '<i class="fi fi-rr-clock"></i>',"🚨": '<i class="fi fi-rr-alarm-exclamation"></i>',"🏆": '<i class="fi fi-rr-trophy"></i>',"⚡": '<i class="fi fi-rr-bolt"></i>',"🏛": '<i class="fi fi-rr-bank"></i>',"📅": '<i class="fi fi-rr-calendar"></i>',"🗳": '<i class="fi fi-rr-box-ballot"></i>'};
-        const flagMap = {"🇦🇱":"al","🇦🇲":"am","🇦🇺":"au","🇦🇹":"at","🇦🇿":"az","🇧🇪":"be","🇧🇬":"bg","🇭🇷":"hr","🇨🇾":"cy","🇨🇿":"cz","🇩🇰":"dk","🇪🇪":"ee","🇫🇮":"fi","🇫🇷":"fr","🇬🇪":"ge","🇩🇪":"de","🇬🇷":"gr","🇮🇱":"il","🇮🇹":"it","🇱🇻":"lv","🇱🇹":"lt","🇱🇺":"lu","🇲🇹":"mt","🇲🇩":"md","🇲🇪":"me","🇳🇴":"no","🇵🇱":"pl","🇵🇹":"pt","🇷🇴":"ro","🇸🇲":"sm","🇷🇸":"rs","🇸🇪":"se","🇨🇭":"ch","🇺🇦":"ua","🇬🇧":"gb","🇰🇭":"kh","🇻🇳":"vn","🇹🇭":"th","🇲🇾":"my","🇵🇭":"ph","🇳🇵":"np","🇧🇩":"bd","🇱🇦":"la","🇧🇹":"bt"};
+        const flagMap = {
+            // ESC participants (eurovision.com flag SVGs)
+            "🇦🇱":"al","🇦🇲":"am","🇦🇺":"au","🇦🇹":"at","🇦🇿":"az","🇧🇪":"be","🇧🇬":"bg",
+            "🇭🇷":"hr","🇨🇾":"cy","🇨🇿":"cz","🇩🇰":"dk","🇪🇪":"ee","🇫🇮":"fi","🇫🇷":"fr",
+            "🇬🇪":"ge","🇩🇪":"de","🇬🇷":"gr","🇮🇱":"il","🇮🇹":"it","🇱🇻":"lv","🇱🇹":"lt",
+            "🇱🇺":"lu","🇲🇹":"mt","🇲🇩":"md","🇲🇪":"me","🇳🇴":"no","🇵🇱":"pl","🇵🇹":"pt",
+            "🇷🇴":"ro","🇸🇲":"sm","🇷🇸":"rs","🇸🇪":"se","🇨🇭":"ch","🇺🇦":"ua","🇬🇧":"gb",
+            // Added 21.05 — ESC participants not in original map
+            "🇲🇰":"mk","🇮🇸":"is","🇮🇪":"ie","🇳🇱":"nl","🇸🇮":"si","🇪🇸":"es",
+            "🇭🇺":"hu","🇧🇦":"ba","🇧🇾":"by","🇦🇩":"ad","🇲🇨":"mc","🇹🇷":"tr",
+            // Eurovision Asia + observer countries
+            "🇰🇭":"kh","🇻🇳":"vn","🇹🇭":"th","🇲🇾":"my","🇵🇭":"ph","🇳🇵":"np",
+            "🇧🇩":"bd","🇱🇦":"la","🇧🇹":"bt","🇮🇳":"in","🇰🇷":"kr","🇰🇿":"kz",
+            "🇨🇦":"ca"
+        };
 
         async function fetchWeather() {
             const t = LANGS[currentLang];
