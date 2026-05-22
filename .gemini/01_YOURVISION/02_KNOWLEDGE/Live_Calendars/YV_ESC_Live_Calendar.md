@@ -1,90 +1,149 @@
 # YV LIVE CALENDAR
 
-**Время:** Europe/Riga (EET/EEST). Никогда CET в этом файле.
-**Look-ahead:** минимум 90 дней. Прошедшие события - в `_PAST.md` или удалены.
-**Статусы:** PENDING (запланировано, ещё не сделано), COVERED (опубликован пост), SKIPPED (решено не покрывать), SCHEDULED (пост написан, ожидает публикации), TBA (дата не подтверждена).
+**Время:** Europe/Riga (EET/EEST). Никогда CET/CEST в этом файле (источники конвертируются: CEST = Riga - 1ч).
+**Look-ahead:** минимум 90 дней. Прошедшие события (>14 дней назад) - перенести в `YV_ESC_Calendar_PAST.md`.
+**Статусы:** PENDING (запланировано) / COVERED (опубликован пост) / SCHEDULED (пост написан, ожидает публикации) / SKIPPED (решено не покрывать) / DONE (событие прошло, без поста).
+**Маркеры дат (OS §11.3):** точная дата | `~дата` (ориентир из прошлых сезонов) | TBA (окно без точной даты).
 
-**Последнее обновление:** 2026-05-17
+**Последнее обновление:** 2026-05-23
 
 ---
 
-## 🏁 POST-FINAL WRAP (17.05 - 31.05.2026)
+## 🏁 POST-FINAL WRAP (17-31.05.2026)
 
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
 | 17.05 | 02:30 | EU | Grand Final Deep Dive (DARA 516 баллов) | COVERED | `04_CONTENT/2026/05/17/YV-17.05-02-30-EU-GrandFinalDeepDive.md` |
-| 17.05 | TBA | 🇧🇬 BUL | Профиль DARA / разбор «Bangaranga» (DNA) | PENDING |  |
-| 17.05 | TBA | 🇧🇬 BUL | БНТ - первые заявления о хостинге 2027 | PENDING |  |
-| 18.05 | 13:00 | 🇵🇭 PHL | ABS-CBN объявил августовское окно нацотбора ESC Asia | COVERED | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
-| 18.05 | 18:30 | 🇧🇬 BGR | Шорт-лист 3 городов на ESC 2027: София/Пловдив/Варна | COVERED | `04_CONTENT/2026/05/18/YV-18.05-18-30-BG-HostCityShortlist.md` |
-| 18.05 | TBA | EU | Разбор сплита jury/televote (когда EBU опубликует) | PENDING |  |
-| 22-25.05 | TBA | 🇧🇬 BGR | Совет министров Болгарии создаёт оргкомитет ESC 2027 | PENDING |  |
-| июнь-июль | TBA | 🇧🇬 BGR | Финальный выбор города-хозяина из шорт-листа | TBA |  |
-| 18.05 | TBA | 🇫🇮 FIN | Финский провал: почему 6-е место (VISION) | PENDING |  |
-| 19.05 | TBA | 🇦🇺 AUS | Австралия 2-е: разбор стерильного вокала Delta Goodrem | PENDING |  |
-| 19.05 | TBA | 🇬🇧 GBR | UK 3-й год подряд 0 от зрителей: системный диагноз | PENDING |  |
-| 20-25.05 | TBA | various | Заявления вещателей о возвращении/неучастии 2027 | PENDING |  |
-| 21.05 | 14:30 | 🇲🇰 MKD | MRT подтвердил возвращение на ESC 2027 (Ристоски) | COVERED | `04_CONTENT/2026/05/21/YV-21.05-14-30-MK-Return2027.md` |
-| 22.05 | 13:00 | 🇱🇺/🇭🇺 | PM Люксембурга подтвердил участие 2027; PM Венгрии заказал оценку | COVERED | `04_CONTENT/2026/05/22/YV-22.05-13-00-EU-Returns-LU-HU.md` |
-| 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов, голосование до 31.05) | SCHEDULED |  |
-| 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
-| 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
-| 19.05 | 13:00 | 🇵🇹 PRT | The Voice Kids 2026: 8 финалистов объявлены, финал 24.05 → JESC | COVERED | `04_CONTENT/2026/05/19/YV-19.05-13-00-PT-VoiceKidsFinal.md` |
-| 19.05 | 18:00 | 🇲🇰 MKD | MRT: приём заявок на JESC 2026 до 29.05, кастинг 01.06 | COVERED | `04_CONTENT/2026/05/19/YV-19.05-18-00-MK-JESC2026Submissions.md` |
-| 19.05 | 21:00 | 🇳🇱 NLD | AVROTROS: финалисты Junior Songfestival 2026 объявлены | COVERED | `04_CONTENT/2026/05/19/YV-19.05-21-00-NL-JuniorSongfestival.md` |
+| 18.05 | 13:00 | 🇵🇭 PHL | ABS-CBN объявил августовское окно нацотбора Евровидения Азия | COVERED | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
+| 18.05 | 18:30 | 🇧🇬 BGR | Шорт-лист 3 городов на Евровидение 2027: София/Пловдив/Варна | COVERED | `04_CONTENT/2026/05/18/YV-18.05-18-30-BG-HostCityShortlist.md` |
+| 18.05 | 20:00 | 🇲🇹 MLT | EBU подтвердил Детское Евровидение 2026: 24.10, Та'Кали | COVERED | `04_CONTENT/2026/05/18/YV-18.05-20-00-MT-JESC2026TaQali.md` |
+| 19.05 | 13:00 | 🇵🇹 PRT | The Voice Kids 2026: 8 финалистов, финал 24.05 → JESC | COVERED | `04_CONTENT/2026/05/19/YV-19.05-13-00-PT-VoiceKidsFinal.md` |
+| 19.05 | 18:00 | 🇲🇰 MKD | MRT: приём заявок на JESC 2026 до конца мая | COVERED | `04_CONTENT/2026/05/19/YV-19.05-18-00-MK-JESC2026Submissions.md` |
+| 19.05 | 21:00 | 🇳🇱 NLD | AVROTROS: 12 финалистов Junior Songfestival 2026 | COVERED | `04_CONTENT/2026/05/19/YV-19.05-21-00-NL-JuniorSongfestival.md` |
+| 21.05 | 14:30 | 🇲🇰 MKD | MRT подтвердил возвращение на Евровидение 2027 | COVERED | `04_CONTENT/2026/05/21/YV-21.05-14-30-MK-Return2027.md` |
+| 22.05 | 13:00 | 🇱🇺/🇭🇺 | PM Люксембурга подтвердил 2027; PM Венгрии заказал оценку | COVERED | `04_CONTENT/2026/05/22/YV-22.05-13-00-EU-Returns-LU-HU.md` |
 | 24.05 | TBA | 🇵🇹 PRT | The Voice Kids 2026 - финал, выбор JESC-представителя | PENDING |  |
-| ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (до конца мая, ориентир по прошлым сезонам) | PENDING |  |
-| ~01.06 | TBA | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (начало июня) | PENDING |  |
-| 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор) | PENDING |  |
+| 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | SCHEDULED |  |
+| 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
+| ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
+| 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | PENDING |  |
 | 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | PENDING |  |
+| 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 
 ## 🌑 OFF-SEASON (01.06 - 31.08.2026)
 
-Темп: 1-2 поста в неделю. Темы: VISION-лонгриды, индустриальные тренды, ретроспективы, выход альбомов экс-участников, JESC build-up.
+**Темп:** 1-2 поста в неделю + 1 чарт-цикл в неделю.
+
+### Июнь
 
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
-| 01.06 | TBA | 🇦🇱 ALB | JESC отбор: Final Night | PENDING |  |
-| 06.06 | TBA | 🇦🇲 ARM | Eurovision Young Musicians (Yerevan) | PENDING |  |
-| 01.08 | TBA | 🇧🇹 BTN | ESC Asia: нацотбор Бутана (BBS) | PENDING |  |
-| август | TBA | 🇵🇭 PHL | ESC Asia: нацотбор Филиппин (ABS-CBN, Roxy Liquigan, анонс 18.05) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
-| 17.08 | 00:01 | 🇫🇮 FIN | UMK 2027: открытие окна подачи заявок (yle.fi/umk) | PENDING |  |
-| 23.08 | 23:59 | 🇫🇮 FIN | UMK 2027: закрытие окна подачи заявок | PENDING |  |
-| август | TBA | 🌏 ASIA | ESC Asia: старт волны нацотборов | PENDING |  |
+| 01.06 | 11:00 | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (10:00 CEST) | PENDING |  |
+| 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | PENDING |  |
+| 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
+| 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | PENDING |  |
 | июнь | TBA | EBU | Финальное решение по реформам регламента 2027 | TBA |  |
+| июнь | TBA | 🇧🇬 BGR | БНТ: возможное объявление города-хозяина из шорт-листа | TBA |  |
+
+### Июль
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
 | июль | TBA | various | Обзор летних релизов экс-участников | PENDING |  |
-| июль-август | TBA | 🇧🇬 BUL | БНТ: объявление города/арены/девиза ESC 2027 | TBA |  |
+| июль-август | TBA | 🇧🇬 BGR | БНТ: объявление города/арены/девиза Евровидения 2027 | TBA |  |
+
+### Август
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| TBA август | TBA | 🇧🇹 BTN | Евровидение Азия: нацотбор Бутана (BBS) | PENDING |  |
+| TBA август | TBA | 🇵🇭 PHL | Евровидение Азия: нацотбор Филиппин (ABS-CBN) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-13-00-PH-ESCAsiaFinalAugust.md` |
+| TBA август | TBA | 🇲🇾 MYS | Anugerah Juara Lagu 40 (Малайзийская национальная премия, возможный отбор для Евровидения Азия) | PENDING |  |
+| 17.08 | 01:01 | 🇫🇮 FIN | UMK 2027: открытие окна подачи заявок (yle.fi/umk) | PENDING |  |
+| 23.08 | 00:59 | 🇫🇮 FIN | UMK 2027: закрытие окна подачи заявок | PENDING |  |
 
 ## 🌱 PRE-SEASON BUILD (01.09 - 31.12.2026)
 
+**Темп:** 4-6 чартов/мес, активные нацотборы Евровидения Азия + первые анонсы ESC 2027.
+
+### Сентябрь 2026
+
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
-| 19.09 | TBA | 🇳🇵 NEP | ESC Asia: нацотбор Непала (Himalaya TV) | PENDING |  |
-| сентябрь | TBA | various | Подтверждения участия вещателей в ESC 2027 | TBA |  |
-| сентябрь | TBA | 🇰🇷 KOR | ESC Asia: нацотбор Кореи (ENA / PK Inc) | TBA |  |
-| сентябрь-октябрь | TBA | 🇲🇾 MYS | ESC Asia: нацотбор Малайзии (Media Prima / TV3) | TBA |  |
-| сентябрь-октябрь | TBA | 🇻🇳 VNM | ESC Asia: нацотбор Вьетнама (VTV3) | TBA |  |
-| сентябрь-октябрь | TBA | 🇰🇭 KHM | ESC Asia: нацотбор Камбоджи (TV5) | TBA |  |
-| сентябрь-октябрь | TBA | 🇱🇦 LAO | ESC Asia: нацотбор Лаоса (VTE9) | TBA |  |
-| сентябрь-октябрь | TBA | 🇧🇩 BGD | ESC Asia: нацотбор Бангладеш (NTV) | TBA |  |
-| сентябрь-октябрь | TBA | 🇹🇭 THA | ESC Asia: нацотбор Таиланда (Channel 3, host) | TBA |  |
-| 24.10 | TBA | 🇲🇹 MLT | **Junior Eurovision 2026** (24-й) - Malta Fairs & Conventions Centre, Та'Кали (PBS host) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-20-00-MT-JESC2026TaQali.md` |
-| 14.11 | 14:00 | 🌏 THA | **ESC Asia Grand Final** (Бангкок, Channel 3 host) | TBA |  |
-| ноябрь | TBA | various | Первые анонсы артистов ESC 2027 (внутренние выборы) | TBA |  |
-| декабрь | TBA | 🇸🇪 SWE | Melodifestivalen 2027 - объявление участников | TBA |  |
-| декабрь | TBA | 🇮🇹 ITA | Sanremo 2027 - объявление big artists | TBA |  |
+| 04.09 | TBA | 🇰🇷 KOR | Евровидение Азия: нацотбор Южной Кореи (ENA / PK Inc) | PENDING |  |
+| 19.09 | TBA | 🇳🇵 NEP | Евровидение Азия: нацотбор Непала (Himalaya TV) | PENDING |  |
+| 19.09 | 20:20-21:15 | 🇳🇱 NLD | Junior Songfestival 2026 - Финал (19:20-20:15 CEST) | PENDING |  |
+| TBA сент | TBA | 🇲🇪 MNE | Eurovision Workshop - Тиват, Черногория | PENDING |  |
+| TBA сент | TBA | 🇲🇾 MYS | Евровидение Азия: нацотбор Малайзии (Media Prima / TV3) | TBA |  |
+| TBA сент | TBA | 🇻🇳 VNM | Евровидение Азия: нацотбор Вьетнама (VTV3) | TBA |  |
+| TBA сент | TBA | 🇰🇭 KHM | Евровидение Азия: нацотбор Камбоджи (TV5) | TBA |  |
+| TBA сент | TBA | various | Подтверждения участия вещателей в Евровидении 2027 | TBA |  |
+
+### Октябрь 2026
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| 02.10 | TBA | 🌐 ARCTIC | Pan-ArcticVision - первое издание (Арктический региональный конкурс) | TBA |  |
+| TBA окт | TBA | 🇱🇦 LAO | Евровидение Азия: нацотбор Лаоса (VTE9) | TBA |  |
+| TBA окт | TBA | 🇧🇩 BGD | Евровидение Азия: нацотбор Бангладеш (NTV) | TBA |  |
+| TBA окт | TBA | 🇹🇭 THA | Евровидение Азия: нацотбор Таиланда (Channel 3, host) | TBA |  |
+| **24.10** | **TBA** | 🇲🇹 MLT | **Детское Евровидение 2026 (24-й)** - Malta Fairs & Conventions Centre, Та'Кали (PBS host) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-20-00-MT-JESC2026TaQali.md` |
+
+### Ноябрь 2026
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| **14.11** | 15:00 | 🌏 THA | **Евровидение Азия 2026 - Grand Final** (Бангкок, Channel 3 host, 14:00 CEST) | TBA |  |
+| TBA ноя | TBA | various | Первые анонсы артистов Евровидения 2027 (внутренние выборы) | TBA |  |
+
+### Декабрь 2026
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| TBA дек | TBA | 🇦🇱 ALB | Festivali i Këngës (взрослая версия) - выбор представителя на Евровидение 2027 | TBA |  |
+| TBA дек | TBA | 🇸🇪 SWE | Melodifestivalen 2027 - объявление участников | TBA |  |
+| TBA дек | TBA | 🇮🇹 ITA | Sanremo 2027 - объявление Big Names | TBA |  |
 
 ## 🔥 ACTIVE SEASON 2027 (01.01 - середина мая 2027, хост 🇧🇬 Болгария)
 
-Подробное расписание добавляется по мере публикации EBU и национальными вещателями. Опорные точки:
+### Январь 2027
 
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
-| 20.02.2027 | TBA | 🇫🇮 FIN | UMK 2027: Финал, Nokia Arena, Tampere | PENDING |  |
-| январь 2027 | - | various | Старт MGP (NOR), UMK heats (FIN), Eesti Laul (EST), Eurovizija.LT (LTU) | TBA |  |
-| февраль 2027 | - | various | Sanremo (ITA), Mello heats (SWE), Festival da Canção (POR), Песма за Евровизију (SRB), DMGP (DEN), Vidbir (UKR) | TBA |  |
-| март 2027 | - | various | Финалы оставшихся нацотборов, аллокация SF | TBA |  |
-| май 2027 | - | 🇧🇬 BUL | Репетиции / SF1 / SF2 / финал ESC 2027 | TBA |  |
+| TBA янв | TBA | 🇪🇸 ESP | Benidorm Fest 2027 (возможный возврат Испании на Евровидение) | TBA |  |
+| TBA янв | TBA | various | Старт MGP (NOR), UMK heats (FIN), Eesti Laul (EST), Eurovizija.LT (LTU) | TBA |  |
+
+### Февраль 2027
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| 13.02 | TBA | 🇩🇰 DNK | Dansk Melodi Grand Prix 2027 - финал | TBA |  |
+| **20.02** | TBA | 🇫🇮 FIN | **UMK 2027 - Финал**, Nokia Arena, Тампере | PENDING |  |
+| TBA фев | TBA | 🇮🇹 ITA | Festival di Sanremo 2027 | TBA |  |
+| TBA фев | TBA | various | Mello heats (SWE), Festival da Canção (POR), Песма за Евровизију (SRB), Vidbir (UKR) | TBA |  |
+
+### Март 2027
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| 11-13.03 | TBA | 🇲🇹 MLT | Mużika Mużika 2027 - мальтийский нацотбор | TBA |  |
+| TBA мар | TBA | 🇸🇪 SWE | Melodifestivalen 2027 - финал | TBA |  |
+| TBA мар | TBA | various | Финалы оставшихся нацотборов, аллокация SF | TBA |  |
+
+### Апрель 2027
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| TBA апр | TBA | 🇧🇬 BGR | Открытие Eurovision Village, бирюзовая дорожка | TBA |  |
+
+### Май 2027
+
+| Дата | Время | Страна | Событие | Статус | Пост |
+|---|---|---|---|---|---|
+| TBA май | TBA | 🇧🇬 BGR | Репетиции (~1-я неделя мая) | TBA |  |
+| TBA май | TBA | 🇧🇬 BGR | Евровидение 2027 - Первый полуфинал | TBA |  |
+| TBA май | TBA | 🇧🇬 BGR | Евровидение 2027 - Второй полуфинал | TBA |  |
+| TBA май | TBA | 🇧🇬 BGR | Евровидение 2027 - Grand Final | TBA |  |
 
 ---
 
@@ -95,5 +154,6 @@
 3. **Когда событие пропущено осознанно:** статус → SKIPPED с короткой причиной в скобках.
 4. **Прошедшие события (>14 дней назад):** переносить в `YV_ESC_Calendar_PAST.md` чтобы не разрастать этот файл.
 5. **TBA → конкретная дата:** обновлять как только источник официально подтвердит. Источник в колонке "Пост" в виде ссылки.
+6. **Конвертация времени:** все источники EBU/национальных вещателей дают CEST или местное. В этот файл - **только Riga EEST** (= CEST + 1 час). Конвертация явная в комментариях.
 
-См. `01_GENERAL/YOURVISION_OS.md` §9 (workflow) и §10 (режимы сезона).
+См. `01_GENERAL/YOURVISION_OS.md` §9 (workflow), §10 (режимы сезона), §11.3 (маркеры дат).
