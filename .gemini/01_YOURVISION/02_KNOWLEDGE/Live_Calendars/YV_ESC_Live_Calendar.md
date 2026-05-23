@@ -23,6 +23,7 @@
 | 21.05 | 14:30 | 🇲🇰 MKD | MRT подтвердил возвращение на Евровидение 2027 | COVERED | `04_CONTENT/2026/05/21/YV-21.05-14-30-MK-Return2027.md` |
 | 22.05 | 13:00 | 🇱🇺/🇭🇺 | PM Люксембурга подтвердил 2027; PM Венгрии заказал оценку | COVERED | `04_CONTENT/2026/05/22/YV-22.05-13-00-EU-Returns-LU-HU.md` |
 | 23.05 | 15:00 | 🇧🇦 BIH | BHRT запустил кампанию пожертвований - долг перед EBU блокирует возврат на Евровидение | COVERED | `04_CONTENT/2026/05/23/YV-23.05-15-00-BA-BHRT-Donations.md` |
+| 23.05 | 18:30 | 🇳🇱 NLD | Omroep MAX готов перенять Евровидение 2027 если AVROTROS бойкотирует | COVERED | `04_CONTENT/2026/05/23/YV-23.05-18-30-NL-OmroepMAX-Backup.md` |
 | 24.05 | TBA | 🇵🇹 PRT | The Voice Kids 2026 - финал, выбор JESC-представителя | PENDING |  |
 | 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | SCHEDULED |  |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
