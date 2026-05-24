@@ -25,7 +25,8 @@
 | 23.05 | 15:00 | 🇧🇦 BIH | BHRT запустил кампанию пожертвований - долг перед EBU блокирует возврат на Евровидение | COVERED | `04_CONTENT/2026/05/23/YV-23.05-15-00-BA-BHRT-Donations.md` |
 | 23.05 | 18:30 | 🇳🇱 NLD | Omroep MAX готов перенять Евровидение 2027 если AVROTROS бойкотирует | COVERED | `04_CONTENT/2026/05/23/YV-23.05-18-30-NL-OmroepMAX-Backup.md` |
 | 24.05 | 12:00 | 🇪🇺 EU | 70 лет Евровидению: первый конкурс 24.05.1956 Лугано, 4K-ремастер «Refrain» | COVERED | `04_CONTENT/2026/05/24/YV-24.05-12-00-EU-Eurovision70Anniversary.md` |
-| 24.05 | TBA | 🇵🇹 PRT | The Voice Kids 2026 - финал, выбор JESC-представителя | PENDING |  |
+| 24.05 | 22:00 | 🇵🇹 PRT | The Voice Kids 2026 финал сегодня 23:15 Riga (RTP1) | COVERED | `04_CONTENT/2026/05/24/YV-24.05-22-00-PT-VoiceKidsFinal-Tonight.md` |
+| 24.05 | 23:15 | 🇵🇹 PRT | The Voice Kids 2026 - LIVE финал на RTP1, выбор JESC-представителя | PENDING |  |
 | 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | SCHEDULED |  |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
