@@ -182,6 +182,24 @@
             "event": "The Voice Kids Malta Season 3 Launch (JESC Selection)",
             "type": "RELEASE",
             "status": "PLANNED"
+        },
+        {
+            "id": "YV_OPINION_GENRE2027",
+            "date": "2026-06-15",
+            "time": "12:00",
+            "country": "Europe",
+            "event": "OPINION: Жанровый код Евровидения-2027 в Болгарии",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
+            "id": "YV_COMMUNITY_SCOUTING",
+            "date": "2026-06-16",
+            "time": "12:00",
+            "country": "Europe",
+            "event": "COMMUNITY: Запуск интерактива «Музыкальный скаутинг»",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
         }
     ],
     "winners": {
