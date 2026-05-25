@@ -529,8 +529,22 @@
                 grid-column: span 1;
                 grid-row: auto;
             }
+            #radio-sect.column, #chart-sect.column {
+                max-width: 600px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            main.column {
+                max-width: 760px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
             .timers-hero { grid-template-columns: 1fr 1fr; gap: 15px; }
+            .timers-hero > div:nth-child(3) { grid-column: span 2; }
             .timer-val { font-size: 1.1rem; }
+            #news-grid { grid-template-columns: 1fr !important; }
         }
 
         @media (max-width: 768px) {
@@ -1207,10 +1221,11 @@
         .player-cover-wrap {
             position: relative;
             width: 100%;
+            max-width: 280px;
             aspect-ratio: 1;
             border-radius: 24px;
             overflow: visible;
-            margin-bottom: 24px;
+            margin: 0 auto 24px auto;
         }
         #player-cover {
             width: 100%;
