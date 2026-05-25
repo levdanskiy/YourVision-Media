@@ -30,8 +30,8 @@
 | 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-00-EU-EuroGroove-ALBMCuts-Announce.md` |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
-| 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | PENDING |  |
-| 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | PENDING |  |
+| 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
+| 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 
 ## 🌑 OFF-SEASON (01.06 - 31.08.2026)
@@ -43,7 +43,7 @@
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
 | 01.06 | 11:00 | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (10:00 CEST) | PENDING |  |
-| 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | PENDING |  |
+| 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
 | 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | PENDING |  |
 | июнь | TBA | EBU | Финальное решение по реформам регламента 2027 | TBA |  |
