@@ -418,7 +418,7 @@
         
         .timers-hero { 
             display: grid; 
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(3, minmax(0, 1fr)); 
             gap: 16px; 
             margin-bottom: 30px; 
         }
@@ -469,7 +469,7 @@
         /* Bento Grid Layout - restructured */
         .layout {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
+            grid-template-columns: repeat(12, minmax(0, 1fr));
             gap: 24px;
             max-width: 1320px;
             margin: 0 auto;
@@ -483,6 +483,7 @@
         }
         main.column {
             grid-column: span 8;
+            grid-row: span 2;
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -509,7 +510,9 @@
         @media (max-width: 540px) {
             #player-cover { max-width: 220px; }
         }
-        #chart-sect.column { grid-area: chart; }
+        #chart-sect.column {
+            grid-column: span 4;
+        }
         .timers-hero {
             max-width: 1280px;
             margin-left: auto;
@@ -522,8 +525,9 @@
                 grid-template-columns: 1fr;
                 gap: 24px;
             }
-            #radio-sect.column, main.column {
+            #radio-sect.column, main.column, #chart-sect.column {
                 grid-column: span 1;
+                grid-row: auto;
             }
             .timers-hero { grid-template-columns: 1fr 1fr; gap: 15px; }
             .timer-val { font-size: 1.1rem; }
@@ -767,7 +771,7 @@
         /* NEWS GRID BENTO SYSTEM */
         #news-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 16px;
         }
         
