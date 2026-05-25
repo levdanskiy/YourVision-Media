@@ -100,8 +100,8 @@ def sync():
     data_obj = json.loads(match.group(1))
     existing_news = data_obj.get("news", [])
 
-    # Cooperative merge: keep local entries from sync_local_posts.py untouched
-    local_news = [n for n in existing_news if n.get("id") == LOCAL_ID]
+    # Only keep genuine Telegram channel posts (discarding local drafts)
+    local_news = []
     merged = local_news + tg_posts
     merged.sort(key=lambda x: x.get("ts", 0), reverse=True)
     merged = merged[:MAX_NEWS]

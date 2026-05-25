@@ -30,10 +30,7 @@ echo ""
 python3 /home/levdanskiy/time_sentinel.py "$FILE"
 echo ""
 
-# 3. Synchronize Local Posts with the Hub
-echo -e "\033[1;34m🔄 Syncing news with the Interactive Hub...\033[0m"
-python3 /home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/sync_local_posts.py
-echo ""
+
 
 # 4. Extract Post metadata for Git Commit Message
 POST_ID=$(grep -E "^//\s*ИД-ПОСТА:" "$FILE" | head -n1 | cut -d':' -f2- | xargs)
