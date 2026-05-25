@@ -26,8 +26,8 @@
 | 23.05 | 18:30 | 🇳🇱 NLD | Omroep MAX готов перенять Евровидение 2027 если AVROTROS бойкотирует | COVERED | `04_CONTENT/2026/05/23/YV-23.05-18-30-NL-OmroepMAX-Backup.md` |
 | 24.05 | 12:00 | 🇪🇺 EU | 70 лет Евровидению: первый конкурс 24.05.1956 Лугано, 4K-ремастер «Refrain» | COVERED | `04_CONTENT/2026/05/24/YV-24.05-12-00-EU-Eurovision70Anniversary.md` |
 | 24.05 | 22:00 | 🇵🇹 PRT | The Voice Kids 2026 финал сегодня 23:15 Riga (RTP1) | COVERED | `04_CONTENT/2026/05/24/YV-24.05-22-00-PT-VoiceKidsFinal-Tonight.md` |
-| 24.05 | 23:15 | 🇵🇹 PRT | The Voice Kids 2026 - LIVE финал на RTP1, выбор JESC-представителя | PENDING |  |
-| 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | SCHEDULED |  |
+| 24.05 | 23:15 | 🇵🇹 PRT | The Voice Kids 2026 - LIVE финал на RTP1, выбор JESC-представителя | COVERED | `04_CONTENT/2026/05/25/YV-25.05-12-00-PT-VoiceKidsWinner-SalvadorRio.md` |
+| 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-00-EU-EuroGroove-ALBMCuts-Announce.md` |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | PENDING |  |
@@ -89,7 +89,7 @@
 |---|---|---|---|---|---|
 | 02.10 | TBA | 🌐 ARCTIC | Pan-ArcticVision - первое издание (Арктический региональный конкурс) | TBA |  |
 | TBA окт | TBA | 🇱🇦 LAO | Евровидение Азия: нацотбор Лаоса (VTE9) | TBA |  |
-| TBA окт | TBA | 🇧🇩 BGD | Евровидение Азия: нацотбор Бангладеш (NTV) | TBA |  |
+| 23.08 | TBA | 🇧🇩 BGD | Евровидение Азия: национальный финал Бангладеш (Channel i) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-30-BD-ESCAsiaSelection.md` |
 | TBA окт | TBA | 🇹🇭 THA | Евровидение Азия: нацотбор Таиланда (Channel 3, host) | TBA |  |
 | **24.10** | **TBA** | 🇲🇹 MLT | **Детское Евровидение 2026 (24-й)** - Malta Fairs & Conventions Centre, Та'Кали (PBS host) | PENDING | `04_CONTENT/2026/05/18/YV-18.05-20-00-MT-JESC2026TaQali.md` |
 

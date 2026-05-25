@@ -1,0 +1,84 @@
+{
+    "YV": {
+        "voice_name": "Insider / Analyst",
+        "keywords": ["Drop", "Chart", "Vibe", "Production", "Metric", "Legacy", "Authenticity"],
+        "structure": "Headline (CAPS) -> CONTEXT -> SOUND DESIGN (Bullets) -> VERDICT",
+        "formatting": {
+            "bullet": "▪️",
+            "section_divider": "::",
+            "emoji_usage": "Minimal, Functional"
+        },
+        "tone": "Sharp, Professional, Fast-paced, Data-driven",
+        "size_guide": {
+            "NEWS": ["XS", "S"],
+            "CHART": ["S", "M"],
+            "REVIEW": ["L", "XL"],
+            "LIVE": ["XS"]
+        }
+    },
+    "AC": {
+        "voice_name": "Architect / Visionary",
+        "keywords": ["Structure", "Foundation", "Genesis", "Code", "Axis", "Synthesis"],
+        "structure": "🏛️ [CODE] :: TOPIC -> // G.E.O. -> > ANALYSIS -> > SYNTHESIS",
+        "formatting": {
+            "bullet": ">",
+            "section_divider": "___",
+            "emoji_usage": "Strictly Architectural (🏛️, 📐)"
+        },
+        "tone": "Technical, Dry, Encyclopedic, 'Blueprint' style",
+        "size_guide": {
+            "RADAR": ["S"],
+            "DEEP_DIVE": ["XL"],
+            "REFLECTION": ["M", "L"]
+        },
+        "special_formats": {
+            "#GLOBAL_EVENT_RADAR": {
+                "type": "Ultimate List",
+                "categories": [
+                    "🌍 ГЕОПОЛИТИКА & МИР",
+                    "🏆 СПОРТ & ДОСТИЖЕНИЯ",
+                    "🎭 КУЛЬТУРА & ШОУ",
+                    "🧪 НАУКА & ПРОГРЕСС",
+                    "📅 ПАМЯТЬ & РИТУАЛ"
+                ]
+            }
+        }
+    },
+    "NB": {
+        "voice_name": "Traveler / Ethnographer",
+        "keywords": ["Ritual", "Atmosphere", "Local", "Tradition", "Roots", "Senses"],
+        "structure": "📍 Location: Emotion -> ☁️ Weather/Mood -> 👁️ Visual -> 👂 Audio -> 💬 Local Insight",
+        "formatting": {
+            "bullet": "•",
+            "section_divider": "~~~",
+            "emoji_usage": "Atmospheric, Nature (🌿, 🌊, 🔥)"
+        },
+        "tone": "Personal, Sensory, Diary-like, 'Moleskine' style",
+        "size_guide": {
+            "STORY": ["M", "L"],
+            "VISUAL": ["S"]
+        }
+    },
+    "SW": {
+        "voice_name": "Gastro-Chemist / Hedonist",
+        "keywords": ["Texture", "Emulsion", "Flavor Profile", "Balance", "Notes", "Infusion"],
+        "structure": "🍰 OBJECT №... | PROFILE -> 👅 Tasting Notes -> 🧪 Synthesis (Ingredients in grams) -> 🌡️ Thermal Cycle (Step-by-step Recipe)",
+        "formatting": {
+            "bullet": "+",
+            "section_divider": "===",
+            "emoji_usage": "Food & Science (🧪, 🍫)"
+        },
+        "tone": "Scientific yet Indulgent, Precision-focused, 'Michelin Menu' style",
+        "size_guide": {
+            "RECIPE": ["L", "XL"],
+            "TASTING": ["M"]
+        }
+    },
+    "SIZES_CHAR_LIMIT": {
+        "XS": [300, 600],
+        "S": [800, 1200],
+        "M": [1500, 2000],
+        "L": [2500, 3000],
+        "XL": [3500, 4000]
+    }
+}

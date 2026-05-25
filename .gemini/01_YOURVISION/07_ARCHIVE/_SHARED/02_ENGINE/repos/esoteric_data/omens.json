@@ -1,0 +1,9 @@
+[
+  {"omen": "Если на Сретение (или в начале февраля) метель - весна будет поздней.", "type": "Weather", "culture": "Slavic/European"},
+  {"omen": "Увидеть одинокую сороку - к печали, двух - к радости.", "type": "Animal", "culture": "Celtic/British"},
+  {"omen": "Если утреннее небо красное - жди бури к полудню.", "type": "Weather", "culture": "Global Maritime"},
+  {"omen": "Просыпать соль - к ссоре, если не бросить щепотку через левое плечо.", "type": "Household", "culture": "Global"},
+  {"omen": "Если кошка спит, спрятав нос под брюхо - к сильному морозу.", "type": "Animal", "culture": "Global"},
+  {"omen": "Найти гвоздь на дороге - к укреплению позиций в делах.", "type": "Object", "culture": "Craftsman/Folk"},
+  {"omen": "Если паук плетет паутину утром - день будет ясным и продуктивным.", "type": "Nature", "culture": "European"}
+]

@@ -46,7 +46,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [Крупный план, мягкий боковой свет, деревянная или каменная поверхность, пар или текстура. shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [Крупный план, мягкий боковой свет, деревянная или каменная поверхность, пар или текстура. shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -88,7 +88,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -121,7 +121,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [Тёмный фон, один объект в луче света, текстура камня или дерева. shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [Тёмный фон, один объект в луче света, текстура камня или дерева. shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -152,7 +152,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -181,7 +181,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -209,7 +209,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [Макро, холодный металл или стекло, минимум элементов, один источник света. shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [Макро, холодный металл или стекло, минимум элементов, один источник света. shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -244,7 +244,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [Природа, конкретное время суток, один силуэт или след. shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [Природа, конкретное время суток, один силуэт или след. shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -280,7 +280,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -312,7 +312,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [Природа или интерьер, конкретное время суток. shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [Природа или интерьер, конкретное время суток. shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -341,7 +341,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [Атмосферный свет, туман, граница между двумя состояниями. shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [Атмосферный свет, туман, граница между двумя состояниями. shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -372,7 +372,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [shot on 35mm film Kodak Portra 800]
 ```
 
 ---
@@ -401,7 +401,7 @@
 ***
 
 **Grade:** [S/A/B/C]
-**Visual Prompt:** [shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750]
+**Visual Prompt:** [shot on 35mm film Kodak Portra 800]
 ```
 
 ---

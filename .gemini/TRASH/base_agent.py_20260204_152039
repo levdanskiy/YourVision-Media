@@ -1,0 +1,60 @@
+import os
+import sys
+import subprocess
+import json
+import datetime
+
+class BaseAgent:
+    def __init__(self, channel):
+        self.channel = channel
+        self.core_path = "/home/levdanskiy/.gemini/"
+        self.scripts_path = os.path.join(self.core_path, "ENGINE/scripts/")
+        
+    def run_script(self, script_name, args=""):
+        cmd = f"python3 {os.path.join(self.scripts_path, script_name)} {args}"
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        return result.stdout.strip()
+
+    def get_true_time(self):
+        return self.run_script("true_time.py")
+
+    def get_pulse(self):
+        return self.run_script("pulse.py")
+
+    def get_intel(self, topic):
+        print(f"🤖 AGENT {self.channel}: Gathering Intel on '{topic}'...")
+        return self.run_script("intel_hub.py", f'--topic "{topic}"')
+
+    def generate_post_content(self, topic, context, rubric):
+        # Placeholder for LLM generation logic or template filling
+        # In a real scenario, this would call the LLM API.
+        # For now, we will return a structured template to be filled.
+        return f"// CONTENT GENERATION REQUIRED FOR {self.channel} //\nTOPIC: {topic}\nRUBRIC: {rubric}\nCONTEXT: {context}"
+
+    def save_post(self, date_str, time_str, rubric, slug, content):
+        year = "2026"
+        month = date_str.split(".")[1]
+        day = date_str.split(".")[0]
+        
+        path = os.path.join(self.core_path, f"CONTENT/posts/{year}/{month}/{day}")
+        os.makedirs(path, exist_ok=True)
+        
+        filename = f"{self.channel}-{date_str}-{time_str.replace(':', '-')}-{rubric}-{slug}.md"
+        full_path = os.path.join(path, filename)
+        
+        with open(full_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        
+        print(f"✅ AGENT {self.channel}: Post saved to {full_path}")
+        return full_path
+
+    def finalize(self, file_path):
+        print(f"🤖 AGENT {self.channel}: Finalizing...")
+        self.run_script("read_time_calc.py", file_path)
+        self.run_script("sanitize_content.py")
+        self.run_script("sync_status.py")
+        self.run_script("update_state.py")
+        print(f"✅ AGENT {self.channel}: Task Complete.")
+
+if __name__ == "__main__":
+    print("Base Agent Module")

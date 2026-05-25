@@ -1,0 +1,30 @@
+{
+    "YV": {
+        "style_name": "Broadcast Luxury",
+        "branding_mandate": "STRICT_3D",
+        "model_mandate": "REQUIRED",
+        "prompt_template": "Shot on Phase One XF IQ4. High-end broadcast design. [SCENE DESCRIPTION]. [MODEL DESCRIPTION]. The composition features three distinct 3D typographic elements integrated into the scene as physical installations: 1. In the center, [TITLE] in a massive, sleek, and futuristic font. 2. At the bottom corner, the branding 'YourVision' in sleek, metallic (platinum) 3D lettering. 3. Next to it, the branding 'levdanskiy' in the same premium metallic 3D font. Pure luxury realism, 8k resolution. --ar [AR] --v 6.1 --style raw --s 750 --personalize",
+        "negative_prompt": "flat text, watermark, overlay, low quality, cartoon"
+    },
+    "AC": {
+        "style_name": "Architectural Silence",
+        "branding_mandate": "NONE",
+        "model_mandate": "REQUIRED",
+        "prompt_template": "Shot on Phase One XF IQ4, 80mm lens. High-end architectural lifestyle photography. [SCENE DESCRIPTION]. [MODEL DESCRIPTION]. Sharp focus, dramatic lighting, structured composition. Organic realism, 8k resolution. NO branding, NO text. --ar [AR] --v 6.1 --style raw --s 250 --personalize",
+        "negative_prompt": "text, logo, watermark, empty room, clutter"
+    },
+    "NB": {
+        "style_name": "Cinematic Documentary",
+        "branding_mandate": "NONE",
+        "model_mandate": "REQUIRED",
+        "prompt_template": "Shot on Phase One XF IQ4, 35mm lens. High-end ethnographic editorial photography. [SCENE DESCRIPTION]. [MODEL DESCRIPTION]. Natural lighting, rich textures, authentic atmosphere. Organic realism, 8k resolution. NO branding, NO text. --ar [AR] --v 6.1 --style raw --s 250 --personalize",
+        "negative_prompt": "text, logo, watermark, studio lighting, empty landscape"
+    },
+    "SW": {
+        "style_name": "Macro Hedonism",
+        "branding_mandate": "NONE",
+        "model_mandate": "FORBIDDEN",
+        "prompt_template": "Shot on Phase One XF IQ4, 100mm Macro lens. High-end food editorial photography. [SCENE DESCRIPTION]. Extreme close-up, depth of field, tactile textures. Organic realism, 8k resolution. NO branding, NO text. NO PEOPLE, NO HANDS, NO FACES. --ar [AR] --v 6.1 --style raw --s 750 --personalize",
+        "negative_prompt": "text, logo, watermark, face, hands, messy, human"
+    }
+}

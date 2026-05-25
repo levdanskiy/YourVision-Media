@@ -1,0 +1,27 @@
+{
+  "systems": {
+    "tarot_thoth": {
+      "focus": "Alchemical & Kabbalistic",
+      "cards": {
+        "0": {"name": "The Fool", "formula": "Air + Aleph", "architect_note": "The initial void before structure"},
+        "1": {"name": "The Magus", "formula": "Mercury + Beth", "architect_note": "The transmission of the word through the element"}
+      }
+    },
+    "runes_futhark": {
+      "focus": "Primal forces",
+      "symbols": {
+        "FEHU": {"meaning": "Wealth, cattle, mobile energy", "vibe": "Expansion"},
+        "URUZ": {"meaning": "Strength, wild ox, raw power", "vibe": "Foundation"}
+      }
+    },
+    "nakshatras": {
+      "focus": "Lunar mansions",
+      "list": ["Ashwini", "Bharani", "Krittika", "Rohini"]
+    },
+    "chinese_elements": {
+      "focus": "5 Elements & 12 Animals",
+      "year_2026": "Fire Horse",
+      "day_logic": "Ten Heavenly Stems calculation"
+    }
+  }
+}

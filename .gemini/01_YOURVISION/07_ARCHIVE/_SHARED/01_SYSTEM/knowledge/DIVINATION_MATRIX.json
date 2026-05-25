@@ -1,0 +1,57 @@
+{
+  "DIVINATION_SYSTEMS": {
+    "MAIN": {
+      "focus": "High Astrology, Sacred Math & Structure",
+      "methods": [
+        "Planetary Aspects",
+        "House Ingress",
+        "Golden Ratio Analysis",
+        "Epoch Transition Signals",
+        "Zodiac Archetype",
+        "Tarot Major Arcana",
+        "I Ching Hexagram",
+        "Daily Numerology",
+        "Symbolon Oracle",
+        "Traditional Omens"
+      ],
+      "tone": "Architectural & Decisive",
+      "last_used_method": "Symbolon Oracle",
+      "last_used_date": "04.02.2026"
+    },
+    "NEIGHBORS": {
+      "focus": "Folk Omens, Nature & Daily Life",
+      "methods": [
+        "Runes",
+        "Wind Direction",
+        "Bird Omens",
+        "Fire Reading",
+        "Animal Totems",
+        "Tarot Minor Arcana",
+        "Celtic Tree Calendar",
+        "Chinese Zodiac Element",
+        "Lenormand Oracle",
+        "Gypsy Oracle",
+        "Traditional Omens"
+      ],
+      "tone": "Mystical & Authentic",
+      "last_used_method": "Animal Totems",
+      "last_used_date": "04.02.2026"
+    },
+    "SWEET": {
+      "focus": "Sensory Metaphors, Texture & aesthetics",
+      "methods": [
+        "Chocolate Crack Patterns",
+        "Coffee Bubble Reading",
+        "Honey Flow Symmetry",
+        "Fortune Texture",
+        "Sugar Crystal Reading",
+        "Crystal Lithotherapy",
+        "Floriography (Language of Flowers)",
+        "Traditional Omens"
+      ],
+      "tone": "Poetic & Intimate",
+      "last_used_method": "Honey Flow Symmetry",
+      "last_used_date": "04.02.2026"
+    }
+  }
+}

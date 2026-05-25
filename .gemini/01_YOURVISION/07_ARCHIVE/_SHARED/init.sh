@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "🎛️ YourVision 2.5 loaded"
+echo "📅 $(date '+%Y-%m-%d %H:%M:%S')"
+echo ""
+echo "Доступные команды:"
+echo "  yv_plan [дата]    - План на день"
+echo "  yv_guide          - Гид по эфирам"
+echo "  yv_week           - Roadmap недели"
+echo "  yv_history [дата] - Исторический пост"
+echo "  yv_pub 'текст'    - Срочная публикация"
+echo "  yv_sync           - Тройная синхронизация"

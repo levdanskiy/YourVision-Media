@@ -1,0 +1,15 @@
+{
+  "LAST_AUDIT": {
+    "TONE_OF_VOICE": "2026-02-01",
+    "MJ_PROMPTS": "2026-02-01",
+    "COLOR_PALETTE": "2026-02-01",
+    "INDUSTRY_SLANG": "2026-02-01"
+  },
+  "CURRENT_TRENDS": {
+    "VISUAL": "Organic Realism, Niji 7 Clean Flat, Analog Imperfections",
+    "STYLE": "Brutalist Meets Playful, Maximalist Serif Revival",
+    "KEY_COLORS": "Cloud Dancer (White), Cool Blue, Plum Noir, Deep Burgundy",
+    "MJ_VERSION": "V6.1 / V7 Alpha",
+    "MJ_PARAMS": "--oref, --draft, --style raw, --personalize"
+  }
+}

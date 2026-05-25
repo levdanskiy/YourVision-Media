@@ -1,0 +1,63 @@
+{
+    "global_standard": "Supreme Integrity 2026",
+    "channels": {
+        "AC": {
+            "editorial_lens": "Architectural Digest",
+            "preferred_ar": [
+                "16:9",
+                "4:3",
+                "3:2"
+            ],
+            "camera_gear": "Phase One XF IQ4",
+            "tov_nuance": "NEO-ARCHITECT: Tectonic, monumental.",
+            "current_trend": "BIM-optimization"
+        },
+        "NB": {
+            "editorial_lens": "National Geographic / Kinfolk",
+            "preferred_ar": [
+                "3:2",
+                "2:3",
+                "4:5"
+            ],
+            "camera_gear": "Leica M11",
+            "tov_nuance": "SENSORY TRAVELER: Mystical, earthy.",
+            "current_trend": "Meaning-making travel"
+        },
+        "SW": {
+            "editorial_lens": "Vogue Food",
+            "preferred_ar": [
+                "4:5",
+                "1:1",
+                "5:4"
+            ],
+            "camera_gear": "Hasselblad V-System",
+            "tov_nuance": "SUGAR ALCHEMIST: Alchemical, intimate.",
+            "current_trend": "Molecular innovation"
+        },
+        "YV": {
+            "editorial_lens": "Rolling Stone / Reels",
+            "preferred_ar": [
+                "9:16",
+                "1:1",
+                "16:9"
+            ],
+            "camera_gear": "Canon EOS R1",
+            "tov_nuance": "THE INSIDER: Energetic, pulse-driven.",
+            "current_trend": "Pulse-driven"
+        }
+    },
+    "ar_trends": {
+        "trending": [
+            "3:4",
+            "9:16",
+            "4:5",
+            "21:9"
+        ],
+        "classic": [
+            "1:1",
+            "16:9",
+            "3:2"
+        ]
+    },
+    "last_sync": "2026-01-29 12:00:06.218724"
+}

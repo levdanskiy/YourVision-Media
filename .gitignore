@@ -4,3 +4,20 @@
 .gemini/tmp/
 .gemini/01_YOURVISION/_SHARED/
 *.jsonl
+
+# Ignore personal config & credentials in .gemini
+.gemini/credentials.json
+.gemini/oauth_creds.json
+.gemini/settings.json
+.gemini/google_accounts.json
+.gemini/state.json
+.gemini/trustedFolders.json
+.gemini/user_id
+.gemini/installation_id
+.gemini/antigravity/
+.gemini/antigravity-cli/
+.gemini/config/
+.gemini/memory/
+.gemini/*.jpg
+.gemini/*.png
+.gemini/.safety_lock

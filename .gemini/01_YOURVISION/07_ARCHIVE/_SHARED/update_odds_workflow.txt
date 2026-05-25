@@ -1,0 +1,34 @@
+name: Auto Update Betting Odds
+
+on:
+  schedule:
+    - cron: '0 6,18 * * *' # 09:00 и 21:00 по Риге
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run update script
+        run: python update_odds.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data.js
+          git commit -m "auto: update betting odds from Eurovisionworld" || echo "No changes"
+          git push

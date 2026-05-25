@@ -1,0 +1,31 @@
+from base_agent import BaseAgent
+import sys
+
+class ACAgent(BaseAgent):
+    def __init__(self):
+        super().__init__("AC")
+
+    def execute_mission(self, date, time, rubric, topic, slug):
+        print(f"🏛️ AC AGENT ACTIVATED: {rubric} | {topic}")
+        
+        # 1. Gather Data
+        self.get_true_time()
+        self.run_script("ar_rotator.py") # Check AR rotation
+        intel = self.get_intel(topic)
+        
+        # 2. Content Logic (Simulation for CLI)
+        # In CLI mode, the user (me) acts as the creative core, 
+        # but the agent prepares the environment and finalizes.
+        
+        print(f"ℹ️ DATA READY. PLEASE GENERATE CONTENT FOR: {topic}")
+        print(f"   - Intel Summary: {intel[:100]}...")
+        
+        # 3. Post-Creation (To be called after user generates file)
+        # For now, this script is a wrapper for the preparation phase.
+
+if __name__ == "__main__":
+    if len(sys.argv) < 5:
+        print("Usage: python3 AC_agent.py DATE TIME RUBRIC TOPIC SLUG")
+    else:
+        agent = ACAgent()
+        agent.execute_mission(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5])
