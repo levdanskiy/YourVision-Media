@@ -45,7 +45,7 @@
 | 01.06 | 11:00 | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (10:00 CEST) | PENDING |  |
 | 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
-| 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | PENDING |  |
+| 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-16-15-AM-EYM2026-IntervalAct.md` |
 | июнь | TBA | EBU | Финальное решение по реформам регламента 2027 | TBA |  |
 | июнь | TBA | 🇧🇬 BGR | БНТ: возможное объявление города-хозяина из шорт-листа | TBA |  |
 
@@ -78,6 +78,7 @@
 | 19.09 | TBA | 🇳🇵 NEP | Евровидение Азия: нацотбор Непала (Himalaya TV) | PENDING |  |
 | 19.09 | 20:20-21:15 | 🇳🇱 NLD | Junior Songfestival 2026 - Финал (19:20-20:15 CEST) | PENDING |  |
 | TBA сент | TBA | 🇲🇪 MNE | Eurovision Workshop - Тиват, Черногория | PENDING |  |
+| ~сент | TBA | 🇲🇹 MLT | The Voice Kids Malta: старт отбора на домашний JESC 2026 | COVERED | `04_CONTENT/2026/05/25/YV-25.05-15-30-MT-JESC-TheVoiceKidsSelection.md` |
 | TBA сент | TBA | 🇲🇾 MYS | Евровидение Азия: нацотбор Малайзии (Media Prima / TV3) | TBA |  |
 | TBA сент | TBA | 🇻🇳 VNM | Евровидение Азия: нацотбор Вьетнама (VTV3) | TBA |  |
 | TBA сент | TBA | 🇰🇭 KHM | Евровидение Азия: нацотбор Камбоджи (TV5) | TBA |  |

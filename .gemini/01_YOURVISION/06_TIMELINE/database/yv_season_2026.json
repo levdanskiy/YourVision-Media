@@ -119,6 +119,69 @@
             "event": "#LISTS: Великие мистификации",
             "type": "ALMANAC",
             "status": "PLANNED"
+        },
+        {
+            "id": "JESC_PT_FINAL",
+            "date": "2026-05-24",
+            "time": "23:15",
+            "country": "Portugal",
+            "event": "The Voice Kids Portugal - Grand Final (JESC Selection)",
+            "type": "FINAL",
+            "status": "FINISHED"
+        },
+        {
+            "id": "JESC_AL_HEAT1",
+            "date": "2026-05-30",
+            "time": "TBA",
+            "country": "Albania",
+            "event": "Festivali i Këngës për Fëmijë - Night 1",
+            "type": "HEAT",
+            "status": "PLANNED"
+        },
+        {
+            "id": "JESC_AL_HEAT2",
+            "date": "2026-05-31",
+            "time": "TBA",
+            "country": "Albania",
+            "event": "Festivali i Këngës për Fëmijë - Night 2",
+            "type": "HEAT",
+            "status": "PLANNED"
+        },
+        {
+            "id": "JESC_AL_FINAL",
+            "date": "2026-06-01",
+            "time": "TBA",
+            "country": "Albania",
+            "event": "Festivali i Këngës për Fëmijë - Grand Final (JESC Selection)",
+            "type": "FINAL",
+            "status": "PLANNED"
+        },
+        {
+            "id": "EYM_YEREVAN_FINAL",
+            "date": "2026-06-06",
+            "time": "21:00",
+            "country": "Armenia",
+            "event": "Eurovision Young Musicians 2026 - Final (Yerevan)",
+            "type": "FINAL",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_BD_FINAL",
+            "date": "2026-08-23",
+            "time": "TBA",
+            "country": "Bangladesh",
+            "event": "ESC Asia Bangladesh National Final (Channel i)",
+            "type": "FINAL",
+            "status": "PLANNED"
+        },
+        {
+            "id": "JESC_MT_LAUNCH",
+            "date": "2026-09-01",
+            "time": "TBA",
+            "country": "Malta",
+            "event": "The Voice Kids Malta Season 3 Launch (JESC Selection)",
+            "type": "RELEASE",
+            "status": "PLANNED"
         }
     ],
     "winners": {
