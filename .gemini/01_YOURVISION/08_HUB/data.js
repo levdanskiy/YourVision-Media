@@ -356,6 +356,30 @@ var DATA = {
             "poll": null
         },
         {
+            "m": "25.05 | 08:36",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6144",
+            "t": "🇵🇹 ПОРТУГАЛИЯ: SALVADOR RIO ВЫИГРАЛ THE VOICE KIDS И ОТПРАВИТСЯ НА МАЛЬТУ",
+            "b": "Salvador Rio победил в седьмом сезоне The Voice Kids Portugal вчера вечером и завоевал право представить Португалию на Детском Евровидении 2026. Артист выступал в команде наставника Diogo Piçarra.\nДетали финала и поездки\n👍 Финал шоу транслировался в прямом эфире телеканала RTP1 24 мая.\n👍 По итогам зрительского голосования Salvador Rio обошёл остальных финалистов.\n👍 Детское Евровидение 2026 пройдёт 24 октября в Та'Кали (Мальта).\n⏱️ Время чтения: 0.4 мин | 🇵🇹 YourVision: Global",
+            "img": "https://cdn4.telesco.pe/file/dfRnCQg0JMj3xYzZsm_TLiag3e7t7dmHXMJIJSlzudQrcum9k5zuYHl6Aiwt53fUpOWiDlc21XHzZ3sFvlyM1guV48VfGW1MtCNEuFnX0ZJnM_NF82MvjQycDmVTJ--HwHIObhc9-2Y4dmUIblnhvzBf78Sacnzr3oHJ61t_ESg_wgKGHzMZSnvwmBbElqtOOUfFFHryDMDzXiD-Dof1q6h1ka3gmntDnet1uXf8CmddkD6duDVozSrtRQ0CRXgXSyhZ4IBtCG7X7psJuqmZcQetxL1RwcpApYosSMINCHfGEMu4i7aFT4X3leWYwgxnebByTNN2iODkus0OlvCBtA.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1779698168.0,
+            "poll": null
+        },
+        {
+            "m": "25.05 | 08:34",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6143",
+            "t": "🇧🇩 БАНГЛАДЕШ: ОТБОР НА ЕВРОВИДЕНИЕ АЗИЯ 2026 ПРОЙДЁТ 23 АВГУСТА",
+            "b": "Бангладеш выберет своего представителя на Евровидение Азия 23 августа. Телевещатель Channel i и организаторы Voxovation опубликовали официальный регламент отбора.\nДетали приёма заявок и подготовки\n👍 Окно подачи заявок открыто с 10 мая до 10 июня.\n👍 Минимальный возраст участников составляет 18 лет.\n👍 Список из 12 финалистов объявят 21 июня, после чего в течение июля артисты пройдут этап подготовки.\nМеханика голосования и правила для артистов\n👍 Победитель определится голосованием зрителей и жюри в пропорции 50/50. Голосование жюри является опциональным.\n👍 Зрительское голосование пройдёт в приложении Zoop. Для снижения фактора фан-клубов пользователи обязаны выбрать минимум три разные песни.\n👍 Участникам рекомендовано сотрудничество с музыкальными лейблами. Voxovation назначит лейбл исполнителю при его отсутствии.\n⏱️ Время чтения: 0.7 мин | 🇧🇩 YourVision: Global",
+            "img": "https://cdn4.telesco.pe/file/fvtl0-j-7V7NtG1rZcsVzCx7ek1uRJPERZlC1zfn6hk5zYNpWvJkG18d4CM-8nJe5gNcYMoRUluVN1i0TbzAwoYIsbgf0u1c8KkhZA6sSCcW4e3KXeukkS1ciqEKIztAuLVmusY2VVRQD6tQPg5BX20JOOecDwuG3kfG_eCxw_0XvKAx73Ec2TyrKddcvPBI08ijQJXhHgcx-RBhmR_fS4SfXHamamzAmBunfu6fI7_xUSd4fFOvFPjORnFguIskOwjFUEb7zP9F4PQTJV71OYE1FotjmfPI1dnhjd7jARTj0-ZvvuRPKEqNcoIEMgxnF84S4ZRgZUU5P08lQ78JHQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1779698065.0,
+            "poll": null
+        },
+        {
             "m": "25.05 | 07:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/6034",
@@ -581,30 +605,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1779519841.0,
-            "poll": null
-        },
-        {
-            "m": "22.05 | 15:02",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/6027",
-            "t": "⏳ #CHRONOS: СТЕНА ДЕРЖИТ ДЕНЬ",
-            "b": "МОМЕНТ:\nСейчас, 18:02. Воздух уже не нагревается - солнце под углом 33° к горизонту, его лучи проходят через атмосферу длиннее и теряют энергию. Но южная стена дома, на которую солнце светило с 10 утра, ещё держит +24°C при +14°C в воздухе. Каменная кладка - аккумулятор. Кирпич отдаёт накопленное за восемь часов тепло медленно, до полуночи. Это последний час, когда можно прижать ладонь к стене и почувствовать день целиком.\nОЩУЩЕНИЕ:\nСтена тёплая, как кожа другого человека. Ладонь не отдёргивается - воздух вокруг прохладный, рука благодарно ложится на тепло. Через минуту понимаешь, что прижимаешься к чему-то, что было на солнце весь день, пока ты был внутри. Камень знает дольше тебя.\n→ Найти любую южную стену прямо сейчас. Положить ладонь. Не убирать минуту. Это и есть встреча с днём, который ты пропустил.\n⏱️ 0.8 мин | ⏳ Almanac: Chronos",
-            "img": "https://cdn4.telesco.pe/file/ZhhnNVVgfq2l8VLjbbm7tzl1waRhb1XzCwwHjCoOqnSeAhhoGRLoMQYkGmiF-8spFZhAVQNjmrkh4BIQvF9N46ERFEE82efPu8eergzFatsRrlGde0qZxXKh6w_f4yN_OweGZYZHQ3GKJ7iGH7pnpAmBG9tTJWvXgbIxhIK9Fu2ezDj18eL0GK_NJ2vrlIjD5VvIjlRiOORCgQWO4maFpDnscmAX_kbOivTYiHp8k1cpw4PX7Jr0AamhgDIKnTHLEFGxgtKu4gnqvwMrQE5lJ6lLb1ft6naDlrNW4wv1IMloyx9AQ3bfG3CWca9lABYV42EQbtwZxqR7H5WXcdSuQQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1779462121.0,
-            "poll": null
-        },
-        {
-            "m": "22.05 | 12:12",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6136",
-            "t": "🤍 ЛЮКСЕМБУРГ ПОДТВЕРЖДАЕТ, ВЕНГРИЯ РАССМАТРИВАЕТ - ДВА ПОЛИТИЧЕСКИХ СИГНАЛА К ЕВРОВИДЕНИЮ 2027",
-            "b": "Два премьер-министра ЕС обозначили позиции по Евровидению 2027. Люк Фриден (🇱🇺 Люксембург) подтвердил участие страны. Петер Мадьяр (🇭🇺 Венгрия) поручил Министерству культуры подготовить оценку возврата.",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1779451952.0,
             "poll": null
         }
     ],

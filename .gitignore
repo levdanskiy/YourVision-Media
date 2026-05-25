@@ -21,3 +21,8 @@
 .gemini/*.jpg
 .gemini/*.png
 .gemini/.safety_lock
+
+# Unignore publish and sentinel scripts
+!yv_publish.sh
+!time_sentinel.py
+
