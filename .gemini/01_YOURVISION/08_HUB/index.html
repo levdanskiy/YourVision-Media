@@ -1386,7 +1386,7 @@
             res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
             res = res.replace(/(?<![="])\b(\d+%?)\b(?![=">])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
-            res = res.replace(/🇪🇺|👑/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
+            res = res.replace(/🇪🇺|👑/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" class="heart-shape" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
             for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">`); }
             return res;
@@ -1456,7 +1456,7 @@
                 const tContent = document.getElementById("ticker-content");
                 if(tContent) {
                     const items = buildTickerItems(t);
-                    const ti = items.map(item => `<div class="ticker-item">${item}</div>`).join("");
+                    const ti = items.map(item => `<div class="ticker-item">${replaceFlags(item)}</div>`).join("");
                     tContent.innerHTML = ti + ti;
                 }
                 for(const id in navs) { const el = document.getElementById(id); if(el) el.innerHTML = `<i class="fi fi-rr-${id.split('-')[1]}"></i> ${navs[id]}`; }
@@ -1580,7 +1580,7 @@
                                 <span style="font-size:0.6rem; font-weight:900; color:${statusColor}; text-transform:uppercase;">${autoStatus}</span>
                             </div>
                             <div style="margin-top:5px;">
-                                <div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div>
+                                <div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${replaceFlags(item.t)}</div>
                                 <div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div>
                             </div>
                         </div>`;
@@ -1866,7 +1866,7 @@
                 const tContent = document.getElementById("ticker-content");
                 if (tContent) {
                     const items = buildTickerItems(t);
-                    const ti = items.map(item => `<div class="ticker-item">${item}</div>`).join("");
+                    const ti = items.map(item => `<div class="ticker-item">${replaceFlags(item)}</div>`).join("");
                     tContent.innerHTML = ti + ti;
                 }
             } catch(e) {}
