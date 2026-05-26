@@ -1113,24 +1113,24 @@
     <script>
         function toggleThemeMode() {
             const body = document.body;
-            const isDark = body.classList.toggle('dark-mode');
-            localStorage.setItem('yv_theme', isDark ? 'dark' : 'light');
+            const isLight = body.classList.toggle('light-mode');
+            localStorage.setItem('yv_theme', isLight ? 'light' : 'dark');
             updateThemeUI();
         }
         function updateThemeUI() {
-            const isDark = document.body.classList.contains('dark-mode');
+            const isLight = document.body.classList.contains('light-mode');
             const toggleBtn = document.getElementById('theme-toggle');
             if (toggleBtn) {
-                toggleBtn.innerHTML = isDark ? '<i class="fi fi-rr-sun"></i> LIGHT' : '<i class="fi fi-rr-moon"></i> DARK';
+                toggleBtn.innerHTML = isLight ? '<i class="fi fi-rr-moon"></i> DARK' : '<i class="fi fi-rr-sun"></i> LIGHT';
             }
         }
         // Run immediately to prevent flash of wrong theme
         (function() {
-            const savedTheme = localStorage.getItem('yv_theme') || 'light';
-            if (savedTheme === 'dark') {
-                document.body.classList.add('dark-mode');
+            const savedTheme = localStorage.getItem('yv_theme') || 'dark';
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
             } else {
-                document.body.classList.remove('dark-mode');
+                document.body.classList.remove('light-mode');
             }
         })();
 
