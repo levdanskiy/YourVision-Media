@@ -780,22 +780,22 @@ var DATA = {
         {
             "a": "🇨🇿 Daniel Zizka",
             "s": "Amar Pelos Dois (Salvador Sobral, PT 2017)",
-            "img": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇵🇹 Bandidos do Cante",
             "s": "Saudade, Saudade (MARO, PT 2022)",
-            "img": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇨🇾 Little Antigoni",
             "s": "My Number One (Helena Paparizou, GR 2005)",
-            "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇨🇭 Veronica Fusaro",
             "s": "Satellite (Lena, DE 2010)",
-            "img": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇲🇩 Satoshi",
@@ -805,37 +805,37 @@ var DATA = {
         {
             "a": "🇲🇹 AIDAN",
             "s": "Per Sempre Sì (Sal Da Vinci, IT 2026)",
-            "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇩🇪 Sarah Engels",
             "s": "Nel Blu Dipinto Di Blu (Domenico Modugno, IT 1958)",
-            "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇸🇲 SENHIT",
             "s": "Occidentali's Karma (Francesco Gabbani, IT 2017)",
-            "img": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇳🇴 JONAS LOVV",
             "s": "Arcade (Duncan Laurence, NL 2019)",
-            "img": "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇦🇺 Delta Goodrem",
             "s": "Tattoo (Loreen, SE 2023)",
-            "img": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇱🇻 Atvara",
             "s": "Fly On The Wings Of Love (Olsen Brothers, DK 2000)",
-            "img": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇷🇴 Alexandra Căpitănescu",
             "s": "Fuego (Eleni Foureira, CY 2018)",
-            "img": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇬🇷 Akylas",
@@ -845,37 +845,37 @@ var DATA = {
         {
             "a": "🇦🇿 JIVA",
             "s": "We Could Be The Same (maNga, TR 2010)",
-            "img": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇱🇺 Eva Marija",
             "s": "Ne Partez Pas Sans Moi (Céline Dion, CH 1988)",
-            "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇺🇦 LELÉKA",
             "s": "Baller (Abor & Tynna, DE 2025)",
-            "img": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇭🇷 LELEK",
             "s": "Wild Dances (Ruslana, UA 2004)",
-            "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇲🇪 Tamara Živković",
             "s": "Euphoria - After Dark (Loreen, SE 2012)",
-            "img": "https://images.unsplash.com/photo-1548142813-c348350df52b?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇷🇸 LAVINA",
             "s": "In My Dreams (Wig Wam, NO 2005)",
-            "img": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         },
         {
             "a": "🇩🇰 Søren Torpegaard Lund",
             "s": "Forlad Mig Ikke Her - Ne Partez Pas Sans Moi (Céline Dion, CH 1988)",
-            "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80&fit=crop"
+            "img": "assets/logo.webp"
         }
     ],
     "odds": [
