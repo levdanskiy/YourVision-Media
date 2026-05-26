@@ -1709,8 +1709,14 @@
                         }
 
                         function linkify(text) {
-                            const urlRegex = /(https?:\/\/[^\s<]+)/g;
-                            return text.replace(urlRegex, url => `<a href="${url}" target="_blank" style="color:var(--cyan); text-decoration:underline;">${url}</a>`);
+                            return text.split(/(<[^>]*>)/g).map((part, idx) => {
+                                if (idx % 2 === 1) {
+                                    return part;
+                                } else {
+                                    const urlRegex = /(https?:\/\/[^\s<]+)/g;
+                                    return part.replace(urlRegex, url => `<a href="${url}" target="_blank" style="color:var(--cyan); text-decoration:underline;">${url}</a>`);
+                                }
+                            }).join("");
                         }
 
                         return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
