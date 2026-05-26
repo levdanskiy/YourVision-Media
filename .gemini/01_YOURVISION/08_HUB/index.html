@@ -846,6 +846,30 @@
             .post-card.featured .post-h { font-size: 1.4rem; }
             .logo { font-size: 1.6rem; }
         }
+
+        /* PREMIUM MAGAZINE HERO BANNER */
+        .hero-banner-wrap {
+            max-width: 1340px;
+            margin: 0 auto 24px auto;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            border: var(--glass-border);
+            background: var(--surface);
+        }
+        .hero-banner {
+            width: 100%;
+            aspect-ratio: 21 / 7;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            max-height: 350px;
+        }
+        @media (max-width: 768px) {
+            .hero-banner {
+                aspect-ratio: 16 / 9;
+            }
+        }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -931,7 +955,7 @@
         <!-- CARD 3: Eurovision 2027 - date TBA -->
         <div style="display:flex; flex-direction:column;">
             <div class="timer-card contest-esc">
-                <div class="timer-poster" style="background:linear-gradient(135deg, #009b75 0%, #d62612 100%);"></div>
+                <div class="timer-poster" style="background-image:url('assets/esc_2027_bulgaria.png'); filter:brightness(0.85) saturate(1.05); background-position:center;"></div>
                 <div class="timer-info">
                     <span class="timer-label" style="color:var(--accent);"><i class="fi fi-rr-roadmap" aria-hidden="true"></i> Евровидение 2027 / <img src="https://www.eurovision.com/static/images/flags/flag_bg.svg" class="heart-shape" style="width:13px; height:13px; vertical-align:middle;"> Болгария</span>
                     <div class="timer-val" style="color:var(--accent); font-family:var(--font-serif); font-style:italic; font-size:1.5rem; letter-spacing:-0.02em;">Дата TBA</div>
@@ -943,14 +967,7 @@
 
         <!-- Beautiful Hero Magazine Banner -->
     <div class="hero-banner-wrap">
-        <div class="hero-banner" style="background-image: url('assets/hub_hero_banner.png');">
-            <div class="hero-banner-overlay"></div>
-            <div class="hero-banner-content">
-                <span class="hero-subtitle">YOURVISION EDITORIAL INTERACTIVE PLATFORM</span>
-                <h1 class="hero-title">VIENNA CLOSED. THE ROAD TO SOFIA 2027</h1>
-                <p class="hero-desc">Welcome to the visualizer dashboard. Access professional telemetry, live charts, broadcasts, and news in real time.</p>
-            </div>
-        </div>
+        <div class="hero-banner" style="background-image: url('assets/esc_2027_bulgaria.png');"></div>
     </div>
 
     <div class="layout">
