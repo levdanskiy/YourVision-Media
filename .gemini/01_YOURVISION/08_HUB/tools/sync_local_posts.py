@@ -114,13 +114,17 @@ def parse_post(path: Path):
 
 def collect_local_posts(lookback_days=LOOKBACK_DAYS):
     """Walk 04_CONTENT, return list of news-objects."""
-    cutoff = datetime.now(tz=RIGA_TZ) - timedelta(days=lookback_days)
+    now = datetime.now(tz=RIGA_TZ)
+    cutoff = now - timedelta(days=lookback_days)
     posts = []
     for md_path in CONTENT_ROOT.rglob("YV-*.md"):
         parsed = parse_post(md_path)
         if not parsed:
             continue
         if parsed["ts"] < cutoff.timestamp():
+            continue
+        if parsed["ts"] > now.timestamp():
+            # Skip future/scheduled posts that are not yet published to Telegram
             continue
         posts.append(parsed)
     return posts
