@@ -870,6 +870,12 @@
                 aspect-ratio: 16 / 9;
             }
         }
+        
+        .champ-column-hover:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent) !important;
+            box-shadow: 0 8px 20px var(--accent-glow);
+        }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -1495,31 +1501,49 @@
                     const cupT = finalBattle ? (cupWin1 ? finalBattle.t1 : finalBattle.t2) : "70";
 
                     champEl.innerHTML = `
-                        <div class="card" style="margin-bottom:20px; padding:14px; border-radius:15px; background:linear-gradient(135deg, rgba(255,215,0,0.05) 0%, rgba(255,0,127,0.05) 100%); border:1px solid rgba(255,215,0,0.2);">
-                            <div style="font-size:0.55rem; color:#aaa; font-weight:900; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:12px; text-align:center;">REAL vs YV CUP / VIENNA 2026</div>
-                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-                                <div style="padding:10px; background:rgba(255,215,0,0.08); border-radius:10px; border-left:3px solid #ffd700;">
-                                    <div style="font-size:0.5rem; color:#ffd700; font-weight:900; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:6px;">ESC WINNER / 516</div>
-                                    <div style="display:flex; align-items:center; gap:8px;">
-                                        <img src="${getH('bg')}" class="heart-shape" style="width:28px; height:28px;">
-                                        <div>
-                                            <div class="artist-rich" style="font-size:0.85rem; color:#fff;">DARA</div>
-                                            <div style="font-size:0.6rem; color:#888;">«Bangaranga»</div>
+                        <div class="card" style="margin-bottom:20px; padding:20px; border-radius:24px; background:linear-gradient(135deg, rgba(251, 191, 36, 0.04) 0%, rgba(255, 0, 127, 0.04) 100%); border:1px solid rgba(251, 191, 36, 0.15); position:relative; overflow:hidden;">
+                            <div style="font-family:var(--font-display); font-size:0.55rem; color:var(--muted); font-weight:800; letter-spacing:0.25em; text-transform:uppercase; margin-bottom:18px; text-align:center; display:flex; align-items:center; justify-content:center; gap:8px;">
+                                <i class="fi fi-rr-swords" style="color:var(--accent);"></i> REAL vs YV CUP / VIENNA 2026
+                            </div>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                                <!-- COLUMN 1: ESC WINNER (DARA) -->
+                                <div class="champ-column-hover" style="display:flex; flex-direction:column; background:rgba(251, 191, 36, 0.05); padding:12px; border-radius:18px; border:1px solid rgba(251, 191, 36, 0.1); transition:all 0.3s ease;">
+                                    <div style="font-family:var(--font-display); font-size:0.48rem; color:#fbbf24; font-weight:900; letter-spacing:0.18em; text-transform:uppercase; margin-bottom:10px; display:flex; align-items:center; gap:5px; justify-content:center;">
+                                        <i class="fi fi-rr-trophy"></i> ESC WINNER / 516
+                                    </div>
+                                    <div style="position:relative; width:100%; aspect-ratio:1; border-radius:12px; overflow:hidden; margin-bottom:12px; border:1px solid rgba(255,255,255,0.06);">
+                                        <img src="assets/sf_bulgaria.png" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.9) saturate(1.05);" alt="DARA">
+                                    </div>
+                                    <div style="text-align:center;">
+                                        <div style="font-family:var(--font-display); font-size:0.75rem; color:#fff; font-weight:800; letter-spacing:-0.02em; text-transform:uppercase;">DARA</div>
+                                        <div style="font-family:var(--font-serif); font-size:0.78rem; color:var(--muted); font-style:italic; margin:2px 0 10px 0;">«Bangaranga»</div>
+                                        <div style="display:flex; justify-content:center; gap:8px;">
+                                            <a href="https://www.youtube.com/results?search_query=DARA+Bangaranga" target="_blank" class="discovery-btn" style="width:30px; height:30px; font-size:0.8rem; background:rgba(255,0,0,0.1); border-color:rgba(255,0,0,0.2); color:#ff4444; margin:0;" title="Watch on YouTube"><i class="fi fi-brands-youtube"></i></a>
+                                            <a href="https://open.spotify.com/search/DARA%20Bangaranga" target="_blank" class="discovery-btn" style="width:30px; height:30px; font-size:0.8rem; background:rgba(29,185,84,0.1); border-color:rgba(29,185,84,0.2); color:#1db954; margin:0;" title="Listen on Spotify"><i class="fi fi-brands-spotify"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div style="padding:10px; background:rgba(255,0,127,0.08); border-radius:10px; border-left:3px solid var(--pink);">
-                                    <div style="font-size:0.5rem; color:var(--pink); font-weight:900; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:6px;">YV CUP / 77%</div>
-                                    <div style="display:flex; align-items:center; gap:8px;">
-                                        <img src="${getH(cupT)}" class="heart-shape" style="width:28px; height:28px;">
-                                        <div>
-                                            <div class="artist-rich" style="font-size:0.78rem; color:#fff; line-height:1.1;">${decodeS(cupA).split(' and ')[0].split(' & ')[0]}</div>
-                                            <div style="font-size:0.6rem; color:#888;">«Liekinheitin»</div>
+                                <!-- COLUMN 2: YV CUP WINNER (Linda Lampenius) -->
+                                <div class="champ-column-hover" style="display:flex; flex-direction:column; background:rgba(255, 0, 127, 0.05); padding:12px; border-radius:18px; border:1px solid rgba(255, 0, 127, 0.1); transition:all 0.3s ease;">
+                                    <div style="font-family:var(--font-display); font-size:0.48rem; color:var(--pink); font-weight:900; letter-spacing:0.18em; text-transform:uppercase; margin-bottom:10px; display:flex; align-items:center; gap:5px; justify-content:center;">
+                                        <i class="fi fi-rr-star"></i> YV CUP / 77%
+                                    </div>
+                                    <div style="position:relative; width:100%; aspect-ratio:1; border-radius:12px; overflow:hidden; margin-bottom:12px; border:1px solid rgba(255,255,255,0.06);">
+                                        <img src="assets/sf_finland.png" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.9) saturate(1.05);" alt="Linda Lampenius">
+                                    </div>
+                                    <div style="text-align:center;">
+                                        <div style="font-family:var(--font-display); font-size:0.7rem; color:#fff; font-weight:800; letter-spacing:-0.02em; text-transform:uppercase; line-height:1.1;">L. Lampenius</div>
+                                        <div style="font-family:var(--font-serif); font-size:0.78rem; color:var(--muted); font-style:italic; margin:2px 0 10px 0;">«Liekinheitin»</div>
+                                        <div style="display:flex; justify-content:center; gap:8px;">
+                                            <a href="https://www.youtube.com/results?search_query=Linda+Lampenius+Liekinheitin" target="_blank" class="discovery-btn" style="width:30px; height:30px; font-size:0.8rem; background:rgba(255,0,0,0.1); border-color:rgba(255,0,0,0.2); color:#ff4444; margin:0;" title="Watch on YouTube"><i class="fi fi-brands-youtube"></i></a>
+                                            <a href="https://open.spotify.com/search/Linda%20Lampenius%20Liekinheitin" target="_blank" class="discovery-btn" style="width:30px; height:30px; font-size:0.8rem; background:rgba(29,185,84,0.1); border-color:rgba(29,185,84,0.2); color:#1db954; margin:0;" title="Listen on Spotify"><i class="fi fi-brands-spotify"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div style="font-size:0.6rem; color:#777; margin-top:10px; text-align:center; font-style:italic; line-height:1.3;">Cup-голосователи поставили на финский хайп. Реальное Евровидение выбрало болгарское этно-поп.</div>
+                            <div style="font-family:var(--font-sans); font-size:0.58rem; color:var(--muted); margin-top:14px; text-align:center; font-style:italic; line-height:1.35; border-top:1px dotted var(--border); padding-top:10px;">
+                                Cup-голосователи поставили на финский хайп. Реальное Евровидение выбрало болгарское этно-поп.
+                            </div>
                         </div>`;
                 }
             } catch(e) {}
