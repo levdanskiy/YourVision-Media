@@ -27,8 +27,11 @@
 | 24.05 | 12:00 | 🇪🇺 EU | 70 лет Евровидению: первый конкурс 24.05.1956 Лугано, 4K-ремастер «Refrain» | COVERED | `04_CONTENT/2026/05/24/YV-24.05-12-00-EU-Eurovision70Anniversary.md` |
 | 24.05 | 22:00 | 🇵🇹 PRT | The Voice Kids 2026 финал сегодня 23:15 Riga (RTP1) | COVERED | `04_CONTENT/2026/05/24/YV-24.05-22-00-PT-VoiceKidsFinal-Tonight.md` |
 | 24.05 | 23:15 | 🇵🇹 PRT | The Voice Kids 2026 - LIVE финал на RTP1, выбор JESC-представителя | COVERED | `04_CONTENT/2026/05/25/YV-25.05-12-00-PT-VoiceKidsWinner-SalvadorRio.md` |
-| 24.05 | 20:30 | EU | EuroGroove ALBM Cuts: announce (20 cover-номинантов) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-00-EU-EuroGroove-ALBMCuts-Announce.md` |
-| 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING |  |
+| 26.05 | 18:45 | 🇦🇱 ALB | Junior Fest объявлен национальным отбором на JESC 2026 | COVERED | `04_CONTENT/2026/05/26/YV-26.05-18-45-AL-Junior-Fest-Return.md` |
+| 26.05 | 19:30 | EU | EuroGroove ALBM Cuts: старт голосования (20 номинантов) | COVERED | `04_CONTENT/2026/05/26/YV-26.05-19-30-EU-EuroGroove-ALBMCuts-Announce.md` |
+| 26.05 | 21:10 | 🇸🇰/🇸🇮 | Подготовка Словакии и Словении к возвращению на Евровидение 2027 | COVERED | `04_CONTENT/2026/05/26/YV-26.05-21-10-SK-SI-Return-Preparations.md` |
+| 27.05 | 10:00 | 🇧🇬 BGR | Анализ триумфа DARA и Болгарии в Вене (Deep Dive) | COVERED | `04_CONTENT/2026/05/27/YV-27.05-10-00-BG-Bangaranga-Story-DeepDive.md` |
+| 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING | |
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
