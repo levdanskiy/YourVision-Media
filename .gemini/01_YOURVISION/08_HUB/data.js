@@ -308,6 +308,18 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "26.05 | 07:04",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/6037",
+            "t": "📚 #SOURCE: ПО «ПАДЕНИЕ ДОМА АШЕРОВ» - ДОМ КАК ПСИХИКА",
+            "b": "«В продолжение всего тусклого, тёмного и беззвучного осеннего дня, когда тучи нависали удушающе низко, я ехал верхом по странно угрюмой местности и наконец оказался, когда сгустились вечерние тени, в виду меланхолического Дома Ашеров.»\nЭдгар Аллан По, «Падение дома Ашеров», 1839.\nЧТО СКРЫТО:\n1839 - год максимальной бедности По. Жена Вирджиния (его двоюродная сестра, на которой он женился когда ей было 13) уже больна туберкулёзом - умрёт в 1847. По работает редактором за гроши, пьёт. В этот год он пишет рассказ о замкнутой аристократической семье, которая физически распадается вместе со своим домом.\nТёмный слой стоит читать дважды. На первом уровне - готический ужас: брат и сестра живут в доме, который болеет вместе с ними; сестра умирает, брат хоронит её живой; дом обрушивается в чёрный пруд. На втором уровне - политическое заявление. По был южанин. Он видел как аристократические семьи Юга женятся внутри себя из страха «потерять кровь» - и физически вырождаются. Родерик и Маделин - не персонажи, а диагноз. Замкнутая система всегда обрушивается.\nПОЧЕМУ СЕГОДНЯ:\nВ мае дома впервые с октября открывают окна. Стены отдают зимний воздух, накопленный в обоях, в полах, в краске. Дом дышит. У По в 1839 дом не мог дышать - и физика стала психологией: затхлость стала отчаянием, тишина стала готовностью к концу. Сейчас, когда твой дом впервые за полгода действительно проветривается, можно почувствовать обратное: что значит когда дом дышит вместе с тобой.\n→ Какая часть твоего дома сейчас тебя поддерживает, а какая держит в зиме?\n⏱️ 1.4 мин | 📚 Almanac: Source",
+            "img": "https://cdn4.telesco.pe/file/k_8d8nNG1TA8wi5WsZSaJGzDI-HxyWh1F6k8u0KpdVuv_1bvplMEySq9iAAVDorGigDDUTCHBZxHt8Ovqql9ty3jA6FMXrxmC4b8_hkPW7Y2WTEKQZOkM6xXHq1WBeRPGGch-oSKYEbGh00-8X4k8EiukyGPn8YrG9ehBxWRaLWeaYTWWr2Dj2gJB8WfItilp91qPYckbw87D2VnnbAxMoF6BvK5VTD2gWeRf_1MB1EYq64x9VOLdEnRkisRtQGuFy_FVJPUAaHHEjVbEOraH7VU4GnLGatLii1e9ekf939ighW8Pf9GAy1u5futod1EFKoEzDiF3CKEoidSCXqdkw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1779779041.0,
+            "poll": null
+        },
+        {
             "m": "25.05 | 15:02",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/6036",
@@ -361,7 +373,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6147",
             "t": "😳😏 ЕВС 2026: ЛАЙВ-КАЛЕНДАРЬ - КЛЮЧЕВЫЕ ДАТЫ ОФФСЕЗОНА",
             "b": "Майский триумф Болгарии завершён, но евросезон не думает останавливаться. Пока вещатели взрослого конкурса ведут тихие споры о бюджетах и городах-хозяевах для 2027 года, детские отборы и расширение Евровидения в Азию уже на низком старте.\nПеред вами - полный путеводитель по главным чек-поинтам этого лета и начала осени.\nБЛИЖАЙШИЙ ЧЕК-ЛИСТ (МАЙ - ИЮНЬ)\n👍 29 мая - 🇲🇰 Северная Македония: Дедлайн подачи заявок на отбор JESC 2026 от вещателя MRT.\n👍 30-31 мая - 🇦🇱 Албания: Полуфиналы Festivali i Këngës për Fëmijë (отбор на Детское Евровидение).\n👍 1 июня - 🇦🇱 Албания: Финал Festivali i Këngës për Fëmijë (выбор представителя на Мальту).\n👍 1 июня (11:00 по Риге) - 🇲🇰 Северная Македония: Живые прослушивания кандидатов JESC в студии MRT.\n👍 6 июня (21:00 по Риге) - 🇬🇪 Грузия: Гранд-финал вокального шоу Ranina (выбор представителя JESC).\n👍 6 июня (21:00 по Риге) - 🇦🇲 Армения: Финал конкурса молодых классических исполнителей Eurovision Young Musicians 2026 в Ереване.\nЛЕТНИЙ ОФФСЕЗОН (ИЮЛЬ - АВГУСТ)\n👍 Август - 🇧🇬 Болгария: БНТ объявит город-хозяин Евровидения 2027 из шорт-листа (София, Пловдив или Варна).\n👍 17 августа - 🇫🇮 Финляндия: Открытие окна приёма заявок на легендарный отбор UMK 2027.\n👍 23 августа - 🇧🇩 Бангладеш: Национальный финал отбора на Евровидение Азия 2026 от Channel i.\n👍 23 августа - 🇫🇮 Финляндия: Закрытие окна подачи заявок на UMK 2027.\nОСЕННИЙ СТАРТ И ФИНАЛЫ\n👍 19 сентября - 🇳🇱 Нидерланды: Финал Junior Songfestival 2026.\n👍 24 октября - 🇲🇹 Мальта: Финал Детского Евровидения 2026 в Та-Кали.\n👍 14 ноября - 🇹🇭 Таиланд: Первый Гранд-финал возрождённого Евровидения Азия 2026 в Бангкоке.\nВЗГЛЯД В БУДУЩЕЕ: АКТИВНЫЙ СЕЗОН 2027\n👍 Январь 2027 - 🇪🇸 Испания: Предполагаемый старт Benidorm Fest 2027 и возможное возвращение страны на конкурс.\n👍 20 февраля 2027 - 🇫🇮 Финляндия: Финал легендарного UMK 2027 на Nokia Arena в Тампере.\n👍 Март 2027 - 🇸🇪 Швеция: Гранд-финал Melodifestivalen 2027.\n👍 Май 2027 - 🇧🇬 Болгария: Недели репетиций и Гранд-финал Евровидения 2027 (первый в истории Болгарии!).\nСезон обещает быть насыщенным.\n⏱️ Время чтения: 1.2 мин | 🇪🇺 YourVision: Calendar",
-            "img": "https://cdn4.telesco.pe/file/Szaq7oL2BNuhh7j31DjekfUpnl072NPo-Na98p3szES_ZGjnvsp5mYHuoettmb6D7A95VcMLtKZ6BtqF8QRUAWZykLSL0ssQBHPq6Md1cdqKdzK_1jDAByhrNJQdgz4Q3vKqn_b-g016kxDQYm-RJt2KoZP1oxLG0OeetV256KeJ_nl0SKAF1zG6tKiy5UlTVxM7jaVjTka-Y9HXU_4WWNHtL2rrbsrSPeBCHtmZA4CgAydjY8TvT1q_eDGyxs_6cxV5wYbwiEV32qNOQFeCizOWbcxKu14yMV9yF9htEfytp7yaZFUtQSBivoA9NbENMC-YW828hldfRQ1AtIuTQg.jpg",
+            "img": "https://cdn4.telesco.pe/file/mq5CJ9gByfrvy7gIi09ju9_F7PhXSrkOGlQIa4C4ECOUzz6QMvQ0WoVvOgcEC6BW6PyLShw8fJVx5Zk-gjCrEMqpGaCJeJiJxVmweGcftl4y_oSxvOfXOQ4I1kgQxBIm4KliZIZHc_xjqIX32yu5vZbG9ZrW1I4EWiAAktACtgj0LSypR80C43ckeO5YHLKCCIj1jD3oUB8r2eX2gDNIHVOTReD_aTP6sMhdGI2h0aXe4kwqgSeCuKQQt_f9Vq2R_p9776kwTY5p6Dq31fAsYjtJSno1nUianFmMAcEhmvvpl_WFRwp_UbmwARlO8Ms9TK7HWqF8SA18VM5mozG3GA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779704710.0,
@@ -373,7 +385,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6146",
             "t": "🇦🇱 АЛБАНИЯ: НАЦОТБОР НА ДЕТСКОЕ ЕВРОВИДЕНИЕ 2026 ПРОЙДЁТ С 30 МАЯ ПО 1 ИЮНЯ",
             "b": "Албания выберет своего представителя на Детское Евровидение 2026 первого июня. Национальный вещатель RTSH подтвердил использование 64-го фестиваля Festivali Mbarëkombëtar i Këngës për Fëmijë в качестве отборочной площадки.\nДетали национального отбора\n👍 Фестиваль пройдёт с 30 мая по 1 июня. Победитель категории Juniors получит право представить Албанию на Мальте.\n👍 Всего в отборе примут участие 30 исполнителей. В список вошли Eden Vrioni с песней «Rumtata», Serena Turhani с песней «Aventura» и Kleon Prenga с треком «Boom-boom».\nСтатус подготовки к конкурсу\n👍 На данный момент участие в JESC 2026 официально подтвердили 9 стран.\n👍 В их числе Польша с представителем Wiktor Sas и Португалия с победителем вчерашнего отбора Salvador Rio.\n👍 Грузия объявит своего исполнителя 6 июня, Нидерланды проведут финал 19 сентября.\n⏱️ Время чтения: 0.7 мин | 🇦🇱 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/drtX_T1XcTjXhaNk-t7NUIEdc5PyvKwnXqYtHXT2S0ASB9NoKwQadd8QJog_6svOGKiYQkJ_dSc1W5Gv1hnbW6pt6_vctTL99rcOMKL48ePDhgwvXbYFXT9AJg-dNzc9g_7XBCcM0DQ0o8sEfdOYtjszIasge-U1pDCVCG_lvKZe70vMg9NgIRTfUIG6smgwa8zCIPGbuQQQtxSutbsnRIww0Z3FlYDNXLQkwq09Me9C0yDlNOvh241Cr9NjQL4ESwYspLMX5H1PPoZ1zakz-s5dH12fZNhlHb3Pnn59j8wIya6CslmVtMP_V6QjPZdrQAxEfbcSpn0bvE6SV5qaBQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/aIoLzUV_FMeW80-g4JDKf4RGnYl6Lz-C7Z1wR7an9XzMJWV6yr-ewA7qFUzgMaexdEw2EqYyQYsPML_GZ5-k_1Xa7A8VUSGzbzo7lEfATpeKt6k84MfjUVFW1QaBqMiJ-iIMtn4hcE5Jk6yxFo3S3l9kq8d39duoBqBZ4ghdeUEjkfCje3ttGPdtZS-7O-MBvDepSOHxf5yaKSq74W8ij3PJNoCoiOdteWBp1pJ0iQ3snz4rQgghkxaBnL2zhyQTDqf6EEi2Ij_BLdR0jAvE9_EOrPxQXD7ju7Tq7NxFIMLhvpsy5g3x8JJr8uoSuBGWU24cLEkb1bC98dcbKnFucA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779700848.0,
@@ -385,7 +397,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6144",
             "t": "🇵🇹 ПОРТУГАЛИЯ: SALVADOR RIO ВЫИГРАЛ THE VOICE KIDS И ОТПРАВИТСЯ НА МАЛЬТУ",
             "b": "Salvador Rio победил в седьмом сезоне The Voice Kids Portugal вчера вечером и завоевал право представить Португалию на Детском Евровидении 2026. Артист выступал в команде наставника Diogo Piçarra.\nДетали финала и поездки\n👍 Финал шоу транслировался в прямом эфире телеканала RTP1 24 мая.\n👍 По итогам зрительского голосования Salvador Rio обошёл остальных финалистов.\n👍 Детское Евровидение 2026 пройдёт 24 октября в Та'Кали (Мальта).\n⏱️ Время чтения: 0.4 мин | 🇵🇹 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/dfRnCQg0JMj3xYzZsm_TLiag3e7t7dmHXMJIJSlzudQrcum9k5zuYHl6Aiwt53fUpOWiDlc21XHzZ3sFvlyM1guV48VfGW1MtCNEuFnX0ZJnM_NF82MvjQycDmVTJ--HwHIObhc9-2Y4dmUIblnhvzBf78Sacnzr3oHJ61t_ESg_wgKGHzMZSnvwmBbElqtOOUfFFHryDMDzXiD-Dof1q6h1ka3gmntDnet1uXf8CmddkD6duDVozSrtRQ0CRXgXSyhZ4IBtCG7X7psJuqmZcQetxL1RwcpApYosSMINCHfGEMu4i7aFT4X3leWYwgxnebByTNN2iODkus0OlvCBtA.jpg",
+            "img": "https://cdn4.telesco.pe/file/mQHm8dc2-7scR9ziDN2XSDcFvZwdVeypHtVOC7BIl3ljr8GZji42kR1dm0WapfBiWP0J2jP8D9SpnsGf-9g97oGRuhG-7rhw5FO3hbP5FX8Ulgk3GfNqZcv5Rrzx64m5YJFhtUqIHYSK-U_UXoU-0NiyWJM4DZDnSFDTaQfFsU7nXl4fi2Xm9au-v8_s521WZZJBGHhNYTR6ZjD_p-onj3a_uZJFxojK7GQKsNgcDR32o0z_8XF3ABbSTXU2W1th8tbgkId5VaPE_NgFUwmfCZW6IpDkO2xrZCg6y3-7h4oThzAPgqR2WeSygJhs6Ht44Rnlu3JlkrvdcRKIoLz2Gg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779698168.0,
@@ -397,7 +409,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6143",
             "t": "🇧🇩 БАНГЛАДЕШ: ОТБОР НА ЕВРОВИДЕНИЕ АЗИЯ 2026 ПРОЙДЁТ 23 АВГУСТА",
             "b": "Бангладеш выберет своего представителя на Евровидение Азия 23 августа. Телевещатель Channel i и организаторы Voxovation опубликовали официальный регламент отбора.\nДетали приёма заявок и подготовки\n👍 Окно подачи заявок открыто с 10 мая до 10 июня.\n👍 Минимальный возраст участников составляет 18 лет.\n👍 Список из 12 финалистов объявят 21 июня, после чего в течение июля артисты пройдут этап подготовки.\nМеханика голосования и правила для артистов\n👍 Победитель определится голосованием зрителей и жюри в пропорции 50/50. Голосование жюри является опциональным.\n👍 Зрительское голосование пройдёт в приложении Zoop. Для снижения фактора фан-клубов пользователи обязаны выбрать минимум три разные песни.\n👍 Участникам рекомендовано сотрудничество с музыкальными лейблами. Voxovation назначит лейбл исполнителю при его отсутствии.\n⏱️ Время чтения: 0.7 мин | 🇧🇩 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/fvtl0-j-7V7NtG1rZcsVzCx7ek1uRJPERZlC1zfn6hk5zYNpWvJkG18d4CM-8nJe5gNcYMoRUluVN1i0TbzAwoYIsbgf0u1c8KkhZA6sSCcW4e3KXeukkS1ciqEKIztAuLVmusY2VVRQD6tQPg5BX20JOOecDwuG3kfG_eCxw_0XvKAx73Ec2TyrKddcvPBI08ijQJXhHgcx-RBhmR_fS4SfXHamamzAmBunfu6fI7_xUSd4fFOvFPjORnFguIskOwjFUEb7zP9F4PQTJV71OYE1FotjmfPI1dnhjd7jARTj0-ZvvuRPKEqNcoIEMgxnF84S4ZRgZUU5P08lQ78JHQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/ihKcTh2K8CXDCj2q_5g7Axji3FhwhKBuDoaJDog_vnLZJR8p-MoUksWsDGvOA_6EkD9g0myjpIkj9taFu0jphmfKS_OUmwXpnG9ZAQtaW8fsnuAmzu_sgupReBd4MQa0artYsCOtVn9L2YQFaC_I0EsydpfN0aNQKurxjS9xB-aKoYm7b8MH4oqxaitYaBOmsfuwquK7mRu7nxmVC3H8SZM9xd6e8A0J-Rwq_K75woqeoa_4X-X1CPHVFBvMB0olJC0ZOCYd7q1ttdf_JFWUc-bV99I61Gi5kumr_Qi6vHwlJfPKXzh5sBKcL_gP4GAARoWbQEhn1_rTxNQjxVZjkQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779698065.0,
@@ -409,7 +421,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/6034",
             "t": "🏛 #LORE: ИГГДРАСИЛЬ - ДЕРЕВО, КОТОРОЕ УМИРАЕТ НЕПРЕРЫВНО",
             "b": "Нидхёгг грызёт корень. Он грызёт его сейчас, и грыз вчера, и будет грызть завтра. Над землёй четыре оленя - Даин, Двалин, Дунейр, Дуратрор - объедают молодые ветви. Козёл Хейдрун жуёт листья. На самой вершине орёл вырывает кору. Между ним и драконом по стволу бегает белка Рататоск - разносит оскорбления, ускоряет вражду. Атакующих больше, чем защитников.\nЛИНГВИСТИЧЕСКИЙ СЛОЙ:\nИггдрасиль = «конь Одина». Игг - имя Одина (буквально «ужасный»), drasill - конь. Но в скандинавской поэзии «конь» означает также виселицу: повешенный «скачет на воздушном коне». В Хавамале Один сам говорит: «Я висел на ветреном древе девять долгих ночей, копьём пронзённый, в жертву Одину - сам себе на дереве». Он повесился на Иггдрасиле ради рун. Одно имя содержит три образа: мировое дерево, конь, виселица. Скандинавы не различали их.\nТЁМНЫЙ СЛОЙ:\nДерево живёт не потому что сильное. Оно живёт потому что три женщины - норны Урд, Верданди, Скульд - каждое утро поливают корни водой из источника Урд и замазывают повреждения белой глиной. Это не битва добра со злом. Это техническое обслуживание. Рагнарёк начинается не от атаки великанов - он начинается когда норны прекращают работу. Дерево падёт от усталости ремонта, не от удара.\nЧто вокруг тебя сегодня существует только потому что кто-то ремонтирует его ежедневно? Дорога под домом, канализация под улицей, отношения, которые ты не называешь работой потому что любишь. Архетип точный: невидимый ремонт держит видимый мир.\n→ Найти одну такую вещь рядом с собой прямо сейчас. Назвать вслух кто её ремонтирует - и если имени не знаешь, это и есть ответ.\n⏱️ 1.4 мин | 🏛 Almanac: Lore",
-            "img": "https://cdn4.telesco.pe/file/AEi68jWPGVIt70t-dS4OAAS0zSwIxYSgcGISPljX4C5-MjhV9m9VVymOHvcf2w2fRO-o0iYVsGJzDXCiCtZL_gfZ_AEplBiUqGCSXH8mz8EXrkNQCxC2Ifdqtb0SmHfNZ_h71aKf9FQnLPGhFDwYuj55fw18MD53Re_y8x_RQ0sTlVeVkQ5tu_QS4_6IWs8YmkcebsUirP2e9vu76NLbt4uZ3uzNeFvZa5r98LHmKuh8R4FkLMkNZ34QcPaKyLesg6ZLkVUlyB81wLgxdfWyBJPTXuQLUpOR4TcjUTjb64FD-pFNbeoQ1792yEhm89w53VmeYVuJkfcfFCAheUWjHg.jpg",
+            "img": "https://cdn4.telesco.pe/file/BCKvieUtM-wA7RBQhbQIezvrXDs9OCgpy8bdep7sCOwGrLl6H-3HIQ750bMFhmcZointwix0uGRHnBeEEgs9nnrkymhS3h_AnNEFjl1trm3hM7zujsOJbmriv_LZ9XYURPZHUo8yEUYwL1KoRcTTTu_bc02tb8D8VJGCZtYcDVG-sx7Dy7uLe4TYPDcjOfEte4mUdb9jFEZQxvZvd8-FYAMmwyY0gRki6f0qf6CEVc0iGZFsunwpivBe66x2g7d-3uRMy_VhjEHUoGagldumrvM4W0Md3lYWQuVYQ-EnuMJNNVKMNDUlsYl1DB6YoMN2OMCfDggQ_6aXSQDRDBzb9A.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779692641.0,
@@ -469,7 +481,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6140",
             "t": "🇵🇹 ПОРТУГАЛИЯ: THE VOICE KIDS - ФИНАЛ СЕГОДНЯ В 23:15 RIGA",
             "b": "Финал 7-го сезона The Voice Kids Portugal стартует на RTP1 и RTP Mundo. Победитель из 8 финалистов поедет на Детское Евровидение 2026 в Та'Кали (24.10).\n👍 Время: 23:15 Riga (22:15 CEST / 21:15 Lisbon)\n👍 Эфир: RTP1, RTP Mundo\n👍 Формат: каждый финалист поёт сольно + дуэт с тренером\n👍 Голосование: два раунда зрительских звонков (8 → 4 → 1), без жюри\n👍 Ведущая: Catarina Furtado (хост Евровидения 2018 в Лиссабоне)\n👍 Финалисты: см. пост 19.05 (4 команды × 2 кандидата)\n⏱️ Время чтения: 0.4 мин | 🇵🇹 YourVision: JESC",
-            "img": "https://cdn4.telesco.pe/file/YfoppftI1Yai5ZA_5t4_fmVioN_cbMpoyBY2kPTCxmJv077Qv7o6NW9DHQUS6fkZUwKuPrGkcv7bLmeWMldQPzPf7NjwPnXUib-L17GTl8g8bGhWvDCHn_oClhWd_L3i28VSlO6G8FkG5ArVCnm__6U61Mbg_KcGgsURKSf34QSYccfNv-AHzW84xH6EjH88Sd5R0XrcRdiB8Jt-8fVpaRNWchzBImxlb7W76wJZX8Mk3r-_1xa_hQsVtAbz0gHwf30DKeixdKTw_a48LDa3x1e1rRsXa1z49i-k5iUA4KiqRHcO_vfkxqpEonj4X7A8TSHDnVQ_nst04HlatOLz2w.jpg",
+            "img": "https://cdn4.telesco.pe/file/RJ8TPMRzRuglJtRbUbIPWel7EggjfehwqxDfBGKaO8X5QjUS51nYa1rHbTluAz7TP3tzOLoo9q03LhUgeLXG4ERPZVk4c-ur2RyCOE-CN9dTfXPAWNWmKDdHKpwRdLbNjs5TmbzaUiyLu3QOSP6dDSXAnjiwnq2BoV-DYJr1moum7R3CxvJ8uIJ6EFQ_7_Kuy5NXt3BFZ90ojMw65nYKFGbaZZa5vbTB1tjz08zXjshSowiVjnF6DZm55Q61IYY1iSyZ1PF1Uv7GDFPfeJR4X9JEMyqM7Qy3Wm4fOx2MCqU9nh7laL_IX-Wuqnkmdslhf3ppyvo5L5HV8zfa9gVxtg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779618398.0,
@@ -481,7 +493,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6139",
             "t": "🤍 70 ЛЕТ ЕВРОВИДЕНИЮ: ПЕРВЫЙ КОНКУРС 24 МАЯ 1956 В ЛУГАНО",
             "b": "Сегодня - 70 лет с первого Евровидения. 24 мая 1956 года в Лугано (Швейцария) состоялся премьерный конкурс. Победила Lys Assia (🇨🇭 Швейцария) с песней «Refrain».\nЧто было в 1956\n👍 7 стран-участниц\n👍 14 песен (каждая страна выступала с двумя)\n👍 Победительница: Lys Assia (🇨🇭 Швейцария) - «Refrain»\n👍 Точная система голосования не сохранилась до наших дней\n👍 Швейцарское жюри голосовало дважды - жюри Люксембурга не смогло участвовать\n👍 Странам разрешалось голосовать за себя - единственный случай в истории конкурса\nК юбилею\nEBU опубликовал восстановленное и ремастеризованное 4K-видео выступления Lys Assia с «Refrain»: YouTube.\n⏱️ Время чтения: 0.6 мин | 🇪🇺 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/iDREtPRJ0HkmjIRVdOmHYxbhOnLzV7md08vyEn9Lx2jgYpDVAmznZ3tT1nsKbH1SpLCKnfnMlcAHo7pNSbR-NICtLnTXZO5pbZmQU2PFXkkaMTl12IOynbO0IetPZUR7P7wBT_3dZEb1R1_mbtwXaROamh4MeOpd_mSRgtrKxpq6TzmOZIzO-mlKYF4d2ng3DH4zOY81nJmtJp10aIMeUmPJcA87aXOUJKdxf4a07-8y9mFrpFTk9n2gilUvFc-bBFf8A0pMwiuSdUPdYTRTIQPhz64qzeY4iOKRfzGXnJlJDqXTb7DS0G4r_VQ26-fDQO9vq0mH0T2KHap73NVj2g.jpg",
+            "img": "https://cdn4.telesco.pe/file/W3jVRD-igtz3PM4GO49vEDQ1wg9O6hOrT_ov6AN2xMPsPTmW_4x3WT3ru5tf-WTtg_MnADXO0_H7gNf0BHSiXClx1hqA3FG0ZmnKpalQCHgJjeJRNMCLun30ypgaor6dzjf9QlrAFjl8eBvpWIeujx-_W7t8MfQDvOP7Nwa_HTMOEfrWyzsoMUkT-S-86cYN3d4_6PBZ5tsA20X-0Scf7ZF2kD-Y14NlpxbCku0bDBB_1DwiEXSS2N-LWUcUX_4x56KEr78-1HS_eFhe9F4blZmjZR3DoKKMenE0tHPAnOpaKJ3Xgc3QpX6cwSwfM-yOqlhaOQn2wSqEOHlsczleWw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779618062.0,
@@ -529,7 +541,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6138",
             "t": "🇳🇱 НИДЕРЛАНДЫ: OMROEP MAX ГОТОВ ПЕРЕНЯТЬ УЧАСТИЕ В ЕВРОВИДЕНИИ 2027 ЕСЛИ AVROTROS БОЙКОТИРУЕТ",
             "b": "Директор Omroep MAX Ян Слагтер заявил изданию AD: вещатель готов отправить нидерландского артиста на Евровидение 2027, если AVROTROS повторит бойкот. По данным AD, Omroep MAX - единственный вещатель в системе NPO, заинтересованный в участии.\nСлова Слагтера\n«Песенный конкурс Евровидение важен для Нидерландов. Хотя мы тоже осуждаем действия израильского правительства, это не обязательно должно вести к бойкоту. Если AVROTROS снова решит не ехать, я готов сесть за стол переговоров с NPO. Но из собственного кармана платить не будем - NPO придётся внести значительную сумму в бюджет».\nСтранность кейса\nOmroep MAX специализируется на аудитории 50+: кулинарные шоу, садоводство, ностальгические концерты. Перенимать поп-конкурс с TikTok-механикой - нестандартный шаг.\nNPO работает по ассоциативной модели: отдельных каналов у вещателей нет, контент идёт на общих кнопках NPO 1/2/3, каждая ассоциация имеет свою демографическую нишу. Евровидение традиционно ведёт развлекательный AVROTROS. Если он откажется и Omroep MAX подхватит - впервые конкурс попадёт под крышу вещателя зрелой аудитории.\n⏱️ Время чтения: 1 мин | 🇳🇱 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/tMuT3dho5DxBPtpz6DM6Y1DNiZZ28O6RAFBTtrCIVRGvYzopNYMGvdm-789js1HphIUO25DtVSqXQ02o5NjMN6O8kir2ZR8qcANGhgyytBZyd1wu8IWM3kBQZb0PeVqAnKVM9bZXlTdyxR1Vt0eDtc3bWklsmPOc7BX0fAuUwLEdtAN9F9_SkNI7EoUQKZM8oefUdphUFoHx-nuXP3g7kRTHDLaaMpqWv4AGzI811CLw87FVfSWn5ivdAAlCbfRzZzoxWrAZemLczu-sDvoSlqTCi3og2Eau5iWfHoom1-_NVMGx4nyqM9_AOSy56kUdIp5lkBPenGYcvVZbXj5jBQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/k-VsCFKu1agD8acpppxzFLRb8cl_m1xabHPUWM0AbxrfAkwi8IZl-H0KnFhke6YkV52TNPAF_KNN9_ERzQuWxayZ7j2iJftykHieA6GSTzPBxYk66SFGuPCZbWhgEGztjfPV6VjK_HLlAVjYwFoch_hkGZUxCuNemn6lGEaih-cORZ6ZQsCShAc9TwXSG2c28wuO2UscE4HW8AlJUffRDDFKYhOlt2gIMouY6IJz3h-bMqgzuSk4plEvfHiHm9vBOTIlhRO3rVGMtaodE6gjOkeTsEXg6BbsOdsNJkwE5V00jkBFmeqQwkx8WDNRewiAHMjc4RgGg_0gxmtXPoKnLg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779530187.0,
@@ -541,7 +553,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6137",
             "t": "🇧🇦 БОСНИЯ И ГЕРЦЕГОВИНА: BHRT ПРОСИТ ПОЖЕРТВОВАНИЯ - ВЕЩАТЕЛЬ БЕЗ СИСТЕМНОГО ФИНАНСИРОВАНИЯ",
             "b": "BHRT (общественный вещатель Боснии и Герцеговины) открыл кампанию по сбору пожертвований от компаний, организаций и частных лиц. Слоган: «Ne dozvolimo da drugi pričaju naše priče» («Не позволим другим рассказывать наши истории»). Кампания идёт до конца 2026 года.\nЧто объявлено\n👍 Причина: государственные институции и международные представители не обеспечивают стабильное системное финансирование.\n👍 Оговорка: пожертвования НЕ заменяют обязательной RTV-таксы, это отдельный канал поддержки.\nСвязка с Евровидением\nДолг BHRT перед EBU - основная причина, по которой Босния и Герцеговина не возвращается на Евровидение. Последнее участие - 2016 (Dalal & Deen, Ana Rucner & Jala - «Ljubav je», не прошла в финал). После 2016 страна не отправляла представителей из-за финансовых обязательств перед Союзом.\nКампания BHRT - не прямой путь к возврату на конкурс, но первый публичный шаг вещателя по решению финансового кризиса, без которого участие невозможно.\n⏱️ Время чтения: 0.9 мин | 🇧🇦 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/fy1EHUp6Ro-dAmc_dkqPDvMMo7_8FuNsyklCDlgjAB_iHsUofudfYxrsj96K9z_ykiNbLRSZcMIH7h_85nsetd_EpH0kx94y3zNaZyF-PHK8d9yM47WJCNfLVDm6ii21Xa6m4LDzBIXrLbFG_CeKZ0pq-cRHPhDVLrfCsSklSfbyFtTj4lJQ_V50JvC6CxeQjgDxa9u5x9xHk2_otyTo21SpEdjXVB64NmDeMHwRJrDtDaC6K2NVJc16J_2hMv9BvExWwKGKJ-kcB46x4TZcZ9AZHYtdeLZtThO97Qxrb90-2yESW01uPcepM6p1aqP90MCMNY1Z1Lx9229xQzSb5A.jpg",
+            "img": "https://cdn4.telesco.pe/file/RPgg44nL-ydadP5GJOY7N1jU4GnfEo0w5sqfxhWQdNERnbAFs3aV9i7K7UGHrn8Lf34YgFW_nDLke4tTo73gxUxWdlQMtOKIGyEMTFb1VIULZJSxcchUzoCB1nGvwsNGI0wLgsn2-OBTlPiIhjESl5ycwyOCfWv-jx31ga6lczWKYy_hto1tmQkYa5qif-R7_sAkOLO1KmtTWA5x4jaW-D0yByl6M7VvTcSbl5OcjtEHu5mN-3cyys5saZ1auvS3bap4QFZ7bwCAsxJXijAo6hw_HwQKJjLRIrh_-37OpBMk4Mf78Z6OZywcIGmxhngVAiAb7f5q2L7HVojnCwa8xA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779523424.0,
@@ -593,18 +605,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1779451441.0,
-            "poll": null
-        },
-        {
-            "m": "22.05 | 07:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/6025",
-            "t": "🏛 #LORE: ГЕКАТА - СТАРШЕ ОЛИМПА",
-            "b": "Три дороги встречаются под чёрным небом. Женщина с тремя лицами стоит там, где они касаются. Каждое лицо смотрит в свою сторону. Никто не оборачивается на того, кто приходит. Геката не охраняет дороги - она охраняет точку, в которой они перестают быть тремя дорогами и становятся одним местом.\nТёмный слой: Гесиод в «Теогонии» (VIII век до н.э.) описывает Гекату с особым уважением. Зевс не лишил её древних прав, а сохранил - она получила доли власти в небе, на земле и в море, что необычно даже для олимпийцев. Геката не олимпийский бог. Она титанида, дочь Перса и Астерии, родилась до олимпийского переворота. Греки эпохи Гесиода её боялись и почитали как почитают силу старше системы. К римской эпохе её образ переписали: ведьма, повелительница призраков, фигура из ночных кошмаров. Перепись произошла не в мифе - в восприятии: непонятная сила превратилась в опасную. Не имея власти убрать её, поздние авторы назвали её злой.\nЛингвистический слой: «Hekáte» (Ἑκάτη) - имя со спорной этимологией. Одна версия: от «hekas» - «вдали, на расстоянии». Та, что действует издалека. Та, что стоит особняком. У римлян она «Trivia» - «три дороги», прямой топонимический титул. В русском «перекрёсток» - точка геометрии, не присутствие. «Распутье» добавляет выбор, но не персонажа. Мы не различаем место, где сходятся пути, и существо, которое там стоит. Это не пробел в языке - это пробел в способе видения.\n→ Перейти сегодня вечером любой перекрёсток медленно. Прежде чем шагнуть, назвать вслух три направления, которые он соединяет. Только потом выбрать одно.\n⏱️ 2.0 мин | 🏛 Almanac: Lore",
-            "img": "https://cdn4.telesco.pe/file/JdzOMiJsOm-_ww3aFpobMdw28AONRlxJAVcOpn8ZLVPz5D94SpWi8wloGuTikGGZs7RlOidDps2KpfRQXD6uG4tfLaWc16IC278L4pY869N02jw3VLNhjN51ErX5_1qrVD-08iq5Uu2kKPk1_6yBBXumftVDW3THK9uxhCvHsgjPck-LgbjRH5qGg9dbm4ByCoj09yVJoI-ae49jOKAS0NFUcN1Wuh1WuEuczg-L_Fq4_ZjtLdIniGIG9hVGi5U3UoLtJgAevbZKmIFNRowf6xuf-QV18mTwEl1IY1jn3aTyuL5juqQDtrjmTw70Q1OTYyfxgBW1g4qcVs-pKZhD-g.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1779433441.0,
             "poll": null
         }
     ],
@@ -780,102 +780,102 @@ var DATA = {
         {
             "a": "🇨🇿 Daniel Zizka",
             "s": "Amar Pelos Dois (Salvador Sobral, PT 2017)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&q=80&fit=crop"
         },
         {
             "a": "🇵🇹 Bandidos do Cante",
             "s": "Saudade, Saudade (MARO, PT 2022)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=150&q=80&fit=crop"
         },
         {
             "a": "🇨🇾 Little Antigoni",
             "s": "My Number One (Helena Paparizou, GR 2005)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&q=80&fit=crop"
         },
         {
             "a": "🇨🇭 Veronica Fusaro",
             "s": "Satellite (Lena, DE 2010)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=150&q=80&fit=crop"
         },
         {
             "a": "🇲🇩 Satoshi",
             "s": "Rim Tim Tagi Dim (Baby Lasagna, HR 2024)",
-            "img": ""
+            "img": "assets/sf_moldova.png"
         },
         {
             "a": "🇲🇹 AIDAN",
             "s": "Per Sempre Sì (Sal Da Vinci, IT 2026)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&q=80&fit=crop"
         },
         {
             "a": "🇩🇪 Sarah Engels",
             "s": "Nel Blu Dipinto Di Blu (Domenico Modugno, IT 1958)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&q=80&fit=crop"
         },
         {
             "a": "🇸🇲 SENHIT",
             "s": "Occidentali's Karma (Francesco Gabbani, IT 2017)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150&q=80&fit=crop"
         },
         {
             "a": "🇳🇴 JONAS LOVV",
             "s": "Arcade (Duncan Laurence, NL 2019)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=150&q=80&fit=crop"
         },
         {
             "a": "🇦🇺 Delta Goodrem",
             "s": "Tattoo (Loreen, SE 2023)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&q=80&fit=crop"
         },
         {
             "a": "🇱🇻 Atvara",
             "s": "Fly On The Wings Of Love (Olsen Brothers, DK 2000)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&q=80&fit=crop"
         },
         {
             "a": "🇷🇴 Alexandra Căpitănescu",
             "s": "Fuego (Eleni Foureira, CY 2018)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80&fit=crop"
         },
         {
             "a": "🇬🇷 Akylas",
             "s": "Rise Like a Phoenix (Conchita Wurst, AT 2014)",
-            "img": ""
+            "img": "assets/sf_greece.png"
         },
         {
             "a": "🇦🇿 JIVA",
             "s": "We Could Be The Same (maNga, TR 2010)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&q=80&fit=crop"
         },
         {
             "a": "🇱🇺 Eva Marija",
             "s": "Ne Partez Pas Sans Moi (Céline Dion, CH 1988)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&q=80&fit=crop"
         },
         {
             "a": "🇺🇦 LELÉKA",
             "s": "Baller (Abor & Tynna, DE 2025)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=150&q=80&fit=crop"
         },
         {
             "a": "🇭🇷 LELEK",
             "s": "Wild Dances (Ruslana, UA 2004)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80&fit=crop"
         },
         {
             "a": "🇲🇪 Tamara Živković",
             "s": "Euphoria - After Dark (Loreen, SE 2012)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1548142813-c348350df52b?w=150&q=80&fit=crop"
         },
         {
             "a": "🇷🇸 LAVINA",
             "s": "In My Dreams (Wig Wam, NO 2005)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=150&q=80&fit=crop"
         },
         {
             "a": "🇩🇰 Søren Torpegaard Lund",
             "s": "Forlad Mig Ikke Her - Ne Partez Pas Sans Moi (Céline Dion, CH 1988)",
-            "img": ""
+            "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&q=80&fit=crop"
         }
     ],
     "odds": [
