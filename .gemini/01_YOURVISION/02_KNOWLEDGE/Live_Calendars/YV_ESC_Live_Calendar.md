@@ -31,6 +31,7 @@
 | 26.05 | 19:30 | EU | EuroGroove ALBM Cuts: старт голосования (20 номинантов) | COVERED | `04_CONTENT/2026/05/26/YV-26.05-19-30-EU-EuroGroove-ALBMCuts-Announce.md` |
 | 26.05 | 21:10 | 🇸🇰/🇸🇮 | Подготовка Словакии и Словении к возвращению на Евровидение 2027 | COVERED | `04_CONTENT/2026/05/26/YV-26.05-21-10-SK-SI-Return-Preparations.md` |
 | 27.05 | 10:00 | 🇧🇬 BGR | Анализ триумфа DARA и Болгарии в Вене (Deep Dive) | COVERED | `04_CONTENT/2026/05/27/YV-27.05-10-00-BG-Bangaranga-Story-DeepDive.md` |
+| 27.05 | 15:40 | 🇦🇲 ARM | Старт продаж билетов на Eurovision Young Musicians 2026 | COVERED | `04_CONTENT/2026/05/27/YV-27.05-15-40-AM-EYM-Tickets-Sale.md` |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING | |
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
