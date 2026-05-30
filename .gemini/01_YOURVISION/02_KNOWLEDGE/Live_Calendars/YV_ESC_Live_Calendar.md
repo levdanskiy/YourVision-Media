@@ -37,8 +37,9 @@
 
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
 | 30.05 | 14:45 | 🇦🇹 AUT | ORF отчитался о рекордных медиа-рейтингах Евровидения-2026 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-45-AT-ORF-Record-Ratings.md` |
-| 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
-| 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
+| 30.05 | 21:00 | 🇬🇪 GEO | Ranina 2026: полуфинал национального отбора на JESC | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
+| 30.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 1 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
+| 31.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 2 | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 
 ## 🌑 OFF-SEASON (01.06 - 31.08.2026)
