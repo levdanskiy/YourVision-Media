@@ -320,6 +320,18 @@ var DATA = {
             "poll": null
         },
         {
+            "m": "30.05 | 14:43",
+            "id": "local",
+            "u": "",
+            "t": "🇳🇱 НИДЕРЛАНДЫ: JUNIOR SONGFESTIVAL-2026 - ПЕРВЫЕ ФИНАЛИСТЫ ОБЪЯВЛЕНЫ В ХОДЕ ДОРОЖНОГО ШОУ",
+            "b": "**🚌 ДОРОЖНЫЙ СЮРПРИЗ ДЛЯ МОЛОДЫХ ТАЛАНТОВ**\nОбъявление кандидатов прошло в формате динамичного дорожного реалити-шоу. Бывший участник Детского Евровидения Matheu Hinzen проехал на специальном автобусе по городам Нидерландов, чтобы лично удивить прошедших кастинг детей и вручить им путевки в финал.\nПервая группа участников, отобранная профессиональным жюри:\n• Nolan (12 лет)\n• Lay (11 лет)\n• Catelynn (12 лет)\n• Noud (12 лет)\n• Zoë (12 лет)\n---\n**⚙️ МЕХАНИКА И ДАЛЬНЕЙШИЕ ШАГИ**\nВсего организаторы сформируют четыре сценических акта (солистов, дуэты или группы). Специально для них напишут оригинальные композиции и снимут клипы. Победителя определят 19 сентября в прямом эфире «Junior Songfestival», где за путевку на Мальту сразятся все четыре проекта. В прошлом году Нидерланды на Детском Евровидении представила Meadow с песней \"Freeze\", заняв итоговое 10-е место.\n---\n💬 Учитывая прошлые успехи Нидерландов с группами, стоит ли продюсерам вновь объединять этих сольных финалистов в бэнды?\n---\n🔗 **СМОТРЕТЬ:** [Выступление Meadow - \"Freeze\" на Детском Евровидении-2025](https://www.youtube.com/watch?v=IcjOZYFV1NA&t=2s)",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1780141380.0,
+            "poll": null
+        },
+        {
             "m": "30.05 | 11:41",
             "id": "70",
             "u": "https://t.me/YourEurovision/6164",
@@ -599,18 +611,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1779865200.0,
-            "poll": null
-        },
-        {
-            "m": "26.05 | 19:19",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6156",
-            "t": "🤍 EUROGROOVE: ALBM CUTS - VIENNA AFTERMATH",
-            "b": "Стартовал новый чарт серии EuroGroove. 20 номинантов представят альтернативные версии культовых заявок Евровидения прошлых лет, исполненные участниками сезона 2026. Голосование открыто до 31.05. 23:59 Riga. Трансляция самого чарта пройдет 02.06. с 18:00 Riga.\nСписок номинантов\n• 🇨🇿 Daniel Zizka - «Amar Pelos Dois» (Salvador Sobral, Португалия 2017)\n• 🇵🇹 Bandidos do Cante - «Saudade, Saudade» (MARO, Португалия 2022)\n• 🇨🇾 Little Antigoni - «My Number One» (Helena Paparizou, Греция 2005)\n• 🇨🇭 Veronica Fusaro - «Satellite» (Lena, Германия 2010)\n• 🇲🇩 Satoshi - «Rim Tim Tagi Dim» (Baby Lasagna, Хорватия 2024)\n• 🇲🇹 AIDAN - «Per Sempre Sì» (Sal Da Vinci, Италия 2026)\n• 🇩🇪 Sarah Engels - «Nel Blu Dipinto Di Blu» (Domenico Modugno, Италия 1958)\n• 🇸🇲 SENHIT - «Occidentali's Karma» (Francesco Gabbani, Италия 2017)\n• 🇳🇴 JONAS LOVV - «Arcade» (Duncan Laurence, Нидерланды 2019)\n• 🇦🇺 Delta Goodrem - «Tattoo» (Loreen, Швеция 2023)\n• 🇱🇻 Atvara - «Fly On The Wings Of Love» (Olsen Brothers, Дания 2000)\n• 🇷🇴 Alexandra Căpitănescu - «Fuego» (Eleni Foureira, Кипр 2018)\n• 🇬🇷 Akylas - «Rise Like a Phoenix» (Conchita Wurst, Австрия 2014)\n• 🇦🇿 JIVA - «We Could Be The Same» (maNga, Турция 2010)\n• 🇱🇺 Eva Marija - «Ne Partez Pas Sans Moi» (Céline Dion, Швейцария 1988)\n• 🇺🇦 LELÉKA - «Baller» (Abor & Tynna, Германия 2025)\n• 🇭🇷 LELEK - «Wild Dances» (Ruslana, Украина 2004)\n• 🇲🇪 Tamara Živković - «Euphoria After Dark» (Loreen, Швеция 2012)\n• 🇷🇸 LAVINA - «In My Dreams» (Wig Wam, Норвегия 2005)\n• 🇩🇰 Søren Torpegaard Lund - «Forlad Mig Ikke Her» (Céline Dion, Швейцария 1988)\nГолосовать: StrawPoll\n⏱️ Время чтения: 1.0 мин | 🇪🇺 YourVision: Chart",
-            "img": "https://cdn4.telesco.pe/file/V7Z8KMLpsOr4QPu0IxjvP4WZqvqGPbXC1S5RlvmE_i5K5VoPL4N-buCw25nzWsWi16pciDVJxLoIZ_1iPiSzNl65o0qs4sai5j_A5eZJrf6B_fNb3yLatFD2i49EBmYMAKmvfB4sPNcno9f2eTAnh0wfnl9si1pYTCu_arSwnjYuDF4jwStCjxiwsI4EL1TyIQSwAE_rmCNrO79lxD_eviSwJgY2pinAied6C9d162TR16yJRmoCxB3cBSyFZmkVbaqXlcw-TvwYRwUew6MDpKhn7JTadKuODDoDUbZz7vx6vdbIRVrJj0cB-EWuNXinnGttX0luKcqI2LrRcFD9gw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1779823183.0,
             "poll": null
         }
     ],
