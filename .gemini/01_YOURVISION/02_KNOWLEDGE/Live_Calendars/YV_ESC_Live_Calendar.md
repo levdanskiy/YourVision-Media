@@ -34,6 +34,7 @@
 | 27.05 | 15:40 | 🇦🇲 ARM | Старт продаж билетов на Eurovision Young Musicians 2026 | COVERED | `04_CONTENT/2026/05/27/YV-27.05-15-40-AM-EYM-Tickets-Sale.md` |
 | 25-31.05 | TBA | EU | VISION: ретроспектива сезона 70 | PENDING | |
 | ~29.05 | TBA | 🇲🇰 MKD | MRT: дедлайн заявок JESC (ориентир по прошлым сезонам) | PENDING |  |
+| 30.05 | 14:45 | 🇦🇹 AUT | ORF отчитался о рекордных медиа-рейтингах Евровидения-2026 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-45-AT-ORF-Record-Ratings.md` |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 1 (JESC отбор Албании) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Night 2 (JESC отбор) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
