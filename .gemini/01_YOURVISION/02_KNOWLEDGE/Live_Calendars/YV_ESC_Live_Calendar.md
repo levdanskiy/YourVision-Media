@@ -39,7 +39,7 @@
 | 30.05 | 14:45 | 🇦🇹 AUT | ORF отчитался о рекордных медиа-рейтингах Евровидения-2026 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-45-AT-ORF-Record-Ratings.md` |
 | 30.05 | 21:00 | 🇬🇪 GEO | Ranina 2026: полуфинал национального отбора на JESC | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 1 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
-| 31.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 2 | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
+| 31.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 2 | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-55-AL-JESC-Festivali-Femi-Night-2.md` |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 | 31.05 | TBA | 🇮🇹 ITA | Sanremo 2027: революционный формат отбора на Евровидение | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-30-IT-Sanremo-2027-Eurovision-Revolution.md` |
 | 31.05 | TBA | 🇽🇰 XKX | RTK направил EBU новый стратегический запрос на участие в Евровидении | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-40-XK-RTK-Eurovision-Kosovo-Request.md` |
