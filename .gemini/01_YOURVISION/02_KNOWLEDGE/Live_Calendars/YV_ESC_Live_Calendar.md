@@ -42,6 +42,7 @@
 | 31.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 2 | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 | 31.05 | TBA | 🇮🇹 ITA | Sanremo 2027: революционный формат отбора на Евровидение | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-30-IT-Sanremo-2027-Eurovision-Revolution.md` |
+| 31.05 | TBA | 🇽🇰 XKX | RTK направил EBU новый стратегический запрос на участие в Евровидении | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-40-XK-RTK-Eurovision-Kosovo-Request.md` |
 
 
 ## 🌑 OFF-SEASON (01.06 - 31.08.2026)
