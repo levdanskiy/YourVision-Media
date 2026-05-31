@@ -41,6 +41,8 @@
 | 30.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 1 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
 | 31.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 2 | COVERED | `04_CONTENT/2026/05/25/YV-25.05-13-45-AL-JESC-Selection-Announce.md` |
 | 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
+| 31.05 | TBA | 🇮🇹 ITA | Sanremo 2027: революционный формат отбора на Евровидение | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-30-IT-Sanremo-2027-Eurovision-Revolution.md` |
+
 
 ## 🌑 OFF-SEASON (01.06 - 31.08.2026)
 
