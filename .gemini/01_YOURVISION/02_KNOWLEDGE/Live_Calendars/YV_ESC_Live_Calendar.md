@@ -40,7 +40,6 @@
 | 30.05 | 21:00 | 🇬🇪 GEO | Ranina 2026: полуфинал национального отбора на JESC | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
 | 30.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 1 | COVERED | `04_CONTENT/2026/05/30/YV-30.05-14-55-GE-AL-JESC-Tonight.md` |
 | 31.05 | TBA | 🇦🇱 ALB | Festivali Mbarëkombëtar i Këngës për Fëmijë: Night 2 | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-55-AL-JESC-Festivali-Femi-Night-2.md` |
-| 31.05 | 19:20 | EU | EuroGroove ALBM Cuts: results | SCHEDULED |  |
 | 31.05 | TBA | 🇮🇹 ITA | Sanremo 2027: революционный формат отбора на Евровидение | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-30-IT-Sanremo-2027-Eurovision-Revolution.md` |
 | 31.05 | TBA | 🇽🇰 XKX | RTK направил EBU новый стратегический запрос на участие в Евровидении | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-40-XK-RTK-Eurovision-Kosovo-Request.md` |
 | 31.05 | TBA | 🇬🇪 GEO | Ranina 2026: объявлены три финалиста национального отбора | COVERED | `04_CONTENT/2026/05/31/YV-31.05-13-50-GE-Ranina-2026-Finalists.md` |
@@ -57,6 +56,7 @@
 |---|---|---|---|---|---|
 | 01.06 | 11:00 | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (10:00 CEST) | COVERED | `04_CONTENT/2026/06/01/YV-01.06-11-00-AL-MK-JESC-Tonight-Auditions.md` |
 | 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | COVERED | `04_CONTENT/2026/06/01/YV-01.06-11-00-AL-MK-JESC-Tonight-Auditions.md` |
+| 01.06 | 19:20 | 🇪🇺 EU | EuroGroove ALBM Cuts: результаты послевенского чарта | COVERED | `04_CONTENT/2026/06/01/YV-01.06-19-20-EU-Eurogroove-AlbmCuts-Results.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
 | 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-16-15-AM-EYM2026-IntervalAct.md` |
 | 15.06 | 12:00 | 🇪🇺 EU | OPINION: Жанровый код Евровидения-2027 в Болгарии | SCHEDULED | `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md` |
