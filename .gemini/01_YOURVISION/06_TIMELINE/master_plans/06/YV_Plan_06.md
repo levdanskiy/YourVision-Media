@@ -3,7 +3,7 @@
 
 ### 01.06 (Пн)
 * 11:00 | **YV** | ⚡ **#NEWS_WIRE:** Северная Македония: Прослушивания финалистов Детского Евровидения. - ✅ [ГОТОВО]
-* 20:00 | **YV** | ⚡ **#RESULTS:** Албания: Финал Festivali i Këngës për Fëmijë. - ✅ [ГОТОВО]
+* 20:00 | **YV** | ⚡ **#RESULTS:** Албания: Финал Festivali i Këngës për Fëmijë. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/01/YV-01.06-23-30-AL-JESC-Festivali-Femi-Results.md`)
 * 22:15 | **YV** | ⚡ **#NEWS_WIRE:** Италия: Stefano De Martino корректирует планы отбора Сан-Ремо-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/01/YV-01.06-22-15-IT-Sanremo-2027-Eurovision-Selection-Update.md`)
 
 ### 02.06 (Вт)
