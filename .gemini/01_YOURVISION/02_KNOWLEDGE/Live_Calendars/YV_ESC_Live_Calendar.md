@@ -57,6 +57,7 @@
 | 01.06 | 11:00 | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (10:00 CEST) | COVERED | `04_CONTENT/2026/06/01/YV-01.06-11-00-AL-MK-JESC-Tonight-Auditions.md` |
 | 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | COVERED | `04_CONTENT/2026/06/01/YV-01.06-23-30-AL-JESC-Festivali-Femi-Results.md` |
 | 01.06 | 22:15 | 🇮🇹 ITA | Сан-Ремо 2027: Stefano De Martino корректирует планы отбора | COVERED | `04_CONTENT/2026/06/01/YV-01.06-22-15-IT-Sanremo-2027-Eurovision-Selection-Update.md` |
+| 02.06 | 11:00 | 🇪🇺 EU | Реформа членства EBU: Перспективы Косово, Канады и Казахстана | COVERED | `04_CONTENT/2026/06/02/YV-02.06-11-00-EU-EBU-Membership-Reform-DeepDive.md` |
 | 02.06 | 17:50 | 🇪🇺 EU | EuroGroove ALBM Cuts: напоминание о чарте | COVERED | `04_CONTENT/2026/06/02/YV-02.06-17-50-EU-EurogrooveReminder-AlbmCuts.md` |
 | 02.06 | 19:20 | 🇪🇺 EU | EuroGroove ALBM Cuts: результаты послевенского чарта | COVERED | `04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |

@@ -7,6 +7,7 @@
 * 22:15 | **YV** | ⚡ **#NEWS_WIRE:** Италия: Stefano De Martino корректирует планы отбора Сан-Ремо-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/01/YV-01.06-22-15-IT-Sanremo-2027-Eurovision-Selection-Update.md`)
 
 ### 02.06 (Вт)
+* 11:00 | **YV** | 🧠 **#DEEP_DIVE:** Реформа EBU: Шанс для Косово, Канады и Казахстана на Евровидении-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-11-00-EU-EBU-Membership-Reform-DeepDive.md`)
 * 17:50 | **YV** | 📢 **#CHART_REMINDER:** EuroGroove ALBM Cuts: напоминание о чарте. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-17-50-EU-EurogrooveReminder-AlbmCuts.md`)
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** EuroGroove ALBM Cuts: результаты послевенского чарта. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md`)
 
