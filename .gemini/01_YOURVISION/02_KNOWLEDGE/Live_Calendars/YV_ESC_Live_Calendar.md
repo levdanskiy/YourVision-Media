@@ -56,6 +56,7 @@
 |---|---|---|---|---|---|
 | 01.06 | 11:00 | 🇲🇰 MKD | MRT: прослушивания финалистов JESC (10:00 CEST) | COVERED | `04_CONTENT/2026/06/01/YV-01.06-11-00-AL-MK-JESC-Tonight-Auditions.md` |
 | 01.06 | TBA | 🇦🇱 ALB | Festivali i Këngës për Fëmijë: Final (выбор JESC-представителя) | COVERED | `04_CONTENT/2026/06/01/YV-01.06-11-00-AL-MK-JESC-Tonight-Auditions.md` |
+| 02.06 | 17:50 | 🇪🇺 EU | EuroGroove ALBM Cuts: напоминание о чарте | COVERED | `04_CONTENT/2026/06/02/YV-02.06-17-50-EU-EurogrooveReminder-AlbmCuts.md` |
 | 02.06 | 19:20 | 🇪🇺 EU | EuroGroove ALBM Cuts: результаты послевенского чарта | COVERED | `04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
 | 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-16-15-AM-EYM2026-IntervalAct.md` |

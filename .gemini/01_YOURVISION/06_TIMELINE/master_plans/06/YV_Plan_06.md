@@ -6,6 +6,7 @@
 * 20:00 | **YV** | ⚡ **#RESULTS:** Албания: Финал Festivali i Këngës për Fëmijë. - ✅ [ГОТОВО]
 
 ### 02.06 (Вт)
+* 17:50 | **YV** | 📢 **#CHART_REMINDER:** EuroGroove ALBM Cuts: напоминание о чарте. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-17-50-EU-EurogrooveReminder-AlbmCuts.md`)
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** EuroGroove ALBM Cuts: результаты послевенского чарта. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md`)
 
 ### 06.06 (Сб)
