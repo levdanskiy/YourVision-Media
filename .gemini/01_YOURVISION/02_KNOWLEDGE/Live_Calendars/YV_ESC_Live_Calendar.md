@@ -60,6 +60,7 @@
 | 02.06 | 11:00 | 🇪🇺 EU | Реформа членства EBU: Перспективы Косово, Канады и Казахстана | COVERED | `04_CONTENT/2026/06/02/YV-02.06-11-00-EU-EBU-Membership-Reform-DeepDive.md` |
 | 02.06 | 17:50 | 🇪🇺 EU | EuroGroove ALBM Cuts: напоминание о чарте | COVERED | `04_CONTENT/2026/06/02/YV-02.06-17-50-EU-EurogrooveReminder-AlbmCuts.md` |
 | 02.06 | 19:20 | 🇪🇺 EU | EuroGroove ALBM Cuts: результаты послевенского чарта | COVERED | `04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md` |
+| 02.06 | 20:30 | 🇪🇺 EU | Обновление расписания чартов YourVision на летний период | COVERED | `04_CONTENT/2026/06/02/YV-02.06-20-30-EU-Summer-Charts-Schedule.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
 | 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-16-15-AM-EYM2026-IntervalAct.md` |
 | 15.06 | 12:00 | 🇪🇺 EU | OPINION: Жанровый код Евровидения-2027 в Болгарии | SCHEDULED | `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md` |

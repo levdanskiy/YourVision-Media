@@ -10,6 +10,7 @@
 * 11:00 | **YV** | 🧠 **#DEEP_DIVE:** Реформа EBU: Шанс для Косово, Канады и Казахстана на Евровидении-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-11-00-EU-EBU-Membership-Reform-DeepDive.md`)
 * 17:50 | **YV** | 📢 **#CHART_REMINDER:** EuroGroove ALBM Cuts: напоминание о чарте. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-17-50-EU-EurogrooveReminder-AlbmCuts.md`)
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** EuroGroove ALBM Cuts: результаты послевенского чарта. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md`)
+* 20:30 | **YV** | 📢 **#ANNOUNCEMENT:** Обновление расписания: летний график чартов. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/02/YV-02.06-20-30-EU-Summer-Charts-Schedule.md`)
 
 ### 06.06 (Сб)
 * 21:00 | **YV** | ⚡ **#RESULTS:** Грузия: Финал шоу Ranina. - ⬜ [ОЖИДАНИЕ]
