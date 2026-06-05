@@ -5,6 +5,8 @@
 - [[Felix]] - The Shadow / Incubus.
 - [[Julian]] - The Power / Sovereign.
 - [[Alex]] - The Silence / Blank.
+- [[Reinis]] - The Light / Lumen (универ-линия, нов.).
+- [[Elias]] - The Forbidden / Teacher (запретная линия, без секса).
 
 ## 🏠 FAMILY
 - [[Lord Oeron]] - High Arbiter.
