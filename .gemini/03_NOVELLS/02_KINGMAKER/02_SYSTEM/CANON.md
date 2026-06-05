@@ -9,7 +9,7 @@
 - **`01_BIBLES/KINGMAKER_BIBLE.md`** + **`LORE.json`** - мир, лор, факты.
 - **`PHASE1_ARC.md` / `PHASE2_ARC.md` / `PHASE3_ARC.md`** - структура фаз. **`TRUE_ROUTE.md`** + **`ENDINGS.md`** - истинный маршрут и концовки.
 - **`NORA_CONFIG.md`** - конфиг протагониста. **`VOICE_LOCK.md`** - голос.
-- **`03_CHARACTERS/VISUAL_PROFILES.md`** (вкл. Штефан/Канцлер/Хелена), **`RELATIONS.md`**, **`LOVE_INTERESTS.md`**.
+- **`03_CHARACTERS/VISUAL_PROFILES.md`** (вкл. Штефан/Канцлер/Хелена), **`RELATIONS.md`**, **`LOVE_INTERESTS.md`**, **`CHARACTER_DEPTH.md`** (Суперцель/Мотивация/Слабость/Речь).
 - **`STATS_RULES.md`**, **`AFFINITY_UNLOCKS.md`**, **`POLL_LOG.json/.md`**.
 
 ---
