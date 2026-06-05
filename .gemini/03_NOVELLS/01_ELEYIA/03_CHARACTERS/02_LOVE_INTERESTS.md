@@ -76,6 +76,21 @@
 *   **Aura:** Warm peach light, 100% stable. 
 *   **Artifact:** «Стальной ключ».
 
+**14. РЕЙНИС (Reinis) - НОВЫЙ ГЕРОЙ (УНИВЕРСИТЕТСКАЯ ЛИНИЯ / РИГА-ПРАЙМ)**
+*   **Статус:** Сплит (Человек/Люмен, «Светоч»), 21 год.
+*   **Роль:** Сениор СУМПН в Риге-Прайм, лидер студенческого союза и архитектор световых инсталляций вертикального города.
+*   **Символ:** Свет, открытость, тёплое притяжение большого города (анти-Дориан).
+*   **Отношение к Яну:** Видит в Яне не инструмент и не объект, а человека. Влюбляется открыто, без игр. Линия начинается дистанционно (Рига далеко от Элеи), как когда-то с Дорианом, но тёплая, а не ледяная. Разворачивается, когда сага дойдёт до универ-сезонов.
+*   **Scent:** Warm honey, ozone after rain, sun-heated copper.
+*   **Aura:** Golden-white, radiant and steady. Feels like standing in morning sun.
+*   **Touch:** Warm, open-palmed, unhurried. Makes Jan's Static go quiet.
+*   **Artifact:** «Призма Риги» (ручная призма, что расщепляет свет вертикального города).
+*   **Voice:** Bright glass chimes and the warm hum of a Riga tram.
+*   **Shadow Hook:** Знает, что Рига «зовёт» Яна, и сам не уверен, спасает он Яна или заманивает в город.
+*   **Intimacy Archetype:** «The Radiant Dawn» (Сияющий рассвет).
+*   **Intimacy Behavior:** Generous, attentive, openly tender. The opposite of guarded.
+*   **Резонанс:** Янтарь Яна теплеет ровным золотом; Static стихает.
+
 ---
 ### 🧬 JAN'S PERSONAL REFLEXES
 *   **Overload Tick:** Scratches skin under the Suppressor.
