@@ -21,30 +21,30 @@
 *   **April 24 (Day 12):** Juris's interrogation. Consequences of the night.
 *   **April 25 (Day 13):** Digital Date. Meeting Dorian in the VR-Lounge.
 *   **April 26 (Day 14):** **ROMANCE CHOICE:** Anchor (Mikas) vs. Horizon (Dorian).
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #1:** **#KINGMAKER** (Золотой Интеррегнум).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #1:** **#KINGMAKER** (Золотой Интеррегнум).
 
 ## PHASE 3: AWAKENING (Days 15-21)
 *   **Motif:** Blinding white light through honey gold (Revelation and power).
 *   **April 27 (Day 15):** The Drone Breach. Marta in danger.
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #2:** **#DONOR** (Судья Крови).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #2:** **#DONOR** (Судья Крови).
 *   **April 28 (Day 16):** Sub-Palace tunnels. The 1974 secret revealed.
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #3:** **#HORIZON** (Протокол: Горизонт).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #3:** **#HORIZON** (Протокол: Горизонт).
 *   **April 29 (Day 17):** The High Resonance. Jan as the Vessel.
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #4:** **#ORCHID** (Золотая Орхидея).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #4:** **#ORCHID** (Золотая Орхидея).
 *   **April 30 (Day 18):** Walpurgis Night. The Golden Sky phenomenon.
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #5:** **#ORDER** (Чернозём).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #5:** **#ORDER** (Чернозём).
 *   **May 1 (Day 19):** Integration. Jan masters the Empathy Channel. **MAJOR POLL: THE FUTURE PULSE.**
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #6:** **#CODE** (Код Первородных).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #6:** **#CODE** (Код Первородных).
 *   **May 2 (Day 20):** Aftermath. Family fallout. Lord Oeron's reaction.
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #7:** **#ANTHROPOS** (Протокол Антропос).
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #7:** **#ANTHROPOS** (Протокол Антропос).
 *   **May 3 (Day 21):** **FINALE:** The Departure. Ticket to Riga-Prime. Felix's Shadow.
-    - ⚡ **14:00 — MULTIVERSE PREVIEW #8:** **ELEYIA S2 (Shadows).**
-    - 🗳️ **14:05 — START OF GLOBAL VERDICT (S2 vs NEW WORLD vs HYBRID).**
+    - ⚡ **14:00 - MULTIVERSE PREVIEW #8:** **ELEYIA S2 (Shadows).**
+    - 🗳️ **14:05 - START OF GLOBAL VERDICT (S2 vs NEW WORLD vs HYBRID).**
     - **META:** FINAL RESONANCE AUDIT (End of Season 1).
 
 ## META-PHASE: THE GREAT RESET
 *   **May 4 (Day 22):** **NO STORY POSTS.** Global Voting Day.
-    - ⚡ **09:00 — 21:00:** Hourly Teaser Recaps of all 8 Multiverse Options.
+    - ⚡ **09:00 - 21:00:** Hourly Teaser Recaps of all 8 Multiverse Options.
     - 🗳️ **22:00:** **POLL CLOSED.** Official Results. Decision on Season 2 Launch.
 
 ---

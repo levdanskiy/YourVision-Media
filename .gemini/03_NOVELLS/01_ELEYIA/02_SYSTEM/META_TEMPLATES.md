@@ -1,7 +1,7 @@
 # 📊 ELEYIA: META-LAYER TEMPLATES (V1.0)
 
-> Универсальные шаблоны (STATUS, EDICT, EVIDENCE, NEWS WIRE, AFFINITY UNLOCK, WEEKLY PULSE) — см. `/home/levdanskiy/.gemini/03_NOVELLS/09_GENERAL/META_TEMPLATES.md` (V3.0)
-> Ниже — только Eleyia-специфичные шаблоны.
+> Универсальные шаблоны (STATUS, EDICT, EVIDENCE, NEWS WIRE, AFFINITY UNLOCK, WEEKLY PULSE) - см. `/home/levdanskiy/.gemini/03_NOVELLS/09_GENERAL/META_TEMPLATES.md` (V3.0)
+> Ниже - только Eleyia-специфичные шаблоны.
 
 ---
 
