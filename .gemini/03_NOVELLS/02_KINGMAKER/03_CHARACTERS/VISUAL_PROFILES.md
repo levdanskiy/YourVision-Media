@@ -50,7 +50,7 @@
 
 ---
 
-## ДЭМИЕН (М, 38)
+## ДЭМИЕН (М, 35)
 *Глава Канцелярии. Теневой защитник.*
 
 **Внешность:**
@@ -68,7 +68,7 @@
 **ЗАПРЕЩЕНО:** Светлые цвета, небрежность, эмоции на лице, седина больше чем на висках.
 
 **CHARACTER TAG:**
-`Damien, tall imposing man late thirties around thirty-eight, dark almost black hair with early silver only at the temples, perfectly groomed, light stubble, steel grey eyes, dark olive skin, broad shoulders, dark charcoal architectural suit, holding a burgundy leather dossier, immovable presence, no text, no logos`
+`Damien, tall imposing man around thirty-five, dark almost black hair with early silver only at the temples, perfectly groomed, light stubble, steel grey eyes, dark olive skin, broad shoulders, dark charcoal architectural suit, holding a burgundy leather dossier, immovable presence, no text, no logos`
 
 ---
 

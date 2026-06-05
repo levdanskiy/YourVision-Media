@@ -1,4 +1,4 @@
-# 💎 ORCHID — ВИЗУАЛЬНЫЕ ПРОФИЛИ
+# 💎 ORCHID - ВИЗУАЛЬНЫЕ ПРОФИЛИ
 
 Единый источник истины для всех изображений. Вставляй CHARACTER TAG в любой промпт.
 Фон: `Mediterranean coast, warm golden light, luxury yacht or casino interior`
@@ -29,7 +29,7 @@
 
 ---
 
-## МАКСИМИЛИАН (М, 38)
+## МАКСИМИЛИАН (М, 35)
 *Глава безопасности Траста. Главный риск и ключ к сейфу.*
 
 **Внешность:**
@@ -47,29 +47,29 @@
 **ЗАПРЕЩЕНО:** Небрежность, украшения, расстёгнутая рубашка.
 
 **CHARACTER TAG:**
-`Maximilian, tall athletic man late thirties, dark blonde short hair, steel grey eyes, tan light skin, strong jaw, perfectly tailored dark navy suit, closed collar, expensive understated watch, security professional posture, scanning the room expression, no text, no logos`
+`Maximilian, tall athletic man around thirty-five, dark blonde short hair, steel grey eyes, tan light skin, strong jaw, perfectly tailored dark navy suit, closed collar, expensive understated watch, security professional posture, scanning the room expression, no text, no logos`
 
 ---
 
-## ПРИНЦ ЛОРАН (М, 52)
-*Коллекционер судеб. Старые деньги, старые тайны.*
+## ПРИНЦ ЛОРАН (М, 34)
+*Коллекционер судеб. Молодой наследник старых денег - получил коллекцию и титул слишком рано.*
 
 **Внешность:**
-- Лицо: аристократические черты с годами - красивый так, как бывают красивы только состоятельные мужчины в возрасте.
-- Волосы: серебряно-белые, ухоженные. Длиннее, чем принято - небольшая вольность позволена только ему.
-- Глаза: бледно-голубые, с хитрецой старого игрока.
-- Кожа: светлая, ровная, ухоженная.
+- Лицо: молодая аристократическая красота, которой не нужно стараться - та ленивая порода, что даётся старыми деньгами с рождения. Скучающее изящество.
+- Волосы: пепельно-русые, светлые, ухоженные, чуть длиннее, чем принято - вольность, которую он себе позволяет.
+- Глаза: бледно-голубые, с хитрецой игрока, который выигрывает от скуки.
+- Кожа: светлая, ровная, тронутая южным солнцем.
 
-**Телосложение:** 182 см, стройный, подтянутый. Двигается с расслабленностью человека, которому не нужно ничего доказывать.
+**Телосложение:** 184 см, стройный, ленивая грация человека, которому никогда ничего не нужно было доказывать.
 
-**Стиль:** Только лён - кремовый, белый, бежевый. Яхтенная элегантность. Шёлковый платок в кармане. Перстень с фамильным гербом.
+**Стиль:** Только лён - кремовый, белый, бежевый. Яхтенная элегантность. Шёлковый платок в кармане. Перстень с фамильным гербом, который он носит как ребёнок носит чужую корону.
 
-**Особенности:** Никогда не называет цену первым. Всегда предлагает выпить. Смотрит на вещи дольше, чем на людей - и на людей как на вещи. Запах белого трюфеля и старого коньяка.
+**Особенности:** Никогда не называет цену первым. Всегда предлагает выпить. Смотрит на вещи дольше, чем на людей - и на людей как на экспонаты для коллекции. Запах белого трюфеля и дорогого коньяка, к которому он слишком молод.
 
-**ЗАПРЕЩЕНО:** Тёмные цвета, формальные костюмы, спешка.
+**ЗАПРЕЩЕНО:** Тёмные цвета, формальные костюмы, спешка, седина/возраст.
 
 **CHARACTER TAG:**
-`Prince Laurent, elegant silver-haired man early fifties, pale blue knowing eyes, light skin, aristocratic features aged with grace, cream linen suit, silk pocket square, family signet ring, relaxed authoritative presence, Mediterranean luxury yacht setting, no text, no logos`
+`Prince Laurent, elegant young man around thirty-four, ash-blond hair slightly longer than convention, pale blue knowing eyes, light sun-touched skin, effortless inherited-aristocrat beauty with a bored elegance, cream linen suit, silk pocket square, family signet ring, relaxed authoritative presence, Mediterranean luxury yacht setting, no text, no logos`
 
 ---
 
