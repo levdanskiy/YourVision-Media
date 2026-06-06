@@ -65,6 +65,7 @@
 | 03.06 | 15:30 | 🇮🇹 ITA | Детское Евровидение 2026: подтверждение участия и метода отбора Италии | COVERED | `04_CONTENT/2026/06/03/YV-03.06-15-30-IT-Rai-Kids-JESC2026-Confirm.md` |
 | 06.06 | 21:00 | 🇬🇪 GEO | Ranina Final - выбор JESC-представителя Грузии (20:00 CEST) | PENDING |  |
 | 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | COVERED | `04_CONTENT/2026/05/25/YV-25.05-16-15-AM-EYM2026-IntervalAct.md` |
+| 06.06 | 22:45 | 🇮🇹 ITA | Сан-Ремо 2027: Стефано Де Мартино подтвердил даты проведения | COVERED | `04_CONTENT/2026/06/06/YV-06.06-22-45-IT-Sanremo-2027-Dates-Confirmed.md` |
 | 15.06 | 12:00 | 🇪🇺 EU | OPINION: Жанровый код Евровидения-2027 в Болгарии | SCHEDULED | `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md` |
 | 16.06 | 12:00 | 🇪🇺 EU | COMMUNITY: Запуск интерактива «Музыкальный скаутинг» | SCHEDULED | `04_CONTENT/2026/06/16/YV-16.06-12-00-EU-Community-SongScouting.md` |
 | июнь | TBA | EBU | Финальное решение по реформам регламента 2027 | TBA |  |
