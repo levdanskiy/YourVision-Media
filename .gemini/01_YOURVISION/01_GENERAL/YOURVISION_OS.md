@@ -124,14 +124,15 @@
 
 ```
 01_YOURVISION/
-├── 01_GENERAL/             ← OS и инструкции (этот файл)
+├── 01_GENERAL/             ← OS и базовые инструкции (этот файл)
 ├── 02_KNOWLEDGE/           ← живой лор и базы (CHANNEL_LORE, MASTER_DATABASE, Live_Calendars)
 ├── 03_TEMPLATES/           ← живые шаблоны постов
 ├── 04_CONTENT/YYYY/MM/DD/  ← все опубликованные посты
-├── 05_ASSETS/              ← медиа, звуки, документы
+├── 05_ASSETS/              ← media, звуки, документы
 ├── 06_TIMELINE/            ← master_plans и database (yv_season_2026.json)
 ├── 07_ARCHIVE/             ← всё, что больше не нужно (Gemini engine, старые планы, legacy bibles)
-└── 08_HUB/                 ← YV Hub (index.html + data.js + assets) - editorial dashboard, deploy на GitHub Pages
+├── 08_HUB/                 ← YV Hub (index.html + data.js + assets) - editorial dashboard, deploy на GitHub Pages
+└── 09_CHARTS/              ← все материалы по чартам (руководство, расписание, инструменты валидации)
 ```
 
 **Имя файла поста:**
