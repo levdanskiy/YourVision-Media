@@ -200,6 +200,24 @@
             "event": "COMMUNITY: Запуск интерактива «Музыкальный скаутинг»",
             "type": "RELEASE",
             "status": "SCHEDULED"
+        },
+        {
+            "id": "AM_CHART_SIGNAL_2026_ANNOUNCE",
+            "date": "2026-06-09",
+            "time": "20:30",
+            "country": "Europe",
+            "event": "ALLMIX: SIGNAL 2026 - СВЕЖИЕ ЧАСТОТЫ (Старт голосования)",
+            "type": "CHART",
+            "status": "PLANNED"
+        },
+        {
+            "id": "AM_CHART_SIGNAL_2026_RESULTS",
+            "date": "2026-06-16",
+            "time": "19:20",
+            "country": "Europe",
+            "event": "ALLMIX: SIGNAL 2026 - СВЕЖИЕ ЧАСТОТЫ (Итоги)",
+            "type": "CHART",
+            "status": "PLANNED"
         }
     ],
     "winners": {

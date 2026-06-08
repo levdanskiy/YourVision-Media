@@ -67,8 +67,11 @@
 | 06.06 | 21:00-23:00 | 🇦🇲 ARM | Eurovision Young Musicians 2026 - Ереван (20:00-22:00 CEST) | COVERED | `04_CONTENT/2026/06/06/YV-06.06-23-15-PL-EYM2026-Winner-Poland.md` |
 | 06.06 | 22:45 | 🇮🇹 ITA | Сан-Ремо 2027: Стефано Де Мартино подтвердил даты проведения | COVERED | `04_CONTENT/2026/06/06/YV-06.06-22-45-IT-Sanremo-2027-Dates-Confirmed.md` |
 | 06.06 | 23:30 | 🇱🇻 LVA | EMM-2027: Лиепая официально объявлена городом-хозяином конкурса | COVERED | `04_CONTENT/2026/06/06/YV-06.06-23-30-LV-EYM2027-Liepaja-Host.md` |
+| 09.06 | 20:30 | 🇪🇺 EU | AllMix Signal 2026: старт голосования (20 номинантов) | PENDING |  |
 | 15.06 | 12:00 | 🇪🇺 EU | OPINION: Жанровый код Евровидения-2027 в Болгарии | SCHEDULED | `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md` |
 | 16.06 | 12:00 | 🇪🇺 EU | COMMUNITY: Запуск интерактива «Музыкальный скаутинг» | SCHEDULED | `04_CONTENT/2026/06/16/YV-16.06-12-00-EU-Community-SongScouting.md` |
+| 16.06 | 17:50 | 🇪🇺 EU | AllMix Signal 2026: напоминание о чарте | PENDING |  |
+| 16.06 | 19:20 | 🇪🇺 EU | AllMix Signal 2026: результаты чарта новинок | PENDING |  |
 | июнь | TBA | EBU | Финальное решение по реформам регламента 2027 | TBA |  |
 | июнь | TBA | 🇧🇬 BGR | БНТ: возможное объявление города-хозяина из шорт-листа | TBA |  |
 
