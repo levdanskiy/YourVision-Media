@@ -1,6 +1,6 @@
 // ИД-ПОСТА: YV-29.03-03-30-Asia-March-Recap
 // ТЕМА: Дайджест новостей Eurovision Asia: Бангкок утвержден
-// ДАТА ПУБЛИКАЦИИ: 29.03.2026, 03:30 (Europe/Рига)
+// ДАТА ПУБЛИКАЦИИ: 29.03.2026, 03:30 (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: YourVision, INSIDER
 // СТАТУС: ГОТОВ (EDITORIAL ANALYST V4.0)
 

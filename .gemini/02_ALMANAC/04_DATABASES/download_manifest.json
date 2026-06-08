@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-30",
+  "records": [
+    {
+      "id": "ich001",
+      "title": "ich001.json",
+      "url": "https://data.unesco.org/api/explore/v2.1/catalog/datasets/ich001/exports/json?lang=en&timezone=UTC",
+      "path": "04_DATABASES/downloads/unesco_ich/ich001.json",
+      "status": "downloaded",
+      "bytes": 6033720,
+      "note": "",
+      "downloaded_at": "2026-05-30"
+    },
+    {
+      "id": "available_countries",
+      "title": "available_countries.json",
+      "url": "https://date.nager.at/api/v3/AvailableCountries",
+      "path": "04_DATABASES/downloads/nager_date/available_countries.json",
+      "status": "downloaded",
+      "bytes": 4783,
+      "note": "",
+      "downloaded_at": "2026-05-30"
+    },
+    {
+      "id": "public_holidays_2026",
+      "title": "Nager.Date public holidays 2026",
+      "url": "https://date.nager.at/api/v3/PublicHolidays/{year}/{countryCode}",
+      "path": "04_DATABASES/downloads/nager_date/public_holidays_2026.json",
+      "status": "downloaded",
+      "bytes": 537284,
+      "note": "122 country payloads",
+      "downloaded_at": "2026-05-30"
+    },
+    {
+      "id": "FoodData_Central_foundation_food_csv_2026-04-30",
+      "title": "FoodData_Central_foundation_food_csv_2026-04-30.zip",
+      "url": "https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_foundation_food_csv_2026-04-30.zip",
+      "path": "04_DATABASES/downloads/usda_fdc/FoodData_Central_foundation_food_csv_2026-04-30.zip",
+      "status": "downloaded",
+      "bytes": 3825517,
+      "note": "",
+      "downloaded_at": "2026-05-30"
+    }
+  ]
+}

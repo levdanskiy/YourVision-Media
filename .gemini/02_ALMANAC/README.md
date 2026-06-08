@@ -1,0 +1,203 @@
+# ALMANAC - OPERATING INDEX
+
+This folder is the working archive for Almanac: content rules, seasonal plans, source bibles, generated posts, and operational checks.
+
+## Current Structure
+
+| Path | Role |
+|------|------|
+| `01_BIBLES/` | Editorial source of truth: voice, rubrics, templates, calendars, sources, visual rules. |
+| `02_CONTENT/2026/` | Published-ready and archive posts by date. |
+| `legacy_from_yv/` | Legacy YourVision-era planning material. Keep for reference, do not use as current rules. |
+| `tools/` | Local audit and validation scripts. |
+| `03_REPORTS/` | Generated audit reports and handoff notes. |
+| `03_ASSETS/` | Future generated/approved images, if visual files are stored locally. |
+| `04_AUTOMATION/` | Project skills, agent-role notes, hooks, and automation sources. |
+| `04_DATABASES/` | Approved local dataset policy, registry, and small source indexes. |
+
+## Source Of Truth
+
+Read these before creating or editing posts:
+
+1. `01_BIBLES/ALMANAC_BIBLE.md` - project mission, themes, system navigation.
+2. `01_BIBLES/RUBRIC_TAXONOMY.md` - short source of truth for rubrics and deprecated labels.
+3. `01_BIBLES/WORLD_COVERAGE_MATRIX.md` - cultural zones, axes, quotas, coverage metadata.
+4. `01_BIBLES/RUBRIC_RULES.md` - hard quality rules, slot rules, length limits.
+5. `01_BIBLES/MONTHLY_PLANNING_TEMPLATE.md` - required month planning grid: slots, zones, axes, sources, V4 series.
+6. `01_BIBLES/ARCHIVE_TEMPLATE.md` - post templates by rubric.
+7. `01_BIBLES/VOICE_LEXICON.md` - allowed and forbidden language.
+8. `01_BIBLES/CONTEMPORARY_STYLE_GUIDE.md` - current voice, carousel/search/screenshot structure, modern visual direction.
+9. `01_BIBLES/VISUAL_SYSTEM.md` - image prompt rules.
+10. `01_BIBLES/SOURCE_DATABASES.md` - approved external source stacks, trust levels, citation rules.
+11. `01_BIBLES/INTERACTIVITY_SYSTEM.md` - polls, audience pulses, quizzes, and non-bait interaction rules.
+12. `01_BIBLES/SLOT_STRATEGY.md` - time-slot meaning, rubric movement, and timing-test policy.
+13. `01_BIBLES/SERVICE_AND_SPECIALS.md` - optional `SV` service notes, symbolic oracle/calendar radar notes, and rare `SP` 21:04 special posts from 07.07.
+14. `01_BIBLES/FORMAT_EXTENSIONS.md` - accepted lenses and divination subtypes such as TABLE, DREAM, TABOO, GESTURE, LOST, FEAST_TABLE.
+15. `01_BIBLES/FOOD_TECHNOLOGY_MATRIX.md` - planning map for global food mechanisms and missing format coverage.
+16. `01_BIBLES/CALENDAR_SYSTEMS_BANK.md` - planning bank for world calendars, cycles, modern holidays, fasts, and commemoration.
+17. `01_BIBLES/ANALYTICS_REVIEW.md` - biweekly performance review, series failure rules, and non-viral iteration policy.
+18. `01_BIBLES/DISTRIBUTION_RULES.md` - stories, cross-posting, audio/video, collaborations, and monetization boundary.
+19. `01_BIBLES/AGENTS_AND_SKILLS.md` - recommended planner, writer, factcheck, style, and visual QA passes.
+20. `01_BIBLES/PRE_PUBLISH_CHECKLIST.md` - final manual check.
+
+Older dated plans in `01_BIBLES/PLAN_*.md`, `JUNE_STRATEGY.md`, and `JULY_AUGUST_STRATEGY.md` are historical planning material. Before reusing any topic from them, rebuild it through `WORLD_COVERAGE_MATRIX.md` and current no-regional-anchor rules.
+
+## Daily Publishing Contract
+
+Current AL format expects three slots per day:
+
+Expanded slot rules apply to new and rewritten posts from `2026-07-07`. Already prepared material through `2026-07-06` is not rewritten retroactively.
+
+| Slot | Theme | Rubrics |
+|------|-------|---------|
+| `10:04` | Myths / sources / omens / divination / personae / bestiary / objects / texts | `LORE`, `SOURCE`, `OMENS`, `DIVINATION`, `PERSONAE`, `BESTIARY`, `OBJECTS`, `FRAGMENT`, `ETYMON`, `PROSE` |
+| `15:04` | Food only: desserts, baking, bread, fermentation, preservation, soups, condiments, drinks, pantry, tools, foodways, technique | `CAKES`, `BUNS`, `PATISSERIE`, `DESSERTS`, `SWEETS`, `RECIPE`, `BREAD`, `FLATBREAD`, `PIES`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS`, `FOODWAYS`, `PANTRY`, `DRINKS`, `TOOLS`, `LISTS`, `WORKFLOW` |
+| `18:02` | Calendar / season / heritage / rites / modern rituals / feast tables | `CHRONOS`, `CALENDAR`, `HERITAGE`, `WHEEL`, `CYCLES`, `MODERN`, `RITES`, `FEAST`, occasional `ETYMON` |
+
+`FERMENT`, `PRESERVE`, `SOUP`, and `CONDIMENTS` are real 15:04 filename rubrics. Labels such as `TABLE`, `GESTURE`, `DREAM`, `TABOO`, `LOST`, `FEAST_TABLE`, `FAST`, and `LIMINAL` are lenses/subtypes unless the taxonomy says otherwise. Use the real rubric in the filename and add the lens in planning or metadata when useful.
+
+Publication timezone is an operational scheduling setting only. Do not turn any city, country, region, or timezone into an editorial anchor.
+
+Country and city names are allowed when they do real work: comparison, origin, source context, calendar difference, technique history, ingredient ecology, language, or institutional record. The rule is not “delete geography”; the rule is “no geography becomes the channel’s default voice.”
+
+## Max Mode
+
+Default working mode is maximum application of the system:
+
+- use all applicable rules from the source-of-truth docs, not a minimal subset;
+- use local databases and indexes when they can improve source choice, coverage, or factcheck;
+- apply coverage locks immediately: if an audit exposes debt, the next relevant planned day should close it;
+- run `preflight_day.py` for every prepared day and fix every error and warning;
+- keep geography when it supports evidence or comparison;
+- do not edit an unrelated month/day only because of a likely typo when the active workflow clearly points to the current date sequence.
+
+## File Naming
+
+Preferred current format:
+
+```text
+AL-DD.MM-HH-MM-RUBRIC-Slug.md
+```
+
+Example:
+
+```text
+AL-29.05-15-04-BUNS-Elderflower.md
+```
+
+Legacy `AC`, `NB`, and `SW` posts are archive material and are not validated against current AL rules.
+
+## Status Model
+
+Use the status vocabulary in `01_BIBLES/STATUS_MODEL.md`.
+
+Minimum rule: do not mark a post `ГОТОВ` until it passes `PRE_PUBLISH_CHECKLIST.md` and the local validator.
+
+Published posts are not silently rewritten for meaningful factual changes. Use `03_REPORTS/CORRECTIONS.md` and `FACTCHECK_RULES.md`.
+
+## Commands
+
+Validate current AL content:
+
+```bash
+python3 tools/validate_almanac.py
+```
+
+Validate current AL content with coverage metadata warnings:
+
+```bash
+python3 tools/validate_almanac.py --strict-coverage
+```
+
+Audit one month:
+
+```bash
+python3 tools/audit_month.py 2026 06
+```
+
+The month audit checks slot completeness, rubric counts, Sunday `FRAGMENT`, weekly `LISTS` / `HERITAGE` rotation, and long posts.
+
+Audit global coverage metadata and debt:
+
+```bash
+python3 tools/audit_coverage.py 2026 07
+```
+
+Run biweekly analytics review manually using:
+
+```text
+01_BIBLES/ANALYTICS_REVIEW.md
+```
+
+Audit system docs for stale rubric or regional-anchor language:
+
+```bash
+python3 tools/audit_system_docs.py
+```
+
+Run a strict preflight for one ready publishing day:
+
+```bash
+python3 tools/preflight_day.py 2026 07 04
+```
+
+The daily preflight requires exactly three AL posts for `10:04`, `15:04`, and `18:02`; ready status; strict coverage metadata; V4 style; target body length; visual prompt discipline; and source-note discipline.
+
+Audit V4 tone, visual prompts, regional anchors, engagement bait, and divination framing:
+
+```bash
+python3 tools/audit_style.py 2026 07 04
+```
+
+Audit FACTCHECK/source metadata and source-type discipline:
+
+```bash
+python3 tools/audit_sources.py 2026 07 04
+```
+
+Audit body length against rubric target bands:
+
+```bash
+python3 tools/audit_lengths.py 2026 07 04
+```
+
+Run the general prepublish check, or pass a date for strict day mode:
+
+```bash
+tools/prepublish.sh
+tools/prepublish.sh 2026 07 04
+```
+
+Optional local git hook:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+The hook runs the non-strict global validator and system-doc audit before commit. Use `tools/prepublish.sh YYYY MM DD` for final post-day approval.
+
+Download and index approved local source datasets:
+
+```bash
+python3 tools/download_databases.py
+```
+
+Rebuild indexes from already downloaded raw files:
+
+```bash
+python3 tools/build_database_indexes.py
+```
+
+Write a report:
+
+```bash
+python3 tools/audit_month.py 2026 06 > 03_REPORTS/audit-2026-06.md
+```
+
+## Operational Priorities
+
+1. Keep content stable. Do not move large archive folders unless a migration plan exists.
+2. Make rules machine-checkable before adding more rules.
+3. Treat astronomical, calendar, historical, and etymological claims as factcheck-required.
+4. Keep prompts and post bodies separate in the mind: Telegram caption limits apply to the body, not service metadata.
+5. Preserve the voice: quiet, tactile, precise, no moralizing endings.

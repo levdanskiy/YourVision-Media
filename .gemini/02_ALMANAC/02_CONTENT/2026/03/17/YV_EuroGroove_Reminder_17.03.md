@@ -1,6 +1,6 @@
 // ИД-ПОСТА: ЮВ-17.03-17-50-World-EuroGroove-Reminder
 // ТЕМА: НАПОМИНАНИЕ: ЭФИР EUROGROOVE - ЧЕРЕЗ 10 МИНУТ
-// ДАТА ПУБЛИКАЦИИ: 17.03.2026, 17:50 (Europe/Рига)
+// ДАТА ПУБЛИКАЦИИ: 17.03.2026, 17:50 (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: YourVision, CHART_REMINDER
 // СТАТУС: ГОТОВ (EDITORIAL ANALYST V4.0)
 

@@ -1,6 +1,6 @@
 // ИД-ПОСТА: YV-29.03-03-00-Asia-Launch
 // ТЕМА: Анонс Eurovision Song Contest Asia 2026
-// ДАТА ПУБЛИКАЦИИ: 29.03.2026, 03:00 (Europe/Рига)
+// ДАТА ПУБЛИКАЦИИ: 29.03.2026, 03:00 (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: YourVision, FLASH, ASIA
 // СТАТУС: ГОТОВ (EDITORIAL ANALYST V4.0)
 

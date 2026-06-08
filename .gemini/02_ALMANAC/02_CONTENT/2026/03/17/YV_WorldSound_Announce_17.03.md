@@ -1,6 +1,6 @@
 // ИД-ПОСТА: YV-17.03-20-30-World-WorldSound-Announce
 // ТЕМА: АНОНС ЧАРТА WORLDSOUND: AIRWAVE VELOCITY
-// ДАТА ПУБЛИКАЦИИ: 17.03.2026, 20:30 (Europe/Рига)
+// ДАТА ПУБЛИКАЦИИ: 17.03.2026, 20:30 (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: YourVision, CHART_ANNOUNCE, STANDARD
 // СТАТУС: ГОТОВ (EDITORIAL ANALYST V4.0)
 
