@@ -202,20 +202,20 @@
             "status": "SCHEDULED"
         },
         {
-            "id": "AM_CHART_SIGNAL_2026_ANNOUNCE",
+            "id": "AM_CHART_VIBESHIFT_2026_ANNOUNCE",
             "date": "2026-06-09",
             "time": "20:30",
             "country": "Europe",
-            "event": "ALLMIX: SIGNAL 2026 - СВЕЖИЕ ЧАСТОТЫ (Старт голосования)",
+            "event": "ALLMIX: VIBE SHIFT 2026 - NEW CONTOURS (Старт голосования)",
             "type": "CHART",
             "status": "PLANNED"
         },
         {
-            "id": "AM_CHART_SIGNAL_2026_RESULTS",
+            "id": "AM_CHART_VIBESHIFT_2026_RESULTS",
             "date": "2026-06-16",
             "time": "19:20",
             "country": "Europe",
-            "event": "ALLMIX: SIGNAL 2026 - СВЕЖИЕ ЧАСТОТЫ (Итоги)",
+            "event": "ALLMIX: VIBE SHIFT 2026 - NEW CONTOURS (Итоги)",
             "type": "CHART",
             "status": "PLANNED"
         }
