@@ -936,7 +936,7 @@
     <header class="logo-box" role="banner">
         <div class="header-inner">
             <div class="header-brand">
-                <div class="logo">Your<span>Vision</span></div>
+                <div class="logo" style="display:flex; align-items:center; gap:6px;"><img src="assets/yv_logo.jpg" alt="YourVision" style="height: 22px; width: 22px; border-radius: 50%; object-fit: cover; border: 1px solid var(--accent); box-shadow: 0 0 6px var(--accent-glow); flex-shrink: 0;">Your<span>Vision</span></div>
                 <nav class="nav-menu" aria-label="Primary">
                     <a href="javascript:void(0)" onclick="setFilter('all')" class="nav-link active" id="nav-all"><i class="fi fi-rr-grid" aria-hidden="true"></i> All</a>
                     <a href="javascript:void(0)" onclick="setFilter('esc')" class="nav-link nav-contest-esc" id="nav-esc"><i class="fi fi-rr-trophy" aria-hidden="true"></i> Eurovision</a>
@@ -1216,7 +1216,7 @@
                     "🎼 EUROGROOVE: ALBM CUTS - ГОЛОСОВАНИЕ ОТКРЫВАЕТСЯ 24.05 В 20:30",
                     "🇨🇦 CBC/RADIO-CANADA: НАБЛЮДАТЕЛИ В ВЕНЕ, ДЕБЮТ 2027 ОБСУЖДАЕТСЯ",
                     "🇭🇺 ВЕНГРИЯ: ГРИН ДОПУСТИЛ ВОЗВРАЩЕНИЕ ПОСЛЕ СМЕНЫ ВЛАСТИ",
-                    "📻 YV RADIO - В ЭФИРЕ КРУГЛОСУТОЧНО"
+                    "📻 levdanskiy - В ЭФИРЕ КРУГЛОСУТОЧНО"
                 ]
             },
             en: {
@@ -1239,7 +1239,7 @@
                     "🎼 EUROGROOVE: ALBM CUTS - VOTE OPENS 24.05 AT 20:30",
                     "🇨🇦 CBC/RADIO-CANADA: OBSERVERS IN VIENNA, 2027 DEBUT DISCUSSED",
                     "🇭🇺 HUNGARY: GREEN HINTED AT RETURN AFTER POLITICAL SHIFT",
-                    "📻 YV RADIO - ON AIR 24/7"
+                    "📻 levdanskiy - ON AIR 24/7"
                 ]
             },
             ua: {
@@ -1259,7 +1259,7 @@
                     "🌏 EUROVISION ASIA: 14.11.2026 БАНГКОК - 10 КРАЇН ПІДТВЕРДЖЕНО, ХОСТ CHANNEL 3",
                     "🇨🇦 CBC/RADIO-CANADA: СПОСТЕРІГАЧІ В ВІДНІ, ДЕБЮТ 2027 ОБГОВОРЮЄТЬСЯ",
                     "🇭🇺 УГОРЩИНА: ГРІН ДОПУСТИВ ПОВЕРНЕННЯ",
-                    "📻 YV RADIO - В ЕФІРІ ЦІЛОДОБОВО"
+                    "📻 levdanskiy - В ЕФІРІ ЦІЛОДОБОВО"
                 ]
             },
             lv: {
@@ -1279,7 +1279,7 @@
                     "🌏 EUROVISION ASIA: 14.11.2026 BANGKOKA - 10 VALSTIS APSTIPRINĀTAS, RĪKO CHANNEL 3",
                     "🇨🇦 CBC/RADIO-CANADA: NOVĒROTĀJI VĪNĒ, 2027 DEBIJA TIEK APSPRIESTA",
                     "🇭🇺 UNGĀRIJA: GRĪNS PIEMINĒJA IESPĒJAMU ATGRIEŠANOS",
-                    "📻 YV RADIO - ĒTERĀ 24/7"
+                    "📻 levdanskiy - ĒTERĀ 24/7"
                 ]
             },
             se: {
@@ -1299,7 +1299,7 @@
                     "🌏 EUROVISION ASIA: 14.11.2026 BANGKOK - 10 LÄNDER BEKRÄFTADE, VÄRD CHANNEL 3",
                     "🇨🇦 CBC/RADIO-CANADA: OBSERVATÖRER I WIEN, 2027 DEBUT DISKUTERAS",
                     "🇭🇺 UNGERN: GREEN ANTYDDE MÖJLIG ÅTERKOMST",
-                    "📻 YV RADIO - I ETERN 24/7"
+                    "📻 levdanskiy - I ETERN 24/7"
                 ]
             }
         };
@@ -1892,7 +1892,7 @@
 
             // Fallback if pool too small
             if (pool.length < 4) {
-                pool.push("📻 YV RADIO - В ЭФИРЕ КРУГЛОСУТОЧНО");
+                pool.push("📻 levdanskiy - В ЭФИРЕ КРУГЛОСУТОЧНО");
             }
 
             // Shuffle (Fisher-Yates), take up to 8
