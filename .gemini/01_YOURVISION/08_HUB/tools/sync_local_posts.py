@@ -131,15 +131,23 @@ def collect_local_posts(lookback_days=LOOKBACK_DAYS):
 
 
 def merge_with_existing(existing_news, local_posts):
-    """Keep TG news (id != local), replace local entries by post_id key.
-
-    Returns merged news list sorted by ts desc, truncated to MAX_NEWS.
-    Strips post_id key from output since the Hub UI doesn't use it.
+    """Keep TG news (id != local), replace local entries by post_id key,
+    and filter out duplicate local posts using a normalized title check.
     """
     tg_news = [n for n in existing_news if n.get("id") != LOCAL_ID]
 
+    def normalize_title(title):
+        if not title:
+            return ""
+        return re.sub(r'[^\w\s]', '', title).lower().strip()
+
+    tg_normalized = {normalize_title(p.get("t", "")) for p in tg_news}
+
     local_by_id = {p["post_id"]: p for p in local_posts}
-    locals_out = list(local_by_id.values())
+    locals_out = []
+    for lp in local_by_id.values():
+        if normalize_title(lp.get("t", "")) not in tg_normalized:
+            locals_out.append(lp)
 
     merged = tg_news + locals_out
     merged.sort(key=lambda x: x.get("ts", 0), reverse=True)
@@ -183,6 +191,18 @@ def main():
 
     print(f"Synced {len(local_posts)} local posts.")
     print(f"Total news[] size: {len(merged)} ({sum(1 for n in merged if n['id'] == LOCAL_ID)} local / {sum(1 for n in merged if n['id'] != LOCAL_ID)} TG).")
+
+    # Automatically trigger rebuild_perfect.py to update index.html with new cache-buster
+    try:
+        import subprocess
+        rebuild_script = "/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/rebuild_perfect.py"
+        if os.path.exists(rebuild_script):
+            subprocess.run(["python3", rebuild_script], check=True)
+        else:
+            rebuild_script_alt = "/home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/08_HUB/tools/rebuild_perfect.py"
+            subprocess.run(["python3", rebuild_script_alt], check=True)
+    except Exception as e:
+        print(f"Error running rebuild_perfect.py: {e}")
 
 
 if __name__ == "__main__":

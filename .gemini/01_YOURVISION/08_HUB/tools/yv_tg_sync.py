@@ -100,9 +100,24 @@ def sync():
     data_obj = json.loads(match.group(1))
     existing_news = data_obj.get("news", [])
 
-    # Only keep genuine Telegram channel posts (discarding local drafts)
-    local_news = []
-    merged = local_news + tg_posts
+    def normalize_title(title):
+        if not title:
+            return ""
+        return re.sub(r'[^\w\s]', '', title).lower().strip()
+
+    # Extract existing local drafts
+    local_news = [n for n in existing_news if n.get("id") == LOCAL_ID]
+    
+    # Normalize titles of incoming Telegram posts to filter out duplicates
+    tg_normalized = {normalize_title(p.get("t", "")) for p in tg_posts}
+    
+    # Filter local posts, keeping only those that aren't duplicated by Telegram posts
+    filtered_local = [
+        lp for lp in local_news 
+        if normalize_title(lp.get("t", "")) not in tg_normalized
+    ]
+
+    merged = filtered_local + tg_posts
     merged.sort(key=lambda x: x.get("ts", 0), reverse=True)
     merged = merged[:MAX_NEWS]
     data_obj["news"] = merged
@@ -114,6 +129,19 @@ def sync():
     with open(os.path.join(DEPLOY_DIR, "data.js"), 'w', encoding='utf-8') as f:
         f.write(new_js)
     print(f"Sync complete. news[]: {len(merged)} ({sum(1 for n in merged if n.get('id') == LOCAL_ID)} local / {sum(1 for n in merged if n.get('id') != LOCAL_ID)} TG).")
+
+    # Automatically trigger rebuild_perfect.py to update index.html with new cache-buster
+    try:
+        import subprocess
+        rebuild_script = "/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/rebuild_perfect.py"
+        if os.path.exists(rebuild_script):
+            subprocess.run(["python3", rebuild_script], check=True)
+        else:
+            # Fallback path if symlinks differ
+            rebuild_script_alt = "/home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/08_HUB/tools/rebuild_perfect.py"
+            subprocess.run(["python3", rebuild_script_alt], check=True)
+    except Exception as e:
+        print(f"Error running rebuild_perfect.py: {e}")
 
 if __name__ == "__main__":
     sync()
