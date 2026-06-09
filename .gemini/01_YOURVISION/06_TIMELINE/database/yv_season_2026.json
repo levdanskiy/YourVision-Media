@@ -166,11 +166,74 @@
             "status": "PLANNED"
         },
         {
+            "id": "ESC_ASIA_BD_SUB_DEADLINE",
+            "date": "2026-06-10",
+            "time": "TBA",
+            "country": "Bangladesh",
+            "event": "Евровидение Азия: Бангладеш - Дедлайн подачи заявок (NTV)",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_BD_12_FINALISTS",
+            "date": "2026-06-21",
+            "time": "TBA",
+            "country": "Bangladesh",
+            "event": "Евровидение Азия: Бангладеш - Объявление 12 финалистов (NTV)",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_KR_SUB_DEADLINE",
+            "date": "2026-06-30",
+            "time": "TBA",
+            "country": "South Korea",
+            "event": "Евровидение Азия: Южная Корея - Дедлайн подачи заявок (ENA)",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_KR_CONTACT_CANDIDATES",
+            "date": "2026-07-03",
+            "time": "TBA",
+            "country": "South Korea",
+            "event": "Евровидение Азия: Южная Корея - Объявление кандидатов (ENA)",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
             "id": "ESC_ASIA_BD_FINAL",
             "date": "2026-08-23",
             "time": "TBA",
             "country": "Bangladesh",
-            "event": "ESC Asia Bangladesh National Final (Channel i)",
+            "event": "Евровидение Азия: Бангладеш - Национальный финал (NTV)",
+            "type": "FINAL",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_KR_FINAL",
+            "date": "2026-09-04",
+            "time": "TBA",
+            "country": "South Korea",
+            "event": "Евровидение Азия: Южная Корея - Национальный финал (ENA)",
+            "type": "FINAL",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_NP_FINAL",
+            "date": "2026-09-19",
+            "time": "TBA",
+            "country": "Nepal",
+            "event": "Евровидение Азия: Непал - Национальный финал (Himalaya TV)",
+            "type": "FINAL",
+            "status": "PLANNED"
+        },
+        {
+            "id": "ESC_ASIA_2026_BANGKOK",
+            "date": "2026-11-14",
+            "time": "15:00",
+            "country": "Thailand",
+            "event": "Евровидение Азия 2026 - Финал (Бангкок)",
             "type": "FINAL",
             "status": "PLANNED"
         },
