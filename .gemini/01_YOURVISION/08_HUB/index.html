@@ -808,6 +808,11 @@
         .mobile-nav-btn:hover { color: var(--text); }
         .mobile-nav-btn.active { color: var(--accent); }
 
+        @media (max-height: 850px) {
+            .logo-box { position: relative !important; top: 0 !important; margin-top: 0 !important; margin-bottom: 12px !important; }
+            body { padding-top: 52px !important; }
+        }
+
         /* Adaptive desktop adjustments */
         @media (max-width: 1200px) {
             .layout {
@@ -835,8 +840,8 @@
             .timer-val { font-size: 1.1rem; }
             #news-grid { grid-template-columns: 1fr !important; }
 
-            /* TV and medium screens cockpit compaction to single-row */
-            .logo-box { padding: 4px 0; }
+            /* TV and medium screens cockpit compaction to single-row & disable sticky */
+            .logo-box { padding: 4px 0; position: relative !important; top: 0 !important; margin-top: 0 !important; margin-bottom: 12px !important; }
             .logo { font-size: 1.15rem; }
             .header-inner { flex-wrap: nowrap; gap: 8px; justify-content: space-between; }
             .header-brand { gap: 10px; flex-wrap: nowrap; }
@@ -853,7 +858,7 @@
             .lang-btn { padding: 3px 5px !important; font-size: 0.5rem !important; }
         }
         @media (max-width: 768px) {
-            body { padding: 12px; padding-top: 36px; }
+            body { padding: 12px; padding-top: 26px !important; } /* Only player height 26px since ticker is hidden and header is relative */
             .ticker-wrap { display: none !important; } /* Hide ticker tape to save critical space on mobile */
             .now-playing-strip { height: 26px; top: 0; font-size: 0.56rem; gap: 8px; }
             .now-playing-dot { width: 5px; height: 5px; }
@@ -868,7 +873,7 @@
             .post-card.featured .post-h { font-size: 1.4rem; }
             .logo { font-size: 1.05rem; }
             .nav-menu { display: none !important; }
-            .logo-box { padding: 3px 0; margin-bottom: 8px; position: sticky; top: 26px; margin-top: -10px; }
+            .logo-box { padding: 3px 0; margin-bottom: 8px; position: relative !important; top: 0 !important; margin-top: 0 !important; }
             .header-inner { flex-wrap: nowrap; justify-content: space-between; gap: 6px; align-items: center; }
             .header-meta { gap: 6px; flex-wrap: nowrap; justify-content: flex-end; align-items: center; }
             .header-date { display: none !important; }
