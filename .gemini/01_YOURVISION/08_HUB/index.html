@@ -260,12 +260,12 @@
 
         /* HEADER COCKPIT */
         .logo-box {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             position: sticky; top: 60px; z-index: 1000;
             background: rgba(3, 4, 7, 0.88);
             backdrop-filter: var(--glass-blur);
             -webkit-backdrop-filter: var(--glass-blur);
-            padding: 14px 0; margin-top: -15px;
+            padding: 8px 0; margin-top: -15px;
             border-bottom: 1px solid var(--border);
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             transition: background 0.4s ease;
@@ -277,12 +277,12 @@
         .header-inner {
             max-width: 1340px; margin: 0 auto; padding: 0 20px;
             display: flex; justify-content: space-between;
-            align-items: center; flex-wrap: wrap; gap: 16px;
+            align-items: center; flex-wrap: wrap; gap: 12px;
         }
-        .header-brand { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+        .header-brand { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
         .logo {
             font-family: var(--font-heading);
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: var(--text);
             font-weight: 800;
             line-height: 0.95;
@@ -296,14 +296,14 @@
             display: flex; align-items: center; gap: 8px;
             color: var(--muted); text-decoration: none;
             font-family: var(--font-display);
-            font-weight: 800; font-size: 0.62rem; text-transform: uppercase;
-            letter-spacing: 0.16em; transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-            padding: 8px 16px;
-            border-radius: 12px;
+            font-weight: 800; font-size: 0.58rem; text-transform: uppercase;
+            letter-spacing: 0.14em; transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            padding: 6px 12px;
+            border-radius: 10px;
             background: transparent;
             border: 1px solid var(--border);
         }
-        .nav-link i { font-size: 0.8rem; color: var(--muted-2); }
+        .nav-link i { font-size: 0.75rem; color: var(--muted-2); }
         .nav-link:hover {
             color: var(--text);
             border-color: var(--accent);
@@ -314,28 +314,28 @@
         .header-meta {
             text-align: right;
             font-family: var(--font-sans);
-            display: flex; flex-direction: row; align-items: center; gap: 16px;
+            display: flex; flex-direction: row; align-items: center; gap: 12px;
             flex-wrap: wrap; justify-content: flex-end;
         }
         .lang-row { display: flex; gap: 4px; }
-        .lang-btn { padding: 4px 9px !important; font-size: 0.58rem !important; border-radius: 8px !important; }
+        .lang-btn { padding: 4px 8px !important; font-size: 0.55rem !important; border-radius: 8px !important; }
         
         .header-date {
             font-family: var(--font-mono);
-            font-weight: 700; font-size: 0.65rem;
+            font-weight: 700; font-size: 0.62rem;
             color: var(--muted); letter-spacing: 0.1em;
             text-transform: uppercase;
         }
         .header-clocks { display: flex; align-items: center; gap: 12px; justify-content: flex-end; }
         .clock-block { display: flex; align-items: baseline; gap: 6px; font-family: var(--font-mono); color: var(--text); }
-        .clock-block-divider { padding-left: 14px; border-left: 1px solid var(--border); }
+        .clock-block-divider { padding-left: 8px; border-left: 1px solid var(--border); }
         .clock-label {
-            color: var(--muted-2); font-size: 0.55rem;
-            text-transform: uppercase; letter-spacing: 0.18em;
+            color: var(--muted-2); font-size: 0.52rem;
+            text-transform: uppercase; letter-spacing: 0.15em;
             font-family: var(--font-sans); font-weight: 800;
         }
-        .clock-time { font-size: 0.92rem; font-weight: 700; letter-spacing: 0.02em; color: var(--text); }
-        .clock-temp { font-size: 0.7rem; font-weight: 500; opacity: 0.8; color: var(--muted); }
+        .clock-time { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.02em; color: var(--text); }
+        .clock-temp { font-size: 0.65rem; font-weight: 500; opacity: 0.8; color: var(--muted); }
 
         /* TELEMETRY TIMERS DOCK */
         .timers-hero { 
@@ -844,7 +844,18 @@
             .post-card { padding: 18px; border-radius: 20px; }
             .post-media, .video-container { float: none !important; width: 100% !important; margin: 0 0 15px 0 !important; }
             .post-card.featured .post-h { font-size: 1.4rem; }
-            .logo { font-size: 1.6rem; }
+            .logo { font-size: 1.2rem; }
+            .nav-menu { display: none !important; }
+            .logo-box { padding: 6px 0; margin-bottom: 10px; }
+            .header-inner { flex-wrap: nowrap; justify-content: space-between; gap: 8px; align-items: center; }
+            .header-meta { gap: 8px; flex-wrap: nowrap; justify-content: flex-end; align-items: center; }
+            .header-date { display: none !important; }
+            .theme-text { display: none !important; }
+            .clock-time { font-size: 0.72rem; }
+            .clock-temp { font-size: 0.6rem; }
+            .clock-label { font-size: 0.48rem; letter-spacing: 0.05em; }
+            .clock-block-divider { padding-left: 8px; }
+            .lang-btn { padding: 3px 6px !important; font-size: 0.52rem !important; }
         }
 
         /* PREMIUM MAGAZINE HERO BANNER */
@@ -917,7 +928,7 @@
                     <span class="filter-btn lang-btn" onclick="setLanguage('lv')" id="lang-lv">LV</span>
                     <span class="filter-btn lang-btn" onclick="setLanguage('se')" id="lang-se">SE</span>
                 </div>
-                <span class="filter-btn lang-btn" onclick="toggleThemeMode()" id="theme-toggle" style="background:var(--accent-soft); border-color:var(--accent); color:var(--text); font-weight:900; margin-left:8px;"><i class="fi fi-rr-sun" id="theme-icon"></i> LIGHT</span>
+                <span class="filter-btn lang-btn" onclick="toggleThemeMode()" id="theme-toggle" style="background:var(--accent-soft); border-color:var(--accent); color:var(--text); font-weight:900; margin-left:8px;"><i class="fi fi-rr-sun" id="theme-icon"></i> <span class="theme-text">LIGHT</span></span>
                 <div id="full-date" class="header-date">-- --- 2026</div>
                 <div class="header-clocks">
                     <div class="clock-block">
@@ -1144,7 +1155,7 @@
             const isLight = document.body.classList.contains('light-mode');
             const toggleBtn = document.getElementById('theme-toggle');
             if (toggleBtn) {
-                toggleBtn.innerHTML = isLight ? '<i class="fi fi-rr-moon"></i> DARK' : '<i class="fi fi-rr-sun"></i> LIGHT';
+                toggleBtn.innerHTML = isLight ? '<i class="fi fi-rr-moon"></i> <span class="theme-text">DARK</span>' : '<i class="fi fi-rr-sun"></i> <span class="theme-text">LIGHT</span>';
             }
         }
         // Run immediately to prevent flash of wrong theme
