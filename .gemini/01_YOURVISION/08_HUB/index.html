@@ -281,15 +281,20 @@
         }
         .header-brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
         .logo {
-            font-family: var(--font-heading);
-            font-size: 1.25rem;
-            color: var(--text);
-            font-weight: 800;
-            line-height: 0.9;
-            letter-spacing: -0.04em;
-            text-transform: uppercase;
+            display: flex;
+            align-items: center;
         }
-        .logo span { color: var(--accent); }
+        .logo-img {
+            height: 28px;
+            width: auto;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(255, 0, 127, 0.15);
+            transition: all 0.2s ease;
+        }
+        .logo-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px var(--accent);
+        }
         
         .nav-menu { display: flex; gap: 8px; flex-wrap: wrap; }
         .nav-link {
@@ -842,7 +847,7 @@
 
             /* TV and medium screens cockpit compaction to single-row & disable sticky */
             .logo-box { padding: 4px 0; position: relative !important; top: 0 !important; margin-top: 0 !important; margin-bottom: 12px !important; }
-            .logo { font-size: 1.15rem; }
+            .logo-img { height: 24px; }
             .header-inner { flex-wrap: nowrap; gap: 8px; justify-content: space-between; }
             .header-brand { gap: 10px; flex-wrap: nowrap; }
             .nav-menu { gap: 4px; }
@@ -871,7 +876,7 @@
             .post-card { padding: 18px; border-radius: 20px; }
             .post-media, .video-container { float: none !important; width: 100% !important; margin: 0 0 15px 0 !important; }
             .post-card.featured .post-h { font-size: 1.4rem; }
-            .logo { font-size: 1.05rem; }
+            .logo-img { height: 22px; }
             .nav-menu { display: none !important; }
             .logo-box { padding: 3px 0; margin-bottom: 8px; position: relative !important; top: 0 !important; margin-top: 0 !important; }
             .header-inner { flex-wrap: nowrap; justify-content: space-between; gap: 6px; align-items: center; }
@@ -936,7 +941,7 @@
     <header class="logo-box" role="banner">
         <div class="header-inner">
             <div class="header-brand">
-                <div class="logo" style="display:flex; align-items:center; gap:6px;"><img src="assets/yv_logo.jpg" alt="YourVision" style="height: 22px; width: 22px; border-radius: 50%; object-fit: cover; border: 1px solid var(--accent); box-shadow: 0 0 6px var(--accent-glow); flex-shrink: 0;">Your<span>Vision</span></div>
+                <div class="logo"><img src="assets/yv_logo.jpg" alt="YourVision" class="logo-img"></div>
                 <nav class="nav-menu" aria-label="Primary">
                     <a href="javascript:void(0)" onclick="setFilter('all')" class="nav-link active" id="nav-all"><i class="fi fi-rr-grid" aria-hidden="true"></i> All</a>
                     <a href="javascript:void(0)" onclick="setFilter('esc')" class="nav-link nav-contest-esc" id="nav-esc"><i class="fi fi-rr-trophy" aria-hidden="true"></i> Eurovision</a>
