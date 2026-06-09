@@ -2,7 +2,7 @@
   "version": "1.0",
   "project": "kingmaker",
   "season": 1,
-  "last_updated": "2026-06-08",
+  "last_updated": "2026-06-09",
   "polls": [
     {
       "id": "km-0-d1-q1",
@@ -12,8 +12,16 @@
       "category": "setup",
       "question": "Кто она?",
       "options": [
-        {"label": "Мужчина", "percent": 0, "votes": 0},
-        {"label": "Женщина", "percent": 100, "votes": 1}
+        {
+          "label": "Мужчина",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Женщина",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Женщина",
@@ -33,9 +41,21 @@
       "category": "setup",
       "question": "Кто войдёт в её игру?",
       "options": [
-        {"label": "Мужчины", "percent": 33, "votes": 1},
-        {"label": "Женщины", "percent": 0, "votes": 0},
-        {"label": "Полный спектр", "percent": 67, "votes": 2}
+        {
+          "label": "Мужчины",
+          "percent": 33,
+          "votes": 1
+        },
+        {
+          "label": "Женщины",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Полный спектр",
+          "percent": 67,
+          "votes": 2
+        }
       ],
       "total_votes": 3,
       "winner": "Полный спектр",
@@ -55,9 +75,21 @@
       "category": "setup",
       "question": "Как она управляет?",
       "options": [
-        {"label": "Обаяние", "percent": 100, "votes": 3},
-        {"label": "Холодный расчёт", "percent": 0, "votes": 0},
-        {"label": "Страх", "percent": 0, "votes": 0}
+        {
+          "label": "Обаяние",
+          "percent": 100,
+          "votes": 3
+        },
+        {
+          "label": "Холодный расчёт",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Страх",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 3,
       "winner": "Обаяние",
@@ -77,10 +109,26 @@
       "category": "setup",
       "question": "За закрытыми дверями",
       "options": [
-        {"label": "Открыто", "percent": 100, "votes": 3},
-        {"label": "Намёки и атмосфера", "percent": 0, "votes": 0},
-        {"label": "Только напряжение", "percent": 0, "votes": 0},
-        {"label": "Детализованно, но элегантно", "percent": 0, "votes": 0}
+        {
+          "label": "Открыто",
+          "percent": 100,
+          "votes": 3
+        },
+        {
+          "label": "Намёки и атмосфера",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Только напряжение",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Детализованно, но элегантно",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 3,
       "winner": "Открыто",
@@ -100,10 +148,26 @@
       "category": "setup",
       "question": "С кого начинается охота?",
       "options": [
-        {"label": "Адриан", "percent": 50, "votes": 1},
-        {"label": "Беатрис", "percent": 0, "votes": 0},
-        {"label": "Леон", "percent": 0, "votes": 0},
-        {"label": "Хлоя", "percent": 50, "votes": 1}
+        {
+          "label": "Адриан",
+          "percent": 50,
+          "votes": 1
+        },
+        {
+          "label": "Беатрис",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Леон",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Хлоя",
+          "percent": 50,
+          "votes": 1
+        }
       ],
       "total_votes": 2,
       "winner": "Адриан + Хлоя (ничья)",
@@ -123,9 +187,21 @@
       "category": "setup",
       "question": "Кто рядом с первого дня?",
       "options": [
-        {"label": "Дэмиен", "percent": 33, "votes": 1},
-        {"label": "Хлоя", "percent": 0, "votes": 0},
-        {"label": "Никому", "percent": 67, "votes": 2}
+        {
+          "label": "Дэмиен",
+          "percent": 33,
+          "votes": 1
+        },
+        {
+          "label": "Хлоя",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Никому",
+          "percent": 67,
+          "votes": 2
+        }
       ],
       "total_votes": 3,
       "winner": "Никому",
@@ -145,9 +221,21 @@
       "category": "setup",
       "question": "Как звучит анонимный канал?",
       "options": [
-        {"label": "Элегантные намёки", "percent": 50, "votes": 1},
-        {"label": "Сырые данные", "percent": 50, "votes": 1},
-        {"label": "Эмоциональный яд", "percent": 0, "votes": 0}
+        {
+          "label": "Элегантные намёки",
+          "percent": 50,
+          "votes": 1
+        },
+        {
+          "label": "Сырые данные",
+          "percent": 50,
+          "votes": 1
+        },
+        {
+          "label": "Эмоциональный яд",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 2,
       "winner": "Намёки + Данные (ничья)",
@@ -167,9 +255,21 @@
       "category": "story",
       "question": "Что отвечает Нора?",
       "options": [
-        {"label": "Принять сейчас", "percent": 0, "votes": 0},
-        {"label": "Принять с паузой", "percent": 100, "votes": 1},
-        {"label": "Отказаться", "percent": 0, "votes": 0}
+        {
+          "label": "Принять сейчас",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Принять с паузой",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отказаться",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Принять с паузой",
@@ -189,8 +289,16 @@
       "category": "story",
       "question": "Что отвечает Нора?",
       "options": [
-        {"label": "Показать что заметила", "percent": 0, "votes": 0},
-        {"label": "Сохранить как козырь", "percent": 100, "votes": 1}
+        {
+          "label": "Показать что заметила",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Сохранить как козырь",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Сохранить как козырь",
@@ -210,9 +318,21 @@
       "category": "story",
       "question": "Что отвечает Нора? (третий старейшина)",
       "options": [
-        {"label": "Развернуть лист", "percent": 0, "votes": 0},
-        {"label": "Вернуть сложенным", "percent": 0, "votes": 0},
-        {"label": "Развернуть и вернуть сложенным", "percent": 100, "votes": 1}
+        {
+          "label": "Развернуть лист",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Вернуть сложенным",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Развернуть и вернуть сложенным",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Развернуть и вернуть сложенным",
@@ -232,9 +352,21 @@
       "category": "story",
       "question": "Что отвечает Нора? (салон Беатрис)",
       "options": [
-        {"label": "Принять союз", "percent": 0, "votes": 0},
-        {"label": "Отказать", "percent": 0, "votes": 0},
-        {"label": "Найти третий путь", "percent": 100, "votes": 1}
+        {
+          "label": "Принять союз",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Отказать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Найти третий путь",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Найти третий путь",
@@ -254,9 +386,21 @@
       "category": "story",
       "question": "Что делает Нора? (USB от Леона)",
       "options": [
-        {"label": "Использовать сейчас", "percent": 100, "votes": 1},
-        {"label": "Проверить источник сначала", "percent": 0, "votes": 0},
-        {"label": "Вернуть нечитаными", "percent": 0, "votes": 0}
+        {
+          "label": "Использовать сейчас",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Проверить источник сначала",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Вернуть нечитаными",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Использовать сейчас",
@@ -276,10 +420,26 @@
       "category": "major_choice",
       "question": "Какую тональность выбирает Black Velvet для Vol. 2?",
       "options": [
-        {"label": "Финансовая", "percent": 0, "votes": 0},
-        {"label": "Личная", "percent": 50, "votes": 1},
-        {"label": "Системная", "percent": 50, "votes": 1},
-        {"label": "Архивная", "percent": 100, "votes": 2}
+        {
+          "label": "Финансовая",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Личная",
+          "percent": 50,
+          "votes": 1
+        },
+        {
+          "label": "Системная",
+          "percent": 50,
+          "votes": 1
+        },
+        {
+          "label": "Архивная",
+          "percent": 100,
+          "votes": 2
+        }
       ],
       "total_votes": 2,
       "winner": "Архивная",
@@ -299,9 +459,21 @@
       "category": "story",
       "question": "Что отвечает Нора? (утренний намёк Дэмиена об Императрице)",
       "options": [
-        {"label": "Постучать сегодня", "percent": 100, "votes": 1},
-        {"label": "Не постучать", "percent": 0, "votes": 0},
-        {"label": "Найти третий путь", "percent": 100, "votes": 1}
+        {
+          "label": "Постучать сегодня",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Не постучать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Найти третий путь",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Постучать + Третий путь (multi-select)",
@@ -321,9 +493,21 @@
       "category": "story",
       "question": "Что отвечает Нора? (про архив Святого Стефана)",
       "options": [
-        {"label": "Запросить через Канцелярию", "percent": 0, "votes": 0},
-        {"label": "Прийти через приватную лестницу", "percent": 100, "votes": 2},
-        {"label": "Попросить копию", "percent": 0, "votes": 0}
+        {
+          "label": "Запросить через Канцелярию",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Прийти через приватную лестницу",
+          "percent": 100,
+          "votes": 2
+        },
+        {
+          "label": "Попросить копию",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 2,
       "winner": "Прийти через приватную лестницу",
@@ -343,9 +527,21 @@
       "category": "story",
       "question": "Что делает Нора с актом? (немедленно)",
       "options": [
-        {"label": "Хранить молчание", "percent": 0, "votes": 0},
-        {"label": "Поделиться с Советом", "percent": 0, "votes": 0},
-        {"label": "Использовать через Black Velvet Vol. 2", "percent": 100, "votes": 1}
+        {
+          "label": "Хранить молчание",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Поделиться с Советом",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Использовать через Black Velvet Vol. 2",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Использовать через Black Velvet Vol. 2",
@@ -365,9 +561,21 @@
       "category": "story",
       "question": "Что делает Нора с корреспонденцией?",
       "options": [
-        {"label": "Изучить молча", "percent": 0, "votes": 0},
-        {"label": "Поделиться с Хлоей", "percent": 0, "votes": 0},
-        {"label": "Вернуть Дэмиену", "percent": 100, "votes": 1}
+        {
+          "label": "Изучить молча",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Поделиться с Хлоей",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Вернуть Дэмиену",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Вернуть Дэмиену",
@@ -387,9 +595,21 @@
       "category": "story",
       "question": "Что отвечает Нора Адриану?",
       "options": [
-        {"label": "Принять встречу лично", "percent": 0, "votes": 0},
-        {"label": "Отказать", "percent": 0, "votes": 0},
-        {"label": "Дистанционный созвон", "percent": 100, "votes": 1}
+        {
+          "label": "Принять встречу лично",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Отказать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Дистанционный созвон",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Дистанционный созвон",
@@ -409,9 +629,21 @@
       "category": "story",
       "question": "Что говорит Нора Совету?",
       "options": [
-        {"label": "Признать публикацию", "percent": 100, "votes": 1},
-        {"label": "Хранить молчание", "percent": 0, "votes": 0},
-        {"label": "Обвинить третьего", "percent": 0, "votes": 0}
+        {
+          "label": "Признать публикацию",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Хранить молчание",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Обвинить третьего",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Признать публикацию",
@@ -431,12 +663,36 @@
       "category": "phase_final",
       "question": "PHASE FINAL. На кого Black Velvet направит первый персональный удар Vol.2 (часть 2)?",
       "options": [
-        {"label": "Адриан", "percent": 100, "votes": 1},
-        {"label": "Беатрис", "percent": 0, "votes": 0},
-        {"label": "Леон", "percent": 100, "votes": 1},
-        {"label": "Дэмиен", "percent": 0, "votes": 0},
-        {"label": "Изабелла", "percent": 0, "votes": 0},
-        {"label": "Хлоя", "percent": 0, "votes": 0}
+        {
+          "label": "Адриан",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Беатрис",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Леон",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Дэмиен",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Изабелла",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Хлоя",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Адриан + Леон (multi-select)",
@@ -456,9 +712,21 @@
       "category": "story",
       "question": "Что делает Нора? (с появлением Штефана)",
       "options": [
-        {"label": "Запросить встречу через Канцелярию", "percent": 0, "votes": 0},
-        {"label": "Встретить лично без посредников", "percent": 100, "votes": 1},
-        {"label": "Игнорировать сегодня", "percent": 0, "votes": 0}
+        {
+          "label": "Запросить встречу через Канцелярию",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Встретить лично без посредников",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Игнорировать сегодня",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Встретить лично без посредников",
@@ -478,12 +746,36 @@
       "category": "story",
       "question": "Кому Нора отвечает первой?",
       "options": [
-        {"label": "Адриан", "percent": 0, "votes": 0},
-        {"label": "Леон", "percent": 100, "votes": 1},
-        {"label": "Беатрис", "percent": 0, "votes": 0},
-        {"label": "Изабелла", "percent": 0, "votes": 0},
-        {"label": "Дэмиен", "percent": 100, "votes": 1},
-        {"label": "Хлоя", "percent": 0, "votes": 0}
+        {
+          "label": "Адриан",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Леон",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Беатрис",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Изабелла",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Дэмиен",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Хлоя",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Леон + Дэмиен (multi-select)",
@@ -503,9 +795,21 @@
       "category": "story",
       "question": "Что Нора делает с информацией Штефана?",
       "options": [
-        {"label": "Изучить молча, четвёртую папку не открывать", "percent": 0, "votes": 0},
-        {"label": "Открыть четвёртую папку сегодня", "percent": 100, "votes": 1},
-        {"label": "Вернуть четвёртую папку запечатанной", "percent": 0, "votes": 0}
+        {
+          "label": "Изучить молча, четвёртую папку не открывать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Открыть четвёртую папку сегодня",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Вернуть четвёртую папку запечатанной",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Открыть четвёртую папку сегодня",
@@ -525,9 +829,21 @@
       "category": "story",
       "question": "В каком формате Нора принимает Леона сегодня?",
       "options": [
-        {"label": "Формально - в малом кабинете Гроссмейстера", "percent": 0, "votes": 0},
-        {"label": "Полуформально - в малом приёмном зале", "percent": 0, "votes": 0},
-        {"label": "Лично - в её приватной части резиденции", "percent": 100, "votes": 1}
+        {
+          "label": "Формально - в малом кабинете Гроссмейстера",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Полуформально - в малом приёмном зале",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Лично - в её приватной части резиденции",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Лично - в её приватной части резиденции",
@@ -547,9 +863,21 @@
       "category": "story",
       "question": "Что Нора делает с прогнозом?",
       "options": [
-        {"label": "Следовать", "percent": 0, "votes": 0},
-        {"label": "Противоречить", "percent": 0, "votes": 0},
-        {"label": "Переиграть", "percent": 100, "votes": 1}
+        {
+          "label": "Следовать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Противоречить",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Переиграть",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Переиграть",
@@ -569,9 +897,21 @@
       "category": "story",
       "question": "Что Нора делает для Дэмиена сейчас?",
       "options": [
-        {"label": "Опубликовать ответный материал через линию с Black Velvet", "percent": 100, "votes": 1},
-        {"label": "Открыто выйти на встречу с Кронпринцем сегодня", "percent": 100, "votes": 1},
-        {"label": "Ничего публично, полностью передать защиту Канцлеру", "percent": 0, "votes": 0}
+        {
+          "label": "Опубликовать ответный материал через линию с Black Velvet",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Открыто выйти на встречу с Кронпринцем сегодня",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Ничего публично, полностью передать защиту Канцлеру",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Black Velvet контр-удар + открытая встреча с Кронпринцем (multi-select)",
@@ -591,9 +931,21 @@
       "category": "story",
       "question": "Каким тоном Нора начинает разговор с Кронпринцем?",
       "options": [
-        {"label": "Как равная", "percent": 100, "votes": 1},
-        {"label": "Как та, кто пришла за прикрытием", "percent": 0, "votes": 0},
-        {"label": "Как угроза", "percent": 0, "votes": 0}
+        {
+          "label": "Как равная",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Как та, кто пришла за прикрытием",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Как угроза",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Как равная",
@@ -613,9 +965,21 @@
       "category": "story",
       "question": "Что Нора делает с копией старейшины?",
       "options": [
-        {"label": "Показать Штефану напрямую", "percent": 0, "votes": 0},
-        {"label": "Держать как страховку", "percent": 100, "votes": 1},
-        {"label": "Использовать против Леона сегодня", "percent": 0, "votes": 0}
+        {
+          "label": "Показать Штефану напрямую",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Держать как страховку",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Использовать против Леона сегодня",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Держать как страховку",
@@ -635,9 +999,21 @@
       "category": "story",
       "question": "Что Нора делает с осью Леон↔Изабелла?",
       "options": [
-        {"label": "Вбить клин", "percent": 100, "votes": 1},
-        {"label": "Подойти к Изабелле напрямую", "percent": 0, "votes": 0},
-        {"label": "Наблюдать и собирать", "percent": 0, "votes": 0}
+        {
+          "label": "Вбить клин",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Подойти к Изабелле напрямую",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Наблюдать и собирать",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Вбить клин",
@@ -657,9 +1033,21 @@
       "category": "story",
       "question": "Как Гроссмейстер реагирует на требование седьмого?",
       "options": [
-        {"label": "Принять к рассмотрению", "percent": 100, "votes": 1},
-        {"label": "Отклонить как преждевременное", "percent": 0, "votes": 0},
-        {"label": "Вынести на Phase Final 2 без своей позиции", "percent": 100, "votes": 1}
+        {
+          "label": "Принять к рассмотрению",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отклонить как преждевременное",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Вынести на Phase Final 2 без своей позиции",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Принять к рассмотрению + Вынести на Phase Final 2 без позиции (multi-select)",
@@ -679,9 +1067,21 @@
       "category": "story",
       "question": "Что Нора делает с Леоном теперь, когда клин вошёл?",
       "options": [
-        {"label": "Сделать открытым союзником", "percent": 100, "votes": 1},
-        {"label": "Держать тайным активом", "percent": 100, "votes": 1},
-        {"label": "Направить против Изабеллы", "percent": 0, "votes": 0}
+        {
+          "label": "Сделать открытым союзником",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Держать тайным активом",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Направить против Изабеллы",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Сделать открытым союзником + Держать тайным активом (multi-select)",
@@ -701,9 +1101,21 @@
       "category": "story",
       "question": "Как Нора отвечает на ультиматум Канцлера?",
       "options": [
-        {"label": "Подчиниться графику", "percent": 0, "votes": 0},
-        {"label": "Открыто противостоять", "percent": 100, "votes": 1},
-        {"label": "Показать доказательство коалиции", "percent": 0, "votes": 0}
+        {
+          "label": "Подчиниться графику",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Открыто противостоять",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Показать доказательство коалиции",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Открыто противостоять",
@@ -723,9 +1135,21 @@
       "category": "phase_final",
       "question": "Какую позицию Гроссмейстер занимает по требованию старшей ветви?",
       "options": [
-        {"label": "Поддержать приоритет", "percent": 0, "votes": 0},
-        {"label": "Отклонить как преждевременное", "percent": 0, "votes": 0},
-        {"label": "Раскрыть родство", "percent": 100, "votes": 1}
+        {
+          "label": "Поддержать приоритет",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Отклонить как преждевременное",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Раскрыть родство",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Раскрыть родство",
@@ -745,12 +1169,36 @@
       "category": "phase_final",
       "question": "Второй слив - кого ударить теперь?",
       "options": [
-        {"label": "Изабеллу", "percent": 0, "votes": 0},
-        {"label": "Секретаря Совета", "percent": 0, "votes": 0},
-        {"label": "Штефана", "percent": 0, "votes": 0},
-        {"label": "Канцлера", "percent": 0, "votes": 0},
-        {"label": "Беатрис", "percent": 0, "votes": 0},
-        {"label": "Не бить - удержать залп", "percent": 100, "votes": 1}
+        {
+          "label": "Изабеллу",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Секретаря Совета",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Штефана",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Канцлера",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Беатрис",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Не бить - удержать залп",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Не бить - удержать залп",
@@ -770,9 +1218,21 @@
       "category": "story",
       "question": "Что Гроссмейстер делает со своим правом старшей ветви?",
       "options": [
-        {"label": "Заявить претензию на трон", "percent": 100, "votes": 1},
-        {"label": "Отдать приоритет Штефану", "percent": 100, "votes": 1},
-        {"label": "Держать двусмысленность", "percent": 100, "votes": 1}
+        {
+          "label": "Заявить претензию на трон",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отдать приоритет Штефану",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Держать двусмысленность",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Все три (multi-select 100%/100%/100%)",
@@ -792,9 +1252,21 @@
       "category": "story",
       "question": "Как Нора подходит к встрече в девять?",
       "options": [
-        {"label": "Прийти лично", "percent": 100, "votes": 1},
-        {"label": "Послать наблюдение", "percent": 100, "votes": 1},
-        {"label": "Не вмешиваться, ждать", "percent": 0, "votes": 0}
+        {
+          "label": "Прийти лично",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Послать наблюдение",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Не вмешиваться, ждать",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Прийти лично + Послать наблюдение (multi-select)",
@@ -814,9 +1286,21 @@
       "category": "story",
       "question": "Что Нора делает со знанием о живой матери?",
       "options": [
-        {"label": "Найти её немедленно", "percent": 0, "votes": 0},
-        {"label": "Потребовать у Изабеллы отвести к ней", "percent": 0, "votes": 0},
-        {"label": "Держать в тайне как карту", "percent": 100, "votes": 1}
+        {
+          "label": "Найти её немедленно",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Потребовать у Изабеллы отвести к ней",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Держать в тайне как карту",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Держать в тайне как карту",
@@ -836,9 +1320,21 @@
       "category": "story",
       "question": "Как Нора представляет претензию старшей ветви Совету?",
       "options": [
-        {"label": "Предъявить Хелену как старшего претендента", "percent": 0, "votes": 0},
-        {"label": "Удержать претензию двуглавой", "percent": 100, "votes": 1},
-        {"label": "Отдать решение самой Хелене", "percent": 0, "votes": 0}
+        {
+          "label": "Предъявить Хелену как старшего претендента",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Удержать претензию двуглавой",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отдать решение самой Хелене",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Удержать претензию двуглавой",
@@ -858,9 +1354,21 @@
       "category": "story",
       "question": "Какой стороной Нора принимает мать?",
       "options": [
-        {"label": "Поверить и развернуться против Изабеллы", "percent": 100, "votes": 1},
-        {"label": "Остаться закрытой, проверить", "percent": 0, "votes": 0},
-        {"label": "Использовать как карту, не впуская", "percent": 0, "votes": 0}
+        {
+          "label": "Поверить и развернуться против Изабеллы",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Остаться закрытой, проверить",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Использовать как карту, не впуская",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Поверить и развернуться против Изабеллы",
@@ -880,9 +1388,21 @@
       "category": "story",
       "question": "Чем Нора отвечает на возобновлённый роспуск?",
       "options": [
-        {"label": "Применить удержанный залп", "percent": 100, "votes": 1},
-        {"label": "Тянуть процедурой до финала", "percent": 0, "votes": 0},
-        {"label": "Поднять союзников против роспуска", "percent": 0, "votes": 0}
+        {
+          "label": "Применить удержанный залп",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Тянуть процедурой до финала",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Поднять союзников против роспуска",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Применить удержанный залп",
@@ -902,9 +1422,21 @@
       "category": "story",
       "question": "Что Нора делает с Изабеллой?",
       "options": [
-        {"label": "Публично сжечь", "percent": 0, "votes": 0},
-        {"label": "Заставить перейти", "percent": 0, "votes": 0},
-        {"label": "Изолировать и проверить", "percent": 100, "votes": 1}
+        {
+          "label": "Публично сжечь",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Заставить перейти",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Изолировать и проверить",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Изолировать и проверить",
@@ -924,9 +1456,21 @@
       "category": "story",
       "question": "Что Нора берёт с обезоруженного Канцлера?",
       "options": [
-        {"label": "Отставку", "percent": 0, "votes": 0},
-        {"label": "Снять роспуск и отойти", "percent": 0, "votes": 0},
-        {"label": "Переписать финал под себя", "percent": 100, "votes": 1}
+        {
+          "label": "Отставку",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Снять роспуск и отойти",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Переписать финал под себя",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Переписать финал под себя",
@@ -946,9 +1490,21 @@
       "category": "story",
       "question": "Как Нора добывает правду (Хелена vs Изабелла)?",
       "options": [
-        {"label": "Проверить мать напрямую", "percent": 0, "votes": 0},
-        {"label": "Копать тихо (Хлоя + Дэмиен)", "percent": 100, "votes": 1},
-        {"label": "Выжать изолированную Изабеллу", "percent": 0, "votes": 0}
+        {
+          "label": "Проверить мать напрямую",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Копать тихо (Хлоя + Дэмиен)",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Выжать изолированную Изабеллу",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Копать тихо (Хлоя + Дэмиен)",
@@ -968,9 +1524,21 @@
       "category": "story",
       "question": "Какую рамку Нора задаёт Phase Final 3?",
       "options": [
-        {"label": "Суд над коалицией", "percent": 0, "votes": 0},
-        {"label": "Открытое наследование старшей ветви", "percent": 100, "votes": 1},
-        {"label": "Защита от короны-ловушки", "percent": 0, "votes": 0}
+        {
+          "label": "Суд над коалицией",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Открытое наследование старшей ветви",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Защита от короны-ловушки",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "Открытое наследование старшей ветви",
@@ -990,9 +1558,21 @@
       "category": "story",
       "question": "Куда Нора направляет тихую копку до финала?",
       "options": [
-        {"label": "Кто архитектор короны-ловушки", "percent": 0, "votes": 0},
-        {"label": "Искренна ли мать", "percent": 0, "votes": 0},
-        {"label": "Кто годами тормозил активацию", "percent": 100, "votes": 1}
+        {
+          "label": "Кто архитектор короны-ловушки",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Искренна ли мать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Кто годами тормозил активацию",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Кто годами тормозил активацию",
@@ -1012,9 +1592,21 @@
       "category": "story",
       "question": "Как Нора поступает с присутствием Хелены на Phase Final 3?",
       "options": [
-        {"label": "Дать ей быть доказательством", "percent": 0, "votes": 0},
-        {"label": "Заблокировать её присутствие", "percent": 0, "votes": 0},
-        {"label": "Привести на своих условиях", "percent": 100, "votes": 1}
+        {
+          "label": "Дать ей быть доказательством",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Заблокировать её присутствие",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Привести на своих условиях",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "Привести на своих условиях",
@@ -1025,6 +1617,74 @@
       "stats_deltas": [],
       "post_id": "KM-08.06-16-00-STORY-MOTHER-AT-FINALE",
       "notes": "Единогласно. Самый рисковый и амбициозный - перевернуть ловушку руками матери, чья сторона неизвестна до зала."
+    },
+    {
+      "id": "km-1-d21-q1",
+      "phase": 3,
+      "narrative_day": 21,
+      "pub_date": "2026-06-09",
+      "category": "story",
+      "question": "Что Нора делает с Изабеллой на финале?",
+      "options": [
+        {
+          "label": "Освободить и взять в союз открыто",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Очистить имя публично",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Держать тайным щитом",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Держать тайным щитом",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Изабелла реабилитирована В ГЛАЗАХ НОРЫ (29 лет защищала), но НЕ публично: имя не очищено, двор по-прежнему считает её отрезанной/подозрительной. Нора оставляет её СКРЫТЫМ щитом - тайным активом/оружием короны, работающим из тени. Никаких публичных почестей или открытого союза.",
+      "impact_content": "S2: Изабелла = тайный щит коронованной Норы против неназванного архитектора. Скрытая защитница вместо публичной союзницы - даёт ресурс для теневой войны S2.",
+      "stats_deltas": [],
+      "post_id": "KM-09.06-13-00-STORY-ISABELLA-VINDICATED",
+      "notes": "Единогласно. Самый скрытный вариант: Изабелла остаётся в тени как тайное оружие, а не реабилитированная союзница."
+    },
+    {
+      "id": "km-1-d21-q2",
+      "phase": 3,
+      "narrative_day": 21,
+      "pub_date": "2026-06-09",
+      "category": "phase_final",
+      "question": "Корону опускают. Что делает Гроссмейстер?",
+      "options": [
+        {
+          "label": "Принять корону",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отказаться от короны",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Перевернуть капкан",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Принять корону",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "ФИНАЛ СЕЗОНА: Нора ПРИНИМАЕТ корону - Интеррегнум окончен, на трон восходит монарх старшей ветви (её кровь, право бесспорно). Но именно это и был замысел архитектора (короновать управляемую наследницу). Капкан обезврежен НЕ отказом, а тем, что Хелена встала матерью (сорвала печать-поводок) + Изабелла = тайный щит. Нора принимает корону НА СВОИХ условиях, зная про ловушку, чтобы перевернуть её уже с трона.",
+      "impact_content": "S2: коронованная Нора-королева vs скрытый неназванный архитектор (главный антагонист S2) + скандал-слой нового Бархата (Бриджертоны/Сплетница). Трон занят - игра смещается с 'кто сядет' на 'кто правит и кто дёргает нити'.",
+      "stats_deltas": [],
+      "post_id": "KM-09.06-16-00-PHASE-FINAL-VOTE",
+      "notes": "Единогласно. Сезонный выбор: принять трон. Ловушка-подарок превращена в подлинную власть руками матери и тайного щита; архитектор - крючок S2."
     }
   ]
 }
