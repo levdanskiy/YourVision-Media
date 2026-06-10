@@ -29,6 +29,7 @@
 * TBA | **YV** | ⚡ **#NEWS_WIRE:** Евровидение Азия: Бангладеш - дедлайн подачи заявок (NTV). - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/10/YV-10.06-08-30-EU-Submissions-Deadlines.md`)
 * 09:00 | **YV** | ⚡ **#NEWS_WIRE:** Нидерланды: Анонс участников Junior Songfestival 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/10/YV-10.06-09-00-NL-Junior-Songfestival-Acts-Announce.md`)
 * 11:00 | **YV** | ⚡ **#NEWS_WIRE:** Болгария: БНТ официально получила Welcome Pack Евровидения-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/10/YV-10.06-11-00-BG-ESC-2027-Host-Welcome-Pack.md`)
+* 12:00 | **YV** | 🧠 **#DEEP_DIVE:** Италия: Революция в регламенте Сан-Ремо-2027 и вечер Евровидения. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/10/YV-10.06-12-00-IT-Sanremo-2027-Rules-Revolution.md`)
 
 ### 15.06 (Пн)
 * 12:00 | **YV** | 🧠 **#OPINION:** Жанровый код Болгарии на Евровидении-2027. - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md`)
