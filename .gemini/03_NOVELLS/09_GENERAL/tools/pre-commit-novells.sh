@@ -24,10 +24,11 @@ ERROR=0
 WARN=0
 
 # ============================================
-# CHECK 1: Em-dashes (BLOCKING)
+# CHECK 1: Em-dashes (AUTO-FIX)
 # ============================================
-# Allowed exceptions: lines that explicitly cite the rule itself
-# (NOVELLS_OS, VOICE_LOCK files have demonstration lines like "Эм-тире (—) нет нигде?")
+# Auto-replaces em-dashes with hyphens (python, NOT sed - sed once truncated a file).
+# Allowed exceptions kept intact: demonstration lines citing the rule itself
+# ("Эм-тире (—)", "никогда —" in NOVELLS_OS / VOICE_LOCK).
 for file in $STAGED; do
   if [ ! -f "$file" ]; then continue; fi
 
@@ -37,17 +38,38 @@ for file in $STAGED; do
     || true)
 
   if [ -n "$bad_lines" ]; then
-    echo ""
-    echo "❌ ЭМ-ТИРЕ в файле: $file"
-    echo "$bad_lines" | head -10
-    ERROR=1
+    if command -v python3 >/dev/null 2>&1; then
+      python3 - "$file" <<'PYEOF'
+import sys
+p = sys.argv[1]
+with open(p, encoding="utf-8") as f:
+    lines = f.readlines()
+out, n = [], 0
+for line in lines:
+    if "Эм-тире (—)" in line or "никогда —" in line:
+        out.append(line)
+    else:
+        n += line.count("—")
+        out.append(line.replace("—", "-"))
+with open(p, "w", encoding="utf-8") as f:
+    f.writelines(out)
+print(f"   🔧 авто-фикс: {n} эм-тире -> дефис")
+PYEOF
+      git add "$file"
+      echo "🔧 ЭМ-ТИРЕ исправлены автоматически: $file"
+    else
+      echo ""
+      echo "❌ ЭМ-ТИРЕ в файле (python3 недоступен, авто-фикс невозможен): $file"
+      echo "$bad_lines" | head -10
+      ERROR=1
+    fi
   fi
 done
 
 # ============================================
 # CHECK 2: Character names in image prompts (WARNING)
 # ============================================
-KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|V-DYNAMO|Vossen|Weiss|Stil|Vitri|Clerc"
+KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|V-DYNAMO|Weiss|Stil|Vitri|Clerc|Helena|Stefan|Victoria|Maximilian|Laurent|Nikolya|Sophie|Camille|Valentina|Jan|Mikas|Dorian|Felix|Oeron|Elias|Reinis|Marta|Elara|Alaric|Simas|Alexander|Elza|Liga|Ansis|Siegfried"
 GENERIC_DESCRIPTORS="young woman|young man|professional woman|tall woman|tall man|petite woman|young professional|woman in her|man in his|middle-aged woman|middle-aged man"
 
 for file in $STAGED; do

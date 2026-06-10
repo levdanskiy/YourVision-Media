@@ -70,7 +70,7 @@
 `📌 Закреплённый пост | Novells`
 ***
 
-#ORCHID #KINGMAKER #ELEYIA #ViennaSpecial #БелаяДама #Novells #Навигатор
+#ORCHID #KINGMAKER #ELEYIA #ViennaSpecial #БелаяДама #Novells #Навигатор #книгаигра #интерактив #ролевая
 
 **Grade:** S
 **Prompt:** `A single elegant channel-cover image: one long corridor with several distinct closed doors, each door hinting a different world behind it - a cold throne room, a glamorous Riviera terrace, a misty school of strange creatures, a fog-bound Baltic manor - but the doors are separate, not merged, emphasizing distinct self-contained stories rather than one shared universe. One door stands open and warmly lit (the Riviera, currently airing). Cinematic realism, moody atmospheric lighting, deep shadows with vibrant warm light from the one open door. Photorealistic, 8k, cinematic style, high contrast shadows, vibrant rich colors, cinematic color grading, shot on Kodak Portra 800. Horizontal frame 16:9. No text, no logos.`
