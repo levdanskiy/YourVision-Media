@@ -38,6 +38,7 @@
 * 20:00 | **YV** | 🎵 **#RELEASE:** Эстония: Stefan выпустил новый сингл «Langevarjuna». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-20-00-EE-Stefan-Langevarjuna-Release.md`)
 * 20:45 | **YV** | 🎵 **#RELEASE:** Молдова: Satoshi выпустил новый сингл «All We Are About». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-20-45-MD-Satoshi-All-We-Are-About.md`)
 * 21:15 | **YV** | ⚡ **#NEWS_WIRE:** Австрия: Conchita Wurst сыграла в квир-версии «Летучей мыши» в Вене. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-21-15-AT-Conchita-Wurst-Die-Fledermaus.md`)
+* 22:00 | **YV** | ⚡ **#NEWS_WIRE:** Греция: ERT подтверждает участие в Евровидении-2027 и отбор Sing for Greece. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-22-00-GR-ESC-2027-Participation-Confirm.md`)
 
 ### 15.06 (Пн)
 * 12:00 | **YV** | 🧠 **#OPINION:** Жанровый код Болгарии на Евровидении-2027. - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md`)
