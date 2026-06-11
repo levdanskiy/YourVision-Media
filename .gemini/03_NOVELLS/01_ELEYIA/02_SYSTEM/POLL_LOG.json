@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "project": "eleyia",
+  "season": 2,
+  "last_updated": "2026-06-11",
+  "_schema_note": "stats_deltas: {character, param, delta, reason}; param: affinity | vernost. Опросы S2 логировать с старта 01.07; S1 вёлся в прежней системе (MECHANICS).",
+  "polls": []
+}

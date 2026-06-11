@@ -34,6 +34,8 @@ if [ "$MODE" = "--auto" ]; then
     */08_ANTHROPOS/*) PROJECT="anthropos" ;;
     */01_ELEYIA/*) PROJECT="eleyia" ;;
     */01_YOURVISION/*) PROJECT="yv" ;;
+    */11_WHITE_LADY/*) PROJECT="white_lady" ;;
+    */12_SNEGUROCHKA_SPECIAL/*) PROJECT="snegurochka" ;;
     *)
       echo "❌ Не удалось определить проект по пути: $FILE"
       exit 1
@@ -186,7 +188,7 @@ fi
 # Check 6: Image prompt has character name (Novells only, skip for YV)
 # ============================================
 if [ "$PROJECT" != "yv" ] && [ "$PROJECT" != "yourvision" ] && [ -n "$PROMPT" ]; then
-  KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson"
+  KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|Victoria|Maximilian|Laurent|Nikolya|Sophie|Camille|Valentina|Bruno|Marcel|Adelina|Hugo|Lindt|Andre|Jan|Mikas|Dorian|Felix|Oeron|Elias|Marta|Elara|Simas|Vika|Ula|Anya|Strazds|Kalejs|Greta|Foss|Theo|Renata|Alexander|Elza|Liga|Ansis|Ozols|Zanis|Ilze|Berzins|Snegurochka|Lel|Mizgir|Moroz|Vesna|Helena|Stefan"
   GENERIC="young woman|young man|professional woman|tall woman|tall man|petite woman|young professional|woman in her|man in his"
 
   has_generic=$(echo "$PROMPT" | grep -E -i "$GENERIC" || true)
@@ -236,6 +238,55 @@ if [ -n "$PROMPT_REQUIRED" ] && [ -n "$PROMPT" ]; then
   fi
   if ! echo "$PROMPT" | grep -q "Dazed magazine aesthetic"; then
     echo "⚠️  YV §8: промпт без стандартного хвоста \"Dazed magazine aesthetic\""
+    WARNINGS=$((WARNINGS + 1))
+  fi
+fi
+
+# ============================================
+# Check 10: FOREIGN SIGNATURES (cross-project, BLOCKING)
+# ============================================
+# Each project has its own signature layer; other projects' signatures are forbidden in BODY.
+declare -A SIGS=(
+  [km]="Под этим:"
+  [orchid]="Расклад:"
+  [eleyia]="Вкус момента:"
+  [snegurochka]="Иней:"
+  [donor]="Кровь помнит:"
+  [horizon]="Лог системы:"
+  [order]="Земля слышала:"
+  [code]="Мелким шрифтом:"
+  [anthropos]="Инстинкт:"
+)
+for proj in "${!SIGS[@]}"; do
+  if [ "$proj" = "$PROJECT" ]; then continue; fi
+  sig="${SIGS[$proj]}"
+  found=$(echo "$BODY" | grep -F "$sig" 2>/dev/null || true)
+  if [ -n "$found" ]; then
+    echo "❌ ЧУЖАЯ СИГНАТУРА в посте ${PROJECT_NAME}: «${sig}» - это слой проекта ${proj}."
+    echo "    Правило: свой VOICE_LOCK у каждого проекта (NOVELLS_OS 11.5)"
+    ERRORS=$((ERRORS + 1))
+  fi
+done
+
+# ============================================
+# Check 11: Eleyia S2 texture (painterly, BLOCKING)
+# ============================================
+if [ "$PROJECT" = "eleyia" ] && [ -n "$PROMPT" ]; then
+  found=$(echo "$PROMPT" | grep -iE "Kodak Portra|photorealistic|editorial photography" || true)
+  if [ -n "$found" ]; then
+    echo "❌ Eleyia: фотореалистичный хвост в промпте (Portra/photorealistic/editorial)."
+    echo "    Лин Eleyia = painterly hand-drawn (PROMPT_BASE_S2.md) - фактуры проектов разведены"
+    ERRORS=$((ERRORS + 1))
+  fi
+fi
+
+# ============================================
+# Check 12: 'Фаза' outside Kingmaker (warning)
+# ============================================
+if [ "$PROJECT" != "km" ] && [ "$PROJECT" != "kingmaker" ] && [ "$PROJECT" != "yv" ] && [ "$PROJECT" != "yourvision" ]; then
+  found=$(echo "$BODY" | grep -E "(^|[^а-яёА-ЯЁ])Фаз(а|ы|е|у|ой|ах)([^а-яё]|$)" 2>/dev/null || true)
+  if [ -n "$found" ]; then
+    echo "⚠️  Термин «Фаза» в тексте не-KM проекта (разрешён только в Kingmaker; NOVELLS_OS 11.5)"
     WARNINGS=$((WARNINGS + 1))
   fi
 fi
