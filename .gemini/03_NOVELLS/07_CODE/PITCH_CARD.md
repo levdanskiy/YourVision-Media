@@ -1,29 +1,31 @@
-# ⚡ КОД ПЕРВОРОДНЫХ - ПИТЧ-КАРТОЧКА NEW A (черновик поста; дев-слот 11.06.2026)
+# ⚡ КОД ПЕРВОРОДНЫХ - ПИТЧ-КАРТОЧКА NEW A (черновик поста v2; пересобрано 11.06.2026 по анти-примитив-ядру)
 
-> Для Пилот-голоса NEW A (окно - хвост KM S3, ~окт). Формат: тизер-пост кандидата; дату/подвал проставить при публикации. Сверено с BRIEF.md.
+> Для Пилот-голоса NEW A (окно - хвост KM S3, ~окт). Дату/подвал проставить при публикации. Сверено с BRIEF.md v2. Секрет-лок НЕ раскрывать.
 
 ---
 
 ⚡ **НОВЫЙ МИР НА ГОЛОСОВАНИИ: «КОД ПЕРВОРОДНЫХ»**
-*Боги не умерли. Они акционировались.*
+*Боги сделаны из обещаний. Вы умеете править текст.*
 
 ---
 
-В этом городе у молнии есть юридический отдел.
+В этом городе никто не видел бога целиком. Видели руку, которая держит контракт.
 
-Древние клятвы оцифрованы и переписаны в смарт-контракты. Арес владеет ЧВК. Афродита - империей инфлюенсеров. Гермес возит то, о чём не спрашивают. А каждое «клянусь» в этом городе исполняется автоматически - буквально.
+Потому что Первородные - не существа. Они - **сумма всех клятв, данных им за три тысячи лет.** Каждый договор - нить их тела. Нарушенная клятва - открытая рана. Расторгнутая - ампутация. Вот почему боги исполняют обязательства безупречно: они сделаны из них.
 
-Вы - **Медиатор Суда Паритетов**. Единственный смертный, которому разрешено править контракты Первородных. Сегодня ваше первое дело: у Ареса и Гермеса утекли данные, и оба клянутся - друг другом.
+И вот почему им нужны вы.
 
-Платят боги щедро. Мелкий шрифт у них - убийственный. Буквально.
+Вы - **Медиатор Суда Паритетов.** Смертный, которому разрешено менять формулировки в живой ткани бессмертных. Не юрист - хирург: каждая ваша правка идёт по живому, и бог чувствует, как меняется его собственное «я» под вашим пером. Они ненавидят вас. Боятся вас. И стоят к вам в очередь.
 
-И с каждой подписанной сделкой вы чувствуете, как в вас просачивается что-то... божественное. Вопрос на двадцать одну Главу: когда вы поставите последнюю подпись - подписью ЧЬЕЙ руки она будет?
+Сегодня первое дело: два Первородных клянутся друг другом - и одна из этих клятв лжёт. Резать придётся вам.
+
+Только одно в этом городе никогда не оформляли договором. За три тысячи лет - ни разу. И когда бессмертный чувствует к смертному то, для чего у его юристов нет формы... он боится этого сильнее войны.
 
 ---
 
-**Урбан-миф + юридический триллер + олимпийский глянец.** Каждый контракт = выбор. Мелкий шрифт прилагается.
+**Урбан-миф, где право - это плоть.** Каждая правка = выбор. Мелкий шрифт прилагается.
 
-*Если этот мир получит ваш голос - первая сессия Суда откроется этой осенью.*
+*Если этот мир получит ваш голос - первая операция начнётся этой осенью.*
 
 ---
 
@@ -33,4 +35,4 @@
 #КодПервородных #ПилотГолос #Novells
 
 **Grade:** A
-**Prompt:** `Cinematic night shot of a colossal glass courthouse tower in a neon metropolis, ancient Greek column motifs fused into modern skyscraper architecture, giant holographic contract glyphs and lightning-sigils floating between buildings, a marble hand of an antique statue holding a glowing digital stylus in the foreground plaza, gods' corporate logos abstracted as constellations in the smog. Urban-myth legal-thriller energy, divine money and fine print. Electric gold and storm-blue palette on deep blacks, warm film grain. Photorealistic, 8k, cinematic style, high contrast, cinematic color grading, editorial photography. Horizontal frame 16:9. No people, no readable text, no logos.`
+**Prompt:** `Cinematic surreal night scene in a vast marble-and-glass court hall, a colossal half-transparent divine figure woven entirely from thousands of glowing contract-threads and script-lines of light, one of its threads being carefully re-stitched by a small human silhouette-scale surgical desk below with a single lit lamp and an antique pen, golden thread-light against deep blue darkness, awe and clinical intimacy. Urban-myth legal-body-horror elegance, gods made of obligations. Electric gold and storm-blue palette on deep blacks, warm film grain. Photorealistic, 8k, cinematic style, high contrast, cinematic color grading. Horizontal frame 16:9. No readable text, no logos.`
