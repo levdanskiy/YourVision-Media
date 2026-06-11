@@ -18,6 +18,7 @@
 * 18:30 | **YV** | ⚡ **#NEWS_WIRE:** Южная Корея: ENA запускает отбор на Евровидение Азия. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-18-30-KR-Eurovision-Asia-Open-Call.md`)
 * 19:00 | **YV** | ⚡ **#NEWS_WIRE:** Швейцария: SRG запускает сезон Евровидения-2027 и реформирует отбор. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-19-00-CH-SRG-ESC-2027-Season-Open.md`)
 * 19:30 | **YV** | ⚡ **#NEWS_WIRE:** Украина: Суспільне подтвердило участие в Детском Евровидении 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-19-30-UA-JESC-2026-Participation-Confirm.md`)
+* 20:00 | **YV** | 🎵 **#RELEASE:** Эстония: Stefan выпустил новый сингл «Langevarjuna». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-20-00-EE-Stefan-Langevarjuna-Release.md`)
 
 ---
 ### 🧊 ARCHIVE CHANNELS (ON PAUSE)
