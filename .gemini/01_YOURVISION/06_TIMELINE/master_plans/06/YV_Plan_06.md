@@ -36,6 +36,7 @@
 * 19:00 | **YV** | ⚡ **#NEWS_WIRE:** Швейцария: SRG запускает сезон Евровидения-2027 и реформирует отбор. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-19-00-CH-SRG-ESC-2027-Season-Open.md`)
 * 19:30 | **YV** | ⚡ **#NEWS_WIRE:** Украина: Суспільне подтвердило участие в Детском Евровидении 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-19-30-UA-JESC-2026-Participation-Confirm.md`)
 * 20:00 | **YV** | 🎵 **#RELEASE:** Эстония: Stefan выпустил новый сингл «Langevarjuna». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-20-00-EE-Stefan-Langevarjuna-Release.md`)
+* 20:45 | **YV** | 🎵 **#RELEASE:** Молдова: Satoshi выпустил новый сингл «All We Are About». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/11/YV-11.06-20-45-MD-Satoshi-All-We-Are-About.md`)
 
 ### 15.06 (Пн)
 * 12:00 | **YV** | 🧠 **#OPINION:** Жанровый код Болгарии на Евровидении-2027. - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md`)
