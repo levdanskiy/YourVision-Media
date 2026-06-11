@@ -1,6 +1,7 @@
 # 💎 ORCHID - ВИЗУАЛЬНЫЕ ПРОФИЛИ
 
 Единый источник истины для всех изображений. Вставляй CHARACTER TAG в любой промпт.
+**Второй круг** (Бруно/Марсель/Аделина/Линдт/Андре): теги - в `02_SYSTEM/SUPPORTING_CAST.md` (правило имён-в-промптах действует и на них).
 Фон: `Mediterranean coast, warm golden light, luxury yacht or casino interior`
 Технические параметры: `shot on 35mm film Kodak Portra 800 --ar 1:1 --v 6.1 --style raw --s 750`
 
