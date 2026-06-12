@@ -22,6 +22,7 @@
 **Слабость:** мимикрия без собственного голоса - он ВЕСЬ из чужих слов; человек, заставший его говорить СВОЁ, получает над ним власть.
 **Речь:** скворец-пересмешник - возвращает собеседнику его же фразы его же интонацией («Вы сказали: "я просто устал". Просто. Устал.») - протоколирование вслух.
 **CHARACTER TAG:** `Inspector Strazds, neat middle-aged man with starling-split features, iridescent dark feather-sheen in slicked hair, round dark eyes that never blink in rhythm, immaculate grey ministry uniform with resonance insignia, thin ledger tablet, politely unsettling presence, hand-drawn soft texture, amber accents, no text, no logos`
+**PORTRAIT PROMPT (карточка/превью; ввод СТРОГО при ВЕРНОСТЬ 5):** `Painterly hand-drawn character portrait of Inspector Strazds, neat middle-aged man with subtle starling-split features, iridescent dark feather-sheen running through slicked hair, round dark unblinking eyes, immaculate grey ministry uniform with a faint amber resonance insignia, thin ledger tablet held like a hymnal, standing in a curfew-empty lyceum corridor under amber emergency lighting, his posture politely wrong, a faint synesthetic color bleed of oily iridescent grey washing one edge of the frame. The mockingbird of the system who returns your own words in your own voice. Soft imperfect edges, visible brush-like grain, watercolor-ink bleed accents, warm amber glow, muted Baltic light, NOT glossy, illustrated-film mood, 8k, cinematic color grading. Horizontal frame 16:9. No text, no logos.`
 
 ### 🔧 МАСТЕР КАЛЕЙС (55) - техник браслетов «Верность»
 
@@ -30,6 +31,7 @@
 **Слабость:** пенсия и внучка - системе есть чем его держать; его помощь всегда на грани «больше не проси».
 **Речь:** говорит с браслетами как с животными («тихо, тихо, она не то имела в виду»); людям - короткие ремесленные фразы.
 **CHARACTER TAG:** `Master Kalejs, weathered human technician in his mid-fifties, grey moustache, magnifying loupe pushed up on forehead, worn workshop apron over a knitted vest, gentle tired hands adjusting a glowing amber neuro-bracelet, cluttered warm workshop with watchmaker tools, hand-drawn soft texture, amber glow, no text, no logos`
+**PORTRAIT PROMPT (карточка/превью; ввод - блок I, калибровка 1 сентября):** `Painterly hand-drawn character portrait of Master Kalejs, weathered human technician in his mid-fifties, grey moustache, magnifying loupe pushed up on a creased forehead, worn leather workshop apron over a knitted vest, gentle tired watchmaker's hands cradling a glowing amber neuro-bracelet as if calming a small animal, cluttered warm workshop with tiny tools, gears and a cooling cup of tea, one window of grey Baltic light, a faint synesthetic color bleed of warm pastel-cream washing one edge of the frame. Thirty years of mending clocks, now mending children, quiet latvian sorrow and kindness. Soft imperfect edges, visible brush-like grain, watercolor-ink bleed accents, warm amber glow, NOT glossy, illustrated-film mood, 8k, cinematic color grading. Horizontal frame 16:9. No text, no logos.`
 
 ---
 
