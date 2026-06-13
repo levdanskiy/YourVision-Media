@@ -1,17 +1,25 @@
-# 🎨 NOVELLS - АССЕТЫ КАНАЛА (лого/обложки по месяцам; заведён 13.06.2026)
+# 🎨 CORE - АССЕТЫ КАНАЛА (лого/обложки; заведён 13.06.2026)
 
-Единый канал, один визуальный бренд, но **месячный акцент = текущий сезон ротации** (обновляем аватар/обложку под идущую новеллу). Промпты - платформа Reve, без MJ-флагов. Лого без читаемого текста (графический знак под Telegram-аватар, квадрат); надпись названия канала добавляется при сборке отдельно, если нужно.
+Канал - **CORE / ЯДРО** (идентичность - `CHANNEL_IDENTITY.md`). Один визуальный бренд, **месячный акцент = текущий «открытый мир» ротации**. Промпты - Reve, без MJ-флагов. Лого без читаемого текста (графический знак под Telegram-аватар, квадрат); название накладывается при сборке.
 
-Принцип знака: узнаваемая константа канала (тёмный фон + светящийся центральный символ-эмблема) + сезонная палитра/мотив текущей новеллы.
+**Принцип знака CORE (постоянная константа):** в центре - светящееся **ЯДРО / узел**, вокруг - расходящиеся орбиты/грани-«миры» (мультиверс). Тёмный фон. Сезонный акцент = палитра орбиты текущего мира поверх постоянного ядра.
 
 ---
 
-## 🌺 ИЮНЬ 2026 - ORCHID S1 (гламур-нуар Ривьеры)
+## 🌀 ПОСТОЯННОЕ ЛОГО CORE (база, нейтральная палитра)
 
-**Тема:** идёт Orchid - золотая орхидея как эмблема, белое золото + бирюза, азарт и роскошь.
+`Minimalist premium channel emblem for "CORE", a single luminous spherical core-node glowing at the exact centre of a deep black background, fine concentric orbital rings and faint branching facets radiating outward like a multiverse of worlds connected to one core, the core a clean radiant orb with subtle inner depth, elegant sci-fi-mythic mark, symmetrical centered icon, premium emblem design, luminous white-gold core on black with cool spectral edge-glow, subtle grain. Square 1:1 icon composition, clean negative space, no text, no letters, no logo type.`
 
-**ЛОГО (аватар, квадрат):**
-`Minimalist luxury channel emblem, a single stylized golden orchid flower glowing at the centre of a deep midnight-teal background, the orchid subtly formed from fine gold linework that suggests both a flower and a playing-card flourish, one tiny turquoise gem at its heart like a casino chip, soft radial glow, elegant gloss-noir Riviera mood, symmetrical centered icon, premium emblem design, white gold and turquoise on dark teal-black, subtle film grain. Square 1:1 icon composition, clean negative space, no text, no letters, no logo type.`
+---
+
+## 🌺 ИЮНЬ 2026 - ORCHID S1 (открытый мир: гламур-нуар Ривьеры)
+
+**Тема:** открыт мир Orchid - ядро CORE окрашено в орхидею: золотой узел + бирюзовые орбиты, азарт и роскошь.
+
+**ЛОГО CORE × ORCHID (аватар, квадрат):**
+`Minimalist premium channel emblem for "CORE", a luminous core-node at the exact centre formed as a single stylized golden orchid glowing like the heart of a multiverse, fine concentric orbital rings radiating outward with one tiny turquoise gem-node on an orbit like a casino chip, deep midnight-teal-black background, gloss-noir Riviera mood fused with cosmic core symbolism, symmetrical centered icon, premium emblem design, white gold and turquoise on dark teal-black, subtle film grain. Square 1:1 icon composition, clean negative space, no text, no letters, no logo type.`
+
+**ПОДСКАЗКА ПОД BIO:** при сборке можно положить под знак строку «CORE - Центральный узел Мультиверса» (название канала; графический промпт - без текста).
 
 **ОБЛОЖКА (баннер, горизонт):**
 `Cinematic luxury channel cover banner, wide horizontal composition, a glamorous Riviera casino terrace at golden-hour-into-night, a single golden orchid resting on dark green baccarat felt with scattered light reflections and a faint turquoise sea glow in the distance, white gold and turquoise palette, gloss-noir heist-romance atmosphere, warm tactile film grain, lots of clean dark space on one side for channel title overlay. Horizontal banner 16:9, no text, no logos.`
