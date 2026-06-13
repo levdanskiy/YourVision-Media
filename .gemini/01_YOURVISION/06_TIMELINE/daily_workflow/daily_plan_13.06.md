@@ -22,6 +22,7 @@
 * 17:00 | **YV** | ⚡ **#NEWS_WIRE:** Кипр: CyBC открывает прием заявок на Детское Евровидение 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-17-00-CY-JESC-2026-Submissions-Open.md`)
 * 17:45 | **YV** | ⚡ **#NEWS_WIRE:** Нидерланды: Анонс участников Junior Songfestival 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-17-45-NL-Junior-Songfestival-2026-Acts-Revealed.md`)
 * 19:00 | **YV** | 🧠 **#DEEP_DIVE:** Греция: Великое наследие, рекорд Италии и теневые кардиналы камбэка. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-19-00-GR-ESC-2027-History-Record-Deep-Dive.md`)
+* 19:45 | **YV** | 🎵 **#RELEASE:** Италия: Angelina Mango и Marco Mengoni выпустили совместный сингл «Canto d’Amore». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-19-45-IT-Angelina-Mango-Marco-Mengoni-Duet.md`)
 
 ---
 ### 🧊 ARCHIVE CHANNELS (ON PAUSE)
