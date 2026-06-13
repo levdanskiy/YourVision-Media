@@ -20,6 +20,7 @@
 * 09:00 | **YV** | 🗓 **#EVENTS:** Гид по событиям дня. - ⬜ [ОЖИДАНИЕ]
 * 13:00 | **YV** | 🎞 **#EUROFLASHBACK:** История дня. - ⬜ [ОЖИДАНИЕ]
 * 17:00 | **YV** | ⚡ **#NEWS_WIRE:** Кипр: CyBC открывает прием заявок на Детское Евровидение 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-17-00-CY-JESC-2026-Submissions-Open.md`)
+* 17:45 | **YV** | ⚡ **#NEWS_WIRE:** Нидерланды: Анонс участников Junior Songfestival 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-17-45-NL-Junior-Songfestival-2026-Acts-Revealed.md`)
 
 ---
 ### 🧊 ARCHIVE CHANNELS (ON PAUSE)
