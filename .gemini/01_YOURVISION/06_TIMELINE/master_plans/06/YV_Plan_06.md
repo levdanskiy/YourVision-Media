@@ -50,6 +50,7 @@
 * 18:30 | **YV** | ⚡ **#NEWS_WIRE:** Германия: SWR подтверждает участие в Евровидении-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-18-30-DE-ESC-2027-Participation-Confirm.md`)
 * 19:00 | **YV** | 🧠 **#DEEP_DIVE:** Греция: Великое наследие, рекорд Италии и теневые кардиналы камбэка. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-19-00-GR-ESC-2027-History-Record-Deep-Dive.md`)
 * 19:45 | **YV** | 🎵 **#RELEASE:** Италия: Angelina Mango и Marco Mengoni выпустили совместный сингл «Canto d’Amore». - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-19-45-IT-Angelina-Mango-Marco-Mengoni-Duet.md`)
+* 20:30 | **YV** | ⚡ **#NEWS_WIRE:** Австралия: Delta Goodrem примет участие в Strictly Come Dancing 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-20-30-AU-Delta-Goodrem-Strictly-Come-Dancing.md`)
 
 ### 15.06 (Пн)
 * 12:00 | **YV** | 🧠 **#OPINION:** Жанровый код Болгарии на Евровидении-2027. - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md`)
