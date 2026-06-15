@@ -32,6 +32,8 @@ project_dir() {
     code) echo "$NOVELLS_ROOT/07_CODE" ;;
     anthropos) echo "$NOVELLS_ROOT/08_ANTHROPOS" ;;
     eleyia) echo "$NOVELLS_ROOT/01_ELEYIA" ;;
+    white_lady|wl) echo "$NOVELLS_ROOT/11_WHITE_LADY" ;;
+    snegurochka|sneg) echo "$NOVELLS_ROOT/12_SNEGUROCHKA_SPECIAL" ;;
     *) echo "" ;;
   esac
 }
@@ -65,25 +67,38 @@ echo "════════════════════════�
 echo ""
 
 # ============================================
-# 1. Последние публикации
+# 0. КРАТКО - сессионный бриф (из шапки STATE)
+# ============================================
+if [ -f "$DIR/02_SYSTEM/STATE.md" ]; then
+  echo "🧭 КРАТКО (шапка STATE - где мы / что дальше)"
+  echo "───────────────────────────────────────────────────────────────"
+  grep -m1 "Последнее обновление" "$DIR/02_SYSTEM/STATE.md" 2>/dev/null \
+    | sed 's/\*\*//g; s/^/  /' | fold -s -w 75 | sed '2,$s/^/    /'
+  echo ""
+fi
+
+# ============================================
+# 1. Последние публикации (месяце-независимо - чинит баг хардкода 2026/05)
 # ============================================
 echo "📅 ПУБЛИКАЦИИ (последние 7 пуб.дней)"
 echo "───────────────────────────────────────────────────────────────"
-if [ -d "$DIR/04_CONTENT/2026/05" ]; then
-  for day_dir in $(ls -1 "$DIR/04_CONTENT/2026/05" 2>/dev/null | sort -r | head -7); do
-    day_path="$DIR/04_CONTENT/2026/05/$day_dir"
-    if [ -d "$day_path" ]; then
-      post_count=$(ls -1 "$day_path"/*.md 2>/dev/null | wc -l)
-      echo ""
-      echo "  $day_dir.05  ($post_count постов):"
-      ls -1 "$day_path"/*.md 2>/dev/null | while read f; do
-        basename=$(basename "$f" .md)
-        echo "    • $basename"
-      done
-    fi
-  done
+# Собираем все папки-дни YYYY/MM/DD под 04_CONTENT, сортируем по дате, берём 7 последних
+recent_days=$(find "$DIR/04_CONTENT" -mindepth 3 -maxdepth 3 -type d 2>/dev/null \
+  | sed -E 's#^(.*)/([0-9]{4})/([0-9]{2})/([0-9]{2})$#\2-\3-\4|\1/\2/\3/\4#' \
+  | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}\|' | sort -r | head -7)
+if [ -z "$recent_days" ]; then
+  echo "  (контент не найден)"
 else
-  echo "  (контент за 2026/05 не найден)"
+  while IFS='|' read -r date_key day_path; do
+    [ -z "$day_path" ] && continue
+    dd="${date_key:8:2}"; mm="${date_key:5:2}"
+    post_count=$(ls -1 "$day_path"/*.md 2>/dev/null | wc -l)
+    echo ""
+    echo "  $dd.$mm  ($post_count постов):"
+    ls -1 "$day_path"/*.md 2>/dev/null | while read f; do
+      echo "    • $(basename "$f" .md)"
+    done
+  done <<< "$recent_days"
 fi
 echo ""
 

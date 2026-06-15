@@ -292,6 +292,46 @@ if [ "$PROJECT" != "km" ] && [ "$PROJECT" != "kingmaker" ] && [ "$PROJECT" != "y
 fi
 
 # ============================================
+# Check 13: Мусорные/чужие символы (CJK, хангыль, кана, арабица, иврит) - BLOCKING
+# Ловит опечатки-вставки (напр. 纳 вместо «На»). В RU-новеллах не бывает легитимно.
+# ============================================
+JUNK=$(python3 - "$FILE" << 'PYEOF' 2>/dev/null
+import sys, re
+try:
+    t = open(sys.argv[1], encoding='utf-8').read()
+    bad = re.findall(r'[぀-ヿ㐀-䶿一-鿿가-힯؀-ۿ֐-׿]', t)
+    print(''.join(sorted(set(bad))))
+except Exception:
+    pass
+PYEOF
+)
+if [ -n "$JUNK" ]; then
+  echo "❌ Мусорные/чужие символы в файле (вероятно опечатка-вставка): $JUNK"
+  echo "    Убрать - в русских/латинских текстах CJK/арабица/иврит не используются"
+  ERRORS=$((ERRORS + 1))
+fi
+
+# ============================================
+# Check 14: Формат подвала контент-поста (только в 04_CONTENT) - warning
+# ============================================
+case "$FILE" in
+  */04_CONTENT/*)
+    # Хэштеги обязательны в любом посте
+    if ! grep -qE '^#[A-Za-zА-Яа-я0-9]' "$FILE"; then
+      echo "⚠️  Контент-пост без строки хэштегов (#...)"
+      WARNINGS=$((WARNINGS + 1))
+    fi
+    # Если есть Grade - должен быть и Prompt (и наоборот)
+    has_grade=$(grep -c '^\*\*Grade:' "$FILE" 2>/dev/null || echo 0)
+    has_prompt=$(grep -c '^\*\*Prompt:' "$FILE" 2>/dev/null || echo 0)
+    if [ "$has_grade" != "$has_prompt" ]; then
+      echo "⚠️  Подвал поста неполный: Grade=$has_grade, Prompt=$has_prompt (должны идти в паре)"
+      WARNINGS=$((WARNINGS + 1))
+    fi
+    ;;
+esac
+
+# ============================================
 # Result
 # ============================================
 if [ "$ERRORS" -gt 0 ]; then
