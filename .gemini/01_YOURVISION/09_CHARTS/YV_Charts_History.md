@@ -6,7 +6,40 @@
 
 ## 📅 ХРОНОЛОГИЧЕСКИЙ РЕЕСТР ВЫПУСКОВ (2026)
 
-### 1. EUROGROOVE: ALBM CUTS (VIENNA AFTERMATH)
+### 1. ALLMIX: VIBE SHIFT 2026
+*   **Дата публикации:** 16.06.2026, 19:20 (Europe/Рига)
+*   **Пост:** [YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/06/16/YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md)
+*   **Победитель:** **Linda Lampenius & Pete Parkkonen - «Liekinheitin»** - 72 балла
+*   **Резюме:** Финский тандем Linda Lampenius & Pete Parkkonen забирает золото. На втором и третьем местах расположились Taylor Swift и BLACKPINK (по 68 баллов).
+
+#### Итоговая таблица результатов (Топ-20):
+| Место | Исполнитель и название трека | Старое место | Старые баллы | Новые баллы | Голоса жюри | Охват | Рейтинг | Статус |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 🥇 1 | **Linda Lampenius & Pete Parkkonen - «Liekinheitin»** | 1 | 67 | 72 | 9 | 90% | 6.2/10 | 🏆 ПОБЕДА |
+| 🥈 2 | **Taylor Swift - «I Knew It, I Knew You»** | 2 | 62 | 68 | 7 | 70% | 7.4/10 | HIT 🔥 |
+| 🥉 3 | **BLACKPINK - «JUMP»** | 3 | 59 | 68 | 7 | 70% | 7.0/10 | HIT 🔥 |
+| 4 | **BTS - «SWIM»** | 4 | 54 | 55 | 9 | 90% | 5.0/10 | HIT 🔥 |
+| 5 | **Olivia Rodrigo - «drop dead»** | 5 | 50 | 53 | 7 | 70% | 6.0/10 | HIT 🔥 |
+| 6 | **Sal Da Vinci - «Per sempre sì»** | 6 | 50 | 53 | 5 | 50% | 8.3/10 | HIT 🔥 |
+| 7 | **By Индия, Xcho, МОТ - «Шадэ»** | 7 | 46 | 47 | 8 | 80% | 4.8/10 | TOP-10 |
+| 8 | **Alexandra Căpitănescu - «Choke Me»** | 8 | 43 | 44 | 7 | 70% | 5.1/10 | TOP-10 |
+| 9 | **Егор Крид, ARTIK & ASTI - «KARMA»** | 9 | 41 | 44 | 6 | 60% | 5.7/10 | TOP-10 |
+| 10 | **KATSEYE - «PINKY UP»** | 10 | 39 | 43 | 5 | 50% | 6.5/10 | TOP-10 |
+| 11 | BEARWOLF - «Феникс» | 11 | 38 | 38 | 6 | 60% | 5.3/10 | - |
+| 12 | Tyla, Zara Larsson - «SHE DID IT AGAIN» | 12 | 36 | 36 | 8 | 80% | 3.8/10 | - |
+| 13 | Сергей Лазарев, Полина Гагарина - «Хэппи Энд» | 13 | 33 | 33 | 5 | 50% | 5.5/10 | - |
+| 14 | Madonna - «Love Sensation» | 14 | 29 | 30 | 4 | 40% | 6.0/10 | - |
+| 15 | Dave, Tems - «Raindance» | 15 | 28 | 29 | 5 | 50% | 4.7/10 | - |
+| 16 | Madison Beer - «lovergirl» | 16 | 28 | 29 | 4 | 40% | 5.8/10 | - |
+| 17 | HOLLYFLAME - «Тону» | 17 | 27 | 28 | 6 | 60% | 3.8/10 | - |
+| 18 | Dara - «Bangaranga» | 18 | 23 | 23 | 5 | 50% | 3.8/10 | - |
+| 19 | SAYAN - «Мальборо» | 19 | 14 | 14 | 3 | 30% | 3.9/10 | - |
+| 20 | Ваня Дмитриенко - «След» | 20 | 13 | 13 | 4 | 40% | 2.7/10 | - |
+
+---
+
+
+### 2. EUROGROOVE: ALBM CUTS (VIENNA AFTERMATH)
 *   **Дата публикации:** 02.06.2026, 19:20 (Europe/Рига)
 *   **Пост:** [YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/06/02/YV-02.06-19-20-EU-Eurogroove-AlbmCuts-Results.md)
 *   **Победитель:** 🇷🇴 **Alexandra Căpitănescu - «Fuego» (Eleni Foureira, Кипр 2018)** - 105 баллов
@@ -36,7 +69,7 @@
 
 ---
 
-### 2. ALLMIX: NEW VIBES 2026
+### 3. ALLMIX: NEW VIBES 2026
 *   **Дата публикации:** 05.05.2026, 19:20 (Europe/Рига)
 *   **Пост:** [YV-05.05-19-20-CHART-RESULTS-ALLMIX.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/05/05/YV-05.05-19-20-CHART-RESULTS-ALLMIX.md)
 *   **Победитель:** **Sombr - «Potential»** - 106 баллов
@@ -66,7 +99,7 @@
 
 ---
 
-### 3. WORLDSOUND: GLOBAL LOVE SONGS
+### 4. WORLDSOUND: GLOBAL LOVE SONGS
 *   **Дата публикации:** 24.02.2026, 19:20 (Europe/Рига)
 *   **Пост:** [YV-24.02-19-20-WorldSound-Results.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/02/24/YV-24.02-19-20-WorldSound-Results.md)
 *   **Победитель:** 🇺🇸 **Taylor Swift - «The Fate of Ophelia»** - 67 баллов
@@ -101,7 +134,7 @@
 
 ---
 
-### 4. ALLMIX: VALENTINE SPECTRUM
+### 5. ALLMIX: VALENTINE SPECTRUM
 *   **Дата публикации:** 17.02.2026, 19:15 (Europe/Рига)
 *   **Пост:** [YV-17.02-19-15-ChartResults-AllMixValentine.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/02/17/YV-17.02-19-15-ChartResults-AllMixValentine.md)
 *   **Победитель:** **Videoclub - «Roi»** - 69 баллов
@@ -131,7 +164,7 @@
 
 ---
 
-### 5. EUROGROOVE: WHEN EUROVISION ENDS
+### 6. EUROGROOVE: WHEN EUROVISION ENDS
 *   **Дата публикации:** 03.02.2026, 19:15 (Europe/Рига)
 *   **Пост:** [YV-03.02-19-15-ChartResults-EuroGroove.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/02/03/YV-03.02-19-15-ChartResults-EuroGroove.md)
 *   **Победитель:** **TEYA and Goldielocks - «My Religion»** - 48 баллов
@@ -166,7 +199,7 @@
 
 ---
 
-### 6. WORLDSOUND: UKRAINE 2025
+### 7. WORLDSOUND: UKRAINE 2025
 *   **Дата публикации:** 27.01.2026, 19:20 (Europe/Рига)
 *   **Пост:** [YV-27.01-19-20-Analytics-ChartResults-WorldSoundUkraine.md](file:///home/levdanskiy/GEMINI_PROJECT/01_YOURVISION/04_CONTENT/2026/01/27/YV-27.01-19-20-Analytics-ChartResults-WorldSoundUkraine.md)
 *   **Победитель:** 🇺🇦 **The Hardkiss - «Tenderness»** - 45 баллов
