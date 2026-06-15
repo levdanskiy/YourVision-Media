@@ -22,20 +22,20 @@ if [ "$MODE" = "--auto" ]; then
     echo "Usage: $0 --auto <file>"
     exit 1
   fi
-  # Detect project from path
+  # Detect project from path (без требования ведущего слеша - работает и на относительных путях)
   case "$FILE" in
-    */02_KINGMAKER/*) PROJECT="km" ;;
-    */10_VIENNA_SPECIAL/*) PROJECT="vs" ;;
-    */05_ORCHID/*) PROJECT="orchid" ;;
-    */03_DONOR/*) PROJECT="donor" ;;
-    */06_ORDER/*) PROJECT="order" ;;
-    */04_HORIZON/*) PROJECT="horizon" ;;
-    */07_CODE/*) PROJECT="code" ;;
-    */08_ANTHROPOS/*) PROJECT="anthropos" ;;
-    */01_ELEYIA/*) PROJECT="eleyia" ;;
-    */01_YOURVISION/*) PROJECT="yv" ;;
-    */11_WHITE_LADY/*) PROJECT="white_lady" ;;
-    */12_SNEGUROCHKA_SPECIAL/*) PROJECT="snegurochka" ;;
+    *02_KINGMAKER/*) PROJECT="km" ;;
+    *10_VIENNA_SPECIAL/*) PROJECT="vs" ;;
+    *05_ORCHID/*) PROJECT="orchid" ;;
+    *03_DONOR/*) PROJECT="donor" ;;
+    *06_ORDER/*) PROJECT="order" ;;
+    *04_HORIZON/*) PROJECT="horizon" ;;
+    *07_CODE/*) PROJECT="code" ;;
+    *08_ANTHROPOS/*) PROJECT="anthropos" ;;
+    *01_ELEYIA/*) PROJECT="eleyia" ;;
+    *01_YOURVISION/*) PROJECT="yv" ;;
+    *11_WHITE_LADY/*) PROJECT="white_lady" ;;
+    *12_SNEGUROCHKA_SPECIAL/*) PROJECT="snegurochka" ;;
     *)
       echo "❌ Не удалось определить проект по пути: $FILE"
       exit 1
