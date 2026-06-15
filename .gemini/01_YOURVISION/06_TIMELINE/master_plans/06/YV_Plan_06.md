@@ -53,12 +53,12 @@
 * 20:30 | **YV** | ⚡ **#NEWS_WIRE:** Австралия: Delta Goodrem примет участие в Strictly Come Dancing 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/13/YV-13.06-20-30-AU-Delta-Goodrem-Strictly-Come-Dancing.md`)
 
 ### 15.06 (Пн)
-* 12:00 | **YV** | 🧠 **#OPINION:** Жанровый код Болгарии на Евровидении-2027. - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md`)
+* 12:00 | **YV** | 🧠 **#OPINION:** Жанровый код Болгарии на Евровидении-2027. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/15/YV-15.06-12-00-EU-Opinion-GenreCode2027.md`)
 
 ### 16.06 (Вт)
 * 12:00 | **YV** | 🎧 **#COMMUNITY:** Запуск рубрики «Музыкальный скаутинг». - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-12-00-EU-Community-SongScouting.md`)
 * 17:50 | **YV** | 📢 **#CHART_REMINDER:** AllMix Vibe Shift 2026: напоминание о чарте. - ⬜ [ОЖИДАНИЕ]
-* 19:20 | **YV** | 📊 **#CHART_RESULTS:** AllMix Vibe Shift 2026: результаты чарта новинок. - ⬜ [ОЖИДАНИЕ]
+* 19:20 | **YV** | 📊 **#CHART_RESULTS:** AllMix Vibe Shift 2026: результаты чарта новинок. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md`)
 
 ### 21.06 (Вс)
 * TBA | **YV** | ⚡ **#NEWS_WIRE:** Евровидение Азия: Бангладеш - объявление 12 финалистов (NTV). - ⬜ [ОЖИДАНИЕ]
