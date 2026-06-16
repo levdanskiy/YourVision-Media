@@ -202,6 +202,15 @@
             "status": "PLANNED"
         },
         {
+            "id": "UA_JESC_SUBMISSIONS_DEADLINE",
+            "date": "2026-07-08",
+            "time": "TBA",
+            "country": "Ukraine",
+            "event": "Суспільне: дедлайн приема заявок на Детское Евровидение-2026",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
             "id": "ESC_ASIA_BD_FINAL",
             "date": "2026-08-23",
             "time": "TBA",
@@ -308,6 +317,24 @@
             "event": "Суспільне: старт приема заявок на Детское Евровидение-2026",
             "type": "RELEASE",
             "status": "SCHEDULED"
+        },
+        {
+            "id": "LU_ESC_2027_CONFIRMATION",
+            "date": "2026-06-16",
+            "time": "17:15",
+            "country": "Luxembourg",
+            "event": "RTL: Люксембург гарантировал участие в Евровидении до 2029 года",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
+            "id": "LU_LSC_2027_FINAL",
+            "date": "2027-01-30",
+            "time": "TBA",
+            "country": "Luxembourg",
+            "event": "Luxembourg Song Contest 2027 (Финал)",
+            "type": "FINAL",
+            "status": "PLANNED"
         }
     ],
     "winners": {
