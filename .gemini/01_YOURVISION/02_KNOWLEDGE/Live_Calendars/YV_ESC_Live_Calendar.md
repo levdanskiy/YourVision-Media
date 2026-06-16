@@ -77,6 +77,7 @@
 | 16.06 | 17:00 | 🇪🇺 EU | AllMix Vibe Shift 2026: напоминание о чарте | COVERED | `04_CONTENT/2026/06/16/YV-16.06-17-00-EU-AllMix-Vibe-Shift-Reminder.md` |
 | 16.06 | 17:15 | 🇱🇺 LUX | RTL: Люксембург гарантировал участие в Евровидении до 2029 года | COVERED | `04_CONTENT/2026/06/16/YV-16.06-17-15-LU-LSC-2027-Dates.md` |
 | 16.06 | 19:20 | 🇪🇺 EU | AllMix Vibe Shift 2026: результаты чарта новинок | COVERED | `04_CONTENT/2026/06/16/YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md` |
+| 16.06 | 22:45 | 🇷🇺 RUS | PROMO: Телеграм-канал «Республика ЧЯД» | COVERED | `04_CONTENT/2026/06/16/YV-16.06-22-45-RU-Promo-CHYAD.md` |
 | 21.06 | TBA | 🇧🇩 BGD | Евровидение Азия: Бангладеш - объявление 12 финалистов (NTV) | PENDING |  |
 | 30.06 | TBA | 🇰🇷 KOR | Евровидение Азия: Южная Корея - дедлайн подачи заявок (ENA) | PENDING |  |
 | июнь | TBA | EBU | Финальное решение по реформам регламента 2027 | TBA |  |

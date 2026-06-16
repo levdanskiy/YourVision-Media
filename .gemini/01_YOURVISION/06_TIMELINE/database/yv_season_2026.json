@@ -328,6 +328,15 @@
             "status": "SCHEDULED"
         },
         {
+            "id": "RU_PROMO_CHYAD",
+            "date": "2026-06-16",
+            "time": "22:45",
+            "country": "Russia",
+            "event": "PROMO: Телеграм-канал «Республика ЧЯД»",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
             "id": "LU_LSC_2027_FINAL",
             "date": "2027-01-30",
             "time": "TBA",
