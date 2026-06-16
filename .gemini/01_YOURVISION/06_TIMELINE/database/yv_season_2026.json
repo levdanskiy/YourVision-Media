@@ -337,6 +337,15 @@
             "status": "SCHEDULED"
         },
         {
+            "id": "EU_PROMO_MARGINALIA",
+            "date": "2026-06-17",
+            "time": "13:00",
+            "country": "Europe",
+            "event": "PROMO: Телеграм-канал «ALMANAC: MARGINALIA»",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
             "id": "LU_LSC_2027_FINAL",
             "date": "2027-01-30",
             "time": "TBA",

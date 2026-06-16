@@ -64,6 +64,8 @@
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** AllMix Vibe Shift 2026: результаты чарта новинок. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md`)
 * 22:45 | **YV** | 📢 **#PROMO:** Республика ЧЯД: Реклама ТГ-канала. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-22-45-RU-Promo-CHYAD.md`)
 
+### 17.06 (Ср)
+* 13:00 | **YV** | 📢 **#PROMO:** Almanac: Marginalia: Реклама ТГ-канала. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/17/YV-17.06-13-00-EU-Promo-Marginalia.md`)
 
 ### 21.06 (Вс)
 * TBA | **YV** | ⚡ **#NEWS_WIRE:** Евровидение Азия: Бангладеш - объявление 12 финалистов (NTV). - ⬜ [ОЖИДАНИЕ]
