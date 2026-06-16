@@ -299,6 +299,15 @@
             "event": "Ансси Аутио покидает пост продюсера UMK после 15 лет работы",
             "type": "RELEASE",
             "status": "SCHEDULED"
+        },
+        {
+            "id": "UA_JESC_SUBMISSIONS_OPEN",
+            "date": "2026-06-16",
+            "time": "17:00",
+            "country": "Ukraine",
+            "event": "Суспільне: старт приема заявок на Детское Евровидение-2026",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
         }
     ],
     "winners": {

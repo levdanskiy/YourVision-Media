@@ -58,6 +58,7 @@
 * 09:00 | **YV** | ⚡ **#NEWS_WIRE:** Северная Македония: Представление кандидатов Детского Евровидения 2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-09-00-MK-JESC-Auditions.md`)
 * 11:00 | **YV** | ⚡ **#NEWS_WIRE:** Финляндия: Ансси Аутио покидает пост продюсера UMK после 15 лет работы. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-11-00-FI-Anssi-Autio-UMK.md`)
 * 12:00 | **YV** | 🎧 **#COMMUNITY:** Запуск рубрики «Музыкальный скаутинг». - ⬜ [ОЖИДАНИЕ] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-12-00-EU-Community-SongScouting.md`)
+* 17:00 | **YV** | ⚡ **#NEWS_WIRE:** Украина: Старт приема заявок на Детское Евровидение-2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-17-00-UA-JESC-Submissions-Open.md`)
 * 17:50 | **YV** | 📢 **#CHART_REMINDER:** AllMix Vibe Shift 2026: напоминание о чарте. - ⬜ [ОЖИДАНИЕ]
 * 19:20 | **YV** | 📊 **#CHART_RESULTS:** AllMix Vibe Shift 2026: результаты чарта новинок. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/16/YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md`)
 

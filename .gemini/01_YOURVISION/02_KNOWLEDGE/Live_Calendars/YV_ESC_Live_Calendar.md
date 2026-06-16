@@ -73,6 +73,7 @@
 | 16.06 | 09:00 | 🇲🇰 MKD | MRT: специальное шоу-прослушивание участников JESC | COVERED | `04_CONTENT/2026/06/16/YV-16.06-09-00-MK-JESC-Auditions.md` |
 | 16.06 | 11:00 | 🇫🇮 FIN | UMK: Ансси Аутио покидает пост продюсера после 15 лет | COVERED | `04_CONTENT/2026/06/16/YV-16.06-11-00-FI-Anssi-Autio-UMK.md` |
 | 16.06 | 12:00 | 🇪🇺 EU | COMMUNITY: Запуск интерактива «Музыкальный скаутинг» | SCHEDULED | `04_CONTENT/2026/06/16/YV-16.06-12-00-EU-Community-SongScouting.md` |
+| 16.06 | 17:00 | 🇺🇦 UKR | Суспільне: старт приема заявок на Детское Евровидение-2026 | COVERED | `04_CONTENT/2026/06/16/YV-16.06-17-00-UA-JESC-Submissions-Open.md` |
 | 16.06 | 17:50 | 🇪🇺 EU | AllMix Vibe Shift 2026: напоминание о чарте | PENDING |  |
 | 16.06 | 19:20 | 🇪🇺 EU | AllMix Vibe Shift 2026: результаты чарта новинок | PENDING |  |
 | 21.06 | TBA | 🇧🇩 BGD | Евровидение Азия: Бангладеш - объявление 12 финалистов (NTV) | PENDING |  |
