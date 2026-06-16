@@ -290,6 +290,15 @@
             "event": "MRT: специальное шоу-прослушивание участников JESC 2026",
             "type": "RELEASE",
             "status": "FINISHED"
+        },
+        {
+            "id": "FI_UMK_PRODUCER_STEPDOWN",
+            "date": "2026-06-16",
+            "time": "11:00",
+            "country": "Finland",
+            "event": "Ансси Аутио покидает пост продюсера UMK после 15 лет работы",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
         }
     ],
     "winners": {
