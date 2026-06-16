@@ -112,6 +112,19 @@ def apply_delta(stats, delta, poll_id, narrative_day):
         events.append({"type": "info", "msg": f"  Нора.{axis}: {old} → {new} ({'+' if value >= 0 else ''}{value}) [{direction}]"})
         return events
 
+    # HEAT - топ-уровневый счётчик (Orchid: счётчик Софи; 0..max)
+    if delta.get("param") == "heat":
+        heat = stats.setdefault("heat", {"current": 0, "max": 10, "history": []})
+        old = heat.get("current", 0)
+        new = max(0, min(heat.get("max", 10), old + value))
+        heat["current"] = new
+        heat.setdefault("history", []).append({
+            "day": narrative_day, "poll_id": poll_id, "delta": value,
+            "from": old, "to": new, "reason": reason,
+        })
+        events.append({"type": "info", "msg": f"  HEAT: {old} → {new} ({'+' if value >= 0 else ''}{value})"})
+        return events
+
     # Existing: character reputation/affinity delta
     char_id = delta["character"]
     param = delta["param"]

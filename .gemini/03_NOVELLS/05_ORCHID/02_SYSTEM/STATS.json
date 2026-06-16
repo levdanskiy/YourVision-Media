@@ -1,0 +1,125 @@
+{
+  "version": "1.0",
+  "project": "ORCHID",
+  "season": 1,
+  "current_phase": "Блок II",
+  "current_chapter": 8,
+  "last_updated": "2026-06-17",
+  "notes": "Аффинити LI (Максимилиан/Николя/Лоран) + HEAT-счётчик Софи. Сюжетные (Софи/Камилла/Валентина) - не по порогам. Николя кап 99 до финала. Не-опросные беаты (интим +8, заряж +3, правда +7) применять вручную сюда. Поля concept - сокращённо, полные в AFFINITY_UNLOCKS.md.",
+  "characters": {
+    "maximilian": {
+      "name": "Максимилиан",
+      "role": "Глава безопасности Траста (LI ведущая)",
+      "affinity": {
+        "current": 34,
+        "cap": 100,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "утренний заплыв один без охраны"
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "флешбэк: приказ-преступление, контракт=епитимья"
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "тихое расследование внутри Траста"
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "🔒 он ставил подпись на ордере в ночь, когда сожгли дело Виктории"
+          }
+        }
+      }
+    },
+    "nikolya": {
+      "name": "Николя",
+      "role": "Тень, старый союзник (LI)",
+      "affinity": {
+        "current": 17,
+        "cap": 99,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "дешёвая зажигалка, выигранная Викторией"
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "флешбэк: как сошлись в деле, тепло без развязки"
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "искал не Викторию, а кто сжёг дело; 4 имени, 3 вычеркнуты"
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "🔒 = ответ на мистерию предал/сгорел; ТОЛЬКО финал, две версии"
+          }
+        }
+      }
+    },
+    "laurent": {
+      "name": "Принц Лоран",
+      "role": "Коллекционер судеб (LI)",
+      "affinity": {
+        "current": 8,
+        "cap": 100,
+        "unlocks": {
+          "25": {
+            "triggered": false,
+            "post_id": null,
+            "type": "DOSSIER",
+            "concept": "пустая комната без ценностей, час в день"
+          },
+          "50": {
+            "triggered": false,
+            "post_id": null,
+            "type": "NOTEBOOK_PAGE",
+            "concept": "флешбэк: наследство слишком рано, выученная беспомощность"
+          },
+          "75": {
+            "triggered": false,
+            "post_id": null,
+            "type": "STORY",
+            "concept": "тайный список настоящих владельцев краденого"
+          },
+          "100": {
+            "triggered": false,
+            "post_id": null,
+            "type": "SHADOW_HOOK",
+            "concept": "🔒 его биометрия - вторая подпись-ключ к Золотой Орхидее"
+          }
+        }
+      }
+    }
+  },
+  "heat": {
+    "name": "HEAT - счётчик Софи (видимая цена шума)",
+    "current": 6,
+    "max": 10,
+    "thresholds": {
+      "3": "НАБЛЮДЕНИЕ",
+      "5": "ПРОВЕРКА",
+      "7": "ОПЕРАЦИЯ",
+      "10": "КРИЗИС"
+    },
+    "history": []
+  }
+}
