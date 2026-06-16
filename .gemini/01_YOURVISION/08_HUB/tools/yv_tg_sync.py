@@ -105,19 +105,7 @@ def sync():
             return ""
         return re.sub(r'[^\w\s]', '', title).lower().strip()
 
-    # Extract existing local drafts
-    local_news = [n for n in existing_news if n.get("id") == LOCAL_ID]
-    
-    # Normalize titles of incoming Telegram posts to filter out duplicates
-    tg_normalized = {normalize_title(p.get("t", "")) for p in tg_posts}
-    
-    # Filter local posts, keeping only those that aren't duplicated by Telegram posts
-    filtered_local = [
-        lp for lp in local_news 
-        if normalize_title(lp.get("t", "")) not in tg_normalized
-    ]
-
-    merged = filtered_local + tg_posts
+    merged = tg_posts
     merged.sort(key=lambda x: x.get("ts", 0), reverse=True)
     merged = merged[:MAX_NEWS]
     data_obj["news"] = merged
