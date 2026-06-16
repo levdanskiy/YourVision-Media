@@ -4,7 +4,10 @@
 ROOT=/home/levdanskiy/.gemini/03_NOVELLS
 cmd=$(jq -r '.tool_input.command // empty' 2>/dev/null)
 echo "$cmd" | grep -q "POLL_LOG" || exit 0
-latest=$(find "$ROOT"/*/02_SYSTEM/POLL_LOG.json -printf '%T@ %p\n' 2>/dev/null | sort -rn | head -1 | awk '{print $2}')
+# Триггерим ТОЛЬКО если POLL_LOG реально изменён только что (запись), а не упомянут
+# в сообщении коммита / в grep / в cat. Порог - последние ~15 секунд.
+thresh=$(date -d '15 seconds ago' '+%Y-%m-%d %H:%M:%S' 2>/dev/null) || exit 0
+latest=$(find "$ROOT"/*/02_SYSTEM/POLL_LOG.json -newermt "$thresh" -printf '%T@ %p\n' 2>/dev/null | sort -rn | head -1 | awk '{print $2}')
 [ -z "$latest" ] && exit 0
 proj=$(echo "$latest" | sed -E 's#.*/03_NOVELLS/([0-9]+_[A-Z_]+)/.*#\1#')
 case "$proj" in
