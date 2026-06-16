@@ -281,6 +281,15 @@
             "event": "ALLMIX: VIBE SHIFT 2026 - NEW CONTOURS (Итоги)",
             "type": "CHART",
             "status": "PLANNED"
+        },
+        {
+            "id": "JESC_MK_AUDITIONS_SHOW",
+            "date": "2026-06-16",
+            "time": "10:10",
+            "country": "North Macedonia",
+            "event": "MRT: специальное шоу-прослушивание участников JESC 2026",
+            "type": "RELEASE",
+            "status": "FINISHED"
         }
     ],
     "winners": {
