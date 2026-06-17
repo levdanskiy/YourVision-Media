@@ -1,6 +1,6 @@
 # 👻 БЕЛАЯ ДАМА - SUPPORTING CAST (второй круг; заведён 11.06.2026, NOVELLS_OS §11.5)
 
-Главный каст: Александр фон Бер, Лига, Эльза/Белая Дама, смотритель Ансис (CANON). Второй круг - община вокруг «Эзермуйжи»: без неё усадьба - декорация, а не место. Сердце проекта - романтика и упокоение, поэтому второй круг тёплый, не «жители мрачной деревни». НЕ LI. Вводить по одному, сценой с функцией.
+Главный каст: Александр фон Бер, Лига, Эльза/Белая Дама, смотритель Ансис (CANON). Второй круг - ДВЕ группы: (1) **местная община** вокруг «Эзермуйжи» (старшие: Озолс/Жанис/Илзе/Берзиньш) - без неё усадьба декорация, а не место; (2) **молодая команда друзей Александра** (~22-28), приехавшая восстанавливать - «семья по выбору», youthful-тепло и руки. Сердце проекта - романтика и упокоение, поэтому второй круг тёплый, не «жители мрачной деревни». НЕ LI. Вводить по одному, сценой с функцией (команда приезжает вместе в Главе 1, спотлайт по одному).
 
 ---
 
@@ -42,13 +42,62 @@
 
 ---
 
+## 🚗 МОЛОДАЯ КОМАНДА - ДРУЗЬЯ АЛЕКСАНДРА (приехали восстанавливать; заведено 17.06)
+
+Александр приезжает в Эзермуйжу НЕ один - с компанией друзей-ровесников (~22-28) из Риги, которые вызвались помочь поднять усадьбу. Это «семья по выбору» сезона: youthful-энергия, банты, тепло против холода озера + рабочие руки. Не местные (в отличие от бригады Илзе) - своя городская команда. Прибывают вместе в Главе 1, но раскрываются СЦЕНОЙ по одному. **НЕ LI** (LI - Лига/Эльза), но между ними своя ткань отношений. Озеро работает с каждым по-своему - команда = и хор тепла, и барометр сверхъестественного.
+
+### 🔧 КАСПАРС (27) - инженер, лучший друг Александра, скептик
+**Кто:** конструктор/инженер, ведёт техническую сторону восстановления; в озеро-легенду не верит принципиально. Правая рука Александра и его «голос рассудка».
+**Функция:** БАРОМЕТР сверхъестественного - всё списывает на физику («это резонанс балок, сквозняк, оседание грунта»); чем сильнее он не может объяснить, тем выше ставка для читателя. Когда дрогнет ОН - страшно по-настоящему.
+**Слабость:** рационализирует до последнего, даже когда надо просто поверить и спасти.
+**Речь:** инженерная точность, сухой юмор («Призраков нет. Есть гниль, грибок и плохая электрика. Я бы их и боялся»).
+**CHARACTER TAG:** `Kaspars, lean practical man around twenty-seven, dark cropped hair, tired sharp eyes, stubble, canvas work jacket over a henley, a folding rule and headlamp, inside a scaffolded manor hall, skeptical grounded energy, film grain warmth, no text, no logos`
+**PORTRAIT PROMPT (ввод - Глава 1, приезд команды):** `Cinematic character portrait of Kaspars, lean practical man around twenty-seven, dark cropped hair, tired sharp grey eyes, light stubble, canvas work jacket over a henley, a folding rule in hand and headlamp pushed up on his forehead, standing under cracked plaster and scaffolding in a decaying manor hall, frowning up at a damp stain on the ceiling he is determined to explain. The rationalist the lake will work hardest on. Gothic-cozy palette of plaster grey, lamp amber and cold window light, soft film grain warmth, Kodak Portra feel. Photorealistic, 8k, cinematic style, rich muted colors, cinematic color grading, editorial photography. Horizontal frame 16:9. No text, no logos.`
+
+### 🎨 МАЙЯ (24) - художница, реставратор портретов, сенситив
+**Кто:** реставрирует портреты и фрески усадьбы; тонкая, романтичная, первой чувствует Белую Даму. Видит то, что прячут краска и время.
+**Функция:** ВИЗУАЛЬНЫЕ УЛИКИ - под слоями краски находит закрашенный портрет Эльзы / изменённую деталь / лицо, которого не должно быть; её чувствительность - сенсор атмосферы озера (открывает мистический слой раньше всех).
+**Слабость:** растворяется в чужих лицах и историях - теряет границу между «чувствую сцену» и «проваливаюсь в неё».
+**Речь:** тихая, образная, разговаривает с портретами («У неё на этом портрете глаза переписаны. Кто-то не хотел, чтобы она смотрела»).
+**CHARACTER TAG:** `Maija, delicate young woman around twenty-four, long wavy auburn hair loosely tied, large sensitive eyes, paint-stained fingers, oversized linen shirt, holding a fine brush before an old portrait in a candlelit manor room, dreamy perceptive aura, film grain warmth, no text, no logos`
+**PORTRAIT PROMPT (ввод - Глава 2-3, первый портрет/улика):** `Cinematic character portrait of Maija, delicate young woman around twenty-four, long wavy auburn hair loosely tied back, large sensitive hazel eyes, paint-stained fingertips, an oversized linen shirt, standing very close to a dim 19th-century portrait of a pale woman, lifting a fine brush as a sliver of overpainted face emerges under solvent, candlelight and lake mist at the window. The first to feel the White Lady, dissolving into other faces. Gothic-cozy palette of candle gold, varnish brown and mist-blue, soft film grain warmth, Kodak Portra feel. Photorealistic, 8k, cinematic style, rich muted colors, cinematic color grading, editorial photography. Vertical frame 9:16. No text, no logos.`
+
+### 📚 АНЕТЕ (23) - историк-исследователь, «ходячий архив»
+**Кто:** аспирантка-историк, потащилась за компанией ради «настоящего полевого материала»; знает легенду об Эльзе лучше местных.
+**Функция:** ДВИГАТЕЛЬ ДЕТЕКТИВА - копает архивы/метрики/дайны, первой формулирует «вторую версию» легенды; связывает находки Илзе и Майи в версию. Комик-факт-машина (тоны юмора через over-share).
+**Слабость:** влюблена в красивую версию правды - может подогнать факты под эффектную теорию.
+**Речь:** факто-сброс с азартом («А вот что любопытно: в метрике её записали утонувшей, но погребли В ОГРАДЕ - самоубийц так не хоронили. Кто-то соврал в одной из двух книг»).
+**CHARACTER TAG:** `Anete, bright young woman around twenty-three, dark bob with reading glasses pushed into her hair, eager curious eyes, layered cardigans, an armful of old books and a notebook, in a dusty manor library of ruined shelves, restless intellectual energy, film grain warmth, no text, no logos`
+**PORTRAIT PROMPT (ввод - Глава 3-4, «вторая версия» легенды):** `Cinematic character portrait of Anete, bright young woman around twenty-three, dark bob with reading glasses pushed up into her hair, eager curious brown eyes, layered cardigans, hugging a stack of old leather books with a notebook on top, perched amid the ruined shelves and scattered papers of a dusty manor library, one lake-misted window behind her, caught mid-thought as she connects two contradicting records. The detective engine, in love with a good version of the truth. Gothic-cozy palette of book brown, dust gold and grey light, soft film grain warmth, Kodak Portra feel. Photorealistic, 8k, cinematic style, rich muted colors, cinematic color grading, editorial photography. Horizontal frame 16:9. No readable text, no logos.`
+
+### 💰 ГУСТАВС (28) - кузен Александра, деньги и логистика
+**Кто:** дальний кузен из той же ветви фон Бер; вложил часть денег в восстановление и держит смету. Прагматик, для кого усадьба - актив, а не призвание.
+**Функция:** ВНУТРЕННЕЕ ДАВЛЕНИЕ на стержень-выбор (восстанавливать vs продать): голос «Зигфрид предлагает хорошие деньги, Саша»; точка, через которую соблазн Зигфрида просачивается в саму команду (потенциальная утечка/трещина в кругу).
+**Слабость:** меряет всё деньгами, потому что однажды их потерял; страх нищеты громче родовой гордости.
+**Речь:** цифры с человеческой тревогой («Это ещё восемьдесят тысяч и зима без крыши. Я не злодей, я бухгалтер твоей мечты»).
+**CHARACTER TAG:** `Gustavs, well-groomed man around twenty-eight, neat light-brown hair, slightly anxious calculating eyes, smart-casual coat too clean for a building site, a tablet and folder, standing apart in a manor hall checking figures, pragmatic out-of-place energy, film grain warmth, no text, no logos`
+**PORTRAIT PROMPT (ввод - Глава 2, смета/предложение Зигфрида):** `Cinematic character portrait of Gustavs, well-groomed man around twenty-eight, neat light-brown hair, slightly anxious calculating blue eyes, a smart-casual wool coat conspicuously too clean for a building site, holding a tablet and a folder of figures, standing a little apart from the restoration mess in a grand decaying hall, glancing toward an unseen offer with divided loyalty. The cousin who prices the dream, fear of ruin louder than pride. Gothic-cozy palette of cool stone, coat camel and dim amber, soft film grain warmth, Kodak Portra feel. Photorealistic, 8k, cinematic style, rich muted colors, cinematic color grading, editorial photography. Horizontal frame 16:9. No text, no logos.`
+
+### 🍲 КАРЛИС (25) - тепло, кухня, мост к деревне
+**Кто:** душа команды; держит всех накормленными и не перессорившимися; легко сходится с людьми. Не реставратор - «снабжение и моральный дух».
+**Функция:** СЕРДЦЕ «семьи по выбору» + МОСТ между городской командой и деревней (первым подружится с общиной Лиги, через него город и село перестают коситься друг на друга); главный носитель юмора и тепла-передышки.
+**Слабость:** гасит любой конфликт едой и шуткой - прячет собственное за заботой о других, копит, пока не прорвёт.
+**Речь:** тёплые подколы, кормит вместо «успокойся» («Призрак, не призрак - а ужин в восемь. Привидения пусть тоже подходят, на всех хватит»).
+**CHARACTER TAG:** `Karlis, warm sturdy young man around twenty-five, tousled sandy hair, easy grin, apron over a flannel shirt, ladle in hand by a big pot on an improvised stove in a manor kitchen, glowing hearth, generous open energy, film grain warmth, no text, no logos`
+**PORTRAIT PROMPT (ввод - Глава 1-2, первый общий ужин):** `Cinematic character portrait of Karlis, warm sturdy young man around twenty-five, tousled sandy hair, an easy grin, a worn apron over a rolled-sleeve flannel shirt, ladle in hand beside a big steaming pot on an improvised stove in a half-restored manor kitchen, a real fire glowing in a huge old hearth behind him, mismatched chairs set for the whole crew. The heart of the chosen family, feeding everyone including the ghosts. Gothic-cozy palette of hearth orange, copper and warm shadow, soft film grain warmth, Kodak Portra feel. Photorealistic, 8k, cinematic style, rich muted colors, cinematic color grading, editorial photography. Horizontal frame 16:9. No text, no logos.`
+
+> 🧵 **Ткань команды:** Каспарс↔Майя - старая невысказанная симпатия (рассудок vs чувство; светлая под-линия, НЕ основная). Густавс - трещина-риск (соблазн Зигфрида внутри круга). Карлис держит всех вместе. Анете+Майя+Илзе вместе вскрывают мистерию (архив+портрет+стена). Введение - команда приезжает в Главе 1 (общая сцена), дальше спотлайт по одному.
+
+---
+
 ## 📋 ОЧЕРЕДЬ ВВОДА (S1 «Озеро помнит», старт ~17.10)
 
 1. **Берзиньш** - Глава 1-2 (передача наследства - естественная завязка).
-2. **Илзе** - Глава 2-3 (начало восстановления; первая находка в стене).
-3. **Жанис** - Глава 3-4 (вход линии Лиги через сопротивление отца).
-4. **Пастор Озолс** - Глава 4-6 (первое обращение к церковным книгам).
+2. **МОЛОДАЯ КОМАНДА приезжает вместе - Глава 1** (Александр не один; общая сцена прибытия, Каспарс/Карлис в кадре сразу), дальше спотлайт по одному: Майя (Г2-3, портрет), Анете (Г3-4, «вторая версия»), Густавс (Г2, смета/Зигфрид), Каспарс-перелом (когда не сможет объяснить).
+3. **Илзе** - Глава 2-3 (местная бригада + первая находка в стене; работает с командой).
+4. **Жанис** - Глава 3-4 (вход линии Лиги через сопротивление отца; Карлис наводит мост).
+5. **Пастор Озолс** - Глава 4-6 (первое обращение к церковным книгам).
 
-**Повышение:** кандидаты в сюжетный каст S2 «Воля озера» - Илзе, пастор Озолс.
+**Повышение:** кандидаты в сюжетный каст S2 «Воля озера» - Илзе, пастор Озолс; из молодой команды - **Каспарс** (скептик-перелом) и **Майя** (сенситив-улики).
 
 *Не удалять. Новые лица второго круга - сюда, с тиком и тегом, до первого появления в кадре.*

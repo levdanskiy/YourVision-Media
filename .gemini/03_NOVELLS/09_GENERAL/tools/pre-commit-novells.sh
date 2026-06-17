@@ -69,7 +69,7 @@ done
 # ============================================
 # CHECK 2: Character names in image prompts (WARNING)
 # ============================================
-KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|V-DYNAMO|Weiss|Stil|Vitri|Clerc|Helena|Stefan|Victoria|Maximilian|Laurent|Nikolya|Sophie|Camille|Valentina|Bruno|Marcel|Adelina|Hugo|Lindt|Andre|Jan|Mikas|Dorian|Felix|Oeron|Elias|Reinis|Marta|Elara|Alaric|Simas|Vika|Ula|Anya|Strazds|Kalejs|Greta|Foss|Theo|Renata|Alexander|Elza|Liga|Ansis|Ozols|Zanis|Ilze|Berzins|Snegurochka|Lel|Mizgir|Moroz|Vesna|Siegfried"
+KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|V-DYNAMO|Weiss|Stil|Vitri|Clerc|Helena|Stefan|Victoria|Maximilian|Laurent|Nikolya|Sophie|Camille|Valentina|Bruno|Marcel|Adelina|Hugo|Lindt|Andre|Jan|Mikas|Dorian|Felix|Oeron|Elias|Reinis|Marta|Elara|Alaric|Simas|Vika|Ula|Anya|Strazds|Kalejs|Greta|Foss|Theo|Renata|Alexander|Elza|Liga|Ansis|Ozols|Zanis|Ilze|Berzins|Kaspars|Maija|Anete|Gustavs|Karlis|Snegurochka|Lel|Mizgir|Moroz|Vesna|Siegfried"
 GENERIC_DESCRIPTORS="young woman|young man|professional woman|tall woman|tall man|petite woman|young professional|woman in her|man in his|middle-aged woman|middle-aged man"
 
 for file in $STAGED; do

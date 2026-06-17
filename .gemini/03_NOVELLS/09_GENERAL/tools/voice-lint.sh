@@ -188,7 +188,7 @@ fi
 # Check 6: Image prompt has character name (Novells only, skip for YV)
 # ============================================
 if [ "$PROJECT" != "yv" ] && [ "$PROJECT" != "yourvision" ] && [ -n "$PROMPT" ]; then
-  KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|Victoria|Maximilian|Laurent|Nikolya|Sophie|Camille|Valentina|Bruno|Marcel|Adelina|Hugo|Lindt|Andre|Jan|Mikas|Dorian|Felix|Oeron|Elias|Marta|Elara|Simas|Vika|Ula|Anya|Strazds|Kalejs|Greta|Foss|Theo|Renata|Alexander|Elza|Liga|Ansis|Ozols|Zanis|Ilze|Berzins|Snegurochka|Lel|Mizgir|Moroz|Vesna|Helena|Stefan"
+  KNOWN_NAMES="Alex|Theodora|Erik|Marco|KORYNNYA|Korynnya|Julien|Klara|Linus|Klavis|Adrian|Leon|Damien|Beatrice|Isabella|Khloe|Chloe|Nora|Max|Lukas|Berg|Vossen|Johansson|Victoria|Maximilian|Laurent|Nikolya|Sophie|Camille|Valentina|Bruno|Marcel|Adelina|Hugo|Lindt|Andre|Jan|Mikas|Dorian|Felix|Oeron|Elias|Marta|Elara|Simas|Vika|Ula|Anya|Strazds|Kalejs|Greta|Foss|Theo|Renata|Alexander|Elza|Liga|Ansis|Ozols|Zanis|Ilze|Berzins|Kaspars|Maija|Anete|Gustavs|Karlis|Snegurochka|Lel|Mizgir|Moroz|Vesna|Helena|Stefan"
   GENERIC="young woman|young man|professional woman|tall woman|tall man|petite woman|young professional|woman in her|man in his"
 
   has_generic=$(echo "$PROMPT" | grep -E -i "$GENERIC" || true)
