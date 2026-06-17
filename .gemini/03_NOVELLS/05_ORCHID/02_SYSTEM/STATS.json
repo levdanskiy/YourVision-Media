@@ -3,20 +3,20 @@
   "project": "ORCHID",
   "season": 1,
   "current_phase": "Блок II",
-  "current_chapter": 8,
-  "last_updated": "2026-06-17",
+  "current_chapter": 9,
+  "last_updated": "2026-06-18",
   "notes": "Аффинити LI (Максимилиан/Николя/Лоран) + HEAT-счётчик Софи. Сюжетные (Софи/Камилла/Валентина) - не по порогам. Николя кап 99 до финала. Не-опросные беаты (интим +8, заряж +3, правда +7) применять вручную сюда. Поля concept - сокращённо, полные в AFFINITY_UNLOCKS.md.",
   "characters": {
     "maximilian": {
       "name": "Максимилиан",
       "role": "Глава безопасности Траста (LI ведущая)",
       "affinity": {
-        "current": 34,
+        "current": 37,
         "cap": 100,
         "unlocks": {
           "25": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "OR-18.06-11-30-DOSSIER-MAXIMILIAN",
             "type": "DOSSIER",
             "concept": "утренний заплыв один без охраны"
           },
@@ -38,14 +38,23 @@
             "type": "SHADOW_HOOK",
             "concept": "🔒 он ставил подпись на ордере в ночь, когда сожгли дело Виктории"
           }
-        }
+        },
+        "history": [
+          {
+            "chapter": 9,
+            "delta": 3,
+            "from": 34,
+            "to": 37,
+            "reason": "не-опросный беат: выбрала НЕ использовать его для Женевы = доверие/уважение (Г9 10:00)"
+          }
+        ]
       }
     },
     "nikolya": {
       "name": "Николя",
       "role": "Тень, старый союзник (LI)",
       "affinity": {
-        "current": 17,
+        "current": 22,
         "cap": 99,
         "unlocks": {
           "25": {
@@ -72,7 +81,17 @@
             "type": "SHADOW_HOOK",
             "concept": "🔒 = ответ на мистерию предал/сгорел; ТОЛЬКО финал, две версии"
           }
-        }
+        },
+        "history": [
+          {
+            "day": 10,
+            "poll_id": "or-1-g8-q2",
+            "delta": 5,
+            "from": 17,
+            "to": 22,
+            "reason": "выбор в пользу героя: спросила и отпустила = доверие/партнёрство над допросом"
+          }
+        ]
       }
     },
     "laurent": {
@@ -112,7 +131,7 @@
   },
   "heat": {
     "name": "HEAT - счётчик Софи (видимая цена шума)",
-    "current": 6,
+    "current": 7,
     "max": 10,
     "thresholds": {
       "3": "НАБЛЮДЕНИЕ",
@@ -120,6 +139,14 @@
       "7": "ОПЕРАЦИЯ",
       "10": "КРИЗИС"
     },
-    "history": []
+    "history": [
+      {
+        "chapter": 9,
+        "delta": 1,
+        "from": 6,
+        "to": 7,
+        "reason": "взлом узла Женева (Orchid Window) = +1; порог 7 = ОПЕРАЦИЯ"
+      }
+    ]
   }
 }
