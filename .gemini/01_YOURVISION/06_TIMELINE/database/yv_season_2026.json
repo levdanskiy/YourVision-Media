@@ -337,6 +337,15 @@
             "status": "SCHEDULED"
         },
         {
+            "id": "JESC_MK_REPRESENTATIVE_ANNOUNCE",
+            "date": "2026-06-17",
+            "time": "09:15",
+            "country": "North Macedonia",
+            "event": "MRT: Ана Стояноска представит Северную Македонию на Детском Евровидении-2026",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
             "id": "EU_PROMO_MARGINALIA",
             "date": "2026-06-17",
             "time": "13:00",

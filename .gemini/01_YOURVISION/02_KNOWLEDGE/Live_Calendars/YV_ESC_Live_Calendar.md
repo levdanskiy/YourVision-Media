@@ -78,6 +78,7 @@
 | 16.06 | 17:15 | 🇱🇺 LUX | RTL: Люксембург гарантировал участие в Евровидении до 2029 года | COVERED | `04_CONTENT/2026/06/16/YV-16.06-17-15-LU-LSC-2027-Dates.md` |
 | 16.06 | 19:20 | 🇪🇺 EU | AllMix Vibe Shift 2026: результаты чарта новинок | COVERED | `04_CONTENT/2026/06/16/YV-16.06-19-20-EU-AllMix-Vibe-Shift-Results.md` |
 | 16.06 | 22:45 | 🇷🇺 RUS | PROMO: Телеграм-канал «Республика ЧЯД» | COVERED | `04_CONTENT/2026/06/16/YV-16.06-22-45-RU-Promo-CHYAD.md` |
+| 17.06 | 09:15 | 🇲🇰 MKD | MRT: Ана Стояноска представит Северную Македонию на Детском Евровидении-2026 | COVERED | `04_CONTENT/2026/06/17/YV-17.06-09-15-MK-JESC-Ana-Stojanoska.md` |
 | 17.06 | 13:00 | 🇪🇺 EU | PROMO: Телеграм-канал «ALMANAC: MARGINALIA» | COVERED | `04_CONTENT/2026/06/17/YV-17.06-13-00-EU-Promo-Marginalia.md` |
 | 18.06 | 14:00 | 🇪🇺 EU | PROMO: Телеграм-канал «CORE Novellas» | COVERED | `04_CONTENT/2026/06/18/YV-18.06-14-00-EU-Promo-Core.md` |
 | 21.06 | TBA | 🇧🇩 BGD | Евровидение Азия: Бангладеш - объявление 12 финалистов (NTV) | PENDING |  |
