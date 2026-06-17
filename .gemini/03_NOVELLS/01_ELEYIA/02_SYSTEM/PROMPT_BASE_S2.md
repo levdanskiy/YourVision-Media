@@ -6,11 +6,12 @@
 
 ## 📷 БАЗОВЫЙ ХВОСТ (фотореализм)
 
-`Photorealistic, 8k, cinematic style, high-end editorial photography, shot on Kodak Portra 800, cinematic color grading, high contrast, rich colors, muted Baltic light, Riga neon reflections where urban, warm amber practical glow. <aspect frame>. No text, no logos.`
+`Photorealistic, 8k, cinematic style, high-end editorial photography, shot on Kodak Portra 800, cinematic color grading, high contrast, rich colors, contemporary near-future setting, modern clothing and tech, muted Baltic light, Riga neon reflections where urban, warm amber practical glow. <aspect frame>. No text, no logos.`
 
 - **Aspect:** `Vertical frame 9:16` / `Horizontal frame 16:9` / `Square frame 1:1` (текстом, без Midjourney-флагов - платформа Reve).
-- **БАН (теперь наоборот):** `painterly`, `hand-drawn`, `illustrated`, `watercolor`, `Arcane-style`, `cartoon` - НЕ использовать (Eleyia больше НЕ рисованная). Фактура - фотореалистичная, как у KM/Orchid.
-- **Синестетический акцент (фирменное, но РЕАЛИСТИЧНО):** один цветовой акцент-«вкус» сцены как НАСТОЯЩИЙ световой эффект - `a faint colored light-bloom / rim light in [steel-blue / storm-violet / pastel-cream / amber] (real lens/practical light, NOT a painted bleed)`. Цвет = вид/эмоция доминирующего героя (эльф - сталь, инкуб - гроза, человек - пастель, сатир - тёплая земля/мёд).
+- **БАН:** `painterly`, `hand-drawn`, `illustrated`, `watercolor`, `Arcane-style`, `cartoon` (Eleyia НЕ рисованная); а также `high fantasy`, `medieval`, `ethereal mystical` - мир СОВРЕМЕННЫЙ, не сказочно-средневековый.
+- **🆕 ЭФФЕКТЫ - УЗНАВАЕМЫ, НО СОВРЕМЕННЫЕ (уточнение 18.06):** видовые эффекты ВИДНЫ (понятно, кто какого вида: уши/рога/клыки/свечение-резонанс/аура), НО в современной/near-future подаче, не мистико-фэнтезийной. Свечение/резонанс - как **тонкая био-тех/под-кожная LED-подсветка** (`subtle bio-luminescent / under-skin LED-like glow`), ауры - как **реальный цветной свет/неон**, не магический ореол. Среда и одежда - современные (Рига near-future, лицей-хайтек), а не замок/мантии. Узнаваемость вида + приземлённый современный реализм.
+- **Синестетический акцент (фирменное, реалистично и современно):** один цветовой акцент-«вкус» сцены как НАСТОЯЩИЙ световой эффект - `a faint colored light-bloom / rim light in [steel-blue / storm-violet / pastel-cream / amber] (real lens / practical neon, NOT a painted bleed)`. Цвет = вид/эмоция доминирующего героя (эльф - сталь, инкуб - гроза, человек - пастель, сатир - тёплая земля/мёд).
 
 ## 👥 ВИДОВЫЕ МАРКЕРЫ - ОБЯЗАТЕЛЬНЫ В КАЖДОМ ПОРТРЕТЕ (реалистично, не рисовать всех людьми)
 
