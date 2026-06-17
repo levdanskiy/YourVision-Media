@@ -355,6 +355,24 @@
             "status": "SCHEDULED"
         },
         {
+            "id": "ESC_2026_JURY_EXPLANATION",
+            "date": "2026-06-17",
+            "time": "16:00",
+            "country": "Europe",
+            "event": "EBU: Объяснены составы жюри из шести человек на Евровидении-2026",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
+            "id": "JESC_GB_WITHDRAWAL_2026",
+            "date": "2026-06-17",
+            "time": "18:00",
+            "country": "United Kingdom",
+            "event": "BBC: Великобритания подтвердила неучастие в Детском Евровидении-2026",
+            "type": "RELEASE",
+            "status": "SCHEDULED"
+        },
+        {
             "id": "EU_PROMO_CORE",
             "date": "2026-06-18",
             "time": "14:00",

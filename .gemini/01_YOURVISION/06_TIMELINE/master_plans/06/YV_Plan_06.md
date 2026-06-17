@@ -67,6 +67,8 @@
 ### 17.06 (Ср)
 * 09:15 | **YV** | ⚡ **#NEWS_WIRE:** Северная Македония: Ана Стояноска представит страну на Детском Евровидении-2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/17/YV-17.06-09-15-MK-JESC-Ana-Stojanoska.md`)
 * 13:00 | **YV** | 📢 **#PROMO:** Almanac: Marginalia: Реклама ТГ-канала. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/17/YV-17.06-13-00-EU-Promo-Marginalia.md`)
+* 16:00 | **YV** | ⚡ **#NEWS_WIRE:** EBU: Разъяснения по поводу составов жюри из шести человек. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/17/YV-17.06-16-00-EU-EBU-Jury-Size.md`)
+* 18:00 | **YV** | ⚡ **#NEWS_WIRE:** Великобритания: BBC не примет участия в Детском Евровидении-2026. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/17/YV-17.06-18-00-GB-JESC-Withdrawal.md`)
 
 ### 18.06 (Чт)
 * 14:00 | **YV** | 📢 **#PROMO:** Core Novellas: Реклама ТГ-канала. - ✅ [ГОТОВО] (SCHEDULED: `04_CONTENT/2026/06/18/YV-18.06-14-00-EU-Promo-Core.md`)
