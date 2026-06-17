@@ -269,14 +269,14 @@ for proj in "${!SIGS[@]}"; do
 done
 
 # ============================================
-# Check 11: Eleyia S2 texture (painterly, BLOCKING)
+# Check 11: Eleyia S2 texture (РЕАЛИСТИЧНЫЙ лин; реверс 18.06.2026 по указанию пользователя)
 # ============================================
 if [ "$PROJECT" = "eleyia" ] && [ -n "$PROMPT" ]; then
-  found=$(echo "$PROMPT" | grep -iE "Kodak Portra|photorealistic|editorial photography" || true)
+  found=$(echo "$PROMPT" | grep -iE "painterly|hand-drawn|illustrated|watercolor|Arcane|cartoon" || true)
   if [ -n "$found" ]; then
-    echo "❌ Eleyia: фотореалистичный хвост в промпте (Portra/photorealistic/editorial)."
-    echo "    Лин Eleyia = painterly hand-drawn (PROMPT_BASE_S2.md) - фактуры проектов разведены"
-    ERRORS=$((ERRORS + 1))
+    echo "⚠️  Eleyia: РИСОВАННЫЙ хвост в промпте (painterly/hand-drawn/illustrated)."
+    echo "    Eleyia теперь ФОТОРЕАЛИСТИЧНА (реверс 18.06): лин = Photorealistic/Kodak Portra (PROMPT_BASE_S2.md)"
+    WARNINGS=$((WARNINGS + 1))
   fi
 fi
 
