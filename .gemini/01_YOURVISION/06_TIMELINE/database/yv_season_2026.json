@@ -389,6 +389,15 @@
             "event": "Luxembourg Song Contest 2027 (Финал)",
             "type": "FINAL",
             "status": "PLANNED"
+        },
+        {
+            "id": "NO_MGP_2027_SUBMISSIONS_DEADLINE",
+            "date": "2026-08-31",
+            "time": "23:59",
+            "country": "Norway",
+            "event": "NRK: Дедлайн приема заявок на MGP 2027",
+            "type": "RELEASE",
+            "status": "PLANNED"
         }
     ],
     "winners": {
