@@ -4,6 +4,15 @@
 
 ---
 
+## 🪞 САБИНА (33) - свидетель с берега (СЮЖЕТНАЯ ФИГУРА, не второй круг; тег здесь для VISUAL)
+
+**Кто:** выжившая той же ночи, что «сожгла» Викторию пять лет назад - была рядом, тоже стёрта, ушла на дно, вернулась. Прислала свечу с запахом мёда («Я тоже помню»). Идёт к той же цели «с другой стороны двери»: охотится на ту же руку (🔒 архитектор, лок блока III). НЕ родственница, НЕ мнимо мёртвая (БАН-мотивы KM). Введена Г12 (21.06).
+**Функция:** зеркало настоящей Виктории (единственная, кому не надо лгать) + второй охотник на главную дичь = союзник-или-соперница; питает мистерию архитектора и мистерию Николя (проксимальный предатель открыт).
+**Слабость:** пять лет одной ненависти сузили её до одной цели - тем, кто видит только мишень, легко подсунуть ложную.
+**Речь:** прямая, без украшений, с паузами человека, что разучился говорить лишнее; правду подаёт как факт, не как оружие.
+**CHARACTER TAG:** `Sabina, striking woman around thirty-three, dark auburn hair, steady knowing hazel eyes, plain elegant clothes worn like armour, a survivor's still composure, faint old burn-scar trace at one wrist, no text, no logos`
+**PORTRAIT PROMPT (карточка/превью; ввод Г12):** `Cinematic character portrait of Sabina, striking woman around thirty-three, dark auburn hair, steady knowing hazel eyes that have seen too much, plain elegant clothes worn like armour, a survivor's quiet composure, a faint old burn-scar trace at one wrist, standing by a dusty old-town gallery window in wax-amber light, holding an unlit handmade candle. A witness from the same fire, neither friend nor enemy yet. Warm tactile film grain, candle-amber and dusty grey palette, sensual heist-romance mystery. Photorealistic, 8k, cinematic style, rich colors, cinematic color grading, editorial photography, shot on Kodak Portra 800. Horizontal frame 16:9. No readable text, no logos.`
+
 ## 🍷 БРУНО (62) - «старый канал»
 
 **Кто:** хозяин бара «Каботаж» в старом порту; в прошлой жизни - лучший «архивист» серого мира: доставал бумаги, которых не существует. Виктория когда-то спасла его от той же системы, что сожгла её, - он остался должен. УЖЕ ДЕЙСТВОВАЛ: запрос и протокол Главы 3 - его работа.
