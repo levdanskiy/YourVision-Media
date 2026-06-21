@@ -425,6 +425,24 @@
             "event": "France 2: Alec объявлен представителем Франции на Детском Евровидении-2026",
             "type": "RELEASE",
             "status": "DONE"
+        },
+        {
+            "id": "KH_ASIA_2026_SUBMISSIONS",
+            "date": "2026-06-21",
+            "time": "TBA",
+            "country": "Cambodia",
+            "event": "Cambodia's Finest Voice: Открыт прием заявок",
+            "type": "RELEASE",
+            "status": "DONE"
+        },
+        {
+            "id": "KH_ASIA_2026_FINAL",
+            "date": "2026-09-01",
+            "time": "TBA",
+            "country": "Cambodia",
+            "event": "Cambodia's Finest Voice: Национальный финал",
+            "type": "FINAL",
+            "status": "PLANNED"
         }
     ],
     "winners": {

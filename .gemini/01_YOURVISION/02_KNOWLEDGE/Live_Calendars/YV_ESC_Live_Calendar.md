@@ -84,6 +84,7 @@
 | 17.06 | 18:00 | 🇬🇧 GBR | BBC: Великобритания подтвердила неучастие в Детском Евровидении-2026 | COVERED | `04_CONTENT/posts/2026/06/18/YV-18.06-17-15-GB-JESC-Withdrawal.md` |
 | 18.06 | 14:00 | 🇪🇺 EU | PROMO: Телеграм-канал «CORE Novellas» | COVERED | `04_CONTENT/2026/06/18/YV-18.06-14-00-EU-Promo-Core.md` |
 | 21.06 | TBA | 🇫🇷 FRA | France 2: Alec объявлен представителем Франции на Детском Евровидении-2026 | COVERED | `04_CONTENT/posts/2026/06/21/YV-21.06-11-20-FR-JESC-Representative.md` |
+| 21.06 | TBA | 🇰🇭 KHM | Cambodia's Finest Voice: Открыт прием заявок | COVERED | `04_CONTENT/posts/2026/06/21/YV-21.06-11-20-KH-Eurovision-Asia.md` |
 | 21.06 | TBA | 🇧🇩 BGD | Евровидение Азия: Бангладеш - объявление 12 финалистов (NTV) | PENDING |  |
 | 30.06 | TBA | 🇰🇷 KOR | Евровидение Азия: Южная Корея - дедлайн подачи заявок (ENA) | PENDING |  |
 | 30.06 | 23:59 | 🇦🇲 ARM | AMPTV: Дедлайн приема заявок на Детское Евровидение-2026 | PENDING |  |
@@ -122,6 +123,7 @@
 | Дата | Время | Страна | Событие | Статус | Пост |
 |---|---|---|---|---|---|
 | 04.09 | TBA | 🇰🇷 KOR | Евровидение Азия: Южная Корея - национальный финал (ENA) | PENDING |  |
+| нач. сент | TBA | 🇰🇭 KHM | Cambodia's Finest Voice: Национальный финал | PENDING |  |
 | 19.09 | TBA | 🇳🇵 NEP | Евровидение Азия: Непал - национальный финал (Himalaya TV) | PENDING |  |
 | 19.09 | 20:20-21:15 | 🇳🇱 NLD | Junior Songfestival 2026 - Финал (19:20-20:15 CEST) | PENDING |  |
 | TBA сент | TBA | 🇲🇪 MNE | Eurovision Workshop - Тиват, Черногория | PENDING |  |
