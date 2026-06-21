@@ -3,8 +3,8 @@
   "project": "ORCHID",
   "season": 1,
   "current_phase": "Блок II",
-  "current_chapter": 12,
-  "last_updated": "2026-06-20",
+  "current_chapter": 13,
+  "last_updated": "2026-06-21",
   "notes": "Аффинити LI (Максимилиан/Николя/Лоран) + HEAT-счётчик Софи. Сюжетные (Софи/Камилла/Валентина) - не по порогам. Николя кап 99 до финала. Не-опросные беаты (интим +8, заряж +3, правда +7) применять вручную сюда. Поля concept - сокращённо, полные в AFFINITY_UNLOCKS.md.",
   "characters": {
     "maximilian": {

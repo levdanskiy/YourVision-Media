@@ -27,11 +27,13 @@
 | Глава | Трек | Тон |
 |-------|------|-----|
 | ранние (блок I) | Hooverphonic - Mad About You | соблазн/вход |
+| Г3 (блок I) | Portishead - Glory Box | прошлое/боль (УЖЕ был - не повторять трек) |
 | Г8 | Massive Attack - Teardrop | напряжение |
 | Г9 | Massive Attack - Risingson | напряжение |
 | Г10 | Massive Attack - Angel | дред/слежка |
 | Г11 | Massive Attack - Protection | защита/тепло |
 | Г12 | **Lana Del Rey - West Coast** | кураж/Ривьера-нуар (СМЕНА артиста - конец стрика MA) |
+| Г13 | **Mazzy Star - Fade Into You** | возврат Николя/тяга-прошлое (Glory Box был в Г3 - взят др. трек) |
 
 **Следующие (предложения, чтобы не думать в спешке):** Г13 (возврат Николя, близость/прошлое) → Portishead - Glory Box или Mazzy Star - Fade Into You · Г14 (блок-клифф, предательство) → Florence + The Machine - Seven Devils или Nancy Sinatra - Bang Bang.
 
