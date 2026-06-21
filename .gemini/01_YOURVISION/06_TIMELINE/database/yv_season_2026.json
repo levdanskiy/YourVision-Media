@@ -398,6 +398,33 @@
             "event": "NRK: Дедлайн приема заявок на MGP 2027",
             "type": "RELEASE",
             "status": "PLANNED"
+        },
+        {
+            "id": "AM_JESC_2026_SUBMISSIONS_DEADLINE",
+            "date": "2026-06-30",
+            "time": "23:59",
+            "country": "Armenia",
+            "event": "AMPTV: Дедлайн приема заявок на Детское Евровидение-2026",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
+            "id": "AM_JESC_2026_AUDITIONS",
+            "date": "2026-07-03",
+            "time": "TBA",
+            "country": "Armenia",
+            "event": "AMPTV: Старт живых прослушиваний (3-12 июля)",
+            "type": "RELEASE",
+            "status": "PLANNED"
+        },
+        {
+            "id": "FR_JESC_2026_ARTIST",
+            "date": "2026-06-21",
+            "time": "TBA",
+            "country": "France",
+            "event": "France 2: Alec объявлен представителем Франции на Детском Евровидении-2026",
+            "type": "RELEASE",
+            "status": "DONE"
         }
     ],
     "winners": {
