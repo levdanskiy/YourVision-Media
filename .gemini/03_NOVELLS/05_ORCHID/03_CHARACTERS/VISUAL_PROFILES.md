@@ -4,6 +4,7 @@
 **Второй круг** (Бруно/Марсель/Аделина/Линдт/Андре): теги - в `02_SYSTEM/SUPPORTING_CAST.md` (правило имён-в-промптах действует и на них).
 Фон: `Mediterranean coast, warm golden light, luxury yacht or casino interior`
 Технические параметры (платформа Reve, БЕЗ Midjourney-флагов): `Photorealistic, 8k, cinematic style, high contrast, rich colors, cinematic color grading, editorial photography, shot on Kodak Portra 800` + формат текстом: `Horizontal frame 16:9` / `Vertical frame 9:16` / `Square frame 1:1`. No text, no logos. (НЕ использовать --ar/--v/--style/--s.)
+> 🎥 **ВАРИАТИВНОСТЬ КОМПОЗИЦИИ ГОРИЗОНТАЛЬНЫХ КАДРОВ (указание 22.06):** не лепить «cinematic two-shot» в каждой 16:9 - варьировать тип плана/ракурс: **establishing wide** (герой мал в роскошном пространстве) · **over-the-shoulder** · **low/high angle** · **profile/silhouette против света** · **отражение** (зеркало/стекло/вода) · **через предмет** (бокал, штора, перила на переднем плане) · **extreme close** (часть лица/рука) · **environmental** (герой + говорящая деталь мира). Чередовать по ходу Главы и между Главами - каждый горизонт ≠ предыдущему по композиции.
 
 ---
 

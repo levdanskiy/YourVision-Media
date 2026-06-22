@@ -34,6 +34,7 @@
 | Г11 | Massive Attack - Protection | защита/тепло |
 | Г12 | **Lana Del Rey - West Coast** | кураж/Ривьера-нуар (СМЕНА артиста - конец стрика MA) |
 | Г13 | **Mazzy Star - Fade Into You** | возврат Николя/тяга-прошлое (Glory Box был в Г3 - взят др. трек) |
+| Г14 | **Florence + The Machine - Seven Devils** | «та ночь»/месть/пожар (флешбек) |
 
 **Следующие (предложения, чтобы не думать в спешке):** Г13 (возврат Николя, близость/прошлое) → Portishead - Glory Box или Mazzy Star - Fade Into You · Г14 (блок-клифф, предательство) → Florence + The Machine - Seven Devils или Nancy Sinatra - Bang Bang.
 
