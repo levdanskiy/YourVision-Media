@@ -1,0 +1,13 @@
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_allmix_sync.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_card_generator.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_chart_info.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_chart_watchdog.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_energy_visualizer.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_hub_sync.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/yv_qc_validator.py
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/YV_Charts_History.md
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/YV_Charts_Manual.md
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/YV_Charts_Schedule.md
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/generated_cards.txt
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/summer_light_nominees.txt
+/home/levdanskiy/.gemini/01_YOURVISION/09_CHARTS/tools/test_tracklist.txt

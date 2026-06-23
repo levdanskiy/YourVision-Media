@@ -36,9 +36,11 @@ VALID_ZONES = {
 }
 NON_EUROPEAN = VALID_ZONES - {"Europe"}
 THEME_BY_SLOT = {
-    "10:04": "10:04 myths/tales/omens/divination/personae",
+    "10:04": "morning myths/tales/omens/divination/personae",
+    "09:04": "morning myths/tales/omens/divination/personae",
     "15:04": "15:04 food/desserts/baking/bread/foodways",
-    "18:02": "18:02 calendar/ritual/time/feast",
+    "18:02": "evening calendar/ritual/time/feast",
+    "21:04": "evening calendar/ritual/time/feast",
 }
 REQUIRED_UNDERREPRESENTED = [
     {"Africa", "African Diaspora"},
@@ -161,7 +163,7 @@ def main() -> int:
 
     print("## Theme Coverage")
     print()
-    for theme in THEME_BY_SLOT.values():
+    for theme in dict.fromkeys(THEME_BY_SLOT.values()):
         zones = by_theme_zone.get(theme, Counter())
         print(f"### {theme}")
         if zones:

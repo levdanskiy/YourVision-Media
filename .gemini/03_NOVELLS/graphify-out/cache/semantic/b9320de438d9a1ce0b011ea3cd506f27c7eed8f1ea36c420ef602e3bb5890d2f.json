@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "05_orchid_protocol_document", "target": "05_orchid_circle_of_thursday", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "05_ORCHID/04_CONTENT/2026/06/14/OR-14.06-20-00-CLIFFHANGER.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

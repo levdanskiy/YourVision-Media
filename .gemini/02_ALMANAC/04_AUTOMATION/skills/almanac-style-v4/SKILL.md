@@ -1,28 +1,27 @@
 ---
 name: almanac-style-v4
-description: Use when revising Almanac posts for contemporary V4 tone, hook strength, visual prompt quality, no-regional-anchor discipline, no engagement bait, and modern carousel/search/screenshot-compatible structure.
+description: Revise Almanac hooks, pacing, structure, endings and visual prompts into the current bold editorial voice. Use for tone modernization, post rewrites, visual QA, or format experiments.
 ---
 
 # Almanac Style V4
 
-Primary references:
-- `01_BIBLES/VOICE_LEXICON.md`
-- `01_BIBLES/CONTEMPORARY_STYLE_GUIDE.md`
-- `01_BIBLES/VISUAL_SYSTEM.md`
-- `01_BIBLES/PRE_PUBLISH_CHECKLIST.md`
+Read `VOICE_LEXICON.md`, `CONTEMPORARY_STYLE_GUIDE.md` and `VISUAL_SYSTEM.md`.
 
-Style rules:
-- Open with a concrete image, conflict, object, date, or sensory detail.
-- Keep the voice quiet, precise, tactile, and modern.
-- Do not use engagement bait, moralizing endings, pseudo-mystical fog, or explanatory filler.
-- Do not make Riga, Latvia, the Baltics, Europe, or any region the default editorial center.
-- Divination content is cultural history and visual practice, not advice or prediction.
-- Visual prompts must describe a photographable scene, include `no text` and `no logos`, and end with `shot on 35mm film Kodak Portra 800`.
-- Use `**Visual Prompt:**`, not the old prompt label.
+## Edit Standard
 
-Run targeted checks:
+- Open with a concrete image or action in the present tense.
+- Prefer tactile nouns, precise verbs and visible evidence over explanation.
+- Vary post architecture: dossier, field note, split-screen comparison, ledger, timeline, recipe protocol or compact list.
+- Do not moralize, beg for reactions or append generic questions.
+- Keep visual prompts photographable, inspectable and distinct from the previous 30 days.
+- For scheduled/published posts, validate the real image file, ALT, rights and approval/use state.
+- Treat trend devices as experiments with a hypothesis, not permanent decoration.
+
+Run:
 
 ```bash
 python3 tools/audit_style.py YYYY MM DD
-python3 tools/preflight_day.py YYYY MM DD
+python3 tools/almanac visuals YYYY-MM-DD
+python3 tools/almanac assets audit YYYY-MM-DD --strict
+python3 tools/almanac doctor YYYY-MM-DD
 ```

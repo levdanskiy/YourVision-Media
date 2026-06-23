@@ -16,6 +16,7 @@ from validate_almanac import ROOT, rel, service_metadata  # noqa: E402
 
 CONTENT = ROOT / "02_CONTENT" / "2026"
 ACTIVE_FROM = (2026, 7, 7)
+TIME_CHANGE_FROM = (2026, 7, 17)
 VALID_STATUSES = {"READY", "ГОТОВ", "SCHEDULED", "PUBLISHED"}
 VALID_SV_TYPES = {
     "POLL",
@@ -28,6 +29,8 @@ VALID_SV_TYPES = {
     "COLLAB-NOTE",
     "VISUAL-ESSAY",
     "READER-NOTE",
+    "QUIZ",
+    "MONTHLY-ALBUM",
     "ORACLE-NOTE",
     "CALENDAR-RADAR",
 }
@@ -52,6 +55,11 @@ FORBIDDEN_ORACLE = (
     "карты требуют",
     "звёзды требуют",
     "звезды требуют",
+    "вы встретите",
+    "вы потеряете",
+    "вы заработаете",
+    "вы заболеете",
+    "отношения решатся",
     "вложите",
     "инвестируйте",
     "лечит",
@@ -75,11 +83,20 @@ def file_date(match: re.Match[str]) -> tuple[int, int, int]:
 
 
 def body_text(text: str) -> str:
+    source_lines = text.splitlines()
+    start = 0
+    if source_lines and source_lines[0] == "---":
+        start = 1
+        while start < len(source_lines) and source_lines[start] != "---":
+            start += 1
+        if start < len(source_lines):
+            start += 1
+
     lines = []
-    for line in text.splitlines():
+    for line in source_lines[start:]:
         if line.startswith("//"):
             continue
-        if line.startswith("---"):
+        if line == "---":
             break
         lines.append(line)
     return "\n".join(lines).strip()
@@ -144,8 +161,9 @@ def audit_file(path: Path) -> list[Finding]:
         if not 400 <= length <= 900:
             findings.append(Finding("WARN", path, f"SV body length {length} outside 400-900"))
     else:
-        if hour != "21" or minute != "04":
-            findings.append(Finding("ERROR", path, "SP special posts must use 21:04"))
+        expected_sp_slot = ("18", "04") if date_tuple >= TIME_CHANGE_FROM else ("21", "04")
+        if (hour, minute) != expected_sp_slot:
+            findings.append(Finding("ERROR", path, f"SP special posts must use {expected_sp_slot[0]}:{expected_sp_slot[1]}"))
         if not 900 <= length <= 1600:
             findings.append(Finding("WARN", path, f"SP body length {length} outside 900-1600"))
 
@@ -168,6 +186,10 @@ def audit_cadence(files: list[Path]) -> list[Finding]:
     sv_by_day: dict[tuple[int, int, int], list[Path]] = defaultdict(list)
     sp_by_month: dict[int, list[Path]] = defaultdict(list)
     direction_by_month: dict[int, list[Path]] = defaultdict(list)
+    oracle_by_week: dict[tuple[int, int], list[Path]] = defaultdict(list)
+    radar_by_week: dict[tuple[int, int], list[Path]] = defaultdict(list)
+    quiz_by_month: dict[int, list[Path]] = defaultdict(list)
+    monthly_album_by_month: dict[int, list[Path]] = defaultdict(list)
 
     for path in files:
         match = SERVICE_NAME.match(path.name)
@@ -182,6 +204,14 @@ def audit_cadence(files: list[Path]) -> list[Finding]:
             sv_by_day[(year, month, day)].append(path)
             if service_type == "DIRECTION-PULSE":
                 direction_by_month[month].append(path)
+            if service_type == "ORACLE-NOTE":
+                oracle_by_week[(month, week)].append(path)
+            if service_type == "CALENDAR-RADAR":
+                radar_by_week[(month, week)].append(path)
+            if service_type == "QUIZ":
+                quiz_by_month[month].append(path)
+            if service_type == "MONTHLY-ALBUM":
+                monthly_album_by_month[month].append(path)
         elif prefix == "SP":
             sp_by_month[month].append(path)
 
@@ -204,6 +234,26 @@ def audit_cadence(files: list[Path]) -> list[Finding]:
         if len(paths) > 1:
             for path in paths:
                 findings.append(Finding("ERROR", path, "more than 1 direction pulse in this month"))
+
+    for paths in oracle_by_week.values():
+        if len(paths) > 1:
+            for path in paths:
+                findings.append(Finding("ERROR", path, "more than 1 ORACLE-NOTE in this week"))
+
+    for paths in radar_by_week.values():
+        if len(paths) > 1:
+            for path in paths:
+                findings.append(Finding("ERROR", path, "more than 1 CALENDAR-RADAR in this week"))
+
+    for paths in quiz_by_month.values():
+        if len(paths) > 1:
+            for path in paths:
+                findings.append(Finding("ERROR", path, "more than 1 QUIZ in this month"))
+
+    for paths in monthly_album_by_month.values():
+        if len(paths) > 1:
+            for path in paths:
+                findings.append(Finding("ERROR", path, "more than 1 MONTHLY-ALBUM in this month"))
 
     return findings
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Series Keeper"
+  short_description: "Track recurring series and service slots"
+  default_prompt: "Use -series-keeper to audit open Almanac series, oracle/radar cadence and unfinished arcs."

@@ -1,28 +1,32 @@
 # SLOT STRATEGY
 
 Effective for new and rewritten posts from `2026-07-07`.
+Time change effective for new days from `2026-07-17`.
 
 ## Decision
 
-Do not change publication times yet.
-
-Keep:
-- `10:04`
+Core publication times change for new days from `2026-07-17`:
+- `09:04`
 - `15:04`
-- `18:02`
+- `21:04`
+
+Do not rename or rewrite prepared archive days only because of the time change.
+Files dated `2026-07-01` through `2026-07-16` keep `10:04 / 15:04 / 18:02`.
 
 Optional overlays:
-- `SV` service notes may appear 1-2 times per week, usually at `12:04`.
-- `SP` special notes may appear at `21:04`, max 2-4 times per month.
+- From `2026-07-20`, `SV` appears exactly twice per week at `12:04`: one `ORACLE-NOTE` and one `CALENDAR-RADAR`.
+- `SP` special notes may appear at `18:04` after `2026-07-17`, max 2-4 times per month.
 
 These overlays do not change the core daily rhythm and must not be named `AL-*`.
 See `SERVICE_AND_SPECIALS.md`.
 
-Reason: the times are already part of filenames, validators, archive rhythm, monthly planning, and reader expectation. Changing them should be an experiment, not an immediate structural rewrite.
+Reason: the new rhythm gives equal 6-hour spacing and keeps food as the fixed middle anchor. `09:04` is better for reading/saving, `21:04` is better for slow calendar, ritual, feast and night-threshold posts.
 
 ## Slot Meaning
 
-### 10:04 - Mind / Myth / Dossier
+### 09:04 - Mind / Myth / Dossier
+
+Legacy slot before `2026-07-17`: `10:04`.
 
 Use for:
 - myths, tales, legends;
@@ -47,7 +51,9 @@ Do not place standalone `PROSE` or `ETYMON` here. If literature or etymology is 
 
 Reader mode: table, texture, technique, appetite, memory.
 
-### 18:02 - Time / Ritual / Feast
+### 21:04 - Time / Ritual / Feast
+
+Legacy slot before `2026-07-17`: `18:02`.
 
 Use for:
 - calendar, chronos, wheel, cycles;
@@ -63,35 +69,32 @@ Move by object, not by convenience:
 
 | Object | Slot |
 |--------|------|
-| Mythic figure | `10:04 PERSONAE` |
-| Mythic creature | `10:04 BESTIARY` |
-| Ritual/story object | `10:04 OBJECTS` |
+| Mythic figure | `09:04 PERSONAE` |
+| Mythic creature | `09:04 BESTIARY` |
+| Ritual/story object | `09:04 OBJECTS` |
 | Kitchen object | `15:04 TOOLS` |
-| Ritual food as calendar | `18:02 FEAST` |
+| Ritual food as calendar | `21:04 FEAST` |
 | Fermentation as living process | `15:04 FERMENT` |
 | Salt/smoke/sugar/acid preservation process | `15:04 PRESERVE` |
 | Soup or broth as object | `15:04 SOUP` |
 | Sauce/paste/seasoning as object | `15:04 CONDIMENTS` |
 | Food technique | `15:04 RECIPE` |
 | Food social practice | `15:04 FOODWAYS` |
-| Holiday origin | `18:02 CALENDAR` |
-| Modern invented ritual | `18:02 MODERN` |
-| Word from myth/story | `10:04 ETYMON` |
+| Holiday origin | `21:04 CALENDAR` |
+| Modern invented ritual | `21:04 MODERN` |
+| Word from myth/story | `09:04 ETYMON` |
 | Word from food | Food rubric, not standalone `ETYMON` |
-| Word from holiday/calendar | `18:02 ETYMON` |
-| Literary fragment | `10:04 PROSE` unless it is food-specific and embedded in food rubric |
+| Word from holiday/calendar | `21:04 ETYMON` |
+| Literary fragment | `09:04 PROSE` unless it is food-specific and embedded in food rubric |
 
 ## Time Change Policy
 
-No immediate time change.
+The production schedule changes from `2026-07-17`.
 
-If timing becomes a real question, run a 14-day test only on new days:
-
-| Test | Morning | Food | Evening |
-|------|---------|------|---------|
-| Current | `10:04` | `15:04` | `18:02` |
-| Late evening test | `10:04` | `15:04` | `20:04` |
-| Compact day test | `09:04` | `14:04` | `19:04` |
+| Period | Morning | Food | Evening | Special |
+|--------|---------|------|---------|---------|
+| Through `2026-07-16` | `10:04` | `15:04` | `18:02` | `21:04 SP` |
+| From `2026-07-17` | `09:04` | `15:04` | `21:04` | `18:04 SP` |
 
 Measure:
 - views after 1 hour;
@@ -100,4 +103,4 @@ Measure:
 - poll participation;
 - whether long posts are read or skipped.
 
-Do not rewrite old filenames or already prepared days for a timing test.
+Review after 14 published days on the new rhythm. Do not rewrite old filenames or already prepared days only for timing.

@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Unified Almanac editorial automation CLI."""
+
+from __future__ import annotations
+
+import argparse
+import subprocess
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+TOOLS = ROOT / "tools"
+
+
+def run_py(script: str, *args: str) -> int:
+    command = [sys.executable, str(TOOLS / script), *args]
+    print(f">>> {' '.join(command)}")
+    return subprocess.call(command, cwd=ROOT)
+
+
+def combine(codes: list[int]) -> int:
+    return 1 if any(code != 0 for code in codes) else 0
+
+
+def doctor(target: str) -> int:
+    if len(target) == 10:
+        year, month, day = target.split("-")
+        return combine(
+            [
+                run_py("preflight_day.py", year, month, day),
+                run_py("audit_continuity.py", target, "--strict"),
+                run_py("audit_visual_repetition.py", target, "--strict"),
+                run_py("semantic_memory.py", "audit", target, "--strict"),
+            ]
+        )
+    if len(target) == 7:
+        year, month = target.split("-")
+        return combine(
+            [
+                run_py("audit_month.py", year, month),
+                run_py("audit_continuity.py", target),
+                run_py("audit_visual_repetition.py", target),
+            ]
+        )
+    print(f"ERROR: bad target `{target}`; use YYYY-MM-DD or YYYY-MM")
+    return 2
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(prog="almanac")
+    sub = parser.add_subparsers(dest="command", required=True)
+    for name in ("doctor", "publish", "continuity", "visuals", "series"):
+        command = sub.add_parser(name)
+        command.add_argument("target", nargs="?" if name in {"continuity", "visuals"} else None)
+    sub.add_parser("index")
+    sub.add_parser("canon")
+    brief = sub.add_parser("brief")
+    brief.add_argument("target")
+    brief.add_argument("--write", action="store_true")
+    scaffold = sub.add_parser("scaffold")
+    scaffold.add_argument("target")
+    scaffold.add_argument("--rubrics", required=True)
+    trends = sub.add_parser("trends")
+    trends.add_argument("target")
+    trends.add_argument("--strict", action="store_true")
+    improve = sub.add_parser("improve")
+    improve.add_argument("target")
+    improve.add_argument("--init", action="store_true")
+    improve.add_argument("--strict", action="store_true")
+    metrics = sub.add_parser("metrics")
+    metrics.add_argument("metric_args", nargs=argparse.REMAINDER)
+    for name in ("publications", "assets", "evidence", "semantic", "experiments", "incidents"):
+        passthrough = sub.add_parser(name)
+        passthrough.add_argument("tool_args", nargs=argparse.REMAINDER)
+    return parser
+
+
+def main() -> int:
+    args = build_parser().parse_args()
+    if args.command == "doctor":
+        return doctor(args.target)
+    if args.command == "publish":
+        if len(args.target) != 10:
+            print("ERROR: publish requires YYYY-MM-DD")
+            return 2
+        return combine(
+            [
+                doctor(args.target),
+                run_py("daily_improvement.py", args.target, "--strict"),
+                run_py("trend_due.py", args.target, "--strict"),
+                run_py("audit_series.py", args.target),
+                run_py("publication_status.py", "audit", args.target, "--strict"),
+                run_py("visual_assets.py", "audit", args.target, "--strict"),
+                run_py("evidence_registry.py", "audit", args.target, "--strict"),
+                run_py("experiment_registry.py", "audit", args.target, "--strict"),
+                run_py("incident_manager.py", "audit", args.target, "--strict"),
+            ]
+        )
+    if args.command in {"index", "canon"}:
+        codes = [run_py("build_canon_index.py")]
+        if args.command == "index":
+            codes.extend(
+                [
+                    run_py("build_content_index.py"),
+                    run_py("publication_status.py", "sync"),
+                    run_py("visual_assets.py", "sync"),
+                    run_py("semantic_memory.py", "build"),
+                ]
+            )
+        return combine(codes)
+    if args.command == "continuity":
+        return run_py("audit_continuity.py", *([args.target] if args.target else []))
+    if args.command == "visuals":
+        return run_py("audit_visual_repetition.py", *([args.target] if args.target else []))
+    if args.command == "brief":
+        return run_py("next_day_brief.py", args.target, *(["--write"] if args.write else []))
+    if args.command == "scaffold":
+        return run_py("scaffold_day.py", args.target, "--rubrics", args.rubrics)
+    if args.command == "trends":
+        return run_py("trend_due.py", args.target, *(["--strict"] if args.strict else []))
+    if args.command == "improve":
+        flags = (["--init"] if args.init else []) + (["--strict"] if args.strict else [])
+        return run_py("daily_improvement.py", args.target, *flags)
+    if args.command == "series":
+        return run_py("audit_series.py", args.target)
+    if args.command == "metrics":
+        return run_py("ingest_metrics.py", *args.metric_args)
+    passthrough_scripts = {
+        "publications": "publication_status.py",
+        "assets": "visual_assets.py",
+        "evidence": "evidence_registry.py",
+        "semantic": "semantic_memory.py",
+        "experiments": "experiment_registry.py",
+        "incidents": "incident_manager.py",
+    }
+    if args.command in passthrough_scripts:
+        return run_py(passthrough_scripts[args.command], *args.tool_args)
+    return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

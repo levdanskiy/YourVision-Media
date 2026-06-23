@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "posts": [
+    {
+      "post_id": "AL-21.07-09-04-LORE-Artemis-Absent",
+      "review_outcome": "evidenced",
+      "reviewer_note": "Ancient narrative and later fame-ban tradition are separated; modern date conversion is explicitly qualified.",
+      "checked_at": "2026-06-20T18:00:00+03:00",
+      "claims": [
+        {
+          "claim_id": "AL-21.07-09-04-LORE-Artemis-Absent:claim:1",
+          "claim": "Plutarch links the burning of Artemis's temple to the night of Alexander's birth and preserves the joke that Artemis was occupied with the birth.",
+          "source_title": "Plutarch, Life of Alexander, chapter 3",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0129%3Achapter%3D3",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "primary_text",
+          "locator": "Alexander 3.3-3.5",
+          "support": "The passage states that the temple burned on the birth night and reports the witticism that Artemis was attending Alexander's delivery.",
+          "notes": "The passage does not supply a modern Gregorian date."
+        },
+        {
+          "claim_id": "AL-21.07-09-04-LORE-Artemis-Absent:claim:2",
+          "claim": "Later classical tradition presents Herostratus as seeking fame and describes a prohibition on preserving his name.",
+          "source_title": "Valerius Maximus, Memorable Doings and Sayings",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Valerius_Maximus/8*.html",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "B",
+          "evidence_type": "primary_text",
+          "locator": "8.14 ext. 5",
+          "support": "The anecdote identifies the desire for fame and the Ephesian attempt to suppress the perpetrator's name.",
+          "notes": "Later than the event; used as evidence for the tradition, not eyewitness history."
+        }
+      ]
+    },
+    {
+      "post_id": "AL-21.07-15-04-FOODWAYS-Lamington-Drive",
+      "review_outcome": "evidenced",
+      "reviewer_note": "The post avoids a single-inventor claim and treats the food-day date as a popular observance rather than law or public holiday.",
+      "checked_at": "2026-06-20T18:00:00+03:00",
+      "claims": [
+        {
+          "claim_id": "AL-21.07-15-04-FOODWAYS-Lamington-Drive:claim:1",
+          "claim": "The lamington is an Australian cake form consisting of cake pieces coated in chocolate icing and coconut, with origin stories that remain contested.",
+          "source_title": "National Museum of Australia, Lamingtons",
+          "url": "https://www.nma.gov.au/defining-moments/resources/lamingtons",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Defining Moments resource: Lamingtons",
+          "support": "The museum overview documents the standard form, Australian cultural association and competing stories around the cake's creation.",
+          "notes": "Institutional page was Cloudflare-protected during automated access; citation retained for manual review."
+        },
+        {
+          "claim_id": "AL-21.07-15-04-FOODWAYS-Lamington-Drive:claim:2",
+          "claim": "The phrase lamington drive is used for community fundraising through ordered batches of lamingtons.",
+          "source_title": "National Library of Australia, Trove newspaper archive",
+          "url": "https://trove.nla.gov.au/search/category/newspapers?keyword=%22lamington%20drive%22",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Newspaper search: exact phrase 'lamington drive'",
+          "support": "Historical newspaper records use the phrase for school, club and community fundraising sales.",
+          "notes": "Archive evidence supports the practice, not one universal production method."
+        },
+        {
+          "claim_id": "AL-21.07-15-04-FOODWAYS-Lamington-Drive:claim:3",
+          "claim": "21 July circulates as National Lamington Day but is not an Australian public holiday.",
+          "source_title": "Australian food-observance calendars; Nager.Date public-holiday index cross-check",
+          "url": "https://nationaltoday.com/national-lamington-day/",
+          "local_path": "04_DATABASES/indexes/nager_public_holidays_2026_index.csv",
+          "accessed_at": "2026-06-20",
+          "trust_level": "C",
+          "evidence_type": "discovery_only",
+          "locator": "21 July listing; AU public-holiday index",
+          "support": "Food calendars list the observance on 21 July, while the public-holiday index does not classify it as a statutory holiday.",
+          "notes": "Used only as a light date hook; the post explicitly labels the observance popular, not official."
+        }
+      ]
+    },
+    {
+      "post_id": "AL-21.07-21-04-CALENDAR-State-Birthdays",
+      "review_outcome": "evidenced",
+      "reviewer_note": "Official sources support dates and legal acts; the four-mechanism interpretation is clearly marked as editorial inference.",
+      "checked_at": "2026-06-20T18:00:00+03:00",
+      "claims": [
+        {
+          "claim_id": "AL-21.07-21-04-CALENDAR-State-Birthdays:claim:1",
+          "claim": "Belgium's National Day on 21 July commemorates Leopold I taking the constitutional oath in 1831.",
+          "source_title": "Belgium.be, National Day and feast days of Communities and Regions",
+          "url": "https://www.belgium.be/en/about_belgium/country/belgium_in_nutshell/symbols/national_holiday",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "National Day: July 21",
+          "support": "The Belgian federal portal states that the day commemorates Leopold I's constitutional oath on 21 July 1831.",
+          "notes": "Official government source."
+        },
+        {
+          "claim_id": "AL-21.07-21-04-CALENDAR-State-Birthdays:claim:2",
+          "claim": "The Norwegian Constitution was adopted on 17 May 1814.",
+          "source_title": "Stortinget, The Constitution",
+          "url": "https://www.stortinget.no/en/In-English/About-the-Storting/The-Constitution/",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Main introduction",
+          "support": "The Norwegian parliament states that the Constitution was adopted on 17 May 1814.",
+          "notes": "Official parliamentary source."
+        },
+        {
+          "claim_id": "AL-21.07-21-04-CALENDAR-State-Birthdays:claim:3",
+          "claim": "India's Independence Day marks 15 August 1947.",
+          "source_title": "National Portal of India, Independence Day",
+          "url": "https://www.india.gov.in/spotlight/independence-day",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Independence Day overview",
+          "support": "The official national portal identifies 15 August as the annual commemoration of independence from British rule in 1947.",
+          "notes": "Official portal; stable historical date."
+        },
+        {
+          "claim_id": "AL-21.07-21-04-CALENDAR-State-Birthdays:claim:4",
+          "claim": "India's Constitution came into force on 26 January 1950, the basis of Republic Day.",
+          "source_title": "Legislative Department of India, Constitution of India",
+          "url": "https://legislative.gov.in/constitution-of-india/",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "primary_text",
+          "locator": "Constitution commencement provisions",
+          "support": "The official constitutional text and government materials identify 26 January 1950 as commencement and the republican constitutional threshold.",
+          "notes": "Primary legal source plus official explanatory context."
+        }
+      ]
+    },
+    {
+      "post_id": "AL-22.07-09-04-PERSONAE-Mary-Magdalene",
+      "review_outcome": "evidenced",
+      "reviewer_note": "",
+      "checked_at": "2026-06-21T15:17:22.182571+00:00",
+      "claims": [
+        {
+          "claim_id": "AL-22.07-09-04-PERSONAE-Mary-Magdalene:claim:1",
+          "claim": "Luke 8 and John 20 identify Mary of Magdala as follower, supporter, garden witness and messenger; they do not identify her as the unnamed sinner of Luke 7.",
+          "source_title": "New American Bible: Luke 8 and John 20",
+          "url": "https://bible.usccb.org/bible/john/20",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "A",
+          "evidence_type": "primary_text",
+          "locator": "Luke 8:1-3; John 20:1-18",
+          "support": "full",
+          "notes": "Canonical scenes kept separate from later identification."
+        },
+        {
+          "claim_id": "AL-22.07-09-04-PERSONAE-Mary-Magdalene:claim:2",
+          "claim": "Western tradition long identified Mary Magdalene, the unnamed anointing woman and Mary of Bethany; the Roman liturgical reform separated Mary of Magdala, and the 2016 decree elevated 22 July to Feast.",
+          "source_title": "Arthur Roche, Apostle of the Apostles",
+          "url": "https://www.vatican.va/roman_curia/congregations/ccdds/documents/articolo-roche-maddalena_en.pdf",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "pp. 1-2, paragraphs on Western identification and rank of Feast",
+          "support": "full",
+          "notes": "Official Vatican explanatory document."
+        }
+      ]
+    },
+    {
+      "post_id": "AL-22.07-15-04-PIES-Twenty-Two-Sevenths",
+      "review_outcome": "evidenced",
+      "reviewer_note": "",
+      "checked_at": "2026-06-21T15:17:22.506772+00:00",
+      "claims": [
+        {
+          "claim_id": "AL-22.07-15-04-PIES-Twenty-Two-Sevenths:claim:1",
+          "claim": "For a circle, circumference is 2*pi*r and area is pi*r squared, so edge-to-area ratio is 2/r; doubling diameter doubles edge while quadrupling area.",
+          "source_title": "OpenStax Prealgebra 2e, geometry applications: circles",
+          "url": "https://openstax.org/books/prealgebra-2e/pages/9-7-solve-geometry-applications-circles-and-irregular-figures",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "B",
+          "evidence_type": "reference_work",
+          "locator": "Section 9.7, circle area and circumference formulae",
+          "support": "full",
+          "notes": "22/7 and percentage error independently calculated."
+        },
+        {
+          "claim_id": "AL-22.07-15-04-PIES-Twenty-Two-Sevenths:claim:2",
+          "claim": "Cold dough, cooled low-moisture filling and steam vents are standard controls for a closed savory pie.",
+          "source_title": "Wayne Gisslen, Professional Baking, 7th edition",
+          "url": "https://www.wiley.com/en-us/Professional+Baking%2C+7th+Edition-p-9781119148449",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "B",
+          "evidence_type": "reference_work",
+          "locator": "Pies and tarts chapter",
+          "support": "full",
+          "notes": "Technique support; post makes no origin claim."
+        }
+      ]
+    },
+    {
+      "post_id": "AL-22.07-21-04-CALENDAR-Magdalene-Ranks",
+      "review_outcome": "evidenced",
+      "reviewer_note": "",
+      "checked_at": "2026-06-21T15:17:22.995373+00:00",
+      "claims": [
+        {
+          "claim_id": "AL-22.07-21-04-CALENDAR-Magdalene-Ranks:claim:1",
+          "claim": "The General Roman Calendar elevated the 22 July celebration of Mary Magdalene to the rank of Feast in 2016.",
+          "source_title": "Arthur Roche, Apostle of the Apostles",
+          "url": "https://www.vatican.va/roman_curia/congregations/ccdds/documents/articolo-roche-maddalena_en.pdf",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "p. 1 opening paragraph; p. 2 final paragraph",
+          "support": "full",
+          "notes": "Official Vatican explanatory document."
+        },
+        {
+          "claim_id": "AL-22.07-21-04-CALENDAR-Magdalene-Ranks:claim:2",
+          "claim": "Church of England Common Worship lists Mary Magdalene on 22 July within Festivals.",
+          "source_title": "Church of England, Common Worship: Festivals - Mary Magdalene",
+          "url": "https://www.churchofengland.org/prayer-and-worship/worship-texts-and-resources/common-worship/churchs-year/festivals/mary-magdalene",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Mary Magdalene page, heading 22 July",
+          "support": "full",
+          "notes": "Official Anglican liturgical material."
+        },
+        {
+          "claim_id": "AL-22.07-21-04-CALENDAR-Magdalene-Ranks:claim:3",
+          "claim": "The OCA calendar for 22 July 2026 lists Myrrhbearer and Equal of the Apostles Mary Magdalene.",
+          "source_title": "Orthodox Church in America, Lives of the Saints - July 22, 2026",
+          "url": "https://www.oca.org/saints/lives/2026/07/22",
+          "local_path": "",
+          "accessed_at": "2026-06-21",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Wednesday, July 22, 2026; saint entry 102070",
+          "support": "full",
+          "notes": "Shows that an Orthodox calendar can use civil 22 July; old-calendar displacement is not universal."
+        }
+      ]
+    },
+    {
+      "post_id": "SV-21.07-12-04-CALENDAR-RADAR-Week-20-26",
+      "review_outcome": "evidenced",
+      "reviewer_note": "Every radar item was checked against an official government, UN, UNESCO or liturgical source.",
+      "checked_at": "2026-06-20T18:00:00+03:00",
+      "claims": [
+        {
+          "claim_id": "SV-21.07-12-04-CALENDAR-RADAR-Week-20-26:claim:1",
+          "claim": "Belgium observes National Day on 21 July for Leopold I's constitutional oath.",
+          "source_title": "Belgium.be, National Day",
+          "url": "https://www.belgium.be/en/about_belgium/country/belgium_in_nutshell/symbols/national_holiday",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "National Day: July 21",
+          "support": "Official federal portal confirms the date and oath mechanism.",
+          "notes": ""
+        },
+        {
+          "claim_id": "SV-21.07-12-04-CALENDAR-RADAR-Week-20-26:claim:2",
+          "claim": "The Western Christian liturgical feast of Mary Magdalene falls on 22 July.",
+          "source_title": "Vatican News, Feast of Saint Mary Magdalene",
+          "url": "https://www.vaticannews.va/en/liturgical-holidays/feast-of-saint-mary-magdalene.html",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Liturgical feast heading/date",
+          "support": "The Vatican liturgical page places the feast on 22 July.",
+          "notes": "The radar notes that Eastern calendar dates differ."
+        },
+        {
+          "claim_id": "SV-21.07-12-04-CALENDAR-RADAR-Week-20-26:claim:3",
+          "claim": "World Drowning Prevention Day is observed by the United Nations on 25 July.",
+          "source_title": "United Nations, World Drowning Prevention Day",
+          "url": "https://www.un.org/en/observances/drowning-prevention-day",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "Observance date",
+          "support": "The UN observance page identifies 25 July.",
+          "notes": ""
+        },
+        {
+          "claim_id": "SV-21.07-12-04-CALENDAR-RADAR-Week-20-26:claim:4",
+          "claim": "UNESCO's International Day for the Conservation of the Mangrove Ecosystem is 26 July.",
+          "source_title": "UNESCO, International Day for the Conservation of the Mangrove Ecosystem",
+          "url": "https://www.unesco.org/en/days/mangrove-ecosystem-conservation",
+          "local_path": "",
+          "accessed_at": "2026-06-20",
+          "trust_level": "A",
+          "evidence_type": "institutional_record",
+          "locator": "International day date",
+          "support": "UNESCO identifies 26 July as the international day for mangrove ecosystem conservation.",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

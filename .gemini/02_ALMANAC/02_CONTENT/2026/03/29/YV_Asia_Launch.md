@@ -1,3 +1,17 @@
+---
+post_id: "YV-29.03-03-00-Asia-Launch"
+title: "Анонс Eurovision Song Contest Asia 2026"
+date: "2026-03-29"
+time: "03:00"
+timezone: "PUBLICATION_TIMEZONE"
+status: "ГОТОВ (EDITORIAL ANALYST V4.0)"
+rubric: "FLASH, ASIA"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 // ИД-ПОСТА: YV-29.03-03-00-Asia-Launch
 // ТЕМА: Анонс Eurovision Song Contest Asia 2026
 // ДАТА ПУБЛИКАЦИИ: 29.03.2026, 03:00 (PUBLICATION_TIMEZONE)

@@ -1,0 +1,434 @@
+{
+  "nodes": [
+    {
+      "id": "08_hub_data_data",
+      "label": "DATA",
+      "file_type": "code",
+      "source_file": "08_HUB/data.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_archive_update_odds_broken_update_odds",
+      "label": "update_odds",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/_archive/update_odds_BROKEN.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_fix_hub_layout_news_render_new",
+      "label": "news_render_new",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/fix_hub_layout.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_rebuild_perfect_rebuild",
+      "label": "rebuild",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/rebuild_perfect.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_restore_render_new_render_js",
+      "label": "new_render_js",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/restore_render.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_yv_tg_sync_parse_poll",
+      "label": "parse_poll",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_yv_tg_sync_get_telegram_news",
+      "label": "get_telegram_news",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_yv_tg_sync_sync",
+      "label": "sync",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_yv_tg_sync_normalize_title",
+      "label": "normalize_title",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_readme_vienna_2026_insider_hub",
+      "label": "Vienna 2026 Insider Hub",
+      "file_type": "concept",
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_readme_heart_shape_flags_rule",
+      "label": "Heart-Shape Flags Rule",
+      "file_type": "rationale",
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_readme_data_js_data_model_rules",
+      "label": "data.js data model rules",
+      "file_type": "rationale",
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_index_linkify",
+      "label": "linkify",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_index_render",
+      "label": "render",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_index_gethearturl",
+      "label": "getHeartUrl",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_index_replaceflags",
+      "label": "replaceFlags",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "08_hub_index_html_structure",
+      "label": "index.html structure",
+      "file_type": "concept",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tools_readme_cooperative_sync_workflow",
+      "label": "Cooperative Sync Workflow",
+      "file_type": "rationale",
+      "source_file": "08_HUB/tools/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "_archive_update_odds_broken_update_odds",
+      "target": "08_hub_data_data",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/_archive/update_odds_BROKEN.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect_rebuild",
+      "target": "08_hub_data_data",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/rebuild_perfect.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect_rebuild",
+      "target": "08_hub_index_html_structure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/rebuild_perfect.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_fix_hub_layout_news_render_new",
+      "target": "08_hub_index_html_structure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/fix_hub_layout.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_restore_render_new_render_js",
+      "target": "08_hub_index_html_structure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/restore_render.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_yv_tg_sync_get_telegram_news",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_get_telegram_news",
+      "target": "tools_yv_tg_sync_parse_poll",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_yv_tg_sync_normalize_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_sync",
+      "target": "08_hub_data_data",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_rebuild_perfect_rebuild",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_index_render",
+      "target": "08_hub_data_data",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_index_render",
+      "target": "08_hub_index_gethearturl",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_index_render",
+      "target": "08_hub_index_replaceflags",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_index_render",
+      "target": "08_hub_index_linkify",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_readme_data_js_data_model_rules",
+      "target": "08_hub_data_data",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_readme_cooperative_sync_workflow",
+      "target": "tools_yv_tg_sync_sync",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_readme_heart_shape_flags_rule",
+      "target": "08_hub_index_html_structure",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_readme_heart_shape_flags_rule",
+      "target": "08_hub_index_gethearturl",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "08_hub_readme_heart_shape_flags_rule",
+      "target": "08_hub_index_replaceflags",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "tools_fix_hub_layout_news_render_new",
+      "target": "tools_restore_render_new_render_js",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/tools/fix_hub_layout.py",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hub_content_pipeline",
+      "label": "Hub Content Pipeline",
+      "nodes": [
+        "tools_yv_tg_sync_sync",
+        "tools_rebuild_perfect_rebuild",
+        "08_hub_data_data",
+        "08_hub_index_html_structure"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "08_HUB/tools/yv_tg_sync.py"
+    },
+    {
+      "id": "hub_layout_patchers",
+      "label": "Hub Layout Patchers",
+      "nodes": [
+        "tools_fix_hub_layout_news_render_new",
+        "tools_restore_render_new_render_js"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/tools/fix_hub_layout.py"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

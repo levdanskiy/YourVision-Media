@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiments": [
+    {
+      "experiment_id": "EXP-2026-07-21-CONTINUITY-GATE",
+      "title": "Continuity and improvement publishing gate",
+      "hypothesis": "A visible brief plus automated continuity checks will reduce accidental topic and visual repetition without slowing daily preparation materially.",
+      "change": "Require rotation brief, semantic/visual checks and one documented improvement before delivery.",
+      "size": "big",
+      "start_date": "2026-07-21",
+      "end_date": "2026-07-26",
+      "metric": "false_positive_rate_and_repeated_topic_count",
+      "baseline": "Manual review only; no stable measurement.",
+      "target": "No accidental repeat and fewer than two false-positive blocking warnings per prepared day.",
+      "status": "running",
+      "related_posts": [],
+      "result": "",
+      "decision_note": ""
+    },
+    {
+      "experiment_id": "EXP-2026-07-22-ONE-DATE-THREE-LENSES",
+      "title": "One date, three independent lenses",
+      "hypothesis": "A connected three-slot day with self-contained searchable openings will increase return to the second and third posts without reducing single-post clarity.",
+      "change": "Link the 09:04, 15:04 and 21:04 posts with one series_id, distinct rubrics and a controlled visual motif while keeping each opening summary-safe.",
+      "size": "medium",
+      "start_date": "2026-07-22",
+      "end_date": "2026-08-05",
+      "metric": "second_and_third_slot_view_ratio_plus_cross_post_forwards",
+      "baseline": "Median second/third-slot view ratio for unlinked days 17-21 July.",
+      "target": "At least 5% lift in median 15:04 and 21:04 view ratio with no drop in saves/forwards per post.",
+      "status": "running",
+      "related_posts": [
+        "AL-22.07-09-04-PERSONAE-Mary-Magdalene",
+        "AL-22.07-15-04-PIES-Twenty-Two-Sevenths",
+        "AL-22.07-21-04-CALENDAR-Magdalene-Ranks"
+      ],
+      "result": "",
+      "decision_note": ""
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Continuity"
+  short_description: "Track canon, entities, angles and contradictions"
+  default_prompt: "Use -continuity to audit Almanac canon and repeated angles before preparing new posts."

@@ -11,6 +11,8 @@ Build a weekly or monthly Almanac plan before posts are written.
 - Three daily pillars: myth/source/divination; food/baking/dessert; calendar/heritage/season.
 - Sweet and savory food branches stay separated.
 - Superstitions, tales, myths, legends, divination, calendars, rites, and food history all remain in rotation.
+- Active series have explicit `series_id`, cadence and next due date in `04_DATABASES/SERIES_REGISTRY.json`.
+- Every planned day includes one improvement opportunity; this does not mean adding a fourth main post.
 
 ## Inputs
 
@@ -29,4 +31,5 @@ For every planned slot, include rubric, topic, cultural zone, coverage axis, sou
 ```bash
 python3 tools/audit_coverage.py YYYY MM
 python3 tools/audit_month.py YYYY MM
+python3 tools/almanac series YYYY-MM-DD
 ```

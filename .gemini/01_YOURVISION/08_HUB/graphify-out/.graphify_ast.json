@@ -1,0 +1,359 @@
+{
+  "nodes": [
+    {
+      "id": "data",
+      "label": "data.js",
+      "file_type": "code",
+      "source_file": "data.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "archive_update_odds_broken",
+      "label": "update_odds_BROKEN.py",
+      "file_type": "code",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "archive_update_odds_broken_update_odds",
+      "label": "update_odds()",
+      "file_type": "code",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_fix_hub_layout",
+      "label": "fix_hub_layout.py",
+      "file_type": "code",
+      "source_file": "tools/fix_hub_layout.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_rebuild_hub",
+      "label": "rebuild_hub.py",
+      "file_type": "code",
+      "source_file": "tools/rebuild_hub.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_rebuild_perfect",
+      "label": "rebuild_perfect.py",
+      "file_type": "code",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_rebuild_perfect_rebuild",
+      "label": "rebuild()",
+      "file_type": "code",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_restore_render",
+      "label": "restore_render.py",
+      "file_type": "code",
+      "source_file": "tools/restore_render.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_yv_tg_sync",
+      "label": "yv_tg_sync.py",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_yv_tg_sync_parse_poll",
+      "label": "parse_poll()",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_yv_tg_sync_get_telegram_news",
+      "label": "get_telegram_news()",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L27",
+      "_origin": "ast"
+    },
+    {
+      "id": "tools_yv_tg_sync_sync",
+      "label": "sync()",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L85",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "archive_update_odds_broken",
+      "target": "requests",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "archive_update_odds_broken",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "archive_update_odds_broken",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "archive_update_odds_broken",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "archive_update_odds_broken",
+      "target": "archive_update_odds_broken_update_odds",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_fix_hub_layout",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/fix_hub_layout.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_hub",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_hub.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_hub",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_hub.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_hub",
+      "target": "rebuild_perfect",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_hub.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect",
+      "target": "hashlib",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_rebuild_perfect",
+      "target": "tools_rebuild_perfect_rebuild",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_restore_render",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/restore_render.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "requests",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "html",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "datetime",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "tools_yv_tg_sync_parse_poll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "tools_yv_tg_sync_get_telegram_news",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync",
+      "target": "tools_yv_tg_sync_sync",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_get_telegram_news",
+      "target": "tools_yv_tg_sync_parse_poll",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_yv_tg_sync_get_telegram_news",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L86",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

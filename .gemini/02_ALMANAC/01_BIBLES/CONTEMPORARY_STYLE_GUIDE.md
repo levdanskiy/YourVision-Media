@@ -13,6 +13,8 @@ Almanac should feel current, but not trend-chasing. The tone is:
 - globally literate, not Western default;
 - designed for saves, shares, search, and screenshots.
 
+From `2026-07-17`, make the channel bolder by default. Bolder does not mean louder. It means the post makes a stronger editorial decision: a sharper object, a clearer source, a more specific visual, a more confident omission, and a less explanatory voice.
+
 Geography rule: keep names of countries, cities, regions, languages, and communities when they support comparison or evidence. Remove only default-center phrasing: «у нас», «наш регион», «здесь принято», or any repeated habit that makes one place the channel's implied home.
 
 ## 2026 Signals To Use
@@ -29,6 +31,9 @@ These are working editorial rules distilled from current social/content trend re
 | Editorial carousels | Structure posts so each block can become one slide without rewriting. |
 | Lo-fi / film / analog | Favor evidence-like images: flash, grain, scan, worn surface, imperfect crop. |
 | Proof-based trust | Every surprising claim gets a source trail, number, date, or material test. |
+| Anti-AI craft | Use tactile process, maker trace, imperfect crop, and authorship signals instead of sterile polish. |
+| Co-creation over UGC | Let reader input steer questions and directions, but keep editorial judgment in the channel. |
+| Digital detox / slow luxury | Let some posts be slower, quieter, and more material, but keep the hook sharp. |
 
 Trend basis:
 - Sprout Social, `7 Social Media Trends to Know in 2026`: serialized content, community over virality, human-led storytelling, social search.
@@ -40,6 +45,8 @@ Trend basis:
 ## What To Avoid
 
 - Trend mimicry: slang, meme grammar, fake casualness.
+- Safe encyclopedia openings.
+- Three paragraphs of background before the object appears.
 - Overdesigned luxury food styling.
 - Generic “dark academia” visuals without evidence.
 - AI-smooth images that look too perfect.
@@ -103,6 +110,72 @@ Recommended structure:
 → [action/question/silence]
 ```
 
+## Bold Format Modes
+
+Use these modes proactively when rotation gets predictable.
+
+| Mode | Best Rubrics | Shape |
+|------|--------------|-------|
+| `FIELD FILE` | `PERSONAE`, `BESTIARY`, `OBJECTS`, `OMENS` | Case note: address/trace/object/rule/risk/current sighting. |
+| `EVIDENCE BOARD` | `SOURCE`, `DIVINATION`, `MODERN`, `HERITAGE` | 4-5 pieces of evidence, each with date/material/function. |
+| `LAB NOTE` | `RECIPE`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS` | Trigger, mechanism, failure point, sensory stop condition. |
+| `TABLE MAP` | `FEAST`, `FOODWAYS`, `CALENDAR` | Who sits, what appears, what is refused, what changed. |
+| `ONE OBJECT DOSSIER` | `FRAGMENT`, `OBJECTS`, `TOOLS`, `PANTRY` | One thing, material history, rule of use, disappearance. |
+
+Each week should contain at least one bold mode after `2026-07-17`, unless the calendar week is already structurally exceptional.
+
+## Post Look V5
+
+From `2026-07-17`, posts should look less like essays and more like compact editorial objects. Keep source discipline, but change the visible shape more often.
+
+Allowed experimental shapes:
+
+| Shape | Use For | Visible Structure |
+|-------|---------|-------------------|
+| `Dossier Card` | `PERSONAE`, `BESTIARY`, `OBJECTS` | `Досье / Адрес / След / Правило / Цена / Сейчас` |
+| `Field File` | `OMENS`, `HERITAGE`, `CHRONOS` | `Наблюдение / Механизм / Риск / Где видно сейчас` |
+| `Lab Note` | `RECIPE`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS` | `Триггер / Что происходит / Ошибка / Стоп-сигнал` |
+| `Table Map` | `FEAST`, `FOODWAYS`, `CALENDAR` | `Кто / Что на столе / Что запрещено / Что изменилось` |
+| `Source Card` | `SOURCE`, `ETYMON`, `DIVINATION` | `Фраза / Дата / Материал / Сдвиг / Почему сегодня` |
+| `Micro-list` | `LISTS`, `CALENDAR-RADAR`, `CHRONOS` | 3-5 numbered items with one exclusion or one final turn |
+
+Use visible labels sparingly. They may appear as short uppercase anchors inside the post, but do not make every post look like a form. The point is rhythm variation.
+
+Example internal shape:
+
+```text
+🪨 #OBJECTS
+
+Зеркало в сказке редко показывает лицо.
+
+ДОСЬЕ: ...
+АДРЕС: ...
+ПРАВИЛО: ...
+ЦЕНА: ...
+
+Короткий kicker.
+
+→ ...
+```
+
+More experimental first lines:
+- `This is not a monster. This is a border with teeth.`
+- `The sauce does not decorate the plate. It changes the law of the meal.`
+- `A holiday becomes modern when it learns to sell its own waiting room.`
+- `The oracle is not the answer. It is the machine that makes the question visible.`
+
+Do not overuse English. English lines are allowed only when the source/object is already bilingual or when a sharp phrase is part of the visual/editorial register. Russian remains the channel language.
+
+## Rhythm Rules
+
+For each 7-day block after `2026-07-17`, include:
+- at least one `Dossier Card` / `Field File` in 09:04;
+- at least one `Lab Note` or broad-food visual format in 15:04;
+- at least one `Table Map`, `Modern Ritual`, `CYCLES`, or `FEAST` shape in 21:04;
+- no more than two classic essay-shaped posts in a row.
+
+If three consecutive posts feel like Wikipedia with better prose, rewrite one into a bold shape.
+
 ## Hooks
 
 Use one of five hook types.
@@ -121,6 +194,8 @@ Rules:
 - Hook must name the object within 1-2 lines.
 - No vague “you won’t believe” energy.
 - No fake universality.
+
+Default upgrade: if the first line could begin with «Сегодня поговорим о...», it is not ready. Replace it with an object in action, a contradiction, or a source fact.
 
 ## Kicker Lines
 
@@ -157,6 +232,24 @@ Use recurring labels internally in planning. They can appear in metadata or titl
 | `Tarot Without Fortune-Telling` | `DIVINATION` | Deck history, iconography, authorship, card grammar. |
 | `Astrology As Calendar` | `DIVINATION`, `CYCLES` | Zodiac, sky mechanics, media horoscopes, rites of passage. |
 | `How Humans Ask The Unknown` | `DIVINATION`, `OMENS`, `RITES` | Choice, anxiety, responsibility, ritualised questions. |
+
+## Visible Editorial Franchises
+
+These are reader-facing series names. Use sparingly: they should make the channel recognizable, not turn every post into a branded segment.
+
+| Franchise | Rubrics | Promise |
+|-----------|---------|---------|
+| `Оракул недели` | `SV ORACLE-NOTE` | Weekly zodiac/tarot/omen/oracle forecast as symbolic editorial weather. |
+| `Оракулы как технология вопроса` | `DIVINATION` | Systems of uncertainty without factual future claims. |
+| `Еда как технология` | `RECIPE`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS` | Food through mechanism, failure point, stop signal. |
+| `Досье порога` | `PERSONAE`, `BESTIARY`, `OBJECTS`, `OMENS` | Figures, beings, objects, and signs as boundary cases. |
+| `Календарь не нейтрален` | `CALENDAR`, `CYCLES`, `MODERN`, `WHEEL` | Dates as systems of power, memory, labor, waiting. |
+| `Вещи, которые знают` | `OBJECTS`, `TOOLS`, `PANTRY`, `FRAGMENT` | Objects as evidence of rule, use, loss, and touch. |
+| `Существа как социальный страх` | `BESTIARY`, `LORE`, `OMENS` | Monsters/beings as cultural boundary and anxiety. |
+| `Стол как карта праздника` | `FEAST`, `FOODWAYS`, `CALENDAR` | Table order, exclusions, offerings, substitutions, guests. |
+| `Слова с прошлой жизнью` | `ETYMON`, `SOURCE` | Etymology as plot, not dictionary note. |
+
+At least one visible franchise should appear in each 5-day trend block after `2026-07-17`, unless the block is dominated by a major calendar event.
 
 ## Carousel-Ready Block Rules
 
@@ -237,7 +330,8 @@ Bad:
 | `LORE` | One exact structural match to now, not broad analogy. |
 | `SOURCE` | One quote + one stylistic device + one present-day echo. |
 | `OMENS` | Treat superstition as household risk UX. |
-| `DIVINATION` | Treat oracle systems as question technology: object, grammar, function, no forecast. |
+| `DIVINATION` | Treat oracle systems as question technology: object, grammar, function, no forecast inside core AL. |
+| `SV ORACLE-NOTE` | Make the forecast feel current and useful, but keep it symbolic, low-stakes, and non-deterministic. |
 | `FRAGMENT` | Make it screenshot-short. |
 | `ETYMON` | Make the semantic drift the plot. |
 | `CAKES` | Show architecture and failure point. |

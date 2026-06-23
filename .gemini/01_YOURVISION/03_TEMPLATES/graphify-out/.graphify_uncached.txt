@@ -1,0 +1,6 @@
+/home/levdanskiy/.gemini/01_YOURVISION/03_TEMPLATES/post_chart.md
+/home/levdanskiy/.gemini/01_YOURVISION/03_TEMPLATES/post_flash.md
+/home/levdanskiy/.gemini/01_YOURVISION/03_TEMPLATES/post_longread.md
+/home/levdanskiy/.gemini/01_YOURVISION/03_TEMPLATES/post_poll.md
+/home/levdanskiy/.gemini/01_YOURVISION/03_TEMPLATES/post_standard.md
+/home/levdanskiy/.gemini/01_YOURVISION/03_TEMPLATES/post_verdict.md

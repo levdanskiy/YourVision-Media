@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "series": [
+    {
+      "series_id": "oracle-without-forecast",
+      "name": "Oracle Without Forecast",
+      "status": "active",
+      "rubrics": ["DIVINATION", "SV ORACLE-NOTE"],
+      "cadence": "weekly service rotation",
+      "next_due": "2026-07-23",
+      "notes": "Rotate zodiac, tarot, omen and one oracle system; no personal deterministic advice."
+    },
+    {
+      "series_id": "calendar-radar",
+      "name": "Calendar Radar",
+      "status": "active",
+      "rubrics": ["SV CALENDAR-RADAR"],
+      "cadence": "maximum once per ISO week",
+      "next_due": "2026-07-27",
+      "notes": "Required weekly map. 2026-W30 installment prepared for 21.07; one radar is mandatory every ISO week."
+    },
+    {
+      "series_id": "objects-that-know",
+      "name": "Objects That Know",
+      "status": "pilot",
+      "rubrics": ["OBJECTS", "TOOLS", "PANTRY"],
+      "cadence": "1-2 per month",
+      "next_due": null,
+      "notes": "One-object dossiers with rule, trace, price and modern equivalent."
+    },
+    {
+      "series_id": "table-is-a-map",
+      "name": "Table Is A Map",
+      "status": "pilot",
+      "rubrics": ["FEAST", "FOODWAYS", "CALENDAR"],
+      "cadence": "1-2 per month",
+      "next_due": null,
+      "notes": "Who sits, serves, refuses, waits and is absent."
+    },
+    {
+      "series_id": "calendar-is-not-neutral",
+      "name": "The Calendar Is Not Neutral",
+      "status": "pilot",
+      "rubrics": ["CYCLES", "MODERN", "CALENDAR"],
+      "cadence": "monthly arc",
+      "next_due": null,
+      "notes": "Dates as political, ritual and technological choices."
+    }
+  ]
+}

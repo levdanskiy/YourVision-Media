@@ -1,0 +1,13 @@
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/data.js
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/_archive/update_odds_BROKEN.py
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/fix_hub_layout.py
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/rebuild_hub.py
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/rebuild_perfect.py
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/restore_render.py
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/yv_tg_sync.py
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/README.md
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/index.html
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/tools/README.md
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/assets/heart_white_2026.svg
+/home/levdanskiy/.gemini/01_YOURVISION/08_HUB/assets/logo.webp

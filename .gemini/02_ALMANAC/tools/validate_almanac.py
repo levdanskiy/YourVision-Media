@@ -58,6 +58,19 @@ RUBRIC_LIMITS = {
 
 ACTIVE_FROM = (2026, 5, 16)
 NEW_SLOT_RULES_FROM = (2026, 7, 7)
+TIME_CHANGE_FROM = (2026, 7, 17)
+RECIPE_BLOCKS_FROM = (2026, 7, 22)
+ALWAYS_RECIPE_RUBRICS = {
+    "CAKES",
+    "BUNS",
+    "PATISSERIE",
+    "DESSERTS",
+    "SWEETS",
+    "BREAD",
+    "FLATBREAD",
+    "PIES",
+    "RECIPE",
+}
 VALID_STATUSES = {
     "IDEA",
     "DRAFT",
@@ -146,6 +159,12 @@ SLOT_RUBRICS = {
         "TOOLS",
     },
     "18:02": {"CHRONOS", "CALENDAR", "HERITAGE", "WHEEL", "CYCLES", "MODERN", "RITES", "FEAST", "ETYMON"},
+}
+
+TIME_SHIFTED_SLOT_RUBRICS = {
+    "09:04": SLOT_RUBRICS["10:04"],
+    "15:04": SLOT_RUBRICS["15:04"],
+    "21:04": SLOT_RUBRICS["18:02"],
 }
 
 AL_NAME = re.compile(
@@ -243,6 +262,8 @@ def file_date(match: re.Match[str]) -> tuple[int, int, int]:
 
 
 def slot_rubrics_for(date_tuple: tuple[int, int, int]) -> dict[str, set[str]]:
+    if date_tuple >= TIME_CHANGE_FROM:
+        return TIME_SHIFTED_SLOT_RUBRICS
     return SLOT_RUBRICS if date_tuple >= NEW_SLOT_RULES_FROM else LEGACY_SLOT_RUBRICS
 
 
@@ -324,6 +345,13 @@ def validate_file(path: Path, include_archive: bool, strict_coverage: bool) -> l
         limit = RUBRIC_LIMITS.get(rubric)
         if limit and len(body) > limit:
             issues.append(Issue("WARN", path, f"body length {len(body)} exceeds {rubric} limit {limit}"))
+
+        recipe_declared = metadata.get("recipe_included", "").lower() in {"1", "true", "yes"}
+        if (year, month, day) >= RECIPE_BLOCKS_FROM and (rubric in ALWAYS_RECIPE_RUBRICS or recipe_declared):
+            if not re.search(r"(?im)^\*\*ИНГРЕДИЕНТЫ:?\*\*$", body):
+                issues.append(Issue("ERROR", path, "recipe post missing INGREDIENTS block"))
+            if not re.search(r"(?im)^\*\*ПРИГОТОВЛЕНИЕ:?\*\*$", body):
+                issues.append(Issue("ERROR", path, "recipe post missing PREPARATION block"))
 
     if metadata.get("status") in READY_STATUSES and not prompt:
         issues.append(Issue("ERROR", path, "ready post has no visual prompt"))

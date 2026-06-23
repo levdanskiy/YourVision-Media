@@ -31,28 +31,41 @@ Read these before creating or editing posts:
 10. `01_BIBLES/SOURCE_DATABASES.md` - approved external source stacks, trust levels, citation rules.
 11. `01_BIBLES/INTERACTIVITY_SYSTEM.md` - polls, audience pulses, quizzes, and non-bait interaction rules.
 12. `01_BIBLES/SLOT_STRATEGY.md` - time-slot meaning, rubric movement, and timing-test policy.
-13. `01_BIBLES/SERVICE_AND_SPECIALS.md` - optional `SV` service notes, symbolic oracle/calendar radar notes, and rare `SP` 21:04 special posts from 07.07.
-14. `01_BIBLES/FORMAT_EXTENSIONS.md` - accepted lenses and divination subtypes such as TABLE, DREAM, TABOO, GESTURE, LOST, FEAST_TABLE.
-15. `01_BIBLES/FOOD_TECHNOLOGY_MATRIX.md` - planning map for global food mechanisms and missing format coverage.
-16. `01_BIBLES/CALENDAR_SYSTEMS_BANK.md` - planning bank for world calendars, cycles, modern holidays, fasts, and commemoration.
-17. `01_BIBLES/ANALYTICS_REVIEW.md` - biweekly performance review, series failure rules, and non-viral iteration policy.
-18. `01_BIBLES/DISTRIBUTION_RULES.md` - stories, cross-posting, audio/video, collaborations, and monetization boundary.
-19. `01_BIBLES/AGENTS_AND_SKILLS.md` - recommended planner, writer, factcheck, style, and visual QA passes.
-20. `01_BIBLES/PRE_PUBLISH_CHECKLIST.md` - final manual check.
+13. `01_BIBLES/SERVICE_AND_SPECIALS.md` - optional `SV` service notes, weekly oracle/calendar radar notes, and rare `SP` special posts.
+14. `01_BIBLES/BETWEEN_SLOT_SYSTEM.md` - `12:04` service lane, `18:04` special lane, story/external frames.
+15. `01_BIBLES/ORACLE_AND_RADAR_SYSTEM.md` - weekly zodiac/tarot/omen/oracle rotation and week-ahead calendar radar.
+16. `01_BIBLES/BOLD_LAYER_ROADMAP.md` - six approved bold layers and pilot windows.
+17. `01_BIBLES/STORY_LAYER_SYSTEM.md` - Telegram Story templates and limits.
+18. `01_BIBLES/PROOF_OF_WORK_SYSTEM.md` - source receipts, technique tests, proof cards.
+19. `01_BIBLES/READER_ARCHIVE_SYSTEM.md` - reader memory collection and verification.
+20. `01_BIBLES/MONTHLY_ALBUM_SYSTEM.md` - monthly field file/PDF/carousel derivative.
+21. `01_BIBLES/FORMAT_EXTENSIONS.md` - accepted lenses and divination subtypes such as TABLE, DREAM, TABOO, GESTURE, LOST, FEAST_TABLE.
+22. `01_BIBLES/FOOD_TECHNOLOGY_MATRIX.md` - planning map for global food mechanisms and missing format coverage.
+23. `01_BIBLES/CALENDAR_SYSTEMS_BANK.md` - planning bank for world calendars, cycles, modern holidays, fasts, and commemoration.
+24. `01_BIBLES/ANALYTICS_REVIEW.md` - biweekly performance review, series failure rules, and non-viral iteration policy.
+25. `01_BIBLES/DISTRIBUTION_RULES.md` - stories, cross-posting, audio/video, collaborations, and monetization boundary.
+26. `01_BIBLES/AGENTS_AND_SKILLS.md` - recommended planner, writer, factcheck, style, and visual QA passes.
+27. `01_BIBLES/PRE_PUBLISH_CHECKLIST.md` - final manual check.
 
 Older dated plans in `01_BIBLES/PLAN_*.md`, `JUNE_STRATEGY.md`, and `JULY_AUGUST_STRATEGY.md` are historical planning material. Before reusing any topic from them, rebuild it through `WORLD_COVERAGE_MATRIX.md` and current no-regional-anchor rules.
 
 ## Daily Publishing Contract
 
-Current AL format expects three slots per day:
+Current AL format expects three slots per day.
 
 Expanded slot rules apply to new and rewritten posts from `2026-07-07`. Already prepared material through `2026-07-06` is not rewritten retroactively.
+New posting times apply from `2026-07-17`. Legacy through `2026-07-16` keeps `10:04 / 15:04 / 18:02`.
 
 | Slot | Theme | Rubrics |
 |------|-------|---------|
-| `10:04` | Myths / sources / omens / divination / personae / bestiary / objects / texts | `LORE`, `SOURCE`, `OMENS`, `DIVINATION`, `PERSONAE`, `BESTIARY`, `OBJECTS`, `FRAGMENT`, `ETYMON`, `PROSE` |
+| `09:04` | Myths / sources / omens / divination / personae / bestiary / objects / texts | `LORE`, `SOURCE`, `OMENS`, `DIVINATION`, `PERSONAE`, `BESTIARY`, `OBJECTS`, `FRAGMENT`, `ETYMON`, `PROSE` |
 | `15:04` | Food only: desserts, baking, bread, fermentation, preservation, soups, condiments, drinks, pantry, tools, foodways, technique | `CAKES`, `BUNS`, `PATISSERIE`, `DESSERTS`, `SWEETS`, `RECIPE`, `BREAD`, `FLATBREAD`, `PIES`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS`, `FOODWAYS`, `PANTRY`, `DRINKS`, `TOOLS`, `LISTS`, `WORKFLOW` |
-| `18:02` | Calendar / season / heritage / rites / modern rituals / feast tables | `CHRONOS`, `CALENDAR`, `HERITAGE`, `WHEEL`, `CYCLES`, `MODERN`, `RITES`, `FEAST`, occasional `ETYMON` |
+| `21:04` | Calendar / season / heritage / rites / modern rituals / feast tables | `CHRONOS`, `CALENDAR`, `HERITAGE`, `WHEEL`, `CYCLES`, `MODERN`, `RITES`, `FEAST`, occasional `ETYMON` |
+
+Between-slot layer:
+- `12:04` - exactly two weekly `SV` from 20.07.2026: one `ORACLE-NOTE` and one `CALENDAR-RADAR`.
+- `18:04` - rare `SP` or visual/audio threshold, 2-4 per month max.
+- story/external frames are derivatives, not extra `AL` posts.
 
 `FERMENT`, `PRESERVE`, `SOUP`, and `CONDIMENTS` are real 15:04 filename rubrics. Labels such as `TABLE`, `GESTURE`, `DREAM`, `TABOO`, `LOST`, `FEAST_TABLE`, `FAST`, and `LIMINAL` are lenses/subtypes unless the taxonomy says otherwise. Use the real rubric in the filename and add the lens in planning or metadata when useful.
 
@@ -141,7 +154,7 @@ Run a strict preflight for one ready publishing day:
 python3 tools/preflight_day.py 2026 07 04
 ```
 
-The daily preflight requires exactly three AL posts for `10:04`, `15:04`, and `18:02`; ready status; strict coverage metadata; V4 style; target body length; visual prompt discipline; and source-note discipline.
+The daily preflight requires exactly three AL posts: legacy `10:04 / 15:04 / 18:02` through `2026-07-16`, then `09:04 / 15:04 / 21:04`; ready status; strict coverage metadata; V4 style; target body length; visual prompt discipline; and source-note discipline.
 
 Audit V4 tone, visual prompts, regional anchors, engagement bait, and divination framing:
 
@@ -165,16 +178,33 @@ Run the general prepublish check, or pass a date for strict day mode:
 
 ```bash
 tools/prepublish.sh
-tools/prepublish.sh 2026 07 04
+tools/prepublish.sh 2026 07 20
 ```
 
 Optional local git hook:
 
 ```bash
-git config core.hooksPath .githooks
+git -C /home/levdanskiy config core.hooksPath .gemini/02_ALMANAC/.githooks
 ```
 
-The hook runs the non-strict global validator and system-doc audit before commit. Use `tools/prepublish.sh YYYY MM DD` for final post-day approval.
+The pre-commit hook checks staged publishing days, continuity and system docs. Pre-push runs global audits; post-merge rebuilds indexes. Use `tools/prepublish.sh YYYY MM DD` for final post-day approval, including required trend and daily-improvement evidence.
+
+Unified commands:
+
+```bash
+python3 tools/almanac brief YYYY-MM-DD --write
+python3 tools/almanac improve YYYY-MM-DD --init
+python3 tools/almanac doctor YYYY-MM-DD
+python3 tools/almanac publish YYYY-MM-DD
+python3 tools/almanac canon
+python3 tools/almanac series YYYY-MM-DD
+python3 tools/almanac publications sync
+python3 tools/almanac assets sync
+python3 tools/almanac evidence audit YYYY-MM-DD --strict
+python3 tools/almanac semantic search "topic or claim"
+python3 tools/almanac experiments list
+python3 tools/almanac incidents audit YYYY-MM-DD --strict
+```
 
 Download and index approved local source datasets:
 

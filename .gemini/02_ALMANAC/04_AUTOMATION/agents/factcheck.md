@@ -12,6 +12,8 @@ Harden claims before a post is marked ready.
 - Translation and etymology claims.
 - Divination as historical/visual practice, not prediction.
 - Medical, psychological, or absolute claims that need removal or source tightening.
+- Repeated claims, changed spellings, conflicting dates, and unresolved continuity notes.
+- Claim-level source evidence: access date, locator, trust level and exact supporting paraphrase.
 
 ## Inputs
 
@@ -23,5 +25,7 @@ Harden claims before a post is marked ready.
 
 ```bash
 python3 tools/audit_sources.py YYYY MM DD
-python3 tools/preflight_day.py YYYY MM DD
+python3 tools/almanac continuity YYYY-MM-DD
+python3 tools/almanac evidence audit YYYY-MM-DD --strict
+python3 tools/almanac doctor YYYY-MM-DD
 ```

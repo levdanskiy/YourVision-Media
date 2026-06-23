@@ -1,3 +1,17 @@
+---
+post_id: "ЮВ-17.03-17-50-World-EuroGroove-Reminder"
+title: "НАПОМИНАНИЕ: ЭФИР EUROGROOVE - ЧЕРЕЗ 10 МИНУТ"
+date: "2026-03-17"
+time: "17:50"
+timezone: "PUBLICATION_TIMEZONE"
+status: "ГОТОВ (EDITORIAL ANALYST V4.0)"
+rubric: "CHART_REMINDER"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 // ИД-ПОСТА: ЮВ-17.03-17-50-World-EuroGroove-Reminder
 // ТЕМА: НАПОМИНАНИЕ: ЭФИР EUROGROOVE - ЧЕРЕЗ 10 МИНУТ
 // ДАТА ПУБЛИКАЦИИ: 17.03.2026, 17:50 (PUBLICATION_TIMEZONE)

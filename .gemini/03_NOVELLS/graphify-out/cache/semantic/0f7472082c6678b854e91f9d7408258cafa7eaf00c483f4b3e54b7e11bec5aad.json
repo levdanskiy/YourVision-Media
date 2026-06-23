@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "05_orchid_char_witness", "target": "05_orchid_concept_legend_vs_truth", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "05_ORCHID/04_CONTENT/2026/06/20/OR-20.06-10-00-GLAVA11-WITNESS-HUNT.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

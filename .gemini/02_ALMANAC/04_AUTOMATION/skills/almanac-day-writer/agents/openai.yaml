@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Day Writer"
+  short_description: "Prepare and validate one publishing day"
+  default_prompt: "Use $almanac-day-writer to prepare a complete Almanac publishing day with visible rotation and improvement reporting."

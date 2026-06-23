@@ -1,26 +1,29 @@
 ---
 name: almanac-factcheck
-description: Use when checking Almanac posts for FACTCHECK quality, source hierarchy, source_type discipline, dates, translations, food history claims, myth/source claims, divination framing, and medical/predictive-risk language.
+description: Verify Almanac dates, translations, etymologies, myth variants, food-history claims, calendars, divination framing, source hierarchy, and continuity before a post is marked ready.
 ---
 
 # Almanac Factcheck
 
-Work from the project source list in `01_BIBLES/SOURCE_DATABASES.md`.
+Use `01_BIBLES/SOURCE_DATABASES.md` and the local source registry first.
 
-Rules:
-- Prefer primary texts, critical editions, museum/catalog records, institutional calendars, ethnographic collections, and food-history references.
-- Mark the source basis in `source_type`; do not leave generic or placeholder source notes.
-- For myths and tales, distinguish primary text, later retelling, scholarly interpretation, and modern folklore adaptation.
-- For divination, describe historical objects, decks, manuals, visual systems, or calendar systems. Do not produce personal predictions.
-- For food history, separate recipe technique from origin legend and from modern adaptation.
-- For calendar/astronomy posts, use calendar-data or science-reference sources for dates and phenomena.
-- Avoid absolute claims such as "all cultures", "always", "never", and "the only source" unless the evidence really supports them.
+## Rules
 
-Run targeted checks:
+- Separate primary text, later retelling, scholarship and modern adaptation.
+- Separate food technique, origin evidence and origin legend.
+- Verify moving dates and astronomy with institutional data.
+- Keep forecasts explicitly editorial/entertainment-oriented and remove deterministic health, legal or financial advice.
+- Avoid universal claims unless the evidence is universal.
+- Check previous uses of the same entity, date, spelling and claim in the canon registry.
+- Store support for each strong claim in `EVIDENCE_REGISTRY.json`, including trust level, access date and locator.
+
+Run:
 
 ```bash
 python3 tools/audit_sources.py YYYY MM DD
-python3 tools/preflight_day.py YYYY MM DD
+python3 tools/almanac evidence audit YYYY-MM-DD --strict
+python3 tools/almanac continuity YYYY-MM-DD
+python3 tools/almanac doctor YYYY-MM-DD
 ```
 
-Fix every source warning before ready status.
+Resolve every source error; record defensible uncertainty instead of hiding it.

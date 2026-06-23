@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "char_klara_vossen", "target": "char_alex_weiss", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "10_VIENNA_SPECIAL/04_CONTENT/2026/05/16/VS-16.05-14-00-STORY-JULIEN.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

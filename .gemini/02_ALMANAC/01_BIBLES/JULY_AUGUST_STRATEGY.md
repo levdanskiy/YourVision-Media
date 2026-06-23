@@ -1,11 +1,11 @@
 // СТРАТЕГИЯ ALMANAC - ИЮЛЬ-АВГУСТ 2026
-// Обновлено после переноса новых правил на 07.07.2026.
+// Обновлено после переноса новых правил на 07.07.2026 и смены времени с 17.07.2026.
 
 ---
 
 ## Статус
 
-Июль не перестраивается заново. Дни `01-06.07` считаются подготовленными и не переписываются ретроактивно. Дни `07-08.07` уже приведены к новым правилам: food-only `15:04`, современный editorial tone, dossier/list/carousel-ready структура, глобальное сравнение без регионального якоря.
+Июль не перестраивается заново. Дни `01-16.07` считаются подготовленными и не переименовываются ретроактивно. Дни `07-16.07` уже приведены к новым рубричным правилам: food-only `15:04`, современный editorial tone, dossier/list/carousel-ready структура, глобальное сравнение без регионального якоря. Новое время применяется с `17.07.2026`.
 
 Август планируется уже полностью по новой системе.
 
@@ -20,13 +20,32 @@
 Не принимаем как core AL-рубрики: `#VOICE`, `#ARCHIVE`, `#QUESTION`, `#COLLAB`, `#VISUAL_ESSAY`. Они живут как `SV` или external derivative.
 
 Core AL rhythm:
-- `10:04` - Mind / Myth / Dossier.
+- `09:04` - Mind / Myth / Dossier.
 - `15:04` - Food Only.
-- `18:02` - Time / Ritual / Feast.
+- `21:04` - Time / Ritual / Feast.
+
+Legacy through `16.07`: `10:04 / 15:04 / 18:02`.
 
 Optional overlays:
-- `SV` 1-2 раза в неделю, в папке дня, не `AL-*`.
-- `SP` в `21:04` только для сильных порогов, 2-4 раза в месяц максимум.
+- С 20.07.2026 `SV` ровно два в неделю: `ORACLE-NOTE` + `CALENDAR-RADAR`, в папках соответствующих дней, не `AL-*`.
+- weekly default: one `SV ORACLE-NOTE` + one `SV CALENDAR-RADAR`, unless a stronger service item replaces one of them.
+- free-slot map lives in `BETWEEN_SLOT_SYSTEM.md`: `12:04` soft service, `18:04` rare threshold/special.
+- `SP` в `18:04` с `17.07`, только для сильных порогов, 2-4 раза в месяц максимум.
+- 4-й ежедневный пост не вводить; service/special слой остаётся редким.
+
+Trend workflow:
+- каждые 5 подготовленных дней показывать trend revision panel из `TREND_REVIEW_CADENCE.md`;
+- каждый 5-дневный блок должен приносить минимум одну новую фишку: формат, hook, визуальный ход, service idea, franchise или структурную замену;
+- ближайшие триггеры: `17.07`, `22.07`, `27.07`, `01.08`, `06.08`.
+
+Visible franchises to activate:
+- `Оракул недели`;
+- `Оракулы как технология вопроса`;
+- `Еда как технология`;
+- `Досье порога`;
+- `Календарь не нейтрален`;
+- `Вещи, которые знают`;
+- `Стол как карта праздника`.
 
 ---
 
@@ -36,15 +55,15 @@ Optional overlays:
 |------|---------|---------------|------------|
 | `07.07` | Восточный купальский узел | `10:04 SOURCE`, `18:02 CALENDAR` | Уже переписано по новым правилам. |
 | `08.07` | После купальского цикла | `10:04 OMENS`, `15:04 RECIPE`, `18:02 CHRONOS` | Уже переписано по новым правилам. |
-| `12.07` | Середина июля как развилка | `10:04 PROSE`, `15:04 DRINKS`, `18:02 CALENDAR` | Добавить `SV SERIES-NAV` в папку дня. |
+| `12.07` | Середина июля как развилка | `10:04 PROSE`, `15:04 DRINKS`, `18:02 CALENDAR` | Без service-добавки, чтобы не перегрузить неделю. |
 | `15.07` | Микросезоны / 72 ko | `18:02 CYCLES` | Закрывает East Asia в вечернем слоте. |
-| `20.07` | Apollo 11 как modern ritual | `18:02 MODERN` | Global Modern, не US-only. |
-| `22.07` | Мария Магдалина | `10:04 SOURCE`, `15:04 BREAD`, `18:02 CALENDAR` | География только как источник/календарь. |
-| `31.07` | Lammas Eve | `10:04 ETYMON`, `15:04 BREAD`, `21:04 SP` | `SP` как редкий threshold note. |
-| `01.08` | Lammas / Lughnasadh | `18:02 WHEEL/CALENDAR/FEAST` | Первый урожай, хлеб, стол, ритуал. |
-| `14.08` | Медовый/Маковый Спас в старостильном счёте | `18:02 CALENDAR/FEAST` | Сравнение календарей и пищевого порога. |
-| `23.08` | Лето/осень: заметная световая граница | `18:02 CHRONOS` | Не Мабон, а подготовка к нему. |
-| конец августа | Подготовка к Мабону | `18:02 WHEEL/CYCLES` | Осеннее равноденствие 23.09. |
+| `20.07` | Apollo 11 как modern ritual | `21:04 MODERN` | Global Modern, не US-only. |
+| `22.07` | Мария Магдалина | `09:04 SOURCE`, `15:04 BREAD`, `21:04 CALENDAR` | География только как источник/календарь. |
+| `31.07` | Lammas Eve | `09:04 ETYMON`, `15:04 BREAD`, `18:04 SP` | `SP` как редкий threshold note между основными постами. |
+| `01.08` | Lammas / Lughnasadh | `21:04 WHEEL/CALENDAR/FEAST` | Первый урожай, хлеб, стол, ритуал. |
+| `14.08` | Медовый/Маковый Спас в старостильном счёте | `21:04 CALENDAR/FEAST` | Сравнение календарей и пищевого порога. |
+| `23.08` | Лето/осень: заметная световая граница | `21:04 CHRONOS` | Не Мабон, а подготовка к нему. |
+| конец августа | Подготовка к Мабону | `21:04 WHEEL/CYCLES` | Осеннее равноденствие 23.09. |
 
 ---
 
@@ -60,9 +79,12 @@ Optional overlays:
 Service/special июля:
 - `07.07 12:04` - `SV DIRECTION-PULSE`, уже создан в папке дня.
 - `10.07 12:04` - `SV CALENDAR-RADAR`, ближайшие календарные узлы недели/десятидневки.
-- `13.07 12:04` - `SV ORACLE-NOTE`, первый символический прогноз недели, без личных предсказаний.
-- `19.07 12:04` - `SV RECAP`, короткий recap паттернов.
-- `31.07 21:04` - `SP Lammas Eve`, редкий night-threshold.
+- `13.07 12:04` - `SV ORACLE-NOTE`, первый weekly oracle forecast.
+- `21.07 12:04` - `SV CALENDAR-RADAR`, неделя 20-26.07; перенесён до публикации.
+- `23.07 12:04` - `SV ORACLE-NOTE`, второй weekly oracle, другой режим.
+- `27.07 12:04` - `SV ORACLE-NOTE`, Lammas-week oracle.
+- `30.07 12:04` - `SV CALENDAR-RADAR`, Lammas/week-ahead radar.
+- `31.07 18:04` - `SP Lammas Eve`, редкий threshold между пищевым и вечерним слотами.
 
 July broad-food correction:
 - `15.07` - `#FERMENT`, dosa batter / living culture.
@@ -70,20 +92,27 @@ July broad-food correction:
 - `23.07` - `#CONDIMENTS`, green sauce / food route.
 - `26.07` - `#PRESERVE`, cucumber in salt.
 
+July after `17.07` must correct the dashboard debts:
+- morning: introduce `PERSONAE/BESTIARY/OBJECTS` as `Dossier Card` or `Field File`;
+- food: reduce sweet-heavy drift with `FLATBREAD/SOUP/CONDIMENTS/PRESERVE`;
+- evening: reduce CHRONOS-heavy drift with `FEAST/RITES/WHEEL`;
+- coverage: close `Oceania / Island Cultures` no later than `18.07`;
+- at least one visible franchise by `22.07`.
+
 ---
 
 ## Август: Новая Сетка
 
 Август не делится на старые блоки `выпечка / мифы / праздники`. Он делится по слотам.
 
-### 10:04 - Mind / Myth / Dossier
+### 09:04 - Mind / Myth / Dossier
 
 Обязательные ветки:
 - `#PERSONAE`: герои как реальные фигуры культурной памяти, dossier-формат.
 - `#BESTIARY`: существа как полевые дела, следы, запреты, изображения, не fantasy-лоры.
 - `#OBJECTS`: предметы мифа/ритуала как музейное или бытовое evidence.
 - `#LORE/#SOURCE`: мифы, сказки, легенды, тексты, но через источник и версию.
-- `#OMENS/#DIVINATION`: суеверия, гадательные формы, календарные вопросы; без личных прогнозов.
+- `#OMENS/#DIVINATION`: суеверия, гадательные формы, календарные вопросы; в `AL` без личных прогнозов.
 - `#PROSE/#ETYMON`: только в утреннем или вечернем слоте, не в `15:04`.
 
 Августовские направления:
@@ -127,7 +156,7 @@ August food coverage must include at least:
 - Oceania / Island Cultures or African Diaspora;
 - Global Modern food system or food science.
 
-### 18:02 - Time / Ritual / Feast
+### 21:04 - Time / Ritual / Feast
 
 Обязательные ветки:
 - `#WHEEL/#CALENDAR`: Lammas, Lughnasadh, Спас, harvest calendars, Mabon lead-in.
@@ -152,7 +181,7 @@ Ritual lenses:
 ### Первая Жатва
 
 Core days:
-- `31.07` - Lammas Eve bridge, `SP` at `21:04`.
+- `31.07` - Lammas Eve bridge, `SP` at `18:04`.
 - `01.08` - Lammas / Lughnasadh as first harvest.
 - `02-10.08` - after-harvest practices: first sheaf, field edge, bread, honey, offerings.
 
@@ -186,23 +215,24 @@ August `CHRONOS/CYCLES` sequence:
 Core rule: do not add a fourth daily `AL` post.
 
 August service layer:
-- 1 `SV DIRECTION-PULSE` in the first week after Lammas performance is visible.
-- 1 weekly `SV RECAP` or `SV SERIES-NAV`, only when it helps readers follow a series.
+- 1 weekly `SV ORACLE-NOTE`: rotate `ZODIAC_WEEK`, `TAROT_WEEK`, `OMEN_WEEK`, `ORACLE_SYSTEM`.
+- 1 weekly `SV CALENDAR-RADAR`: week-ahead holidays/observances, source-checked.
+- `SV DIRECTION-PULSE` may be embedded into the weekly oracle/radar, moved to justified `SP`, or omitted.
+- `SV RECAP` and `SV SERIES-NAV` do not replace the required oracle/radar pair.
 - 1-2 `SP` notes maximum unless a major threshold requires more; never daily.
 - 1 `SV AUDIO-NOTE` every two weeks maximum, only for source reading, word pronunciation, field sound, or food-process sound.
 - `SV ARCHIVE-NOTE`, `SV COLLAB-NOTE`, and `SV VISUAL-ESSAY` are allowed only when they clarify a route, source, or visual process.
-- Test `SV ORACLE-NOTE` max twice in August: symbolic card/sign/omen of week, no personal predictions.
-- Test `SV CALENDAR-RADAR` max twice in August: today/week/month observance list, source-checked.
 
 Poll ideas:
 - Which August route should deepen: first harvest / food tools / myth dossiers / late-summer omens?
 - Which food branch should expand: living cultures / soups / condiments / desserts?
 - Which dossier should return: personae / bestiary / objects?
-- Which service layer is useful: calendar radar / symbolic oracle / source notes / recap?
+- Which oracle mode should return: zodiac week / tarot week / omen week / I Ching-rune week?
+- Which service layer is useful: calendar radar / oracle week / source notes / recap?
 
 Forbidden:
 - “Какой месяц был лучшим?” as a generic poll.
-- Personal predictions in `DIVINATION`.
+- Personal high-stakes predictions in `DIVINATION` and `SV ORACLE-NOTE`.
 - Ranking cultures, countries, religions, or peoples.
 
 Series failure:

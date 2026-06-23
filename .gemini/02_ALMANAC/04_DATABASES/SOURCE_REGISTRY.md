@@ -38,3 +38,12 @@ id,rubric_group,source_title,source_type,trust_level,url,license_or_rights,citat
 ```
 
 Every time a post uses a strong source, add a card. This gradually becomes the project's real research memory.
+
+## Claim-Level Evidence
+
+`source_cards.csv` remembers reusable sources. `EVIDENCE_REGISTRY.json` records how a source supports a specific published claim. New ready posts from `2026-07-21` require either at least one complete claim card or an explicit reviewed outcome `no_strong_claims` with a concrete note.
+
+```bash
+python3 tools/almanac evidence add POST_ID --claim "..." --source-title "..." --url "..." --trust-level A --evidence-type institutional_record --support "Paraphrased support"
+python3 tools/almanac evidence review POST_ID --outcome no_strong_claims --note "Sensory observation only; no disputed historical assertion."
+```

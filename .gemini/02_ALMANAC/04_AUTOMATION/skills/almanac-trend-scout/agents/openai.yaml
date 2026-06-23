@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Trend Scout"
+  short_description: "Run the five-day trend revision"
+  default_prompt: "Use -trend-scout to research and apply the required five-day Almanac trend revision."

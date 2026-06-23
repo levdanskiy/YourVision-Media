@@ -1,3 +1,17 @@
+---
+post_id: "ЮВ-16.03-18-45-Итоги-Чарта-Еврогрув"
+title: "ИТОГИ ЧАРТА EUROGROOVE: MULTIVERSE RUNNERS UP"
+date: "2026-03-17"
+time: "19:30"
+timezone: "PUBLICATION_TIMEZONE"
+status: "ГОТОВ (EDITORIAL ANALYST V4.0)"
+rubric: "Чарты, Результаты, Топ-24"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 // ИД-ПОСТА: ЮВ-16.03-18-45-Итоги-Чарта-Еврогрув
 // ТЕМА: ИТОГИ ЧАРТА EUROGROOVE: MULTIVERSE RUNNERS UP
 // ДАТА ПУБЛИКАЦИИ: 17.03.2026, 19:30 (PUBLICATION_TIMEZONE)

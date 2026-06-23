@@ -1,3 +1,17 @@
+---
+post_id: "YV-29.03-03-15-RESULTS-BATTLE-04"
+title: "Итоги 1/8 финала: Паритет 50/50 и победа Грузии."
+date: "2026-03-29"
+time: "03:15"
+timezone: "PUBLICATION_TIMEZONE"
+status: "ГОТОВ (EDITORIAL ANALYST V4.0)"
+rubric: "RESULTS"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 // ИД-ПОСТА: YV-29.03-03-15-RESULTS-BATTLE-04
 // ТЕМА: Итоги 1/8 финала: Паритет 50/50 и победа Грузии.
 // ДАТА ПУБЛИКАЦИИ: 29.03.2026, 03:15 (PUBLICATION_TIMEZONE)

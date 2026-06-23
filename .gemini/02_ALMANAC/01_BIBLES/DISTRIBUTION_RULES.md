@@ -16,6 +16,8 @@ Never write the original post as platform bait.
 
 ## Telegram Stories
 
+Use `STORY_LAYER_SYSTEM.md` for templates and cadence.
+
 Use stories as a light surface, not as a second feed.
 
 Allowed:
@@ -23,12 +25,30 @@ Allowed:
 - one poll for `SV` service questions;
 - one quote/kicker from a published post;
 - one "route this week" navigation story.
+- one proof-of-work receipt when a source or object needs visual trust;
+- one process frame for food texture or sound.
 
 Avoid:
 - daily story obligation;
 - "new post, go read" spam;
 - generic countdowns;
 - ranking cultures, dishes, or beliefs.
+
+## Monthly Album
+
+Use `MONTHLY_ALBUM_SYSTEM.md`.
+
+The monthly album is a derivative archive, not a new posting obligation.
+It may become:
+- PDF;
+- carousel;
+- Telegram media album;
+- long-form archive page;
+- `SV MONTHLY-ALBUM` release note.
+
+Do not build it from popularity alone. It must preserve global coverage,
+source receipts, food processes, calendar thresholds, and at least one quiet
+post that matters editorially.
 
 ## Cross-Posting
 
@@ -98,4 +118,3 @@ Until then:
 - no affiliate links inside AL posts;
 - no sponsored myth/food/calendar claims;
 - no paywalling corrections.
-

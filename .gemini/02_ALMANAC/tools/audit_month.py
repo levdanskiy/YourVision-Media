@@ -16,9 +16,11 @@ CONTENT = ROOT / "02_CONTENT"
 AL_NAME = re.compile(
     r"^AL-(?P<day>\d{2})\.(?P<month>\d{2})-(?P<hour>\d{2})-(?P<minute>\d{2})-(?P<rubric>[A-Z]+)-?.*\.md$"
 )
-EXPECTED_SLOTS = {"10:04", "15:04", "18:02"}
+LEGACY_EXPECTED_SLOTS = {"10:04", "15:04", "18:02"}
+TIME_SHIFTED_EXPECTED_SLOTS = {"09:04", "15:04", "21:04"}
 SUNDAY = 6
 NEW_SLOT_RULES_FROM = (2026, 7, 7)
+TIME_CHANGE_FROM = (2026, 7, 17)
 LEGACY_SLOT_RUBRICS = {
     "10:04": {"LORE", "SOURCE", "OMENS", "DIVINATION", "FRAGMENT", "ETYMON", "PROSE"},
     "15:04": {
@@ -63,8 +65,22 @@ SLOT_RUBRICS = {
     "18:02": {"CHRONOS", "CALENDAR", "HERITAGE", "WHEEL", "CYCLES", "MODERN", "RITES", "FEAST", "ETYMON"},
 }
 
+TIME_SHIFTED_SLOT_RUBRICS = {
+    "09:04": SLOT_RUBRICS["10:04"],
+    "15:04": SLOT_RUBRICS["15:04"],
+    "21:04": SLOT_RUBRICS["18:02"],
+}
+
+
+def expected_slots_for(date_tuple: tuple[int, int, int]) -> set[str]:
+    if date_tuple >= TIME_CHANGE_FROM:
+        return TIME_SHIFTED_EXPECTED_SLOTS
+    return LEGACY_EXPECTED_SLOTS
+
 
 def slot_rubrics_for(date_tuple: tuple[int, int, int]) -> dict[str, set[str]]:
+    if date_tuple >= TIME_CHANGE_FROM:
+        return TIME_SHIFTED_SLOT_RUBRICS
     return SLOT_RUBRICS if date_tuple >= NEW_SLOT_RULES_FROM else LEGACY_SLOT_RUBRICS
 
 
@@ -137,7 +153,8 @@ def main() -> int:
 
     print("## Slot Counts")
     print()
-    for slot in sorted(set(EXPECTED_SLOTS) | set(by_slot)):
+    display_slots = set(LEGACY_EXPECTED_SLOTS) | set(TIME_SHIFTED_EXPECTED_SLOTS) | set(by_slot)
+    for slot in sorted(display_slots):
         print(f"- `{slot}`: {by_slot[slot]}")
     print()
 
@@ -156,7 +173,8 @@ def main() -> int:
             match = AL_NAME.match(path.name)
             if match:
                 slots.append(f"{match.group('hour')}:{match.group('minute')}")
-        missing = sorted(EXPECTED_SLOTS - set(slots))
+        expected_slots = expected_slots_for((year, month, day))
+        missing = sorted(expected_slots - set(slots))
         extras = sorted(slot for slot in slots if slots.count(slot) > 1)
         if missing or extras or len(slots) != 3:
             any_gap = True
@@ -173,14 +191,17 @@ def main() -> int:
             sunday_fragment = False
             for path in by_day.get(day, []):
                 match = AL_NAME.match(path.name)
-                if match and match.group("hour") == "10" and match.group("minute") == "04":
+                expected_fragment_slot = "09:04" if (year, month, day) >= TIME_CHANGE_FROM else "10:04"
+                slot = f"{match.group('hour')}:{match.group('minute')}"
+                if match and slot == expected_fragment_slot:
                     if (year, month, day) >= NEW_SLOT_RULES_FROM:
                         sunday_fragment = match.group("rubric") in {"FRAGMENT", "PROSE", "ETYMON"}
                     else:
                         sunday_fragment = match.group("rubric") == "FRAGMENT"
             if not sunday_fragment:
                 if (year, month, day) >= NEW_SLOT_RULES_FROM:
-                    rotation_issues.append(f"{year}-{month:02d}-{day:02d} Sunday 10:04 is not `FRAGMENT`, `PROSE`, or `ETYMON`")
+                    slot_label = "09:04" if (year, month, day) >= TIME_CHANGE_FROM else "10:04"
+                    rotation_issues.append(f"{year}-{month:02d}-{day:02d} Sunday {slot_label} is not `FRAGMENT`, `PROSE`, or `ETYMON`")
                 else:
                     rotation_issues.append(f"{year}-{month:02d}-{day:02d} Sunday 10:04 is not `FRAGMENT`")
 

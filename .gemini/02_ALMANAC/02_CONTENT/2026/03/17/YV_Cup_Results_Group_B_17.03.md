@@ -1,3 +1,17 @@
+---
+post_id: "YV-17.03-16-45-Cup-Results-B"
+title: "ИТОГИ ГРУППЫ B. ШВЕЦИЯ И БРИТАНИЯ В ПЛЕЙ-ОФФ."
+date: "2026-03-17"
+time: "16:45"
+timezone: "PUBLICATION_TIMEZONE"
+status: "ГОТОВ (EDITORIAL ANALYST V4.0)"
+rubric: "TOURNAMENT, RESULTS"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 // ИД-ПОСТА: YV-17.03-16-45-Cup-Results-B
 // ТЕМА: ИТОГИ ГРУППЫ B. ШВЕЦИЯ И БРИТАНИЯ В ПЛЕЙ-ОФФ.
 // ДАТА ПУБЛИКАЦИИ: 17.03.2026, 16:45 (PUBLICATION_TIMEZONE)

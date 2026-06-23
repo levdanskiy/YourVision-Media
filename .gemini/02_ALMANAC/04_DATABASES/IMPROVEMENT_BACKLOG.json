@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "policy": {
+    "required_per_prepared_day": 1,
+    "allowed_statuses": ["proposed", "applied", "deferred", "rejected"],
+    "allowed_sizes": ["small", "medium", "big"],
+    "rule": "Every prepared day must apply one improvement or defer it with an owner, reason and review date."
+  },
+  "items": [
+    {
+      "id": "IMP-2026-07-21-automation-continuity",
+      "date": "2026-07-21",
+      "size": "big",
+      "area": "workflow",
+      "status": "applied",
+      "title": "Make rotation, continuity, trends and daily improvement enforceable",
+      "evidence": "Unified CLI, canon/series/publication/asset/evidence/experiment/incident registries, semantic memory, focused hooks, installed project skills, and a strict daily improvement record.",
+      "review_date": "2026-07-26"
+    }
+  ]
+}

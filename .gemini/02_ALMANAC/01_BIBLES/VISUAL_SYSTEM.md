@@ -13,6 +13,7 @@
 **Никакой постоянной региональной оптики** — место появляется только если оно является фактом объекта, источника, техники или праздника.
 **Главная V4-логика:** один объект, одна поверхность, один тип света, один доказательный смысл.
 **Канал выглядит как современный журнал:** editorial still life, documentary crop, controlled light, tactile material, negative space, fashion/food/culture magazine discipline. Не fantasy art, не музейная реконструкция, не stock-photo иллюстрация.
+**С 17.07.2026 визуал смелее:** не иллюстрировать тему, а предъявлять улику. Предмет, след, поверхность, разрез, сосуд, инструмент, жест руки, тень, residue. Чем меньше символов, тем сильнее кадр.
 
 Использовать чаще:
 - analog flash on one object;
@@ -43,6 +44,13 @@
 - **праздники/ритуалы:** documentary editorial, object/table/threshold as evidence;
 - **источники/тексты:** archival editorial, paper and material without readable text;
 - **время/сезон:** atmospheric documentary spread, not decorative landscape.
+
+Bold modes:
+- `field file`: one trace or object, flash, cropped evidence, no full explanation in frame;
+- `evidence board`: 2-3 objects maximum, arranged like a working desk, no readable text;
+- `lab note`: process surface, tool, spill, steam, bubbles, crust, set point;
+- `table map`: partial table, one missing seat/plate/object, no banquet abundance;
+- `one object dossier`: single item isolated with hard shadow and material detail.
 
 Формулы, которые можно использовать:
 ```

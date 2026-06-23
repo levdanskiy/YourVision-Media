@@ -27,7 +27,7 @@ One sentence only.
 
 Minimum: 6 zones total, 3 zones inside each big theme, 50% non-European/cross-global among known metadata.
 
-| Zone | 10:04 myths/omens | 15:04 food | 18:02 calendar/ritual | Total | Debt |
+| Zone | 09:04 myths/omens | 15:04 food | 21:04 calendar/ritual | Total | Debt |
 |------|-------------------|------------|------------------------|-------|------|
 | Africa |  |  |  |  |  |
 | African Diaspora |  |  |  |  |  |
@@ -57,12 +57,12 @@ Required monthly groups:
 
 | Family | Rubrics | Target Count | Actual |
 |--------|---------|--------------|--------|
-| 10:04 myths/omens/divination/personae | LORE / SOURCE / OMENS / DIVINATION / PERSONAE / BESTIARY / OBJECTS / FRAGMENT / ETYMON / PROSE | 28-31 |  |
+| 09:04 myths/omens/divination/personae | LORE / SOURCE / OMENS / DIVINATION / PERSONAE / BESTIARY / OBJECTS / FRAGMENT / ETYMON / PROSE | 28-31 |  |
 | Sweet food | CAKES / BUNS / PATISSERIE / DESSERTS / SWEETS | 16-20 |  |
 | Savory baking | BREAD / FLATBREAD / PIES | 8-12 after ramp-up |  |
 | Broad food/process | FERMENT / PRESERVE / SOUP / CONDIMENTS / RECIPE / FOODWAYS / PANTRY / DRINKS / TOOLS / LISTS / WORKFLOW | 8-12 |  |
-| 18:02 calendar/ritual/feast | WHEEL / CALENDAR / HERITAGE / CHRONOS / CYCLES / MODERN / RITES / FEAST / ETYMON | 28-31 |  |
-| Cross-theme language/text | ETYMON / PROSE in 10:04 or 18:02 only; food language embedded in food rubrics | 4-8 |  |
+| 21:04 calendar/ritual/feast | WHEEL / CALENDAR / HERITAGE / CHRONOS / CYCLES / MODERN / RITES / FEAST / ETYMON | 28-31 |  |
+| Cross-theme language/text | ETYMON / PROSE in 09:04 or 21:04 only; food language embedded in food rubrics | 4-8 |  |
 
 ## Recurring V4 Series
 
@@ -126,17 +126,41 @@ Use `FORMAT_EXTENSIONS.md`. These are not filename rubrics.
 |------|-------|---------|---------------------|
 |  |  |  | story / audio / video / cross-post / none |
 
+## Bold Layers Plan
+
+Use `BOLD_LAYER_ROADMAP.md` and fill this before drafting a new month.
+
+| Layer | Planned Date/Week | Output | Replaces / Depends On |
+|-------|-------------------|--------|------------------------|
+| Weekly oracle |  | `SV ORACLE-NOTE` | one weekly service slot |
+| Calendar radar |  | `SV CALENDAR-RADAR` | one weekly service slot |
+| Micro quiz |  | embedded interaction or rare justified `SP` | never replaces the required oracle/radar pair |
+| Stories |  | teaser/process/route frames | derivative, not `AL` |
+| Proof of work |  | source receipts / proof cards | required for high-risk posts |
+| Reader archive |  | `SV READER-NOTE` / lead list | max 1 per month |
+| Monthly album |  | field file / PDF / carousel | after month closes |
+
 ## Analytics Review Plan
 
 | Review Date | Scope | Question |
 |-------------|-------|----------|
 |  |  |  |
 
+## 5-Day Trend Review Plan
+
+Every 5 prepared publication days, run `TREND_REVIEW_CADENCE.md` before sending posts to the user.
+
+| Trigger Date | Signals To Check | Feature To Try | Applied In |
+|--------------|------------------|----------------|------------|
+|  | content/social + visual/design + culture/food/media |  |  |
+|  | content/social + visual/design + culture/food/media |  |  |
+|  | content/social + visual/design + culture/food/media |  |  |
+
 ## Daily Slot Grid
 
 Each row must include rubric, topic, zone, axis, and source stack before drafting.
 
-| Date | 10:04 | Zone / Axis / Source | 15:04 | Zone / Axis / Source | 18:02 | Zone / Axis / Source |
+| Date | 09:04 | Zone / Axis / Source | 15:04 | Zone / Axis / Source | 21:04 | Zone / Axis / Source |
 |------|-------|----------------------|-------|----------------------|-------|----------------------|
 | 01 |  |  |  |  |  |  |
 | 02 |  |  |  |  |  |  |
@@ -173,6 +197,8 @@ Each row must include rubric, topic, zone, axis, and source stack before draftin
 ## Source Stack
 
 Every fact-heavy post needs a short `FACTCHECK` note.
+
+High-risk posts also need a visible proof shape from `PROOF_OF_WORK_SYSTEM.md`.
 
 | Date / Slot | Claim Risk | Required Sources | Status |
 |-------------|------------|------------------|--------|

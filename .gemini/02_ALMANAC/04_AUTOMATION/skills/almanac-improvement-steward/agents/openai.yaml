@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Improvement Steward"
+  short_description: "Plan and apply one daily improvement"
+  default_prompt: "Use $almanac-improvement-steward to identify, apply, and document one concrete daily Almanac improvement."

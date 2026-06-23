@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "05_orchid_glava2", "target": "05_orchid_maximilian", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "05_ORCHID/04_CONTENT/2026/06/11/OR-11.06-13-00-STORY-THE-WALL.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

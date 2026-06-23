@@ -11,7 +11,10 @@ Use one of these statuses in post metadata and planning files.
 | `READY` / `ГОТОВ` | Passed rubric, voice, length, prompt, and fact checks. Ready to schedule. |
 | `SCHEDULED` | Loaded into the publishing queue. |
 | `PUBLISHED` | Published. Do not edit silently; use `CORRECTIONS.md` for meaningful changes. |
+| `CORRECTED` | Published and meaningfully corrected with an incident/correction record. |
 | `ARCHIVE` | Kept for reference, not part of the active calendar. |
+
+The file status describes editorial readiness. Actual queue/publication state lives in `04_DATABASES/PUBLICATION_REGISTRY.json`; update it through `python3 tools/almanac publications ...`. Imported records use `state_source: content_import` and are not Telegram-verified. A `READY` file is not proof that Telegram published it.
 
 ## Ready Criteria
 
@@ -44,4 +47,12 @@ cultural_zone: Europe
 coverage_axis: sweet dough
 source_type: food_history
 ---
+```
+
+For new workflow use:
+
+```bash
+python3 tools/almanac publications sync
+python3 tools/almanac publications set POST_ID scheduled --scheduled-at 2026-07-21T09:04:00+03:00
+python3 tools/almanac publications set POST_ID published --telegram-message-id 123 --channel @channel
 ```

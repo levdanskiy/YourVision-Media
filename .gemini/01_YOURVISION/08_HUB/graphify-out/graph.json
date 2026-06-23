@@ -1,0 +1,795 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "hub_content_pipeline",
+        "label": "Hub Content Pipeline",
+        "nodes": [
+          "tools_yv_tg_sync_sync",
+          "tools_rebuild_perfect_rebuild",
+          "08_hub_data_data",
+          "08_hub_index_html_structure"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "08_HUB/tools/yv_tg_sync.py"
+      },
+      {
+        "id": "hub_layout_patchers",
+        "label": "Hub Layout Patchers",
+        "nodes": [
+          "tools_fix_hub_layout_news_render_new",
+          "tools_restore_render_new_render_js"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "08_HUB/tools/fix_hub_layout.py"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "data.js",
+      "file_type": "code",
+      "source_file": "data.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "data",
+      "community": 9,
+      "norm_label": "data.js"
+    },
+    {
+      "label": "update_odds_BROKEN.py",
+      "file_type": "code",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "archive_update_odds_broken",
+      "community": 6,
+      "norm_label": "update_odds_broken.py"
+    },
+    {
+      "label": "update_odds()",
+      "file_type": "code",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "archive_update_odds_broken_update_odds",
+      "community": 6,
+      "norm_label": "update_odds()"
+    },
+    {
+      "label": "fix_hub_layout.py",
+      "file_type": "code",
+      "source_file": "tools/fix_hub_layout.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_fix_hub_layout",
+      "community": 10,
+      "norm_label": "fix_hub_layout.py"
+    },
+    {
+      "label": "rebuild_hub.py",
+      "file_type": "code",
+      "source_file": "tools/rebuild_hub.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_rebuild_hub",
+      "community": 11,
+      "norm_label": "rebuild_hub.py"
+    },
+    {
+      "label": "rebuild_perfect.py",
+      "file_type": "code",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_rebuild_perfect",
+      "community": 1,
+      "norm_label": "rebuild_perfect.py"
+    },
+    {
+      "label": "rebuild()",
+      "file_type": "code",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tools_rebuild_perfect_rebuild",
+      "community": 1,
+      "norm_label": "rebuild()"
+    },
+    {
+      "label": "restore_render.py",
+      "file_type": "code",
+      "source_file": "tools/restore_render.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_restore_render",
+      "community": 12,
+      "norm_label": "restore_render.py"
+    },
+    {
+      "label": "yv_tg_sync.py",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tools_yv_tg_sync",
+      "community": 0,
+      "norm_label": "yv_tg_sync.py"
+    },
+    {
+      "label": "parse_poll()",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tools_yv_tg_sync_parse_poll",
+      "community": 0,
+      "norm_label": "parse_poll()"
+    },
+    {
+      "label": "get_telegram_news()",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "tools_yv_tg_sync_get_telegram_news",
+      "community": 0,
+      "norm_label": "get_telegram_news()"
+    },
+    {
+      "label": "sync()",
+      "file_type": "code",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "tools_yv_tg_sync_sync",
+      "community": 0,
+      "norm_label": "sync()"
+    },
+    {
+      "label": "DATA",
+      "file_type": "code",
+      "source_file": "08_HUB/data.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_data_data",
+      "community": 1,
+      "norm_label": "data"
+    },
+    {
+      "label": "update_odds",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/_archive/update_odds_BROKEN.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "_archive_update_odds_broken_update_odds",
+      "community": 1,
+      "norm_label": "update_odds"
+    },
+    {
+      "label": "news_render_new",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/fix_hub_layout.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tools_fix_hub_layout_news_render_new",
+      "community": 4,
+      "norm_label": "news_render_new"
+    },
+    {
+      "label": "new_render_js",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/restore_render.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tools_restore_render_new_render_js",
+      "community": 4,
+      "norm_label": "new_render_js"
+    },
+    {
+      "label": "normalize_title",
+      "file_type": "code",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tools_yv_tg_sync_normalize_title",
+      "community": 0,
+      "norm_label": "normalize_title"
+    },
+    {
+      "label": "Vienna 2026 Insider Hub",
+      "file_type": "concept",
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_readme_vienna_2026_insider_hub",
+      "community": 7,
+      "norm_label": "vienna 2026 insider hub"
+    },
+    {
+      "label": "Heart-Shape Flags Rule",
+      "file_type": "rationale",
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_readme_heart_shape_flags_rule",
+      "community": 2,
+      "norm_label": "heart-shape flags rule"
+    },
+    {
+      "label": "data.js data model rules",
+      "file_type": "rationale",
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_readme_data_js_data_model_rules",
+      "community": 1,
+      "norm_label": "data.js data model rules"
+    },
+    {
+      "label": "linkify",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_index_linkify",
+      "community": 2,
+      "norm_label": "linkify"
+    },
+    {
+      "label": "render",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_index_render",
+      "community": 2,
+      "norm_label": "render"
+    },
+    {
+      "label": "getHeartUrl",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_index_gethearturl",
+      "community": 2,
+      "norm_label": "gethearturl"
+    },
+    {
+      "label": "replaceFlags",
+      "file_type": "code",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_index_replaceflags",
+      "community": 2,
+      "norm_label": "replaceflags"
+    },
+    {
+      "label": "index.html structure",
+      "file_type": "concept",
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "08_hub_index_html_structure",
+      "community": 4,
+      "norm_label": "index.html structure"
+    },
+    {
+      "label": "Cooperative Sync Workflow",
+      "file_type": "rationale",
+      "source_file": "08_HUB/tools/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tools_readme_cooperative_sync_workflow",
+      "community": 0,
+      "norm_label": "cooperative sync workflow"
+    },
+    {
+      "label": "Eurovision Song Contest Asia 2026 Graphic",
+      "file_type": "image",
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_esc_asia_2026_bangkok_graphic",
+      "community": 3,
+      "norm_label": "eurovision song contest asia 2026 graphic"
+    },
+    {
+      "label": "Eurovision Song Contest Asia 2026",
+      "file_type": "concept",
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_esc_asia_2026_bangkok_event",
+      "community": 3,
+      "norm_label": "eurovision song contest asia 2026"
+    },
+    {
+      "label": "Bangkok",
+      "file_type": "concept",
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_esc_asia_2026_bangkok_location",
+      "community": 3,
+      "norm_label": "bangkok"
+    },
+    {
+      "label": "14 November 2026",
+      "file_type": "concept",
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_esc_asia_2026_bangkok_date",
+      "community": 3,
+      "norm_label": "14 november 2026"
+    },
+    {
+      "label": "White Heart Icon",
+      "file_type": "image",
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/heart_white_2026.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_heart_white_2026_icon",
+      "community": 8,
+      "norm_label": "white heart icon"
+    },
+    {
+      "label": "United by Music 70th Anniversary Logo",
+      "file_type": "image",
+      "source_file": "01_YOURVISION/08_HUB/assets/logo.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_logo_image",
+      "community": 5,
+      "norm_label": "united by music 70th anniversary logo"
+    },
+    {
+      "label": "United by Music Slogan",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/08_HUB/assets/logo.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_logo_united_by_music",
+      "community": 5,
+      "norm_label": "united by music slogan"
+    },
+    {
+      "label": "70th Anniversary Design",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/08_HUB/assets/logo.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "assets_logo_70th_anniversary",
+      "community": 5,
+      "norm_label": "70th anniversary design"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/_archive/update_odds_BROKEN.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "archive_update_odds_broken",
+      "target": "archive_update_odds_broken_update_odds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/rebuild_perfect.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tools_rebuild_perfect",
+      "target": "tools_rebuild_perfect_rebuild",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/rebuild_perfect.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_rebuild_perfect_rebuild",
+      "target": "08_hub_data_data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/rebuild_perfect.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_rebuild_perfect_rebuild",
+      "target": "08_hub_index_html_structure"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_rebuild_perfect_rebuild"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "tools_yv_tg_sync",
+      "target": "tools_yv_tg_sync_get_telegram_news",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tools_yv_tg_sync",
+      "target": "tools_yv_tg_sync_parse_poll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/yv_tg_sync.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "tools_yv_tg_sync",
+      "target": "tools_yv_tg_sync_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_yv_tg_sync_get_telegram_news",
+      "target": "tools_yv_tg_sync_parse_poll"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_yv_tg_sync_get_telegram_news"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_readme_cooperative_sync_workflow",
+      "target": "tools_yv_tg_sync_sync"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_yv_tg_sync_sync",
+      "target": "08_hub_data_data"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/yv_tg_sync.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_yv_tg_sync_sync",
+      "target": "tools_yv_tg_sync_normalize_title"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_index_render",
+      "target": "08_hub_data_data"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_readme_data_js_data_model_rules",
+      "target": "08_hub_data_data"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/_archive/update_odds_BROKEN.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "_archive_update_odds_broken_update_odds",
+      "target": "08_hub_data_data"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/fix_hub_layout.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_fix_hub_layout_news_render_new",
+      "target": "08_hub_index_html_structure"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/tools/fix_hub_layout.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_fix_hub_layout_news_render_new",
+      "target": "tools_restore_render_new_render_js"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/tools/restore_render.py",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tools_restore_render_new_render_js",
+      "target": "08_hub_index_html_structure"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_readme_heart_shape_flags_rule",
+      "target": "08_hub_index_gethearturl"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_readme_heart_shape_flags_rule",
+      "target": "08_hub_index_html_structure"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_readme_heart_shape_flags_rule",
+      "target": "08_hub_index_replaceflags"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_index_render",
+      "target": "08_hub_index_linkify"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_index_render",
+      "target": "08_hub_index_gethearturl"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08_HUB/index.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "08_hub_index_render",
+      "target": "08_hub_index_replaceflags"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_esc_asia_2026_bangkok_graphic",
+      "target": "assets_esc_asia_2026_bangkok_date"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_esc_asia_2026_bangkok_graphic",
+      "target": "assets_esc_asia_2026_bangkok_event"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_esc_asia_2026_bangkok_graphic",
+      "target": "assets_esc_asia_2026_bangkok_location"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_esc_asia_2026_bangkok_event",
+      "target": "assets_esc_asia_2026_bangkok_date"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": ".gemini/01_YOURVISION/08_HUB/assets/ESC_Asia_2026_Bangkok.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_esc_asia_2026_bangkok_event",
+      "target": "assets_esc_asia_2026_bangkok_location"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_YOURVISION/08_HUB/assets/logo.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_logo_image",
+      "target": "assets_logo_70th_anniversary"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_YOURVISION/08_HUB/assets/logo.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "assets_logo_image",
+      "target": "assets_logo_united_by_music"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hub_content_pipeline",
+      "label": "Hub Content Pipeline",
+      "nodes": [
+        "tools_yv_tg_sync_sync",
+        "tools_rebuild_perfect_rebuild",
+        "08_hub_data_data",
+        "08_hub_index_html_structure"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "08_HUB/tools/yv_tg_sync.py"
+    },
+    {
+      "id": "hub_layout_patchers",
+      "label": "Hub Layout Patchers",
+      "nodes": [
+        "tools_fix_hub_layout_news_render_new",
+        "tools_restore_render_new_render_js"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08_HUB/tools/fix_hub_layout.py"
+    }
+  ],
+  "built_at_commit": "36317b260bc81cbe6daafaf0c917b57b3dca9783"
+}

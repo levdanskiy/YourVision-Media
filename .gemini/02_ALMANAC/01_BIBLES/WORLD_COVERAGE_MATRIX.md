@@ -53,9 +53,9 @@ Minimum per month:
 | Scope | Requirement |
 |-------|-------------|
 | All posts | Minimum 6 cultural zones total. |
-| 10:04 | Minimum 3 cultural zones. |
+| 09:04 | Minimum 3 cultural zones. |
 | 15:04 | Minimum 3 cultural zones. |
-| 18:02 | Minimum 3 cultural zones. |
+| 21:04 | Minimum 3 cultural zones. |
 | Non-European coverage | Minimum 50% of posts with known cultural zone should be non-European or cross-cultural with non-European zones. |
 | Underrepresented rotation | Each month must include at least one post from `Africa`, `Indigenous Americas`, `Oceania` or `Island Cultures`, and `South Asia` or `Southeast Asia`. |
 | Modern/global | Minimum 1 `Global Modern` post per month. |
@@ -64,7 +64,9 @@ These are floors, not targets. Exceed them.
 
 ## Coverage Axes By Theme
 
-### 10:04 - Myths, Tales, Omens, Divination, Personae
+Legacy through `2026-07-16`: 10:04 / 15:04 / 18:02 count as the same three themes.
+
+### 09:04 - Myths, Tales, Omens, Divination, Personae
 
 Use one or more as `coverage_axis`:
 
@@ -105,7 +107,7 @@ Use one or more:
 | `ceremonial bread` | Sabbath, harvest, funeral, wedding, temple/church bread. |
 | `non-wheat staple` | Rice, maize, cassava, millet, sorghum, teff, beans. |
 
-### 18:02 - Calendar, Ritual, Time
+### 21:04 - Calendar, Ritual, Time
 
 Use one or more:
 
@@ -130,8 +132,8 @@ Use one or more:
 When planning a month, make a coverage table before writing posts:
 
 ```text
-Zone / 10:04 / 15:04 / 18:02 / total / debt
-Africa / 1 / 1 / 0 / 2 / needs 18:02
+Zone / 09:04 / 15:04 / 21:04 / total / debt
+Africa / 1 / 1 / 0 / 2 / needs 21:04
 Oceania / 0 / 0 / 1 / 1 / needs food + lore
 ...
 ```

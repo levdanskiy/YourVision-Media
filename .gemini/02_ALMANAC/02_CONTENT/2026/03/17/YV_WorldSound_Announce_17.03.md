@@ -1,3 +1,17 @@
+---
+post_id: "YV-17.03-20-30-World-WorldSound-Announce"
+title: "АНОНС ЧАРТА WORLDSOUND: AIRWAVE VELOCITY"
+date: "2026-03-17"
+time: "20:30"
+timezone: "PUBLICATION_TIMEZONE"
+status: "ГОТОВ (EDITORIAL ANALYST V4.0)"
+rubric: "CHART_ANNOUNCE, STANDARD"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 // ИД-ПОСТА: YV-17.03-20-30-World-WorldSound-Announce
 // ТЕМА: АНОНС ЧАРТА WORLDSOUND: AIRWAVE VELOCITY
 // ДАТА ПУБЛИКАЦИИ: 17.03.2026, 20:30 (PUBLICATION_TIMEZONE)

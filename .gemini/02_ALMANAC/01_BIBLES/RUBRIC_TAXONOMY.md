@@ -23,7 +23,9 @@ Every complete post must answer six questions:
 5. **Why now?** Calendar, season, slot, current relevance, or reader-facing reason.
 6. **Where does it land?** Final image, question, action, or silence. No moral.
 
-## 10:04 - Myths, Tales, Legends, Omens, Divination
+## 09:04 - Myths, Tales, Legends, Omens, Divination
+
+Legacy through `2026-07-16`: `10:04`.
 
 | Rubric | Use For | Do Not Use For |
 |--------|---------|----------------|
@@ -37,7 +39,7 @@ Every complete post must answer six questions:
 | `FRAGMENT` | One material object, maximum compression, silence. | Concepts, living beings, explanations. |
 | `ETYMON` | Word origin as cultural archaeology. | Decorative etymology without a source. |
 
-### 10:04 Full Coverage
+### 09:04 Full Coverage
 
 | Rubric | Required For 100% |
 |--------|-------------------|
@@ -135,7 +137,9 @@ These are not filename rubrics. Use the real rubric and, if helpful, add a `FORM
 | `SWEET_BREAD` | `BUNS` | Sweet yeasted festive bread: panettone, kulich, brioche, sweet challah. |
 | `SUGAR_STAGE` | `SWEETS`, `RECIPE`, `PATISSERIE` | Syrup stages, caramel, praline, tempering-adjacent sugar chemistry. |
 
-## 18:02 - Calendar, Ritual, Time
+## 21:04 - Calendar, Ritual, Time
+
+Legacy through `2026-07-16`: `18:02`.
 
 | Rubric | Use For |
 |--------|---------|
@@ -148,7 +152,7 @@ These are not filename rubrics. Use the real rubric and, if helpful, add a `FORM
 | `RITES` | Rites of passage and formal transitions. |
 | `FEAST` | Holiday through table: feast foods, fasting/breaking fast, offerings, ritual dishes, public food customs. |
 
-### 18:02 Full Coverage
+### 21:04 Full Coverage
 
 | Rubric | Required For 100% |
 |--------|-------------------|
@@ -161,7 +165,7 @@ These are not filename rubrics. Use the real rubric and, if helpful, add a `FORM
 | `RITES` | Life transition + age/moment + objects/actions + separation/liminality/return + modern change. |
 | `FEAST` | Dated feast/fast/table + origin + food rule or dish + who gathers/excludes + how the table changed today. |
 
-### Accepted 10:04 / 18:02 Lenses
+### Accepted 09:04 / 21:04 Lenses
 
 These are not filename rubrics.
 

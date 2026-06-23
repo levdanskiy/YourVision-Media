@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Factcheck"
+  short_description: "Verify claims, dates and source hierarchy"
+  default_prompt: "Use $almanac-factcheck to verify Almanac claims, sources and continuity before publication."

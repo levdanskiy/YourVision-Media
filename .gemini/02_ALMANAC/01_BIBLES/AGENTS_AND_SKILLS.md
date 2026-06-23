@@ -7,11 +7,13 @@ This file defines the working roles for Almanac. These are not separate editoria
 Every pass must preserve the current principles:
 
 - global coverage across all cultural zones;
-- no default Riga / Latvia / Baltic / Europe anchor;
+- geography serves evidence and comparison rather than a fixed editorial center;
 - three daily slots: myth/source/divination/personae, food-only baking/dessert/foodways, calendar/heritage/season/feast;
 - sweet and savory baking/dessert branches stay separated;
-- divination is historical and visual culture, not personal prediction;
+- divination may include approved weekly editorial predictions and oracle formats, but never deterministic medical, legal or financial advice;
 - every ready post carries coverage metadata, source metadata, FACTCHECK, grade, and visual prompt.
+- every prepared day from `2026-07-21` carries a visible improvement record with an applied or explicitly deferred change;
+- every fifth day from `2026-07-17` carries a current trend review.
 
 ## Max Mode
 
@@ -23,6 +25,8 @@ Almanac work is not a minimal compliance pass. Use the whole rule system every t
 - source hierarchy and citation rules;
 - V4 tone, visual, and carousel/search structure;
 - strict daily preflight.
+- canon, series and recent visual checks;
+- a visible rotation report before writing.
 
 If a user asks for a day in the current sequence, keep work scoped to that day unless they explicitly ask to repair archive material. If a date looks like a typo, do not edit a different month just to be literal.
 
@@ -60,7 +64,9 @@ Agent card:
 Required command:
 
 ```bash
-python3 tools/preflight_day.py YYYY MM DD
+python3 tools/almanac brief YYYY-MM-DD --write
+python3 tools/almanac improve YYYY-MM-DD --init
+python3 tools/almanac publish YYYY-MM-DD
 ```
 
 ### Factcheck
@@ -109,19 +115,75 @@ Checks:
 - object, ritual, food, sky, or document is inspectable;
 - prompt ends with the required film phrase.
 
+### Editorial Orchestrator
+
+Purpose: coordinate the entire request and make rotation, trend and improvement decisions visible.
+
+Uses:
+- `04_AUTOMATION/skills/almanac-orchestrator/SKILL.md`
+- `04_AUTOMATION/agents/editorial-orchestrator.md`
+
+### Continuity Keeper
+
+Purpose: prevent accidental repetition and preserve factual/entity continuity.
+
+Required commands:
+
+```bash
+python3 tools/almanac canon
+python3 tools/almanac continuity YYYY-MM-DD
+```
+
+### Series Keeper
+
+Purpose: track recurring formats and the SV/SP limits.
+
+Required command: `python3 tools/almanac series YYYY-MM-DD`.
+
+### Trend Scout
+
+Purpose: complete the five-day current-market review and apply one controlled experiment.
+
+Required command: `python3 tools/almanac trends YYYY-MM-DD --strict` when due.
+
+### Improvement Steward
+
+Purpose: apply or formally defer one concrete improvement for every prepared day.
+
+Required command: `python3 tools/almanac improve YYYY-MM-DD --strict`.
+
+## Operational Registries
+
+From `2026-07-21`, a new ready day also passes these layers:
+
+```bash
+python3 tools/almanac publications audit YYYY-MM-DD --strict
+python3 tools/almanac assets audit YYYY-MM-DD --strict
+python3 tools/almanac evidence audit YYYY-MM-DD --strict
+python3 tools/almanac semantic audit YYYY-MM-DD --strict
+python3 tools/almanac experiments audit YYYY-MM-DD --strict
+python3 tools/almanac incidents audit YYYY-MM-DD --strict
+```
+
+- Publication registry separates content readiness from scheduling and publication.
+- Asset registry validates real image files, ALT and rights.
+- Evidence registry maps claims to supporting sources.
+- Semantic memory finds meaning-level repetition.
+- Experiment registry forces measurement and adoption/drop decisions.
+- Incident registry blocks unresolved high/critical problems on affected posts.
+
 ## Hook
 
 Optional local hook:
 
 ```bash
-git config core.hooksPath .githooks
+git -C /home/levdanskiy config core.hooksPath .gemini/02_ALMANAC/.githooks
 ```
 
-The hook runs:
+The hooks run focused day checks before commit, global audits before push, and rebuild generated indexes after merge.
 
 ```bash
-python3 tools/validate_almanac.py
-python3 tools/audit_system_docs.py
+python3 tools/hook_pre_commit.py
 ```
 
 Use the stricter daily gate before publication:
@@ -130,12 +192,12 @@ Use the stricter daily gate before publication:
 tools/prepublish.sh YYYY MM DD
 ```
 
-## Installing Project Skills Later
+## Installed Project Skills
 
-Project skill sources live in `04_AUTOMATION/skills/`. If Codex global skills are writable, copy each skill directory into:
+Project skill sources live in `04_AUTOMATION/skills/`. Install each skill directory into:
 
 ```text
 ~/.codex/skills/
 ```
 
-Do not create extra README files inside skill directories; `SKILL.md` is the source of truth.
+After editing a skill, validate it and refresh the installed copy. Do not create extra README files inside skill directories; `SKILL.md` is the source of truth.

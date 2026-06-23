@@ -27,6 +27,11 @@ Use APIs or targeted source pages when:
 04_DATABASES/
   README.md
   SOURCE_REGISTRY.md
+  PUBLICATION_REGISTRY.json
+  ASSET_REGISTRY.json
+  EVIDENCE_REGISTRY.json
+  EXPERIMENT_REGISTRY.json
+  EDITORIAL_INCIDENTS.json
   downloads/       # raw downloaded files, if approved
   indexes/         # small derived indexes created from approved data
   notes/           # source-specific usage notes
@@ -52,6 +57,12 @@ Current generated indexes:
 - `indexes/nager_public_holidays_2026_index.csv`
 - `indexes/usda_foundation_food_2026_index.csv`
 - `indexes/source_cards.csv`
+- `indexes/semantic_memory.sqlite`
+- `CANON_REGISTRY.json`
+- `PUBLICATION_REGISTRY.json`
+- `ASSET_REGISTRY.json`
+
+Operational registries are maintained through `python3 tools/almanac ...`; do not hand-edit generated canon, publication, asset or semantic indexes unless repairing corruption.
 
 ## Recommended Local Layer
 

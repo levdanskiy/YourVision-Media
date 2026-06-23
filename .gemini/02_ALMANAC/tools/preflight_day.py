@@ -21,7 +21,9 @@ from validate_almanac import (  # noqa: E402
 )
 
 
-REQUIRED_SLOTS = {"10:04", "15:04", "18:02"}
+TIME_CHANGE_FROM = (2026, 7, 17)
+LEGACY_REQUIRED_SLOTS = {"10:04", "15:04", "18:02"}
+TIME_SHIFTED_REQUIRED_SLOTS = {"09:04", "15:04", "21:04"}
 
 
 @dataclass
@@ -40,6 +42,13 @@ def slot_for(path: Path) -> str | None:
 
 def date_dir(year: str, month: str, day: str) -> Path:
     return ROOT / "02_CONTENT" / year / month / day
+
+
+def required_slots_for(year: str, month: str, day: str) -> set[str]:
+    date_tuple = (int(year), int(month), int(day))
+    if date_tuple >= TIME_CHANGE_FROM:
+        return TIME_SHIFTED_REQUIRED_SLOTS
+    return LEGACY_REQUIRED_SLOTS
 
 
 def run_python_audit(module_name: str, args: list[str]) -> list[Issue]:
@@ -77,7 +86,8 @@ def main() -> int:
         all_issues.append(Issue("ERROR", target, f"expected 3 AL files, found {len(files)}"))
 
     slots = [slot_for(path) for path in files]
-    missing_slots = sorted(REQUIRED_SLOTS - {slot for slot in slots if slot})
+    required_slots = required_slots_for(year, month, day)
+    missing_slots = sorted(required_slots - {slot for slot in slots if slot})
     duplicate_slots = sorted({slot for slot in slots if slot and slots.count(slot) > 1})
     for slot in missing_slots:
         all_issues.append(Issue("ERROR", target, f"missing slot {slot}"))

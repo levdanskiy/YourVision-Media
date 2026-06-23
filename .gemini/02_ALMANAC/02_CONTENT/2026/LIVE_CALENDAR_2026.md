@@ -1,3 +1,13 @@
+---
+post_id: "LIVE_CALENDAR_2026"
+timezone: "Europe/Riga"
+status: "DRAFT"
+secondary_zones: ""
+coverage_axes: ""
+source_types: ""
+sources_used: ""
+---
+
 🖤 YourVision. Live Calendar 2026
 📍 **ВРЕМЯ: PUBLICATION_TIMEZONE. UTC offset задаётся операционно, не как редакционная оптика.**
 

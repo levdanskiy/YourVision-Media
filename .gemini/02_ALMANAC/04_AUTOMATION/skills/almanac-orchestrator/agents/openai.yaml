@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Orchestrator"
+  short_description: "Build the next-day editorial brief"
+  default_prompt: "Use -orchestrator to prepare a complete rotation, service, trend and canon brief for the next Almanac day."

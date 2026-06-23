@@ -1,5 +1,12 @@
 # ANALYTICS REVIEW
 
+Every intentional format, tone or workflow change must be registered in `04_DATABASES/EXPERIMENT_REGISTRY.json` with hypothesis, baseline, target, metric, review date and final decision. An overdue running experiment is a publishing-blocking debt on its review date.
+
+```bash
+python3 tools/almanac experiments list
+python3 tools/almanac experiments audit YYYY-MM-DD --strict
+```
+
 Almanac uses analytics to improve editorial judgment, not to chase viral behavior.
 
 ## Cadence
@@ -67,7 +74,7 @@ If part 1 of a planned series underperforms:
 1. Do not cancel immediately.
 2. Publish part 2 only if it adds a new object/source/mechanism, not a repetition.
 3. If part 2 also underperforms, stop or compress the rest into one `SV SERIES-NAV` or recap.
-4. Do not use `SP 21:04` to rescue a weak series.
+4. Do not use `SP` to rescue a weak series.
 
 ## What Analytics May Change
 
@@ -84,4 +91,3 @@ Forbidden:
 - ranking cultures or countries by popularity;
 - dropping global coverage because familiar zones perform better;
 - replacing source discipline with trend hooks.
-

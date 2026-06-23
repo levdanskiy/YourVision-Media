@@ -1,30 +1,42 @@
 # SERVICE AND SPECIALS
 
 Effective from `2026-07-07`.
+Core time change effective from `2026-07-17`.
 
 This layer adds interaction and modern channel navigation without creating a fourth daily Almanac post.
 
+See also: `BETWEEN_SLOT_SYSTEM.md` for the full map of free slots between core
+posts, and `ORACLE_AND_RADAR_SYSTEM.md` for weekly oracle/radar rules.
+
 ## Core Rule
 
-The daily Almanac contract remains exactly three `AL` posts:
+The daily Almanac contract remains exactly three `AL` posts.
+
+From `2026-07-17`:
+- `09:04`
+- `15:04`
+- `21:04`
+
+Legacy through `2026-07-16`:
 - `10:04`
 - `15:04`
 - `18:02`
 
 Service notes and special posts are optional overlays. They do not count as daily `AL` posts and must not be named `AL-*`.
+They must not become a fourth daily post. Use them only when they add navigation, feedback, audio, calendar radar, weekly oracle framing, quiz/source context, or a genuinely major date.
 
 ## File Prefixes
 
 | Prefix | Use | Counts As Daily Post |
 |--------|-----|----------------------|
 | `SV` | Service note: poll, recap, direction pulse, series navigation. | No |
-| `SP` | Rare special slot at `21:04` for major dates or strong series. | No |
+| `SP` | Rare special slot for major dates or strong series. Default `18:04` from `2026-07-17`. | No |
 
 Filename format:
 
 ```text
 SV-DD.MM-HH-MM-TYPE-Slug.md
-SP-DD.MM-21-04-TYPE-Slug.md
+SP-DD.MM-18-04-TYPE-Slug.md
 ```
 
 Storage rule: place `SV` and `SP` files in the same day folder as the core
@@ -36,12 +48,16 @@ Examples:
 ```text
 SV-07.07-12-04-DIRECTION-PULSE-After-First-Week.md
 SV-12.07-12-04-SERIES-NAV-July-Routes.md
-SP-31.07-21-04-LAMMAS-EVE-Threshold.md
+SP-31.07-18-04-LAMMAS-EVE-Threshold.md
 ```
+
+Time rule:
+- Before `2026-07-17`, `SP` may use `21:04` because the core evening post is `18:02`.
+- From `2026-07-17`, `21:04` is the core evening `AL` slot, so `SP` uses `18:04` between food and evening.
 
 ## Service Notes
 
-Frequency: 1-2 per week.
+Frequency: exactly 2 per ISO week from `2026-07-20`: one `ORACLE-NOTE` and one `CALENDAR-RADAR`.
 
 Allowed types:
 - `POLL` - specific native poll, never engagement bait.
@@ -54,8 +70,10 @@ Allowed types:
 - `COLLAB-NOTE` - guest/source/process note with named expertise and clear boundaries.
 - `VISUAL-ESSAY` - 3-5 image sequence plan/caption set, no long article.
 - `READER-NOTE` - reader memory/field note prompt or curated response, max once per month.
-- `ORACLE-NOTE` - symbolic day/week/month reading, max twice per month during test.
-- `CALENDAR-RADAR` - compact list of holidays/observances for today/week/month.
+- `QUIZ` - one source/fact/calendar question with answer reveal, max once per month.
+- `MONTHLY-ALBUM` - monthly field file/PDF/carousel release note, max once per month.
+- `ORACLE-NOTE` - weekly symbolic forecast: zodiac, tarot, omen, rune, I Ching, moon phase or other sourced oracle system.
+- `CALENDAR-RADAR` - weekly list of holidays/observances for the week ahead, today, or month opening.
 
 Length:
 - 400-900 characters.
@@ -107,6 +125,42 @@ Structure:
 
 Do not summarize every post. Recap reveals pattern, not inventory.
 
+## Micro Quiz
+
+Use `SV QUIZ` when one factual question teaches source discipline better than
+another note.
+
+Allowed:
+- source/version recognition;
+- calendar mechanism;
+- food technique mechanism;
+- visual/object identification;
+- one correct answer with a short explanation.
+
+Rules:
+- max once per month;
+- never make the reader feel stupid;
+- no trick questions unless the trick is the actual mechanism;
+- no personal identity quizzes: not "which sign/creature/cake are you?".
+
+Template:
+
+```text
+// ИД-ПОСТА: SV-[ДД.ММ]-12-04-QUIZ-[SLUG]
+// ТЕМА: micro quiz
+// ДАТА ПУБЛИКАЦИИ: [ДД.ММ.ГГГГ, 12:04] (PUBLICATION_TIMEZONE)
+// ПРОТОКОЛЫ: Almanac, SERVICE, QUIZ
+// СТАТУС: ГОТОВ
+
+Один вопрос:
+
+[Question]
+
+Варианты: [A] / [B] / [C]
+
+Ответ: [answer + one-line mechanism].
+```
+
 ## Series Navigation
 
 Use when a series has at least 3 connected posts.
@@ -134,6 +188,16 @@ Never improvise facts in audio. The text source remains the authority.
 
 `SV VISUAL-ESSAY` can plan or caption 3-5 images when the visual sequence explains a process better than another text post.
 
+## Monthly Album
+
+Use `SV MONTHLY-ALBUM` only to announce or route to a monthly field file/PDF/carousel.
+
+Rules:
+- max once per month;
+- counts as one weekly `SV`;
+- must link or point to a finished derivative;
+- selection must follow `MONTHLY_ALBUM_SYSTEM.md`, not just top-performing posts.
+
 ## Reader Notes
 
 Use `SV READER-NOTE` when the channel needs lived material without turning the
@@ -152,18 +216,21 @@ Rules:
 
 ## Oracle Notes
 
-Use `SV ORACLE-NOTE` only as a clearly symbolic editorial layer. It may feel like
-an actual reading, but it must not claim factual knowledge of the future.
+Use `SV ORACLE-NOTE` as a weekly symbolic forecast layer. It may use real
+forecast formats - zodiac, tarot, omens, runes, I Ching, moon phase or similar -
+but it must not claim factual knowledge of the future.
 
 Allowed:
 - "карта/знак/примета недели" as a cultural lens;
-- one tarot card, rune, I Ching hexagram, moon phase, omen, or zodiac weather;
+- a full short zodiac week once per month, with one compact line per sign;
+- one tarot card/spread, rune, I Ching hexagram, moon phase, omen, or zodiac weather;
 - day/week/month tone: attention, friction, threshold, useful question;
 - a small reflective action: observe, compare, write down, ask, wait.
 
 Rules:
-- max twice per month while testing;
-- no personal predictions by sign;
+- max once per ISO week;
+- default rotation: one zodiac week, one tarot week, one omen week, one oracle-system week per month;
+- zodiac lines may be addressed to signs, but must stay symbolic and low-stakes;
 - no "you will meet / lose / earn / recover";
 - no medical, financial, legal, romantic, fertility, death, or fate advice;
 - no deterministic language: "точно", "неизбежно", "предначертано";
@@ -173,7 +240,8 @@ Template:
 
 ```text
 // ИД-ПОСТА: SV-[ДД.ММ]-12-04-ORACLE-NOTE-[SLUG]
-// ТЕМА: symbolic oracle note
+// ТЕМА: weekly oracle forecast
+// FORMAT_SUBTYPE: ZODIAC_WEEK / TAROT_WEEK / OMEN_WEEK / ORACLE_SYSTEM
 // ДАТА ПУБЛИКАЦИИ: [ДД.ММ.ГГГГ, 12:04] (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: Almanac, SERVICE, ORACLE-NOTE
 // СТАТУС: ГОТОВ
@@ -199,7 +267,8 @@ Allowed:
   matters.
 
 Rules:
-- this is navigation, not a replacement for `18:02 CALENDAR`;
+- max once per ISO week;
+- this is navigation, not a replacement for `21:04 CALENDAR` (legacy: `18:02 CALENDAR`);
 - no ranking of religions, countries, cultures, or political memories;
 - major items can become full `AL` posts later;
 - factual dates require source checking before publication.
@@ -209,6 +278,7 @@ Template:
 ```text
 // ИД-ПОСТА: SV-[ДД.ММ]-12-04-CALENDAR-RADAR-[SLUG]
 // ТЕМА: calendar radar
+// FORMAT_SUBTYPE: WEEK_AHEAD / TODAY_IN_CALENDARS / MONTH_AHEAD
 // ДАТА ПУБЛИКАЦИИ: [ДД.ММ.ГГГГ, 12:04] (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: Almanac, SERVICE, CALENDAR-RADAR
 // СТАТУС: ГОТОВ
@@ -222,7 +292,7 @@ Template:
 → [Which route will get a full post.]
 ```
 
-## 21:04 Special Slot
+## 18:04 Special Slot
 
 Frequency: 2-4 per month max.
 
@@ -236,20 +306,20 @@ Use only for:
 Length:
 - 900-1600 characters.
 - Visual prompt optional but recommended.
-- Must feel like a night note, threshold, or afterimage.
+- Must feel like a between-post threshold, concentrated afterimage, or editorial event note.
 
-Never use `21:04` to compensate for weak planning. If the idea fits `10:04`, `15:04`, or `18:02`, it goes there.
+Never use `18:04` to compensate for weak planning. If the idea fits `09:04`, `15:04`, or `21:04`, it goes there. Legacy before `2026-07-17`: use `10:04`, `15:04`, or `18:02`.
 
 Template:
 
 ```text
-// ИД-ПОСТА: SP-[ДД.ММ]-21-04-[TYPE]-[SLUG]
+// ИД-ПОСТА: SP-[ДД.ММ]-18-04-[TYPE]-[SLUG]
 // ТЕМА: [special threshold]
-// ДАТА ПУБЛИКАЦИИ: [ДД.ММ.ГГГГ, 21:04] (PUBLICATION_TIMEZONE)
+// ДАТА ПУБЛИКАЦИИ: [ДД.ММ.ГГГГ, 18:04] (PUBLICATION_TIMEZONE)
 // ПРОТОКОЛЫ: Almanac, SPECIAL
 // СТАТУС: ГОТОВ
 
-[Night hook.]
+[Special hook.]
 
 [One source/mechanism paragraph.]
 
@@ -269,9 +339,12 @@ Start from `2026-07-07`.
 |------|------|---------|
 | `07.07 12:04` | `SV DIRECTION-PULSE` | Ask what to strengthen now that new rules start. |
 | `10.07 12:04` | `SV CALENDAR-RADAR` | Start calendar radar: upcoming observances and calendar nodes. |
-| `13.07 12:04` | `SV ORACLE-NOTE` | Start symbolic oracle note: one non-predictive weekly lens. |
-| `19.07 12:04` | `SV RECAP` | Mid-July pattern recap. |
-| `31.07 21:04` | `SP` | Lammas Eve / first harvest threshold. |
+| `13.07 12:04` | `SV ORACLE-NOTE` | Start weekly oracle forecast. |
+| `21.07 12:04` | `SV CALENDAR-RADAR` | Week-ahead radar for 20-26.07; moved before publication. |
+| `23.07 12:04` | `SV ORACLE-NOTE` | Second weekly oracle, different mode. |
+| `27.07 12:04` | `SV ORACLE-NOTE` | Lammas-week oracle. |
+| `30.07 12:04` | `SV CALENDAR-RADAR` | Lammas/week-ahead radar. |
+| `31.07 18:04` | `SP` | Lammas Eve / first harvest threshold. |
 
 Optional only if a week needs it:
 - `SP` for a strong myth-cycle finale.

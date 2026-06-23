@@ -1,0 +1,254 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "q1_2026_strategy",
+        "label": "Q1 2026 Strategic Alignment",
+        "nodes": [
+          "2026_h1_roadmap_q1_the_spark",
+          "2026_q1_tactical_tactical_plan",
+          "2026_skeleton_2026_narrative"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Alert Keywords System",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/06_TIMELINE/database/alert_keywords.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "database_alert_keywords_alert_system",
+      "community": 3,
+      "norm_label": "alert keywords system"
+    },
+    {
+      "label": "ESC History Database",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/06_TIMELINE/database/esc_history.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "database_esc_history_history",
+      "community": 4,
+      "norm_label": "esc history database"
+    },
+    {
+      "label": "H1 2026 Roadmap",
+      "file_type": "document",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_h1_roadmap_roadmap",
+      "community": 0,
+      "norm_label": "h1 2026 roadmap"
+    },
+    {
+      "label": "Q1: The Spark",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_h1_roadmap_q1_the_spark",
+      "community": 0,
+      "norm_label": "q1: the spark"
+    },
+    {
+      "label": "Q2: The Vibration",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_h1_roadmap_q2_the_vibration",
+      "community": 0,
+      "norm_label": "q2: the vibration"
+    },
+    {
+      "label": "Q1 Tactical Focus",
+      "file_type": "document",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/Q1_TACTICAL.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_q1_tactical_tactical_plan",
+      "community": 0,
+      "norm_label": "q1 tactical focus"
+    },
+    {
+      "label": "Skeleton 2026 Narrative",
+      "file_type": "document",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/SKELETON_2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_skeleton_2026_narrative",
+      "community": 1,
+      "norm_label": "skeleton 2026 narrative"
+    },
+    {
+      "label": "Year of the Fire Horse",
+      "file_type": "concept",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/SKELETON_2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_skeleton_2026_fire_horse",
+      "community": 1,
+      "norm_label": "year of the fire horse"
+    },
+    {
+      "label": "Depth over Surface",
+      "file_type": "rationale",
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/SKELETON_2026.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "2026_skeleton_2026_depth_over_surface",
+      "community": 1,
+      "norm_label": "depth over surface"
+    },
+    {
+      "label": "YV Master Plan June",
+      "file_type": "document",
+      "source_file": "01_YOURVISION/06_TIMELINE/master_plans/06/YV_Plan_06.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "06_yv_plan_06_plan",
+      "community": 2,
+      "norm_label": "yv master plan june"
+    },
+    {
+      "label": "Daily Plan 09.06",
+      "file_type": "document",
+      "source_file": "01_YOURVISION/06_TIMELINE/daily_workflow/daily_plan_09.06.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "daily_workflow_daily_plan_09_06_plan",
+      "community": 2,
+      "norm_label": "daily plan 09.06"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "2026_h1_roadmap_roadmap",
+      "target": "2026_h1_roadmap_q1_the_spark"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "2026_h1_roadmap_roadmap",
+      "target": "2026_h1_roadmap_q2_the_vibration"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/Q1_TACTICAL.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "2026_q1_tactical_tactical_plan",
+      "target": "2026_h1_roadmap_q1_the_spark"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/SKELETON_2026.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "2026_skeleton_2026_narrative",
+      "target": "2026_h1_roadmap_q1_the_spark"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/SKELETON_2026.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "2026_skeleton_2026_narrative",
+      "target": "2026_skeleton_2026_depth_over_surface"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/SKELETON_2026.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "2026_skeleton_2026_narrative",
+      "target": "2026_skeleton_2026_fire_horse"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "01_YOURVISION/06_TIMELINE/master_plans/06/YV_Plan_06.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "06_yv_plan_06_plan",
+      "target": "daily_workflow_daily_plan_09_06_plan"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "q1_2026_strategy",
+      "label": "Q1 2026 Strategic Alignment",
+      "nodes": [
+        "2026_h1_roadmap_q1_the_spark",
+        "2026_q1_tactical_tactical_plan",
+        "2026_skeleton_2026_narrative"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "01_YOURVISION/06_TIMELINE/strategy/2026/H1_ROADMAP.md"
+    }
+  ],
+  "built_at_commit": "36317b260bc81cbe6daafaf0c917b57b3dca9783"
+}

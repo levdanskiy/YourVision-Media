@@ -1,0 +1,4 @@
+interface:
+  display_name: "Almanac Style V4"
+  short_description: "Modernize voice, structure and visuals"
+  default_prompt: "Use $almanac-style-v4 to modernize Almanac voice, structure and visual direction without losing editorial rigor."
