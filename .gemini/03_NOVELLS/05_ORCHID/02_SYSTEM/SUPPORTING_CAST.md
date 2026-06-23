@@ -58,6 +58,15 @@
 **CHARACTER TAG:** `Andre, earnest young Europol lieutenant in his late twenties, short brown hair, clean-cut conscientious face, plain navy blazer over a tablet bag, slightly stiff posture of a rule-keeper among improvisers, Riviera street or unmarked car, no text, no logos`
 **PORTRAIT PROMPT (карточка/превью; ввод - Г7-8):** `Cinematic character portrait of Andre, earnest young Europol lieutenant in his late twenties, short neat brown hair, clean-cut conscientious face with a hint of stubborn idealism, plain navy blazer, regulation tablet held like a shield, slightly stiff upright posture of a rule-keeper among improvisers, standing by an unmarked car on a sunlit Riviera street, squinting slightly at the glamour around him as if it were a procedural violation. Procedure versus intuition, the human face of the hunt. Warm tactile film grain, navy and sun-bleached gold palette, sensual heist-romance realism. Photorealistic, 8k, cinematic style, rich colors, cinematic color grading, editorial photography, shot on Kodak Portra 800. Horizontal frame 16:9. No text, no logos.`
 
+## 📚 АННЕЛИ (60) - свидетель той ночи (ввод Г15)
+
+**Кто:** держит книжный киоск в Антибе; одна из четырёх выживших той ночи, что «сожгла» Викторию. Открывает дверь только тем, кто называет запах - мёд и горелая бумага. Второй свидетель, до которого «Пепел» добрался ПЕРВЫМ (опередили чистильщика). НЕ родня, НЕ мнимо мёртвая (БАН-мотивы KM).
+**Функция:** держатель улики «шести часов» (видела руку-перчатку архитектора у пульта + конверт, переданный Николя до пожара) - топливо мистерии Николя (🔒 предал/предупредил, не решать); живая ставка в гонке Override (её могут стереть следующей).
+**Слабость:** память - её единственное богатство и её мишень; помнит слишком точно, чтобы её оставили в покое.
+**Речь:** короткие точные воспоминания без интерпретаций - «видела, думала одно, теперь думаю - не знаю»; оставляет вывод собеседнику.
+**CHARACTER TAG:** `Anneli, slight woman around sixty, grey hair pinned back, sharp tired knowing eyes, plain cardigan over a faded blouse, ink-stained careful hands, the stillness of someone who has hidden for years, no text, no logos`
+**PORTRAIT PROMPT (карточка/превью; ввод Г15):** `Cinematic character portrait of Anneli, slight woman around sixty, grey hair pinned back, sharp tired eyes that remember too precisely, plain cardigan over a faded blouse, ink-stained careful hands resting on a stack of old books, standing in a cramped seaside book kiosk in Antibes, dust-gold light through a small window, shelves of worn paperbacks behind her. A survivor of the same fire who kept one memory like a buried key. Warm tactile film grain, dust-gold and deep brown palette, sensual heist-romance mystery. Photorealistic, 8k, cinematic style, rich colors, cinematic color grading, editorial photography, shot on Kodak Portra 800. Horizontal frame 16:9. No readable text, no logos.`
+
 ---
 
 ## 📋 ОЧЕРЕДЬ ВВОДА (по одному, сценой с функцией)
