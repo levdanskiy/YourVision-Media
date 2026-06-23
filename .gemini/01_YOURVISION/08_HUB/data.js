@@ -190,140 +190,140 @@ var DATA = {
             "a": "Linda Lampenius & Pete Parkkonen",
             "s": "Liekinheitin",
             "p": "72 pts (=)",
-            "img": "https://www.eurovision.com/static/images/flags/flag_fi.svg"
+            "img": "https://i.pravatar.cc/150?u=Linda%20Lampenius%20%26%20Pete%20Parkkonen"
         },
         {
             "r": 2,
             "a": "Taylor Swift",
             "s": "I Knew It, I Knew You",
             "p": "68 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=Taylor%20Swift"
         },
         {
             "r": 3,
             "a": "BLACKPINK",
             "s": "JUMP",
             "p": "68 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=BLACKPINK"
         },
         {
             "r": 4,
             "a": "BTS",
             "s": "SWIM",
             "p": "55 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=BTS"
         },
         {
             "r": 5,
             "a": "Olivia Rodrigo",
             "s": "drop dead",
             "p": "53 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=Olivia%20Rodrigo"
         },
         {
             "r": 6,
             "a": "Sal Da Vinci",
             "s": "Per sempre sì",
             "p": "53 pts (=)",
-            "img": "https://www.eurovision.com/static/images/flags/flag_it.svg"
+            "img": "https://i.pravatar.cc/150?u=Sal%20Da%20Vinci"
         },
         {
             "r": 7,
             "a": "By Индия, Xcho, МОТ",
             "s": "Шадэ",
             "p": "47 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=By%20%D0%98%D0%BD%D0%B4%D0%B8%D1%8F%2C%20Xcho%2C%20%D0%9C%D0%9E%D0%A2"
         },
         {
             "r": 8,
             "a": "Alexandra Căpitănescu",
             "s": "Choke Me",
             "p": "44 pts (=)",
-            "img": "https://www.eurovision.com/static/images/flags/flag_ro.svg"
+            "img": "https://i.pravatar.cc/150?u=Alexandra%20C%C4%83pit%C4%83nescu"
         },
         {
             "r": 9,
             "a": "Егор Крид, ARTIK & ASTI",
             "s": "KARMA",
             "p": "44 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=%D0%95%D0%B3%D0%BE%D1%80%20%D0%9A%D1%80%D0%B8%D0%B4%2C%20ARTIK%20%26%20ASTI"
         },
         {
             "r": 10,
             "a": "KATSEYE",
             "s": "PINKY UP",
             "p": "43 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=KATSEYE"
         },
         {
             "r": 11,
             "a": "BEARWOLF",
             "s": "Феникс",
             "p": "38 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=BEARWOLF"
         },
         {
             "r": 12,
             "a": "Tyla, Zara Larsson",
             "s": "SHE DID IT AGAIN",
             "p": "36 pts (=)",
-            "img": "https://www.eurovision.com/static/images/flags/flag_se.svg"
+            "img": "https://i.pravatar.cc/150?u=Tyla%2C%20Zara%20Larsson"
         },
         {
             "r": 13,
             "a": "Сергей Лазарев, Полина Гагарина",
             "s": "Хэппи Энд",
             "p": "33 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9%20%D0%9B%D0%B0%D0%B7%D0%B0%D1%80%D0%B5%D0%B2%2C%20%D0%9F%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0%20%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0"
         },
         {
             "r": 14,
             "a": "Madonna",
             "s": "Love Sensation",
             "p": "30 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=Madonna"
         },
         {
             "r": 15,
             "a": "Dave, Tems",
             "s": "Raindance",
             "p": "29 pts (=)",
-            "img": "https://www.eurovision.com/static/images/flags/flag_gb.svg"
+            "img": "https://i.pravatar.cc/150?u=Dave%2C%20Tems"
         },
         {
             "r": 16,
             "a": "Madison Beer",
             "s": "lovergirl",
             "p": "29 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=Madison%20Beer"
         },
         {
             "r": 17,
             "a": "HOLLYFLAME",
             "s": "Тону",
             "p": "28 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=HOLLYFLAME"
         },
         {
             "r": 18,
             "a": "Dara",
             "s": "Bangaranga",
             "p": "23 pts (=)",
-            "img": "https://www.eurovision.com/static/images/flags/flag_bg.svg"
+            "img": "https://i.pravatar.cc/150?u=Dara"
         },
         {
             "r": 19,
             "a": "SAYAN",
             "s": "Мальборо",
             "p": "14 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=SAYAN"
         },
         {
             "r": 20,
             "a": "Ваня Дмитриенко",
             "s": "След",
             "p": "13 pts (=)",
-            "img": "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp"
+            "img": "https://i.pravatar.cc/150?u=%D0%92%D0%B0%D0%BD%D1%8F%20%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B5%D0%BD%D0%BA%D0%BE"
         }
     ],
     "news": [
