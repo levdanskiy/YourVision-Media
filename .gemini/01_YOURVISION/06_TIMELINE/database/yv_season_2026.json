@@ -443,6 +443,15 @@
             "event": "Cambodia's Finest Voice: Национальный финал",
             "type": "FINAL",
             "status": "PLANNED"
+        },
+        {
+            "id": "BT_ASIA_2026_FINALISTS",
+            "date": "2026-06-23",
+            "time": "TBA",
+            "country": "Bhutan",
+            "event": "BBS: Объявление 10 финалистов отбора Druk Dra (Eurovision Asia)",
+            "type": "RELEASE",
+            "status": "DONE"
         }
     ],
     "winners": {
