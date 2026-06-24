@@ -1,1 +1,0 @@
-{"nodes": [], "edges": [{"source": "05_orchid_mech_prediction", "target": "05_orchid_char_valentina", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "05_ORCHID/04_CONTENT/2026/06/19/OR-19.06-16-00-STORY-ARCHITECT.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

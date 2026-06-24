@@ -1,1 +1,0 @@
-{"nodes": [], "edges": [{"source": "05_orchid_char_sophie", "target": "05_orchid_concept_heat", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "05_ORCHID/04_CONTENT/2026/06/18/OR-18.06-20-00-CLIFFHANGER.md", "source_location": null, "weight": 1.0}], "hyperedges": []}

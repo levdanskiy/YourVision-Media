@@ -4,6 +4,11 @@
 .gemini/tmp/
 .gemini/01_YOURVISION/_SHARED/
 *.jsonl
+__pycache__/
+*.py[cod]
+
+# graphify build artifacts (regenerable knowledge graph - не коммитим)
+graphify-out/
 
 # Ignore personal config & credentials in .gemini
 .gemini/credentials.json
@@ -25,4 +30,3 @@
 # Unignore publish and sentinel scripts
 !yv_publish.sh
 !time_sentinel.py
-
