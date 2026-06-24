@@ -67,6 +67,15 @@
 **CHARACTER TAG:** `Anneli, slight woman around sixty, grey hair pinned back, sharp tired knowing eyes, plain cardigan over a faded blouse, ink-stained careful hands, the stillness of someone who has hidden for years, no text, no logos`
 **PORTRAIT PROMPT (карточка/превью; ввод Г15):** `Cinematic character portrait of Anneli, slight woman around sixty, grey hair pinned back, sharp tired eyes that remember too precisely, plain cardigan over a faded blouse, ink-stained careful hands resting on a stack of old books, standing in a cramped seaside book kiosk in Antibes, dust-gold light through a small window, shelves of worn paperbacks behind her. A survivor of the same fire who kept one memory like a buried key. Warm tactile film grain, dust-gold and deep brown palette, sensual heist-romance mystery. Photorealistic, 8k, cinematic style, rich colors, cinematic color grading, editorial photography, shot on Kodak Portra 800. Horizontal frame 16:9. No readable text, no logos.`
 
+## 🚢 ТОНИО (66) - ночной диспетчер порта (ввод Г16)
+
+**Кто:** бывший диспетчер ночной смены порта; в ту ночь вёл по рации те самые шесть часов, когда Николя то был, то не был. 4-й и последний выживший «Пепла», до которого чистильщик дошёл первым - но мост оказался ловушкой архитектора (собрал всех свидетелей в одну точку). НЕ родня, НЕ мнимо мёртвый (БАН-мотивы KM).
+**Функция:** живой хронометр той ночи (единственный, кто знает порядок шести часов Николя и кому передан конверт) + приманка-сцена блока III.
+**Слабость:** продавал тишину - его память можно купить дважды; и он устал бояться.
+**Речь:** рубленые радио-формулы, время и координаты вместо чувств («ноль-три-сорок борт ушёл, вернулся в ноль-девять; кто на борту - не моё дело»).
+**CHARACTER TAG:** `Tonio, weathered man in his mid-sixties, grey stubble, deep-lined sailor's face, faded harbour-master cap, worn windbreaker, tired wary eyes, the guarded stillness of a man who has hidden for years, no text, no logos`
+**PORTRAIT PROMPT (ввод Г16):** `Cinematic character portrait of Tonio, weathered man in his mid-sixties, grey stubble, deep-lined sailor's face, faded harbour-master cap and worn windbreaker, tired wary eyes that logged too many secret nights, standing at the centre of an old stone bridge in hard low morning light over a Villefranche bay, the sea behind him. The last witness who timed the six hours. Warm tactile film grain, hard gold morning and cold shadow palette, sensual heist-romance mystery. Photorealistic, 8k, cinematic style, rich colors, cinematic color grading, editorial photography, shot on Kodak Portra 800. Horizontal frame 16:9. No readable text, no logos.`
+
 ---
 
 ## 📋 ОЧЕРЕДЬ ВВОДА (по одному, сценой с функцией)
