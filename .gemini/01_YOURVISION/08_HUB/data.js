@@ -328,6 +328,18 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "25.06 | 13:28",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6239",
+            "t": "🇨🇦 КАНАДА: CBC - ТЕПЕРЬ ЧЛЕН ЕВРОПЕЙСКОГО ВЕЩАТЕЛЬНОГО СОЮЗА",
+            "b": "Канадский национальный вещатель CBC официально получил статус полноценного члена EBU.\nИсторическое расширение произошло прямо во время 96-й Генеральной Ассамблеи в Праге, где накануне обсуждались новые форматы «неевропейского» участия. До этого момента CBC имел лишь ассоциированный статус. Это фундаментальное изменение правил игры - теперь Канада технически может подать заявку на участие в Евровидении без специальных приглашений от Референтной группы.\nСледим за развитием событий. Отправят ли канадцы свою делегацию на следующий конкурс?\n⏱️ Время чтения: 0.9 мин | 🇪🇺 YourVision: EBU",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1782394133.0,
+            "poll": null
+        },
+        {
             "m": "25.06 | 12:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/6130",
@@ -501,7 +513,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6230",
             "t": "📖 PROMO: ALMANAC: MARGINALIA - ТИХИЙ МИРОВОЙ АРХИВ",
             "b": "Как легендарный Māui ловил солнце, почему японский календарь делит времена года на микро-сезоны вроде «ястребы учатся летать» и как выпекается chapati без духовки?\nРекомендуем заглянуть на канал «ALMANAC: MARGINALIA» - изящный ежедневный архив мифов, примет, рецептов и годовых ритуалов со всего мира. Это не академическая энциклопедия, а живой взгляд на то, как люди разных культур держатся за время и пространство.\nЧТО ВНУТРИ:\n• Мифы и символы: древние легенды и предсказательные системы как часть живой культуры, а не суеверия.\n• Еда и технологии: рецепты хлеба, десертов и ферментации с объяснением культурного контекста.\n• Циклы года: сезонные праздники, обряды и современные ритуалы.\nКачественные источники, глубокие тексты и эстетика в деталях.\nКакой культурный ритуал или традиция другой страны больше всего удивляли вас в жизни?\n🔗 ПОДПИСАТЬСЯ: ALMANAC: MARGINALIA\n⏱️ Время чтения: 0.8 мин | 📖 YourVision: Промо",
-            "img": "https://cdn4.telesco.pe/file/jkTlcPDx1bAXFj-uyMjoy32arQap-cLkeEDN_K8IG5ZXkdfZeOup_lsY8EW9ikpGO7F9pBOlunJZrnigZw27a9qUHP5syIIJOri-U-7eJgHJ61ta13eVhi0FZFvKg9PpTeTQ4UyEUxixJmjv2dXG8i_FKKPAbHgHksbpX2yb9qmdPYqyWX3_IwVGp6vU2mgQ3DJpf5z9JhTYC3HRL7H5EVW9CAfUXDYpNivRVpsEy-0AVdz3Rxn497gFB9th8T9AWzU96fVuBTxGFA9qa9OR_79ZYuQ3GGXJ85ZydQZXVUnTpljmNBau_iBWLxJsA6uMy_IQnj6boy4Sex1JXZxjmA.jpg",
+            "img": "https://cdn4.telesco.pe/file/OD8jHKUxhbx8VrdsTS47kK0XDHZCNxIxPWjeCAfUdB6FtyLZEumdO4TCaUPEnwz_BDceNl2raOrGcst-W88IR18w2qR6m-HiDs3jEXu3S6xCm-lQ6LVRk0fnFPVshbe-vcPxbddmX7dmX01cy1DEcekptfHNJkDiZWHGDMMvnbssYqIALBAtc_paBkr0zmeTvNdxUBb7kBYie3o0u4RsZ5DaC1K-NvkZuJzlpbB1zrFuOCan_OfAOqJhmPAwPkTmjH09WU9z3vIyeGNcwXLFc2Mjczd9WQjGhxwjGvN2zbvinyVMY8207kXYYzr3feD5lPeJmr2owaLrm7R1Mj30nA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1782223226.0,
@@ -613,18 +625,6 @@ var DATA = {
             "vid": "https://cdn4.telesco.pe/file/0ce9091015.mp4?token=AkPVWZxUT0-ecmqDvV7aWUJ87NhvwXYL23YcC4XtAcS50rcTMHLXCK5GcTSvB0VrRGZTcRzDp5aYaWn6E0g5Ao5MOK9yR3k7Buehb-TEkZ5H3-CFcybtmOdiRQN9z7j4g5xO2_TMAJ1pz8m5GMKHann_IiUDXJopMvrEX6WlXWTeNej4WmVATtmn7ZoYpqtVj908KzhLbNyKc7OmCXyEOehWQ_Amhtbl2oa2BwhKrzw8yfdgExsTaRZtnht9FF463BXuVjkEEcNgxh656RBdkuVov_hcVKcR1x4A8YxMlpN4i5aA-zmAA7Sxz4BVnrbo0QBHwIXBEBrW8cDmkISVT1JZ5V2mtbvBgxYskAGKqYls_kMzV3Q8nFDO8Cgge-EolQ0nC1WNrfanJ45v5_HIRDuJqQESVtuaGaHF3TQ8QNeV42RKMY5KfakqdEU3CX85Cnlg-WO75RCHoD8HY99EErstzH_3Ps4Y6bRn-I70l9_cKEP2kxFl7PgbsEz3q1WwVtV675dD0-LwM4DxrnGYfwjhHYcaxuTaVWyMQxTA9ieJ1x4OuNXJRp0vJqHRAJm429opzhKdU9ePaS5cvFwLQ7YGf8dX7JsFjZDDlh3oqdqXHbzqJxgQuxDVtCDyg6CKxVohF9YGXv7g_yp_9iQxxv2C5gAKBzwfB4BQ0Puz9p4",
             "isVideo": true,
             "ts": 1782030052.0,
-            "poll": null
-        },
-        {
-            "m": "21.06 | 08:15",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6227",
-            "t": "🇫🇷 ФРАНЦИЯ: ALEC ПРЕДСТАВИТ СТРАНУ НА JESC 2026",
-            "b": "Национальный вещатель France Télévisions официально подтвердил участие и объявил своего представителя на Детском Евровидении 2026 года. Защищать цвета французского флага на Мальте доверено юному исполнителю по имени Alec.\nИмя артиста было торжественно раскрыто в эфире телеканала France 2 во время масштабного музыкального фестиваля Fête de la Musique.\nДЕТАЛИ ПРЕЗЕНТАЦИИ И КОНТЕКСТ\nПрезентация представителя состоялась в рамках грандиозного концерта, который транслировался в прямом эфире из античного амфитеатра Roman Theatre of Orange.\n1. Звездная поддержка: На сцене фестиваля выступили такие известные артисты, как La Petite Culotte, Yann Muller, Élodie Frégé, а также Monroe - представитель Франции на взрослом Евровидении-2025 в Базеле.\n2. Исторический контекст: В 2025 году Франция одержала историческую победу на Детском Евровидении в Тбилиси благодаря Lou Deleuze и ее хиту «Ce monde» (248 баллов). Этот триумф стал для страны четвертым, позволив сравняться с Грузией по количеству побед за всю историю конкурса.\n3. Отказ от проведения: Несмотря на статус действующего чемпиона, французский вещатель отказался от права принимать конкурс в 2026 году. Именно поэтому эстафету перехватила Мальта, став хозяйкой предстоящего мероприятия в Та'Кали.\nСможет ли Alec повторить успех своей предшественницы и принести Франции пятую победу, установив абсолютный рекорд конкурса?\n⏱️ Время чтения: 1.1 мин | 🇫🇷 YourVision: Отборы",
-            "img": "https://cdn4.telesco.pe/file/APv389gtgzVyJRG9cb91zwg0worAGyFyUEyHy3nMWCj9tlzoUGe2JbFB67I6YaTh-PaVDSZ-mFwxGnkZQhG3oCJcIYFmyBGW3bPkIdXC6zBBytUGUZbzhoEjFF6FjtTakwFGTYT3xq82itNcO2nVoalx-rpyN_uInR8jadEaxMuv-FRbJrLQZmID_0dDMCetfG_jsZgl_APHyjf56Ny1BASwUAtxUfETP5CYVVz58lxe7-32uYDFUxUznOUccFjLc6ZSD4NxSIAH4jKOWJCfRJPC5mypLix6WmLIBJlYuqmOeQFgK29U2GsnX7kGvvXxsoYieEczcibVRzkBYF8EqQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1782029742.0,
             "poll": null
         }
     ],

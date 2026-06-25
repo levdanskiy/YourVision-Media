@@ -96,6 +96,38 @@
       "height": 512,
       "last_updated": "2026-06-20T15:29:29.148933+00:00",
       "missing": false
+    },
+    {
+      "asset_id": "asset-bdee3aaf8e901bc4",
+      "path": "03_ASSETS/branding/2026/07/ALMANAC_TABLE_JULY_logo_1024.png",
+      "kind": "branding",
+      "post_id": null,
+      "status": "discovered",
+      "alt": "",
+      "rights": "",
+      "source": "",
+      "sha256": "bdee3aaf8e901bc4451dafaaff4440c56891e34c657347bacaad50fc04a2f54c",
+      "mime": "image/png",
+      "width": 1024,
+      "height": 1024,
+      "last_updated": "2026-06-25T11:26:33.240395+00:00",
+      "missing": false
+    },
+    {
+      "asset_id": "asset-02e1af02f5a7b813",
+      "path": "03_ASSETS/branding/2026/07/ALMANAC_TABLE_JULY_logo_512.png",
+      "kind": "branding",
+      "post_id": null,
+      "status": "discovered",
+      "alt": "",
+      "rights": "",
+      "source": "",
+      "sha256": "02e1af02f5a7b8135575358aedec2a174b349de19d0a91176c3bfd01ccac2923",
+      "mime": "image/png",
+      "width": 512,
+      "height": 512,
+      "last_updated": "2026-06-25T11:26:33.241054+00:00",
+      "missing": false
     }
   ]
 }
