@@ -328,6 +328,30 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "25.06 | 13:38",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6240",
+            "t": "🇨🇦 КАНАДА: EBU MEMBERSHIP - МЕХАНИКА РЕШЕНИЯ  Разбираем, как именно CBC/Radio-Canada смогли пробить историческое членство на Генеральной Ассамблее в Праге.   Голосование за повышение статуса канадцев прошло сразу после официального пересмотра Устава EBU. Новая…",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1782394737.0,
+            "poll": null
+        },
+        {
+            "m": "25.06 | 13:35",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6239",
+            "t": "🇨🇦 КАНАДА: CBC - ТЕПЕРЬ ЧЛЕН ЕВРОПЕЙСКОГО ВЕЩАТЕЛЬНОГО СОЮЗА  Канадский национальный вещатель CBC официально получил статус полноценного члена EBU.   Историческое расширение произошло прямо во время 96-й Генеральной Ассамблеи в Праге, где накануне обсуждались…",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1782394559.0,
+            "poll": null
+        },
+        {
             "m": "25.06 | 13:28",
             "id": "70",
             "u": "https://t.me/YourEurovision/6239",
@@ -501,7 +525,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6231",
             "t": "🎵 НОВЫЕ РЕЛИЗЫ: ГЛАВНЫЕ ТРЕКИ НЕДЕЛИ ОТ ЭКС-УЧАСТНИКОВ",
             "b": "Бывшие представители стран на Евровидении продолжают активно радовать поклонников свежим качественным материалом. Мы собрали для вас шесть главных музыкальных новинок прошедших дней.\nСлушайте новые треки любимых артистов и делитесь своими впечатлениями.\nГЛАВНЫЕ РЕЛИЗЫ\n• Eleni Foureira & ARCADE (Кипр, 2018) - «Jackie O». Свежий танцевальный поп-хит от королевы музыки, когда-то подарившей нам легендарный и незабываемый «Fuego».\n• Søren Torpegaard Lund & twocolours (Дания, 2026) - «You Got Me (Før vi går hjem)». Участник недавнего конкурса в Вене объединил усилия с известными немецкими электронщиками и представил мощную англоязычную клубную версию своей конкурсной баллады.\n• Klavdia & TR3NACRIA (Греция, 2025) - «Say My Name (The Riddle)». Свежее танцевальное переосмысление культового хита 1984 года от финалистки базельского Евровидения с обновленным мощным продакшеном.\n• NAPA (Португалия, 2025) - «Sortudo». Победители национального отбора выпустили светлый инди-поп трек о крепкой дружбе и благодарности с легким органичным влиянием бразильской музыки.\n• WRS (Румыния, 2022) - «Povesti in doi». Автор вирусного хита «Llámame» продолжает активно экспериментировать со своим фирменным танцевальным электро-поп звучанием.\n• Natasha St-Pier (Франция, 2001) - «L’amour sera ma vocation». Громкое возвращение канадско-французской легенды Евровидения с красивым духоподъемным треком о любви и светлой личной трансформации.\nЧей новый сингл вы уже успели добавить в свой плейлист на этих выходных?\n🔗 СЛУШАТЬ И СМОТРЕТЬ:\n• Eleni Foureira: Spotify\n• Søren Torpegaard Lund: YouTube\n• Klavdia: YouTube\n• NAPA: YouTube\n• WRS: YouTube\n• Natasha St-Pier: YouTube\n⏱️ Время чтения: 1.2 мин | 🌍 YourVision: Музыка",
-            "img": "https://cdn4.telesco.pe/file/AwxzUNAkxOdVkEJquLs3OsFOKEeNRxf7ekwZZGAiOKK9qEku35m2e1ChQtUtDFGWr8Xp4lQujFKWxh0i3gX3-iT_NpAvcaM8K7BTKIvlFA6i0jwbNwOrkSvGzKAcRL9j1xzG0kdcrOcNGsrrTuoBFicUKMlVU9tF3LiP7xELK6_T09Zs501_JcKGJWIoWFVt9ntg3kmRqqL6MS1Btq-qzs3e3lY4krQpankQmv4VD2ypwhok64JX9PQuNm17hCzfOW8tUH04dIopxslZ7xYZg7Yyn6KklgEhWnDmXBQ-lbq4hVzFuyEroJTXTmibSCPPFRx4eOqCGVCO1M4bxMO-sA.jpg",
+            "img": "https://cdn4.telesco.pe/file/MrL9VBzFhTIcbfNK284JsjZr8Tauh4wy9sM1zQuxGS6i2JOW8FMwAFImHxj1hRNWMFhM0GZ3XtKgR6f4thMZkEvAfn6UunZtrhU1qpj9noisiOLkyd30AXQplI9mmp7w6NlfK1fQ3lIn_nGmgcQFevYWKhU71OdJyeCsMhgq-P_5OHoQZep6s9NkcIHLYAT85BheF8FIkpJxW2jbB5ULXgmpNuytwGiW6eawb4SV3deaSeYub3fyFiQZeDJftMQXdy-qRrDN92R8f_I_Ji6jR3Tnj75cYN6IIiLER-cOz1ZXo9bH90Z4aI1yqrualMEnetO2Z0IESwB9SwcE6ql__w.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1782223978.0,
@@ -601,30 +625,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1782054121.0,
-            "poll": null
-        },
-        {
-            "m": "21.06 | 12:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/6118",
-            "t": "🥐 #CAKES: ШАКОТИС - ТОРТ СОЛНЕЧНЫХ ЛУЧЕЙ",
-            "b": "ЛЕГЕНДА:\nЛитовский Šakotis, польский sękacz, немецкий Baumkuchen - один торт на вращающемся вертеле над открытым огнём. Тесто стекает каплями на вертел, каждый слой запекается до того как нальют следующий. Получается высокая башня с десятками «лучей» по бокам.\nŠakotis - от литовского šaka («ветка»). Baumkuchen - «дерево-торт». Sękacz - «сучковатый». Три языка, одна форма. Техника задокументирована в средневековой Германии с XV века. В Литве Šakotis - главный свадебный торт высотой 50-80 см, иногда до метра. Готовый выглядит как солнце с лучами или дерево с ветками - в народной символике сознательно отсылает к солнцу и древу мира.\nСегодня - день летнего солнцестояния. Šakotis как форма - буквальный перевод этого дня в съедобный объект.\nЯ делал упрощённую домашнюю версию (без вертела, в духовке) дважды. Главный урок: тесто должно быть жидким как блинное. Толстое - спечётся в комок без «лучей».\nŠakotis - не торт. Это календарь в форме теста.\nАРХИТЕКТУРА И МАТЕРИАЛЫ (УПРОЩЁННАЯ ДОМАШНЯЯ ВЕРСИЯ):\n👍 Тесто: яйца 10 шт (разделить), сахар 250 г, сливочное масло мягкое 250 г, мука 200 г, сметана 100 мл, ром или коньяк 30 мл, ваниль\n👍 Глазурь (опционально): сахарная пудра 100 г, лимонный сок 1 ст л\n👍 Посуда: прямоугольная или круглая глубокая форма для выпечки, желательно с антипригарным покрытием. Кисточка для смазывания.\nМЕХАНИКА (ПОСЛОЙНАЯ ВЫПЕЧКА):\n1. ТЕСТО. Желтки взбить с сахаром до пышности (5 мин). Добавить мягкое масло, сметану, ром, ваниль. Постепенно ввести просеянную муку. Белки взбить до устойчивых пиков, ввести в тесто складкой. Тесто должно стекать с лопатки лентой.\n2. ПЕРВЫЙ СЛОЙ. Духовку нагреть до 220°C, режим «гриль» (верхний нагрев). Форму смазать маслом. Налить тонкий слой теста (3-4 мм). Выпекать 3-4 минуты до золотистой корочки.\n3. ПОСЛЕДУЮЩИЕ СЛОИ. Достать форму, налить следующий тонкий слой прямо на запечённый. Вернуть в духовку под гриль на 3-4 минуты. Повторять 15-20 раз. Каждый слой запекается до коричневой корочки, прежде чем нальют следующий.\n4. ФИНИШ. Готовый Šakotis - высокая, многослойная башня с видимыми кольцами слоёв в разрезе. Остудить полностью в форме. Аккуратно извлечь. По желанию - тонкая лимонная глазурь сверху, чтобы подчеркнуть рельеф.\nПодача: нарезать тонкими ломтиками поперёк слоёв. Каждый ломтик покажет 15-20 концентрических колец - как годовые кольца дерева.\n⏱️ 2.6 мин | 🥐 Almanac: Cakes",
-            "img": "https://cdn4.telesco.pe/file/TN2VQ0aWjLCc-ocTm2MwJrOoOOPJIlY0tvxy_XNCXaUgCTPUIdz2n9yyXDvd5ccWa42hnrLHAqUDcfkQf-nPm8-6YyksRozuHz5I3RGDAIOM4bK2QQaJYxoZXiIzQbotvPaRv7WgTrUM4YwNIVpceLdZ_z1-Mc64edqRP5R1movnGGj8jKgLUAiwLK8yaurGwXih2V_Xq5tSb8NMK4lZrRPcBFBRSzQsVsZf9wy7NeSziy0Nvaq5UH6s6tQb78SqFBo7H4lSrbQ5PLeFXz2iOoFbGYcVAYpcSDtJpqwjUcUf14bNLf9w7yWZIeD16MtMxbVfqtbEqHj4igRdpItfAg.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1782043441.0,
-            "poll": null
-        },
-        {
-            "m": "21.06 | 08:20",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6228",
-            "t": "🇰🇭 КАМБОДЖА: СТАРТ ОТБОРА НА ЕВРОВИДЕНИЕ АЗИЯ И ИСТОРИЧЕСКАЯ НАГРАДА",
-            "b": "Организаторы раскрыли детали национального отбора Камбоджи «Cambodia’s Finest Voice» для конкурса Евровидение Азия 2026. Главной сенсацией стало официальное подтверждение беспрецедентного приза - победитель паназиатского конкурса получит прямую путевку на основное Евровидение 2027.\nПроизводственная компания Phoenix Communications, отвечающая за национальный финал Камбоджи совместно с агентством Gigil Phnom Penh, поделилась эксклюзивными подробностями грядущего сезона.\nДЕТАЛИ ОТБОРА И ГЛАВНЫЙ ПРИЗ\nПредставители компании-вещателя подтвердили слухи о том, что триумфатор грядущего азиатского Евровидения получит право дебюта в основном европейском конкурсе в 2027 году.\nЧто касается самого отбора в Камбодже, правила и формат выглядят следующим образом:\n1. Прием заявок: Окно подачи заявок официально открыто. Организаторы особо подчеркивают, что к участию приглашаются исключительно профессиональные исполнители и звукозаписывающие лейблы.\n2. Формат шоу: Телевизионный проект «Cambodia’s Finest Voice» будет состоять только из одного масштабного национального финала, без проведения предварительных полуфиналов.\n3. Даты проведения: Проведение камбоджийского национального отбора запланировано на начало сентября 2026 года.\nНовость о путевке на Евровидение-2027 кардинально меняет ставки для всех участников азиатского телевизионного спин-оффа.\nКак вы оцениваете решение EBU предоставить победителю Евровидения Азия право участия в основном европейском конкурсе?\n⏱️ Время чтения: 1.2 мин | 🇰🇭 YourVision: Отборы",
-            "img": "https://cdn4.telesco.pe/file/ngi2rA48dLUBCHEzIaNrqHnl6yvzqga_fNL_icAs5p2iSQLsLWL8CyV-lYzhg7EWH5FtQoSXy5_VEqNGJyahPd_Qm3JOyaGsAaVhKTb0AeLckIMbNNaUEk_t5LKVXjn-FWD-m6JfS1cufeI6s_v8txPjg2EiXbyQUU7p7LwzIZyYrSjcF3UIpNp_NZF7GV3vsaRUrF0HvU6iIoZXVFk8x_J05X4rxPy4Jt_n0O0Z_R7lVO030dSRP5qe2MS7THfEYgqxJ4Um1tdb9Jn6CLJJz6PjxI84DOzxWGVgOoeF_7qNcZfkkLCh3rslXW5qSPlDib4aiYx6TLdOQvNDmaF8Ig",
-            "vid": "https://cdn4.telesco.pe/file/0ce9091015.mp4?token=AkPVWZxUT0-ecmqDvV7aWUJ87NhvwXYL23YcC4XtAcS50rcTMHLXCK5GcTSvB0VrRGZTcRzDp5aYaWn6E0g5Ao5MOK9yR3k7Buehb-TEkZ5H3-CFcybtmOdiRQN9z7j4g5xO2_TMAJ1pz8m5GMKHann_IiUDXJopMvrEX6WlXWTeNej4WmVATtmn7ZoYpqtVj908KzhLbNyKc7OmCXyEOehWQ_Amhtbl2oa2BwhKrzw8yfdgExsTaRZtnht9FF463BXuVjkEEcNgxh656RBdkuVov_hcVKcR1x4A8YxMlpN4i5aA-zmAA7Sxz4BVnrbo0QBHwIXBEBrW8cDmkISVT1JZ5V2mtbvBgxYskAGKqYls_kMzV3Q8nFDO8Cgge-EolQ0nC1WNrfanJ45v5_HIRDuJqQESVtuaGaHF3TQ8QNeV42RKMY5KfakqdEU3CX85Cnlg-WO75RCHoD8HY99EErstzH_3Ps4Y6bRn-I70l9_cKEP2kxFl7PgbsEz3q1WwVtV675dD0-LwM4DxrnGYfwjhHYcaxuTaVWyMQxTA9ieJ1x4OuNXJRp0vJqHRAJm429opzhKdU9ePaS5cvFwLQ7YGf8dX7JsFjZDDlh3oqdqXHbzqJxgQuxDVtCDyg6CKxVohF9YGXv7g_yp_9iQxxv2C5gAKBzwfB4BQ0Puz9p4",
-            "isVideo": true,
-            "ts": 1782030052.0,
             "poll": null
         }
     ],
