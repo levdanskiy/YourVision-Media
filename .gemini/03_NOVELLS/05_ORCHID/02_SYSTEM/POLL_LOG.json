@@ -2,7 +2,7 @@
   "version": "1.0",
   "project": "orchid",
   "season": 1,
-  "last_updated": "2026-06-25",
+  "last_updated": "2026-06-26",
   "polls": [
     {
       "id": "or-0-d1-q1",
@@ -1690,6 +1690,101 @@
       "stats_deltas": [],
       "post_id": "OR-24.06-20-00-CLIFFHANGER",
       "notes": "🔮 не развилка. Двоит мистерию дальше.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g16-q1-bridge",
+      "phase": 1,
+      "chapter": 16,
+      "narrative_day": 23,
+      "pub_date": "2026-06-25",
+      "category": "story",
+      "question": "Как «Пепел» берёт мост?",
+      "options": [
+        {
+          "label": "Громко, под Лорана",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Капкан на серого",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Разделиться - Сабина к Тонио, Виктория за контактом, кому шепчут имена",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Разделиться",
+      "winner_type": "single",
+      "impact_scoreboard": "Тактика: разделились (тихо, НЕ громко - HEAT держится 5). Сабина увела Тонио, Виктория взяла телефон серого (контакт-приглашение). Плот-направление, без affinity-дельт.",
+      "impact_content": "Глава 17: мост резолвится разделением; Тонио спасён, контакт серого → нить к Валентине.",
+      "stats_deltas": [],
+      "post_id": "OR-25.06-13-00-STORY-THE-CROSSING",
+      "notes": "Громкий ход НЕ выбран - HEAT не +2.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g16-react",
+      "phase": 1,
+      "chapter": 16,
+      "narrative_day": 23,
+      "pub_date": "2026-06-25",
+      "category": "reaction",
+      "question": "С какой карты Виктория делает первый шаг на мост?",
+      "options": [
+        {
+          "label": "♠️ Чисто - просчитать каждый шаг, не выдать руку",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "♠️ Чисто",
+      "winner_type": "unanimous",
+      "impact_scoreboard": "Реакц-микроголос (залоч., БЕЗ дельты; правило 24.06: до 20:00, на след. Главу). ♠️ задаёт тон Г17 - холодно, не выдавая руки.",
+      "impact_content": "Тон Г17: Виктория просчитывает, держит лицо (флешбек, контакт, джокер - всё ♠️ чисто).",
+      "stats_deltas": [],
+      "post_id": "OR-25.06-14-30-REACT",
+      "notes": "Реакция → след. Глава.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g16-q2-minute",
+      "phase": 1,
+      "chapter": 16,
+      "narrative_day": 23,
+      "pub_date": "2026-06-25",
+      "category": "story",
+      "question": "За минуту, что Николя держит серого, - что Виктория берёт?",
+      "options": [
+        {
+          "label": "Человека (Тонио)",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Правду (имя)",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Довериться Николя - пусть держит серого, сама за обоими разом",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Довериться Николя",
+      "winner_type": "single",
+      "impact_scoreboard": "Выбор в пользу героя: доверила Николя спину (держать серого), пошла за обоими = доверие тому, кого звала предателем. Николя +5 → 40 (к порогу 50 NOTEBOOK).",
+      "impact_content": "Глава 17 «Доверие»: Виктория впервые за 5 лет опёрлась на чужую руку - руку Николя; беат доверия, флешбек его памяти той ночи.",
+      "stats_deltas": [],
+      "post_id": "OR-25.06-16-00-STORY-NIKOLYA-ON-BRIDGE",
+      "notes": "Николя 35→40 (применено в STATS.json history Г17; POLL_LOG-tally сводится отдельно - флаг в STATE).",
       "applied_to_stats": true
     }
   ]
