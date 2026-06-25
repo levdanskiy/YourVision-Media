@@ -8,6 +8,7 @@ import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+from datetime import date
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,6 +43,7 @@ THEME_BY_SLOT = {
     "18:02": "evening calendar/ritual/time/feast",
     "21:04": "evening calendar/ritual/time/feast",
 }
+RECIPE_ONLY_FROM = date(2026, 7, 23)
 REQUIRED_UNDERREPRESENTED = [
     {"Africa", "African Diaspora"},
     {"Indigenous Americas"},
@@ -49,6 +51,17 @@ REQUIRED_UNDERREPRESENTED = [
     {"South Asia", "Southeast Asia"},
     {"Global Modern"},
 ]
+
+
+def theme_for(year: int, month: int, day: int, slot: str) -> str:
+    if date(year, month, day) >= RECIPE_ONLY_FROM:
+        if slot == "09:04":
+            return "09:04 prep/base recipe"
+        if slot == "15:04":
+            return "15:04 cook/table recipe"
+        if slot == "21:04":
+            return "21:04 slow/sweet recipe"
+    return THEME_BY_SLOT.get(slot, slot)
 
 
 def rel(path: Path) -> str:
@@ -118,7 +131,7 @@ def main() -> int:
         if not match:
             continue
         slot = f"{match.group('hour')}:{match.group('minute')}"
-        theme = THEME_BY_SLOT.get(slot, slot)
+        theme = theme_for(year, month, int(match.group("day")), slot)
         metadata = service_metadata(path.read_text(encoding="utf-8"))
         zone = metadata.get("cultural_zone")
         axis = metadata.get("coverage_axis")
@@ -163,7 +176,12 @@ def main() -> int:
 
     print("## Theme Coverage")
     print()
-    for theme in dict.fromkeys(THEME_BY_SLOT.values()):
+    theme_order = list(dict.fromkeys(THEME_BY_SLOT.values())) + [
+        "09:04 prep/base recipe",
+        "15:04 cook/table recipe",
+        "21:04 slow/sweet recipe",
+    ]
+    for theme in theme_order:
         zones = by_theme_zone.get(theme, Counter())
         print(f"### {theme}")
         if zones:

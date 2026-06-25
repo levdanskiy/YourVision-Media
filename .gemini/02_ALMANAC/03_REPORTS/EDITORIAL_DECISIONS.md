@@ -13,13 +13,15 @@ This is the durable decision log for user-approved rules. Detailed implementatio
 | `2026-07-17` | Visible rotation report before each requested day | Show debt, decision and reason before writing. |
 | `2026-07-17` | Trend revision every five prepared days | Required on `17.07`, `22.07`, `27.07`, `01.08`, etc.; apply at least one concrete change. |
 | Current | Daily improvement review | Before every prepared day, show one improvement plan and apply or formally defer at least one improvement. |
-| Current | Service/special layer is separate from main posts | From 20.07, `SV` is the mandatory weekly oracle + radar pair at `12:04`; `SP` remains optional at `18:04`; neither is an extra main post. |
-| Current | Weekly real forecast formats allowed in `SV` | Rotate zodiac, tarot, omen and oracle systems; keep non-deterministic editorial framing. |
-| Current | Weekly calendar radar allowed in `SV` | Use exact date systems and source-check moving observances. |
+| Current | Service/special layer is separate from main posts | `SV` remains optional/supporting, `SP` remains rare; neither is an extra main post. |
+| `2026-07-20` through `2026-07-22` | Weekly real forecast and calendar radar formats allowed in `SV` | One `ORACLE-NOTE` and one `CALENDAR-RADAR` were required only for the transition week before recipe-only mode. |
 | Current | Maximum application mode | Use coverage, sources, tone, visuals, interactivity and validation together, not selectively. |
 | Current | The user must see rotation, improvement and trend decisions | Reports are user-facing, not hidden internal notes. |
 | `2026-07-21` | Operational control points 2-7 are mandatory | Track real publication state, real assets, claim evidence, semantic memory, experiments and incidents/corrections through registries and the publishing gate. |
-| `2026-07-20` | Weekly service pair is mandatory | Every ISO week gets exactly one forecast `SV ORACLE-NOTE` and one `SV CALENDAR-RADAR`; other service formats cannot replace them. |
+| `2026-07-23` | Non-recipe material routes to LEXICON | Standalone myth, folklore, calendar, divination, oracle, source, etymology, omen and ritual posts move to `https://t.me/lexicon_by_AlmanacMarg` (`/home/levdanskiy/.gemini/05_LEXICON`). |
 | `2026-07-22` | Every recipe includes ingredients and preparation | Recipe-bearing posts require a quantified `ИНГРЕДИЕНТЫ` block and numbered `ПРИГОТОВЛЕНИЕ`; core recipe rubrics are blocked by validation when either is missing. |
+| `2026-07-23` | Channel pivots to recipe-only | Every daily `AL` is a reproducible recipe; old myth/calendar/divination/source rubrics may appear only as food context in Almanac, while standalone versions belong to LEXICON. |
+| `2026-07-23` | Add everyday recipe rubrics | `MAINS`, `SALADS`, `GRAINS`, `LEGUMES`, `VEGETABLES`, `BREAKFAST` become valid recipe-only filename rubrics. |
+| `2026-07-23` | Public name approved | Channel name becomes `ALMANAC: TABLE`; `ALMANAC: MARGINALIA` remains the archive-era name. |
 
 Add a row when a user decision changes a durable rule. Do not use this file for temporary topic ideas.

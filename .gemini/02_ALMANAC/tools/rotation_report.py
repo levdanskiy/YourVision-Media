@@ -33,8 +33,10 @@ THEME_BY_SLOT = {
 
 THEME_LABELS = {
     "morning_myth": "09:04 myth/source/omens/dossier",
+    "recipe_prep": "09:04 prep/base recipe",
     "food": "15:04 food",
     "evening_calendar": "21:04 calendar/ritual/time",
+    "recipe_slow": "21:04 slow/sweet recipe",
     "other": "other",
 }
 
@@ -45,6 +47,12 @@ BROAD_FOOD = {
     "PRESERVE",
     "SOUP",
     "CONDIMENTS",
+    "MAINS",
+    "SALADS",
+    "GRAINS",
+    "LEGUMES",
+    "VEGETABLES",
+    "BREAKFAST",
     "RECIPE",
     "FOODWAYS",
     "PANTRY",
@@ -68,6 +76,12 @@ FOOD_PRIORITY = [
     "PRESERVE",
     "SOUP",
     "CONDIMENTS",
+    "MAINS",
+    "SALADS",
+    "GRAINS",
+    "LEGUMES",
+    "VEGETABLES",
+    "BREAKFAST",
     "DRINKS",
     "TOOLS",
     "FOODWAYS",
@@ -105,6 +119,7 @@ REQUIRED_ZONE_GROUPS = [
     ("Global Modern", {"Global Modern"}),
 ]
 TREND_REVIEW_START = date(2026, 7, 17)
+RECIPE_ONLY_FROM = date(2026, 7, 23)
 
 
 @dataclass(frozen=True)
@@ -195,7 +210,14 @@ def load_services(year: int, month: int) -> list[Path]:
     return sorted(path for path in base.rglob("[SS][VP]-*.md") if SERVICE_NAME.match(path.name))
 
 
-def theme_for(slot: str) -> str:
+def theme_for(slot: str, day: int | None = None, year: int = 2026, month: int = 7) -> str:
+    if day is not None and date(year, month, day) >= RECIPE_ONLY_FROM:
+        if slot == "09:04":
+            return "recipe_prep"
+        if slot == "21:04":
+            return "recipe_slow"
+        if slot == "15:04":
+            return "food"
     return THEME_BY_SLOT.get(slot, "other")
 
 
@@ -248,14 +270,19 @@ def render_report(year: int, month: int, posts: list[Post], services: list[Path]
     days_with_content = len({post.day for post in posts})
     next_day = first_unprepared_day(posts, year, month)
     trend_due = trend_review_due(year, month, next_day)
+    recipe_mode = next_day is not None and date(year, month, next_day) >= RECIPE_ONLY_FROM
 
     slot_counts = Counter(post.slot for post in posts)
-    theme_counts = Counter(theme_for(post.slot) for post in posts)
+    theme_counts = Counter(theme_for(post.slot, post.day, year, month) for post in posts)
     rubric_counts = Counter(post.rubric for post in posts)
     status_counts = Counter(post.status or "missing" for post in posts)
     service_counts = Counter(SERVICE_NAME.match(path.name).group("prefix") for path in services if SERVICE_NAME.match(path.name))
 
-    food_branch_counts = Counter(branch_name(post.rubric) for post in posts if theme_for(post.slot) == "food")
+    food_branch_counts = Counter(
+        branch_name(post.rubric)
+        for post in posts
+        if theme_for(post.slot, post.day, year, month) == "food" or branch_name(post.rubric) != "other"
+    )
     theme_rubrics: dict[str, Counter[str]] = defaultdict(Counter)
     theme_zones: dict[str, Counter[str]] = defaultdict(Counter)
     zone_counts = Counter()
@@ -263,7 +290,7 @@ def render_report(year: int, month: int, posts: list[Post], services: list[Path]
     invalid_zones: list[Post] = []
 
     for post in posts:
-        theme = theme_for(post.slot)
+        theme = theme_for(post.slot, post.day, year, month)
         theme_rubrics[theme][post.rubric] += 1
         if not post.zone or not post.axis or not post.source_type:
             missing_metadata.append(post)
@@ -299,21 +326,33 @@ def render_report(year: int, month: int, posts: list[Post], services: list[Path]
     lines.append("")
     lines.append("| Block | Already Visible | Risk | Next Editorial Move |")
     lines.append("|-------|-----------------|------|----------------------|")
-    lines.append(
-        f"| 09:04 | {', '.join(f'{k}:{v}' for k, v in theme_rubrics['morning_myth'].most_common(4)) or 'none'} | "
-        f"{debt_status(bool(morning_missing))}: {', '.join(morning_missing[:3]) or 'balanced'} | "
-        f"{morning_missing[0] if morning_missing else 'rotate strongest source/date'} |"
-    )
+    if recipe_mode:
+        lines.append(
+            f"| 09:04 | {', '.join(f'{k}:{v}' for k, v in theme_rubrics['recipe_prep'].most_common(4)) or 'prep starts 23.07'} | "
+            "RECIPE: prep/base only | FERMENT/PANTRY/CONDIMENTS/WORKFLOW |"
+        )
+    else:
+        lines.append(
+            f"| 09:04 | {', '.join(f'{k}:{v}' for k, v in theme_rubrics['morning_myth'].most_common(4)) or 'none'} | "
+            f"{debt_status(bool(morning_missing))}: {', '.join(morning_missing[:3]) or 'balanced'} | "
+            f"{morning_missing[0] if morning_missing else 'rotate strongest source/date'} |"
+        )
     lines.append(
         f"| 15:04 | sweet:{food_branch_counts['sweet']} / savory:{food_branch_counts['savory_baking']} / broad:{food_branch_counts['broad_food']} | "
         f"{debt_status(bool(food_debt))}: {', '.join(food_debt) or 'balanced'} | "
         f"{food_missing[0] if food_missing else 'keep branch mix'} |"
     )
-    lines.append(
-        f"| 21:04 | {', '.join(f'{k}:{v}' for k, v in theme_rubrics['evening_calendar'].most_common(4)) or 'none'} | "
-        f"{debt_status(bool(evening_missing))}: {', '.join(evening_missing[:3]) or 'balanced'} | "
-        f"{evening_missing[0] if evening_missing else 'rotate by date'} |"
-    )
+    if recipe_mode:
+        lines.append(
+            f"| 21:04 | {', '.join(f'{k}:{v}' for k, v in theme_rubrics['recipe_slow'].most_common(4)) or 'slow/sweet starts 23.07'} | "
+            "RECIPE: slow/sweet/tomorrow only | DESSERTS/CAKES/BUNS/PRESERVE/FERMENT |"
+        )
+    else:
+        lines.append(
+            f"| 21:04 | {', '.join(f'{k}:{v}' for k, v in theme_rubrics['evening_calendar'].most_common(4)) or 'none'} | "
+            f"{debt_status(bool(evening_missing))}: {', '.join(evening_missing[:3]) or 'balanced'} | "
+            f"{evening_missing[0] if evening_missing else 'rotate by date'} |"
+        )
     lines.append(
         f"| Coverage | zones:{len(zone_counts)} / metadata:{known_zones} | "
         f"{debt_status(bool(zone_debt) or len(zone_counts) < 6)}: {', '.join(zone_debt[:2]) or 'balanced'} | "
@@ -379,7 +418,8 @@ def render_report(year: int, month: int, posts: list[Post], services: list[Path]
 
     lines.append("## Theme Zone Counts")
     lines.append("")
-    for theme in ("morning_myth", "food", "evening_calendar"):
+    report_themes = ("recipe_prep", "food", "recipe_slow") if recipe_mode else ("morning_myth", "food", "evening_calendar")
+    for theme in report_themes:
         lines.append(f"### {THEME_LABELS[theme]}")
         zones = theme_zones.get(theme, Counter())
         if zones:
@@ -395,7 +435,8 @@ def render_report(year: int, month: int, posts: list[Post], services: list[Path]
     for label, group in REQUIRED_ZONE_GROUPS:
         if not (set(zone_counts) & group):
             debt_lines.append(f"- Missing required zone group: {label}.")
-    for theme in ("morning_myth", "food", "evening_calendar"):
+    debt_themes = ("recipe_prep", "food", "recipe_slow") if recipe_mode else ("morning_myth", "food", "evening_calendar")
+    for theme in debt_themes:
         if len(theme_zones.get(theme, {})) < 3:
             debt_lines.append(f"- `{THEME_LABELS[theme]}` needs 3+ cultural zones; now {len(theme_zones.get(theme, {}))}.")
     if missing_metadata:
@@ -409,9 +450,14 @@ def render_report(year: int, month: int, posts: list[Post], services: list[Path]
 
     lines.append("## Next Moves")
     lines.append("")
-    lines.append(recommendation_line("09:04", morning_missing, "Use the strongest date/source hook."))
-    lines.append(recommendation_line("15:04", food_missing, "Keep sweet/savory/broad-food rotation even."))
-    lines.append(recommendation_line("21:04", evening_missing, "Use FEAST/RITES/CYCLES when the date supports it."))
+    if recipe_mode:
+        lines.append("- `09:04`: recipe-only prep/base. Prioritize `FERMENT`, `PANTRY`, `DRINKS`, `CONDIMENTS`, `WORKFLOW`, or low-equipment `RECIPE`.")
+        lines.append("- `15:04`: recipe-only cook/table. Keep savory, soup, flatbread, pie, condiment and staple rotation visible.")
+        lines.append("- `21:04`: recipe-only slow/sweet/tomorrow. Prioritize dessert, bake, preserve, overnight ferment or feast recipe.")
+    else:
+        lines.append(recommendation_line("09:04", morning_missing, "Use the strongest date/source hook."))
+        lines.append(recommendation_line("15:04", food_missing, "Keep sweet/savory/broad-food rotation even."))
+        lines.append(recommendation_line("21:04", evening_missing, "Use FEAST/RITES/CYCLES when the date supports it."))
     if service_counts:
         lines.append(f"- Service layer already present: {', '.join(f'{key}={value}' for key, value in service_counts.most_common())}. Keep it non-daily.")
     else:

@@ -15,6 +15,8 @@ Almanac should feel current, but not trend-chasing. The tone is:
 
 From `2026-07-17`, make the channel bolder by default. Bolder does not mean louder. It means the post makes a stronger editorial decision: a sharper object, a clearer source, a more specific visual, a more confident omission, and a less explanatory voice.
 
+From `2026-07-23`, boldness must serve recipes. The channel no longer proves range by switching themes; it proves range by making recipes globally varied, technically useful, visually inspectable and culturally sourced.
+
 Geography rule: keep names of countries, cities, regions, languages, and communities when they support comparison or evidence. Remove only default-center phrasing: «у нас», «наш регион», «здесь принято», or any repeated habit that makes one place the channel's implied home.
 
 ## 2026 Signals To Use
@@ -108,6 +110,24 @@ Recommended structure:
 [Kicker line]
 
 → [action/question/silence]
+```
+
+Recipe-only addition from `2026-07-23`:
+
+```text
+[Hook / food process]
+
+[Why today + source/cultural headnote]
+
+[ИНГРЕДИЕНТЫ with yield and quantities]
+
+[ПРИГОТОВЛЕНИЕ with numbered steps, time, temperature and sensory stops]
+
+[Failure point / storage / serving]
+
+[Kicker]
+
+→ [one useful observation/action]
 ```
 
 ## Bold Format Modes
@@ -239,7 +259,7 @@ These are reader-facing series names. Use sparingly: they should make the channe
 
 | Franchise | Rubrics | Promise |
 |-----------|---------|---------|
-| `Оракул недели` | `SV ORACLE-NOTE` | Weekly zodiac/tarot/omen/oracle forecast as symbolic editorial weather. |
+| `Оракул недели` | LEXICON from `23.07` | Weekly zodiac/tarot/omen/oracle forecast as symbolic editorial weather. |
 | `Оракулы как технология вопроса` | `DIVINATION` | Systems of uncertainty without factual future claims. |
 | `Еда как технология` | `RECIPE`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS` | Food through mechanism, failure point, stop signal. |
 | `Досье порога` | `PERSONAE`, `BESTIARY`, `OBJECTS`, `OMENS` | Figures, beings, objects, and signs as boundary cases. |
@@ -331,7 +351,7 @@ Bad:
 | `SOURCE` | One quote + one stylistic device + one present-day echo. |
 | `OMENS` | Treat superstition as household risk UX. |
 | `DIVINATION` | Treat oracle systems as question technology: object, grammar, function, no forecast inside core AL. |
-| `SV ORACLE-NOTE` | Make the forecast feel current and useful, but keep it symbolic, low-stakes, and non-deterministic. |
+| `SV ORACLE-NOTE` | Pre-pivot only in Almanac; from `23.07`, route to LEXICON. Keep it symbolic, low-stakes, and non-deterministic. |
 | `FRAGMENT` | Make it screenshot-short. |
 | `ETYMON` | Make the semantic drift the plot. |
 | `CAKES` | Show architecture and failure point. |

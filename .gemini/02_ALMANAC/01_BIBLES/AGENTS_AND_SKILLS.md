@@ -8,7 +8,8 @@ Every pass must preserve the current principles:
 
 - global coverage across all cultural zones;
 - geography serves evidence and comparison rather than a fixed editorial center;
-- three daily slots: myth/source/divination/personae, food-only baking/dessert/foodways, calendar/heritage/season/feast;
+- three daily slots through 22.07.2026: myth/source/divination/personae, food-only baking/dessert/foodways, calendar/heritage/season/feast;
+- from 23.07.2026: all three daily `AL` slots are recipe-only and must use `RECIPE_ONLY_SYSTEM.md`;
 - sweet and savory baking/dessert branches stay separated;
 - divination may include approved weekly editorial predictions and oracle formats, but never deterministic medical, legal or financial advice;
 - every ready post carries coverage metadata, source metadata, FACTCHECK, grade, and visual prompt.

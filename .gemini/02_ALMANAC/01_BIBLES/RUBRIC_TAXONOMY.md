@@ -8,7 +8,9 @@ Almanac has no home city, country, or region. Geography is used when it is a fac
 
 Do not delete country or city names by default. They are useful when readers can compare versions, dates, ingredients, rituals, or source histories. What is forbidden is anchor framing: writing as if one city, country, region, latitude, or timezone is the channel's natural center.
 
-All three themes are global by default. Myths/tales/omens, desserts/baking/bread, and calendars/rituals/time must be researched across the whole world: Africa, the Americas, East Asia, South Asia, Southeast Asia, Central Asia, West Asia, Oceania, Europe, Arctic/North, island cultures, diasporas, and modern internet/global systems. No region is the default lens.
+Through `2026-07-22`, all three themes are global by default. Myths/tales/omens, desserts/baking/bread, and calendars/rituals/time must be researched across the whole world: Africa, the Americas, East Asia, South Asia, Southeast Asia, Central Asia, West Asia, Oceania, Europe, Arctic/North, island cultures, diasporas, and modern internet/global systems. No region is the default lens.
+
+From `2026-07-23`, Almanac is recipe-only. The same global standard remains, but the daily object is always a recipe. Myth, calendar, divination, etymology, holidays and source texts become context layers inside recipes, not standalone `AL` rubrics.
 
 Monthly planning must avoid familiar-source gravity. If a month leans heavily on one cultural zone, the next planning pass must compensate with underrepresented zones.
 
@@ -26,6 +28,7 @@ Every complete post must answer six questions:
 ## 09:04 - Myths, Tales, Legends, Omens, Divination
 
 Legacy through `2026-07-16`: `10:04`.
+Active as standalone daily slot through `2026-07-22`. From `2026-07-23`, `09:04` becomes a prep/base recipe slot and uses only food rubrics.
 
 | Rubric | Use For | Do Not Use For |
 |--------|---------|----------------|
@@ -57,6 +60,8 @@ Legacy through `2026-07-16`: `10:04`.
 
 For new and rewritten posts from `2026-07-07`, every 15:04 post must be directly tied to food: dish, drink, ingredient, preservation, table, cooking technique, kitchen tool, food history, or edible ritual. `PROSE` and `ETYMON` do not occupy 15:04 as standalone rubrics; food language or literary references must be embedded inside a food rubric.
 
+From `2026-07-23`, this food-only rule expands to all three daily `AL` slots. Every allowed rubric below must carry a reproducible recipe or protocol with ingredients and preparation.
+
 ### Sweet Branch
 
 | Rubric | Use For | Core Test |
@@ -83,6 +88,19 @@ For new and rewritten posts from `2026-07-07`, every 15:04 post must be directly
 | `PRESERVE` | Salt, smoke, sugar, acid, drying, curing, confit, pickling as transformation. | Preservation agent changes the product. |
 | `SOUP` | Soup, broth, stew-like liquid meals, cold soups, ritual soups, fasting/breaking-fast soups. | Liquid medium carries the meal. |
 | `CONDIMENTS` | Sauces, pastes, seasonings, relishes, fermented sauces, spice pastes, table-changing small substances. | Small dose changes the whole plate. |
+
+### Everyday Recipe Branch
+
+Effective from `2026-07-23`.
+
+| Rubric | Use For | Core Test |
+|--------|---------|-----------|
+| `MAINS` | Full savory dish or plate center: fish, meat, poultry, tofu, eggs, vegetables, mixed dish. | The plate has a center, not just a side. |
+| `SALADS` | Raw/cooked assembled salads, chopped dishes, dressed vegetables, grain salads. | Cut, salt, dressing and timing decide texture. |
+| `GRAINS` | Rice, millet, buckwheat, barley, maize, couscous, porridge, pilaf, grain bowls. | Grain absorbs liquid and becomes structure. |
+| `LEGUMES` | Beans, lentils, chickpeas, peas, dal, soy and pulse-based recipes. | Soaking/cooking/starch/skin decide texture. |
+| `VEGETABLES` | Vegetable-led recipes where the vegetable is the main object. | Heat, salt, acid or cut changes the vegetable. |
+| `BREAKFAST` | Morning recipes, batch prep, first-meal rituals, quick or overnight starts. | Time-of-day and preparation rhythm matter. |
 
 ### Technique And Service
 
@@ -112,6 +130,12 @@ For new and rewritten posts from `2026-07-07`, every 15:04 post must be directly
 | `PRESERVE` | Product + preserving agent + time/environment + sensory boundary + storage/social function + safety source when needed. |
 | `SOUP` | Liquid base + body ingredient + heat/cold technique + who eats/when + sensory readiness + social function. |
 | `CONDIMENTS` | Substance + technique + dose/use rule + flavor function + route/source context + modern table role. |
+| `MAINS` | Center ingredient + heat/fat/liquid method + timing + doneness marker + serving/storage + cultural or seasonal headnote. |
+| `SALADS` | Main material + cut size + salting/draining/dressing order + texture marker + holding time. |
+| `GRAINS` | Grain + wash/soak/toast rule + liquid ratio + heat/rest method + texture marker. |
+| `LEGUMES` | Pulse + soak/no-soak rule + cooking medium + salt/acid timing + softness marker. |
+| `VEGETABLES` | Vegetable + cut + heat/salt/acid method + color/texture marker + serving route. |
+| `BREAKFAST` | Time constraint + ingredient base + prep-ahead or fast method + texture/temperature marker. |
 | `RECIPE` | Theory + exact process + three real failure modes + diagnosis + correction. |
 | `FOODWAYS` | Food practice + who eats/serves/refuses + table mechanics + social rule + modern change. |
 | `PANTRY` | Ingredient/substance + preservation mechanism + season/storage + sensory marker + what it protects against. |
@@ -140,6 +164,7 @@ These are not filename rubrics. Use the real rubric and, if helpful, add a `FORM
 ## 21:04 - Calendar, Ritual, Time
 
 Legacy through `2026-07-16`: `18:02`.
+Active as standalone daily slot through `2026-07-22`. From `2026-07-23`, `21:04` becomes a slow/sweet/tomorrow recipe slot and uses only food rubrics.
 
 | Rubric | Use For |
 |--------|---------|

@@ -36,6 +36,22 @@
       ],
       "result": "",
       "decision_note": ""
+    },
+    {
+      "experiment_id": "EXP-2026-07-23-RECIPE-ONLY-PIVOT",
+      "title": "Recipe-only Almanac pivot",
+      "hypothesis": "A focused global recipe archive with three useful recipe posts per day will be clearer to follow and easier to save than the prior mixed myth-food-calendar model.",
+      "change": "From 2026-07-23 all daily AL posts become recipes with ingredients and preparation; old themes survive only as headnotes and cultural context.",
+      "size": "big",
+      "start_date": "2026-07-23",
+      "end_date": "2026-08-06",
+      "metric": "save_forward_rate_recipe_completion_feedback_and_slot_retention",
+      "baseline": "Mixed-theme daily model through 2026-07-22.",
+      "target": "Higher saves per post, no collapse in 21:04 retention, and clear reader preference for recipe utility after two weeks.",
+      "status": "running",
+      "related_posts": [],
+      "result": "",
+      "decision_note": ""
     }
   ]
 }

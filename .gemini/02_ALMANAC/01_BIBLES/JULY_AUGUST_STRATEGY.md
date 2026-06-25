@@ -7,7 +7,10 @@
 
 Июль не перестраивается заново. Дни `01-16.07` считаются подготовленными и не переименовываются ретроактивно. Дни `07-16.07` уже приведены к новым рубричным правилам: food-only `15:04`, современный editorial tone, dossier/list/carousel-ready структура, глобальное сравнение без регионального якоря. Новое время применяется с `17.07.2026`.
 
-Август планируется уже полностью по новой системе.
+Август планируется уже полностью по recipe-only системе `ALMANAC: TABLE`.
+С 23.07.2026 все standalone non-recipe темы переходят в `LEXICON`
+(`https://t.me/lexicon_by_AlmanacMarg`, `/home/levdanskiy/.gemini/05_LEXICON`).
+В Almanac они остаются только как headnote/context внутри рецепта.
 
 Из внешнего аудита принимаем как рабочие усиления:
 - analytics review раз в две недели;
@@ -19,16 +22,16 @@
 
 Не принимаем как core AL-рубрики: `#VOICE`, `#ARCHIVE`, `#QUESTION`, `#COLLAB`, `#VISUAL_ESSAY`. Они живут как `SV` или external derivative.
 
-Core AL rhythm:
-- `09:04` - Mind / Myth / Dossier.
-- `15:04` - Food Only.
-- `21:04` - Time / Ritual / Feast.
+Core AL rhythm from `23.07`:
+- `09:04` - Prep / Base Recipe.
+- `15:04` - Cook / Table Recipe.
+- `21:04` - Slow / Sweet / Tomorrow Recipe.
 
 Legacy through `16.07`: `10:04 / 15:04 / 18:02`.
 
 Optional overlays:
-- С 20.07.2026 `SV` ровно два в неделю: `ORACLE-NOTE` + `CALENDAR-RADAR`, в папках соответствующих дней, не `AL-*`.
-- weekly default: one `SV ORACLE-NOTE` + one `SV CALENDAR-RADAR`, unless a stronger service item replaces one of them.
+- До 22.07.2026 `SV` может использовать `ORACLE-NOTE` + `CALENDAR-RADAR`, в папках соответствующих дней, не `AL-*`.
+- С 23.07.2026 standalone `ORACLE-NOTE` + `CALENDAR-RADAR` уходят в LEXICON; Almanac использует только recipe-service (`MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE`).
 - free-slot map lives in `BETWEEN_SLOT_SYSTEM.md`: `12:04` soft service, `18:04` rare threshold/special.
 - `SP` в `18:04` с `17.07`, только для сильных порогов, 2-4 раза в месяц максимум.
 - 4-й ежедневный пост не вводить; service/special слой остаётся редким.

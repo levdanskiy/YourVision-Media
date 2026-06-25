@@ -20,7 +20,7 @@ or a real calendar/oracle reason.
 
 | Time | Layer | Frequency | Use |
 |------|-------|-----------|-----|
-| `12:04` | `SV` | Exactly 2 per week from 20.07.2026 | Required oracle + calendar radar pair. |
+| `12:04` | `SV` | Through 22.07: exact service pair. From 23.07: 0-2 recipe-service/week. | Before pivot: oracle + calendar radar. After pivot: recipe navigation only; non-recipe service moves to LEXICON. |
 | `18:04` | `SP` or rare `SV` | 2-4 per month for `SP` | Threshold/special between food and evening: major date, strong series bridge, visual/audio event. |
 | `08:34`, `14:34`, `20:34` | Story/external | optional | Teaser frame, poll sticker, behind-the-post visual. Not archived as `AL`. |
 
@@ -33,8 +33,8 @@ feel precise, not noisy.
 
 | Format | Prefix | Best Slot | What It Does |
 |--------|--------|-----------|--------------|
-| Weekly oracle | `SV ORACLE-NOTE` | `12:04` Monday/Thursday | Zodiac, tarot, omen, rune/I Ching as symbolic forecast. |
-| Week-ahead calendar | `SV CALENDAR-RADAR` | `12:04` Monday/Tuesday or useful lead day | 3-7 holidays/observances ahead. |
+| Weekly oracle | `SV ORACLE-NOTE` through 22.07; LEXICON after 23.07 | `12:04` before pivot; LEXICON `08:44` after pivot | Zodiac, tarot, omen, rune/I Ching as symbolic forecast. |
+| Week-ahead calendar | `SV CALENDAR-RADAR` through 22.07; LEXICON after 23.07 | `12:04` before pivot; LEXICON `23:11` after pivot | 3-7 holidays/observances ahead. |
 | Native poll | `SV POLL` | `12:04` | Direction, preference, field observation. |
 | Micro quiz | `SV QUIZ` | `12:04` | One source/fact question with answer reveal. Max once per month. |
 | Source note | `SV SOURCE-NOTE` | `12:04` | Why a source/translation/version was chosen. |
@@ -50,14 +50,27 @@ feel precise, not noisy.
 
 ## Weekly Rule
 
-Default week:
+Default week through 22.07:
 
 ```text
 12:04 Monday/Thursday - SV ORACLE-NOTE
 12:04 Friday/useful lead day - SV CALENDAR-RADAR
 ```
 
-Required-pair rule:
+From 23.07 in Almanac:
+
+```text
+12:04 optional - SV MENU-RADAR / SHOPPING-LIST / RECIPE-INDEX / PREP-NOTE
+```
+
+From 23.07 in LEXICON:
+
+```text
+08:44 - omens, divination, astrology, forecast, fragments
+23:11 - chronos, cycles, calendar, source, etymology, modern folklore
+```
+
+Required-pair rule through 22.07:
 - `DIRECTION-PULSE`, `RECAP`, `SERIES-NAV`, `AUDIO-NOTE`, `READER-NOTE`, `MONTHLY-ALBUM`, and `QUIZ` do not replace oracle or radar; fold them into the pair, use a justified `SP`, or omit them;
 - do not publish three `SV` notes in one ISO week;
 - do not use `18:04` to rescue weak planning.
@@ -82,9 +95,9 @@ These are derivatives. The archived source of truth remains the day folder.
 
 | Week | `SV 1` | `SV 2` | Optional |
 |------|--------|--------|----------|
-| Week 1 | `ORACLE-NOTE` | `CALENDAR-RADAR` | `SP` only if Lammas needs bridge. |
-| Week 2 | `ORACLE-NOTE` | `CALENDAR-RADAR` | Quiz may be embedded, not substituted. |
-| Week 3 | `ORACLE-NOTE` | `CALENDAR-RADAR` | Reader memory may be embedded, not substituted. |
-| Week 4 | `ORACLE-NOTE` | `CALENDAR-RADAR` | End-month recap only if it replaces one. |
+| Week 1 | `MENU-RADAR` | `SHOPPING-LIST` | `SP` only if Lammas needs recipe bridge. |
+| Week 2 | `TECHNIQUE-POLL` | `RECIPE-INDEX` | Quiz only if it teaches a cooking decision. |
+| Week 3 | `PREP-NOTE` | `MENU-RADAR` | Reader memory only as recipe memory. |
+| Week 4 | `RECIPE-INDEX` | `SHOPPING-LIST` | End-month recap only as recipe index. |
 
 This gives rhythm without turning Almanac into a notification machine.

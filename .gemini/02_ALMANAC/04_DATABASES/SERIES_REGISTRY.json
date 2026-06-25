@@ -4,47 +4,56 @@
     {
       "series_id": "oracle-without-forecast",
       "name": "Oracle Without Forecast",
-      "status": "active",
+      "status": "routed_to_lexicon",
       "rubrics": ["DIVINATION", "SV ORACLE-NOTE"],
-      "cadence": "weekly service rotation",
-      "next_due": "2026-07-23",
-      "notes": "Rotate zodiac, tarot, omen and one oracle system; no personal deterministic advice."
+      "cadence": "LEXICON from 2026-07-23",
+      "next_due": null,
+      "notes": "Standalone oracle/forecast moves to LEXICON. Almanac may use only recipe navigation or food headnotes."
     },
     {
       "series_id": "calendar-radar",
       "name": "Calendar Radar",
-      "status": "active",
+      "status": "routed_to_lexicon",
       "rubrics": ["SV CALENDAR-RADAR"],
-      "cadence": "maximum once per ISO week",
+      "cadence": "LEXICON from 2026-07-23",
+      "next_due": null,
+      "notes": "Standalone calendar radar moves to LEXICON. 2026-W30 installment prepared for 21.07 remains valid archive."
+    },
+    {
+      "series_id": "recipe-menu-radar",
+      "name": "Recipe Menu Radar",
+      "status": "active",
+      "rubrics": ["SV MENU-RADAR", "SV SHOPPING-LIST", "SV RECIPE-INDEX"],
+      "cadence": "0-2 recipe-service notes per week",
       "next_due": "2026-07-27",
-      "notes": "Required weekly map. 2026-W30 installment prepared for 21.07; one radar is mandatory every ISO week."
+      "notes": "Dates, seasons and reader needs become recipe routes, shopping prep or recipe indexes. No standalone forecasts."
     },
     {
       "series_id": "objects-that-know",
       "name": "Objects That Know",
-      "status": "pilot",
+      "status": "routed_to_lexicon",
       "rubrics": ["OBJECTS", "TOOLS", "PANTRY"],
       "cadence": "1-2 per month",
       "next_due": null,
-      "notes": "One-object dossiers with rule, trace, price and modern equivalent."
+      "notes": "Standalone object dossiers move to LEXICON. Almanac uses object logic only for kitchen tools/pantry recipes."
     },
     {
       "series_id": "table-is-a-map",
       "name": "Table Is A Map",
-      "status": "pilot",
+      "status": "food_context_only",
       "rubrics": ["FEAST", "FOODWAYS", "CALENDAR"],
       "cadence": "1-2 per month",
       "next_due": null,
-      "notes": "Who sits, serves, refuses, waits and is absent."
+      "notes": "In Almanac only as recipe/table context. Standalone feast/calendar versions move to LEXICON."
     },
     {
       "series_id": "calendar-is-not-neutral",
       "name": "The Calendar Is Not Neutral",
-      "status": "pilot",
+      "status": "routed_to_lexicon",
       "rubrics": ["CYCLES", "MODERN", "CALENDAR"],
       "cadence": "monthly arc",
       "next_due": null,
-      "notes": "Dates as political, ritual and technological choices."
+      "notes": "Standalone calendar analysis moves to LEXICON. Almanac may use calendar only as menu/recipe route."
     }
   ]
 }

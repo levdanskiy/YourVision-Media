@@ -10,19 +10,60 @@ Core publication times change for new days from `2026-07-17`:
 - `15:04`
 - `21:04`
 
+Recipe-only publication starts from `2026-07-23`. Times do not change, but all
+three main posts become recipes:
+- `09:04` - prep/base recipe;
+- `15:04` - cook/table recipe;
+- `21:04` - slow/sweet/tomorrow recipe.
+
 Do not rename or rewrite prepared archive days only because of the time change.
 Files dated `2026-07-01` through `2026-07-16` keep `10:04 / 15:04 / 18:02`.
 
 Optional overlays:
-- From `2026-07-20`, `SV` appears exactly twice per week at `12:04`: one `ORACLE-NOTE` and one `CALENDAR-RADAR`.
+- Through `2026-07-22`, `SV` follows the existing oracle/radar rules.
+- From `2026-07-23`, `SV` is recipe-service only: `MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE`.
 - `SP` special notes may appear at `18:04` after `2026-07-17`, max 2-4 times per month.
 
 These overlays do not change the core daily rhythm and must not be named `AL-*`.
 See `SERVICE_AND_SPECIALS.md`.
 
-Reason: the new rhythm gives equal 6-hour spacing and keeps food as the fixed middle anchor. `09:04` is better for reading/saving, `21:04` is better for slow calendar, ritual, feast and night-threshold posts.
+Reason: the new rhythm gives equal 6-hour spacing. Through `2026-07-22`, food is the fixed middle anchor. From `2026-07-23`, the whole channel becomes food, and the slots become recipe moods instead of topic silos.
+
+## Recipe-Only Slot Meaning
+
+Effective from `2026-07-23`.
+
+### 09:04 - Prep / Base
+
+Use for recipes that start the day or start a process:
+- ferments, batters, soaking, spice pastes, sauces, pantry bases;
+- breakfast/staple recipes when they are useful;
+- low-equipment prep and workflow recipes;
+- doughs that need rest before cooking later.
+
+Reader mode: save, shop, start, soak, mix, set up.
+
+### 15:04 - Cook / Table
+
+Use for recipes that feel like the active meal:
+- soups, savory pies, flatbreads, breads, condiments with a dish route;
+- foodways as reproducible table recipe;
+- street-food, staple, market and shared-table formats.
+
+Reader mode: cook, compare, eat, adapt.
+
+### 21:04 - Slow / Sweet / Tomorrow
+
+Use for recipes that need cooling, setting, fermenting, proofing or evening attention:
+- desserts, cakes, buns, sweets, patisserie;
+- preserves, overnight ferments, next-day doughs;
+- feast/holiday recipes when the date still matters.
+
+Reader mode: bake, set, chill, prepare tomorrow.
 
 ## Slot Meaning
+
+The section below applies through `2026-07-22` and remains historical context for embedded recipe headnotes.
 
 ### 09:04 - Mind / Myth / Dossier
 
@@ -94,7 +135,8 @@ The production schedule changes from `2026-07-17`.
 | Period | Morning | Food | Evening | Special |
 |--------|---------|------|---------|---------|
 | Through `2026-07-16` | `10:04` | `15:04` | `18:02` | `21:04 SP` |
-| From `2026-07-17` | `09:04` | `15:04` | `21:04` | `18:04 SP` |
+| `2026-07-17` through `2026-07-22` | `09:04` myth/source | `15:04` food | `21:04` calendar/time | `18:04 SP` |
+| From `2026-07-23` | `09:04` prep/base recipe | `15:04` cook/table recipe | `21:04` slow/sweet recipe | `18:04 SP` recipe-only |
 
 Measure:
 - views after 1 hour;

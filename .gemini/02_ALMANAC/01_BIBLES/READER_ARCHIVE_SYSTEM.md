@@ -16,8 +16,10 @@ readers, but must verify or clearly label them before reuse.
 | Curated response | max 1 per month | `SV READER-NOTE` | Anonymous unless permission is explicit. |
 | Follow-up AL post | as earned | `AL` | Only after source-checking. |
 
-If a month uses a reader prompt, it replaces one weekly `SV ORACLE-NOTE` or
-`SV CALENDAR-RADAR`. Do not add a third service post that week.
+Through `2026-07-22`, if a month uses a reader prompt, it replaces one weekly
+`SV ORACLE-NOTE` or `SV CALENDAR-RADAR`. From `2026-07-23`, non-recipe reader
+prompts route to LEXICON; Almanac reader prompts must be recipe-memory or
+technique-memory only.
 
 ---
 

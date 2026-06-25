@@ -1,8 +1,14 @@
 schema_version: 1
 project:
-  name: "ALMANAC: MARGINALIA"
-  mission: "Three themes, one global archive of what disappears or lives under another name."
+  name: "ALMANAC: TABLE"
+  mission: "A global recipe archive: food as technique, calendar, memory and table."
   language: "ru"
+  companion_channel:
+    name: "LEXICON"
+    url: "https://t.me/lexicon_by_AlmanacMarg"
+    project_path: "/home/levdanskiy/.gemini/05_LEXICON"
+    routing_effective_from: "2026-07-23"
+    routing_rule: "All standalone non-recipe myth, folklore, calendar, divination, source, etymology, ritual and omen posts move to LEXICON."
 
 publication:
   timezone_label: "PUBLICATION_TIMEZONE"
@@ -12,15 +18,24 @@ publication:
     morning: "09:04"
     food: "15:04"
     evening: "21:04"
+  recipe_only_effective_from: "2026-07-23"
+  recipe_only_main_slots: ["09:04", "15:04", "21:04"]
+  recipe_only_slot_meanings:
+    "09:04": "prep/base recipe"
+    "15:04": "cook/table recipe"
+    "21:04": "slow/sweet/tomorrow recipe"
   legacy_slots_through: "2026-07-16"
   legacy_slots: ["10:04", "15:04", "18:02"]
   food_slot_is_always_food: true
+  all_main_slots_food_from: "2026-07-23"
 
 service_layer:
   service_slot: "12:04"
-  service_posts_per_iso_week: 2
-  required_weekly_service_types: ["ORACLE-NOTE", "CALENDAR-RADAR"]
+  service_posts_per_iso_week: [0, 2]
+  required_weekly_service_types: []
   required_weekly_pair_effective_from: "2026-07-20"
+  required_weekly_pair_through: "2026-07-22"
+  recipe_only_allowed_service_types: ["MENU-RADAR", "SHOPPING-LIST", "TECHNIQUE-POLL", "RECIPE-INDEX", "PREP-NOTE"]
   special_slot: "18:04"
   special_posts_per_month: [2, 4]
   service_is_not_fourth_main_post: true
@@ -37,6 +52,13 @@ editorial_invariants:
   visual_style: "modern editorial documentary evidence"
   recipe_posts_require_ingredients_and_method: true
   recipe_rule_effective_from: "2026-07-22"
+  all_al_posts_are_recipes_from: "2026-07-23"
+  standalone_non_recipe_routed_to_lexicon_from: "2026-07-23"
+  lexicon_project_path: "/home/levdanskiy/.gemini/05_LEXICON"
+  lexicon_telegram_url: "https://t.me/lexicon_by_AlmanacMarg"
+  recipe_only_new_rubrics: ["MAINS", "SALADS", "GRAINS", "LEGUMES", "VEGETABLES", "BREAKFAST"]
+  public_name_approved_from: "2026-07-23"
+  archive_era_name: "ALMANAC: MARGINALIA"
 
 workflow:
   visible_rotation_report_before_writing: true

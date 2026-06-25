@@ -5,15 +5,18 @@ from __future__ import annotations
 
 import argparse
 import re
+from datetime import date
 
 from almanac_common import CONTENT, parse_date_target, slots_for
 
 
 FOOD = {
     "CAKES", "BUNS", "PATISSERIE", "DESSERTS", "SWEETS", "BREAD", "FLATBREAD", "PIES",
-    "FERMENT", "PRESERVE", "SOUP", "CONDIMENTS", "GRAIN", "STREET", "FASTING_FOOD",
+    "FERMENT", "PRESERVE", "SOUP", "CONDIMENTS", "MAINS", "SALADS", "GRAINS",
+    "LEGUMES", "VEGETABLES", "BREAKFAST", "GRAIN", "STREET", "FASTING_FOOD",
     "RECIPE", "FOODWAYS", "PANTRY", "DRINKS", "TOOLS", "WORKFLOW", "LISTS",
 }
+RECIPE_ONLY_FROM = date(2026, 7, 23)
 
 
 def slugify(value: str) -> str:
@@ -74,6 +77,8 @@ def main() -> int:
     rubrics = [part.strip().lstrip("#").upper() for part in args.rubrics.split(",") if part.strip()]
     if len(rubrics) != 3:
         parser.error("--rubrics requires exactly three values")
+    if day >= RECIPE_ONLY_FROM and any(rubric not in FOOD for rubric in rubrics):
+        parser.error("recipe-only dates from 2026-07-23 require all three rubrics to be food rubrics")
     if rubrics[1] not in FOOD:
         parser.error(f"middle rubric `{rubrics[1]}` is not a food rubric")
     base = CONTENT / day.strftime("%Y/%m/%d")

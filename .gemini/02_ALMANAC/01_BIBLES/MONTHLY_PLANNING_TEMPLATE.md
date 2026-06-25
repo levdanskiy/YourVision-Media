@@ -2,6 +2,10 @@
 
 Use this before writing or regenerating any month. A month is not approved until slots, rubrics, cultural zones, source stacks, and V4 series are visible in one place.
 
+From `2026-07-23`, use the recipe-only override in `RECIPE_ONLY_SYSTEM.md`.
+For August and later, all three `AL` slots are food rubrics and every post must
+include `ИНГРЕДИЕНТЫ` and `ПРИГОТОВЛЕНИЕ`.
+
 ## Month Header
 
 ```yaml
@@ -54,6 +58,18 @@ Required monthly groups:
 - [ ] Global Modern
 
 ## Rubric Targets
+
+Recipe-only months use this target table first:
+
+| Family | Rubrics | Target Count | Actual |
+|--------|---------|--------------|--------|
+| Bread / flatbread / pies | BREAD / FLATBREAD / PIES | 8-12 |  |
+| Sweet / dessert | CAKES / BUNS / PATISSERIE / DESSERTS / SWEETS | 8-12 |  |
+| Broad cooking | SOUP / CONDIMENTS / FERMENT / PRESERVE / MAINS / SALADS / GRAINS / LEGUMES / VEGETABLES / BREAKFAST | 18-24 |  |
+| Technique / pantry / drinks / table | RECIPE / WORKFLOW / PANTRY / DRINKS / TOOLS / FOODWAYS / LISTS | 8-14 |  |
+| Food context layers | calendar, myth, source, divination, etymology inside recipe headnotes only | 10-18 |  |
+
+Legacy mixed-theme months before `2026-07-23` use this table:
 
 | Family | Rubrics | Target Count | Actual |
 |--------|---------|--------------|--------|
@@ -132,8 +148,8 @@ Use `BOLD_LAYER_ROADMAP.md` and fill this before drafting a new month.
 
 | Layer | Planned Date/Week | Output | Replaces / Depends On |
 |-------|-------------------|--------|------------------------|
-| Weekly oracle |  | `SV ORACLE-NOTE` | one weekly service slot |
-| Calendar radar |  | `SV CALENDAR-RADAR` | one weekly service slot |
+| Recipe menu radar |  | `SV MENU-RADAR` | optional weekly recipe-service slot |
+| Shopping / prep index |  | `SV SHOPPING-LIST` / `SV RECIPE-INDEX` / `SV PREP-NOTE` | optional recipe-service slot |
 | Micro quiz |  | embedded interaction or rare justified `SP` | never replaces the required oracle/radar pair |
 | Stories |  | teaser/process/route frames | derivative, not `AL` |
 | Proof of work |  | source receipts / proof cards | required for high-risk posts |

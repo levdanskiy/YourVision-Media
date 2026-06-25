@@ -21,6 +21,34 @@ TIME_SHIFTED_EXPECTED_SLOTS = {"09:04", "15:04", "21:04"}
 SUNDAY = 6
 NEW_SLOT_RULES_FROM = (2026, 7, 7)
 TIME_CHANGE_FROM = (2026, 7, 17)
+RECIPE_ONLY_FROM = (2026, 7, 23)
+FOOD_RUBRICS = {
+    "CAKES",
+    "BUNS",
+    "PATISSERIE",
+    "DESSERTS",
+    "SWEETS",
+    "RECIPE",
+    "BREAD",
+    "FLATBREAD",
+    "PIES",
+    "FERMENT",
+    "PRESERVE",
+    "SOUP",
+    "CONDIMENTS",
+    "MAINS",
+    "SALADS",
+    "GRAINS",
+    "LEGUMES",
+    "VEGETABLES",
+    "BREAKFAST",
+    "FOODWAYS",
+    "PANTRY",
+    "DRINKS",
+    "TOOLS",
+    "LISTS",
+    "WORKFLOW",
+}
 LEGACY_SLOT_RUBRICS = {
     "10:04": {"LORE", "SOURCE", "OMENS", "DIVINATION", "FRAGMENT", "ETYMON", "PROSE"},
     "15:04": {
@@ -55,6 +83,12 @@ SLOT_RUBRICS = {
         "PRESERVE",
         "SOUP",
         "CONDIMENTS",
+        "MAINS",
+        "SALADS",
+        "GRAINS",
+        "LEGUMES",
+        "VEGETABLES",
+        "BREAKFAST",
         "FOODWAYS",
         "PANTRY",
         "DRINKS",
@@ -71,6 +105,12 @@ TIME_SHIFTED_SLOT_RUBRICS = {
     "21:04": SLOT_RUBRICS["18:02"],
 }
 
+RECIPE_ONLY_SLOT_RUBRICS = {
+    "09:04": FOOD_RUBRICS,
+    "15:04": FOOD_RUBRICS,
+    "21:04": FOOD_RUBRICS,
+}
+
 
 def expected_slots_for(date_tuple: tuple[int, int, int]) -> set[str]:
     if date_tuple >= TIME_CHANGE_FROM:
@@ -79,6 +119,8 @@ def expected_slots_for(date_tuple: tuple[int, int, int]) -> set[str]:
 
 
 def slot_rubrics_for(date_tuple: tuple[int, int, int]) -> dict[str, set[str]]:
+    if date_tuple >= RECIPE_ONLY_FROM:
+        return RECIPE_ONLY_SLOT_RUBRICS
     if date_tuple >= TIME_CHANGE_FROM:
         return TIME_SHIFTED_SLOT_RUBRICS
     return SLOT_RUBRICS if date_tuple >= NEW_SLOT_RULES_FROM else LEGACY_SLOT_RUBRICS
@@ -187,7 +229,7 @@ def main() -> int:
     print()
     for day in range(1, days_in_month + 1):
         day_date = date(year, month, day)
-        if day_date.weekday() == SUNDAY and day in by_day:
+        if (year, month, day) < RECIPE_ONLY_FROM and day_date.weekday() == SUNDAY and day in by_day:
             sunday_fragment = False
             for path in by_day.get(day, []):
                 match = AL_NAME.match(path.name)
@@ -208,7 +250,8 @@ def main() -> int:
     for week, counts in sorted(by_week.items()):
         if counts["LISTS"] > 1:
             rotation_issues.append(f"ISO week {week}: `LISTS` appears {counts['LISTS']} times")
-        if len(days_by_week[week]) >= 7 and counts["HERITAGE"] == 0:
+        week_dates = [date(year, month, day_number) for day_number in days_by_week[week]]
+        if len(days_by_week[week]) >= 7 and max(week_dates) < date(*RECIPE_ONLY_FROM) and counts["HERITAGE"] == 0:
             rotation_issues.append(f"ISO week {week}: no `HERITAGE` post")
         if counts["HERITAGE"] > 2:
             rotation_issues.append(f"ISO week {week}: `HERITAGE` appears {counts['HERITAGE']} times")

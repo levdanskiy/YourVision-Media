@@ -2,6 +2,7 @@
 
 Effective from `2026-07-07`.
 Core time change effective from `2026-07-17`.
+Recipe-only service change effective from `2026-07-23`.
 
 This layer adds interaction and modern channel navigation without creating a fourth daily Almanac post.
 
@@ -17,13 +18,15 @@ From `2026-07-17`:
 - `15:04`
 - `21:04`
 
+From `2026-07-23`, the same three slots remain but every daily `AL` is a recipe.
+
 Legacy through `2026-07-16`:
 - `10:04`
 - `15:04`
 - `18:02`
 
 Service notes and special posts are optional overlays. They do not count as daily `AL` posts and must not be named `AL-*`.
-They must not become a fourth daily post. Use them only when they add navigation, feedback, audio, calendar radar, weekly oracle framing, quiz/source context, or a genuinely major date.
+They must not become a fourth daily post. Through `2026-07-22`, use them for navigation, feedback, audio, calendar radar, weekly oracle framing, quiz/source context, or a genuinely major date. From `2026-07-23`, use them only for recipe navigation, shopping prep, technique feedback, recipe indexes, menu routes or a food-specific special.
 
 ## File Prefixes
 
@@ -57,7 +60,9 @@ Time rule:
 
 ## Service Notes
 
-Frequency: exactly 2 per ISO week from `2026-07-20`: one `ORACLE-NOTE` and one `CALENDAR-RADAR`.
+Frequency:
+- through `2026-07-22`: existing weekly oracle/radar cadence applies;
+- from `2026-07-23`: 0-2 `SV` per week, recipe-service only. No mandatory standalone oracle/radar pair in Almanac; standalone oracle/radar moves to LEXICON.
 
 Allowed types:
 - `POLL` - specific native poll, never engagement bait.
@@ -74,6 +79,13 @@ Allowed types:
 - `MONTHLY-ALBUM` - monthly field file/PDF/carousel release note, max once per month.
 - `ORACLE-NOTE` - weekly symbolic forecast: zodiac, tarot, omen, rune, I Ching, moon phase or other sourced oracle system.
 - `CALENDAR-RADAR` - weekly list of holidays/observances for the week ahead, today, or month opening.
+- `MENU-RADAR` - week-ahead food dates, seasonal windows and recipe routes.
+- `SHOPPING-LIST` - compact ingredient prep for the next 3-5 recipes.
+- `TECHNIQUE-POLL` - one specific recipe failure, preference or equipment choice.
+- `RECIPE-INDEX` - route through published recipes by need or technique.
+- `PREP-NOTE` - one mise en place, storage or timing note.
+
+After `2026-07-23`, use only `MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE` unless the user explicitly reopens non-recipe service.
 
 Length:
 - 400-900 characters.
@@ -216,6 +228,8 @@ Rules:
 
 ## Oracle Notes
 
+Standalone `SV ORACLE-NOTE` leaves Almanac from `2026-07-23` by the recipe-only pivot. Publish it in LEXICON instead. If the idea remains in Almanac, it must be rebuilt as recipe navigation, not a forecast.
+
 Use `SV ORACLE-NOTE` as a weekly symbolic forecast layer. It may use real
 forecast formats - zodiac, tarot, omens, runes, I Ching, moon phase or similar -
 but it must not claim factual knowledge of the future.
@@ -254,6 +268,8 @@ Template:
 ```
 
 ## Calendar Radar
+
+Standalone `SV CALENDAR-RADAR` leaves Almanac from `2026-07-23` by the recipe-only pivot. Publish it in LEXICON instead. In Almanac, use `SV MENU-RADAR`: dates and observances become recipe routes.
 
 Use `SV CALENDAR-RADAR` for compact lists like "today in calendars", "this
 week's observances", or "month ahead".
@@ -341,10 +357,10 @@ Start from `2026-07-07`.
 | `10.07 12:04` | `SV CALENDAR-RADAR` | Start calendar radar: upcoming observances and calendar nodes. |
 | `13.07 12:04` | `SV ORACLE-NOTE` | Start weekly oracle forecast. |
 | `21.07 12:04` | `SV CALENDAR-RADAR` | Week-ahead radar for 20-26.07; moved before publication. |
-| `23.07 12:04` | `SV ORACLE-NOTE` | Second weekly oracle, different mode. |
-| `27.07 12:04` | `SV ORACLE-NOTE` | Lammas-week oracle. |
-| `30.07 12:04` | `SV CALENDAR-RADAR` | Lammas/week-ahead radar. |
-| `31.07 18:04` | `SP` | Lammas Eve / first harvest threshold. |
+| `23.07 12:04` | `SV RECIPE-INDEX` | Public welcome/navigator for `ALMANAC: TABLE`; non-recipe route points to LEXICON. |
+| `27.07 12:04` | `SV MENU-RADAR` | Lammas/week-ahead dates become recipe routes. |
+| `30.07 12:04` | `SV SHOPPING-LIST` or `SV RECIPE-INDEX` | Prep for Lammas and early-August recipes. |
+| `31.07 18:04` | `SP` recipe-only if used | Lammas Eve / first-harvest recipe threshold. |
 
 Optional only if a week needs it:
 - `SP` for a strong myth-cycle finale.

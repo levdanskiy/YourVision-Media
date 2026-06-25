@@ -1,12 +1,19 @@
 # ORACLE AND RADAR SYSTEM
 
 Effective from `2026-07-10`.
+Standalone oracle/radar service leaves Almanac from `2026-07-23` by `RECIPE_ONLY_SYSTEM.md`.
+Continue these formats in `LEXICON` (`https://t.me/lexicon_by_AlmanacMarg`,
+project `/home/levdanskiy/.gemini/05_LEXICON`).
 
 This document controls two weekly service formats:
 - `SV ORACLE-NOTE` - weekly symbolic forecast layer;
 - `SV CALENDAR-RADAR` - weekly calendar/holiday radar.
 
 They are not `AL` posts and do not create a fourth daily post.
+
+From `2026-07-23`, do not create standalone Almanac `SV ORACLE-NOTE` or
+`SV CALENDAR-RADAR`. Route them to LEXICON. In Almanac, use recipe-service formats instead:
+`MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE`.
 
 ---
 
@@ -38,7 +45,7 @@ Wrong framing:
 
 ## Weekly Cadence
 
-From the ISO week `20-26.07.2026`, service load is exactly `2 SV` per week: one forecast and one calendar radar. Both are required; neither may replace the other.
+From the ISO week `20-26.07.2026`, service load was exactly `2 SV` per week through `2026-07-22`: one forecast and one calendar radar. From `2026-07-23`, this obligation is owned by LEXICON, not Almanac.
 
 | Week Object | Default Day | Time | Type | Rule |
 |-------------|-------------|------|------|------|
@@ -162,15 +169,13 @@ Existing service posts remain:
 - `10.07 12:04` - `SV CALENDAR-RADAR`;
 - `13.07 12:04` - `SV ORACLE-NOTE`.
 
-Planned continuation:
+Planned continuation through the recipe pivot:
 
 | Week | Oracle | Radar | Note |
 |------|--------|-------|------|
 | `13-19.07` | `13.07 ORACLE-NOTE` | none | Do not add recap on `19.07` unless oracle/radar is skipped. |
-| `20-26.07` | `23.07 ORACLE-NOTE` | `21.07 CALENDAR-RADAR` | Two required `SV`; radar moved from 20.07 before publication. |
-| `27-31.07` | `27.07 ORACLE-NOTE` | `30.07 CALENDAR-RADAR` | `31.07 SP` is separate, rare special. |
+| `20-26.07` | route to LEXICON from `23.07` | `21.07 CALENDAR-RADAR` | Recipe-only pivot moves the planned oracle out of Almanac. |
+| `27-31.07` | none | use `27.07 MENU-RADAR` if needed | Recipe-service only. |
 
-From August, use the mandatory rhythm:
-- Monday `SV ORACLE-NOTE`;
-- Monday/Tuesday `SV CALENDAR-RADAR`;
-- other service ideas are folded into this pair or omitted.
+From August, Almanac uses recipe-service only. Standalone forecasts and
+calendar radar belong to LEXICON.

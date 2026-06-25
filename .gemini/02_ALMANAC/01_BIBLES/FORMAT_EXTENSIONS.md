@@ -7,6 +7,10 @@ as a core rubric.
 `FERMENT` and `PRESERVE` were promoted from lenses to core 15:04 rubrics. Use
 them in filenames when the living culture or preservation process is the object.
 
+From `2026-07-23`, all cross-theme lenses must be embedded into recipes. A
+calendar, myth, taboo, source, oracle, word or feast-table layer can explain why
+the dish matters, but it cannot become a standalone `AL` outside a food rubric.
+
 ## Accepted As Lenses
 
 | Proposed Label | Use As | Slot | Rule |
@@ -75,9 +79,9 @@ Cross-theme posts are allowed when the slot object remains clear:
 
 | Cross Theme | Correct Slot | Example |
 |-------------|--------------|---------|
-| Myth + Food | `15:04` if food is the object; `09:04` if myth is the object. | Lammas loaf as bread vs Lugh as personae. |
-| Food + Holiday | `21:04 FEAST` if table/date is the object; `15:04 FOODWAYS` if eating practice is the object. | Iftar table vs date technique. |
-| Myth + Holiday | `21:04 CALENDAR/WHEEL` if the date is the object; `09:04 LORE` if the story is the object. | Kupala date split vs Gogol's Kupala text. |
+| Myth + Food | From `23.07`: food rubric only. Myth appears as recipe headnote. | Lammas loaf as bread with Lugh in context. |
+| Food + Holiday | From `23.07`: food rubric only. Holiday explains the dish/table. | Iftar soup, Lammas loaf, first-harvest tray bake. |
+| Myth + Holiday | From `23.07`: only if transformed into a recipe object. | Kupala herb drink as recipe; no standalone LORE/CALENDAR. |
 | Text + Food | `15:04` only if the food technique remains central. | Croissant etymology inside PATISSERIE. |
 
 ## Quality Guard

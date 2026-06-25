@@ -1,6 +1,6 @@
-# ALMANAC - OPERATING INDEX
+# ALMANAC: TABLE - OPERATING INDEX
 
-This folder is the working archive for Almanac: content rules, seasonal plans, source bibles, generated posts, and operational checks.
+This folder is the working archive for `ALMANAC: TABLE`: content rules, seasonal plans, source bibles, generated posts, assets, and operational checks. `ALMANAC: MARGINALIA` remains the archive-era name for pre-pivot material.
 
 ## Current Structure
 
@@ -45,7 +45,9 @@ Read these before creating or editing posts:
 24. `01_BIBLES/ANALYTICS_REVIEW.md` - biweekly performance review, series failure rules, and non-viral iteration policy.
 25. `01_BIBLES/DISTRIBUTION_RULES.md` - stories, cross-posting, audio/video, collaborations, and monetization boundary.
 26. `01_BIBLES/AGENTS_AND_SKILLS.md` - recommended planner, writer, factcheck, style, and visual QA passes.
-27. `01_BIBLES/PRE_PUBLISH_CHECKLIST.md` - final manual check.
+27. `01_BIBLES/LEXICON_ROUTING.md` - companion-channel routing for all standalone non-recipe material from 23.07.2026.
+28. `01_BIBLES/RECIPE_ONLY_SYSTEM.md` - recipe-only pivot from 23.07.2026: slots, rubrics, promo week and service changes.
+29. `01_BIBLES/PRE_PUBLISH_CHECKLIST.md` - final manual check.
 
 Older dated plans in `01_BIBLES/PLAN_*.md`, `JUNE_STRATEGY.md`, and `JULY_AUGUST_STRATEGY.md` are historical planning material. Before reusing any topic from them, rebuild it through `WORLD_COVERAGE_MATRIX.md` and current no-regional-anchor rules.
 
@@ -55,15 +57,16 @@ Current AL format expects three slots per day.
 
 Expanded slot rules apply to new and rewritten posts from `2026-07-07`. Already prepared material through `2026-07-06` is not rewritten retroactively.
 New posting times apply from `2026-07-17`. Legacy through `2026-07-16` keeps `10:04 / 15:04 / 18:02`.
+Recipe-only rules apply from `2026-07-23`: every main `AL` post is a reproducible recipe with `ИНГРЕДИЕНТЫ` and `ПРИГОТОВЛЕНИЕ`. Myth, calendar, source, divination, language and holiday material may appear only as food context inside a recipe. Standalone non-recipe material moves to the companion project `LEXICON` at `/home/levdanskiy/.gemini/05_LEXICON` and channel `https://t.me/lexicon_by_AlmanacMarg`.
 
 | Slot | Theme | Rubrics |
 |------|-------|---------|
-| `09:04` | Myths / sources / omens / divination / personae / bestiary / objects / texts | `LORE`, `SOURCE`, `OMENS`, `DIVINATION`, `PERSONAE`, `BESTIARY`, `OBJECTS`, `FRAGMENT`, `ETYMON`, `PROSE` |
-| `15:04` | Food only: desserts, baking, bread, fermentation, preservation, soups, condiments, drinks, pantry, tools, foodways, technique | `CAKES`, `BUNS`, `PATISSERIE`, `DESSERTS`, `SWEETS`, `RECIPE`, `BREAD`, `FLATBREAD`, `PIES`, `FERMENT`, `PRESERVE`, `SOUP`, `CONDIMENTS`, `FOODWAYS`, `PANTRY`, `DRINKS`, `TOOLS`, `LISTS`, `WORKFLOW` |
-| `21:04` | Calendar / season / heritage / rites / modern rituals / feast tables | `CHRONOS`, `CALENDAR`, `HERITAGE`, `WHEEL`, `CYCLES`, `MODERN`, `RITES`, `FEAST`, occasional `ETYMON` |
+| `09:04` | Through 22.07: myths/sources. From 23.07: recipe prep/base. | Through 22.07: old morning rubrics. From 23.07: food rubrics only. |
+| `15:04` | Food only; from 23.07: cook/table recipe. | Food rubrics only. |
+| `21:04` | Through 22.07: calendar/time. From 23.07: slow/sweet/tomorrow recipe. | Through 22.07: old evening rubrics. From 23.07: food rubrics only. |
 
 Between-slot layer:
-- `12:04` - exactly two weekly `SV` from 20.07.2026: one `ORACLE-NOTE` and one `CALENDAR-RADAR`.
+- `12:04` - through 22.07.2026 use existing `SV` rules; from 23.07.2026 use recipe-only service notes such as `MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE`.
 - `18:04` - rare `SP` or visual/audio threshold, 2-4 per month max.
 - story/external frames are derivatives, not extra `AL` posts.
 

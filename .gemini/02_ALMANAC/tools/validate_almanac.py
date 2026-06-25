@@ -43,6 +43,12 @@ RUBRIC_LIMITS = {
     "PRESERVE": 2600,
     "SOUP": 2600,
     "CONDIMENTS": 2500,
+    "MAINS": 2700,
+    "SALADS": 2500,
+    "GRAINS": 2600,
+    "LEGUMES": 2600,
+    "VEGETABLES": 2600,
+    "BREAKFAST": 2500,
     "RECIPE": 2700,
     "FOODWAYS": 2600,
     "PANTRY": 2600,
@@ -60,6 +66,7 @@ ACTIVE_FROM = (2026, 5, 16)
 NEW_SLOT_RULES_FROM = (2026, 7, 7)
 TIME_CHANGE_FROM = (2026, 7, 17)
 RECIPE_BLOCKS_FROM = (2026, 7, 22)
+RECIPE_ONLY_FROM = (2026, 7, 23)
 ALWAYS_RECIPE_RUBRICS = {
     "CAKES",
     "BUNS",
@@ -70,6 +77,33 @@ ALWAYS_RECIPE_RUBRICS = {
     "FLATBREAD",
     "PIES",
     "RECIPE",
+}
+FOOD_RUBRICS = {
+    "CAKES",
+    "BUNS",
+    "PATISSERIE",
+    "DESSERTS",
+    "SWEETS",
+    "BREAD",
+    "FLATBREAD",
+    "PIES",
+    "FERMENT",
+    "PRESERVE",
+    "SOUP",
+    "CONDIMENTS",
+    "MAINS",
+    "SALADS",
+    "GRAINS",
+    "LEGUMES",
+    "VEGETABLES",
+    "BREAKFAST",
+    "RECIPE",
+    "FOODWAYS",
+    "PANTRY",
+    "DRINKS",
+    "TOOLS",
+    "WORKFLOW",
+    "LISTS",
 }
 VALID_STATUSES = {
     "IDEA",
@@ -151,6 +185,12 @@ SLOT_RUBRICS = {
         "PRESERVE",
         "SOUP",
         "CONDIMENTS",
+        "MAINS",
+        "SALADS",
+        "GRAINS",
+        "LEGUMES",
+        "VEGETABLES",
+        "BREAKFAST",
         "LISTS",
         "WORKFLOW",
         "FOODWAYS",
@@ -165,6 +205,12 @@ TIME_SHIFTED_SLOT_RUBRICS = {
     "09:04": SLOT_RUBRICS["10:04"],
     "15:04": SLOT_RUBRICS["15:04"],
     "21:04": SLOT_RUBRICS["18:02"],
+}
+
+RECIPE_ONLY_SLOT_RUBRICS = {
+    "09:04": FOOD_RUBRICS,
+    "15:04": FOOD_RUBRICS,
+    "21:04": FOOD_RUBRICS,
 }
 
 AL_NAME = re.compile(
@@ -262,6 +308,8 @@ def file_date(match: re.Match[str]) -> tuple[int, int, int]:
 
 
 def slot_rubrics_for(date_tuple: tuple[int, int, int]) -> dict[str, set[str]]:
+    if date_tuple >= RECIPE_ONLY_FROM:
+        return RECIPE_ONLY_SLOT_RUBRICS
     if date_tuple >= TIME_CHANGE_FROM:
         return TIME_SHIFTED_SLOT_RUBRICS
     return SLOT_RUBRICS if date_tuple >= NEW_SLOT_RULES_FROM else LEGACY_SLOT_RUBRICS
@@ -318,9 +366,11 @@ def validate_file(path: Path, include_archive: bool, strict_coverage: bool) -> l
     if re.search(r"--(ar|v|style|s)\b", text):
         issues.append(Issue("ERROR", path, "contains forbidden visual prompt flag"))
 
-    allowed = slot_rubrics_for((year, month, day)).get(slot)
+    date_tuple = (year, month, day)
+    allowed = slot_rubrics_for(date_tuple).get(slot)
     if allowed and rubric not in allowed:
-        issues.append(Issue("WARN", path, f"rubric {rubric} does not match slot {slot}"))
+        severity = "ERROR" if date_tuple >= RECIPE_ONLY_FROM else "WARN"
+        issues.append(Issue(severity, path, f"rubric {rubric} does not match slot {slot}"))
 
     image_status = metadata.get("image_status")
     if image_status and image_status not in VALID_IMAGE_STATUSES:
@@ -347,7 +397,12 @@ def validate_file(path: Path, include_archive: bool, strict_coverage: bool) -> l
             issues.append(Issue("WARN", path, f"body length {len(body)} exceeds {rubric} limit {limit}"))
 
         recipe_declared = metadata.get("recipe_included", "").lower() in {"1", "true", "yes"}
-        if (year, month, day) >= RECIPE_BLOCKS_FROM and (rubric in ALWAYS_RECIPE_RUBRICS or recipe_declared):
+        if date_tuple >= RECIPE_ONLY_FROM and rubric not in FOOD_RUBRICS:
+            issues.append(Issue("ERROR", path, "recipe-only AL post uses non-food rubric"))
+        if (
+            date_tuple >= RECIPE_ONLY_FROM
+            or (date_tuple >= RECIPE_BLOCKS_FROM and (rubric in ALWAYS_RECIPE_RUBRICS or recipe_declared))
+        ):
             if not re.search(r"(?im)^\*\*ИНГРЕДИЕНТЫ:?\*\*$", body):
                 issues.append(Issue("ERROR", path, "recipe post missing INGREDIENTS block"))
             if not re.search(r"(?im)^\*\*ПРИГОТОВЛЕНИЕ:?\*\*$", body):

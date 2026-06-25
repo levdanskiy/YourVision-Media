@@ -6,6 +6,10 @@ From `2026-07-07`, service interaction lives in `SERVICE_AND_SPECIALS.md`.
 Core `AL` rhythm remains three daily posts; `SV` service notes and rare `SP`
 specials are optional overlays, not a fourth daily post.
 
+From `2026-07-23`, interaction must be recipe-only: technique choices,
+ingredient substitutions, menu routing, shopping prep, storage and failure
+diagnosis. Standalone oracle and calendar interaction moves to LEXICON.
+
 ## Position
 
 Interactive elements should make the reader observe, compare, choose, or remember something concrete from the post. They should not ask for generic approval, identity labels, or viral reactions.
@@ -29,12 +33,12 @@ Bad interaction feels like growth hacking:
 | Type | Frequency | Where |
 |------|-----------|-------|
 | Native poll inside an `AL` post | Max 1 per week | Only `LISTS`, food technique posts, `OMENS`; optional `RECIPE` only for diagnostics. |
-| `SV` service note | Exactly 2 per week from 20.07.2026 | Required weekly oracle and calendar radar; other interactive ideas must be embedded or omitted. |
+| `SV` service note | Through 22.07: existing cadence. From 23.07: 0-2 recipe-service notes per week. | Recipe-service only: menu, shopping, technique, recipe index, prep. |
 | Direction pulse | Max 1 per month | Separate `SV` service note or attached to monthly recap, not to a myth/source post. |
 | Open memory question | Allowed often | Final `→` line, if it is specific and non-bait. |
 | Reader field note | Max 1 per month | `SV READER-NOTE`; reader memory as lead, not fact source. |
-| Weekly oracle note | Max 1 per week | `SV ORACLE-NOTE`; zodiac/tarot/omen/oracle forecast, symbolic and low-stakes. |
-| Calendar radar | Max 1 per week | `SV CALENDAR-RADAR`; sourced week-ahead dates, not a fourth AL post. |
+| Weekly oracle note | Route to LEXICON from 23.07 | No standalone forecast in Almanac recipe-only mode. |
+| Calendar radar | Route to LEXICON from 23.07 | In Almanac, replace with `SV MENU-RADAR`: dates become recipe routes. |
 | Quiz | Max 1 per month | `SV QUIZ` or native quiz poll; teaches a source/fact, not identity. |
 
 ## Poll Types
@@ -185,7 +189,7 @@ Add service overlays:
 | 10.07 12:04 | `SV CALENDAR-RADAR` | First week-ahead holiday radar. |
 | 13.07 12:04 | `SV ORACLE-NOTE` | First weekly oracle forecast. |
 | 20.07 12:04 | `SV CALENDAR-RADAR` | Week-ahead radar for 20-26.07. |
-| 23.07 12:04 | `SV ORACLE-NOTE` | Second weekly oracle, rotate away from first mode. |
-| 27.07 12:04 | `SV ORACLE-NOTE` | Lammas-week oracle. |
-| 30.07 12:04 | `SV CALENDAR-RADAR` | Lammas/week-ahead radar. |
-| 31.07 18:04 | `SP` | Rare Lammas Eve / first harvest threshold note. |
+| 23.07 12:04 | `SV RECIPE-INDEX` | `ALMANAC: TABLE` welcome/navigator + LEXICON routing note. |
+| 27.07 12:04 | `SV MENU-RADAR` | Lammas-week dates become recipe routes. |
+| 30.07 12:04 | `SV SHOPPING-LIST` or `SV RECIPE-INDEX` | Prep for Lammas and early-August recipes. |
+| 31.07 18:04 | `SP` recipe-only if used | Rare Lammas Eve / first harvest recipe threshold. |

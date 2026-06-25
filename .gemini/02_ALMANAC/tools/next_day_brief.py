@@ -6,11 +6,21 @@ from __future__ import annotations
 import argparse
 import json
 from collections import Counter
-from datetime import timedelta
+from datetime import date, timedelta
 
 from almanac_common import DATABASES, REPORTS, iter_posts, parse_date_target, split_values
 from daily_improvement import report_path as improvement_path, status as improvement_status
 from trend_due import is_due as trend_is_due, report_path as trend_path
+
+
+RECIPE_ONLY_FROM = date(2026, 7, 23)
+RECIPE_SERVICE_TYPES = {
+    "MENU-RADAR",
+    "SHOPPING-LIST",
+    "TECHNIQUE-POLL",
+    "RECIPE-INDEX",
+    "PREP-NOTE",
+}
 
 
 def render(target: str) -> str:
@@ -29,6 +39,10 @@ def render(target: str) -> str:
     ]
     weekly_oracle = sum(1 for post in current_week_services if "ORACLE-NOTE" in post.path.name)
     weekly_radar = sum(1 for post in current_week_services if "CALENDAR-RADAR" in post.path.name)
+    weekly_recipe_service = sum(
+        1 for post in current_week_services
+        if any(service_type in post.path.name for service_type in RECIPE_SERVICE_TYPES)
+    )
 
     registry = json.loads((DATABASES / "SERIES_REGISTRY.json").read_text(encoding="utf-8"))
     due_series = [
@@ -67,10 +81,16 @@ def render(target: str) -> str:
         f"- Low-frequency queue: {', '.join(zero_or_low[:10]) or 'derive from monthly plan'}.",
         f"- Cultural zones: {', '.join(f'{k}={v}' for k, v in zones.most_common()) or 'none'}.",
         f"- Repeated recent axes to avoid: {', '.join(k for k, v in recent_axes.most_common(8) if v > 1) or 'none'}.",
+        f"- Recipe-only mode: {'ACTIVE - all 3 AL must be recipes with ingredients and preparation' if day >= RECIPE_ONLY_FROM else 'not active yet'}.",
         "",
         "## Service And Series",
         f"- Month service load: SV={services['SV']}; SP={services['SP']}.",
-        f"- Required weekly pair: ORACLE-NOTE={weekly_oracle}/1; CALENDAR-RADAR={weekly_radar}/1.",
+        (
+            f"- Recipe-service this week: {weekly_recipe_service}/0-2; "
+            "standalone ORACLE-NOTE/CALENDAR-RADAR routed to LEXICON."
+            if day >= RECIPE_ONLY_FROM
+            else f"- Required weekly pair: ORACLE-NOTE={weekly_oracle}/1; CALENDAR-RADAR={weekly_radar}/1."
+        ),
         f"- Due series: {', '.join(due_series) or 'none'}.",
         "",
         "## Operational State",
