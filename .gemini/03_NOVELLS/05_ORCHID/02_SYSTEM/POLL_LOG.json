@@ -2,7 +2,7 @@
   "version": "1.0",
   "project": "orchid",
   "season": 1,
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-27",
   "polls": [
     {
       "id": "or-0-d1-q1",
@@ -1785,6 +1785,101 @@
       "stats_deltas": [],
       "post_id": "OR-25.06-16-00-STORY-NIKOLYA-ON-BRIDGE",
       "notes": "Николя 35→40 (применено в STATS.json history Г17; POLL_LOG-tally сводится отдельно - флаг в STATE).",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g17-q1-contact",
+      "phase": 1,
+      "chapter": 17,
+      "narrative_day": 24,
+      "pub_date": "2026-06-26",
+      "category": "story",
+      "question": "Как Виктория раскручивает контакт серого?",
+      "options": [
+        {
+          "label": "Набрать самой",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Проследить тихо - вычислить владельца по цифровому следу",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отдать Максимилиану",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Проследить тихо",
+      "winner_type": "single",
+      "impact_scoreboard": "Тихий цифровой след → адрес = Валентина (HEAT держится 5, не вспугнули). Плот-направление, без дельт.",
+      "impact_content": "Глава 18: трейс через сеть Лорана → дом Валентины; идут к джокеру.",
+      "stats_deltas": [],
+      "post_id": "OR-26.06-13-00-STORY-THE-SAFEHOUSE",
+      "notes": "Тихо = HEAT не растёт.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g17-react",
+      "phase": 1,
+      "chapter": 17,
+      "narrative_day": 24,
+      "pub_date": "2026-06-26",
+      "category": "reaction",
+      "question": "С какой картой Виктория смотрит на Николя теперь?",
+      "options": [
+        {
+          "label": "🎲 Рискнуть - спросить прямо: «Это была она?»",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "🎲 Рискнуть",
+      "winner_type": "unanimous",
+      "impact_scoreboard": "Реакц (залоч., БЕЗ дельты; до 20:00, на след. Главу). 🎲 → тон Г18: Виктория спрашивает Николя в лоб «Это была она?».",
+      "impact_content": "Г18 ч.2: прямой вопрос Николя, он подтверждает курьерство Валентины.",
+      "stats_deltas": [],
+      "post_id": "OR-26.06-14-30-REACT",
+      "notes": "Реакция → след. Глава.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g17-q2-stake",
+      "phase": 1,
+      "chapter": 17,
+      "narrative_day": 24,
+      "pub_date": "2026-06-26",
+      "category": "story",
+      "question": "Что Виктория ставит на Николя теперь?",
+      "options": [
+        {
+          "label": "Рассказать всё - назвать примету, идти к джокеру вместе",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Проверить - дать ему самому назвать её",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Отстраниться - к джокеру одна",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Рассказать всё",
+      "winner_type": "single",
+      "impact_scoreboard": "Выбор в пользу героя: доверие до конца - назвала Николя примету, идёт к Валентине ВМЕСТЕ вопреки «приходи одна». Николя +5 → 45 (к порогу 50 NOTEBOOK).",
+      "impact_content": "Глава 18 «Вдвоём»: Виктория идёт к джокеру не одна, с Николя; он подтверждает курьерство; беат доверия у двери.",
+      "stats_deltas": [],
+      "post_id": "OR-26.06-16-00-STORY-THAT-NIGHT-HAND",
+      "notes": "Николя 40→45 (в STATS.json Г18; POLL_LOG-tally - флаг в STATE).",
       "applied_to_stats": true
     }
   ]
