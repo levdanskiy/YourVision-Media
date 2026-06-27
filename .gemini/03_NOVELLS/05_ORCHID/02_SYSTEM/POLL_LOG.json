@@ -2,7 +2,7 @@
   "version": "1.0",
   "project": "orchid",
   "season": 1,
-  "last_updated": "2026-06-27",
+  "last_updated": "2026-06-28",
   "polls": [
     {
       "id": "or-0-d1-q1",
@@ -1880,6 +1880,101 @@
       "stats_deltas": [],
       "post_id": "OR-26.06-16-00-STORY-THAT-NIGHT-HAND",
       "notes": "Николя 40→45 (в STATS.json Г18; POLL_LOG-tally - флаг в STATE).",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g18-q1-approach",
+      "phase": 1,
+      "chapter": 18,
+      "narrative_day": 25,
+      "pub_date": "2026-06-27",
+      "category": "story",
+      "question": "Как «Пепел» подходит к двери Валентины?",
+      "options": [
+        {
+          "label": "Вместе, в открытую - войти вдвоём, ценой козыря джокеру",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Николя тенью",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Сначала правда",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Вместе, в открытую",
+      "winner_type": "single",
+      "impact_scoreboard": "Вошли к Валентине вдвоём, открыто (ценой козыря джокеру). Плот-направление, без дельт.",
+      "impact_content": "Глава 19: Виктория и Николя входят в салон Валентины вместе.",
+      "stats_deltas": [],
+      "post_id": "OR-27.06-13-00-STORY-WAS-IT-HER",
+      "notes": "Доверие до конца.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g18-react",
+      "phase": 1,
+      "chapter": 18,
+      "narrative_day": 25,
+      "pub_date": "2026-06-27",
+      "category": "reaction",
+      "question": "С чем Виктория переступает порог Валентины?",
+      "options": [
+        {
+          "label": "♠️ Чисто - принять игру джокера, не выдав, что знает про пристань/конверт",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "♠️ Чисто",
+      "winner_type": "unanimous",
+      "impact_scoreboard": "Реакц (залоч., БЕЗ дельты; до 20:00, на след. Главу). ♠️ → тон Г19: внутри Виктория играет, скрывая знание про пристань/конверт.",
+      "impact_content": "Г19: партия с Валентиной в режиме «чисто» - джокер прощупывает «ночь на воде».",
+      "stats_deltas": [],
+      "post_id": "OR-27.06-14-30-REACT",
+      "notes": "Реакция → след. Глава.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g18-q2-truth",
+      "phase": 1,
+      "chapter": 18,
+      "narrative_day": 25,
+      "pub_date": "2026-06-27",
+      "category": "story",
+      "question": "Доверие до конца - что Виктория отдаёт Николя перед дверью?",
+      "options": [
+        {
+          "label": "Свою правду - назвать себя настоящую первой",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Ход назад",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Только рука",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Свою правду",
+      "winner_type": "single",
+      "impact_scoreboard": "Виктория раскрыла Николя настоящую себя (аферистка-архитектор, не легенда) = раскрытие ПРАВДЫ +7 → Николя 52, ПОРОГ 50 NOTEBOOK PAGE разблокирован.",
+      "impact_content": "Глава 19: завязка - своя правда Николя; NOTEBOOK-страница «как сошлись в деле» (50%).",
+      "stats_deltas": [],
+      "post_id": "OR-27.06-16-00-STORY-THE-THRESHOLD",
+      "notes": "Николя 45→52 (STATS.json Г19; +7 правда; NOTEBOOK 50 ✅).",
       "applied_to_stats": true
     }
   ]
