@@ -2,7 +2,7 @@
   "version": "1.0",
   "project": "orchid",
   "season": 1,
-  "last_updated": "2026-06-28",
+  "last_updated": "2026-06-29",
   "polls": [
     {
       "id": "or-0-d1-q1",
@@ -1975,6 +1975,101 @@
       "stats_deltas": [],
       "post_id": "OR-27.06-16-00-STORY-THE-THRESHOLD",
       "notes": "Николя 45→52 (STATS.json Г19; +7 правда; NOTEBOOK 50 ✅).",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g19-q1-table",
+      "phase": 1,
+      "chapter": 19,
+      "narrative_day": 26,
+      "pub_date": "2026-06-28",
+      "category": "story",
+      "question": "Как Виктория ведёт партию с Валентиной?",
+      "options": [
+        {
+          "label": "Чисто",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Прощупать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Перевернуть стол - в лоб «Конверт у пристани. Это была ты»",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Перевернуть стол",
+      "winner_type": "single",
+      "impact_scoreboard": "Виктория сорвала игру джокера в лоб, забрала темп. Плот-направление, без дельт.",
+      "impact_content": "Глава 20: завязка - перевернула стол, Валентина теряет темп.",
+      "stats_deltas": [],
+      "post_id": "OR-28.06-13-00-STORY-THE-JOKERS-GAME",
+      "notes": "Темп забран.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g19-react",
+      "phase": 1,
+      "chapter": 19,
+      "narrative_day": 26,
+      "pub_date": "2026-06-28",
+      "category": "reaction",
+      "question": "Чем Виктория держится напротив той, что её сожгла?",
+      "options": [
+        {
+          "label": "🎲 Рискнуть - подыграть джокеру до края, спровоцировать на ошибку",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "🎲 Рискнуть",
+      "winner_type": "unanimous",
+      "impact_scoreboard": "Реакц (залоч., БЕЗ дельты; до 20:00, на след. Главу). 🎲 → тон Г20: спровоцировать джокера на ошибку.",
+      "impact_content": "Г20: Виктория провоцирует Валентину - та теряет темп, открывает руку.",
+      "stats_deltas": [],
+      "post_id": "OR-28.06-14-30-REACT",
+      "notes": "Реакция → след. Глава.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g19-q2-price",
+      "phase": 1,
+      "chapter": 19,
+      "narrative_day": 26,
+      "pub_date": "2026-06-28",
+      "category": "story",
+      "question": "Чем Виктория платит за архитектора?",
+      "options": [
+        {
+          "label": "Никем - войти с якорями, со всеми тремя, война с джокером",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Отпустить Лорана",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Сыграть отказ",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "Никем - войти с якорями",
+      "winner_type": "single",
+      "impact_scoreboard": "Виктория отвергла цену джокера, сохранила все три линии = ВОЙНА с Валентиной. Плот; последствие - Валентина сожгла её Европолу (HEAT 5→7, не-опросный в STATS).",
+      "impact_content": "Глава 20: война; полный стол (Максимилиан+Лоран возврат); HEAT 7 ОПЕРАЦИЯ; клифф - архитектор=Валентина раскрыт.",
+      "stats_deltas": [],
+      "post_id": "OR-28.06-16-00-STORY-THE-PRICE",
+      "notes": "HEAT 5→7 (ответ джокера, в STATS.json Г20).",
       "applied_to_stats": true
     }
   ]
