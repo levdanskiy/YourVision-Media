@@ -98,6 +98,17 @@ Effective from `2026-07-23`.
 | `MAINS` | Full savory dish or plate center: fish, meat, poultry, tofu, eggs, vegetables, mixed dish. | The plate has a center, not just a side. |
 | `SALADS` | Raw/cooked assembled salads, chopped dishes, dressed vegetables, grain salads. | Cut, salt, dressing and timing decide texture. |
 | `GRAINS` | Rice, millet, buckwheat, barley, maize, couscous, porridge, pilaf, grain bowls. | Grain absorbs liquid and becomes structure. |
+
+### Signature Deep-Dive Branch (The Lexicon Replacements)
+
+Effective from `2026-07-23`. These replace the legacy mythology and lore slots, bringing academic rigor to food.
+
+| Rubric | Use For | Core Test |
+|--------|---------|-----------|
+| `TECHNIQUE` | Methodology and physics of cooking (emulsification, Maillard reaction, tempering). | Explain the physics, not just the recipe. |
+| `ARCHIVE` | Historical recipe reconstruction. Food as a document. | Must trace the exact historical source or era. |
+| `ARCHITECTURE` | Flavor pairings and the molecular or historical reason why ingredients match. | Explain *why* the combination works. |
+| `TOOL` | History, physics, and usage of a specific kitchen implement (cast iron, mortar, tagine). | The tool shapes the food. |
 | `LEGUMES` | Beans, lentils, chickpeas, peas, dal, soy and pulse-based recipes. | Soaking/cooking/starch/skin decide texture. |
 | `VEGETABLES` | Vegetable-led recipes where the vegetable is the main object. | Heat, salt, acid or cut changes the vegetable. |
 | `BREAKFAST` | Morning recipes, batch prep, first-meal rituals, quick or overnight starts. | Time-of-day and preparation rhythm matter. |
