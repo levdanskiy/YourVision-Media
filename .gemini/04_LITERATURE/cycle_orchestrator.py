@@ -2,41 +2,96 @@
 # -*- coding: utf-8 -*-
 
 """
-OMNIVERSE CYCLE ORCHESTRATOR
-Скрипт-памятка и чеклист для генерации Литературного Цикла (Круга).
-При запуске круга, агент должен свериться с этим скриптом.
+OMNIVERSE CYCLE ORCHESTRATOR (STRICT MODE)
+Скрипт для жесткой валидации круга. Блокирует коммит, если правила нарушены.
+ВВЕДЕНО ПРАВИЛО: "КАЖДЫЙ СЮЖЕТНЫЙ ПОСТ (001, 002, 003) = МИНИМУМ 9 МИНУТ ЧТЕНИЯ (9000 СИМВОЛОВ)".
+СИНХРОННЫЙ ЗАПУСК: Все проекты (Arcana, Zodiac, Incubator) должны развиваться одновременно.
 """
 
-import datetime
+import sys
+import os
+import glob
+from pathlib import Path
 
-def enforce_rules(text):
+MIN_CHAR_COUNT = 9000
+
+def enforce_rules(filepath, text):
+    errors = []
     # 1. Запрет на длинные и средние тире
-    assert "—" not in text, "ОШИБКА: Обнаружено длинное тире!"
-    assert "–" not in text, "ОШИБКА: Обнаружено среднее тире!"
+    if "—" in text:
+        errors.append("ОШИБКА: Обнаружено длинное тире (—)!")
+    if "–" in text:
+        errors.append("ОШИБКА: Обнаружено среднее тире (–)!")
     
     # 2. Проверка No-AI
-    forbidden_words = ["серверная", "квантовый", "баг системы", "ИИ", "искусственный интеллект", "компьютер", "симуляция"]
+    import re
+    forbidden_words = ["серверная", "квантовый", "баг системы", r"\bии\b", "искусственный интеллект", "компьютер", "симуляция"]
     for word in forbidden_words:
-        assert word.lower() not in text.lower(), f"ОШИБКА: Нарушение жанровой чистоты (слово '{word}')"
+        if word.startswith(r"\b"):
+            if re.search(word, text, re.IGNORECASE):
+                errors.append(f"ОШИБКА: Нарушение жанровой чистоты (Sci-Fi слово 'ИИ')")
+        else:
+            if word.lower() in text.lower():
+                errors.append(f"ОШИБКА: Нарушение жанровой чистоты (Sci-Fi слово '{word}')")
+            
+    return errors
 
-def verify_frontend_cycle(date_str):
-    print(f"ПЛАН ПУБЛИКАЦИЙ НА {date_str}:")
-    print(f"- 10:00 -> 000.md (Анонс)")
-    print(f"- 12:00 -> 001.md (Глава ч.1)")
-    print(f"- 16:00 -> 002.md (Глава ч.2)")
-    print(f"- 20:00 -> 003.md (Глава ч.3 + Голосование)")
-    print(f"- 21:00 -> 004.md (Лор-дроп)")
+def validate_arcana_length(filepath, text):
+    errors = []
+    # Считаем только текст, исключая технический заголовок
+    content_lines = [line for line in text.split('\n') if not line.startswith('//')]
+    content = '\n'.join(content_lines)
+    
+    char_count = len(content.strip())
+    if char_count < MIN_CHAR_COUNT:
+        errors.append(f"КРИТИЧЕСКАЯ ОШИБКА: Пост слишком короткий! Всего {char_count} символов. Должно быть МИНИМУМ {MIN_CHAR_COUNT} символов (Правило 9 минут).")
+    return errors
 
-def verify_backend_devslots():
-    print("БЭКЭНД (Обязательная физическая генерация/обновление файлов):")
-    print("1. ARCANA -> 01_ARCANA/02_SYSTEM/LORE/ (Развитие темного фэнтези)")
-    print("2. ZODIAC -> 02_ZODIAC/02_SYSTEM/LORE/ (Развитие мистических сущностей, Пульсар)")
-    print("3. ИНКУБАТОР -> 03_IDEAS/ (Полировка бестиария, фракций, магии существующих миров)")
+def validate_cycle(date_dir_path):
+    print(f"=== ЗАПУСК ВАЛИДАЦИИ КРУГА: {date_dir_path} ===")
+    
+    target_dir = Path(date_dir_path)
+    if not target_dir.exists():
+        print(f"ОШИБКА: Директория {target_dir} не найдена.")
+        sys.exit(1)
+        
+    posts = list(target_dir.glob("*.md"))
+    if len(posts) < 5:
+        print(f"ОШИБКА: Не хватает постов! Найдено {len(posts)}, нужно 5.")
+        sys.exit(1)
+        
+    has_errors = False
+    
+    for post in sorted(posts):
+        with open(post, 'r', encoding='utf-8') as f:
+            text = f.read()
+            
+        print(f"\nПроверка файла: {post.name}")
+        errors = enforce_rules(post, text)
+        
+        # Строгая проверка длины только для сюжетных постов 001, 002, 003
+        if "001.md" in post.name or "002.md" in post.name or "003.md" in post.name:
+            length_errors = validate_arcana_length(post, text)
+            errors.extend(length_errors)
+            
+        if errors:
+            for err in errors:
+                print(err)
+            has_errors = True
+        else:
+            print("OK.")
+            
+    if has_errors:
+        print("\n[ВАЛИДАЦИЯ ПРОВАЛЕНА] Круг отменен. Исправьте ошибки.")
+        sys.exit(1)
+    else:
+        print("\n[ВАЛИДАЦИЯ УСПЕШНА] Все правила соблюдены (Сюжетные посты > 9000 символов, без ИИ и тире).")
+        sys.exit(0)
 
 if __name__ == "__main__":
-    print("=== OMNIVERSE CYCLE PROTOCOL ===")
-    verify_frontend_cycle("ДД.ММ.ГГГГ")
-    print("---")
-    verify_backend_devslots()
-    print("---")
-    print("СТАТУС: Агенты (literature_cycle_manager) активированы.")
+    if len(sys.argv) < 2:
+        print("Использование: python cycle_orchestrator.py [путь_к_папке_дня]")
+        print("Пример: python cycle_orchestrator.py /home/levdanskiy/GEMINI_PROJECT/04_LITERATURE/01_ARCANA/04_CONTENT/2026/07/01")
+        sys.exit(1)
+        
+    validate_cycle(sys.argv[1])
