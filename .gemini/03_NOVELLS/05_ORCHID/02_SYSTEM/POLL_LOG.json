@@ -2,7 +2,7 @@
   "version": "1.0",
   "project": "orchid",
   "season": 1,
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "polls": [
     {
       "id": "or-0-d1-q1",
@@ -2070,6 +2070,101 @@
       "stats_deltas": [],
       "post_id": "OR-28.06-16-00-STORY-THE-PRICE",
       "notes": "HEAT 5→7 (ответ джокера, в STATS.json Г20).",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g20-q1-cayman",
+      "phase": 1,
+      "chapter": 20,
+      "narrative_day": 27,
+      "pub_date": "2026-06-29",
+      "category": "story",
+      "question": "Как «Пепел» берёт узел Кайманы своим путём?",
+      "options": [
+        {
+          "label": "Морем Лорана - тихо, на «Эвридике»",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Доступом Максимилиана - быстро, через карту Траста",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Тенью Николя",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 2,
+      "winner": "Море Лорана + Доступ Максимилиана",
+      "winner_type": "multi-tie",
+      "impact_scoreboard": "МУЛЬТИ-НИЧЬЯ → ГИБРИД: тихий подход «Эвридики» + карта Траста Максимилиана (две руки сразу). Плот; обе линии в финале.",
+      "impact_content": "Глава 21 финал: гибрид-вход на Кайманы.",
+      "stats_deltas": [],
+      "post_id": "OR-29.06-13-00-STORY-WAR-COUNCIL",
+      "notes": "Гибрид двух LI-методов.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g20-react",
+      "phase": 1,
+      "chapter": 20,
+      "narrative_day": 27,
+      "pub_date": "2026-06-29",
+      "category": "reaction",
+      "question": "С какой картой Виктория идёт на Кайманы?",
+      "options": [
+        {
+          "label": "🎲 Рискнуть - ва-банк, узел и архитектора одним ходом",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "🎲 Рискнуть (ва-банк)",
+      "winner_type": "unanimous",
+      "impact_scoreboard": "Реакц (залоч., БЕЗ дельты; до 20:00, на след. Главу). 🎲 ва-банк → тон финала Г21.",
+      "impact_content": "Г21: ва-банк - узел и архитектор одним ходом.",
+      "stats_deltas": [],
+      "post_id": "OR-29.06-14-30-REACT",
+      "notes": "Реакция → финал.",
+      "applied_to_stats": true
+    },
+    {
+      "id": "or-1-g20-q2-sophie",
+      "phase": 1,
+      "chapter": 20,
+      "narrative_day": 27,
+      "pub_date": "2026-06-29",
+      "category": "story",
+      "question": "Софи на хвосте, Кайманы впереди. Как «Пепел» отрывается?",
+      "options": [
+        {
+          "label": "Скормить Софи Валентину - редирект ордера на архитектора",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "Уйти под воду",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "Впустить Софи в игру - союз с Европолом против общего врага",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 2,
+      "winner": "Скормить Валентину + Впустить Софи",
+      "winner_type": "multi-tie",
+      "impact_scoreboard": "МУЛЬТИ-НИЧЬЯ → ГИБРИД: союз с Софи + редирект ордера на Валентину. HEAT снят (Софи больше не за Викторией, а за архитектором). Механизм «перевёрнутого стола» в финале.",
+      "impact_content": "Глава 21 финал: Софи в союзе берёт Валентину; HEAT снят; Виктория обрушает Окно на архитектора.",
+      "stats_deltas": [],
+      "post_id": "OR-29.06-16-00-STORY-THE-RETALIATION",
+      "notes": "Гибрид: союз+редирект = перевёрнутый стол. HEAT снят (в STATE).",
       "applied_to_stats": true
     }
   ]

@@ -43,6 +43,7 @@
 | Г18 | **Cat Power - Werewolf** | доверие/предательство/идти к огню (хонтинг-фолк-нуар) |
 | Г19 | **Nick Cave & The Bad Seeds - Into My Arms** | правда/доверие/лицом к джокеру (раскрытие себя, NOTEBOOK Николя) |
 | Г20 | **Anna Calvi - Desire** | война с джокером/раскрытие архитектора (интенсивность, кульминация блока III) |
+| Г21 | **Florence + The Machine - Big God** | ФИНАЛ (развязка, перевёрнутый стол, сердце>счёт; 7 глав от Florence Г14 - ок) |
 
 **Следующие (предложения, чтобы не думать в спешке):** Г13 (возврат Николя, близость/прошлое) → Portishead - Glory Box или Mazzy Star - Fade Into You · Г14 (блок-клифф, предательство) → Florence + The Machine - Seven Devils или Nancy Sinatra - Bang Bang.
 
