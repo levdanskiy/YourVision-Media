@@ -1,0 +1,19 @@
+{
+  "project": "TOWER 404",
+  "schema_note": "Tower polls are binary in-story choices (paranoia/curiosity), not Telegram multi-option polls. 'blooms_at_post' = effet-papillon delayed consequence target, per STATS_RULES.md butterfly-effect rule (10-15 posts later, not next post).",
+  "votes": [
+    {
+      "post_id": "TW-01.07-19-00-S1-FIRST_CONTACT",
+      "date": "2026-07-01",
+      "question": "Как ответить Делрою?",
+      "options": {
+        "curiosity": "Рассказать о себе - \"От себя не спрячешься, Делрой\"",
+        "paranoia": "Ответить сухо - \"Соблюдайте радиомолчание\""
+      },
+      "closes_at": "2026-07-01T20:00:00+03:00",
+      "winner": null,
+      "blooms_at_post": null,
+      "applied_to_stats": false
+    }
+  ]
+}

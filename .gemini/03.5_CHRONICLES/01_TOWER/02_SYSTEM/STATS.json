@@ -1,0 +1,19 @@
+{
+  "project": "TOWER 404",
+  "last_updated": "2026-07-01",
+  "day": 1,
+  "resources": {
+    "diesel": { "value": 100, "max": 100, "history": [] },
+    "sanity": { "value": 100, "max": 100, "history": [] }
+  },
+  "alignment": {
+    "paranoia": { "value": 0, "history": [] },
+    "curiosity": { "value": 0, "history": [] }
+  },
+  "milestones": {
+    "first_quiet_week": { "done": false, "post_id": null },
+    "day_14_voice": { "done": false, "post_id": null },
+    "day_21_figure": { "done": false, "post_id": null },
+    "day_30_midpoint_tower_302_falls": { "done": false, "post_id": null }
+  }
+}
