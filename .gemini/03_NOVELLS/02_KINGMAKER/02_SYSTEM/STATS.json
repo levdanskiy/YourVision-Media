@@ -2,11 +2,11 @@
   "version": "1.1",
   "project": "kingmaker",
   "season": 1,
-  "current_phase": 1,
-  "current_pub_day": 0,
-  "current_narrative_day": 0,
-  "last_updated": "2026-05-16",
-  "notes": "Стартовое состояние. Phase 1 День 1 = 18.05.2026. v1.1 - добавлен слой protagonist_traits.",
+  "current_phase": "S1 завершён",
+  "current_pub_day": null,
+  "current_narrative_day": null,
+  "last_updated": "2026-07-02",
+  "notes": "СВЕРЕНО 02.07.2026 (дев-слот, готовность к S2 ~23.07): этот файл не обновлялся весь S1 (последняя правка 16.05, всё на нуле) - реальные финальные числа жили только в STATE.md §AFFINITY НА КОНЕЦ S1. Синхронизировано ниже. Точные post_id по каждому порогу разблокировки не восстановлены (не были залогированы построчно за сезон) - triggered=true проставлен по факту итогового значения, post_id=\"S1_ARCHIVE\" как отметка ретроактивной сверки, не точная ссылка.",
 
   "protagonist": {
     "name": "Нора",
@@ -56,17 +56,17 @@
         "history": []
       },
       "affinity": {
-        "current": 0,
+        "current": 55,
         "unlocks": {
           "25": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "DOSSIER",
             "concept": "Скрытая привычка - намёк на коллекционирование признаний (без раскрытия)"
           },
           "50": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "NOTEBOOK_PAGE",
             "concept": "Flashback - детство в комнате с зеркалами. Когда он впервые понял, что у него нет своих признаний."
           },
@@ -83,7 +83,7 @@
             "concept": "Его зависимость - не вещества. Он коллекционирует чужие признания, потому что не может удержать свои."
           }
         },
-        "history": []
+        "history": [{ "date": "2026-07-02", "value": 55, "reason": "СВЕРКА по STATE.md §AFFINITY НА КОНЕЦ S1 - враги-как-равные, общий секрет" }]
       }
     },
 
@@ -97,17 +97,17 @@
         "history": []
       },
       "affinity": {
-        "current": 0,
+        "current": 72,
         "unlocks": {
           "25": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "DOSSIER",
             "concept": "Технический паспорт его зашифрованного телефона. Производитель не значится в реестрах."
           },
           "50": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "NOTEBOOK_PAGE",
             "concept": "Flashback - как он стал миллиардером. Один документ, две подписи, тридцать секунд молчания."
           },
@@ -124,7 +124,7 @@
             "concept": "У него досье на каждого во дворце. На каждого - кроме одного человека, который только что вошёл."
           }
         },
-        "history": []
+        "history": [{ "date": "2026-07-02", "value": 72, "reason": "СВЕРКА по STATE.md §AFFINITY НА КОНЕЦ S1 - союзник явный+тайный, «выбираю заново»" }]
       }
     },
 
@@ -138,23 +138,23 @@
         "history": []
       },
       "affinity": {
-        "current": 0,
+        "current": 85,
         "unlocks": {
           "25": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "DOSSIER",
             "concept": "Шаблон расписания Дэмиена - в нём слишком много 'случайных' пересечений с маршрутом Норы."
           },
           "50": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "NOTEBOOK_PAGE",
             "concept": "Flashback - когда он впервые начал защищать Нору. Это случилось до того, как они встретились."
           },
           "75": {
-            "triggered": false,
-            "post_id": null,
+            "triggered": true,
+            "post_id": "S1_ARCHIVE",
             "type": "STORY",
             "concept": "Shadow Preferences - то, что Дэмиен хранит в бордовом досье. Один лист, не для Комитета."
           },
@@ -165,7 +165,7 @@
             "concept": "Он защищает Нору дольше, чем она знает. Защита была не запрошена."
           }
         },
-        "history": []
+        "history": [{ "date": "2026-07-02", "value": 85, "reason": "СВЕРКА по STATE.md §AFFINITY НА КОНЕЦ S1 - выбранная связь, главная линия S2" }]
       }
     },
 
