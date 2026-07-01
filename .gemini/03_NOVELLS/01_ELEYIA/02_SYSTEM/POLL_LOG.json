@@ -2,7 +2,51 @@
   "version": 1,
   "project": "eleyia",
   "season": 2,
-  "last_updated": "2026-06-11",
+  "last_updated": "2026-07-02",
   "_schema_note": "stats_deltas: {character, param, delta, reason}; param: affinity | vernost. Опросы S2 логировать с старта 01.07; S1 вёлся в прежней системе (MECHANICS).",
-  "polls": []
+  "polls": [
+    {
+      "id": "el-2-c1-q1",
+      "chapter": 1,
+      "pub_date": "2026-07-01",
+      "category": "tone",
+      "question": "Шторм пришёл и заговорил первым. Как Ян его встречает?",
+      "options": [
+        { "label": "🌫 ЗАКРЫТЬСЯ", "percent": 0, "votes": 0 },
+        { "label": "⚡ ПРОЩУПАТЬ", "percent": 100, "votes": 1 },
+        { "label": "🤝 ПО-ЧЕЛОВЕЧЕСКИ", "percent": 0, "votes": 0 }
+      ],
+      "total_votes": 1,
+      "winner": "⚡ ПРОЩУПАТЬ",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Линия Феликса открыта автоматически (+5, первая сцена-контакт сезона) - опрос задаёт ТОН, не числовую дельту.",
+      "impact_content": "Ян отвечает частотой на частоту - любопытство/расследование, не отторжение и не быстрое сближение. Тон линии Шторма на Главу 2+.",
+      "stats_deltas": [],
+      "post_id": "EL-01.07-13-00-STORY-FELIX-ARRIVES",
+      "notes": "Реакц-набор 🫧⚡🤝🌫. Применено в Главе 2 (тон встречи с Феликсом)."
+    },
+    {
+      "id": "el-2-c1-q2",
+      "chapter": 1,
+      "pub_date": "2026-07-01",
+      "category": "trust",
+      "question": "Старый якорь явно что-то держит про запас. Как Ян отвечает Микасу?",
+      "options": [
+        { "label": "🤝 ДОВЕРИТЬСЯ ЦЕЛИКОМ", "percent": 100, "votes": 1 },
+        { "label": "🌫 НАСТОРОЖИТЬСЯ", "percent": 0, "votes": 0 }
+      ],
+      "total_votes": 1,
+      "winner": "🤝 ДОВЕРИТЬСЯ ЦЕЛИКОМ",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Микас +5 (88→93, выбор опроса в пользу героя - доверие).",
+      "impact_content": "Ян не подаёт виду насчёт замеченного сбоя в резонансе Микаса - доверие растёт, секрет (🔒 скрытый резонанс) остаётся под замком. Подводка к заряжённому беату Главы 2 (18:00).",
+      "stats_deltas": [
+        { "character": "Микас", "param": "affinity", "delta": 5, "reason": "выбор опроса в пользу героя (доверие целиком)" }
+      ],
+      "post_id": "EL-01.07-16-00-STORY-MIKAS-ANCHOR",
+      "notes": "Применено в Главе 2: Микас 88→93 (+ отдельно 93→96 заряжённый беат 18:00 Г2, вне этого опроса)."
+    }
+  ]
 }

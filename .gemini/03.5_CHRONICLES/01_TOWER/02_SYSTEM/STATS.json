@@ -1,14 +1,14 @@
 {
   "project": "TOWER 404",
-  "last_updated": "2026-07-01",
-  "day": 1,
+  "last_updated": "2026-07-02",
+  "day": 2,
   "resources": {
     "diesel": { "value": 100, "max": 100, "history": [] },
     "sanity": { "value": 100, "max": 100, "history": [] }
   },
   "alignment": {
     "paranoia": { "value": 0, "history": [] },
-    "curiosity": { "value": 0, "history": [] }
+    "curiosity": { "value": 1, "history": [ { "day": 1, "delta": 1, "post_id": "TW-01.07-19-00-S1-FIRST_CONTACT", "reason": "Рассказать о себе Делрою" } ] }
   },
   "milestones": {
     "first_quiet_week": { "done": false, "post_id": null },
