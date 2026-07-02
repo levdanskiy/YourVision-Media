@@ -69,7 +69,11 @@ def parse_post(path: Path):
         return None
 
     title_line = h1_lines[0].strip()
-    body = "\n".join(h1_lines[1:]).strip()
+    first_part_body = "\n".join(h1_lines[1:]).strip()
+
+    # Reconstruct the full body by joining the first part's body with subsequent content parts
+    content_parts = [first_part_body] + [p.strip() for p in parts[1:-1]]
+    body = "\n\n---\n\n".join(content_parts).strip()
 
     h1_match = re.search(r"(\S+)\s+\*\*(.+?)\*\*", title_line)
     if h1_match:
