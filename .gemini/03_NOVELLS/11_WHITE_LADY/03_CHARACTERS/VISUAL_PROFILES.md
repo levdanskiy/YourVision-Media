@@ -1,6 +1,6 @@
 # 👻 БЕЛАЯ ДАМА - ВИЗУАЛЬНЫЕ ПРОФИЛИ
 
-Вставлять CHARACTER TAG в промпт. **Лин:** атмосферный готик-уют, плёночная «живость» (Kodak Portra), лёгкое несовершенство, НЕ глянец. Туман, озеро, свечи, янтарь, плющ, латышские орнаменты. Без Midjourney-флагов (Reve); без брендинга; no text/logos. Технический хвост: `photorealistic with film grain, atmospheric, cinematic, slightly imperfect not glossy, shot on Kodak Portra 800, horizontal 16:9, no text, no logos`.
+Вставлять CHARACTER TAG в промпт. **Лин:** РЕАЛИСТИЧНЫЙ (photorealistic), атмосферный готик-уют, плёночная «живость» (Kodak Portra), лёгкое несовершенство, НЕ глянец и НЕ painterly/рисованный (сверено 03.07 - никакой двусмысленности: «atmospheric gothic-cosy» ниже описывает НАСТРОЕНИЕ кадра, не художественную технику). Туман, озеро, свечи, янтарь, плющ, латышские орнаменты. Без Midjourney-флагов (Reve); без брендинга; no text/logos. Технический хвост (добавлять к КАЖДОМУ CHARACTER TAG при генерации): `photorealistic with film grain, atmospheric, cinematic, slightly imperfect not glossy, shot on Kodak Portra 800, horizontal 16:9, no text, no logos`.
 
 ---
 
