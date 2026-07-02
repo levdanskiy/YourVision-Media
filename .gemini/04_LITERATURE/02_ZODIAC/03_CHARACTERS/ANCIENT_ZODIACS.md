@@ -24,6 +24,8 @@
 **Судьба:**
 Агни до сих пор скитается в космосе, ища покой. Он не может вернуться, потому что боится, что его вина слишком велика. Но иногда, в ночное небо, можно увидеть его огонь - это он ищет способ искупить свой грех.
 
+**Visual Prompt:** Hyperrealistic photograph of Agni (Агни), an ancient primordial fire-energy that has taken the guise of a tall proud man, not literally human - real molten rivers of fire flowing beneath cracked translucent skin like cooling lava, eyes burning with actual molten-gold light, red hair rising like living flame, heat-shimmer distorting the air, standing amid the drifting embers of a destroyed galaxy in the black void of deep space, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
+
 ---
 
 ### 2. МЕЛОДИЯ (Древняя Земля)
@@ -41,6 +43,8 @@
 
 **Судьба:**
 Мелодия существует как энергия роста, но иногда её можно почувствовать - в шёпоте деревьев, в запахе цветов, в гармонии природы. Она ждёт, когда Агни найдёт её и попросит прощения.
+
+**Visual Prompt:** Hyperrealistic photograph of Melodiya (Мелодия), an ancient primordial earth-energy that has taken the guise of a serene woman, not literally human - real living bark, moss and small stones woven into her skin, golden hair like ripe wheat, eyes glowing with a soft pale moonlight radiance, tiny sprouting leaves growing along her shoulders, standing in the ruins of an overgrown drifting world lit by distant starlight, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 4:5.
 
 ---
 
@@ -60,6 +64,8 @@
 **Судьба:**
 Корона до сих пор ищет способ вернуть свою власть. Она не может найти Короноса, потому что предатель разделил их.
 
+**Visual Prompt:** Hyperrealistic photograph of Korona (Корона), an ancient primordial air-energy queen that has taken the guise of a proud woman, not literally human - her form half-dissolving into visible rushing wind and streaming ribbons of air, dark hair lifted and swirling, eyes glowing with a cold sky-blue light, a faint crown of condensed vapour and light hovering above her brow, standing amid drifting shards of a shattered throne in the void of deep space, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
+
 ---
 
 ### 4. КОРОНОС (Древний Король Ветра)
@@ -77,6 +83,8 @@
 
 **Судьба:**
 Коронос до сих пор ищет Корону. Он не может найти её, потому что предатель разделил их.
+
+**Visual Prompt:** Hyperrealistic photograph of Koronos (Коронос), an ancient primordial wind-energy king that has taken the guise of a calm wise man, not literally human - his body edges breaking into visible gusts and streaks of moving air, pale hair whipped by an endless wind, eyes glowing with a stormy grey-blue light, faint lightning flickering in the air around him, standing alone amid slow-drifting storm clouds in the black void of deep space, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
 
 ---
 
@@ -96,6 +104,8 @@
 **Судьба:**
 Аббис до сих пор живёт в глубине океана, ища свои能量. Она не может вернуться на сушу, потому что боится, что мир снова причинит ей боль.
 
+**Visual Prompt:** Hyperrealistic photograph of Abbis (Аббис), an ancient primordial water-energy mother that has taken the guise of a woman, not literally human - her skin like deep translucent water with real currents and refractions moving through it, long dark hair drifting as if fully submerged, eyes glowing with a deep abyssal blue light, tiny luminous bubbles rising around her, standing in the crushing dark of a cosmic ocean lit only by faint bioluminescence, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 4:5.
+
 ---
 
 ### 6. СОЛАРИС (Древний Царь Света)
@@ -113,6 +123,8 @@
 
 **Судьба:**
 Соларис до сих пор ищет способ восстановить свою корону. Он не может вернуться, потому что боится, что без короны он - ничто.
+
+**Visual Prompt:** Hyperrealistic photograph of Solaris (Соларис), an ancient primordial light-energy king that has taken the guise of a proud man, not literally human - blinding golden light pouring from beneath his skin and from his eyes as an actual radiant sun-coloured glow, golden hair blazing like solar corona, intense lens-flare and rim-light wrapping his silhouette, standing on the surface of a dying star amid flares in the void of deep space, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
 
 ---
 
@@ -132,6 +144,8 @@
 **Судьба:**
 Флора до сих пор живёт в глубине леса, исцеляя животных и растения. Она не хочет возвращаться в мир людей.
 
+**Visual Prompt:** Hyperrealistic photograph of Flora (Флора), an ancient primordial nature-energy healer that has taken the guise of a quiet woman, not literally human - real living vines, ferns and glowing flowers growing directly from her dark hair and skin, eyes glowing with a soft grass-green light, faint pollen and floating spores drifting around her, standing in a vast bioluminescent cosmic forest overgrowing ancient ruins under starlight, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 4:5.
+
 ---
 
 ### 8. АЙКУМЕНА (Древний Судья Правды)
@@ -149,6 +163,8 @@
 
 **Судьба:**
 Айкумена до сих пор ищет способ восстановить справедливость. Он не может вернуться, потому что боится, что мир снова предаст его.
+
+**Visual Prompt:** Hyperrealistic photograph of Aykumena (Айкумена), an ancient primordial truth-energy judge that has taken the guise of a stern man, not literally human - clear crystalline light passing through his translucent skin, eyes glowing with a cold luminous silver-white radiance, faint geometric patterns of light shimmering across his face, luminous scales of balance hovering beside him, standing amid the ruins of a great cosmic hall of judgement lit by even starlight, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
 
 ---
 
@@ -168,6 +184,8 @@
 **Судьба:**
 Випера до сих пор живёт в тьме, ища способ отомстить. Он не может вернуться в свет.
 
+**Visual Prompt:** Hyperrealistic photograph of Vipera (Випера), an ancient primordial venom-energy warrior that has taken the guise of a dangerous man, not literally human - glowing green veins of real toxin coursing beneath dark translucent skin, eyes burning with an actual cold green-fire glow, wisps of luminous emerald vapour rising from his dark hair, standing wreathed in shadow amid the ruins of a battlefield in the black void of deep space, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
+
 ---
 
 ### 10. САГИТТАРА (Древняя Странница Ветра)
@@ -185,6 +203,8 @@
 
 **Судьба:**
 Сагиттара до сих пор скитается по космосу, ища дом. Она не может вернуться.
+
+**Visual Prompt:** Hyperrealistic photograph of Sagittara (Сагиттара), an ancient primordial wind-energy wanderer that has taken the guise of a woman, not literally human - light hair and travelling cloak streaming endlessly in real wind, her body edges dissolving into rushing air and streaks of motion-blur, eyes glowing with a pale free sky-blue light, standing at the edge of an alien cliff gazing across the void of deep space toward distant stars, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 9:16.
 
 ---
 
@@ -204,6 +224,8 @@
 **Судьба:**
 Каприкорнус до сих пор живёт в глубине горы, пытаясь вспомнить свою мудрость.
 
+**Visual Prompt:** Hyperrealistic photograph of Kaprikornus (Каприкорнус), an ancient primordial earth-energy sage that has taken the guise of an old wise man, not literally human - skin textured like ancient weathered stone with deep mineral veins and moss in the cracks, eyes glowing with a faint deep amber light, dark hair and beard dusted with rock powder, standing deep inside a vast cavern of an alien mountain lit by dim veins of glowing crystal, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
+
 ---
 
 ### 12. АКВАРИУС (Древний Пророк Воздуха)
@@ -221,6 +243,8 @@
 
 **Судьба:**
 Аквариус до сих пор скитается в космосе, ища мир, который захочет измениться.
+
+**Visual Prompt:** Hyperrealistic photograph of Akvarius (Аквариус), an ancient primordial air-energy prophet that has taken the guise of a lean rebellious man, not literally human - eyes glowing with a shimmering electric-blue light like a window into the future, pale hair lifting in a constant breeze, faint holographic constellations and drifting particles of light swirling around his half-transparent body, standing amid floating future-visions in the black void of deep space, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 3:2.
 
 ---
 
@@ -240,6 +264,8 @@
 **Судьба:**
 Писцес до сих пор живёт в глубине океана, ища Писцера.
 
+**Visual Prompt:** Hyperrealistic photograph of Pisces (Писцес), an ancient primordial water-energy lover that has taken the guise of a dreamy woman, not literally human - skin like translucent flowing water with real refractions, long dark hair drifting as if underwater, eyes glowing with a soft sea-blue light, a faint thread of light reaching longingly across the void toward an unseen other, standing alone in the depths of a cosmic ocean lit by distant starlight, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 4:5.
+
 ---
 
 ### 14. ПИСЦЕР (Древний Возлюбленный Воды)
@@ -257,6 +283,8 @@
 
 **Судьба:**
 Писцер до сих пор скитается в космосе, ища Писцес.
+
+**Visual Prompt:** Hyperrealistic photograph of Piscer (Писцер), an ancient primordial water-energy lover that has taken the guise of a calm man, not literally human - skin like translucent flowing water reflecting the sky, pale hair drifting as if weightless, eyes glowing with a soft sky-blue light, a faint thread of light reaching longingly across the void toward an unseen other, standing alone amid drifting droplets in the black void of deep space lit by distant starlight, cinematic still, natural lighting, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 4:5.
 
 ---
 
