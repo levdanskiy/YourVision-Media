@@ -37,4 +37,4 @@
 ***
 
 **Grade:** A
-**Visual Prompt:** first person POV of a man (Alan) looking out of a dirty glass window from a high firewatch tower, endless dark green pine forest covered in heavy unmoving fog, dusk light, a damp open warden's manual on the desk with red-circled rules, lonely and oppressive, 1993 camcorder footage, grainy, analog horror aesthetic, 1990s VHS tape quality, polaroid effect, liminal space, Pacific Northwest, dark and moody, cinematic realism, 35mm film grain --ar 1:1 --v 6.1 --style raw --s 500
+**Visual Prompt:** first person POV of a man (Alan) looking out of a dirty glass window from a high firewatch tower, endless dark green pine forest covered in heavy unmoving fog, dusk light, a damp open warden's manual on the desk with red-circled rules, lonely and oppressive, 1993 camcorder footage, grainy, analog horror aesthetic, 1990s VHS tape quality, polaroid effect, liminal space, Pacific Northwest, dark and moody, cinematic realism, 35mm film grain --ar 3:2 --v 6.1 --style raw --s 500

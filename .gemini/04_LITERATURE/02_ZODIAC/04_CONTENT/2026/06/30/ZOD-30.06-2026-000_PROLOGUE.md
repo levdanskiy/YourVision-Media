@@ -64,4 +64,4 @@
 `⏱ Время чтения: 6 мин | ♈ ZODIAC: Пролог`
 ***
 **Grade:** A
-**Visual Prompt:** [Cyberpunk astrology scene], shot on 35mm film Kodak Portra 800, heavy film grain, cinematic realism, high-end fashion editorial, Dazed magazine aesthetic, moody lighting, no text, no logos
+**Visual Prompt:** [Cyberpunk astrology scene], shot on 35mm film Kodak Portra 800, heavy film grain, cinematic realism, high-end fashion editorial, Dazed magazine aesthetic, moody lighting, no text, no logos. Frame 2:1.

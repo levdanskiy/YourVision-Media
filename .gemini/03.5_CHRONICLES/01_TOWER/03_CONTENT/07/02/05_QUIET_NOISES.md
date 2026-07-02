@@ -35,4 +35,4 @@
 ***
 
 **Grade:** A
-**Visual Prompt:** first person POV from inside a dark firewatch cabin looking toward a rain-streaked window at night, a flashlight beam in hand not yet raised, faint claw-like scratch marks implied on a wooden support beam visible through the glass, a vintage ham radio glowing green on the desk behind, 35mm film grain, analog horror aesthetic, 1990s VHS tape quality, liminal space, Pacific Northwest, dark and moody, cinematic realism --ar 1:1 --v 6.1 --style raw --s 500
+**Visual Prompt:** first person POV from inside a dark firewatch cabin looking toward a rain-streaked window at night, a flashlight beam in hand not yet raised, faint claw-like scratch marks implied on a wooden support beam visible through the glass, a vintage ham radio glowing green on the desk behind, 35mm film grain, analog horror aesthetic, 1990s VHS tape quality, liminal space, Pacific Northwest, dark and moody, cinematic realism --ar 4:5 --v 6.1 --style raw --s 500

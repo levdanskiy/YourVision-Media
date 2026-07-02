@@ -2,7 +2,7 @@
   "version": 1,
   "project": "eleyia",
   "season": 2,
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-07-03",
   "_schema_note": "stats_deltas: {character, param, delta, reason}; param: affinity | vernost. Опросы S2 логировать с старта 01.07; S1 вёлся в прежней системе (MECHANICS).",
   "polls": [
     {
@@ -47,6 +47,49 @@
       ],
       "post_id": "EL-01.07-16-00-STORY-MIKAS-ANCHOR",
       "notes": "Применено в Главе 2: Микас 88→93 (+ отдельно 93→96 заряжённый беат 18:00 Г2, вне этого опроса)."
+    },
+    {
+      "id": "el-2-c2-q1",
+      "chapter": 2,
+      "pub_date": "2026-07-02",
+      "category": "trust",
+      "question": "Учитель, который первым увидел не оружие. Как Ян отвечает?",
+      "options": [
+        { "label": "🤝 ОТКРЫТЬСЯ", "percent": 100, "votes": 1 },
+        { "label": "🌫 ДЕРЖАТЬ ДИСТАНЦИЮ", "percent": 0, "votes": 0 }
+      ],
+      "total_votes": 1,
+      "winner": "🤝 ОТКРЫТЬСЯ",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Элиас +5 (5→10, выбор опроса в пользу героя - доверие).",
+      "impact_content": "Ян рискует поверить Элиасу - подводка к первому настоящему уроку резонанса в Главе 3.",
+      "stats_deltas": [
+        { "character": "Элиас", "param": "affinity", "delta": 5, "reason": "выбор опроса в пользу героя (открыться)" }
+      ],
+      "post_id": "EL-02.07-13-00-STORY-ELIAS-CLASS",
+      "notes": "Применено в Главе 3 (первый урок держать ноту, не глушить)."
+    },
+    {
+      "id": "el-2-c2-q2",
+      "chapter": 2,
+      "pub_date": "2026-07-02",
+      "category": "romantic_focus",
+      "question": "Три голоса зовут Яна в разные стороны. Куда тянется сердце сильнее прямо сейчас?",
+      "options": [
+        { "label": "🪨 МИКАС", "percent": 100, "votes": 1 },
+        { "label": "⚡ ФЕЛИКС", "percent": 100, "votes": 1 },
+        { "label": "❄️ ДОРИАН", "percent": 100, "votes": 1 }
+      ],
+      "total_votes": 1,
+      "winner": "ТРОЙНАЯ НИЧЬЯ (все 100%, multi-select)",
+      "winner_type": "multi_select_tie",
+      "tie_resolution": "Orchid-style: не выбирать один вариант принудительно - показать читателю ВСЕ три тяги разом, герой разрывается между ними, а не определяется в пользу одной линии.",
+      "impact_scoreboard": "Дельта не начисляется (тип - направление/тон, не давление на affinity).",
+      "impact_content": "Глава 3 текстурно отражает тройное притяжение: завязка (мысль о всех троих), Дориан-беат (утренний сеанс), Феликс-реакц (14:30, перемена), Микас-story (16:00, эхо резонанса). Ни одна линия не выделена как ведущая по итогам этого опроса.",
+      "stats_deltas": [],
+      "post_id": "EL-02.07-16-00-STORY-DORIAN-SIGNAL",
+      "notes": "Первая тройная 100%-ничья сезона - зафиксирован принцип обработки на будущее (см. VOTING_SCHEDULE-аналог ARCANA §мульти-селект)."
     }
   ]
 }

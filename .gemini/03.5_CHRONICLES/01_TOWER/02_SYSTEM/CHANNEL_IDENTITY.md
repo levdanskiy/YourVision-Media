@@ -10,10 +10,17 @@
 > Интерактивный survival-хоррор. Твои решения определят, кто спустится с башни.
 
 ## 2. ВИЗУАЛЬНЫЙ СТИЛЬ (Midjourney Prompts)
-Все изображения канала генерируются в строгой эстетике **Analog Horror / VHS / Mixed Media**.
+Все изображения канала генерируются в строгой эстетике **Analog Horror / VHS / Mixed Media**. Платформа - Midjourney (осознанное решение, в отличие от Novells/Omniverse на Reve - не менять).
 
-**Основной Prompt-Хвост:**
-`--ar 1:1 --v 6.1 --style raw --s 500, analog horror aesthetic, 1990s VHS tape quality, grainy footage, polaroid effect, liminal space, Pacific Northwest, dark and moody, cinematic realism`
+**Основной Prompt-Хвост (⚠️ ИСПРАВЛЕНО 03.07 - варьировать `--ar`, не держать всегда 1:1, тот же принцип, что в Novells/ARCANA - соотношение сторон под композицию, не константа):**
+`--ar <X:Y> --v 6.1 --style raw --s 500, analog horror aesthetic, 1990s VHS tape quality, grainy footage, polaroid effect, liminal space, Pacific Northwest, dark and moody, cinematic realism`
+
+**Варианты `--ar` по композиции:**
+- `--ar 1:1` - предмет крупным планом (рация, документ, деталь).
+- `--ar 16:9` - широкий пейзаж (вышка, лес, панорама).
+- `--ar 2:3` / `--ar 4:5` - вертикальный интерьер/портрет героя в кадре.
+- `--ar 3:2` - стандартная сцена действия.
+- До 03.07 все промпты держали `--ar 1:1` по умолчанию - задним числом это была пропущенная деталь, не решение; исправлено.
 
 **Примеры Промптов:**
 - **Для пейзажей (Лес, Башня):** `isolated firewatch tower on a rocky cliff, thick fog rolling through pine trees, dusk, glowing yellow light from the cabin window, analog horror aesthetic, 1993 camcorder footage...`

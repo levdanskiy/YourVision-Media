@@ -28,4 +28,4 @@
 ***
 
 **Grade:** B
-**Visual Prompt:** polaroid photo of an isolated wooden firewatch tower on a rocky cliff, heavy fog, thick pine forest, dark and moody, 1990s analog horror aesthetic, low quality tape footage, glowing yellow light from the tower window, cinematic realism, 35mm --ar 1:1 --v 6.1 --style raw --s 750
+**Visual Prompt:** polaroid photo of an isolated wooden firewatch tower on a rocky cliff, heavy fog, thick pine forest, dark and moody, 1990s analog horror aesthetic, low quality tape footage, glowing yellow light from the tower window, cinematic realism, 35mm --ar 16:9 --v 6.1 --style raw --s 750

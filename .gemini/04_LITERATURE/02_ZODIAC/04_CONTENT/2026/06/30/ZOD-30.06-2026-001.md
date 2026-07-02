@@ -86,4 +86,4 @@
 `⏱ Время чтения: 6 мин | ♈ ZODIAC: Глава 1`
 ***
 **Grade:** A
-**Visual Prompt:** Cyberpunk protagonist scene with Kael, neon-lit rainy city streets, glowing red Aries zodiac symbol on cybernetic arm, shot on 35mm film Kodak Portra 800, heavy film grain, cinematic realism, high-end fashion editorial, Dazed magazine aesthetic, moody lighting, no text, no logos
+**Visual Prompt:** Cyberpunk protagonist scene with Kael, neon-lit rainy city streets, glowing red Aries zodiac symbol on cybernetic arm, shot on 35mm film Kodak Portra 800, heavy film grain, cinematic realism, high-end fashion editorial, Dazed magazine aesthetic, moody lighting, no text, no logos. Frame 3:2.

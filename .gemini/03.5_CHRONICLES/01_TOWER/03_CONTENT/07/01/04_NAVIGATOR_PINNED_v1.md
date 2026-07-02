@@ -66,4 +66,4 @@
 #TOWER404 #Навигатор #BlackBox
 
 **Grade:** A
-**Visual Prompt:** found-footage style wide shot of an isolated wooden firewatch tower on rocky cliff terrain at dusk, surrounded by an endless dark pine forest under heavy unmoving fog, a single warm window glowing on the tower, a faint green radio dial light visible through the glass, analog horror aesthetic, 1993 camcorder footage, heavy film grain, polaroid color cast, liminal and oppressive mood, cinematic realism --ar 1:1 --v 6.1 --style raw --s 500
+**Visual Prompt:** found-footage style wide shot of an isolated wooden firewatch tower on rocky cliff terrain at dusk, surrounded by an endless dark pine forest under heavy unmoving fog, a single warm window glowing on the tower, a faint green radio dial light visible through the glass, analog horror aesthetic, 1993 camcorder footage, heavy film grain, polaroid color cast, liminal and oppressive mood, cinematic realism --ar 16:9 --v 6.1 --style raw --s 500
