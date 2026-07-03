@@ -35,6 +35,14 @@
 **Prompt-хвост (для базы):**
 `...a strict 50-year old man (Hayes) with grey hair wearing a ranger uniform, sitting in a dimly lit 1990s dispatch office surrounded by radio equipment, security camera footage, CRT monitor glow, grain, moody --ar 1:1 --v 6.1 --style raw`
 
+## 3.5. САЙМОН (Прежний смотритель 404-й) - добавлен 04.07 (дев-слот; вошёл в сюжет Днём 4 - жетон под кожухом)
+**Роль:** Смотритель до Алана. По бумагам базы «сдал вахту и уехал в конце мая». По словам Делроя - «совсем неразговорчивый». Жетон №404 найден Аланом за рамой генератора - смотрители не уезжают без жетона. 🔒 Судьба - мистерия сезона (кандидат на связку с вехой «День 14»: чей голос зазвучит в рации?).
+**Внешность (заочно, для найденных фото/архивов):** 40-45 лет, худой, замкнутый; на снимках из архива базы всегда стоит чуть в стороне от группы, смотрит мимо камеры - в сторону леса.
+**Reference Portrait (реалистичный, для character bible):**
+`Hyperrealistic photograph, portrait of Simon, a gaunt withdrawn 43-year-old man in a worn ranger jacket, standing slightly apart from a group, gaze drifting past the camera toward the treeline, guarded closed-off expression, overcast daylight, cinematic still, shot on Canon EOS R5, 85mm f/1.4, shallow depth of field, film grain, Kodak Portra 800, no text, no logos. Frame 4:5.`
+**Prompt-хвост (для архивных фото в постах):**
+`...an archival personnel photo of a gaunt quiet man (Simon) in a ranger jacket standing apart from the group, looking past the camera toward the forest, flash photography, washed out colors, 1990s file-photo aesthetic --ar 4:5 --v 6.1 --style raw`
+
 ## 4. ИМИТАТОРЫ (Монстры)
 **Роль:** Сущности Черной Низины. Крадут голоса и облик.
 **Внешность:** Высокие, неестественно вытянутые фигуры. Стоят неподвижно среди деревьев. Их лица всегда размыты туманом или скрыты за ветками. Никогда не показывать их детально - только намеками.
