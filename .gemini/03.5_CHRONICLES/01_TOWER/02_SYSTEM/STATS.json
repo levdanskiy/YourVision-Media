@@ -1,22 +1,71 @@
 {
   "project": "TOWER 404",
-  "last_updated": "2026-07-03",
-  "day": 3,
+  "last_updated": "2026-07-04",
+  "day": 4,
   "resources": {
-    "diesel": { "value": 100, "max": 100, "history": [] },
-    "sanity": { "value": 100, "max": 100, "history": [] }
+    "diesel": {
+      "value": 95,
+      "max": 100,
+      "history": [
+        {
+          "day": 4,
+          "delta": -5,
+          "post_id": "TW-04.07-17-00-S1-UNDER_THE_COWL",
+          "reason": "вскрытие кожуха/проверка генератора (выбор Дня 3)"
+        }
+      ]
+    },
+    "sanity": {
+      "value": 100,
+      "max": 100,
+      "history": []
+    }
   },
   "alignment": {
-    "paranoia": { "value": 0, "history": [] },
-    "curiosity": { "value": 2, "history": [
-      { "day": 1, "delta": 1, "post_id": "TW-01.07-19-00-S1-FIRST_CONTACT", "reason": "Рассказать о себе Делрою" },
-      { "day": 2, "delta": 1, "post_id": "TW-02.07-17-00-S1-QUIET_NOISES", "reason": "Слушать в темноте, не выдавать себя" }
-    ] }
+    "paranoia": {
+      "value": 0,
+      "history": []
+    },
+    "curiosity": {
+      "value": 3,
+      "history": [
+        {
+          "day": 1,
+          "delta": 1,
+          "post_id": "TW-01.07-19-00-S1-FIRST_CONTACT",
+          "reason": "Рассказать о себе Делрою"
+        },
+        {
+          "day": 2,
+          "delta": 1,
+          "post_id": "TW-02.07-17-00-S1-QUIET_NOISES",
+          "reason": "Слушать в темноте, не выдавать себя"
+        },
+        {
+          "day": 3,
+          "delta": 1,
+          "post_id": "TW-03.07-17-00-S1-THE_GAUGE",
+          "reason": "Проверить самому, вопреки протоколу Хейза"
+        }
+      ]
+    }
   },
   "milestones": {
-    "first_quiet_week": { "done": false, "post_id": null },
-    "day_14_voice": { "done": false, "post_id": null },
-    "day_21_figure": { "done": false, "post_id": null },
-    "day_30_midpoint_tower_302_falls": { "done": false, "post_id": null }
+    "first_quiet_week": {
+      "done": false,
+      "post_id": null
+    },
+    "day_14_voice": {
+      "done": false,
+      "post_id": null
+    },
+    "day_21_figure": {
+      "done": false,
+      "post_id": null
+    },
+    "day_30_midpoint_tower_302_falls": {
+      "done": false,
+      "post_id": null
+    }
   }
 }

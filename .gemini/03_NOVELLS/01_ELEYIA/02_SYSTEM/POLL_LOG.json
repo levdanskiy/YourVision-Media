@@ -2,7 +2,7 @@
   "version": 1,
   "project": "eleyia",
   "season": 2,
-  "last_updated": "2026-07-03",
+  "last_updated": "2026-07-04",
   "_schema_note": "stats_deltas: {character, param, delta, reason}; param: affinity | vernost. Опросы S2 логировать с старта 01.07; S1 вёлся в прежней системе (MECHANICS).",
   "polls": [
     {
@@ -12,9 +12,21 @@
       "category": "tone",
       "question": "Шторм пришёл и заговорил первым. Как Ян его встречает?",
       "options": [
-        { "label": "🌫 ЗАКРЫТЬСЯ", "percent": 0, "votes": 0 },
-        { "label": "⚡ ПРОЩУПАТЬ", "percent": 100, "votes": 1 },
-        { "label": "🤝 ПО-ЧЕЛОВЕЧЕСКИ", "percent": 0, "votes": 0 }
+        {
+          "label": "🌫 ЗАКРЫТЬСЯ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "⚡ ПРОЩУПАТЬ",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "🤝 ПО-ЧЕЛОВЕЧЕСКИ",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "⚡ ПРОЩУПАТЬ",
@@ -33,8 +45,16 @@
       "category": "trust",
       "question": "Старый якорь явно что-то держит про запас. Как Ян отвечает Микасу?",
       "options": [
-        { "label": "🤝 ДОВЕРИТЬСЯ ЦЕЛИКОМ", "percent": 100, "votes": 1 },
-        { "label": "🌫 НАСТОРОЖИТЬСЯ", "percent": 0, "votes": 0 }
+        {
+          "label": "🤝 ДОВЕРИТЬСЯ ЦЕЛИКОМ",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "🌫 НАСТОРОЖИТЬСЯ",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "🤝 ДОВЕРИТЬСЯ ЦЕЛИКОМ",
@@ -43,7 +63,12 @@
       "impact_scoreboard": "Микас +5 (88→93, выбор опроса в пользу героя - доверие).",
       "impact_content": "Ян не подаёт виду насчёт замеченного сбоя в резонансе Микаса - доверие растёт, секрет (🔒 скрытый резонанс) остаётся под замком. Подводка к заряжённому беату Главы 2 (18:00).",
       "stats_deltas": [
-        { "character": "Микас", "param": "affinity", "delta": 5, "reason": "выбор опроса в пользу героя (доверие целиком)" }
+        {
+          "character": "Микас",
+          "param": "affinity",
+          "delta": 5,
+          "reason": "выбор опроса в пользу героя (доверие целиком)"
+        }
       ],
       "post_id": "EL-01.07-16-00-STORY-MIKAS-ANCHOR",
       "notes": "Применено в Главе 2: Микас 88→93 (+ отдельно 93→96 заряжённый беат 18:00 Г2, вне этого опроса)."
@@ -55,8 +80,16 @@
       "category": "trust",
       "question": "Учитель, который первым увидел не оружие. Как Ян отвечает?",
       "options": [
-        { "label": "🤝 ОТКРЫТЬСЯ", "percent": 100, "votes": 1 },
-        { "label": "🌫 ДЕРЖАТЬ ДИСТАНЦИЮ", "percent": 0, "votes": 0 }
+        {
+          "label": "🤝 ОТКРЫТЬСЯ",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "🌫 ДЕРЖАТЬ ДИСТАНЦИЮ",
+          "percent": 0,
+          "votes": 0
+        }
       ],
       "total_votes": 1,
       "winner": "🤝 ОТКРЫТЬСЯ",
@@ -65,7 +98,12 @@
       "impact_scoreboard": "Элиас +5 (5→10, выбор опроса в пользу героя - доверие).",
       "impact_content": "Ян рискует поверить Элиасу - подводка к первому настоящему уроку резонанса в Главе 3.",
       "stats_deltas": [
-        { "character": "Элиас", "param": "affinity", "delta": 5, "reason": "выбор опроса в пользу героя (открыться)" }
+        {
+          "character": "Элиас",
+          "param": "affinity",
+          "delta": 5,
+          "reason": "выбор опроса в пользу героя (открыться)"
+        }
       ],
       "post_id": "EL-02.07-13-00-STORY-ELIAS-CLASS",
       "notes": "Применено в Главе 3 (первый урок держать ноту, не глушить)."
@@ -77,9 +115,21 @@
       "category": "romantic_focus",
       "question": "Три голоса зовут Яна в разные стороны. Куда тянется сердце сильнее прямо сейчас?",
       "options": [
-        { "label": "🪨 МИКАС", "percent": 100, "votes": 1 },
-        { "label": "⚡ ФЕЛИКС", "percent": 100, "votes": 1 },
-        { "label": "❄️ ДОРИАН", "percent": 100, "votes": 1 }
+        {
+          "label": "🪨 МИКАС",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "⚡ ФЕЛИКС",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "❄️ ДОРИАН",
+          "percent": 100,
+          "votes": 1
+        }
       ],
       "total_votes": 1,
       "winner": "ТРОЙНАЯ НИЧЬЯ (все 100%, multi-select)",
@@ -90,6 +140,117 @@
       "stats_deltas": [],
       "post_id": "EL-02.07-16-00-STORY-DORIAN-SIGNAL",
       "notes": "Первая тройная 100%-ничья сезона - зафиксирован принцип обработки на будущее (см. VOTING_SCHEDULE-аналог ARCANA §мульти-селект)."
+    },
+    {
+      "id": "el-2-c3-q1",
+      "chapter": 3,
+      "pub_date": "2026-07-03",
+      "category": "values",
+      "question": "Метод Яна - какой путь он выбирает сегодня на уроке?",
+      "options": [
+        {
+          "label": "🌫 ЗАЖАТЬ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "⚡ ВЫПУСТИТЬ КОНТРОЛИРУЕМО",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "🤝 ДОВЕРИТЬСЯ УЧИТЕЛЮ",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "⚡ ВЫПУСТИТЬ КОНТРОЛИРУЕМО",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Ось характера - дельты нет; метод закреплён как канон навыка.",
+      "impact_content": "Глава 4: Ян практикует ноту Элиаса самостоятельно (мотив прогресса '7 секунд'). Метод = контролируемый выпуск, не глушение.",
+      "stats_deltas": [],
+      "post_id": "EL-03.07-13-00-STORY-ELIAS-LESSON",
+      "notes": "Ценностный тип (ротация)."
+    },
+    {
+      "id": "el-2-c3-r1",
+      "chapter": 3,
+      "pub_date": "2026-07-03",
+      "category": "reacc",
+      "question": "Как Ян держится рядом с Феликсом, зная то, что узнал вчера?",
+      "options": [
+        {
+          "label": "🫧 сдержаться",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "⚡ резонировать",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "🤝 довериться",
+          "percent": 100,
+          "votes": 1
+        },
+        {
+          "label": "🌫 спрятаться",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 1,
+      "winner": "🤝 довериться",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Реакц-микроголос - без дельты (тон).",
+      "impact_content": "Тон Г4: Ян не отгораживается от Феликса после 'прислали' - линия доверия-вопреки держится.",
+      "stats_deltas": [],
+      "post_id": "EL-03.07-14-30-REACC-FELIX-BREAK",
+      "notes": "Реакц-слот."
+    },
+    {
+      "id": "el-2-c3-q2",
+      "chapter": 3,
+      "pub_date": "2026-07-03",
+      "category": "trust",
+      "question": "«Может, однажды» - как Ян реагирует?",
+      "options": [
+        {
+          "label": "🗣 СПРОСИТЬ ПРЯМО",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "⏳ ДАТЬ ВРЕМЯ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "🤝 СБЛИЗИТЬСЯ, НЕ СПРАШИВАЯ",
+          "percent": 100,
+          "votes": 1
+        }
+      ],
+      "total_votes": 1,
+      "winner": "🤝 СБЛИЗИТЬСЯ, НЕ СПРАШИВАЯ",
+      "winner_type": "unanimous",
+      "tie_resolution": null,
+      "impact_scoreboard": "Микас +5 → КАП 99 (96→99; кап до кульминации по STATS_RULES - дальше дельты Микаса не начисляются до финала).",
+      "impact_content": "Глава 4: беат КРЫША - Микас, не услышав вопросов, впервые сам перестал глушить себя на выдох; полупризнание 'знаю, что ты слышал'.",
+      "stats_deltas": [
+        {
+          "character": "Микас",
+          "param": "affinity",
+          "delta": 3,
+          "reason": "выбор в пользу героя (+5 по таблице, начислено +3 до капа 99)"
+        }
+      ],
+      "post_id": "EL-03.07-16-00-STORY-MIKAS-RUMORS",
+      "notes": "КАП: по таблице +5, фактически 96→99 (+3), остаток срезан капом."
     }
   ]
 }

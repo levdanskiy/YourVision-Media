@@ -16,7 +16,9 @@
       "percent": 100,
       "blooms_at_post": "~12-17 (посеяно 01.07, TRACKERS.md)",
       "applied_to_stats": true,
-      "stats_delta": { "curiosity": 1 },
+      "stats_delta": {
+        "curiosity": 1
+      },
       "notes": "Немедленный нарративный эффект (не эффект бабочки): Алан+Делрой сближаются, ежевечерние разговоры на 4-й волне - показано в 05_QUIET_NOISES (02.07). Отложенное последствие бабочки - отдельно, ждёт ~пост 12-17."
     },
     {
@@ -33,7 +35,9 @@
       "percent": 100,
       "blooms_at_post": "~14-19 (посеяно 02.07, TRACKERS.md)",
       "applied_to_stats": true,
-      "stats_delta": { "curiosity": 1 },
+      "stats_delta": {
+        "curiosity": 1
+      },
       "notes": "Алан не расследует шорох, просто запоминает - показано как затравка в 06_THE_GAUGE (03.07): не хочет ждать двенадцать дней техника, тянет к тому же любопытству."
     },
     {
@@ -45,6 +49,26 @@
         "curiosity": "Проверить самому (-5 Дизель, риск)"
       },
       "closes_at": "2026-07-03T20:00:00+03:00",
+      "winner": "curiosity",
+      "blooms_at_post": "~15-20 (посеяно 03.07, TRACKERS.md)",
+      "applied_to_stats": true,
+      "winner_label": "Проверить самому: снять кожух, вопреки инструкции Хейза",
+      "percent": 100,
+      "stats_delta": {
+        "curiosity": 1,
+        "diesel": -5
+      },
+      "notes": "Немедленный эффект в 07_UNDER_THE_COWL (04.07): следы слива топлива + жетон Саймона за рамой. Бабочка - отдельно."
+    },
+    {
+      "post_id": "TW-04.07-17-00-S1-UNDER_THE_COWL",
+      "date": "2026-07-04",
+      "question": "Что сказать Делрою про жетон Саймона?",
+      "options": {
+        "curiosity": "Рассказать про жетон",
+        "paranoia": "Промолчать - чем меньше знают, тем лучше"
+      },
+      "closes_at": "2026-07-04T20:00:00+03:00",
       "winner": null,
       "blooms_at_post": null,
       "applied_to_stats": false
