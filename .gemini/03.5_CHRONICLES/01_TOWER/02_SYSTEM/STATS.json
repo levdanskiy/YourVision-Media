@@ -1,7 +1,7 @@
 {
   "project": "TOWER 404",
-  "last_updated": "2026-07-04",
-  "day": 4,
+  "last_updated": "2026-07-05",
+  "day": 5,
   "resources": {
     "diesel": {
       "value": 95,
@@ -27,7 +27,7 @@
       "history": []
     },
     "curiosity": {
-      "value": 3,
+      "value": 4,
       "history": [
         {
           "day": 1,
@@ -46,6 +46,12 @@
           "delta": 1,
           "post_id": "TW-03.07-17-00-S1-THE_GAUGE",
           "reason": "Проверить самому, вопреки протоколу Хейза"
+        },
+        {
+          "day": 4,
+          "delta": 1,
+          "post_id": "TW-04.07-17-00-S1-UNDER_THE_COWL",
+          "reason": "Рассказать Делрою про жетон"
         }
       ]
     }
