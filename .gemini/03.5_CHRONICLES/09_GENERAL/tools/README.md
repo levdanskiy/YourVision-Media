@@ -19,3 +19,14 @@ python3 stats-check.py tower --quiet    # только ⚠/❌
 **Схема TOWER:** `resources.<x>` = `{value, max, history}` (старт с полного бака); `alignment.<paranoia|curiosity>` = `{value, history}` (старт 0, копится). `milestones` (флаги done) чекером игнорируются. PARALLAX/SOMNIUM при запуске завести `STATS.json` в том же виде.
 
 Копия того же движка живёт в `04_LITERATURE/09_GENERAL/tools/`. При правке движка синхронить обе.
+
+## `voice-lint.sh` - линтер поста (формат-осведомлённый)
+
+Лёгкий линтер. Универсальные блокеры: **тире** (только дефис), **мусорные символы**, **чужие сигнатуры** (анти-протечка голоса). Длина ПО ФОРМАТУ: TOWER/PARALLAX = короткий дневник (ругается на раздувание >400 слов); ARCANA/ZODIAC = длинная форма.
+
+```bash
+bash voice-lint.sh --auto <файл>     # автодетект работы
+bash voice-lint.sh tower <файл>
+```
+
+Exit: 0/1/2. Гонять по каждому посту дня перед коммитом (или через агента `omniverse-qa`). Копия - в Literature tools/, синхронить.
