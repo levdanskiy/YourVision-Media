@@ -20,7 +20,7 @@
 - **Волосы:** русые, волнистые, чуть длинные, растрёпанные; лента/перо.
 - **Глаза:** тёплые карие, золотинки от огней.
 - **Кожа:** живая, румяная от мороза.
-- **Стиль:** яркий, цыганско-ярмарочный - вышитая рубаха, кушак, потёртый кожух нараспашку; гусли/балалайка за плечом.
+- **Стиль:** яркий, вольный кочевой-ярмарочный (образ, не этнонимом) - вышитая рубаха, кушак, потёртый кожух нараспашку; гусли/балалайка за плечом.
 **CHARACTER TAG:** `Lel, warm charming man around twenty-seven, wavy tousled light-brown hair with a ribbon, warm brown eyes with golden glints, ruddy lively skin, bright embroidered folk shirt and sash with an open worn coat, a folk string instrument on his back, easy half-smile, Photorealistic, 8k, cinematic style, high-end editorial photography, shot on Kodak Portra 800, cinematic color grading, magical effects rendered as real light/frost/bloom (not painted), no text, no logos`
 
 ## МИЗГИРЬ (М, ~33) - LI «страсть/выбор»
