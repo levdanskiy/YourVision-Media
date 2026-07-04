@@ -214,13 +214,33 @@ def mirror_check(project, stats, counters, warns, infos):
             infos.append(f"зеркало: «{label}» = {prose} ✓")
 
 
-def check_polls(base, warns, infos):
-    """Все опросы должны использоваться: флажит закрытые, но не применённые.
+# Типы опросов бывают РАЗНЫЕ (POLL_ENGAGEMENT_PLAYBOOK §A + §D):
+#   - СЮЖЕТНЫЕ/выбор (Действие, Ставка/цена, Приоритет, К кому, Ценностный,
+#     Темп, Дилемма) - двигают сюжет+числа, ДОЛЖНЫ быть применены.
+#   - ВОВЛЕКАЮЩИЕ (Предсказание/теория, Квиз-лор, Реакц-нудж, Реакц-порог) -
+#     БЕЗ дельты по замыслу; используются иначе (мистерия/тон/темп), НЕ флажим
+#     как «не применён к числам».
+POLL_ENGAGEMENT_RE = re.compile(
+    r"предсказ|теори|квиз|quiz|реакц|нудж|порог|tone|тон-нудж|микроголос",
+    re.I,
+)
 
-    Терпит обе схемы: ARCANA (votes[] + applied_in_post) и TOWER
-    (votes[] + applied_to_stats). Открытые (нет результата) - не в счёт.
-    Применение может быть отложено по роадмапу (decoupling), но НЕ забыто -
-    поэтому 'ждёт применения' = предупреждение-напоминание, не ошибка.
+
+def poll_is_engagement(v):
+    """Опрос вовлекающего типа (не требует применения к числам)."""
+    if v.get("engagement") is True or v.get("applies_to_stats") is False:
+        return True
+    return bool(POLL_ENGAGEMENT_RE.search(v.get("type") or ""))
+
+
+def check_polls(base, warns, infos):
+    """Опросы РАЗНЫХ типов используются по-разному (см. POLL_ENGAGEMENT_PLAYBOOK).
+
+    Флажит только СЮЖЕТНЫЕ/выбор опросы, которые закрыты, но не применены.
+    Вовлекающие (предсказание/квиз/реакц) - без дельты по замыслу, не флажим.
+    Применение сюжетного может быть отложено по роадмапу (decoupling), но НЕ
+    забыто - поэтому 'ждёт применения' = напоминание, не ошибка.
+    Схемы: ARCANA (votes[]+applied_in_post+type) и TOWER (votes[]+applied_to_stats).
     """
     pl = base / "POLL_LOG.json"
     if not pl.exists():
@@ -231,7 +251,7 @@ def check_polls(base, warns, infos):
         warns.append(f"POLL_LOG.json не парсится: {e}")
         return
     items = data.get("votes") or data.get("polls") or []
-    open_n = applied_n = pending = 0
+    open_n = applied_n = pending = engage_n = 0
     for v in items:
         ident = v.get("id") or v.get("post_id") or "?"
         has_result = (
@@ -241,6 +261,9 @@ def check_polls(base, warns, infos):
         )
         if not has_result:
             open_n += 1
+            continue
+        if poll_is_engagement(v):
+            engage_n += 1  # вовлекающий тип - применение к числам не требуется
             continue
         applied = bool(
             v.get("applied_in_post")
@@ -253,10 +276,14 @@ def check_polls(base, warns, infos):
             pending += 1
             q = (v.get("question") or "")[:55]
             warns.append(
-                f"опрос {ident} ЗАКРЫТ, но НЕ применён - «{q}» "
-                f"(все опросы должны использоваться; поставить в роадмап, не забыть)"
+                f"СЮЖЕТНЫЙ опрос {ident} ЗАКРЫТ, но НЕ применён - «{q}» "
+                f"(поставить в роадмап, не забыть; если это вовлекающий тип - "
+                f"проставь type предсказание/квиз/реакц или engagement:true)"
             )
-    infos.append(f"опросы: {applied_n} применены, {pending} ждут применения, {open_n} открыты")
+    infos.append(
+        f"опросы: {applied_n} применены, {pending} ждут применения, "
+        f"{engage_n} вовлекающие (без дельты), {open_n} открыты"
+    )
 
 
 def check_work(code, quiet=False):
