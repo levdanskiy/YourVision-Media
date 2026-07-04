@@ -84,4 +84,50 @@
 **CHARACTER TAG:** `Marta, scrappy fourteen-year-old elf-human Split with thin pointed ears, rebellious tech-genius look covered in wires and drone parts, bright defiant energy, faint realistic synesthetic colour rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
 
 ---
-*Не удалять. Видовые черты обязательны в каждом промпте. Дополнять побочный каст (валькирия Вика, гном Симас, сирена Ула, наг Рэй, мантикора Лео и др.) по мере ввода - у каждого свои видовые признаки.*
+
+# 🎭 ВТОРОЙ КРУГ (SUPPORTING CAST) - фотореалистичные теги (добавлено 05.07.2026)
+
+> Функции/тики/очередь ввода - `02_SYSTEM/SUPPORTING_CAST.md`. Здесь - визуальные теги в едином ФОТОРЕАЛИСТИЧНОМ лине (реверс 18.06 распространён и на второй круг: раньше их промпты были painterly - исправлено). Видовые черты = тонкие акценты на современных людях.
+
+## ИНСПЕКТОР СТРАЗДС (Сплит-Скворец, ~45) - куратор Директората
+*Вежливый учётчик душ; вводится СТРОГО при ВЕРНОСТЬ 5 (введён Г5, 05.07).*
+**Видовые черты (скворец):** обычный аккуратный мужчина - вид выдаёт лёгкий переливчатый тёмно-перьевой отлив в прилизанных волосах и круглые тёмные глаза, что моргают не в такт. Никаких крыльев/клюва.
+**CHARACTER TAG:** `Inspector Strazds, neat middle-aged man around forty-five, Split-starling with a faint iridescent dark feather-sheen through slicked-back hair and round dark eyes that blink out of rhythm (no wings, no beak), immaculate grey near-future ministry uniform with a small amber resonance insignia, holding a thin ledger tablet like a hymnal, politely unsettling stillness, faint realistic synesthetic oily-iridescent-grey rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## МАСТЕР КАЛЕЙС (Человек, 55) - техник браслетов «Верность»
+*Тридцать лет чинил часы, теперь «чинит детей».*
+**Видовые черты:** человек; усталая ремесленная доброта.
+**CHARACTER TAG:** `Master Kalejs, weathered human technician in his mid-fifties, grey moustache, watchmaker's loupe pushed up on a creased forehead, worn leather workshop apron over a knitted vest, gentle tired hands cradling a glowing amber neuro-bracelet as if calming a small animal, cluttered warm near-future workshop, faint realistic synesthetic warm-pastel-cream rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## ВИКА (Сплит-Валькирия, 16) - подруга-механик
+*Руки тихого сопротивления; гараж, мопед «Один-1».*
+**Видовые черты (валькирия):** высокая, крепкого сложения девушка воинской стати; вид - тонкий стально-серый металлический отлив в глазах/по контуру, намёк на «боевую» осанку. Современная одежда механика.
+**CHARACTER TAG:** `Vika, tall striking sturdy valkyrie Split girl around sixteen, warrior-build, a faint steel-grey metallic sheen in her eyes and along her edges (no wings, no armour), practical modern mechanic's coveralls, a wrench in hand, bold fearless energy, faint realistic synesthetic steel-grey rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## СИМАС (Гном-полукровка, 16) - алхимик-снабженец
+*«Зарядка» против браслетов; влюблён в Марту.*
+**Видовые черты (гном):** невысокий, коренастый, крепкие руки; вид - только рост и плотность, никакой карикатуры. Карманы в пузырьках и энергетиках.
+**CHARACTER TAG:** `Simas, short stocky half-gnome boy around sixteen, sturdy build and strong hands (just short and solid, not cartoonish), pockets full of vials and energy drinks, clever scrappy supplier look, warm mischievous face, faint realistic synesthetic amber rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## УЛА (Сирена, 18) - рок-звезда Лицея в «немом ошейнике»
+*Единственные легальные сборища при коменданте - её концерты.*
+**Видовые черты (сирена):** завораживающая, чуть переливчатая кожа у горла (намёк на жабры-переливы), гипнотические глаза; на шее - тонкий подавляющий «немой ошейник» (аналог браслета). Сценический стиль.
+**CHARACTER TAG:** `Ula, mesmerizing siren young woman around eighteen, subtly iridescent skin at her throat and hypnotic eyes, a thin suppressor collar around her neck (the "silent collar"), rock-star stage style, defiant magnetic presence, faint realistic synesthetic teal-iridescent rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## АНЯ (Сплит-Снорри, 16) - метео-медиум
+*Чувствует «дыхание» Второй Волны - таймер сезона через неё.*
+**Видовые черты (снорри):** бледная, «обветренная», глаза цвета грозового неба; вид - тонкий морозно-ветровой отблеск, будто вокруг неё всегда лёгкий сквозняк. Тёплая многослойная одежда.
+**CHARACTER TAG:** `Anya, pale wind-touched snorri Split girl around sixteen, storm-sky coloured eyes and a faint frost-and-wind shimmer around her as if a draught always follows, layered warm modern clothes, quiet far-listening expression, faint realistic synesthetic pale-blue rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## МАДАМ БЛОК (Сфинкс) - математичка
+*Её загадки-вопросы = шифр мимо браслетов.*
+**Видовые черты (сфинкс):** достойная женщина зрелых лет; вид - тонкий кошачий разрез и золотой отблеск глаз, спокойная загадочность. Строгий академический стиль near-future.
+**CHARACTER TAG:** `Madame Blok, dignified mature sphinx woman, a subtle feline slant and golden shimmer to her eyes, composed riddling calm (no fur, no wings, human form), strict elegant near-future academic attire, faint realistic synesthetic gold rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+## ЮРИС (Сатир, старший) - камео-наставник (лето Микаса)
+*Опора вне Лицея.*
+**Видовые черты (сатир, как Микас, но старше):** обычный крепкий мужчина в годах, вид - едва заметные рожки-бугорки в седеющих волосах; ноги/тело человеческие. Обветренный, надёжный.
+**CHARACTER TAG:** `Juris, weathered older satyr man, an ordinary sturdy build with two small subtle horn-buds half-hidden in greying hair (fully human legs and body, not goat-legged), rural workshop clothes, grounding steady presence, faint realistic synesthetic warm-earth rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
+---
+*Не удалять. Видовые черты обязательны в каждом промпте. Второй круг - выше; новые лица дополнять сюда фотореалистичным тегом ДО первого появления в кадре.*
