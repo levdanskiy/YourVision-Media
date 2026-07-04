@@ -213,6 +213,51 @@ def mirror_check(project, stats, counters, warns, infos):
             infos.append(f"зеркало: «{label}» = {prose} ✓")
 
 
+def check_polls(base, warns, infos):
+    """Все опросы должны использоваться: флажит закрытые, но не применённые.
+
+    Терпит обе схемы: ARCANA (votes[] + applied_in_post) и TOWER
+    (votes[] + applied_to_stats). Открытые (нет результата) - не в счёт.
+    Применение может быть отложено по роадмапу (decoupling), но НЕ забыто -
+    поэтому 'ждёт применения' = предупреждение-напоминание, не ошибка.
+    """
+    pl = base / "POLL_LOG.json"
+    if not pl.exists():
+        return
+    try:
+        data = json.loads(pl.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        warns.append(f"POLL_LOG.json не парсится: {e}")
+        return
+    items = data.get("votes") or data.get("polls") or []
+    open_n = applied_n = pending = 0
+    for v in items:
+        ident = v.get("id") or v.get("post_id") or "?"
+        has_result = (
+            v.get("result_percent") not in (None, {})
+            or v.get("winner") not in (None, "", [])
+            or v.get("total_votes") is not None
+        )
+        if not has_result:
+            open_n += 1
+            continue
+        applied = bool(
+            v.get("applied_in_post")
+            or v.get("applied_to_stats")
+            or v.get("applied")
+        )
+        if applied:
+            applied_n += 1
+        else:
+            pending += 1
+            q = (v.get("question") or "")[:55]
+            warns.append(
+                f"опрос {ident} ЗАКРЫТ, но НЕ применён - «{q}» "
+                f"(все опросы должны использоваться; поставить в роадмап, не забыть)"
+            )
+    infos.append(f"опросы: {applied_n} применены, {pending} ждут применения, {open_n} открыты")
+
+
 def check_work(code, quiet=False):
     if code not in WORKS:
         print(RED(f"❌ Неизвестная работа: {code}. Есть: {', '.join(WORKS)}"))
@@ -241,6 +286,7 @@ def check_work(code, quiet=False):
     if cfg:
         cfg["_state_full"] = str(TREE_ROOT / WORKS[code] / cfg["state"])
     mirror_check(project, stats, counters, warns, infos)
+    check_polls(base, warns, infos)
 
     if not quiet:
         for m in infos:
