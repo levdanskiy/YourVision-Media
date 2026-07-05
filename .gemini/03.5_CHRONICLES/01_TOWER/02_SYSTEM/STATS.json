@@ -1,7 +1,7 @@
 {
   "project": "TOWER 404",
-  "last_updated": "2026-07-05",
-  "day": 5,
+  "last_updated": "2026-07-06",
+  "day": 6,
   "resources": {
     "diesel": {
       "value": 95,
@@ -27,7 +27,7 @@
       "history": []
     },
     "curiosity": {
-      "value": 4,
+      "value": 5,
       "history": [
         {
           "day": 1,
@@ -52,6 +52,12 @@
           "delta": 1,
           "post_id": "TW-04.07-17-00-S1-UNDER_THE_COWL",
           "reason": "Рассказать Делрою про жетон"
+        },
+        {
+          "day": 6,
+          "delta": 1,
+          "post_id": "TW-06.07-17-00-S1-THE_LOWER_TRAIL",
+          "reason": "Поверить тревоге Делроя, копать вместе про Саймона (выбор Дня 5)"
         }
       ]
     }
