@@ -21,7 +21,7 @@ GEMINI = Path("/home/levdanskiy/.gemini")
 
 # Папка проекта + имена по умолчанию (дополнять по мере надобности).
 PROJECTS = {
-    "eleyia":   ("03_NOVELLS/01_ELEYIA",   ["Микас","Дориан","Феликс","Элиас","Марта","Оэрон","Елена","Страздс","Калейс","Снорри"]),
+    "eleyia":   ("03_NOVELLS/01_ELEYIA",   ["Микас","Дориан","Феликс","Элиас","Марта","Оэрон","Елена","Страздс","Калейс","Снорри","Вика","Ула","Аня","Симас"]),
     "kingmaker":("03_NOVELLS/02_KINGMAKER", []),
     "orchid":   ("03_NOVELLS/05_ORCHID",    []),
     "arcana":   ("04_LITERATURE/01_ARCANA", ["Рагнар","Фрейя","Дариан","Серена","Лун-Фей","Айки-Кыз","Адебайо","Ифа-Аже","Зейн","Насрин","Мирон","Вила"]),
@@ -38,11 +38,39 @@ def find_posts(base: Path):
     return []
 
 
+# Ключевые слова для грубой оценки ТОНА поста (свет/тьма). Не идеально, но даёт %.
+LIGHT = ["любов","люблю","поцелу","обня","обни","нежн","тепл","смех","смея","шутк","шути",
+         "друж","друг","семь","праздник","танц","радост","улыб","дом","забот","вместе","спас"]
+DARK  = ["страх","боит","угроз","приказ","список","куратор","арест","опасн","предат","потер",
+         "смерт","убил","кровь","боль","враг","тьма","ужас","паник","изъят","изоляц","контракт"]
+
+
+def tone_report(project, total, texts, last):
+    import re as _re
+    light = sum(1 for t in texts if any(_re.search(w, t, _re.I) for w in LIGHT))
+    dark  = sum(1 for t in texts if any(_re.search(w, t, _re.I) for w in DARK))
+    both  = sum(1 for t in texts if any(_re.search(w, t, _re.I) for w in LIGHT) and any(_re.search(w, t, _re.I) for w in DARK))
+    only_dark = dark - both
+    print(f"\n🌗 TONE-BALANCE: {project} ({total} постов{' - последние '+str(last) if last else ''})")
+    print("─" * 52)
+    print(f"  ☀️ есть светлый бит (любовь/дружба/семья/праздник/юмор): {light}/{total} = {light/total*100:.0f}%")
+    print(f"  🌑 есть тёмный бит (проблема/угроза/потеря):             {dark}/{total} = {dark/total*100:.0f}%")
+    print(f"  ⚖️ и свет, и тьма в одном посте:                        {both}/{total} = {both/total*100:.0f}%")
+    print(f"  ⛔ ТОЛЬКО тьма, без света:                              {only_dark}/{total} = {only_dark/total*100:.0f}%")
+    print("─" * 52)
+    if light/total < 0.5:
+        print("⚠ светлых битов < 50% - перекос в проблемы. В БУДУЩИХ постах добавить любовь/дружбу/праздник/юмор.")
+    else:
+        print("✓ светлые биты присутствуют широко. Держать баланс.")
+    print("(груба́я keyword-оценка; точный учёт - в TONE_LEDGER работы по Главам.)")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("project")
     ap.add_argument("--last", type=int, default=0, help="только последние N постов")
     ap.add_argument("--names", default="", help="список имён через запятую")
+    ap.add_argument("--tone", action="store_true", help="вместо героев - баланс ТОНА (свет/тьма) по постам")
     args = ap.parse_args()
 
     if args.project not in PROJECTS:
@@ -58,6 +86,10 @@ def main():
         posts = posts[-args.last:]
     total = len(posts) or 1
     texts = [p.read_text(encoding="utf-8", errors="ignore") for p in posts]
+
+    if args.tone:
+        tone_report(args.project, total, texts, args.last)
+        return
 
     print(f"\n👥 APPEARANCE-COUNT: {args.project} ({total} постов{' - последние '+str(args.last) if args.last else ''})")
     print("─" * 52)
