@@ -73,9 +73,9 @@
 **Видовые черты:** человек; тёплая, усталая мудрость; единственная видит в Яне человека.
 **CHARACTER TAG:** `Elena, warm tired human woman around forty-two, gentle wise features, archivist of the Eleja palace, soft maternal warmth, muted earthy tones, faint realistic synesthetic colour rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
 
-## ЭЛАРА (Чистокровная Эльфийка, 17 в S2; 16 в S1)
-*Единокровная сестра-ровесница Яна. Соперница.*
-**Видовые черты:** заострённые уши, фарфоровая чистокровная красота, идеальная и холодная; энергия «полированной стали».
+## ЭЛАРА (сестра-БЛИЗНЕЦ Яна, Сплит с доминантным эльфийским фенотипом; 17 в S2; 16 в S1)
+*Близнец Яна (Оэрон + Елена), выдаёт себя за Чистокровную. Соперница, отрицает свою Сплит-кровь.*
+**Видовые черты:** заострённые уши, фарфоровая «чистокровная» красота, идеальная и холодная; энергия «полированной стали». Фамильное сходство с Яном (близнецы) - те же черты лица, но выражение ледяное, где у Яна тепло.
 **CHARACTER TAG:** `Elara, pristine pure-blood elf girl around seventeen, sharply pointed ears, porcelain cold flawless beauty, polished-steel poise and ambition, elegant pale attire, faint realistic synesthetic colour rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
 
 ## МАРТА (Сплит Эльф/Человек, 14)
