@@ -22,10 +22,10 @@ GEMINI = Path("/home/levdanskiy/.gemini")
 # Папка проекта + имена по умолчанию (дополнять по мере надобности).
 PROJECTS = {
     "eleyia":   ("03_NOVELLS/01_ELEYIA",   ["Микас","Дориан","Феликс","Элиас","Марта","Оэрон","Елена","Страздс","Калейс","Снорри","Вика","Ула","Аня","Симас"]),
-    "kingmaker":("03_NOVELLS/02_KINGMAKER", []),
-    "orchid":   ("03_NOVELLS/05_ORCHID",    []),
+    "kingmaker":("03_NOVELLS/02_KINGMAKER", []),   # TODO: заполнить каст при активации S2
+    "orchid":   ("03_NOVELLS/05_ORCHID",    []),   # TODO: заполнить каст при активации S2
     "arcana":   ("04_LITERATURE/01_ARCANA", ["Рагнар","Фрейя","Дариан","Серена","Лун-Фей","Айки-Кыз","Адебайо","Ифа-Аже","Зейн","Насрин","Мирон","Вила"]),
-    "zodiac":   ("04_LITERATURE/02_ZODIAC",  []),
+    "zodiac":   ("04_LITERATURE/02_ZODIAC",  ["Малый Огонь","Малая Луна","Малый Шторм","Малый Ветер","Малая Капля","Малый Луч","Малая Травинка","Малый Правдивец","Малый Шип","Малая Стрела","Малый Камень","Малый Океан","Малое Небо"]),
     "tower":    ("03.5_CHRONICLES/01_TOWER", ["Алан","Делрой","Хейз","Саймон"]),
 }
 
@@ -65,16 +65,59 @@ def tone_report(project, total, texts, last):
     print("(груба́я keyword-оценка; точный учёт - в TONE_LEDGER работы по Главам.)")
 
 
+def audit_all():
+    """Сводный аудит ВСЕХ работ: кто ЗАБЫТ (отстал/пропал) + тон. Гнать каждый круг."""
+    print("\n" + "=" * 56)
+    print("  🧭 СВОДНЫЙ АУДИТ ВСЕХ РАБОТ (баланс героев + тон)")
+    print("  Правило: вернуть забытых в БУДУЩИХ постах; не переписывать написанное.")
+    print("=" * 56)
+    any_forgotten = False
+    for code, (rel, names) in PROJECTS.items():
+        if not names:
+            continue
+        base = GEMINI / rel
+        posts = find_posts(base)
+        if not posts:
+            print(f"\n▪ {code.upper()}: нет контента (не запущена) - пропуск")
+            continue
+        total = len(posts)
+        texts = [p.read_text(encoding="utf-8", errors="ignore") for p in posts]
+        rows = sorted(((n, sum(1 for t in texts if re.search(re.escape(n), t)) / total * 100) for n in names),
+                      key=lambda r: -r[1])
+        top = rows[0][1] if rows else 0
+        forgotten = [(n, p) for n, p in rows if top - p >= 30 or p < 5]
+        light = sum(1 for t in texts if any(re.search(w, t, re.I) for w in LIGHT))
+        dark = sum(1 for t in texts if any(re.search(w, t, re.I) for w in DARK))
+        print(f"\n▪ {code.upper()} ({total} постов) | ☀️ свет {light/total*100:.0f}% · 🌑 тьма {dark/total*100:.0f}%")
+        if forgotten:
+            any_forgotten = True
+            print(f"   ⚠ ЗАБЫТЫ/отстали (вернуть в след. Главах): " +
+                  ", ".join(f"{n} {p:.0f}%" for n, p in forgotten))
+        else:
+            print("   ✅ баланс героев ок")
+        if light / total < 0.5:
+            print("   ⚠ светлых битов <50% - добавить любовь/дружбу/праздник в след. постах")
+    print("\n" + "=" * 56)
+    print("  Забытых вернуть по ledger'ам (напр. Eleyia APPEARANCE_LEDGER §B)." if any_forgotten
+          else "  Все работы сбалансированы. Держать.")
+    print("=" * 56)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("project")
+    ap.add_argument("project", nargs="?", help="код работы (или --all)")
+    ap.add_argument("--all", action="store_true", help="аудит ВСЕХ работ разом (баланс+тон) - гнать каждый круг")
     ap.add_argument("--last", type=int, default=0, help="только последние N постов")
     ap.add_argument("--names", default="", help="список имён через запятую")
     ap.add_argument("--tone", action="store_true", help="вместо героев - баланс ТОНА (свет/тьма) по постам")
     args = ap.parse_args()
 
-    if args.project not in PROJECTS:
-        print(f"Проекты: {', '.join(PROJECTS)}"); sys.exit(1)
+    if args.all:
+        audit_all()
+        return
+
+    if not args.project or args.project not in PROJECTS:
+        print(f"Проекты: {', '.join(PROJECTS)} | или --all"); sys.exit(1)
     rel, default_names = PROJECTS[args.project]
     base = GEMINI / rel
     names = [n.strip() for n in args.names.split(",") if n.strip()] or default_names
