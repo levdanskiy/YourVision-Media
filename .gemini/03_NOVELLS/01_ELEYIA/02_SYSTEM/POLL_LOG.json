@@ -2,7 +2,7 @@
  "version": 1,
  "project": "eleyia",
  "season": 2,
- "last_updated": "2026-07-06",
+ "last_updated": "2026-07-07",
  "_schema_note": "stats_deltas: {character, param, delta, reason}; param: affinity | vernost. Опросы S2 логировать с старта 01.07; S1 вёлся в прежней системе (MECHANICS).",
  "polls": [
   {
@@ -496,12 +496,13 @@
      "votes": null
     }
    ],
-   "total_votes": null,
-   "winner": null,
+   "total_votes": 1,
+   "winner": "🤝 С УСЛОВИЕМ (100%)",
    "winner_type": null,
    "stats_deltas": [],
    "post_id": "EL-06.07-13-00-STORY-KALEIS-BLIND",
-   "notes": "ОТКРЫТ. Тип ставка/цена (ротация)."
+   "notes": "ОТКРЫТ. Тип ставка/цена (ротация).",
+   "impact_content": "Глава 7: Ян отвечает Страздсу - «окно» только для тех, кому грозит Изоляция."
   },
   {
    "id": "el-2-c6-q2",
@@ -526,12 +527,21 @@
      "votes": null
     }
    ],
-   "total_votes": null,
-   "winner": null,
-   "winner_type": null,
-   "stats_deltas": [],
+   "total_votes": 1,
+   "winner": "🤝 БЛИЖЕ + ⚡ ЗАЩИТИТЬ (двойная 100%)",
+   "winner_type": "multi_select_tie",
+   "stats_deltas": [
+    {
+     "character": "Дориан",
+     "param": "affinity",
+     "delta": 5,
+     "reason": "выбор БЛИЖЕ (в пользу героя)"
+    }
+   ],
    "post_id": "EL-06.07-16-00-STORY-DORIAN-SAVE",
-   "notes": "ОТКРЫТ. Тип ценностный/к кому (ротация)."
+   "notes": "ОТКРЫТ. Тип ценностный/к кому (ротация).",
+   "tie_resolution": "Гибрид: Ян позвал Дориана ближе (про них двоих) И начал тихо копать про программу (Вика; нить в Кёнигсберг).",
+   "impact_scoreboard": "Дориан +5 (53→58) за БЛИЖЕ (к кому, в пользу героя); ЗАЩИТИТЬ - без дельты (двигает сюжет-расследование)."
   },
   {
    "id": "el-2-c6-r1",
@@ -561,12 +571,105 @@
      "votes": null
     }
    ],
-   "total_votes": null,
-   "winner": null,
+   "total_votes": 1,
+   "winner": "🤝 сочувствует (100%)",
    "winner_type": null,
    "stats_deltas": [],
    "post_id": "EL-06.07-14-30-REACC-STRAZDS",
-   "notes": "ОТКРЫТ. Вовлекающий тип."
+   "notes": "ОТКРЫТ. Вовлекающий тип.",
+   "impact_content": "Тон Г7: Страздс приоткрыл сочувствие (🔒 «тот мальчик»)."
+  },
+  {
+   "id": "el-2-c7-q1",
+   "chapter": 7,
+   "pub_date": "2026-07-07",
+   "category": "дилемма",
+   "question": "Страздс приоткрылся - сочувствие или ловушка? Как держать куратора?",
+   "options": [
+    {
+     "label": "🫧 ДЕРЖАТЬ ДИСТАНЦИЮ",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "🤝 ОСТОРОЖНО ДОВЕРИТЬСЯ",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "⚡ ИСПОЛЬЗОВАТЬ",
+     "percent": null,
+     "votes": null
+    }
+   ],
+   "total_votes": null,
+   "winner": null,
+   "stats_deltas": [],
+   "post_id": "EL-07.07-13-00-STORY-TEA",
+   "notes": "ОТКРЫТ. Тип дилемма."
+  },
+  {
+   "id": "el-2-c7-q2",
+   "chapter": 7,
+   "pub_date": "2026-07-07",
+   "category": "к кому/ставка",
+   "question": "Как вести расследование про «программу» (нить в Кёнигсберг, к отцу и сестре)?",
+   "options": [
+    {
+     "label": "🫧 ТИХО И ОДНИ",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "🤝 ЧЕРЕЗ ДОРИАНА",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "⚡ ИДТИ НА ЭЛАРУ",
+     "percent": null,
+     "votes": null
+    }
+   ],
+   "total_votes": null,
+   "winner": null,
+   "stats_deltas": [],
+   "post_id": "EL-07.07-16-00-STORY-DORIAN",
+   "notes": "ОТКРЫТ. Тип к кому/ставка; опция ИДТИ НА ЭЛАРУ двигает арку Ян-Элара."
+  },
+  {
+   "id": "el-2-c7-r1",
+   "chapter": 7,
+   "pub_date": "2026-07-07",
+   "category": "reacc/предсказание",
+   "question": "🔮 Кем был «тот мальчик» для Страздса? (предсказание, без дельты)",
+   "options": [
+    {
+     "label": "🫧 подопечный",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "⚡ он сам",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "🤝 кого любил и не спас",
+     "percent": null,
+     "votes": null
+    },
+    {
+     "label": "🌫 связано с 1974",
+     "percent": null,
+     "votes": null
+    }
+   ],
+   "total_votes": null,
+   "winner": null,
+   "stats_deltas": [],
+   "post_id": "EL-07.07-14-30-REACC",
+   "notes": "ОТКРЫТ. Вовлекающий."
   }
  ]
 }
