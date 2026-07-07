@@ -124,6 +124,11 @@
 **Видовые черты (сфинкс):** достойная женщина зрелых лет; вид - тонкий кошачий разрез и золотой отблеск глаз, спокойная загадочность. Строгий академический стиль near-future.
 **CHARACTER TAG:** `Madame Blok, dignified mature sphinx woman, a subtle feline slant and golden shimmer to her eyes, composed riddling calm (no fur, no wings, human form), strict elegant near-future academic attire, faint realistic synesthetic gold rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
 
+## АЛАРИК (Чистокровный Эльф, 21) - старший брат Яна, лейтенант Флота
+*Инспекция связи при комендантском часе; формально - глаза Оэрона.*
+**Видовые черты:** чистокровный эльф - длинные заострённые уши, холодная фарфоровая бледность (как Дориан, но военная); янтарный клинок на поясе; строгая военная форма Парящего Флота. Видовой контраст с Яном-Сплитом: Аларик = лёд, Ян = янтарь.
+**CHARACTER TAG:** `Alarik, tall pure-blood elf around twenty-one, long sharply pointed ears, cold porcelain military bearing, amber blade at belt, crisp near-future Paritic Fleet officer uniform with angular insignia, disciplined stillness contrasting Jan's warm amber glow, faint realistic synesthetic cold-steel-blue rim-light, Photorealistic, 8k, cinematic, shot on Kodak Portra 800, no text, no logos`
+
 ## ЮРИС (Сатир, старший) - камео-наставник (лето Микаса)
 *Опора вне Лицея.*
 **Видовые черты (сатир, как Микас, но старше):** обычный крепкий мужчина в годах, вид - едва заметные рожки-бугорки в седеющих волосах; ноги/тело человеческие. Обветренный, надёжный.
