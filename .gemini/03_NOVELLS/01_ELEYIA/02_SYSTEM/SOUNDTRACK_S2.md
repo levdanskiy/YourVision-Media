@@ -32,5 +32,21 @@
 | Дата/Глава | Трек | Тон |
 |---|---|---|
 | 23.06 мост-рекап 1 | M83 - Wait | конец лета перед бурей |
+| 29.06 тизер | Woodkid - Run Boy Run | надвигается гроза |
+| 30.06 отсчёт | Ludovico Einaudi - Experience | завтра всё начнётся |
+| 01.07 Гл1 | London Grammar - Hey Now | возвращение |
+| 02.07 Гл2 | Sevdaliza - Human | электро-холод |
+| 03.07 Гл3 | Bonobo - Kerala | первый урок |
+| 04.07 Гл4 | Massive Attack - Teardrop | надвигающаяся угроза |
+| 05.07 Гл5 | Woodkid - Iron | выбор |
+| 06.07 Гл6 | Nils Frahm - Says | тихая сеть |
+| 07.07 Гл7 | Kiasmos - Blurred | холодный чай |
+| 08.07 Гл8 заг | Nils Frahm - Says | утро, решение |
+| 08.07 Гл8 лор Подвалы | Bohren & Der Club of Gore - Midnight Walker | Подвалы, лаборатории |
+| 08.07 Гл8 Страздс | Agnes Obel - Familiar | мёд и дерево, правда |
+| 08.07 Гл8 реакц | Grouper - Falling is Strange | тишина,Loss |
+| 08.07 Гл8 расследование | Nils Frahm - Ambre | investigation, Дориан/Аня |
+| 08.07 Гл8 мир | Bon Iver - Holocene | семья, смех |
+| 08.07 Гл8 клифф | Kiasmos - Blurred | Элара, ночь |
 
 *Не удалять. Ориентир атмосферы, не финальный плейлист. Конкретика - вечером накануне. Обновлять §ЛОГ каждый пост с 🎵.*

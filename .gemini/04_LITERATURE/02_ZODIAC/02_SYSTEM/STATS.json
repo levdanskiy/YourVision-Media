@@ -1,0 +1,26 @@
+{
+  "project": "ZODIAC",
+  "last_updated": "2026-07-08",
+  "status": "промо (старт 10.07)",
+  "config_polls": {
+    "name": {
+      "winner": "АЗАР",
+      "percent": 100,
+      "date": "2026-07-06"
+    },
+    "starting_point": {
+      "winner": "С НОЧИ ПРОБУЖДЕНИЯ",
+      "percent": 100,
+      "date": "2026-07-07"
+    }
+  },
+  "season_stats": {
+    "entropy": {"value": 2, "max": 10},
+    "harmony": {"value": 0, "max": 100}
+  },
+  "secrets_revealed": {
+    "the_schism": false,
+    "13th_constellation": false,
+    "gemini_syndicate": false
+  }
+}
