@@ -5,6 +5,52 @@
 
 ---
 
+## 🔥 2025-2026 (НОВИНКИ - ПРИОРИТЕТ)
+
+### Eleyia
+- **Olivia Rodrigo** - you seem pretty sad for a girl so in love (2026) [подростковая боль]
+- **Rina Sawayama** -Hold The Girl (2023) [поп-бунт, идентичность]
+- **Charli XCX** - BRAT (2024) [hyper-поп,夏日]
+- **Mitski** - The Land Is Inhospitable (2023) [тихая боль]
+- **Phoebe Bridgers** - Punisher (2020) [молодая горечь]
+
+### ARCANA
+- **Rosalía** - LUX (2025) [испанский поп, флеймэнко-электро]
+- **Burna Boy** - I Told Them (2023) [афро-бит]
+- **Arooj Aftab** - Love in Exile (2024) [восточный эмбиент]
+- **Tinariwen** - Amatssou (2023) [пустынный блюз]
+- **Angélique Kidjo** -母 (2024) [афро-поп]
+
+### TOWER
+- **Boards of Canada** - Inferno (2026) [тёмный эмбиент]
+- **Oneohtrix Point Never** - Tranquilizer (2025) [экспериментал]
+- **Daniel Lopatin** - Marty Supreme (2025) [саундтрек]
+- **Ben Frost** - Scope Neglect (2023) [индастриал]
+- **Perturbator** - Lustful Sacraments (2021) [синтвейв-хоррор]
+
+### ZODIAC
+- **Boards of Canada** - Inferno (2026) [космический эмбиент]
+- **Jon Hopkins** - Music for Psychedelic Therapy (2021) [психо-эмбиент]
+- **AURORA** - The Gods We Can Touch (2022) [норвежский поп]
+- **M83** - Fantasy (2023) [синти-поп]
+- **Sigur Rós** - ( ) (2023) [исландский эмбиент]
+
+### KINGMAKER
+- **Olivia Rodrigo** - GUTS (2023) [тёмный поп]
+- **Slayyyter** - WOR$T GIRL IN AMERICA (2026) [hyper-поп, нуар]
+- **Lana Del Rey** - Did You Know There's a Tunnel Under Ocean Blvd (2023) [ноиру]
+- **The National** - First Two Pages of Frankenstein (2023) [инди-рок]
+- **Amyl and the Sniffers** - Cartoon Darkness (2024) [пост-панк]
+
+### PARALLAX
+- **Black MIDI** - The Boy Named Steel (2023) [индастриал]
+- **Squid** - O Monolith (2023) [пост-панк]
+- **Dry Cleaning** - Stumpwork (2022) [пост-панк]
+- **Yves Tumor** - Praise a Lord Who Chews (2023) [арт-рок]
+- **Shame** - Food for Worms (2023) [пост-панк]
+
+---
+
 ## 🪔 ELEYIA (синти-шиммер + электро-холод Сплитов)
 
 ### Современная электроника
