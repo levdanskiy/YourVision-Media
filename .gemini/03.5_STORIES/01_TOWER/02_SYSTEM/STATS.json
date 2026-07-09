@@ -1,7 +1,7 @@
 {
   "project": "TOWER 404",
-  "last_updated": "2026-07-08",
-  "day": 8,
+  "last_updated": "2026-07-10",
+  "day": 9,
   "resources": {
     "diesel": {
       "value": 95,
@@ -23,8 +23,15 @@
   },
   "alignment": {
     "paranoia": {
-      "value": 0,
-      "history": []
+      "value": 1,
+      "history": [
+        {
+          "day": 8,
+          "delta": 1,
+          "post_id": "TW-10.07-17-00-S9-RETURN_TO_DELROY",
+          "reason": "Вернуться к Делрою (выбор Дня 8: 🔴 100%)"
+        }
+      ]
     },
     "curiosity": {
       "value": 7,
