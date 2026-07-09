@@ -38,10 +38,10 @@ VALID_ZONES = {
 NON_EUROPEAN = VALID_ZONES - {"Europe"}
 THEME_BY_SLOT = {
     "10:04": "morning myths/tales/omens/divination/personae",
-    "09:04": "morning myths/tales/omens/divination/personae",
-    "15:04": "15:04 food/desserts/baking/bread/foodways",
+    "09:10": "morning myths/tales/omens/divination/personae",
+    "14:00": "14:00 food/desserts/baking/bread/foodways",
     "18:02": "evening calendar/ritual/time/feast",
-    "21:04": "evening calendar/ritual/time/feast",
+    "20:40": "evening calendar/ritual/time/feast",
 }
 RECIPE_ONLY_FROM = date(2026, 7, 23)
 REQUIRED_UNDERREPRESENTED = [
@@ -55,12 +55,12 @@ REQUIRED_UNDERREPRESENTED = [
 
 def theme_for(year: int, month: int, day: int, slot: str) -> str:
     if date(year, month, day) >= RECIPE_ONLY_FROM:
-        if slot == "09:04":
-            return "09:04 prep/base recipe"
-        if slot == "15:04":
-            return "15:04 cook/table recipe"
-        if slot == "21:04":
-            return "21:04 slow/sweet recipe"
+        if slot == "09:10":
+            return "09:10 prep/base recipe"
+        if slot == "14:00":
+            return "14:00 cook/table recipe"
+        if slot == "20:40":
+            return "20:40 slow/sweet recipe"
     return THEME_BY_SLOT.get(slot, slot)
 
 
@@ -177,9 +177,9 @@ def main() -> int:
     print("## Theme Coverage")
     print()
     theme_order = list(dict.fromkeys(THEME_BY_SLOT.values())) + [
-        "09:04 prep/base recipe",
-        "15:04 cook/table recipe",
-        "21:04 slow/sweet recipe",
+        "09:10 prep/base recipe",
+        "14:00 cook/table recipe",
+        "20:40 slow/sweet recipe",
     ]
     for theme in theme_order:
         zones = by_theme_zone.get(theme, Counter())

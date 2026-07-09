@@ -141,7 +141,7 @@ VALID_CULTURAL_ZONES = {
 
 LEGACY_SLOT_RUBRICS = {
     "10:04": {"LORE", "SOURCE", "OMENS", "DIVINATION", "FRAGMENT", "ETYMON", "PROSE"},
-    "15:04": {
+    "14:00": {
         "CAKES",
         "BUNS",
         "PATISSERIE",
@@ -171,7 +171,7 @@ SLOT_RUBRICS = {
         "ETYMON",
         "PROSE",
     },
-    "15:04": {
+    "14:00": {
         "CAKES",
         "BUNS",
         "PATISSERIE",
@@ -202,15 +202,15 @@ SLOT_RUBRICS = {
 }
 
 TIME_SHIFTED_SLOT_RUBRICS = {
-    "09:04": SLOT_RUBRICS["10:04"],
-    "15:04": SLOT_RUBRICS["15:04"],
-    "21:04": SLOT_RUBRICS["18:02"],
+    "09:10": SLOT_RUBRICS["10:04"],
+    "14:00": SLOT_RUBRICS["14:00"],
+    "20:40": SLOT_RUBRICS["18:02"],
 }
 
 RECIPE_ONLY_SLOT_RUBRICS = {
-    "09:04": FOOD_RUBRICS,
-    "15:04": FOOD_RUBRICS,
-    "21:04": FOOD_RUBRICS,
+    "09:10": FOOD_RUBRICS,
+    "14:00": FOOD_RUBRICS,
+    "20:40": FOOD_RUBRICS,
 }
 
 AL_NAME = re.compile(

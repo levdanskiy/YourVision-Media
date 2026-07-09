@@ -1,7 +1,7 @@
 {
   "project": "TOWER 404",
-  "last_updated": "2026-07-07",
-  "day": 7,
+  "last_updated": "2026-07-08",
+  "day": 8,
   "resources": {
     "diesel": {
       "value": 95,
@@ -27,7 +27,7 @@
       "history": []
     },
     "curiosity": {
-      "value": 6,
+      "value": 7,
       "history": [
         {
           "day": 1,
@@ -64,6 +64,12 @@
           "delta": 1,
           "post_id": "TW-07.07-17-00-S1-WHAT_THE_TRAIL_KEEPS",
           "reason": "Спуститься по нижней тропе (выбор Дня 6)"
+        },
+        {
+          "day": 8,
+          "delta": 1,
+          "post_id": "TW-08.07-17-00-S1-THE_CLEARING",
+          "reason": "Вправо, на вырубку которой нет на картах (выбор Дня 7)"
         }
       ]
     }

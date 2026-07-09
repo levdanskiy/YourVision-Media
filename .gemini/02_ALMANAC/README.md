@@ -61,13 +61,13 @@ Recipe-only rules apply from `2026-07-23`: every main `AL` post is a reproducibl
 
 | Slot | Theme | Rubrics |
 |------|-------|---------|
-| `09:04` | Through 22.07: myths/sources. From 23.07: recipe prep/base. | Through 22.07: old morning rubrics. From 23.07: food rubrics only. |
-| `15:04` | Food only; from 23.07: cook/table recipe. | Food rubrics only. |
-| `21:04` | Through 22.07: calendar/time. From 23.07: slow/sweet/tomorrow recipe. | Through 22.07: old evening rubrics. From 23.07: food rubrics only. |
+| `09:10` | Through 22.07: myths/sources. From 23.07: recipe prep/base. | Through 22.07: old morning rubrics. From 23.07: food rubrics only. |
+| `14:00` | Food only; from 23.07: cook/table recipe. | Food rubrics only. |
+| `20:40` | Through 22.07: calendar/time. From 23.07: slow/sweet/tomorrow recipe. | Through 22.07: old evening rubrics. From 23.07: food rubrics only. |
 
 Between-slot layer:
-- `12:04` - through 22.07.2026 use existing `SV` rules; from 23.07.2026 use recipe-only service notes such as `MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE`.
-- `18:04` - rare `SP` or visual/audio threshold, 2-4 per month max.
+- `10:00` - through 22.07.2026 use existing `SV` rules; from 23.07.2026 use recipe-only service notes such as `MENU-RADAR`, `SHOPPING-LIST`, `TECHNIQUE-POLL`, `RECIPE-INDEX`, `PREP-NOTE`.
+- `17:00` - rare `SP` or visual/audio threshold, 2-4 per month max.
 - story/external frames are derivatives, not extra `AL` posts.
 
 `FERMENT`, `PRESERVE`, `SOUP`, and `CONDIMENTS` are real 15:04 filename rubrics. Labels such as `TABLE`, `GESTURE`, `DREAM`, `TABOO`, `LOST`, `FEAST_TABLE`, `FAST`, and `LIMINAL` are lenses/subtypes unless the taxonomy says otherwise. Use the real rubric in the filename and add the lens in planning or metadata when useful.
@@ -175,6 +175,12 @@ Audit body length against rubric target bands:
 
 ```bash
 python3 tools/audit_lengths.py 2026 07 04
+```
+
+Audit rubric and theme rotation (repetition, balance, cultural zones):
+
+```bash
+python3 tools/audit_rotation.py 2026 07
 ```
 
 Run the general prepublish check, or pass a date for strict day mode:

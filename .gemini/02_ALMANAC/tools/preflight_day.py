@@ -23,7 +23,7 @@ from validate_almanac import (  # noqa: E402
 
 TIME_CHANGE_FROM = (2026, 7, 17)
 LEGACY_REQUIRED_SLOTS = {"10:04", "15:04", "18:02"}
-TIME_SHIFTED_REQUIRED_SLOTS = {"09:04", "15:04", "21:04"}
+TIME_SHIFTED_REQUIRED_SLOTS = {"09:10", "14:00", "20:40"}
 
 
 @dataclass

@@ -16,8 +16,8 @@ CONTENT = ROOT / "02_CONTENT"
 AL_NAME = re.compile(
     r"^AL-(?P<day>\d{2})\.(?P<month>\d{2})-(?P<hour>\d{2})-(?P<minute>\d{2})-(?P<rubric>[A-Z]+)-?.*\.md$"
 )
-LEGACY_EXPECTED_SLOTS = {"10:04", "15:04", "18:02"}
-TIME_SHIFTED_EXPECTED_SLOTS = {"09:04", "15:04", "21:04"}
+LEGACY_EXPECTED_SLOTS = {"10:04", "14:00", "18:02"}
+TIME_SHIFTED_EXPECTED_SLOTS = {"09:10", "14:00", "20:40"}
 SUNDAY = 6
 NEW_SLOT_RULES_FROM = (2026, 7, 7)
 TIME_CHANGE_FROM = (2026, 7, 17)
@@ -51,7 +51,7 @@ FOOD_RUBRICS = {
 }
 LEGACY_SLOT_RUBRICS = {
     "10:04": {"LORE", "SOURCE", "OMENS", "DIVINATION", "FRAGMENT", "ETYMON", "PROSE"},
-    "15:04": {
+    "14:00": {
         "CAKES",
         "BUNS",
         "PATISSERIE",
@@ -69,7 +69,7 @@ LEGACY_SLOT_RUBRICS = {
 }
 SLOT_RUBRICS = {
     "10:04": {"LORE", "SOURCE", "OMENS", "DIVINATION", "PERSONAE", "BESTIARY", "OBJECTS", "FRAGMENT", "ETYMON", "PROSE"},
-    "15:04": {
+    "14:00": {
         "CAKES",
         "BUNS",
         "PATISSERIE",
@@ -100,15 +100,15 @@ SLOT_RUBRICS = {
 }
 
 TIME_SHIFTED_SLOT_RUBRICS = {
-    "09:04": SLOT_RUBRICS["10:04"],
-    "15:04": SLOT_RUBRICS["15:04"],
-    "21:04": SLOT_RUBRICS["18:02"],
+    "09:10": SLOT_RUBRICS["10:04"],
+    "14:00": SLOT_RUBRICS["14:00"],
+    "20:40": SLOT_RUBRICS["18:02"],
 }
 
 RECIPE_ONLY_SLOT_RUBRICS = {
-    "09:04": FOOD_RUBRICS,
-    "15:04": FOOD_RUBRICS,
-    "21:04": FOOD_RUBRICS,
+    "09:10": FOOD_RUBRICS,
+    "14:00": FOOD_RUBRICS,
+    "20:40": FOOD_RUBRICS,
 }
 
 
@@ -233,7 +233,7 @@ def main() -> int:
             sunday_fragment = False
             for path in by_day.get(day, []):
                 match = AL_NAME.match(path.name)
-                expected_fragment_slot = "09:04" if (year, month, day) >= TIME_CHANGE_FROM else "10:04"
+                expected_fragment_slot = "09:10" if (year, month, day) >= TIME_CHANGE_FROM else "10:04"
                 slot = f"{match.group('hour')}:{match.group('minute')}"
                 if match and slot == expected_fragment_slot:
                     if (year, month, day) >= NEW_SLOT_RULES_FROM:
@@ -242,7 +242,7 @@ def main() -> int:
                         sunday_fragment = match.group("rubric") == "FRAGMENT"
             if not sunday_fragment:
                 if (year, month, day) >= NEW_SLOT_RULES_FROM:
-                    slot_label = "09:04" if (year, month, day) >= TIME_CHANGE_FROM else "10:04"
+                    slot_label = "09:10" if (year, month, day) >= TIME_CHANGE_FROM else "10:04"
                     rotation_issues.append(f"{year}-{month:02d}-{day:02d} Sunday {slot_label} is not `FRAGMENT`, `PROSE`, or `ETYMON`")
                 else:
                     rotation_issues.append(f"{year}-{month:02d}-{day:02d} Sunday 10:04 is not `FRAGMENT`")

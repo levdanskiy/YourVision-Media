@@ -2,7 +2,7 @@
  "version": 1,
  "project": "eleyia",
  "season": 2,
- "last_updated": "2026-07-07",
+ "last_updated": "2026-07-08",
  "_schema_note": "stats_deltas: {character, param, delta, reason}; param: affinity | vernost. Опросы S2 логировать с старта 01.07; S1 вёлся в прежней системе (MECHANICS).",
  "polls": [
   {
@@ -482,26 +482,26 @@
    "options": [
     {
      "label": "⚡ СОГЛАСИТЬСЯ СРАЗУ",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "🤝 С УСЛОВИЕМ",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     },
     {
      "label": "🌫 ВЗЯТЬ ПАУЗУ",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     }
    ],
    "total_votes": 1,
    "winner": "🤝 С УСЛОВИЕМ (100%)",
-   "winner_type": null,
+   "winner_type": "unanimous",
    "stats_deltas": [],
    "post_id": "EL-06.07-13-00-STORY-KALEIS-BLIND",
-   "notes": "ОТКРЫТ. Тип ставка/цена (ротация).",
+   "notes": "Применено. Тип ставка/цена.",
    "impact_content": "Глава 7: Ян отвечает Страздсу - «окно» только для тех, кому грозит Изоляция."
   },
   {
@@ -513,18 +513,18 @@
    "options": [
     {
      "label": "🌫 МЕДЛЕННО",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "🤝 БЛИЖЕ",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     },
     {
      "label": "⚡ ЗАЩИТИТЬ",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     }
    ],
    "total_votes": 1,
@@ -539,7 +539,7 @@
     }
    ],
    "post_id": "EL-06.07-16-00-STORY-DORIAN-SAVE",
-   "notes": "ОТКРЫТ. Тип ценностный/к кому (ротация).",
+   "notes": "Применено. Тип ценностный/к кому.",
    "tie_resolution": "Гибрид: Ян позвал Дориана ближе (про них двоих) И начал тихо копать про программу (Вика; нить в Кёнигсберг).",
    "impact_scoreboard": "Дориан +5 (53→58) за БЛИЖЕ (к кому, в пользу героя); ЗАЩИТИТЬ - без дельты (двигает сюжет-расследование)."
   },
@@ -552,23 +552,23 @@
    "options": [
     {
      "label": "🫧 честный служака",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "⚡ ведёт свою партию",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "🤝 втайне сочувствует",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     },
     {
      "label": "🌫 сам был в списке",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     }
    ],
    "total_votes": 1,
@@ -602,11 +602,12 @@
      "votes": null
     }
    ],
-   "total_votes": null,
-   "winner": null,
+   "total_votes": 1,
+   "winner": "🤝 ОСТОРОЖНО ДОВЕРИТЬСЯ (100%)",
+   "winner_type": "unanimous",
    "stats_deltas": [],
    "post_id": "EL-07.07-13-00-STORY-TEA",
-   "notes": "ОТКРЫТ. Тип дилемма."
+   "notes": "Применено. Тип дилемма. Без дельты (тон)."
   },
   {
    "id": "el-2-c7-q2",
@@ -617,25 +618,27 @@
    "options": [
     {
      "label": "🫧 ТИХО И ОДНИ",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "🤝 ЧЕРЕЗ ДОРИАНА",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     },
     {
      "label": "⚡ ИДТИ НА ЭЛАРУ",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     }
    ],
-   "total_votes": null,
-   "winner": null,
+   "total_votes": 1,
+   "winner": "🤝 ЧЕРЕЗ ДОРИАНА + ⚡ ИДТИ НА ЭЛАРУ (двойная 100%)",
+   "winner_type": "multi_select_tie",
    "stats_deltas": [],
    "post_id": "EL-07.07-16-00-STORY-DORIAN",
-   "notes": "ОТКРЫТ. Тип к кому/ставка; опция ИДТИ НА ЭЛАРУ двигает арку Ян-Элара."
+   "notes": "Применено. Тип к кому/ставка; двойной 100% двигает арку Ян-Элара.",
+   "tie_resolution": "Гибрид: расследование через Дориана (осторожно, с согласия) + выйти на Элару в Кёнигсберге (архив изнутри)."
   },
   {
    "id": "el-2-c7-r1",
@@ -646,30 +649,127 @@
    "options": [
     {
      "label": "🫧 подопечный",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "⚡ он сам",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     },
     {
      "label": "🤝 кого любил и не спас",
-     "percent": null,
-     "votes": null
+     "percent": 100,
+     "votes": 1
     },
     {
      "label": "🌫 связано с 1974",
-     "percent": null,
-     "votes": null
+     "percent": 0,
+     "votes": 0
     }
    ],
-   "total_votes": null,
-   "winner": null,
+   "total_votes": 1,
+   "winner": "🤝 кого любил и не спас (100%)",
+   "winner_type": "unanimous",
    "stats_deltas": [],
    "post_id": "EL-07.07-14-30-REACC",
-   "notes": "ОТКРЫТ. Вовлекающий."
+   "notes": "Применено. Вовлекающий. Без дельты."
+  },
+  {
+   "id": "el-2-c8-q1",
+   "chapter": 8,
+   "pub_date": "2026-07-08",
+   "category": "дилемма",
+   "question": "Страздс приоткрылся - сочувствие или ловушка? Как держать куратора?",
+   "options": [
+    {
+     "label": "🫧 ДЕРЖАТЬ ДИСТАНЦИЮ",
+     "percent": 0,
+     "votes": 0
+    },
+    {
+     "label": "🤝 ОСТОРОЖНО ДОВЕРИТЬСЯ",
+     "percent": 100,
+     "votes": 1
+    },
+    {
+     "label": "⚡ ИСПОЛЬЗОВАТЬ",
+     "percent": 0,
+     "votes": 0
+    }
+   ],
+   "total_votes": 1,
+   "winner": "🤝 ОСТОРОЖНО ДОВЕРИТЬСЯ (100%)",
+   "winner_type": "unanimous",
+   "stats_deltas": [],
+   "post_id": "EL-08.07-13-00-STORY-STRAZDS",
+   "notes": "Применено. Без дельты (тон)."
+  },
+  {
+   "id": "el-2-c8-r1",
+   "chapter": 8,
+   "pub_date": "2026-07-08",
+   "category": "reacc/предсказание",
+   "question": "Кем был тот мальчик для Страздса?",
+   "options": [
+    {
+     "label": "🫧 подопечный",
+     "percent": 0,
+     "votes": 0
+    },
+    {
+     "label": "⚡ он сам",
+     "percent": 0,
+     "votes": 0
+    },
+    {
+     "label": "🤝 кого любил и не спас",
+     "percent": 100,
+     "votes": 1
+    },
+    {
+     "label": "🌫 связано с 1974",
+     "percent": 0,
+     "votes": 0
+    }
+   ],
+   "total_votes": 1,
+   "winner": "🤝 кого любил и не спас (100%)",
+   "winner_type": "unanimous",
+   "stats_deltas": [],
+   "post_id": "EL-08.07-14-30-REACC",
+   "notes": "Применено. Предсказание, без дельты."
+  },
+  {
+   "id": "el-2-c8-q2",
+   "chapter": 8,
+   "pub_date": "2026-07-08",
+   "category": "к кому/ставка",
+   "question": "Как вести расследование про программу?",
+   "options": [
+    {
+     "label": "🫧 ТИХО И ОДНИ",
+     "percent": 0,
+     "votes": 0
+    },
+    {
+     "label": "🤝 ЧЕРЕЗ ДОРИАНА",
+     "percent": 100,
+     "votes": 1
+    },
+    {
+     "label": "⚡ ИДТИ НА ЭЛАРУ",
+     "percent": 100,
+     "votes": 1
+    }
+   ],
+   "total_votes": 1,
+   "winner": "🤝 ЧЕРЕЗ ДОРИАНА + ⚡ ИДТИ НА ЭЛАРУ (двойная 100%)",
+   "winner_type": "multi_select_tie",
+   "stats_deltas": [],
+   "post_id": "EL-08.07-16-00-STORY-INVESTIGATION",
+   "notes": "Применено. Двойной 100%, без дельты.",
+   "tie_resolution": "Расследование через Дориана + выйти на Элару в Кёнигсберге."
   }
  ]
 }

@@ -1,0 +1,43 @@
+{
+  "project": "ELEYIA S2",
+  "last_updated": "2026-07-08",
+  "current_chapter": "Глава 8 «След»",
+  "affinity": {
+    "mikas": {
+      "value": 99,
+      "cap": 99,
+      "note": "КАП до кульминации, дельты больше не растут"
+    },
+    "dorian": {
+      "value": 58,
+      "history": [
+        {"date": "2026-07-04", "delta": 5, "reason": "принять заботу + спросить про каналы (двойная ничья Г4)", "post_id": "EL-04.07-16-00-STORY-DORIAN"},
+        {"date": "2026-07-05", "delta": 5, "reason": "50-unlock: ф лешбек «программа»", "post_id": "EL-05.07-16-00-STORY-DORIAN-FLASHBACK"},
+        {"date": "2026-07-06", "delta": 3, "reason": "БЛИЖЕ (100%)", "post_id": "EL-06.07-16-00-STORY-DORIAN"},
+        {"date": "2026-07-06", "delta": 5, "reason": "ЗАЩИТИТЬ (100%)", "post_id": "EL-06.07-16-00-STORY-DORIAN"}
+      ]
+    },
+    "felix": {
+      "value": 5,
+      "note": "Входит медленно"
+    },
+    "elias": {
+      "value": 13,
+      "history": [
+        {"date": "2026-07-02", "delta": 5, "reason": "открыться Элиасу (опрос Г2)", "post_id": "EL-02.07-13-00-STORY-ELIAS-CLASS"},
+        {"date": "2026-07-05", "delta": 3, "reason": "прикрывает Яна рапортом (беат Г5)", "post_id": "EL-05.07-18-00-STORY-ELIAS-SHIELD"}
+      ]
+    }
+  },
+  "loyalty": {
+    "value": 5,
+    "thresholds": {"3": "ПРИСМОТР", "5": "КУРАТОР/Страздс", "7": "ИЗОЛЯЦИЯ", "10": "ИЗЪЯТИЕ"}
+  },
+  "secrets_revealed": {
+    "program_1974": false,
+    "felix_sent": false,
+    "strazds_was_on_list": false,
+    "elara_holds_truth": false,
+    "mikas_network_anchor": false
+  }
+}

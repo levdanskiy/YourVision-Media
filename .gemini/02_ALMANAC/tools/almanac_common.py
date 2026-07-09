@@ -144,8 +144,8 @@ def parse_date_target(target: str) -> date:
 
 def slots_for(day: date) -> tuple[str, str, str]:
     if day >= date(2026, 7, 17):
-        return ("09:04", "15:04", "21:04")
-    return ("10:04", "15:04", "18:02")
+        return ("09:10", "14:00", "20:40")
+    return ("10:04", "14:00", "18:02")
 
 
 def split_values(value: str) -> list[str]:

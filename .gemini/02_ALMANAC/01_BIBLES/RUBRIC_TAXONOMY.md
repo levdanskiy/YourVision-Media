@@ -250,3 +250,155 @@ These are not filename rubrics.
 |--------|--------|
 | `BAKERY` | Legacy umbrella. Do not use for new posts. Choose `CAKES`, `BUNS`, `PATISSERIE`, `DESSERTS`, `SWEETS`, `BREAD`, `FLATBREAD`, or `PIES`. |
 | `PROSE` | Rare bridge mode. Use only when no stricter rubric fits. |
+
+---
+
+## VISUAL SYSTEM - MIDJOURNEY PROMPTS
+
+Each slot has a distinct visual signature. Prompts follow a strict formula with no branding. **Micro-улучшения 2026:** добавляем `visual honesty` и `human痕迹`.
+
+### Slot Visual Signatures (Updated 2026)
+
+| Slot | Style | Aesthetics | Micro-улучшения |
+|------|-------|------------|------------------|
+| **09:04 (PREP)** | Macro, morning light | `still life`, `minimalist`, clean background | `visible dust`, `imperfect focus`, `human hand痕迹` |
+| **15:04 (COOK)** | Cinematic, action | `chiaroscuro`, `steam`, `frozen moment` | `messy apron`, `flour-dusted surface`, `uneven knife cuts` |
+| **21:04 (SWEET)** | Warm, cozy | `amber light`, `golden hour`, `soft shadows` | `visible process痕迹`, `imperfect plating`, `human warmth` |
+
+### Universal Prompt Formula (Updated 2026)
+
+```
+[Subject description], shot on 35mm film Kodak Portra 800, heavy film grain, visible dust specks, imperfect focus, human hand痕迹, cinematic realism, high-end culinary editorial, moody lighting --ar [DYNAMIC] --v 6.1 --style raw --s 750
+```
+
+**Rules:**
+- No text overlay ("no symbols, no icons")
+- Dynamic --ar (never fixed 1:1)
+- Always include film grain and editorial aesthetic
+- Temperature matching: cold = blue tones, hot = amber
+- **NEW:** Add visual imperfections (dust, scratches, uneven focus) for "visual honesty" trend
+
+---
+
+## VOICE CHARACTERISTICS - HERITAGE STORYTELLING (Updated 2026)
+
+**Micro-улучшения 2026:** Добавляем `Heritage First-Person` — личные истории о бабушках, традициях, семейных рецептах.
+
+### Voice Rules
+
+1. **Heritage First-Person (опционально, раз в неделю)**
+   - "Моя бабушка готовила это так..." — личная история
+   - "Когда я впервые tried this..." — опыт первого раза
+   - "В нашей семье это было всегда..." — семейная традиция
+
+2. **Process Storytelling (для технических рубрик)**
+   - "Первый раз я сжёл орехи — вот как вылечил ошибку"
+   - "Я пытался 3 раза, пока не понял..."
+   - Show failures, not just success
+
+3. **Slow Voice**
+   - Shorter sentences
+   - More pauses (em dashes sparingly)
+   - Direct address: "Вот как..."
+
+---
+
+## SEASONAL WINDOWS - INGREDIENT CALENDAR
+
+Each month has a seasonal peak. Recipes should align with ingredient availability.
+
+### Northern Hemisphere Windows
+
+| Month | Seasonal Focus | Key Ingredients |
+|-------|----------------|------------------|
+| **January** | Citrus, preserved | Seville oranges, marmalade, preserved lemons |
+| **February** | Root vegetables, forced crops | Rhubarb, chicory, parsnips |
+| **March** | Spring greens, early veg | Asparagus, peas, spinach |
+| **April** | Spring lamb, herbs | Lamb, sorrel, mint, radishes |
+| **May** | Early berries, green garlic | Strawberries (first), green garlic, asparagus |
+| **June** | Berry season | Strawberries, raspberries, early stone fruit |
+| **July** | Berry peak, summer veg | Blueberries, blackberries, tomatoes, peppers |
+| **August** | Tomato, pepper, aubergine | Heirloom tomatoes, peppers, aubergines, figs |
+| **September** | Harvest, apples, plums | Apples, plums, pears, grapes |
+| **October** | Root crops, squash | Pumpkins, squash, carrots, beets |
+| **November** | Preserved, storage | Cabbage, potatoes, onions, jerkins |
+| **December** | Citrus returns, spices | Clementines, cinnamon, nuts, dried fruits |
+
+### Southern Hemisphere Equivalents
+
+Swap January ↔ July, February ↔ August, etc.
+
+---
+
+## GLOBAL ROTATION - WORLD CUISINES
+
+Almanac rotates through world regions weekly. No single cuisine dominates.
+
+| Week | Region Focus | Examples |
+|------|--------------|----------|
+| **Week 1** | Europe | French tarts, Italian pasta, Spanish paella |
+| **Week 2** | Middle East & North Africa | Hummus, injera, tagine, falafel |
+| **Week 3** | East Asia | Dosa, kimchi, ramen, dumplings |
+| **Week 4** | Sub-Saharan Africa | Jollof rice, bobotie, injera, tagine |
+| **Week 5** | Americas (indigenous) | Arepas, mole, pupusa, ceviche |
+
+**Rule:** Maximum 2 posts per day from one region. Rotate cultures within the week.
+
+### Regional Coverage Checklist
+
+| Region | Must Include |
+|--------|--------------|
+| **Europe** | France, Italy, Spain, Greece, Turkey, Scandinavia, Eastern Europe |
+| **Middle East** | Lebanon, Iran, Turkey, Morocco, Tunisia, Egypt |
+| **East Asia** | Japan, Korea, China, Thailand, Vietnam, Indonesia |
+| **South Asia** | India, Pakistan, Bangladesh, Sri Lanka |
+| **Africa** | Nigeria, Ethiopia, Senegal, Morocco, South Africa |
+| **Americas** | Mexico, Peru, Brazil, USA (regional), Caribbean |
+| **Oceania** | Australia, New Zealand, Polynesia |
+
+---
+
+## TECHNICAL RUBRICS - DEEP DIVES
+
+Four advanced rubrics for food science and history.
+
+| Rubric | Use For | Core Test |
+|--------|---------|-----------|
+| `TECHNIQUE` | Physics/chemistry of cooking (Maillard, emulsification, fermentation) | Explain the mechanism, not just the recipe |
+| `ARCHIVE` | Historical recipe reconstruction | Trace exact historical source or era |
+| `ARCHITECTURE` | Flavor pairings and molecular/historical reasons | Explain WHY ingredients match |
+| `TOOL` | Kitchen tools and implements (cast iron, tandoor, mortar) | Tool shapes the food |
+
+### Technique Examples
+
+| Topic | What to Cover |
+|-------|----------------|
+| **Maillard Reaction** | Temperature (140-160C), amino acids + sugars, crust vs browning |
+| **Emulsification** | Lecithin in egg yolks, oil droplet size, stable vs unstable |
+| **Fermentation** | Lactobacillus, pH drop, time/temperature, risk boundary |
+| **Osmosis** | Sugar drawing water out of cells, maceration physics |
+
+### Archive Examples
+
+| Topic | Era/Source |
+|-------|-------------|
+| **Roman bread** | Pompeii excavations, Pliny's Natural History |
+| **Medieval feasts** | Taillevent's Le Viandier, 14th century France |
+| **Ottoman palace** | Topkapi Palace kitchen records, 15th century |
+
+### Architecture Examples
+
+| Pair | Why It Works |
+|------|--------------|
+| **Tomato + Basil** | Both contain terpenes, amplify aroma |
+| **Lemon + Fish** | Acid cuts fat, citrus oils complement marine |
+| **Cumin + Coriander** | Shared terpene profiles, Middle Eastern synergy |
+
+### Tool Examples
+
+| Tool | Cultural Context | What It Makes Possible |
+|------|------------------|------------------------|
+| **Cast iron** | Southern US, rural | High heat searing, non-stick seasoning |
+| **Tandoor** | India, Pakistan | Bread + meat simultaneously, 500C heat |
+| **Mortar & pestle** | Global | Pastes, spice blends, texture control |
+| **Tagine** | North Africa | Slow braise, convection dome |
