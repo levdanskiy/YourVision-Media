@@ -857,6 +857,66 @@
       "stats_deltas": [],
       "post_id": "EL-09.07-16-00-STORY-ALARIK",
       "notes": "Аларик действует, не зная полной картины. Безопаснее для обоих."
+    },
+    {
+      "id": "el-2-c10-q1",
+      "chapter": 10,
+      "pub_date": "2026-07-10",
+      "category": "реакция",
+      "question": "Ян чувствует, что Элиас что-то скрывает. Что он делает?",
+      "options": [
+        {
+          "label": "🫧 ПРИНИМАЕТ КАК ЕСТЬ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "⚡ СПРАШИВАЕТ НАПРЯМУЮ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "🤝 ЗАПОМИНАЕТ И КОПАЕТ САМ",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 0,
+      "winner": null,
+      "winner_type": null,
+      "stats_deltas": [],
+      "post_id": "EL-10.07-13-00-STORY-ELIAS-1974",
+      "notes": "Реакция. Закрытие 20:00."
+    },
+    {
+      "id": "el-2-c10-q2",
+      "chapter": 10,
+      "pub_date": "2026-07-10",
+      "category": "к кому/ставка",
+      "question": "Доверяет ли Ян матери?",
+      "options": [
+        {
+          "label": "🫧 ДОВЕРЯЕТ ПОЛНОСТЬЮ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "⚡ ДОВЕРЯЕТ, НО ПРОВЕРЯЕТ",
+          "percent": 0,
+          "votes": 0
+        },
+        {
+          "label": "🌫 НЕ ДОВЕРЯЕТ",
+          "percent": 0,
+          "votes": 0
+        }
+      ],
+      "total_votes": 0,
+      "winner": null,
+      "winner_type": null,
+      "stats_deltas": [],
+      "post_id": "EL-10.07-16-00-STORY-ELENA-CODES",
+      "notes": "К кому/ставка. Дельта: ⚡/🌫 → Елена +5. Закрытие 20:00."
     }
   ]
 }
