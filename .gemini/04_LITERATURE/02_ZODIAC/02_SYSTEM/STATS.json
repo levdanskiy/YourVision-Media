@@ -1,7 +1,7 @@
 {
   "project": "ZODIAC",
-  "last_updated": "2026-07-08",
-  "status": "промо (старт 10.07)",
+  "last_updated": "2026-07-10",
+  "status": "активна (Гл1 опубликована 10.07)",
   "config_polls": {
     "name": {
       "winner": "АЗАР",
@@ -22,5 +22,17 @@
     "the_schism": false,
     "13th_constellation": false,
     "gemini_syndicate": false
+  },
+  "chapters": {
+    "gl1": {
+      "title": "С Ночи Пробуждения",
+      "date": "2026-07-10",
+      "posts": 5,
+      "total_words": 5491,
+      "polls": 2,
+      "soundtrack": ["Nils Frahm - Says", "Ólafur Arnalds - Tomorrow's Song", "Tim Hecker - Virginal"],
+      "frame_ratios": ["16:9", "4:5", "9:16", "9:16", "1:1"],
+      "cliffhanger_type": "появление (Малая Луна в дверях)"
+    }
   }
 }
