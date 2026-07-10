@@ -1,7 +1,7 @@
 {
   "project": "ELEYIA S2",
-  "last_updated": "2026-07-08",
-  "current_chapter": "Глава 8 «След»",
+  "last_updated": "2026-07-10",
+  "current_chapter": "Глава 10 «Подвалы»",
   "affinity": {
     "mikas": {
       "value": 99,
@@ -26,6 +26,12 @@
       "history": [
         {"date": "2026-07-02", "delta": 5, "reason": "открыться Элиасу (опрос Г2)", "post_id": "EL-02.07-13-00-STORY-ELIAS-CLASS"},
         {"date": "2026-07-05", "delta": 3, "reason": "прикрывает Яна рапортом (беат Г5)", "post_id": "EL-05.07-18-00-STORY-ELIAS-SHIELD"}
+      ]
+    },
+    "elena": {
+      "value": 5,
+      "history": [
+        {"date": "2026-07-10", "delta": 5, "reason": "Доверяет, но проверяет - коды матери (выбор ⚡, опрос Гл10)", "post_id": "EL-10.07-16-00-STORY-ELENA-CODES"}
       ]
     }
   },

@@ -872,8 +872,8 @@
         },
         {
           "label": "⚡ СПРАШИВАЕТ НАПРЯМУЮ",
-          "percent": 0,
-          "votes": 0
+          "percent": 100,
+          "votes": 1
         },
         {
           "label": "🤝 ЗАПОМИНАЕТ И КОПАЕТ САМ",
@@ -881,12 +881,12 @@
           "votes": 0
         }
       ],
-      "total_votes": 0,
-      "winner": null,
-      "winner_type": null,
+      "total_votes": 1,
+      "winner": "⚡ СПРАШИВАЕТ НАПРЯМУЮ (100%)",
+      "winner_type": "unanimous",
       "stats_deltas": [],
       "post_id": "EL-10.07-13-00-STORY-ELIAS-1974",
-      "notes": "Реакция. Закрытие 20:00."
+      "notes": "Реакция. Закрытие 20:00. Ян спрашивает напрямую: «Вы знали Дориана?»"
     },
     {
       "id": "el-2-c10-q2",
@@ -902,8 +902,8 @@
         },
         {
           "label": "⚡ ДОВЕРЯЕТ, НО ПРОВЕРЯЕТ",
-          "percent": 0,
-          "votes": 0
+          "percent": 100,
+          "votes": 1
         },
         {
           "label": "🌫 НЕ ДОВЕРЯЕТ",
@@ -911,12 +911,19 @@
           "votes": 0
         }
       ],
-      "total_votes": 0,
-      "winner": null,
-      "winner_type": null,
-      "stats_deltas": [],
+      "total_votes": 1,
+      "winner": "⚡ ДОВЕРЯЕТ, НО ПРОВЕРЯЕТ (100%)",
+      "winner_type": "unanimous",
+      "stats_deltas": [
+        {
+          "character": "elena",
+          "param": "affinity",
+          "delta": 5,
+          "reason": "Доверяет, но проверяет (выбор ⚡, опрос Гл10)"
+        }
+      ],
       "post_id": "EL-10.07-16-00-STORY-ELENA-CODES",
-      "notes": "К кому/ставка. Дельта: ⚡/🌫 → Елена +5. Закрытие 20:00."
+      "notes": "К кому/ставка. Дельта: ⚡ → Елена +5. Закрытие 20:00."
     }
   ]
 }
