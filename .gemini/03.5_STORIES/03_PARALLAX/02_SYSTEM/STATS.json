@@ -1,0 +1,26 @@
+{
+  "project": "PARALLAX",
+  "status": "prelaunch",
+  "last_updated": "2026-07-11",
+  "promo_window": {
+    "start": "2026-07-17",
+    "end": "2026-07-23"
+  },
+  "launch_date": "2026-07-24",
+  "trigger": "TOWER Day 14 (~14.07)",
+  "counters": {
+    "IMMERSION": {
+      "value": 0,
+      "max": 10,
+      "min": 0,
+      "history": []
+    }
+  },
+  "chapters": {},
+  "soundtracks_used": [],
+  "frame_ratios_used": [],
+  "polls": {
+    "total": 0,
+    "types_used": []
+  }
+}
