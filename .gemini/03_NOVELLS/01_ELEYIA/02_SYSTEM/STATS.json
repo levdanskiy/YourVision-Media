@@ -1,7 +1,7 @@
 {
   "project": "ELEYIA S2",
-  "last_updated": "2026-07-10",
-  "current_chapter": "Глава 10 «Подвалы»",
+  "last_updated": "2026-07-12",
+  "current_chapter": "Глава 12 «Правда Дориана»",
   "affinity": {
     "mikas": {
       "value": 99,
@@ -9,17 +9,21 @@
       "note": "КАП до кульминации, дельты больше не растут"
     },
     "dorian": {
-      "value": 58,
+      "value": 63,
       "history": [
         {"date": "2026-07-04", "delta": 5, "reason": "принять заботу + спросить про каналы (двойная ничья Г4)", "post_id": "EL-04.07-16-00-STORY-DORIAN"},
         {"date": "2026-07-05", "delta": 5, "reason": "50-unlock: ф лешбек «программа»", "post_id": "EL-05.07-16-00-STORY-DORIAN-FLASHBACK"},
         {"date": "2026-07-06", "delta": 3, "reason": "БЛИЖЕ (100%)", "post_id": "EL-06.07-16-00-STORY-DORIAN"},
-        {"date": "2026-07-06", "delta": 5, "reason": "ЗАЩИТИТЬ (100%)", "post_id": "EL-06.07-16-00-STORY-DORIAN"}
+        {"date": "2026-07-06", "delta": 5, "reason": "ЗАЩИТИТЬ (100%)", "post_id": "EL-06.07-16-00-STORY-DORIAN"},
+        {"date": "2026-07-12", "delta": 5, "reason": "Рассказать правду (100%, опрос Гл11)", "post_id": "EL-12.07-13-00-STORY-DORIAN-REACTION"}
       ]
     },
     "felix": {
-      "value": 5,
-      "note": "Входит медленно"
+      "value": 8,
+      "note": "Входит медленно",
+      "history": [
+        {"date": "2026-07-12", "delta": 3, "reason": "Доверяет (100%, опрос Гл11)", "post_id": "EL-12.07-16-00-STORY-FELIX-HELP"}
+      ]
     },
     "elias": {
       "value": 13,
@@ -36,11 +40,11 @@
     }
   },
   "loyalty": {
-    "value": 5,
+    "value": 6,
     "thresholds": {"3": "ПРИСМОТР", "5": "КУРАТОР/Страздс", "7": "ИЗОЛЯЦИЯ", "10": "ИЗЪЯТИЕ"}
   },
   "secrets_revealed": {
-    "program_1974": false,
+    "program_1974": true,
     "felix_sent": false,
     "strazds_was_on_list": false,
     "elara_holds_truth": false,
