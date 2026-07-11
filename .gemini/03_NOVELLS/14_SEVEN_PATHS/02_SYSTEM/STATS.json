@@ -1,0 +1,36 @@
+{
+  "project": "SEVEN_PATHS",
+  "title": "Гостиница на Семи Тропах",
+  "status": "S1_brief",
+  "last_updated": "2026-07-11",
+  "season": null,
+  "chapter_count": 0,
+  "word_count": 0,
+  "posts": {
+    "total": 0,
+    "story": 0,
+    "lore": 0,
+    "announce": 0,
+    "reaction": 0
+  },
+  "counters": {
+    "OCHAG": {
+      "value": 0,
+      "max": 10,
+      "min": 0,
+      "history": []
+    }
+  },
+  "soundtracks_used": [],
+  "frame_ratios_used": [],
+  "polls": {
+    "total": 0,
+    "types_used": []
+  },
+  "appearance_balance": {},
+  "milestones": {
+    "launch": null,
+    "promo_start": null,
+    "promo_end": null
+  }
+}

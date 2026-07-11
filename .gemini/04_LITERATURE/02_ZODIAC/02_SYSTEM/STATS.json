@@ -1,7 +1,7 @@
 {
   "project": "ZODIAC",
-  "last_updated": "2026-07-10",
-  "status": "активна (Гл1 опубликована 10.07)",
+  "last_updated": "2026-07-11",
+  "status": "активна (Гл2 опубликована 11.07)",
   "config_polls": {
     "name": {
       "winner": "АЗАР",
@@ -33,6 +33,16 @@
       "soundtrack": ["Nils Frahm - Says", "Ólafur Arnalds - Tomorrow's Song", "Tim Hecker - Virginal"],
       "frame_ratios": ["16:9", "4:5", "9:16", "9:16", "1:1"],
       "cliffhanger_type": "появление (Малая Луна в дверях)"
+    },
+    "gl2": {
+      "title": "Второй месяц: Воздух",
+      "date": "2026-07-11",
+      "posts": 5,
+      "total_words": 4642,
+      "polls": 0,
+      "soundtrack": ["Sigur Rós - Svefn-g-englar"],
+      "frame_ratios": ["4:5", "9:16", "16:9", "1:1", "3:2"],
+      "cliffhanger_type": "待定"
     }
   }
 }
