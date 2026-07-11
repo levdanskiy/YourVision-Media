@@ -1,0 +1,24 @@
+{
+  "project": "COURT_COMEDY",
+  "title": "Королевская Комедия",
+  "status": "S1_brief",
+  "last_updated": "2026-07-11",
+  "candidate_for_voting": true,
+  "voting_date": "2026-07-29",
+  "teaser_date": "2026-07-26",
+  "counters": {
+    "APPLAUSE": {
+      "value": 0,
+      "max": 10,
+      "min": 0,
+      "history": []
+    }
+  },
+  "chapters": {},
+  "soundtracks_used": [],
+  "frame_ratios_used": [],
+  "polls": {
+    "total": 0,
+    "types_used": []
+  }
+}
