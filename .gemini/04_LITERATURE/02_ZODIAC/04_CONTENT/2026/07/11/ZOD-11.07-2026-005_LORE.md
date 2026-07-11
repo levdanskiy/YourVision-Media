@@ -47,4 +47,4 @@
 `🌌 ZODIAC | Лор`
 ***
 **Grade:** A
-**Visual Prompt:** Hyperrealistic photograph of a fractured mirror floating in the void of the Pulsar, reflecting two identical but distorted twin figures, one pair glowing with warm amber light and the other cold silver-blue, cracks spreading from the center of the mirror carrying grey entropy threads, the reflection showing a world where connections are severed and information flows backwards, deep space cosmic horror, cinematic still, shot on Canon EOS R5, 35mm, film grain, Kodak Portra 800, no text, no logos. Frame 1:1.
+**Visual Prompt:** Hyperrealistic photograph of a fractured mirror floating in the void of the Pulsar, reflecting Maly Shtorm and Maly Veter (twins) as identical but distorted figures, one pair glowing with warm amber light and the other cold silver-blue, cracks spreading from the center of the mirror carrying grey entropy threads, the reflection showing a world where connections are severed and information flows backwards, deep space cosmic horror, cinematic still, shot on Canon EOS R5, 35mm, film grain, Kodak Portra 800, no text, no logos. Frame 1:1.
