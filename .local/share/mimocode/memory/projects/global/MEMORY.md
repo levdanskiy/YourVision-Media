@@ -40,12 +40,23 @@
 - **ОБЯЗАТЕЛЬНЫЙ ЧЕК-ЛИСТ ПЕРЕД КАЖДЫМ ПОСТОМ (12.07.2026):**
   1. **Лимит слов:** 600-700 (завязка) / 800-900 (story) / 500-600 (лор)
   2. **Промпт:** ОБЯЗАТЕЛЬНО в КАЖДОМ посте (Grade + Visual Prompt + Frame X:Y)
-  3. **Саундтрек:** grep ВСЕ проекты (Eleyia/KM/ARCANA/ZODIAC/TOWER/PARALLAX) на трек за 7 дней. Если использовался ГДЕ ЛИБО - НЕЛЬЗЯ.
+  3. **Саундтрек:** grep ВСЕ проекты (Eleyia/KM/ARCANA/ZODIAC/TOWER/CINNAMON) на трек за 7 дней. Если использовался ГДЕ ЛИБО - НЕЛЬЗЯ.
   4. **Артист:** не повторять 2 поста подряд / не чаще 1/4-5 Глав
   5. **Сигнатура проекта:** не смешивать (Вкус момента = только Eleyia)
   6. **CJK/English:** проверить после написания
   7. **Опросы:** только в слотах с опросами, формат без "🗳 ОПРОС"
   8. **НЕ указывать время чтения** - нигде, ни в одном проекте
+- **ПОЛНЫЙ ОТЧЁТ ПЕРЕД НАПИСАНИЕМ (13.07.2026, ОБЯЗАТЕЛЬНО):** Перед написанием КАЖДОЙ главы показывать полный отчёт из 9 элементов:
+  1. Посты/длина/промпты/саундтреки
+  2. Опросы/типы/ротация
+  3. Герои/% по ВСЕМУ сезону
+  4. Статы/пороги/долги
+  5. Трекеры
+  6. Саундтрек-лог/нарушения (ВСЕ 6 проектов!)
+  7. Промо ВСЕХ работ
+  8. Виды промо-постов
+  9. Что сделано / что делать дальше
+  БЕЗ ЭТОГО ОТЧЁТА НЕ НАЧИНАТЬ НАПИСАНИЕ. (user: "ПОЧЕМУ Я НЕ ВИЖУ ОТЧЕТОВ ПО ВСЕМ МАТРИЦАМ")
 - **Character names MUST match CHARACTERS.md**: Don't invent names. Check CHARACTERS.md (or NEW_ZODIACS.md, etc.) BEFORE writing. Both Russian text AND English prompt names must match. When fixing, fix BOTH in the same pass. User WILL check. (Lesson from ZODIAC Gl3: invented "Малая Река/Малый Глубин" → corrected to "Малая Капля/Малый Океан". User furious when prompts had wrong English names after Russian text was fixed.)
 - **CJK patterns to watch**: "最小" (minimal) → "на最小ом"; "田园" (rural) in literary quotes. Model inserts these in Russian text. Fix with sed/Write — Edit tool fails on CJK.
 - **Edit tool CJK bug**: When oldString/newString contain CJK characters, Edit reports "identical" even when different. Use sed or Write instead.
@@ -130,6 +141,13 @@
 4. Омниверс-борд (баланс, трекеры)
 5. Текстиль-проекты (Island Craft)
 
+## Architecture decisions (добавлено 12.07.2026, обновлено 13.07.2026)
+- **Dev-slots by categories**: User confirmed dev-slots organized by project categories (NOVELLS/LITERATURE/STORIES), not individual projects. Each rotation day = one category = all work within that category (current projects + incubators + future topics + board + textile).
+- **KM S2 start shifted to ~18-19.07**: With new 3-day rotation and 5 promo days (3 done + 2 remaining), the start must shift from 17.07 to ~18-19.07.
+- **CINNAMON_CASE needs 5 promo days before Season 1**: User specified 5 promo days in the CINNAMON cycle before Season 1 can start. Each promo day = every 3 days (Day 3 of cycle).
+- **FULL 9-ELEMENT REPORT REQUIRED (13.07.2026)**: User demands complete report on ALL matrices before writing any posts. This is now mandatory. User rejected Eleyia Gl13 plan because it lacked full report. Quote: "ПОЧЕМУ Я НЕ ВИЖУ ОТЧЕТОВ ПО ВСЕМ МАТРИЦАМ"
+- **SOUNDTRACK CHECK = ALL 6 PROJECTS**: Must grep Eleyia/KM/ARCANA/ZODIAC/TOWER/CINNAMON for every track. Partial checks cause errors. User: "МАТРИЦА САУНДТРЕКОВ ГДЕ"
+
 ## PERMAFROST (добавлено 11.07.2026)
 - **Статус:** S1-бриф, системные файлы созданы
 - **Счётчик:** ЗАБВЕНИЕ 0-10 (убывающий)
@@ -166,6 +184,18 @@
   | **3** | — | ZODIAC | CINNAMON_CASE |
 - **Принцип:** равное количество выпусков у каждого проекта. Цикл повторяется.
 - **CINNAMON_CASE:** начинаем с промо как полноценный проект (день 3).
+
+## ЛОР-ОЧЕРЕДЬ (ЗАКРЕПЛЕНО 13.07.2026)
+- **Правило чередования:** механизм ↔ атмосфера (чередовать!)
+- **После «атмосферы» → «механизм», после «механизма» → «атмосфера»**
+- **Пример Eleyia:** Браслеты(мех) → Пульс(атм) → Виды Лицея(мех) → Виды Лицев(мех) → ...
+
+## ГЕРОИ - ОБЯЗАТЕЛЬНАЯ ПРОВЕРКА (ЗАКРЕПЛЕНО 13.07.2026)
+- **Перед каждым кругом:** запуск appearance-count.py для проекта
+- **Показывать полный список героев** с процентами появления
+- **Отмечать:** кто отстаёт, кого вернуть, кто НЕ ПОЯВЛЯЛСЯ ни разу
+- **ВНИМАНИЕ:** appearance-count может не учитывать всех героев (проверять вручную по CHARACTER файлам)
+- **Все герои из CHARACTER файлов ДОЛЖНЫ появиться** хотя бы раз за сезон
 
 ## ZODIAC Gl2 (обновлено 12.07.2026)
 - **Статус:** Gl2 опубликована 11.07, STATS.json/POLL_LOG.json/STATE.md обновлены
@@ -238,6 +268,11 @@
 - **Appearance balance**: Дориан 53%, Микас 51% доминируют; Оэрон 19%, Марта 12%, Феликс 12% отстают (не критично, но следить)
 - **REWRITE STATUS**: ВСЕ 7 постов переписаны ✅ (завязка 686w, лор 721w, story 663w, реакц 491w, story 791w, story 812w, клифф 796w) — слово-лимиты нуждаются в корректировке
 - **Gl11 style reference**: завязка 10:00 (80 строк, ~700w), story 13:00 (98 строк, ~850w) — шаблоны для подражания
+- **Gl13 (13.07) BLOCKED**: МНОГОКРАТНЫЕ НАРУШЕНИЯ: (1) 3 поста вместо 7, (2) использована уже использованная Lana Del Rey, (3) нет полного 9-элементного отчёта, (4) неполная матрица саундтреков, (5) нет appearance-count, (6) предложена уже использованная лор-тема "Директорат" (Gl4), (7) не найдено правило чередования лор-тем. Требуется полный отчёт + разрешение по лор-ротации.
+- **Eleyia palette exhausted**: ALL tracks in SOUNDTRACK_S2.md used in last 7 days. Найдены чистые извне: Wet, Phoebe Bridgers, Clairo, Mitski, The xx, Caribou, Jamie xx, + ещё 13 (Japanese Breakfast, Soccer Mommy, Snail Mail, Adrianne Lenker, Big Thief, Lucy Dacus, Julien Baker, MØ, Tove Lo, Lykke Li, SBTRKT, Four Tet, Jon Hopkins).
+- **appearance-count.py**: `03_NOVELLS/09_GENERAL/tools/appearance-count.py` — ОБЯЗАТЕЛЬНО запускать перед каждым кругом. Output: Дориан 53%, Микас 51% доминируют; Страздс 9%, Вика 8%, Элиас 8%, Елена 7%, Симас 4%, Калейс 2%, Снорри 2%, Ула 2%, Аня 2% — критически отстают.
+- **LORE ROTATION AGREEMENT**: Пользователь настаивает что есть конкретное правило чередования типов лора. Агент не нашёл его в памяти/истории. Паттерн по очереди: механизм (Браслеты, Супрессоры, Директорат) ↔ атмосфера (Пульс, Тихое сопротивление, Комендантский час). Следующий = механизм → Список/статусы наблюдения. НО: пользователь говорит что агент нарушает — значит есть ещё одно правило, которое не найдено.
+- **Gl13 available lore**: Виды Лицея, 1974-публичная версия, Список/статусы наблюдения. NOT Подвалы Юпитера (used Gl8+Gl10), NOT Директорат (used Gl4).
 
 ## Eleyia race list (добавлено 12.07.2026)
 - **Полный список 24 видов** в мире Eleyia
@@ -247,3 +282,8 @@
 - **Другие (5)**: Гарпия, Горный Тролль, Голем, Злая Фея, Древняя Сущность
 - **Иностранные блоки (5)**: Ифрит, Тотемный Дух, Нейронная Сущность, Глубоководный, Ботаническая Сущность
 - **Underworld персонажи**: Старый Грог (горный тролль), Женя (гарпия), Краузер (голем), Моргана (злая фея), Дракон Ли (чистокровный дракон)
+
+## Discovered durable knowledge
+- **appearance-count.py tool**: Path `03_NOVELLS/09_GENERAL/tools/appearance-count.py` — run `python3 appearance-count.py <project_name>` (e.g. `eleyia`). Shows per-hero appearance % across entire season. MUST include in every pre-writing report. User: "ПОЧЕМУ ТЫ НЕ ОТЧИТАЛСЯ О ГЕРОЯХ"
+- **ALL Eleyia palette tracks exhausted (13.07.2026)**: Every track in SOUNDTRACK_S2.md used in 7-day window. Must use external tracks. Found 20 clean: Wet, Phoebe Bridgers, Clairo, Mitski, The xx, Caribou, Jamie xx, Japanese Breakfast, Soccer Mommy, Snail Mail, Adrianne Lenker, Big Threat, Lucy Dacus, Julien Baker, MØ, Tove Lo, Lykke Li, SBTRKT, Four Tet, Jon Hopkins.
+- **LORE ROTATION AGREEMENT EXISTS (unresolved)**: User insists there is a specific agreed-upon pattern for alternating lore topic types in Eleyia. Agent cannot find it in memory or history. Known lore queue alternation: mechanism (Браслеты→Супрессоры→Директорат) ↔ atmosphere (Пульс→Тихое сопротивление→Комендантский час). But user says agent is STILL violating it — there may be an additional rule. MUST resolve before writing Gl13.
