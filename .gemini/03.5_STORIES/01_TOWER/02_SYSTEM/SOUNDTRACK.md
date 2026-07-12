@@ -62,5 +62,9 @@
 | 07.07 День 7 | Biosphere - Start | Спуск по тропе |
 | 08.07 День 8 | Lustmord - Heresy | Вырубка, жетон III |
 | 09.07 День 9 | Deathprod - Provenance | Вырубка, руны |
+| 11.07 День 10 | Swans - Feel Happiness | Делрой, третий голос |
+| 12.07 День 11 | Talk Talk - I Believe in You | Дневник, молчание |
+| 12.07 День 11 | Throbbing Gristle - Hamburger Lady | Молчание, лес |
+| 12.07 День 11 | Robert Rich - Rainforest | Ожидание, ночь |
 
 *Обновлять §ЛОГ каждый пост. Не удалять.*
