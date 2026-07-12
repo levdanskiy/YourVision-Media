@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-07-07",
+  "entries": [
+    {"canon_id": "LX-C001", "topic": "Купальский цикл", "rubrics": ["#OMENS", "#ARCHETYPE", "#CROSSROAD", "#EVE", "#MORPHOLOGY", "#SACRED_GEO", "#BESTIARY"], "start_date": "2026-07-05", "end_date": "2026-07-07", "status": "active"},
+    {"canon_id": "LX-C002", "topic": "Собачьи дни и астрономия", "rubrics": ["#ASTROLOGY", "#GUARDIAN", "#URBAN"], "start_date": "2026-07-02", "end_date": "2026-07-02", "status": "complete"},
+    {"canon_id": "LX-C003", "topic": "Календарные микросезоны", "rubrics": ["#CHRONOS", "#FRAGMENT"], "start_date": "2026-07-01", "end_date": "2026-07-01", "status": "complete"}
+  ]
+}

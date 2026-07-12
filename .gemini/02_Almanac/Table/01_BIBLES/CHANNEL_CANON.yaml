@@ -1,0 +1,89 @@
+schema_version: 1
+project:
+  name: "ALMANAC: TABLE"
+  mission: "A global recipe archive: food as technique, calendar, memory and table."
+  language: "ru"
+  companion_channel:
+    name: "Almanac: Calendar"
+    url: "https://t.me/AlmanacCalendar"
+    project_path: "/home/levdanskiy/.gemini/05_Almanac: Calendar"
+    routing_effective_from: "2026-07-23"
+    routing_rule: "All standalone non-recipe myth, folklore, calendar, divination, source, etymology, ritual and omen posts move to Almanac: Calendar."
+
+publication:
+  timezone_label: "PUBLICATION_TIMEZONE"
+  main_posts_per_day: 3
+  slots:
+    effective_from: "2026-07-17"
+    morning: "09:04"
+    food: "15:04"
+    evening: "21:04"
+  recipe_only_effective_from: "2026-07-23"
+  recipe_only_main_slots: ["09:04", "15:04", "21:04"]
+  recipe_only_slot_meanings:
+    "09:04": "prep/base recipe"
+    "15:04": "cook/table recipe"
+    "21:04": "slow/sweet/tomorrow recipe"
+  legacy_slots_through: "2026-07-16"
+  legacy_slots: ["10:04", "15:04", "18:02"]
+  food_slot_is_always_food: true
+  all_main_slots_food_from: "2026-07-23"
+
+service_layer:
+  service_slot: "12:04"
+  service_posts_per_iso_week: [0, 2]
+  required_weekly_service_types: []
+  required_weekly_pair_effective_from: "2026-07-20"
+  required_weekly_pair_through: "2026-07-22"
+  recipe_only_allowed_service_types: ["MENU-RADAR", "SHOPPING-LIST", "TECHNIQUE-POLL", "RECIPE-INDEX", "PREP-NOTE"]
+  special_slot: "18:04"
+  special_posts_per_month: [2, 4]
+  service_is_not_fourth_main_post: true
+
+editorial_invariants:
+  global_scope: true
+  default_geographic_anchor: null
+  geography_allowed_for_evidence: true
+  separate_sweet_and_savory: true
+  no_moralizing_endings: true
+  no_engagement_bait: true
+  no_personal_medical_financial_legal_predictions: true
+  exact_sources_for_surprising_claims: true
+  visual_style: "modern editorial documentary evidence"
+  recipe_posts_require_ingredients_and_method: true
+  recipe_rule_effective_from: "2026-07-22"
+  all_al_posts_are_recipes_from: "2026-07-23"
+  standalone_non_recipe_routed_to_calendar_from: "2026-07-23"
+  calendar_project_path: "/home/levdanskiy/.gemini/05_Almanac: Calendar"
+  calendar_telegram_url: "https://t.me/AlmanacCalendar"
+  recipe_only_new_rubrics: ["MAINS", "SALADS", "GRAINS", "LEGUMES", "VEGETABLES", "BREAKFAST"]
+  public_name_approved_from: "2026-07-23"
+  archive_era_name: "ALMANAC: MARGINALIA"
+
+workflow:
+  visible_rotation_report_before_writing: true
+  daily_improvement_review: true
+  daily_improvement_effective_from: "2026-07-21"
+  daily_improvement_minimum_applied_or_deferred: 1
+  evidence_and_operational_registries_effective_from: "2026-07-21"
+  trend_review_start: "2026-07-17"
+  trend_review_interval_days: 5
+  trend_review_requires_current_research: true
+  prepublish_requires_zero_errors: true
+  prepublish_requires_zero_warnings: true
+  published_posts_are_not_silently_rewritten: true
+
+continuity:
+  default_topic_cooldown_days: 45
+  default_visual_cooldown_days: 30
+  explicit_fields: ["canon_id", "angle_id", "series_id", "continuity_notes"]
+  generated_registry: "04_DATABASES/CANON_REGISTRY.json"
+  series_registry: "04_DATABASES/SERIES_REGISTRY.json"
+  improvement_backlog: "04_DATABASES/IMPROVEMENT_BACKLOG.json"
+  decisions_log: "03_REPORTS/EDITORIAL_DECISIONS.md"
+  publication_registry: "04_DATABASES/PUBLICATION_REGISTRY.json"
+  asset_registry: "04_DATABASES/ASSET_REGISTRY.json"
+  evidence_registry: "04_DATABASES/EVIDENCE_REGISTRY.json"
+  semantic_memory: "04_DATABASES/indexes/semantic_memory.sqlite"
+  experiment_registry: "04_DATABASES/EXPERIMENT_REGISTRY.json"
+  incident_registry: "04_DATABASES/EDITORIAL_INCIDENTS.json"

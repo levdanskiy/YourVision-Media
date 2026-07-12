@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-07-07",
+  "posts": [],
+  "series": [
+    {"series_id": "almanac-oracle-handoff", "name": "Oracle / Forecast Handoff", "status": "active", "rubrics": ["OMENS", "DIVINATION", "FORECAST", "ASTROLOGY", "FRAGMENT"], "slot": "08:44", "cadence": "weekly or as planned", "next_due": "2026-07-23", "notes": "Receives standalone oracle, tarot, zodiac, omen and forecast material from Almanac after recipe-only pivot."},
+    {"series_id": "almanac-calendar-handoff", "name": "Calendar / Source Handoff", "status": "active", "rubrics": ["CALENDAR", "CHRONOS", "CYCLES", "SOURCE", "ETYMOLOGY", "MODERN"], "slot": "23:11", "cadence": "weekly or as planned", "next_due": "2026-07-23", "notes": "Receives standalone calendar radar, source, etymology, holiday and modern ritual material from Almanac after recipe-only pivot."},
+    {"series_id": "almanac-entities-handoff", "name": "Entities / Objects Handoff", "status": "active", "rubrics": ["PERSONAE", "BESTIARY", "ARTIFACT", "LOCUS", "RITES"], "slot": "11:27 / 17:33", "cadence": "as rotation needs", "next_due": null, "notes": "Receives standalone personae, bestiary, object, locus and ritual-action formats from Almanac."},
+    {"series_id": "LX-001-kupalsky", "name": "Купальский цикл", "status": "active", "rubrics": ["OMENS", "ARCHETYPE", "CROSSROAD", "EVE", "MORPHOLOGY", "SACRED_GEO", "BESTIARY"], "slot": "all", "cadence": "daily Jul 5-7", "next_due": null, "notes": "Календарный пик: канун, день и aftermath Ивана Купалы."}
+  ]
+}

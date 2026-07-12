@@ -1,0 +1,72 @@
+schema_version: 2
+project:
+  name: "ALMANAC: TABLE"
+  mission: "Глобальный архив рецептов. Еда как физика, кулинария как контролируемая химическая реакция."
+  language: "ru"
+  relation_to_calendar: "С 23.07.2026 ALMANAC = только рецепты. Вся нематериальная база перешла в Almanac: Calendar."
+  telegram_url: "https://t.me/AlmanacTable"
+
+publication:
+  timezone_label: "Europe/Riga"
+  main_posts_per_day: 5
+  slots:
+    effective_from: "2026-07-10"
+    prep: "09:10"
+    cook: "14:00"
+    recipe: "16:15"
+    foodways: "19:15"
+    sweet: "20:40"
+
+slot_policy:
+  prep:
+    time: "09:10"
+    theme: "Подготовка, база, ферментация"
+    use_for:
+      - "Тесто, закваска, замачивание"
+      - "Ферментация и заготовки"
+      - "Кухонный воркфлоу"
+    reader_mode: "morning, prep, slow start"
+  cook:
+    time: "14:00"
+    theme: "Основное блюдо, горячее"
+    use_for:
+      - "Супы, основные блюда, салаты"
+      - "Горячая техника готовки"
+      - "Злаки, бобовые, овощи"
+    reader_mode: "midday, cooking, active"
+  sweet:
+    time: "20:40"
+    theme: "Десерт, выпечка, сладкое"
+    use_for:
+      - "Торты, булочки, патиссерия"
+      - "Десерты, сладости"
+      - "Хлеб на ночной расстойке"
+    reader_mode: "evening, sweet, slow"
+
+rubrics:
+  sweet: ["CAKES", "BUNS", "PATISSERIE", "DESSERTS", "SWEETS"]
+  savory: ["BREAD", "FLATBREAD", "PIES"]
+  broad: ["FERMENT", "PRESERVE", "SOUP", "CONDIMENTS", "MAINS", "SALADS", "GRAINS", "LEGUMES", "VEGETABLES"]
+  global: ["SEAFOOD", "NOODLES", "RICE", "SPICES", "STREET FOOD", "STEW", "CURRY", "GRILL", "SMOKING"]
+  everyday: ["BREAKFAST", "FOODWAYS", "PANTRY", "DRINKS"]
+  service: ["RECIPE", "TOOLS", "WORKFLOW", "LISTS", "FEAST_TABLE"]
+
+hard_rules:
+  - "ТРИ ПОСТА В ДЕНЬ: 09:10 / 14:00 / 20:40 - каждый день."
+  - "Каждый пост - воспроизводимый рецепт с ИНГРЕДИЕНТЫ и ПРИГОТОВЛЕНИЕ."
+  - "Никакой мифологии, календаря, гадания как основного контента."
+  - "География глобальная. Минимум 5 культурных зон в неделю."
+  - "Строгий научный стиль. Никаких восторгов."
+  - "Только короткий дефис (-). Никаких длинных тире."
+
+balance_goals:
+  sweet: "4-6/нед"
+  savory_bake: "4-6/нед"
+  broad_food: "6-9/нед"
+  ferment: "≥1/нед"
+  preserve: "≥1/нед"
+
+continuity:
+  default_rubric_cooldown_days: 3
+  default_topic_cooldown_days: 30
+  explicit_fields: ["cultural_zone", "coverage_axis", "source_type"]

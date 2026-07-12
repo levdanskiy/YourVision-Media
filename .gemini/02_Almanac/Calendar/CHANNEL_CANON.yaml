@@ -1,0 +1,129 @@
+schema_version: 2
+project:
+  name: "Almanac: Calendar"
+  mission: "Глобальная энциклопедия праздников, кругов года и пороговых состояний. Праздник как организующий принцип: от Дня Независимости до Самхейна, от Обона до Карнавала."
+  priority_focus: "Круг года / Wheel of Year + глобальные праздники"
+  language: "ru"
+  parent_brand: "Almanac"
+  relation_to_almanac_table: "СISTER-канал. Table = рецепты, Calendar = праздники, мифы, фольклор. Общий зонтик Almanac."
+  telegram_url: "https://t.me/AlmanacCalendar"
+  calendar_note: "Круг года и праздники мира - организующий принцип канала. Все рубрики сохраняются, но контент часто привязывается к текущему календарному моменту."
+
+publication:
+  timezone_label: "PUBLICATION_TIMEZONE"
+  main_posts_per_day: 5
+  slots:
+    effective_from: "2026-07-10"
+    aurora: "11:45"
+    anima: "13:45"
+    locus: "15:15"
+    mythos: "17:15"
+    calendar: "21:00"
+  serial_days: ["fri", "sun"]
+  series_tag: "#SEQUENCE"
+  series_rules:
+    min_posts: 2
+    max_posts: 4
+    same_object_across_posts: true
+    between_series_gap_days: 2
+    occupies_both_slots: true
+
+editorial_invariants:
+  global_scope: true
+  default_geographic_anchor: null
+  geography_allowed_for_evidence: true
+  no_moralizing_endings: true
+  no_engagement_bait: true
+  exact_sources_for_surprising_claims: true
+  mandatory_web_search_validation_before_writing: true
+  visual_style: "modern editorial documentary evidence, encyclopedic, museum archive, cinematic hyperrealism"
+  no_food_or_cuisine: true
+  no_bread_cake_recipe_foodways: true
+  target_length: "до 3500 знаков (оптимально для Telegram-поста с картинкой)"
+  typography_rules:
+    forbid_em_dash: true
+    forbid_en_dash: true
+    allowed_dash: "-" # Only short hyphens allowed
+  voice_characteristics:
+    human_first: true
+    show_dont_tell: true
+    zero_hedging: true
+    slow_voice: true
+    personal_remars_allowed: true
+  visual_honesty:
+    include_imperfections: true
+    human_touch_signs: true
+
+slot_policy:
+  aurora:
+    time: "11:45"
+    theme: "Пробуждение, Знаки, Фрагменты"
+    use_for:
+      - "Предсказания и мантика (Таро, астрология)"
+      - "Народные приметы и физика явлений"
+      - "Сжатые объекты-фрагменты"
+    reader_mode: "morning, omen, fragment"
+
+  anima:
+    time: "15:15"
+    theme: "Существа, Люди, Архетипы"
+    use_for:
+      - "Бестиарий: демоны, духи, криптиды"
+      - "Архетипы и роли (Трикстер, Психопомп)"
+      - "Пантеон богов и полубогов"
+      - "Хранители и духи-покровители"
+      - "Наследие и народы (исторические традиции, племена)"
+      - "Обычаи (поверья реальных людей в повседневной жизни)"
+    reader_mode: "recognition, entity, identity"
+
+  locus:
+    time: "17:15"
+    theme: "Пространство, Артефакты, Магия"
+    use_for:
+      - "Сакральная география (леса, горы, перекрестки)"
+      - "Магические артефакты (зеркала, ключи, амулеты)"
+      - "Праксис (ритуалы, народная медицина, обереги)"
+      - "Архитектура (лабиринты, храмы, границы)"
+      - "Очаг (бытовая магия, домашние традиции, уют)"
+      - "Ремесло (история артефактов сквозь магию ручного труда)"
+      - "Ботаника (использование растений в оберегах и быту)"
+    reader_mode: "space, object, mechanism"
+
+  mythos:
+    time: "21:00"
+    theme: "Морфология, Текст, Неофольклор"
+    use_for:
+      - "Морфология сказки и универсальные сюжеты"
+      - "Этимология, истинные имена, заговоры"
+      - "Неофольклор (городские легенды, интернет-мифы)"
+      - "Хронос (календарные циклы, память)"
+      - "Колесо года (сезонные праздники и лунные циклы)"
+      - "Литературный анализ авторских текстов"
+      - "Концептуальные списки и подборки"
+    reader_mode: "story, text, evolution"
+
+rubrics:
+  aurora: ["#OMENS", "#FORECAST", "#ASTROLOGY", "#DIVINATION", "#FRAGMENT"]
+  anima: ["#DEITIES", "#SPIRIT", "#FOLK", "#HERITAGE", "#PERSONAE", "#ARCHETYPE", "#PANTHEON", "#CRYPTID", "#GUARDIAN", "#BESTIARY"]
+  locus: ["#LOCUS", "#SACRED_GEO", "#ARTIFACT", "#PRAXIS", "#BOUNDARY", "#HEARTH", "#BOTANICA", "#CRAFT", "#MAGIC", "#CROSSROAD", "#SYMBOL"]
+  mythos: ["#MYTHOS", "#CALENDAR", "#SOURCE", "#ETYMOLOGY", "#CHRONOS", "#URBAN", "#NEOMYTH", "#VERBUM"]
+
+hard_rules:
+  - "ЧЕТЫРЕ ПОСТА В ДЕНЬ: 11:45 / 15:15 / 17:15 / 20:15 - каждый день."
+  - "Никакой еды, рецептов."
+  - "География глобальная. Ни один регион не становится центром."
+  - "Мировой уровень: все рубрики охватывают культуры всех континентов - Европа, Азия, Африка, Америка, Океания."
+  - "Сравнительная мифология: поиск параллелей между культурами (трикстеры везде, психопомпов у всех)."
+  - "Серия занимает 2-4 поста подряд на одну тему."
+  - "Между сериями минимум 2 дня обычных постов."
+
+balance_goals:
+  aurora: "25%"
+  anima: "25%"
+  locus: "25%"
+  mythos: "25%"
+
+continuity:
+  default_topic_cooldown_days: 30
+  default_visual_cooldown_days: 30
+  explicit_fields: ["canon_id", "angle_id", "series_id", "continuity_notes"]
