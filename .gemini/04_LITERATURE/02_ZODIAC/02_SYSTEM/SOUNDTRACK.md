@@ -57,5 +57,12 @@
 |---|---|---|
 | 08.07 Промо механика | Tycho - A Walk | Карта часа, фракции |
 | 08.07 Промо саундтрек | Tycho - A Walk | Звук сезона, космос |
+| 10.07 Гл1 | Nils Frahm - Says | Пробуждение, огонь |
+| 10.07 Гл1 | Ólafur Arnalds - Tomorrow's Song | Малая Луна, покой |
+| 10.07 Гл1 | Tim Hecker - Virginal | Энтропия, тьма |
+| 11.07 Гл2 | Sigur Rós - Svefn-g-englar | Близнецы, воздух |
+| 12.07 Гл3 | Boards of Canada - Dayvan Cowboy | Вода, память |
+| 12.07 Гл3 | Lustmord - Black Star | Энтропия, мёртвый мир |
+| 12.07 Гл3 | Atrium Carceri - Cellblock | Echo-двойник, Синдикат |
 
 *Заполнять с Главы 1 (10.07). Обновлять §ЛОГ каждый пост. Не удалять.*
