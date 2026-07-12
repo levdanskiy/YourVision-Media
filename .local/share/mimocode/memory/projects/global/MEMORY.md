@@ -92,8 +92,18 @@
 - **День 12 (12.07):** 2/3 постов написаны (дневник 14:00 + основной 17:00 с опросом). Пост 3 (18:00) ещё не написан.
 - **TOWER треки Дня 12:** Talk Talk - I Believe in You (дневник), Throbbing Gristle - Hamburger Lady (основной), Robert Rich - Rainforest (запись) — все чистые.
 - **TOWER опросы 11.07 (3 шт., все 100%):** вызвать Делроя самому [+Настороженность], остаться в башне [+Рассудок], показать жетон Делрою [+Любопытство]
-- **TOWER STATS.json corruption:** дублирующиеся curiosity/history блоки начиная со строки ~89. Нужна чистка.
-- **TOWER треки использованы (Дни 1-9):** Bohren (D1), Lustmord (D2), Godspeed (D3), Deathprod (D4), Atrium Carceri (D5), Bark Psychosis (D6), Biosphere (D7), Lustmord (D8), Deathprod (D9).
+- **TOWER format**: `📻 TOWER | День X` — NOT `📼 BLACK BOX: Интерактив` (obsolete). `**Prompt:**` NOT `**Visual Prompt:**`. Character name (Alan) mandatory in every prompt.
+- **CINNAMON_CASE naming**: Do NOT name publicly until promo starts. Use "Скоро в библиотеке" in announcements.
+- **ZODIAC is LITERATURE (04_LITERATURE)**, not NOVELLS. Part of OMNIVERSE series with ARCANA.
+- **Posting Rotation (3-day cycle, locked 12.07.2026):**
+  | День | NOVELLS | LITERATURE | STORIES |
+  |------|---------|------------|---------|
+  | 1 | Eleyia | ARCANA | — |
+  | 2 | Kingmaker | — | TOWER |
+  | 3 | — | ZODIAC | CINNAMON_CASE (промо) |
+  Each project = 1 day per 3-day cycle. All plans/schedules reflect this.
+- **TOWER STATS.json corruption**: duplicate curiosity/history blocks ~line 89. Needs cleanup.
+- **TOWER треки Дня 12:** Talk Talk - I Believe in You (дневник), Throbbing Gristle - Hamburger Lady (основной), Robert Rich - Rainforest (запись) — все чистые.
 
 ## ARCANA (обновлено 12.07.2026)
 - **Appearance balance**: все 12 героев в пределах 21-34% (Дариан 34% лидер, Вила 21% последний). Никто критически не отстаёт.
@@ -170,15 +180,24 @@
 - **Gl4 (13.07):** следующая глава — определить по SEASON_1_OUTLINE.md
 
 ## KM S2 Promo (обновлено 12.07.2026)
-- **Окно:** 10-16.07, старт 17.07
-- **Day 1 (10.07):** МОСТ-РЕКАП - done (KM-10.07-2026-000_BRIDGE.md)
-- **Day 2 (11.07):** Саундтрек-тизер - SOUNDCARD done, prompt NEEDS FIX (quill/parchment → modern)
-- **Day 3 (12.07):** Анкета-досье НОРА-КОРОЛЕВА (10:30) + Теневой тизер (16:30) - done, needs emoji fixes
-- **Days 4-6 (13-15.07):** Not yet written
-- **KM world:** альтернативный СОВРЕМЕННЫЙ мир (smartphones, neon, encrypted channels) — NOT medieval
-- **KM emoji set:** 🖤 Black Velvet is signature; generic poll emojis NOT used in KM
+- **Промо:** 5 дней (3 прошло + 2 осталось). Ротация: День 2 (каждые 3 дня).
+- **Старт S2: ~18-19.07** (сдвиг с 17.07 из-за новой ротации)
+- **Day 1 (10.07):** МОСТ-РЕКАП ✅
+- **Day 2 (11.07):** Саундтрек-тизер ✅
+- **Day 3 (12.07):** Анкета НОРА + Теневой тизер ✅
+- **Day 4 (15.07):** Анкета КАССИАН + конфиг-опрос
+- **Day 5 (18.07):** Анкета ОФЕЛИЯ + anticipation-опрос → СТАРТ S2
+- **KM world:** альтернативный СОВРЕМЕННЫЙ мир — NOT medieval
+- **KM emoji set:** 🖤 Black Velvet is signature
 
 - **KM S2 new BV**: different sign from S1 archival BV — "новый знак (не 🖤 архивный «Бархат», а свой)". Тон-мостик: S1 = архив/кровь/мрамор → S2 = шёлк/сплетня/скандал.
+
+## CINNAMON_CASE (обновлено 12.07.2026)
+- **Статус:** ПРЕДЗАПУСК. Ротация: День 3 (каждые 3 дня).
+- **Промо:** 5 дней (15.07, 18.07, 21.07, 24.07, 27.07)
+- **Старт Сезона 1: ~27-28.07** (после 5 промо-дней)
+- **Формат:** интерактивный детектив в пекарне. Сигнатура: «Запах гласит:»
+- **НЕ называть публично до старта промо** — использовать «Скоро в библиотеке»
 
 ## SOUNDTRACK violations (обнаружено 12.07.2026)
 - **Статус:** Старые посты НЕ исправляются (уже опубликованы). Матрица используется ТОЛЬКО для нового контента.
