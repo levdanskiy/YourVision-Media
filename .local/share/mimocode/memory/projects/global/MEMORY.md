@@ -46,6 +46,7 @@
   6. **CJK/English:** проверить после написания
   7. **Опросы:** только в слотах с опросами, формат без "🗳 ОПРОС"
   8. **НЕ указывать время чтения** - нигде, ни в одном проекте
+- **Character names MUST match CHARACTERS.md**: Don't invent names. Check CHARACTERS.md (or NEW_ZODIACS.md, etc.) BEFORE writing. Both Russian text AND English prompt names must match. When fixing, fix BOTH in the same pass. User WILL check. (Lesson from ZODIAC Gl3: invented "Малая Река/Малый Глубин" → corrected to "Малая Капля/Малый Океан". User furious when prompts had wrong English names after Russian text was fixed.)
 - **CJK patterns to watch**: "最小" (minimal) → "на最小ом"; "田园" (rural) in literary quotes. Model inserts these in Russian text. Fix with sed/Write — Edit tool fails on CJK.
 - **Edit tool CJK bug**: When oldString/newString contain CJK characters, Edit reports "identical" even when different. Use sed or Write instead.
 - **KM modern world rule**: KM is alternative MODERN world — smartphones, neon, encrypted channels, modern architecture. NEVER use medieval imagery (quill, pen, parchment, wax seals). This applies to ALL KM content including prompts.
@@ -73,16 +74,26 @@
 - 18:00 (story): 800-900 слов
 - 20:00 (клифф): 800-900 слов
 
-## Stories tree (reformatted 10.07.2026)
+## Stories tree (reformatted 10.07.2026, updated 12.07.2026)
 - Формат: традиционный роман (третий POV)
 - Жанры: романтика + драма, комедия/cozy
+- **03.5_CHRONICLES DELETED (12.07.2026)**: All content now in 03.5_STORIES. Never reference CHRONICLES again.
 - TOWER: 25-30 Глав, 3 поста/день (2 story + 1 supplementary), мульти-POV с 13-го поста
 - 1 сезон для TOWER
 - **TOWER промпты:** писать «мрачно, атмосферно», НЕ «horror/хоррор/liminal horror». Просто dark mood.
 - **ZODIAC промпты:** ОБЯЗАТЕЛЬНО указывать имена героев (Азар, Малая Луна, Малый Шторм/Ветер и т.д.) в промптах.
 - **ZODIAC три системы зодиака:** Западный (12) + Китайский (12) + Ведический (12) = 36 знаков + 13 Рождённых. Все три системы должны раскрываться в романе.
 - **ZODIAC время:** 13 знаков × 13 месяцев = 13 глав на часть. 40 Глав, 4 Части. POV: Азар. Сигнатура: «Карта часа:».
-- **ZODIAC саундтреки использованы:** Gl1 - Nils Frahm - Says, Ólafur Arnalds - Tomorrow's Song, Tim Hecker - Virginal. Gl2 - Sigur Rós - Svefn-g-englar.
+- **ZODIAC саундтреки использованы:** Gl1 - Nils Frahm - Says, Ólafur Arnalds - Tomorrow's Song, Tim Hecker - Virginal. Gl2 - Sigur Rós - Svefn-g-englar. Gl3 - Boards of Canada - Dayvan Cowboy, Lustmord - Black Star, Atrium Carceri - Cellblock.
+- **ZODIAC Gl3 character names CORRECTED (12.07.2026):** Малая Река→Малая Капля (Наследница Аббис), Малый Глубин→Малый Океан (Наследник Писцес). Source: 03_NOVELLS/02_ZODIAC/03_CHARACTERS/NEW_ZODIACS.md.
+
+## TOWER (обновлено 12.07.2026)
+- **Папка:** 03.5_STORIES/01_TOWER (03.5_CHRONICLES удалена)
+- **День 12 (12.07):** 2/3 постов написаны (дневник 14:00 + основной 17:00 с опросом). Пост 3 (18:00) ещё не написан.
+- **TOWER треки Дня 12:** Talk Talk - I Believe in You (дневник), Throbbing Gristle - Hamburger Lady (основной), Robert Rich - Rainforest (запись) — все чистые.
+- **TOWER опросы 11.07 (3 шт., все 100%):** вызвать Делроя самому [+Настороженность], остаться в башне [+Рассудок], показать жетон Делрою [+Любопытство]
+- **TOWER STATS.json corruption:** дублирующиеся curiosity/history блоки начиная со строки ~89. Нужна чистка.
+- **TOWER треки использованы (Дни 1-9):** Bohren (D1), Lustmord (D2), Godspeed (D3), Deathprod (D4), Atrium Carceri (D5), Bark Psychosis (D6), Biosphere (D7), Lustmord (D8), Deathprod (D9).
 
 ## ARCANA (обновлено 12.07.2026)
 - **Appearance balance**: все 12 героев в пределах 21-34% (Дариан 34% лидер, Вила 21% последний). Никто критически не отстаёт.
@@ -91,7 +102,7 @@
 - **Gl12 лор**: "Мир за стенами Арканады" (корпорации). Выбрано пользователем.
 - **Gl12 posts (11.07)**: 5 постов — анонс, Адебайо+Ифа-Аже спарринг (часть 1), Дариан+Серена тень (часть 2), барьер треснул (часть 3), лор-пост.
 - **Gl12 polls (11.07)**: 🤝 100% на оба — "Земля помнит всё" + "Как Дариан защищает Серену" (Тенью 100%).
-- **Gl13 "Библиотечные тайны" (12.07)**: 5 постов written. Word counts: 610/859/900/810/515. Prompts added to ALL posts. Soundtrack: Agnes Obel, Bon Iver, Sigur Rós, Dead Can Dance (AUDIT NEEDED — repeats detected).
+- **Gl13 "Библиотечные тайны" (12.07)**: 5 постов written + soundtracks fixed. Word counts: 610/859/900/810/515. Prompts added to ALL. Soundtracks REPLACED (originals all violated cross-project 7-day): Portishead - Wandering Star (аннонс), Tinariwen - Sastanàqqàm (story#1), Anoushka Shankar - Lasya (story#2), Hedningarna - Kruspolska (story#3), Femi Kuti - Truth Don Die (лор). Format fixed (reading time removed, backticks corrected). ✅ COMPLETE
 - **Gl13 polls**: #1 Как Насрин поступит с гримуаром? #2 Что голос скажет первым?
 - **Gl14**: следующая глава — определить по SEASON_1_OUTLINE.md
 
@@ -125,11 +136,38 @@
 - **Триггер:** TOWER Day 14 (~14.07 реального времени)
 - **Системные файлы:** CANON, CHARACTERS, VOICE_LOCK, STATS_RULES, SOUNDTRACK, WORLD_BIBLE, STATE, STATS, PRELAUNCH_PLAN
 
-## ZODIAC Gl2 (обновлено 11.07.2026)
+## Posting Rotation (закреплено 12.07.2026)
+- **3-дневный цикл, 6 проектов, каждый = 1 день из 3:**
+  | День | NOVELLS | LITERATURE | STORIES |
+  |------|---------|------------|---------|
+  | **1** | Eleyia | ARCANA | — |
+  | **2** | Kingmaker | — | TOWER |
+  | **3** | — | ZODIAC | CINNAMON_CASE |
+- **Принцип:** равное количество выпусков у каждого проекта. Цикл повторяется.
+- **CINNAMON_CASE:** начинаем с промо как полноценный проект (день 3).
+
+## ZODIAC Gl2 (обновлено 12.07.2026)
 - **Статус:** Gl2 опубликована 11.07, STATS.json/POLL_LOG.json/STATE.md обновлены
 - **Саундтрек:** Sigur Rós - Svefn-g-englar
 - **Слово:** 4642 слова (5 постов)
-- **Опросы:** 2 сюжетных (из Gl1) - оба применены
+- **Опросы Gl2:** 2 сюжетных (из Gl1) - оба применены
+- **Опросы результаты (11.07):** Poll 1: 100% «Осторожен» (Азар к воздуху/Близнецам). Poll 2: 100% «Бороться» (огонь против энтропии)
+
+## ZODIAC Gl3 (обновлено 12.07.2026)
+- **Статус:** Gl3 ОПУБЛИКОВАНА ✅ (12.07)
+- **Тема:** «Третий месяц: Вода»
+- **Новые персонажи:** Малая Река (поверхность, поток) + Малый Глубин (дно, информация) — Рождённые Воды
+- **Саундтреки:** Boards of Canada - Dayvan Cowboy, Lustmord - Black Star, Atrium Carceri - Cellblock
+- **Слово:** ~3683 слова (5 постов) — анонс 611, story#1 871, story#2 863, story#3 835, лор 503
+- **Клифф:** Echo-двойник Азара (Синдикат Близнецов) — «Я - ты. Но не совсем. Я - эхо.»
+- **Опросы Gl3:** #1 Как Азар справится с водой? (4 варианта) #2 Получилось ли зажечь мёртвый мир? (4 варианта)
+- **Сюжетные повороты:**
+  - Азар осторожен к Близнецам (результат Gl2 poll 100%)
+  - Азар пытается зажечь мёртвый мир (результат Gl2 poll 100%)
+  - Кристалл не зажигается — РАСКОЛЫВАЕТСЯ, выпуская воду. Мир трансформируется.
+  - Вода = память + трансформация. Энтропию нельзя победить силой, только пережить.
+  - Впервые появляется внешняя угроза (Синдикат Близнецов, Echo-двойник)
+- **Gl4 (13.07):** следующая глава — определить по SEASON_1_OUTLINE.md
 
 ## KM S2 Promo (обновлено 12.07.2026)
 - **Окно:** 10-16.07, старт 17.07
