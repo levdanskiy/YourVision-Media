@@ -45,6 +45,7 @@
   5. **Сигнатура проекта:** не смешивать (Вкус момента = только Eleyia)
   6. **CJK/English:** проверить после написания
   7. **Опросы:** только в слотах с опросами, формат без "🗳 ОПРОС"
+  8. **НЕ указывать время чтения** - нигде, ни в одном проекте
 - **CJK patterns to watch**: "最小" (minimal) → "на最小ом"; "田园" (rural) in literary quotes. Model inserts these in Russian text. Fix with sed/Write — Edit tool fails on CJK.
 - **Edit tool CJK bug**: When oldString/newString contain CJK characters, Edit reports "identical" even when different. Use sed or Write instead.
 - **KM modern world rule**: KM is alternative MODERN world — smartphones, neon, encrypted channels, modern architecture. NEVER use medieval imagery (quill, pen, parchment, wax seals). This applies to ALL KM content including prompts.
