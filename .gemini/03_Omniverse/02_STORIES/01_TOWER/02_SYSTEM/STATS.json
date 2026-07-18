@@ -1,0 +1,121 @@
+{
+  "project": "TOWER 404",
+  "last_updated": "2026-07-17",
+  "day": 13,
+  "resources": {
+    "diesel": {
+      "value": 95,
+      "max": 100,
+      "history": [
+        {
+          "day": 4,
+          "delta": -5,
+          "post_id": "TW-04.07-17-00-S1-UNDER_THE_COWL",
+          "reason": "вскрытие кожуха/проверка генератора (выбор Дня 3)"
+        }
+      ]
+    },
+    "sanity": {
+      "value": 90,
+      "max": 100,
+      "history": [
+        {
+          "day": 12,
+          "delta": 1,
+          "post_id": "TW-14.07-17-00-S12-DELROY_SILENCE",
+          "reason": "Ждать до утра - если до утра не ответит - тогда действовать (выбор Дня 12: 🔵 100%)"
+        },
+        {
+          "day": 13,
+          "delta": -10,
+          "post_id": "TW-17.07-14-00-S13-THE_DESCENT",
+          "reason": "Спуститься на вышку 302 - проверить Делроя лично (выбор Дня 13: 🔵 100%)"
+        }
+      ]
+    }
+  },
+  "alignment": {
+    "paranoia": {
+      "value": 1,
+      "history": [
+        {
+          "day": 8,
+          "delta": 1,
+          "post_id": "TW-10.07-17-00-S9-THE_THIRD",
+          "reason": "Вернуться к Делрою (выбор Дня 8: 🔴 100%)"
+        }
+      ]
+    },
+    "curiosity": {
+      "value": 8,
+      "history": [
+        {
+          "day": 1,
+          "delta": 1,
+          "post_id": "TW-01.07-19-00-S1-FIRST_CONTACT",
+          "reason": "Рассказать о себе Делрою"
+        },
+        {
+          "day": 2,
+          "delta": 1,
+          "post_id": "TW-02.07-17-00-S1-QUIET_NOISES",
+          "reason": "Слушать в темноте, не выдавать себя"
+        },
+        {
+          "day": 3,
+          "delta": 1,
+          "post_id": "TW-03.07-17-00-S1-THE_GAUGE",
+          "reason": "Проверить самому, вопреки протоколу Хейза"
+        },
+        {
+          "day": 4,
+          "delta": 1,
+          "post_id": "TW-04.07-17-00-S1-UNDER_THE_COWL",
+          "reason": "Рассказать Делрою про жетон"
+        },
+        {
+          "day": 6,
+          "delta": 1,
+          "post_id": "TW-06.07-17-00-S1-THE_LOWER_TRAIL",
+          "reason": "Поверить тревоге Делроя, копать вместе про Саймона (выбор Дня 5)"
+        },
+        {
+          "day": 7,
+          "delta": 1,
+          "post_id": "TW-07.07-17-00-S1-WHAT_THE_TRAIL_KEEPS",
+          "reason": "Спуститься по нижней тропе (выбор Дня 6)"
+        },
+        {
+          "day": 8,
+          "delta": 1,
+          "post_id": "TW-08.07-17-00-S1-THE_CLEARING",
+          "reason": "Вправо, на вырубку которой нет на картах (выбор Дня 7)"
+        },
+        {
+          "day": 9,
+          "delta": 1,
+          "post_id": "TW-10.07-17-00-S9-THE_THIRD",
+          "reason": "Промолчать и записать в дневник (выбор Дня 9: 🔵 100%)"
+        }
+      ]
+    }
+  },
+  "milestones": {
+    "first_quiet_week": {
+      "done": false,
+      "post_id": null
+    },
+    "day_14_voice": {
+      "done": false,
+      "post_id": null
+    },
+    "day_21_figure": {
+      "done": false,
+      "post_id": null
+    },
+    "day_30_midpoint_tower_302_falls": {
+      "done": false,
+      "post_id": null
+    }
+  }
+}
