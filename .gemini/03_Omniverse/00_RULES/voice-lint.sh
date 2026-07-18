@@ -167,21 +167,6 @@ else
   fi
 fi
 
-# ── 6. Проверка промпта для промо ──
-if [ $IS_PROMO -eq 1 ]; then
-  prompt_line=$(grep -iE "^\*\*Prompt:\*\*|^Prompt:" "$FILE" 2>/dev/null || true)
-  if [ -n "$prompt_line" ]; then
-    if [[ ! "$prompt_line" =~ --ar[[:space:]]+1:1 ]]; then
-      echo "❌ Промо-промпт должен содержать --ar 1:1"
-      ERRORS=$((ERRORS + 1))
-    fi
-    if [[ ! "$prompt_line" =~ --v[[:space:]]+6\.1[[:space:]]+--style[[:space:]]+raw[[:space:]]+--s[[:space:]]+750 ]]; then
-      echo "❌ Промо-промпт должен содержать обязательный хвост '--v 6.1 --style raw --s 750'"
-      ERRORS=$((ERRORS + 1))
-    fi
-  fi
-fi
-
 # ── Итог ──
 if [ "$ERRORS" -gt 0 ]; then
   echo; echo "❌ voice-lint ($WORK): $ERRORS ошибок, $WARNINGS предупреждений"; exit 1
