@@ -18,26 +18,26 @@
 - `03_LITERATURE/IDEAS_BANK.md` на корне — служебный документ раздела, не банк проекта.
 - **Posting Rotation (4-дневный цикл, СТАРТ 20.07):**
   - Day 1: Eleyia (7) + TOWER (3) = 10 постов
-  - Day 2: ARCANA (5) + КОЧЕВЬЕ (5) = 10 постов
+  - Day 2: ARCANA (5) + КОЧЕВЬЕ (3) = 8 постов
   - Day 3: Kingmaker (7) + CINNAMON (3) = 10 постов
-  - Day 4: ZODIAC (5) + ВЕНСКАЯ КРОВЬ (5) = 10 постов
+  - Day 4: ZODIAC (5) + ВЕНСКАЯ КРОВЬ (3) = 8 постов
 - **Слоты (равные части 9:00-21:00, 10 постов/день):**
 | Время | День 1 | День 2 | День 3 | День 4 |
 |-------|--------|--------|--------|--------|
 | 09:00 | Eleyia | ARCANA | Kingmaker | ZODIAC |
 | 10:15 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
 | 11:30 | TOWER | ARCANA | CINNAMON | ZODIAC |
-| 12:45 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
+| 12:45 | Eleyia | — | Kingmaker | — |
 | 14:00 | TOWER | ARCANA | CINNAMON | ZODIAC |
 | 15:15 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
 | 16:30 | TOWER | ARCANA | Kingmaker | ZODIAC |
-| 17:45 | Eleyia | КОЧЕВЬЕ | CINNAMON | ВЕНСКАЯ КРОВЬ |
+| 17:45 | Eleyia | — | CINNAMON | — |
 | 19:00 | Eleyia | ARCANA | Kingmaker | ZODIAC |
 | 20:15 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
 
-Итого: Eleyia 7, TOWER 3, ARCANA 5, КОЧЕВЬЕ 5, Kingmaker 7, CINNAMON 3, ZODIAC 5, ВЕНСКАЯ КРОВЬ 5.
-- КОЧЕВЬЕ: промо 5 циклов (19.07-04.08). Старт ~05.08. 1 раз/4 дня, 5 постов/цикл.
-- ВЕНСКАЯ КРОВЬ: промо 5 циклов (19.07-04.08). Старт ~08.08. 1 раз/4 дня, 5 постов/цикл.
+Итого: Eleyia 7, TOWER 3, ARCANA 5, КОЧЕВЬЕ 3, Kingmaker 7, CINNAMON 3, ZODIAC 5, ВЕНСКАЯ КРОВЬ 3.
+- КОЧЕВЬЕ: промо 5 циклов (19.07-04.08). Старт ~05.08. 1 раз/4 дня, 3 поста/цикл.
+- ВЕНСКАЯ КРОВЬ: промо 5 циклов (19.07-04.08). Старт ~08.08. 1 раз/4 дня, 3 поста/цикл.
 - ПОРЯДОК ЗНАКОВ: TBD.
 - За цикл: 1 idea S0→S1 + 1 polish existing folder.
 - План без 9-элементного отчета не отправляется.
@@ -138,12 +138,12 @@
 8. **Результаты опросов** — пользователь высылает перед вызовом круга; ОБЯЗАТЕЛЬНО использовать при написании главы
 
 ## Posting Rotation (4-дневный цикл, СТАРТ 20.07.2026)
-| День | NOVELLS (7) | LITERATURE (5) | STORIES (3/5) | CHRONICLES (5) |
-|------|-------------|----------------|---------------|----------------|
+| День | NOVELLS (7) | LITERATURE (5) | STORIES (3) | CHRONICLES (3) |
+|------|-------------|----------------|-------------|----------------|
 | 1 | Eleyia (7) | — | TOWER (3) | — |
-| 2 | — | ARCANA (5) | — | КОЧЕВЬЕ (5) |
+| 2 | — | ARCANA (5) | — | КОЧЕВЬЕ (3) |
 | 3 | Kingmaker (7) | — | CINNAMON (3) | — |
-| 4 | — | ZODIAC (5) | — | ВЕНСКАЯ КРОВЬ (5) |
+| 4 | — | ZODIAC (5) | — | ВЕНСКАЯ КРОВЬ (3) |
 
 **Слоты (равные части 9:00-21:00):**
 | Время | День 1 | День 2 | День 3 | День 4 |
@@ -151,25 +151,25 @@
 | 09:00 | Eleyia | ARCANA | Kingmaker | ZODIAC |
 | 10:15 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
 | 11:30 | TOWER | ARCANA | CINNAMON | ZODIAC |
-| 12:45 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
+| 12:45 | Eleyia | — | Kingmaker | — |
 | 14:00 | TOWER | ARCANA | CINNAMON | ZODIAC |
 | 15:15 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
 | 16:30 | TOWER | ARCANA | Kingmaker | ZODIAC |
-| 17:45 | Eleyia | КОЧЕВЬЕ | CINNAMON | ВЕНСКАЯ КРОВЬ |
+| 17:45 | Eleyia | — | CINNAMON | — |
 | 19:00 | Eleyia | ARCANA | Kingmaker | ZODIAC |
 | 20:15 | Eleyia | КОЧЕВЬЕ | Kingmaker | ВЕНСКАЯ КРОВЬ |
 
 Each project = 1 post per слот. Голосования/опросы = в любом слоте (3 дня на голосование).
 
-Итого: Eleyia 7, TOWER 3, ARCANA 5, КОЧЕВЬЕ 5, Kingmaker 7, CINNAMON 3, ZODIAC 5, ВЕНСКАЯ КРОВЬ 5.
+Итого: Eleyia 7, TOWER 3, ARCANA 5, КОЧЕВЬЕ 3, Kingmaker 7, CINNAMON 3, ZODIAC 5, ВЕНСКАЯ КРОВЬ 3.
 
 ## ДЕВ-СЛОТЫ (4-дневный цикл)
 | День | ПРОЕКТЫ |
 |------|---------|
 | 1 | Eleyia (7) + TOWER (3) |
-| 2 | ARCANA (5) + КОЧЕВЬЕ (5) |
+| 2 | ARCANA (5) + КОЧЕВЬЕ (3) |
 | 3 | Kingmaker (7) + CINNAMON (3) |
-| 4 | ZODIAC (5) + ВЕНСКАЯ КРОВЬ (5) |
+| 4 | ZODIAC (5) + ВЕНСКАЯ КРОВЬ (3) |
 
 - За цикл: ≥1 идея инкубатора (S0→S1 или S1→S2)
 - Тон-ротация: 🌑→☀️→⚖️→🎵
