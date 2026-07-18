@@ -118,7 +118,7 @@ IS_PROMO=0
 IS_LORE=0
 IS_PROLOGUE=0
 
-if [[ "$FILE" =~ (promo|anons|анонс) ]] || grep -qE "ПРОТОКОЛЫ:.*FLASH|Grade:[[:space:]]*[FSQ]" "$FILE" 2>/dev/null; then
+if [[ "${FILE,,}" =~ (promo|anons|анонс) ]] || grep -qE "ПРОТОКОЛЫ:.*(FLASH|PROMO)|Grade:[[:space:]]*[FSQB]" "$FILE" 2>/dev/null; then
   IS_PROMO=1
 elif [[ "$FILE" =~ (prolog|пролог) ]]; then
   IS_PROLOGUE=1
@@ -128,9 +128,19 @@ fi
 
 if [ "$FORMAT" = "long" ]; then
   if [ $IS_PROMO -eq 1 ]; then
-    if [ "$WORDS" -lt 300 ] || [ "$WORDS" -gt 400 ]; then
-      echo "⚠️  Промо-пост должен быть 300-400 слов (сейчас $WORDS слов)"
-      WARNINGS=$((WARNINGS + 1))
+    # Определяем этап промо
+    if [[ "$FILE" =~ (_02_|_02|PROMO_02|досье|dossier) ]]; then
+      # ЭТАП 2: DOSSIER (450-550 слов)
+      if [ "$WORDS" -lt 450 ] || [ "$WORDS" -gt 550 ]; then
+        echo "⚠️  Промо-досье (Этап 2) должно быть 450-550 слов (сейчас $WORDS слов)"
+        WARNINGS=$((WARNINGS + 1))
+      fi
+    else
+      # ЭТАПЫ 1, 3, 4: HOOK, INTERACTIVE, COUNTDOWN (300-400 слов)
+      if [ "$WORDS" -lt 300 ] || [ "$WORDS" -gt 400 ]; then
+        echo "⚠️  Промо-пост (Этап 1, 3, 4) должен быть 300-400 слов (сейчас $WORDS слов)"
+        WARNINGS=$((WARNINGS + 1))
+      fi
     fi
   elif [ $IS_PROLOGUE -eq 1 ]; then
     if [ "$WORDS" -lt 600 ] || [ "$WORDS" -gt 700 ]; then
@@ -154,6 +164,21 @@ else
   if [ "$WORDS" -gt 400 ]; then
     echo "⚠️  Запись дневника раздута: $WORDS слов (TOWER/PARALLAX держат ~2-3 мин чтения)"
     WARNINGS=$((WARNINGS + 1))
+  fi
+fi
+
+# ── 6. Проверка промпта для промо ──
+if [ $IS_PROMO -eq 1 ]; then
+  prompt_line=$(grep -iE "^\*\*Prompt:\*\*|^Prompt:" "$FILE" 2>/dev/null || true)
+  if [ -n "$prompt_line" ]; then
+    if [[ ! "$prompt_line" =~ --ar[[:space:]]+1:1 ]]; then
+      echo "❌ Промо-промпт должен содержать --ar 1:1"
+      ERRORS=$((ERRORS + 1))
+    fi
+    if [[ ! "$prompt_line" =~ --v[[:space:]]+6\.1[[:space:]]+--style[[:space:]]+raw[[:space:]]+--s[[:space:]]+750 ]]; then
+      echo "❌ Промо-промпт должен содержать обязательный хвост '--v 6.1 --style raw --s 750'"
+      ERRORS=$((ERRORS + 1))
+    fi
   fi
 fi
 
